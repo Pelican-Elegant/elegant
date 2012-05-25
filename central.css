@@ -1,2 +1,4 @@
 /* import framework core */
-@import url("yaml/core/base.min.css");
+@import url("yaml/core/base.css");
+@import url("yaml/navigation/hlist.css");
+
