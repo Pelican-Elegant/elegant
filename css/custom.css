@@ -5,6 +5,11 @@ Desktop version layout - place your custom code here */
 body {
 
 }
+.hmenu {
+background-color: #333;
+text-align: center;
+color: white;
+}
 
 
 
