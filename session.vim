@@ -12,12 +12,11 @@ vmap <D-v> "-d"*P
 nmap <D-v> "*P
 let &cpo=s:cpo_save
 unlet s:cpo_save
-set autoindent
+set paste
 set expandtab
 set hlsearch
 set ruler
 set shiftwidth=2
-set softtabstop=4
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
@@ -29,6 +28,7 @@ set shortmess=aoO
 badd +1 index.html
 badd +1 demo.html
 badd +0 css/custom.css
+badd +0 p
 args index.html demo.html
 edit index.html
 set splitbelow splitright
@@ -37,7 +37,7 @@ set nosplitright
 wincmd t
 set winheight=1 winwidth=1
 argglobal
-setlocal autoindent
+setlocal noautoindent
 setlocal nobinary
 setlocal bufhidden=
 setlocal buflisted
@@ -110,7 +110,7 @@ setlocal noscrollbind
 setlocal shiftwidth=2
 setlocal noshortname
 setlocal nosmartindent
-setlocal softtabstop=4
+setlocal softtabstop=0
 set spell
 setlocal spell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
@@ -133,12 +133,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 35 - ((15 * winheight(0) + 22) / 44)
+let s:l = 98 - ((32 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-35
-normal! 0
+98
+normal! 018l
 tabedit css/custom.css
 set splitbelow splitright
 set nosplitbelow
@@ -147,7 +147,7 @@ wincmd t
 set winheight=1 winwidth=1
 argglobal
 edit css/custom.css
-setlocal autoindent
+setlocal noautoindent
 setlocal nobinary
 setlocal bufhidden=
 setlocal buflisted
@@ -220,7 +220,7 @@ setlocal noscrollbind
 setlocal shiftwidth=2
 setlocal noshortname
 setlocal nosmartindent
-setlocal softtabstop=4
+setlocal softtabstop=0
 set spell
 setlocal spell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
@@ -243,11 +243,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 25 - ((24 * winheight(0) + 22) / 44)
+let s:l = 21 - ((20 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
+21
 normal! 0
 tabedit demo.html
 set splitbelow splitright
@@ -257,7 +257,7 @@ wincmd t
 set winheight=1 winwidth=1
 argglobal
 2argu
-setlocal autoindent
+setlocal noautoindent
 setlocal nobinary
 setlocal bufhidden=
 setlocal buflisted
@@ -330,7 +330,7 @@ setlocal noscrollbind
 setlocal shiftwidth=2
 setlocal noshortname
 setlocal nosmartindent
-setlocal softtabstop=4
+setlocal softtabstop=0
 set spell
 setlocal spell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
@@ -353,11 +353,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 83 - ((43 * winheight(0) + 22) / 44)
+let s:l = 94 - ((20 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-83
+94
 normal! 0
 tabnext 2
 if exists('s:wipebuf')
