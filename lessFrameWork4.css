@@ -92,6 +92,10 @@ body {
         color: rgb(60,60,60);
         -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
+#masthead {
+width:896px;
+position: relative;
+}
 
 
 
@@ -127,7 +131,11 @@ px      68    160    252    */
                 width: 252px;
                 padding: 48px 34px 60px;
         }
-        
+ #masthead {
+width:252px;
+position: relative;
+}
+       
 }
 
 
