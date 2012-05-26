@@ -11,8 +11,14 @@ text-align: center;
 color: white;
 }
 
-
-
+.post
+{
+font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
+font-size: 1.0em;
+line-height: 1.5em;
+color: #111;
+text-align: justify;
+}
 
 /*
 _______________________________
