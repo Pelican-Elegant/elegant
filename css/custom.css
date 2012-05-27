@@ -13,7 +13,6 @@ background-repeat:repeat;
 
 .topNavBar {
 background-color: black;
-height: 1.6em;
 color: #999;
 font-family: Consolas,monospace;
 font-size: 0.8em;
@@ -59,14 +58,20 @@ _______________________________
 Mobile version - preset code from cssgrid.net */
 
 @media handheld, only screen and (max-width: 767px) {
-.pageBackground {
-background-image:url(images/backgroundTexture.png);
-background-repeat:repeat;
-padding-right:8px;
-padding-left:8px;
+
+.pageForeground {
+-moz-box-shadow: 0 0 0px 0px #888;
+-webkit-box-shadow: 0 0 0px 0px#888;
+box-shadow: 0 0 0px 0px #888;
 }
 
+a.banner {
+background-image:url();
+}
 
+.topNavBar {
+text-align:center;
+}
 	.examplecontainer {}
 
 	body {}
