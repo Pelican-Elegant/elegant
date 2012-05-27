@@ -5,14 +5,28 @@ Desktop version layout - place your custom code here */
 body {
 
 }
+
+.pageBackground {
+background-image:url(images/background_texture_wood.png), url(images/binder.jpg);
+background-repeat:repeat, repeat-y;
+}
+
+.pageForeground {
+background-color: beige;
+border-radius:15px;
+moz-border-radius:15px;
+-moz-box-shadow: 0 0 5px 5px #888;
+-webkit-box-shadow: 0 0 5px 5px#888;
+box-shadow: 0 0 5px 5px #888;
+}
+
 .hmenu {
 background-color: #333;
 text-align: center;
 color: white;
 }
 
-.post
-{
+.post {
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 font-size: 1.0em;
 line-height: 1.5em;
