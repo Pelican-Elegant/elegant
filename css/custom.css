@@ -11,6 +11,16 @@ background-image:url(images/backgroundTexture.png);
 background-repeat:repeat;
 }
 
+.topNavBar {
+background-color: black;
+height: 1.6em;
+color: #999;
+font-family: Consolas,monospace;
+font-size: 0.8em;
+text-align:right;
+line-height:1.6em;
+}
+
 .pageForeground {
 background-color: beige;
 border-radius:15px;
