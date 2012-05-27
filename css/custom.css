@@ -28,10 +28,12 @@ background-size:cover;
 
 .hmenu {
 background-color: #141414;
-background-image:url(images/background_texture_wood.png);
-background-repeat:repeat;
 text-align: center;
-color: white;
+color: #999;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
+font-size: 1.1em;
 }
 
 .post {
