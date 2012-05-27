@@ -20,7 +20,7 @@ moz-border-radius:15px;
 box-shadow: 0 0 5px 5px #888;
 }
 
-.banner {
+a.banner {
 background-image:url(images/oncrashrebootbanner.jpg);
 background-repeat:no-repeat;
 background-size:cover;
