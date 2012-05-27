@@ -7,8 +7,8 @@ body {
 }
 
 .pageBackground {
-background-image:url(images/background_texture_wood.png), url(images/binder.jpg);
-background-repeat:repeat, repeat-y;
+background-image:url(images/backgroundTexture.png);
+background-repeat:repeat;
 }
 
 .pageForeground {
@@ -46,7 +46,7 @@ Mobile version - preset code from cssgrid.net */
 
 @media handheld, only screen and (max-width: 767px) {
 .pageBackground {
-background-image:url(images/background_texture_wood.png);
+background-image:url(images/backgroundTexture.png);
 background-repeat:repeat;
 padding-right:8px;
 padding-left:8px;
