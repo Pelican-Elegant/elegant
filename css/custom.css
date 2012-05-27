@@ -9,8 +9,6 @@ body {
 .pageBackground {
 background-image:url(images/background_texture_wood.png), url(images/binder.jpg);
 background-repeat:repeat, repeat-y;
-padding-right:8px;
-padding-left:8px;
 }
 
 .pageForeground {
