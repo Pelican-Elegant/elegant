@@ -29,7 +29,7 @@ moz-border-radius:15px;
 box-shadow: 0 0 5px 5px #888;
 }
 
-a.banner {
+.siteBanner {
 background-image:url(images/oncrashrebootbanner.jpg);
 background-repeat:no-repeat;
 background-size:cover;
@@ -60,13 +60,14 @@ Mobile version - preset code from cssgrid.net */
 @media handheld, only screen and (max-width: 767px) {
 
 .pageForeground {
+/* Do not show shadow on mobile */
 -moz-box-shadow: 0 0 0px 0px #888;
 -webkit-box-shadow: 0 0 0px 0px#888;
 box-shadow: 0 0 0px 0px #888;
 }
 
-a.banner {
-background-image:url();
+.siteBanner {
+margin-top:-16px;
 }
 
 .topNavBar {
@@ -75,9 +76,7 @@ text-align:center;
 	.examplecontainer {}
 
 	body {}
-	
 }
-
 
 /*
 _______________________________
@@ -91,5 +90,4 @@ Provide higher res assets for iPhone 4 - preset code from cssgrid.net */
 	background-size: 27px 28px;
 	}
 	*/
-
 }
