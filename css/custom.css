@@ -60,6 +60,10 @@ Mobile version - preset code from cssgrid.net */
 
 @media handheld, only screen and (max-width: 767px) {
 
+.topNavBar {
+text-align:center;
+}
+
 .pageForeground {
 /* Do not show shadow on mobile */
 -moz-box-shadow: 0 0 0px 0px #888;
@@ -69,10 +73,6 @@ box-shadow: 0 0 0px 0px #888;
 
 .siteBanner {
 margin-top:-16px;
-}
-
-.topNavBar {
-text-align:center;
 }
 	.examplecontainer {}
 
