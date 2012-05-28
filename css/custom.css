@@ -14,7 +14,7 @@ background-repeat:repeat;
 .topNavBar {
 background-color: black;
 color: #999;
-font-family: Consolas,monospace;
+font-family: Consolas,monospace, "Courier New";
 font-size: 0.8em;
 text-align:right;
 line-height:1.6em;
@@ -34,6 +34,13 @@ background-image:url(images/oncrashrebootbanner.jpg);
 background-repeat:no-repeat;
 background-size:cover;
 display:block;
+}
+
+#siteTitle{
+font-family:Consolas, monospace, "Courier New";
+font-size:3.0em;
+padding-left:0.5em;
+margin:0.5em 0px 0.5em 0px;
 }
 
 .hmenu {
@@ -73,6 +80,11 @@ box-shadow: 0 0 0px 0px #888;
 
 .siteBanner {
 margin-top:-16px;
+}
+
+#siteTitle{
+font-size:2.3em;
+padding-left:0px;
 }
 
 .hmenu {
