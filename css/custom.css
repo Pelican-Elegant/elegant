@@ -22,8 +22,8 @@ line-height:1.6em;
 
 .pageForeground {
 background-color: beige;
-border-radius:15px;
-moz-border-radius:15px;
+border-radius:7px;
+moz-border-radius:7px;
 -moz-box-shadow: 0 0 5px 5px #888;
 -webkit-box-shadow: 0 0 5px 5px#888;
 box-shadow: 0 0 5px 5px #888;
@@ -72,10 +72,8 @@ text-align:center;
 }
 
 .pageForeground {
-/* Do not show shadow on mobile */
--moz-box-shadow: 0 0 0px 0px #888;
--webkit-box-shadow: 0 0 0px 0px#888;
-box-shadow: 0 0 0px 0px #888;
+border-radius:0px;
+moz-border-radius:0px;
 }
 
 .siteBanner {
