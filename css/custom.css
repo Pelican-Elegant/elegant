@@ -40,6 +40,10 @@ padding-top: 2em;
 padding-bottom: 2em;
 }
 
+a.siteBanner:hover{
+text-decoration:none;
+}
+
 #siteTitle{
 font-family:Consolas, monospace, "Courier New";
 font-size:3.0em;
