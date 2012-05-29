@@ -34,13 +34,24 @@ background-image:url(images/oncrashrebootbanner.jpg);
 background-repeat:no-repeat;
 background-size:cover;
 display:block;
+padding-left: 2em;
+padding-top: 2em;
+padding-bottom: 2em;
 }
 
 #siteTitle{
 font-family:Consolas, monospace, "Courier New";
 font-size:3.0em;
-padding-left:0.5em;
-margin:0.5em 0px 0.5em 0px;
+margin:0 0 0 0;
+}
+
+#siteTagline {
+font-family:"Palatino Linotype", "MS Serif", "Times New Roman";
+color:black;
+font-style: italic;
+margin: 0em 0px 0em 0px;
+font-size: 1.5em;
+font-weight: normal;
 }
 
 .hmenu {
