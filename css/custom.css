@@ -80,6 +80,21 @@ line-height: 1.5;
 margin-left:0.5em;
 }
 
+.publicationDate {
+margin-top: -2.4em;
+margin-bottom: 0em;
+margin-left: 9.0em;
+display: block;
+background-color: whiteSmoke;
+background-image: url(images/foregroundTexture.png);
+margin-right: 0em;
+width: 12.2em;
+padding: 0em 0.5em 0em 0.5em;
+font-family: georgia;
+font-size: 1.0em;
+color: darkRed;
+}
+
 .post {
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 font-size: 1.0em;
