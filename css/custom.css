@@ -69,6 +69,17 @@ font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 font-size: 1.1em;
 }
 
+.articleTitle {
+border-top: 1px solid #CCC;
+border-bottom: 1px solid #CCC;
+font-size: 3.2em;
+color: black;
+font-weight: normal;
+font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
+line-height: 1.5;
+margin-left:0.5em;
+}
+
 .post {
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 font-size: 1.0em;
