@@ -73,16 +73,17 @@ font-size: 1.1em;
 border-top: 1px solid #CCC;
 border-bottom: 1px solid #CCC;
 font-size: 3.2em;
-color: black;
+color: darkRed;
 font-weight: normal;
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 line-height: 1.5;
 margin-left:0.5em;
+margin-bottom: 1.0em;
 }
 
 .publicationDate {
-margin-top: -2.4em;
-margin-bottom: 0em;
+margin-top: -4em;
+margin-bottom: 1.0em;
 margin-left: 9.0em;
 display: block;
 background-color: whiteSmoke;
@@ -92,7 +93,8 @@ width: 12.2em;
 padding: 0em 0.5em 0em 0.5em;
 font-family: georgia;
 font-size: 1.0em;
-color: darkRed;
+color: dimGray;
+font-style: normal;
 }
 
 .post {
