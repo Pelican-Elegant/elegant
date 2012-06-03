@@ -24,9 +24,6 @@ line-height:1.6em;
 background-color: whiteSmoke;
 border-radius:7px;
 moz-border-radius:7px;
--moz-box-shadow: 0 0 5px 5px #888;
--webkit-box-shadow: 0 0 5px 5px#888;
-box-shadow: 0 0 5px 5px #888;
 background-image:url(images/foregroundTexture.png);
 }
 
