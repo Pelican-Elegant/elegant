@@ -57,13 +57,19 @@ font-weight: normal;
 }
 
 .hmenu {
-background-color: #141414;
 text-align: center;
-color: #999;
-padding-top: 0.5em;
-padding-bottom: 0.5em;
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 font-size: 1.1em;
+background: url('images/noise.png'),linear-gradient(#E0E0E0, #CCC, #B0B0B0);
+background: url('images/noise.png'),-webkit-linear-gradient(#E0E0E0, #CCC, #B0B0B0);
+background: url('images/noise.png'),-moz-linear-gradient(#E0E0E0, #CCC, #B0B0B0); 
+border-top: 1px solid #F2F2F2;
+border-bottom: 1px solid #8C8C8C;
+padding-top: .35em;
+padding-bottom: .35em;
+text-shadow: #EBEBEB 0 1px;
+text-decoration: none;
+color:#444;
 }
 
 .articleTitle {
