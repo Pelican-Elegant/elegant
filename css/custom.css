@@ -162,3 +162,36 @@ Provide higher res assets for iPhone 4 - preset code from cssgrid.net */
 	}
 	*/
 }
+
+/* from http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media handheld, only screen and (max-width : 320px) {
+/* Styles */
+#siteTitle{
+font-size:1.8em;
+padding-left:0px;
+}
+
+#siteTagline {
+   font-size:0.9em;
+}
+
+.publicationDate {
+   margin-top:-2.5em;
+   margin-left:2em;
+}
+}

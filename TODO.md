@@ -1,3 +1,6 @@
+#### Menu
+User navigation drop down menu for smaller screens like in octopress.
+
 #### Logo
 1. First give url of log and then banner
 2. logo would be contained, banner cover
@@ -6,12 +9,6 @@
  
 ### Favicon
 1. Add favion
-
-### Heading
-1. Use verdena font
-1. Enclose heading in a box using upper and lower lines.
-2. show date in the lower line of the heading
-3. Add padding
 
 ### Links
 1. Use footnotes
@@ -80,3 +77,10 @@
 1. Choose proper font and size for the tag line.
 1. Choose proper font, size and color for the heading.
 2. Make sure your font is available to every user. Might have to use @font-face.
+
+### Heading
+1. Use verdena font
+1. Enclose heading in a box using upper and lower lines.
+2. show date in the lower line of the heading
+3. Add padding
+
