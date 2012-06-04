@@ -1,0 +1,74 @@
+* Favicon [0%]
+- [ ] Add favion
+
+* Page bakcground Texture [100%]
+- [X] http://www.photoshopstar.com/wp-content/uploads/2007/11/wood-texture-background.jpg
+- [X] http://wegraphics.net/demo/one/images/page-bg.jpg
+- [X] http://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-9/images/bglines.png
+- [X] http://subtlepatterns.com/?p=263
+- [X] http://subtlepatterns.com/?p=311
+- [X] http://subtlepatterns.com/?p=795
+- [X] http://subtlepatterns.com/?p=934
+- [X] Article and heading should appear inside rounded corners section.
+- [X] Choose a proper texture for background.
+
+* Nav bar (Not showstopper) [0%]
+- [ ] Link to contents of this page
+- [ ] About me
+- [ ] Subscribe options
+- [ ] use icons for rss, twitter and email subscribtion
+- [ ] in mobile mode it can be moved down
+- [ ] I can place these icons in single column so that in mobile mode they appear on the same line
+
+* Banner [100%]
+- [X] Make banner clickable
+- [X] add proper font and color for tag line
+- [X] use black color
+- [X] 20 px
+- [X] use italics
+- [X] Add padding to heading and tag line
+- [X] Disable underline when hover over text.
+- [X] Choose proper font and size for the tag line.
+- [X] Choose proper font, size and color for the heading.
+- [X] Make sure your font is available to every user. Might have to use @font-face.
+
+* Heading [100%]
+- [X] Use verdena font
+- [X] Enclose heading in a box using upper and lower lines.
+- [X] show date in the lower line of the heading
+- [X] Add padding
+
+* Logo [0%]
+- [ ] Should I throw in a logo?
+- [ ] First give url of log and then banner
+- [ ] logo would be contained, banner cover
+- [ ] set position
+- [ ] mobile position would be different
+
+* Horizontal Menu [33%]
+- [X] Use a background texture.
+- [X] Use transparency.
+- [ ] User navigation drop down menu for smaller screens like in octopress.
+- [ ] Might want to check [this style](http://www.chrisbrogan.com/blogging/) of menu for normal screens  
+- [ ] [Fabric texture](http://www.4templates.com/website-templates/879223847-WT00873/demo/#green) is also a good idea.
+- [ ] Check out [templates](http://www.freewebtemplates.com/premium-templates/blog/) for inspiration.
+
+* Article [100%]
+- [X] Use 7 column for article.
+- [X] Use two column for tag.
+- [X] Use 3 columns of prefix for date of article.
+- [X] Move article to the left. Center Article looks good but on smaller screen user has to scroll to get it centered. This will also give us space on the right for ads or other stuff.  
+
+* Links [0%]
+- [ ] Use footnotes
+- [ ] Checkout [Tumblr help](http://webapps.stackexchange.com/questions/17639/how-to-format-footnotes-with-markdown-on-tumblr).
+- [ ] How to use footnotes [Byword App Help](http://bywordapp.com/markdown/guide.html)
+- [ ] Maruku supports footnotes.
+- [ ] They will appear in superscript. Just likes tags in Jekyll default theme.
+- [ ] Other links can be of #B58900.
+
+* Footer [0%]
+- [ ] Short description about me.
+- [ ] Link to detailed about me. This should be the link of the splash page.
+- [ ] Subscribe through email and RSS.
+- [ ] Join me on twitter.
