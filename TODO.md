@@ -1,5 +1,8 @@
 #### Menu
-User navigation drop down menu for smaller screens like in octopress.
+1. User navigation drop down menu for smaller screens like in octopress.
+1. Might want to check [this style](http://www.chrisbrogan.com/blogging/) of menu for normal screens  
+1. [Fabric texture](http://www.4templates.com/website-templates/879223847-WT00873/demo/#green) is also a good idea.
+1. Check out [templates](http://www.freewebtemplates.com/premium-templates/blog/) for inspiration.
 
 #### Logo
 1. First give url of log and then banner
