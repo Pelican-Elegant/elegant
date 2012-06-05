@@ -67,7 +67,7 @@ a.siteBanner:hover{
    font-weight: normal;
    font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
    line-height: 1.5;
-   margin-bottom: 1.0em;
+   margin: 0.5em 0;
 }
 
 .publicationDate {
