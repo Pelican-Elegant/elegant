@@ -20,7 +20,8 @@
 - [ ] in mobile mode it can be moved down
 - [ ] I can place these icons in single column so that in mobile mode they appear on the same line
 
-* Banner [100%]
+* Banner [90%]
+- [ ] Change site title's color so that it looks good on white background
 - [X] Make banner clickable
 - [X] add proper font and color for tag line
 - [X] use black color
@@ -72,3 +73,7 @@
 - [ ] Link to detailed about me. This should be the link of the splash page.
 - [ ] Subscribe through email and RSS.
 - [ ] Join me on twitter.
+
+* Layout [0%]
+- [ ] Publication date should come on right hand side on top of tags
+
