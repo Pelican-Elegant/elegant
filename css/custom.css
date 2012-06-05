@@ -71,13 +71,7 @@ margin-bottom: 1.0em;
 }
 
 .publicationDate {
-margin-top: -4em;
-margin-bottom: 1.0em;
-display: block;
 background-color: white;
-margin-right: 0em;
-width: 12.2em;
-padding: 0em 0.5em 0em 0.5em;
 font-family: georgia;
 font-size: 1.0em;
 color: dimGray;
@@ -123,10 +117,6 @@ padding-left:0px;
 margin-top:-11px;
 }
 
-.publicationDate {
-   margin-top:-2.5em;
-   margin-left:5em;
-}
 
 	.examplecontainer {}
 
@@ -174,8 +164,4 @@ padding-left:0px;
    font-size:0.9em;
 }
 
-.publicationDate {
-   margin-top:-2.5em;
-   margin-left:2em;
-}
 }
