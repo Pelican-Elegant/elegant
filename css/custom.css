@@ -78,6 +78,48 @@ color: dimGray;
 font-style: normal;
 }
 
+.tagsHeading {
+   background-color: white;
+   font-family: georgia;
+   font-sze: 1.0em;
+   color: #444;
+   font-style: normal;
+   padding-top: 0.313em;
+}
+
+.tagsHeading a {
+   color:#444;
+   text-decoration: none;
+}
+
+.tagBox {
+   list-style: none;
+   margin: 0;
+   padding: 0.313em 0;
+   overflow: hidden;
+}
+
+.tagBox li {
+   line-height: 1.75em;
+   font-size: 0.9em;
+margin-left: 1.25em;
+margin-bottom: 0.3em;
+}
+
+.tagBox a {
+   padding: 0.28em 0.375em;
+   margin: 0.125em;
+   background: #EEE;
+   color: #444;
+   border-radius: 0.188em;
+   text-decoration: none;
+}
+
+.tagBox a span {
+   vertical-align: super;
+   font-size: 0.8em;
+}
+
 .post {
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 font-size: 1.0em;
