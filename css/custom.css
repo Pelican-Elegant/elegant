@@ -7,8 +7,7 @@ body {
 }
 
 .pageBackground {
-background-image:url(images/woodTexture.jpg);
-background-repeat:repeat;
+background-color:white;
 }
 
 .topNavBar {
@@ -21,18 +20,11 @@ line-height:1.6em;
 }
 
 .pageForeground {
-background-color: whiteSmoke;
-border-radius:7px;
-moz-border-radius:7px;
-background-image:url(images/foregroundTexture.png);
+background-color: white;
 }
 
 .siteBanner {
-background-image:url(images/oncrashrebootbanner.jpg);
-background-repeat:no-repeat;
-background-size:cover;
 display:block;
-padding-left: 2em;
 padding-top: 2em;
 padding-bottom: 2em;
 }
@@ -60,10 +52,7 @@ font-weight: normal;
 text-align: center;
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 font-size: 1.1em;
-background: url('images/noise.png'),linear-gradient(#E0E0E0, #CCC, #B0B0B0);
-background: url('images/noise.png'),-webkit-linear-gradient(#E0E0E0, #CCC, #B0B0B0);
-background: url('images/noise.png'),-moz-linear-gradient(#E0E0E0, #CCC, #B0B0B0); 
-border-top: 1px solid #F2F2F2;
+border-top: 1px solid #8C8C8C;
 border-bottom: 1px solid #8C8C8C;
 padding-top: .35em;
 padding-bottom: .35em;
@@ -73,24 +62,19 @@ color:#444;
 }
 
 .articleTitle {
-border-top: 1px solid #CCC;
-border-bottom: 1px solid #CCC;
 font-size: 3.2em;
 color: darkRed;
 font-weight: normal;
 font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
 line-height: 1.5;
-margin-left:0.5em;
 margin-bottom: 1.0em;
 }
 
 .publicationDate {
 margin-top: -4em;
 margin-bottom: 1.0em;
-margin-left: 9.0em;
 display: block;
-background-color: whiteSmoke;
-background-image: url(images/foregroundTexture.png);
+background-color: white;
 margin-right: 0em;
 width: 12.2em;
 padding: 0em 0.5em 0em 0.5em;
