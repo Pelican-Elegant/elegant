@@ -54,11 +54,11 @@ a.siteBanner:hover{
    font-size: 1.1em;
    border-top: 1px solid #8C8C8C;
    border-bottom: 1px solid #8C8C8C;
-   padding-top: .35em;
-   padding-bottom: .35em;
    text-shadow: #EBEBEB 0 1px;
    text-decoration: none;
    color:#444;
+   overflow: hidden;
+   padding: 0.35em;
 }
 
 .articleTitle {
