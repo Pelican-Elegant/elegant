@@ -29,14 +29,11 @@ body {
    padding-bottom: 2em;
 }
 
-a.siteBanner:hover{
-   text-decoration:none;
-}
-
 #siteTitle{
    font-family:Consolas, monospace, "Courier New";
    font-size:3.0em;
    margin:0 0 0 0;
+   text-decoration: none;
 }
 
 #siteTagline {
