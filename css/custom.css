@@ -19,6 +19,12 @@ body {
    text-transform:uppercase;
 }
 
+.topNavMobile {
+   border-bottom: 1px solid #8C8C8C;
+   text-decoration: none;
+   text-align: center;
+}
+
 a#twitterNavBar {
    background-image:url(images/twitterNormal.png);
    text-decoration:none;
