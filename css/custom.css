@@ -187,7 +187,7 @@ Mobile version - preset code from cssgrid.net */
       padding-right: 0.2em;
    }
 
-   #siteTitle{
+   a#siteTitle{
       font-size:2.3em;
       padding-left:0px;
    }
@@ -240,7 +240,7 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media handheld, only screen and (max-width : 320px) {
 /* Styles */
-   #siteTitle{
+   a#siteTitle{
       font-size:1.8em;
       padding-left:0px;
    }
