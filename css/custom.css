@@ -29,11 +29,16 @@ body {
    padding-bottom: 2em;
 }
 
-#siteTitle{
+a#siteTitle{
    font-family:Consolas, monospace, "Courier New";
    font-size:3.0em;
    margin:0 0 0 0;
    text-decoration: none;
+   color: #0B1963;
+}
+
+a#siteTitle:hover{
+   color: #610B0B;
 }
 
 #siteTagline {
