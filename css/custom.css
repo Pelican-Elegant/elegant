@@ -16,7 +16,43 @@ body {
    font-family: Consolas,monospace, "Courier New";
    font-size: 0.8em;
    text-align:right;
-   line-height:1.6em;
+   text-transform:uppercase;
+}
+
+a#twitterNavBar {
+   background-image:url(images/twitterNormal.png);
+   text-decoration:none;
+   background-repeat:no-repeat;
+   font-size: 0em;
+   margin: auto;
+}
+
+a#twitterNavBar:hover {
+   background-image:url(images/twitterHover.png);
+}
+
+a#githubNavBar {
+   background-image:url(images/githubNormal.png);
+   text-decoration:none;
+   background-repeat:no-repeat;
+   font-size: 0em;
+   margin: auto;
+}
+
+a#githubNavBar:hover {
+   background-image:url(images/githubHover.png);
+}
+
+a#rssNavBar {
+   background-image:url(images/rssNormal.png);
+   text-decoration:none;
+   background-repeat:no-repeat;
+   font-size: 0em;
+   margin: auto;
+}
+
+a#rssNavBar:hover {
+   background-image:url(images/rssHover.png);
 }
 
 .pageForeground {
@@ -139,11 +175,7 @@ _______________________________
 Mobile version - preset code from cssgrid.net */
 
 @media handheld, only screen and (max-width: 767px) {
-
-   .topNavBar {
-      text-align:center;
-   }
-
+   
    .pageForeground {
       border-radius:0px;
       moz-border-radius:0px;
