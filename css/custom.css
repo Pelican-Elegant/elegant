@@ -49,9 +49,9 @@ a.siteBanner:hover{
 }
 
 .hmenu {
-   text-align: right;
+   text-align: left;
    font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif;
-   font-size: 0.9em;
+   font-size: 1.1em;
    border-top: 1px solid #8C8C8C;
    border-bottom: 1px solid #8C8C8C;
    text-shadow: #EBEBEB 0 1px;
