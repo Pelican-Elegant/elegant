@@ -61,6 +61,10 @@ a.siteBanner:hover{
    padding: 0.35em;
 }
 
+.searchBox {
+   text-align: right;
+}
+
 .articleTitle {
    font-size: 3.2em;
    color: darkRed;
@@ -159,6 +163,11 @@ Mobile version - preset code from cssgrid.net */
       margin-top:-11px;
       text-align: center;
    }
+
+
+.searchBox {
+   text-align: center;
+}
 
 
    .examplecontainer {}
