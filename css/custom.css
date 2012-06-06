@@ -198,9 +198,9 @@ Mobile version - preset code from cssgrid.net */
    }
 
 
-.searchBox {
-   text-align: center;
-}
+   .searchBox {
+      text-align: center;
+   }
 
 
    .examplecontainer {}
@@ -248,5 +248,4 @@ and (min-width : 321px) {
    #siteTagline {
       font-size:0.9em;
    }
-
 }
