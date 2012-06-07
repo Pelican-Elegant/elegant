@@ -70,6 +70,17 @@ a#rssNavBar:hover {
    background-position: -5px -97px ;
 }
 
+a#contentsNavBar {
+   margin:auto;
+   padding-right: 1em;
+   text-decoration: none;
+   color: #D1D1D1;
+}
+
+a#contentsNavBar:hover {
+   color: darkGoldenRod;
+}
+
 .pageForeground {
    background-color: white;
 }
