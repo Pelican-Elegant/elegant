@@ -81,6 +81,14 @@ a#contentsNavBar:hover {
    color: darkGoldenRod;
 }
 
+a.topNavElementsMobile {
+   color: black;
+}
+
+a.topNavElementsMobile:hover {
+   color: darkGoldenRod;
+}
+
 .pageForeground {
    background-color: white;
 }
