@@ -26,7 +26,10 @@ body {
 }
 
 a#twitterNavBar {
-   background-image:url(images/twitterNormal.png);
+   background: url(images/socialIcons.png) no-repeat;
+   background-position: -1px -129px ;
+   width: 31px;
+   height: 22px;
    text-decoration:none;
    background-repeat:no-repeat;
    font-size: 0em;
@@ -34,11 +37,14 @@ a#twitterNavBar {
 }
 
 a#twitterNavBar:hover {
-   background-image:url(images/twitterHover.png);
+   background-position: -2px -165px ;
 }
 
 a#githubNavBar {
-   background-image:url(images/githubNormal.png);
+   background-image:url(images/socialIcons.png);
+   background-position: 0 0;
+   width: 28px;
+   height: 22px;
    text-decoration:none;
    background-repeat:no-repeat;
    font-size: 0em;
@@ -46,11 +52,14 @@ a#githubNavBar {
 }
 
 a#githubNavBar:hover {
-   background-image:url(images/githubHover.png);
+   background-position: 0 -29px ;
 }
 
 a#rssNavBar {
-   background-image:url(images/rssNormal.png);
+   background: url(images/socialIcons.png) no-repeat;
+   background-position: -6px -62px ;
+   width: 22px;
+   height: 22px;
    text-decoration:none;
    background-repeat:no-repeat;
    font-size: 0em;
@@ -58,7 +67,7 @@ a#rssNavBar {
 }
 
 a#rssNavBar:hover {
-   background-image:url(images/rssHover.png);
+   background-position: -5px -97px ;
 }
 
 .pageForeground {
