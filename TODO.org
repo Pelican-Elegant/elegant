@@ -12,14 +12,14 @@
 - [X] Article and heading should appear inside rounded corners section.
 - [X] Choose a proper texture for background.
 
-* Nav bar (Not showstopper) [75%]
+* Nav bar (Not showstopper) [100%]
 - [X] Link to contents of this page
 - [X] About me
 - [X] Subscribe options
 - [X] use icons for rss, twitter and email subscribtion
 - [X] in mobile mode it can be moved down
 - [X] I can place these icons in single column so that in mobile mode they appear on the same line
-- [ ] Use sprite images
+- [X] Use sprite images
 
 * Banner [100%]
 - [X] Change site title's color so that it looks good on white background
