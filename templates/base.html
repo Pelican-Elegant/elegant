@@ -2,6 +2,7 @@
 <html>
     <head>
         {% block head %}
+            <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
             <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
         {% endblock %}
     </head>
