@@ -7,8 +7,16 @@
         {% endblock %}
     </head>
     <body>
+        <div class="row-fluid">
+            <div class="span10 offset2">
+                <header>
+                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                {% if SITESUBTITLE %}<h1><small>{{ SITESUBTITLE }}</small></h1>{% endif %}
+                </header>
+            </div>
 
-        {% block content %}
-        {% endblock content %}
+            {% block content %}
+            {% endblock content %}
+        </div>
     </body>
 </html>
