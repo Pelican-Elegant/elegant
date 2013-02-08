@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+    {{ article.title }} - {{ super() }}
+{% endblock title %}
+
 {% block content %}
 {{ super() }}
 {{ article.title }}
