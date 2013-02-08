@@ -1,6 +1,19 @@
-{% extends "!simple/base.html" %}
-
+<!DOCTYPE html>
+<html>
+<head>
 {% block head %}
-{{ super() }}
        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
 {% endblock %}
+</head>
+<body>
+{% block body %}
+{% endblock %}
+
+{% block content %}
+<header id="banner" class="body">
+                <h1>hello <a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+                </header><!-- /#banner -->
+                <p>ada ada </p>
+{% endblock %}
+</body>
+</html>

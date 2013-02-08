@@ -1,6 +1,7 @@
-{% extends "!simple/index.html" %}
+{% extends "base.html" %}
 
 {% block content %}
+{{ super() }}
 <h2>All articles</h2>
        {% for article in articles | sort(attribute='title') %}
         <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
