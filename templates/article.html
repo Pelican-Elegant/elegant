@@ -1,11 +1,48 @@
 {% extends "base.html" %}
 
 {% block title %}
-    {{ article.title }} - {{ super() }}
+hell {{ article.title }} - {{ super() }}
 {% endblock title %}
 
 {% block content %}
-{{ super() }}
-{{ article.title }}
-{{ article.content }}
+<div class="row-fluid">
+    <header class="page_header span7 offset2">
+    <h1> {{ article.title }} </h1>
+    </header>
+</div>
+<div class="row-fluid">
+    <div class="span7 offset2">
+        {{ article.content }}
+    </div>
+    <div class="span3">
+        <div class="row-fluid">
+            <div class="span12">
+                <p>
+                {% set day = article.date.strftime('%d')|int %}
+                {% set suffix = ['st', 'nd', 'rd', 'th'] %}
+                {{ article.date.strftime('%b %d') }}
+                    {%- if 4 <= day <= 20 or 24 <= day <= 30 -%} {{ suffix[3] }}
+                    {%- elif day % 10 - 1 == 0 -%} {{ suffix[0] }} 
+                    {%- elif day % 10 - 1 == 1 -%} {{ suffix[1] }} 
+                    {%- elif day % 10 - 1 == 2 -%} {{ suffix[2] }} 
+                    {%- endif -%}
+                {{ article.date.strftime(', %Y') }}    
+                </p>
+                <p>
+                Published by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> 
+                </p>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span12">
+                {% if article.tags %}<p>Tags:
+                <ul> 
+                    {% for tag in article.tags %}<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>{% endfor %}
+                </ul>
+                </p>{% endif %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
