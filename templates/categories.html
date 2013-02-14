@@ -16,7 +16,16 @@ All Categories - {{ super() }}
     <div class="span7 offset3">
         <ul>
             {% for category, articles in categories %}
-            <li>{{ articles|count }} articles in <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+            <li>
+            {% set num = articles|count %}
+            {{ num }} 
+            {% if num > 1 %}
+            articles 
+            {% else %}
+            article
+            {% endif %}
+            filed in <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a>
+            </li>
             {% endfor %}
         </ul>
     </div>

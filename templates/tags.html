@@ -16,7 +16,16 @@ All Tags - {{ super() }}
     <div class="span7 offset3">
         <ul>
             {% for tag, articles in tags %}
-            <li>{{ articles|count }} articles in <a href="{{ SITEURL }}/{{ tag.url }}">{{  }}</a></li>
+            <li>
+            {% set num = articles|count %}
+            {{ num }} 
+            {% if num > 1 %}
+            articles are 
+            {% else %}
+            article is
+            {% endif %}
+            tagged <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            </li>
             {% endfor %}
         </ul>
     </div>
