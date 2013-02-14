@@ -1,82 +1,82 @@
+<!DOCTYPE HTML>
 {% extends "base.html" %}
 
-{% block title %}
-All Tags - {{ super() }}
-{% endblock title %}
+{% block head %}
+{{ super() }}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-{% block content %}
 <script>
-(function($) {
+    (function ($) {
+        // custom css expression for a case-insensitive contains()
+        jQuery.expr[':'].Contains = function(a,i,m){
+            return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+        };
 
-    $('.filterinput').keyup(function() {
-        var a = $(this).val();
-        if (a.length > 2) {
-            // this finds all links in the list that contain the input,
-            // and hide the ones not containing the input while showing the ones that do
-            var containing = $('#list li').filter(function () {
-                var regex = new RegExp('\\b' + a, 'i');
-                return regex.test($('a', this).text());
-            }).slideDown();
-            $('#list li').not(containing).slideUp();
-        } else {
-            $('#list li').slideDown();
+        function listFilter() {
+
+            $('.filterinput')
+            .change( function () {
+                var filter = $(this).val();
+                if(filter) {
+                    // this finds all links in a list that contain the input,
+                    // and hide the ones not containing the input while showing the ones that do
+                    $('#list-of-tags').find("a:not(:Contains(" + filter + "))").parent().slideUp();
+                    $('#list-of-tags').find("a:Contains(" + filter + ")").parent().slideDown();
+                    } else {
+                    $('#list-of-tags').find("li").slideDown();
+                }
+                return false;
+            })
+            .keyup( function () {
+                // fire the above change event after every letter
+                $(this).change();
+            });
         }
-        return false;
-    })
 
-}(jQuery));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// custom css expression for a case-insensitive contains()
-jQuery.expr[':'].Contains = function(a, i, m) {
-    return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
-};
+        //ondomready
+        $(function () {
+            listFilter($());
+        });
+    }(jQuery));
 
 </script>
-<div class="row-fluid">
-    <header class="page_header span7 offset3">
-    <h1>All Tags</h1>
-    </header>
-</div>
 
+{% endblock head %}
 
-<div class="row-fluid">
-    <div class="span7 offset3">
-        <form class="form-search">
-            <input type="text" class="filterinput">
-        </form>
-        <ul id="list">
-            {% for tag, articles in tags %}
-            <li>
-            {% set num = articles|count %}
-            {{ num }} 
-            {% if num > 1 %}
-            articles are 
-            {% else %}
-            article is
-            {% endif %}
-            tagged <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
+{% block content %}
+
+<h1 id="header">List of countries</h1>
+<form class="form-search">
+    <input type="text" class="input-medium search-query filterinput">
+</form>
+<ul id="list-of-tags">
+    <li><a href="#/australia/">Australia</a></li>
+    <li><a href="#/austria/">Austria</a></li>
+    <li><a href="#/belgium/">Belgium</a></li>
+    <li><a href="#/brazil/">Brazil</a></li>
+    <li><a href="#/canada/">Canada</a></li>
+    <li><a href="#/denmark/">Denmark</a></li>
+    <li><a href="#/finland/">Finland</a></li>
+    <li><a href="#/france/">France</a></li>
+    <li><a href="#/germany/">Germany</a></li>
+    <li><a href="#/greece/">Greece</a></li>
+    <li><a href="#/ireland/">Ireland</a></li>
+    <li><a href="#/israel/">Israel</a></li>
+    <li><a href="#/italy/">Italy</a></li>
+    <li><a href="#/japan/">Japan</a></li>
+    <li><a href="#/luxembourg/">Luxembourg</a></li>
+    <li><a href="#/mexico/">Mexico</a></li>
+    <li><a href="#/netherlands/">Netherlands</a></li>
+    <li><a href="#/norway/">Norway</a></li>
+    <li><a href="#/poland/">Poland</a></li>
+    <li><a href="#/portugal/">Portugal</a></li>
+    <li><a href="#/russia/">Russia</a></li>
+    <li><a href="#/spain/">Spain</a></li>
+    <li><a href="#/sweden/">Sweden</a></li>
+    <li><a href="#/switzerland/">Switzerland</a></li>
+    <li><a href="#/turkey/">Turkey</a></li>
+    <li><a href="#/united-kingdom/">United Kingdom</a></li>
+    <li><a href="#/united-states/">United States</a></li>
+</ul>
+
 {% endblock content %}
