@@ -15,10 +15,10 @@ All Categories - {{ super() }}
 <div class="row-fluid">
     <div class="span7 offset3">
         <ul>
-{% for category, articles in categories %}
-<li>{{ articles|count }} articles in <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
-{% endfor %}
-</ul>
+            {% for category, articles in categories %}
+            <li>{{ articles|count }} articles in <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
 {% endblock content %}
