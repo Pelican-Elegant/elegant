@@ -21,11 +21,11 @@ hell {{ article.title }} - {{ super() }}
                 {% set day = article.date.strftime('%d')|int %}
                 {% set suffix = ['st', 'nd', 'rd', 'th'] %}
                 {{ article.date.strftime('%b %d') }}
-                    {%- if 4 <= day <= 20 or 24 <= day <= 30 -%} {{ suffix[3] }}
-                    {%- elif day % 10 - 1 == 0 -%} {{ suffix[0] }} 
-                    {%- elif day % 10 - 1 == 1 -%} {{ suffix[1] }} 
-                    {%- elif day % 10 - 1 == 2 -%} {{ suffix[2] }} 
-                    {%- endif -%}
+                {%- if 4 <= day <= 20 or 24 <= day <= 30 -%} {{ suffix[3] }}
+                {%- elif day % 10 - 1 == 0 -%} {{ suffix[0] }} 
+                {%- elif day % 10 - 1 == 1 -%} {{ suffix[1] }} 
+                {%- elif day % 10 - 1 == 2 -%} {{ suffix[2] }} 
+                {%- endif -%}
                 {{ article.date.strftime(', %Y') }}    
                 </p>
                 <p>
