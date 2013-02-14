@@ -42,6 +42,11 @@ hell {{ article.title }} - {{ super() }}
                 <p>
                 Published by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> 
                 </p>
+                {% if article.modified %} 
+                <p>Updated on {{ article.modified }}
+                </p>
+                {% endif %}
+
             </div>
         </div>
 
