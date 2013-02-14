@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+All Tags - {{ super() }}
+{% endblock title %}
+
+{% block content %}
+<div class="row-fluid">
+    <header class="page_header span7 offset3">
+    <h1>All Tags</h1>
+    </header>
+</div>
+
+
+<div class="row-fluid">
+    <div class="span7 offset3">
+        <ul>
+            {% for tag, articles in tags %}
+            <li>{{ articles|count }} articles in <a href="{{ SITEURL }}/{{ tag.url }}">{{  }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock content %}
