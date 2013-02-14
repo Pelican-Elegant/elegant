@@ -5,6 +5,13 @@ All Categories - {{ super() }}
 {% endblock title %}
 
 {% block content %}
+<script  language="javascript" type="text/javascript">
+    function uncollapse() {
+            $(window.location.hash).collapse({
+                toggle: true
+            })
+    }
+</script>
 <div class="row-fluid">
     <header class="page_header span7 offset3">
     <h1>All Categories</h1>
@@ -44,4 +51,7 @@ All Categories - {{ super() }}
         </div>
     </div>
 </div>
+<script type="text/javascript" language="JavaScript">
+    uncollapse(); 
+</script>
 {% endblock content %}
