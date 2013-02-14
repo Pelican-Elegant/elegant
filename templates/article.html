@@ -36,11 +36,18 @@ hell {{ article.title }} - {{ super() }}
 
         <div class="row-fluid">
             <div class="span12">
-                {% if article.tags %}<p>Tags:
+                {% if article.tags %}
+                <p>Tags:
                 <ul> 
-                    {% for tag in article.tags %}<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>{% endfor %}
+                    {% for tag in article.tags %}
+                    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}
+                    {% for aTag, tagged_articles in tags if aTag == tag %}
+                    {{ tagged_articles|count }}
+                    {% endfor %}</a></li>
+                    {% endfor %}
                 </ul>
-                </p>{% endif %}
+                </p>
+                {% endif %}
             </div>
         </div>
     </div>
