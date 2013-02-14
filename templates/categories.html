@@ -31,7 +31,12 @@ All Categories - {{ super() }}
                 </div>
                 <div id="collapse{{ category|replace(' ', '_')|e }}" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        Anim pariatur cliche...
+                        <ul>
+                            {% for article in articles %} 
+                            {% set day = article.date.strftime('%d')|int %}
+                            <li>{{ article.date.strftime('%b') }} {{ day }}{{ article.date.strftime(', %Y') }} <a href="{{ article.url }}">{{ article.title }}</a></li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>
