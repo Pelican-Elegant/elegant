@@ -7,7 +7,7 @@ hell {{ article.title }} - {{ super() }}
 {% block content %}
 <div class="row-fluid">
     <header class="page_header span7 offset2">
-    <h1> {{ article.title }} </h1>
+    <h1> {{ article.title }} <small> {%if article.subtext %} {{ article.subtext }} {% endif %} </small></h1>
     </header>
 </div>
 <div class="row-fluid">
