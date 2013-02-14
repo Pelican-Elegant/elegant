@@ -14,20 +14,29 @@ All Categories - {{ super() }}
 
 <div class="row-fluid">
     <div class="span7 offset3">
-        <ul>
+        <div class="accordion" id="accordion2">
             {% for category, articles in categories %}
-            <li>
-            {% set num = articles|count %}
-            {{ num }} 
-            {% if num > 1 %}
-            articles 
-            {% else %}
-            article
-            {% endif %}
-            filed in <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a>
-            </li>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{{ category|replace(' ', '_')|e }}">
+                        {% set num = articles|count %}
+                        {{ num }} 
+                        {% if num > 1 %}
+                        articles 
+                        {% else %}
+                        article
+                        {% endif %}
+                        filed in {{ category }}
+                    </a>
+                </div>
+                <div id="collapse{{ category|replace(' ', '_')|e }}" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        Anim pariatur cliche...
+                    </div>
+                </div>
+            </div>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 </div>
 {% endblock content %}
