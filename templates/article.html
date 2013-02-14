@@ -41,9 +41,9 @@ hell {{ article.title }} - {{ super() }}
                 <ul> 
                     {% for tag in article.tags %}
                     <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}
-                    {% for aTag, tagged_articles in tags if aTag == tag %}
-                    {{ tagged_articles|count }}
-                    {% endfor %}</a></li>
+                        {% for aTag, tagged_articles in tags if aTag == tag %}
+                        {{ tagged_articles|count }}
+                        {% endfor %}</a></li>
                     {% endfor %}
                 </ul>
                 </p>
