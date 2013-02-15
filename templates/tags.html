@@ -43,40 +43,31 @@
 
 {% endblock head %}
 
+{% block title %}
+All Tags - {{ super() }}
+{% endblock title %}
+
 {% block content %}
 
-<h1 id="header">List of countries</h1>
-<form class="form-search">
-    <input type="text" class="input-medium search-query filterinput">
-</form>
-<ul id="list-of-tags">
-    <li><a href="#/australia/">Australia</a></li>
-    <li><a href="#/austria/">Austria</a></li>
-    <li><a href="#/belgium/">Belgium</a></li>
-    <li><a href="#/brazil/">Brazil</a></li>
-    <li><a href="#/canada/">Canada</a></li>
-    <li><a href="#/denmark/">Denmark</a></li>
-    <li><a href="#/finland/">Finland</a></li>
-    <li><a href="#/france/">France</a></li>
-    <li><a href="#/germany/">Germany</a></li>
-    <li><a href="#/greece/">Greece</a></li>
-    <li><a href="#/ireland/">Ireland</a></li>
-    <li><a href="#/israel/">Israel</a></li>
-    <li><a href="#/italy/">Italy</a></li>
-    <li><a href="#/japan/">Japan</a></li>
-    <li><a href="#/luxembourg/">Luxembourg</a></li>
-    <li><a href="#/mexico/">Mexico</a></li>
-    <li><a href="#/netherlands/">Netherlands</a></li>
-    <li><a href="#/norway/">Norway</a></li>
-    <li><a href="#/poland/">Poland</a></li>
-    <li><a href="#/portugal/">Portugal</a></li>
-    <li><a href="#/russia/">Russia</a></li>
-    <li><a href="#/spain/">Spain</a></li>
-    <li><a href="#/sweden/">Sweden</a></li>
-    <li><a href="#/switzerland/">Switzerland</a></li>
-    <li><a href="#/turkey/">Turkey</a></li>
-    <li><a href="#/united-kingdom/">United Kingdom</a></li>
-    <li><a href="#/united-states/">United States</a></li>
-</ul>
+<div class="row-fluid">
+    <header class="page_header span7 offset3">
+    <h1>All Tags</h1>
+    </header>
+</div>
+<div class="row-fluid">
+    <div class="span7 offset3">
+        <form class="form-search">
+            <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
+        </form>
+        <ul id="list-of-tags">
+            {% for tag, articles in tags %}
+            <li>
+            {% set num = articles|count %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} {{ num }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 
 {% endblock content %}
