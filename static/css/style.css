@@ -28,3 +28,13 @@
     text-align:justify;
     max-width:35em;
 }
+
+.list-of-categories span {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+a.list-of-categories  {
+    text-decoration:none;
+}
+

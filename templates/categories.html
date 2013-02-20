@@ -25,15 +25,9 @@ All Categories - {{ super() }}
             {% for category, articles in categories %}
             <div class="accordion-group">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#{{ category|replace(' ', '-')|e }}-ref">
+                    <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category|replace(' ', '-')|e }}-ref">
                         {% set num = articles|count %}
-                        {{ num }} 
-                        {% if num > 1 %}
-                        articles 
-                        {% else %}
-                        article
-                        {% endif %}
-                        filed in {{ category }}
+                        {{ category }}<span>{{ num }}</span>
                     </a>
                 </div>
                 <div id="{{ category|replace(' ', '-')|e }}-ref" class="accordion-body collapse">
