@@ -63,10 +63,24 @@ All Tags - {{ super() }}
             {% for tag, articles in tags %}
             <li>
             {% set num = articles|count %}
-            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}<span>{{ num }}</span></a>
+            <a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}<span>{{ num }}</span></a>
             </li>
             {% endfor %}
         </ul>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span7 offset3">
+        {% for tag, articles in tags %}
+        <h2 id="{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}</h2>
+        <ul>
+            {% for article in articles %} 
+            <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+
+        {% endfor %}
     </div>
 </div>
 
