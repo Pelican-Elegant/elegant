@@ -20,10 +20,10 @@
                 if(filter) {
                     // this finds all links in a list that contain the input,
                     // and hide the ones not containing the input while showing the ones that do
-                    $('#list-of-tags').find("a:not(:Contains(" + filter + "))").parent().hide('slow');
-                    $('#list-of-tags').find("a:Contains(" + filter + ")").parent().show('slow');
+                    $('#list-of-tags').find("a:not(:Contains(" + filter + "))").parent().hide('fast');
+                    $('#list-of-tags').find("a:Contains(" + filter + ")").parent().show('fast');
                     } else {
-                    $('#list-of-tags').find("li").show('slow');
+                    $('#list-of-tags').find("li").show('fast');
                 }
                 return false;
             })
