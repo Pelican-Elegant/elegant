@@ -63,7 +63,7 @@ All Tags - {{ super() }}
             {% for tag, articles in tags %}
             <li>
             {% set num = articles|count %}
-            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} {{ num }}</a>
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}<span>{{ num }}</span></a>
             </li>
             {% endfor %}
         </ul>

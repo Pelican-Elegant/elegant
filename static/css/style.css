@@ -1,0 +1,25 @@
+#list-of-tags {
+    list-style:none;
+    margin:0;
+    padding:5px 0 ;
+    overflow:hidden;
+}
+
+#list-of-tags li {
+    line-height:28px;
+    float:left;
+}
+
+#list-of-tags a {
+    padding: 3px 6px;
+    margin: 2px;
+    color: #222;
+    background:#EEE;
+    border-radius: 3px;
+    text-decoration:none;
+}
+
+#list-of-tags a span {
+    vertical-align: super;
+    font-size: 0.8em;
+}
