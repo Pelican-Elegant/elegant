@@ -23,3 +23,8 @@
     vertical-align: super;
     font-size: 0.8em;
 }
+
+.article-content {
+    text-align:justify;
+    max-width:35em;
+}
