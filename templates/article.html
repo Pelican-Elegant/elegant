@@ -56,7 +56,7 @@
                 {{ article.date.strftime(', %Y') }}    
                 </p>
                 <p>
-                Published by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> in <a href="{{ SITEURL }}/categories.html#collapse{{ category|replace(' ', '_')|e }}" "{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> 
+                Published by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> in <a href="{{ SITEURL }}/categories.html#{{ category|replace(' ', '-')|e }}-ref">{{ article.category }}</a> 
                 </p>
                 {% if article.modified %} 
                 <p>Updated on {{ article.modified }}
