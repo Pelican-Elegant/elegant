@@ -28,7 +28,7 @@
             <div class="span12">
                 {% if article.tags %}
                 <h4>Tags</h4>
-                <ul id="list-of-tags"> 
+                <ul class="list-of-tags"> 
                     {% for tag in article.tags %}
                     <li><a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}
                         {% for aTag, tagged_articles in tags if aTag == tag %}

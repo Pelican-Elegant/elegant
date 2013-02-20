@@ -20,10 +20,10 @@
                 if(filter) {
                     // this finds all links in a list that contain the input,
                     // and hide the ones not containing the input while showing the ones that do
-                    $('#list-of-tags').find("a:not(:Contains(" + filter + "))").parent().hide();
-                    $('#list-of-tags').find("a:Contains(" + filter + ")").parent().show();
+                    $('.list-of-tags').find("a:not(:Contains(" + filter + "))").parent().hide();
+                    $('.list-of-tags').find("a:Contains(" + filter + ")").parent().show();
                     } else {
-                    $('#list-of-tags').find("li").show();
+                    $('.list-of-tags').find("li").show();
                 }
                 return false;
             })
@@ -59,7 +59,7 @@ All Tags - {{ super() }}
         <form class="form-search">
             <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
         </form>
-        <ul id="list-of-tags">
+        <ul class="list-of-tags">
             {% for tag, articles in tags %}
             <li>
             {% set num = articles|count %}
