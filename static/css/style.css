@@ -26,9 +26,30 @@
 
 .article-content {
     text-align:justify;
-    max-width:35em;
+    max-width:50em;
 }
 
+.article-content p{
+    font-family: Scala, Georgia, "DejaVu Serif", "Times New Roman", Times, serif; 
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.article-content blockquote {
+    padding: 5px 0px 5px 20px;
+    margin: 20px 0px 20px 0px;
+    border-left: 5px solid rgb(100,100,100);
+}
+
+.article-content blockquote p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
 .list-of-categories span {
     vertical-align: super;
     font-size: 0.8em;
