@@ -3,11 +3,13 @@
     margin:0;
     padding:5px 0 ;
     overflow:hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .list-of-tags li {
     line-height:28px;
     float:left;
+    margin:0px;
 }
 
 .list-of-tags a {
@@ -44,7 +46,7 @@
 }
 
 .article-content blockquote {
-    padding: 5px 0px 5px 20px;
+    padding: 0px 0px 0px 20px;
     margin: 20px 0px 20px 0px;
     border-left: 5px solid rgb(100,100,100);
 }
@@ -70,4 +72,39 @@ h1 {
     margin: 20px 0px 20px 0px;
     border-bottom: 1px solid rgb(204, 204, 204);
     font-size: 3em;
+}
+
+ul {
+    list-style-type: circle;
+    font-family: Scala, Georgia, "DejaVu Serif", "Times New Roman", Times, serif; 
+    font-size:1em;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: decimal;
+    font-family: Scala, Georgia, "DejaVu Serif", "Times New Roman", Times, serif; 
+    font-size: 1em;
+    list-style-position: inside;
+}
+
+li {
+    margin:1px 0px 1px 20px;
+}
+
+dl {
+    list-style-type: decimal;
+    font-family: Scala, Georgia, "DejaVu Serif", "Times New Roman", Times, serif; 
+    font-size: 1em;
+    list-style-position: inside;
+    margin:20px 0px 20px 20px;
+}
+
+dd {
+    margin:1px 0px 1px 20px;
+    padding:3px 0px 3px 0px;
+}
+
+dt {
+    font-size:1.3em;
 }
