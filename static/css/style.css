@@ -40,6 +40,7 @@
     text-transform: none;
     font-size: 1.1em;
     line-height: 1.6em;
+    margin:20px 0px 20px 0px;
 }
 
 .article-content blockquote {
@@ -64,3 +65,9 @@ a.list-of-categories  {
     text-decoration:none;
 }
 
+h1 {
+    padding: 5px 5px 15px 5px;
+    margin: 20px 0px 20px 0px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    font-size: 3em;
+}
