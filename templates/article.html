@@ -42,7 +42,7 @@
         {% endif %}
         {% if article.category %}
         <h4>Category</h4>
-        <a href="{{ SITEURL }}/categories.html#{{ category|replace(' ', '-')|e }}-ref">{{ article.category }}</a> 
+        <a class="category-link" href="/categories.html#{{ category|replace(' ', '-')|e }}-ref">{{ article.category }}</a> 
         {% endif %}
         {% if article.tags %}
         <h4>Tags</h4>
