@@ -24,6 +24,11 @@
     font-size: 0.8em;
 }
 
+.tags-in-article li {
+    line-height:28px;
+    float:none;
+}
+
 .article-content {
     text-align:justify;
     max-width:50em;
