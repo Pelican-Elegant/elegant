@@ -1,7 +1,11 @@
 /* Syntax Highlight */
 .codehilite pre {
     background-color:rgb(253,246,227);
-    border-radius:0 5px 5px 0px;
+    border-radius:3px 3px 3px 3px;
+}
+
+td.code .codehilite pre {
+    border-radius:0px 3px 3px 0px;
 }
 
 td.code {
@@ -9,12 +13,12 @@ td.code {
 }
 
 .linenodiv pre {
-    border-radius:5px 0px 0px 5px;
+    border-radius:3px 0px 0px 3px;
     color:rgb(101,123,131);
     background-color:rgb(238,232,213);
 }
-
 /* Tags */
+
 .list-of-tags {
     list-style:none;
     margin:0;
