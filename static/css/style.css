@@ -17,8 +17,8 @@ td.code {
     color:rgb(101,123,131);
     background-color:rgb(238,232,213);
 }
-/* Tags */
 
+/* Tags */
 .list-of-tags {
     list-style:none;
     margin:0;
@@ -52,6 +52,7 @@ td.code {
     float:none;
 }
 
+/* Article */
 .article-content {
     text-align:justify;
     max-width:50em;
@@ -78,14 +79,6 @@ td.code {
     text-transform: none;
     font-size: 1.2em;
     line-height: 1.7em;
-}
-.list-of-categories span {
-    vertical-align: super;
-    font-size: 0.8em;
-}
-
-a.list-of-categories  {
-    text-decoration:none;
 }
 
 .article-content ul {
@@ -136,6 +129,7 @@ a.list-of-categories  {
 .page_header h1 small {
     color:rgb(143, 116, 116);
 }
+
 .page_header h1 a {
     color:darkred;
 }
@@ -144,6 +138,17 @@ a.list-of-categories  {
     text-decoration:none;
 }
 
+/* Categories */
+.list-of-categories span {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+a.list-of-categories  {
+    text-decoration:none;
+}
+
+/* Base CSS */
 h2 a {
     color:rgb(51,51,51);
 }
