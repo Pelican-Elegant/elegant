@@ -145,11 +145,42 @@ h2.tag-title {
 /* Categories */
 .list-of-categories span {
     vertical-align: super;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 a.list-of-categories  {
     text-decoration:none;
+}
+
+ul.list-articles-category {
+list-style:none outside none;
+margin:0px 0px 0px 5px;
+}
+
+ul.list-articles-category li span{
+margin-right:10px;
+color:#AAAAAA;
+font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
+font-size: 0.9em;
+}
+
+a.category-link {
+    color:rgb(51,51,51);
+}
+
+a.category-link:hover {
+    text-decoration:none;
+}
+
+a.list-of-categories {
+    font-size:1.1em;
+    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+}
+
+a.list-of-categories:hover {
+    color:white;
+    background-color:rgb(0, 136, 204);
+    border-radius:4px;
 }
 
 /* Base CSS */
@@ -162,25 +193,6 @@ h2 a:hover {
     color:rgb(51,51,51);
 }
 
-a.category-link {
-    color:rgb(51,51,51);
-}
-
-a.category-link:hover {
-    text-decoration:none;
-}
-
 a {
     color:rgb(56, 117, 215);
-}
-
-a.list-of-categories {
-    font-size:1.1em;
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-}
-
-a.list-of-categories:hover {
-    color:white;
-    background-color:rgb(0, 136, 204);
-    border-radius:4px;
 }

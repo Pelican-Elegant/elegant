@@ -32,10 +32,10 @@ All Categories - {{ super() }}
                 </div>
                 <div id="{{ category|replace(' ', '-')|e }}-ref" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        <ul>
+                        <ul class="list-articles-category">
                             {% for article in articles %} 
                             {% set day = article.date.strftime('%d')|int %}
-                            <li>{{ article.date.strftime('%b') }} {{ day }}{{ article.date.strftime(', %Y') }} <a href="{{ article.url }}">{{ article.title }}</a></li>
+                            <li><span>{{ article.date.strftime('%b') }} {{ day }}{{ article.date.strftime(', %Y') }}</span> <a href="{{ article.url }}">{{ article.title }}</a></li>
                             {% endfor %}
                         </ul>
                     </div>
