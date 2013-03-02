@@ -52,6 +52,10 @@ td.code {
     float:none;
 }
 
+h2.tag-title {
+    font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif
+}
+
 /* Article */
 .article-content {
     text-align:justify;

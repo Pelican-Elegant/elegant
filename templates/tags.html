@@ -73,7 +73,7 @@ All Tags - {{ super() }}
 <div class="row-fluid">
     <div class="span8 offset2">
         {% for tag, articles in tags %}
-        <h2 id="{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}</h2>
+        <h2 id="{{ tag|replace(' ', '-')|e }}-ref" class="tag-title">{{ tag }}</h2>
         <ul>
             {% for article in articles %} 
             <li><a href="{{ article.url }}">{{ article.title }}</a></li>
