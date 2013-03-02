@@ -153,15 +153,15 @@ a.list-of-categories  {
 }
 
 ul.list-articles-category {
-list-style:none outside none;
-margin:0px 0px 0px 5px;
+    list-style:none outside none;
+    margin:0px 0px 0px 5px;
 }
 
 ul.list-articles-category li span{
-margin-right:10px;
-color:#AAAAAA;
-font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
-font-size: 0.9em;
+    margin-right:10px;
+    color:#AAAAAA;
+    font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
+    font-size: 0.9em;
 }
 
 a.category-link {
