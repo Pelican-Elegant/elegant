@@ -34,7 +34,7 @@ All Categories - {{ super() }}
                     <div class="accordion-inner">
                         <ul class="list-articles-category">
                             {% for article in articles %} 
-                            <li><span>{{ article.date.strftime('%b %d, %Y') }}</span> <a href="{{ article.url }}">{{ article.title }}</a></li>
+                            <li><span>{{ article.locale_date }}</span> <a href="{{ article.url }}">{{ article.title }}</a></li>
                             {% endfor %}
                         </ul>
                     </div>
