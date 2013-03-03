@@ -53,7 +53,12 @@ td.code {
 }
 
 h2.tag-title {
-    font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif
+    font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+}
+
+ul.articles-in-tag li {
+    font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-size:1.1em;
 }
 
 /* Article */
