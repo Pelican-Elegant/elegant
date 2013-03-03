@@ -13,6 +13,7 @@
             toc_sidebar.appendChild(table_of_contents);
     }
 </script>
+<article>
 <div class="row-fluid">
     <header class="page_header span12">
     <h1><a href="/{{ article.url }}"> {{ article.title }} {%if article.subtext %} <small> {{ article.subtext }} </small> {% endif %} </a></h1>
@@ -23,11 +24,12 @@
     <div class="span8 offset1 article-content">
         {{ article.content }}
     </div>
+    <section>
     <div class="span2 offset1">
         {% if article.date %} 
         <h4>Published</h4>
         {% set day = article.date.strftime('%d')|int %}
-        <time datetime="{{ article.date }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
+        <time pubdate="pubdate" datetime="{{ article.date }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
         {% endif %}
         {% if article.modified %} 
         <h4>Last Updated</h4>
@@ -49,7 +51,9 @@
         </ul>
         {% endif %}
     </div>
+    </section>
 </div>
+<article>
 <script type="text/javascript" language="JavaScript">
     moveTOC(); 
 </script>
