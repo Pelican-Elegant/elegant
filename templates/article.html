@@ -24,10 +24,10 @@
         {{ article.content }}
     </div>
     <div class="span2 offset1">
-        <h4>Published</h4>
         {% if article.date %} 
+        <h4>Published</h4>
         {% set day = article.date.strftime('%d')|int %}
-        {{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}    
+        <time datetime="{{ article.date }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
         {% endif %}
         {% if article.modified %} 
         <h4>Last Updated</h4>
