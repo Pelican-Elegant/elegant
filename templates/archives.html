@@ -14,7 +14,7 @@ All Posts - {{ super() }}
     <div class="span8 offset2">
         <ul class="list-all-articles">
             {% for article in dates %}
-            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            <li><a href="/{{ article.url }}">{{ article.title }}</a>
             <time datetime="{{ article.date }}">{{ article.locale_date }}</time>
             </li>
             {% endfor %}

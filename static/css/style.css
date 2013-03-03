@@ -196,3 +196,23 @@ h2 a:hover {
 a {
     color:rgb(56, 117, 215);
 }
+
+/* archives */
+ul.list-all-articles {
+    list-style:none;
+    margin:0px;
+}
+
+ul.list-all-articles li {
+    border-bottom:1px dotted black;
+    padding:0.3em 0em;
+    font-size:1.1em;
+    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+}
+
+ul.list-all-articles li time {
+    float:right;
+    color:#AAAAAA;
+    font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
+    font-size: 0.9em;
+}
