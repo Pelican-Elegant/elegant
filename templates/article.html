@@ -23,6 +23,29 @@
 <div class="row-fluid">
     <div class="span8 offset1 article-content">
         {{ article.content }}
+        <aside>
+        {% for an_artcile in dates %}
+        {% if an_artcile.url == article.url %}
+        {% set index = loop.index0 %}
+        {% if not loop.first %}
+        {% set next_article = dates[index-1] %}
+        {% endif %}
+        {% if not loop.last %}
+        {% set previous_article = dates[index+1] %}
+        {% endif %}
+        <nav>
+        <ul class="articles_timeline">
+            {% if previous_article %}
+            <li class="previous_article">« <a href="/{{ previous_article.url }}" title="Previous: {{ previous_article.title }}">{{ previous_article.title }}</a></li>
+            {% endif %}
+            {% if next_article %}
+            <li class="next_article"><a href="/{{ next_article.url }}" title="Next: {{ next_article.title }}">{{ next_article.title }}</a> »</li>
+            {% endif %}
+        </ul>
+        </nav>
+        {% endif %}
+        {% endfor %}
+        </aside>
     </div>
     <section>
     <div class="span2 offset1">

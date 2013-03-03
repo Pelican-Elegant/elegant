@@ -17,3 +17,5 @@ on left. Content id
 ## tags
 
 Superscript, live filter
+
+Shows next and previous article with title

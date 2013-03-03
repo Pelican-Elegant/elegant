@@ -147,6 +147,21 @@ ul.articles-in-tag li {
     text-decoration:none;
 }
 
+ul.articles_timeline {
+    list-style:none;
+    margin:0px;
+}
+
+ul.articles_timeline li.next_article {
+    float:right;
+    margin:0px;
+}
+
+ul.articles_timeline li.previous_article  {
+float:left;
+margin:0px;
+}
+
 /* Categories */
 .list-of-categories span {
     vertical-align: super;
