@@ -52,7 +52,7 @@
         {% if article.date %} 
         <h4>Published</h4>
         {% set day = article.date.strftime('%d')|int %}
-        <time pubdate="pubdate" datetime="{{ article.date }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
+        <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
         {% endif %}
         {% if article.modified %} 
         <h4>Last Updated</h4>
