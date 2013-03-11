@@ -11,6 +11,10 @@ a.disqus-comment-count {
     font-size: 0.9em;
 }
 
+div#disqus_thread {
+padding:10px;
+}
+
 /* Syntax Highlight */
 .codehilite pre {
     background-color:rgb(253,246,227);
