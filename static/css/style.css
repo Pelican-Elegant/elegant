@@ -1,3 +1,30 @@
+/* footer */
+
+div#footer {
+    margin:0px;
+    border-top:1px solid rgba(0,0,0,0.2);
+    padding:2px 5px 0px 5px;
+}
+
+ul.footer-content{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+
+ul.footer-content li.elegant-power {
+    float:right;
+}
+
+ul.footer-content li.elegant-license {
+    float:left;
+}
+
+div#site-subtitle {
+    text-align:center;
+    padding-top:10px;
+}
+
 /* comment */
 
 #comment-message {

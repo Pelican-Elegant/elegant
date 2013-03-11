@@ -1,11 +1,13 @@
 <footer>
-<div>
-    <ul class="articles_timeline">
+<div class="navbar navbar-fixed-bottom" id="footer">
+    <ul class="footer-content">
         {% if ELEGANT_LICENSE %}
-        <li class="previous_article">{{ ELEGANT_LICENSE }}</li>
+        <li class="elegant-license">{{ ELEGANT_LICENSE }}</li>
         {% endif %}
-        <li class="next_article">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a> and <a href="https://github.com/talha131/pelican-elegant" title="Elegant theme Home Page">Elegant theme</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a> and <a href="https://github.com/talha131/pelican-elegant" title="Elegant theme Home Page">Elegant theme</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+        {% if SITESUBTITLE %}
+        <div id="site-subtitle">{{ SITENAME }} - {{ SITESUBTITLE }}</div>
+        {% endif %}
     </ul>
-
 </div>
 </footer>
