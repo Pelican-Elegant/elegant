@@ -62,17 +62,8 @@
                 <div id="disqus_thread" class="accordion-body collapse">
                     <div class="accordion-inner">
                         <div class="comments">
-                            <div id="disqus_thread"></div>
-                            <script type="text/javascript">
-                                var disqus_identifier = "guide/install-fish-shell-mac-ubuntu/";
-                                var disqus_url = "{{ SITEURL }}/{{ article.url }}";
-                                (function() {
-                                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                 dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
-                                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                                 })(); </script>
+                            {% include 'disqus_script_comment.html' %}
                          </div>
-
                      </div>
                  </div>
              </div>
@@ -114,3 +105,7 @@
      moveTOC(); 
      </script>
      {% endblock content %}
+
+     {% block script %}
+     {% include 'disqus_script_count.html' %}
+     {% endblock script %}
