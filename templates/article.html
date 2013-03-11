@@ -46,55 +46,55 @@
         {% endif %}
         {% endfor %}
         </aside>
-    {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
-    <section>
-    <div class="comments">
-      <h2>Comments !</h2>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        var disqus_identifier = "guide/install-fish-shell-mac-ubuntu/";
-        var disqus_url = "{{ SITEURL }}/{{ article.url }}";
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-    </div>
-    </section>
-    {% endif %}
-    </div>
-    <section>
-    <div class="span2" style="float:right">
-        {% if article.date %} 
-        <h4>Published</h4>
-        {% set day = article.date.strftime('%d')|int %}
-        <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
-        {% endif %}
-        {% if article.modified %} 
-        <h4>Last Updated</h4>
-        {{ article.modified }}
-        {% endif %}
-        {% if article.category %}
-        <h4>Category</h4>
-        <a class="category-link" href="/categories.html#{{ category|replace(' ', '-')|e }}-ref">{{ article.category }}</a> 
-        {% endif %}
-        {% if article.tags %}
-        <h4>Tags</h4>
-        <ul class="list-of-tags tags-in-article"> 
-            {% for tag in article.tags %}
-            <li><a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}
-                {% for aTag, tagged_articles in tags if aTag == tag %}
-                <span>{{ tagged_articles|count }}</span>
-                {% endfor %}</a></li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-    </div>
-    </section>
-</div>
-</article>
-<script type="text/javascript" language="JavaScript">
-    moveTOC(); 
-</script>
-{% endblock content %}
+        {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+        <section>
+        <div class="comments">
+            <h2>Comments !</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_identifier = "guide/install-fish-shell-mac-ubuntu/";
+                var disqus_url = "{{ SITEURL }}/{{ article.url }}";
+                (function() {
+                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                 dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                 })();
+             </script>
+         </div>
+         </section>
+         {% endif %}
+     </div>
+     <section>
+     <div class="span2" style="float:right">
+         {% if article.date %} 
+         <h4>Published</h4>
+         {% set day = article.date.strftime('%d')|int %}
+         <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
+         {% endif %}
+         {% if article.modified %} 
+         <h4>Last Updated</h4>
+         {{ article.modified }}
+         {% endif %}
+         {% if article.category %}
+         <h4>Category</h4>
+         <a class="category-link" href="/categories.html#{{ category|replace(' ', '-')|e }}-ref">{{ article.category }}</a> 
+         {% endif %}
+         {% if article.tags %}
+         <h4>Tags</h4>
+         <ul class="list-of-tags tags-in-article"> 
+             {% for tag in article.tags %}
+             <li><a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}
+                 {% for aTag, tagged_articles in tags if aTag == tag %}
+                 <span>{{ tagged_articles|count }}</span>
+                 {% endfor %}</a></li>
+             {% endfor %}
+         </ul>
+         {% endif %}
+     </div>
+     </section>
+ </div>
+ </article>
+ <script type="text/javascript" language="JavaScript">
+     moveTOC(); 
+ </script>
+ {% endblock content %}
