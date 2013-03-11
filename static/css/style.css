@@ -3,7 +3,9 @@
 div#footer {
     margin:0px;
     border-top:1px solid rgba(0,0,0,0.2);
-    padding:2px 5px 0px 5px;
+    padding:2px 0px 0px 0px;
+    font-size:0.7em;
+    font-family:calibri,tahoma,arial,sans-serif;
 }
 
 ul.footer-content{
@@ -12,6 +14,10 @@ ul.footer-content{
     margin:0px;
 }
 
+ul.footer-content li {
+    padding-right:5px;
+    padding-left:5px;
+}
 ul.footer-content li.elegant-power {
     float:right;
 }
@@ -20,9 +26,8 @@ ul.footer-content li.elegant-license {
     float:left;
 }
 
-div#site-subtitle {
-    text-align:center;
-    padding-top:10px;
+ul.footer-content li.elegant-subtitle{
+    float:left;
 }
 
 /* comment */
