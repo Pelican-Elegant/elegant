@@ -150,6 +150,7 @@ ul.articles-in-tag li {
 ul.articles_timeline {
     list-style:none;
     margin:0px;
+    padding-bottom:30px;
 }
 
 ul.articles_timeline li.next_article {
