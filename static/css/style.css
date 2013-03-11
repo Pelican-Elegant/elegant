@@ -20,6 +20,11 @@ ul.footer-content li.elegant-license {
     float:left;
 }
 
+div#site-subtitle {
+    text-align:center;
+    padding-top:10px;
+}
+
 /* comment */
 
 #comment-message {
