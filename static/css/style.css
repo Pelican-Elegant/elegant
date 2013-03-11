@@ -286,3 +286,8 @@ ul.list-all-articles li time {
     font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
     font-size: 0.9em;
 }
+
+/* top menu */
+ul.top-menu li a {
+    font-weight: bold;
+}
