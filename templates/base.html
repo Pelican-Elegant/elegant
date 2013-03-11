@@ -12,9 +12,6 @@
         {% endblock %}
     </head>
     <body>
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
-
         <div class="navbar navbar-static-top navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">
@@ -52,6 +49,8 @@
             </div>
         </div>
         {% block script %}
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
         {% endblock script %}
     </body>
 </html>
