@@ -46,66 +46,43 @@
         {% endif %}
         {% endfor %}
         </aside>
-        {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
-        <section>
-        {% if ELEGANT_COMMENT_MESSAGE %}
-        <hr/>
-        <p id="comment-message">{{ ELEGANT_COMMENT_MESSAGE }} </p>
+        {% include 'comments.html' %}
+    </div>
+    <section>
+    <div class="span2" style="float:right">
+        {% if article.date %} 
+        <h4>Published</h4>
+        {% set day = article.date.strftime('%d')|int %}
+        <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
         {% endif %}
-        <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2" href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread">
-                       Comments
-                    </a>
-                </div>
-                <div id="disqus_thread" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <div class="comments">
-                            {% include 'disqus_script_comment.html' %}
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         </section>
-         {% endif %}
-     </div>
-     <section>
-     <div class="span2" style="float:right">
-         {% if article.date %} 
-         <h4>Published</h4>
-         {% set day = article.date.strftime('%d')|int %}
-         <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
-         {% endif %}
-         {% if article.modified %} 
-         <h4>Last Updated</h4>
-         {{ article.modified }}
-         {% endif %}
-         {% if article.category %}
-         <h4>Category</h4>
-         <a class="category-link" href="/categories.html#{{ category|replace(' ', '-')|e }}-ref">{{ article.category }}</a> 
-         {% endif %}
-         {% if article.tags %}
-         <h4>Tags</h4>
-         <ul class="list-of-tags tags-in-article"> 
-             {% for tag in article.tags %}
-             <li><a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}
-                 {% for aTag, tagged_articles in tags if aTag == tag %}
-                 <span>{{ tagged_articles|count }}</span>
-                 {% endfor %}</a></li>
-             {% endfor %}
-         </ul>
-         {% endif %}
-     </div>
-     </section>
- </div>
- </article>
- <script type="text/javascript" language="JavaScript">
-     moveTOC(); 
-     </script>
-     {% endblock content %}
+        {% if article.modified %} 
+        <h4>Last Updated</h4>
+        {{ article.modified }}
+        {% endif %}
+        {% if article.category %}
+        <h4>Category</h4>
+        <a class="category-link" href="/categories.html#{{ category|replace(' ', '-')|e }}-ref">{{ article.category }}</a> 
+        {% endif %}
+        {% if article.tags %}
+        <h4>Tags</h4>
+        <ul class="list-of-tags tags-in-article"> 
+            {% for tag in article.tags %}
+            <li><a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}
+                {% for aTag, tagged_articles in tags if aTag == tag %}
+                <span>{{ tagged_articles|count }}</span>
+                {% endfor %}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    </section>
+</div>
+</article>
+<script type="text/javascript" language="JavaScript">
+    moveTOC(); 
+    </script>
+    {% endblock content %}
 
-     {% block script %}
-     {% include 'disqus_script_count.html' %}
-     {% endblock script %}
+    {% block script %}
+    {% include 'disqus_script_count.html' %}
+    {% endblock script %}
