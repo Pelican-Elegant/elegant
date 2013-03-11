@@ -5,14 +5,6 @@
 {% endblock title %}
 
 {% block content %}
-<script  language="javascript" type="text/javascript">
-    function moveTOC() {
-        var table_of_contents = document.getElementById('contents');
-        var toc_sidebar = document.getElementById('toc_sidebar');
-        if (table_of_contents && toc_sidebar)
-            toc_sidebar.appendChild(table_of_contents);
-    }
-</script>
 <article>
 <div class="row-fluid">
     <header class="page_header span10 offset2">
@@ -78,9 +70,6 @@
     </section>
 </div>
 </article>
-<script type="text/javascript" language="JavaScript">
-    moveTOC(); 
-    </script>
     {% endblock content %}
 
     {% block script %}
