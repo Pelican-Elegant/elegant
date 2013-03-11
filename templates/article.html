@@ -48,10 +48,14 @@
         </aside>
         {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
         <section>
+        {% if ELEGANT_COMMENT_MESSAGE %}
+        <hr/>
+        <p id="comment-message">{{ ELEGANT_COMMENT_MESSAGE }} </p>
+        {% endif %}
         <div class="accordion" id="accordion2">
             <div class="accordion-group">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread">
+                    <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2" href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread">
                        Comments
                     </a>
                 </div>

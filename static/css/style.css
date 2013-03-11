@@ -1,3 +1,16 @@
+/* comment */
+
+#comment-message {
+    font-family:Scala,Georgia,"DejaVu Serif","Times New Roman",Times,serif;
+    font-size: 1em;
+    color:gray;
+}
+
+a.disqus-comment-count {
+    font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-size: 0.9em;
+}
+
 /* Syntax Highlight */
 .codehilite pre {
     background-color:rgb(253,246,227);
