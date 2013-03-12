@@ -1,12 +1,21 @@
+body,html{
+    height:100%;
+}
+
+#content-sans-footer{
+    min-height:100%;
+}
+
 /* site title */
 
 .site-name {
-font-family: "Monaco","Inconsolata","Andale Mono","Lucida Console","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    font-family: "Monaco","Inconsolata","Andale Mono","Lucida Console","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
 }
+
 /* footer */
 
 div#footer {
-    margin:0px;
+    margin:15px 0px;
     border-top:1px solid rgba(0,0,0,0.2);
     padding:2px 5px 0px 5px;
     font-size:0.7em;
