@@ -1,3 +1,8 @@
+/* site title */
+
+.site-name {
+font-family: Courier, "Courier New", monospace;
+}
 /* footer */
 
 div#footer {
