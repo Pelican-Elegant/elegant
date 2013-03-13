@@ -22,6 +22,8 @@ var tipuesearch_stem = {"words": [
 
 var tipuesearch_pages;
 
+exclude_pages = ['/archives.html', '/tags.html', '/index.html', '/categories.html', '/search.html'];
+
 function showGetResult()
 {
      var result = new Array();
@@ -34,7 +36,9 @@ function showGetResult()
         success: function(xml) {
             $(xml).find('url').each(function(){
                 var loc = $(this).find('loc').text();
-                result.push(loc);
+                if ($.inArray(loc, exclude_pages) < 0) {
+                    result.push(loc);
+                }
             });
         },
         error: function() {
