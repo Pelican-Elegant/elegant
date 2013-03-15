@@ -3,6 +3,10 @@
 All Posts - {{ super() }}
 {% endblock title %}
 
+{% block head_description %}
+Full archives of {{ SITENAME|striptags }} blog.
+{% endblock head_description %}
+
 {% block content %}
 
 <div class="row-fluid">

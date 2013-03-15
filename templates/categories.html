@@ -4,6 +4,9 @@
 All Categories - {{ super() }}
 {% endblock title %}
 
+{% block head_description %}
+All categories of the {{ SITENAME|striptags }} blog. 
+{% endblock head_description %}
 {% block content %}
 <script  language="javascript" type="text/javascript">
     function uncollapse() {

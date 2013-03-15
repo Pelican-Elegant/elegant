@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8"> 
-        {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if article and article.author %}
+        <meta name="author" content="{{ article.author }}" />
+        {% else %}
+        <meta name="author" content="{{ AUTHOR }}" />
+        {% endif %}
+
+        {% if SITE_LICENSE %}
+        <meta name="copyright" content="{{ SITE_LICENSE|striptags }}">
+        {% endif %}
+
+        {% if SITE_DESCRIPTION %}
+        <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}">
+        {% endif %}
+        <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+        {% block head_links %}
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap-responsive.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/solarizedlight.css" media="screen"/>
-        {% endblock %}
+        {% endblock head_links %}
     </head>
     <body>
         <div id="content-sans-footer">

@@ -4,6 +4,11 @@
 {{ article.title }} - {{ super() }}
 {% endblock title %}
 
+{% block head_description %}
+        {% if article.summary %}
+        {{ article.summary|striptags }}
+        {% endif %}
+{% endblock head_description %}
 {% block content %}
 <article>
 <div class="row-fluid">
