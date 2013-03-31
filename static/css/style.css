@@ -125,6 +125,18 @@ ul.articles-in-tag li {
 }
 
 /* Article */
+
+article p a {
+    color:black;
+    border-bottom:0.5px dashed darkblue;
+}
+
+article p a:hover {
+    text-shadow:none;
+    text-decoration:none;
+    border-bottom:none;
+}
+
 .article-content {
     text-align:justify;
     max-width:50em;
