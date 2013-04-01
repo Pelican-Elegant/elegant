@@ -18,8 +18,7 @@
         {% endif %}
         <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
         {% block head_links %}
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap-responsive.css" media="screen"/>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/solarizedlight.css" media="screen"/>
         {% endblock head_links %}
@@ -66,8 +65,8 @@
         {% include 'footer.html' %}
         {% block script %}
         {% include 'analytics.html' %}
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
         {% endblock script %}
     </body>
 </html>
