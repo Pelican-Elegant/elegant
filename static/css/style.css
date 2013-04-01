@@ -317,3 +317,22 @@ ul.list-all-articles li time {
 ul.top-menu li a {
     font-weight: bold;
 }
+
+/* MailChimp */
+#mc_embed_signup {
+    font-size:inherit;
+    font-family:inherit;
+    margin:10px 0px;
+}
+
+#mc_embed_signup form {
+    padding:0px;
+}
+
+#mc_embed_signup input.button {
+    width: 100%
+}
+
+#mc_embed_signup input.email {
+    width:100%;
+}
