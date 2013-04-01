@@ -8,13 +8,6 @@ All Categories - {{ super() }}
 All categories of the {{ SITENAME|striptags }} blog. 
 {% endblock head_description %}
 {% block content %}
-<script  language="javascript" type="text/javascript">
-    function uncollapse() {
-            $(window.location.hash).collapse({
-                toggle: true
-            })
-    }
-</script>
 <div class="row-fluid">
     <header class="page_header span10 offset2">
     <h1><a href="/categories.html">All Categories</a></h1>
@@ -47,7 +40,18 @@ All categories of the {{ SITENAME|striptags }} blog.
         </div>
     </div>
 </div>
+{% endblock content %}
+{% block script %}
+{{ super() }}
+<script  language="javascript" type="text/javascript">
+    function uncollapse() {
+            $(window.location.hash).collapse({
+                toggle: true
+            })
+    }
+</script>
+
 <script type="text/javascript" language="JavaScript">
     uncollapse(); 
 </script>
-{% endblock content %}
+{% endblock script %}
