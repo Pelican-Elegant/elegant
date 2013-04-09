@@ -20,7 +20,7 @@ All tags used in the {{ SITENAME|striptags }} blog.
             <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
         </form>
         <ul class="list-of-tags">
-            {% for tag, articles in tags %}
+            {% for tag, articles in tags|sort %}
             <li>
             {% set num = articles|count %}
             <a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}<span>{{ num }}</span></a>
