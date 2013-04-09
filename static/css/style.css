@@ -62,12 +62,12 @@ padding-right:10px;
 }
 
 /* Syntax Highlight */
-.codehilite pre {
+.highlight pre {
     background-color:rgb(253,246,227);
     border-radius:3px 3px 3px 3px;
 }
 
-td.code .codehilite pre {
+td.code .highlight pre {
     border-radius:0px 3px 3px 0px;
 }
 
