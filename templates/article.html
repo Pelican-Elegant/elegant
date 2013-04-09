@@ -74,7 +74,7 @@
             {% if article.tags %}
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article"> 
-                {% for tag in article.tags %}
+                {% for tag in article.tags|sort %}
                 <li><a href="/tags.html#{{ tag|replace(' ', '-')|e }}-ref">{{ tag }}
                     {% for aTag, tagged_articles in tags if aTag == tag %}
                     <span>{{ tagged_articles|count }}</span>
