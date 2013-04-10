@@ -1,10 +1,42 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block title %}
 {{ super() }}
-<h2>All articles</h2>
-       {% for article in articles | sort(attribute='title') %}
-        <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
-       {% endfor %}
-       {% include 'pagination.html' %}
+{% endblock title %}
+
+{% block head_description %}
+Home page of the {{ SITENAME|striptags }} blog. 
+{% endblock head_description %}
+{% block content %}
+<div class="row-fluid">
+    <header class="page_header span12">
+    <h1>{{ SITENAME }}  <small>{{ SITESUBTITLE }}</small></h1>
+    </header>
+
+    <div class="row-fluid">
+        <div class="span3">
+            <header>
+            <h1>About me</h1>
+            </header>
+            <p>My name is anothony queen</p>
+        </div>
+        {% if articles %}
+        <div class="span8">
+            <header>
+            <h1>Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
+            </header>
+            {% for article in articles %}
+            {% if loop.index0 < RECENT_ARTICLES_COUNT %}
+            <ul class="list-all-articles">
+                <li>
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a> 
+                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                </li>
+            </ul>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
 {% endblock content %}

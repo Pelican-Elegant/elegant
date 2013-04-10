@@ -336,3 +336,11 @@ ul.top-menu li a {
 #mc_embed_signup input.email {
     width:100%;
 }
+
+/* front page */
+#allposts {
+    color:rgb(153, 153, 153);
+    font-size:75%;
+    float:right;
+    font-weight:normal;
+}
