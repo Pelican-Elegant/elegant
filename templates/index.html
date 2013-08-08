@@ -14,14 +14,31 @@ Home page of the {{ SITENAME|striptags }} blog.
     </header>
 
     <div class="row-fluid">
-        <div class="span3">
+        <div class="span4">
             <header>
             <h1>About me</h1>
             </header>
             <p>My name is anothony queen</p>
         </div>
-        {% if articles %}
-        <div class="span8">
+
+        {% if PROJECTS %}
+        <div class="span4">
+            <header>
+            <h1>My Projects</h1>
+            {% for project in PROJECTS %}
+            <ul class="list-all-articles">
+                <li>
+                <a href="project.url">{{ project.name }}</a> <span class="proj_desc">{{ project.description }}</span>
+                </li>
+            </ul>
+            {%endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    {% if articles %}
+    <div class="row-fluid">
+        <div class="span12">
             <header>
             <h1>Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
             </header>

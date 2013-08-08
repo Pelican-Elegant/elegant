@@ -344,3 +344,9 @@ ul.top-menu li a {
     float:right;
     font-weight:normal;
 }
+
+.proj_desc {
+    color:#999999;
+    font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
+    font-size: 0.9em;
+}
