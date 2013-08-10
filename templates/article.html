@@ -32,8 +32,8 @@
 
             {{ article.content }}
             <aside>
-            {% for an_artcile in dates %}
-            {% if an_artcile.url == article.url %}
+            {% for an_article in dates %}
+            {% if an_article.url == article.url %}
             {% set index = loop.index0 %}
             {% if not loop.first %}
             {% set next_article = dates[index-1] %}
