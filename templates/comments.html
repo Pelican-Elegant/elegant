@@ -2,12 +2,16 @@
 <section>
 {% if COMMENTS_INTRO %}
 <hr/>
-<p id="comment-message">{{ ELEGANT_COMMENT_MESSAGE }} </p>
+<p id="comment-message">{{ COMMENTS_INTRO }} </p>
 {% endif %}
 <div class="accordion" id="accordion2">
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2" href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread">
+            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2" 
+                {% if article.disqus_identifier %}
+                    data-disqus-identifier="{{ article.disqus_identifier }}"
+                {% endif %}
+                href="{{ SITEURL }}/{{ article.url }}/#disqus_thread">
                 Comments
             </a>
         </div>
