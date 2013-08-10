@@ -13,7 +13,7 @@
 <article>
 <div class="row-fluid">
     <header class="page_header span10 offset2">
-    <h1><a href="/{{ article.url }}"> {{ article.title }} {%if article.subtext %} <small> {{ article.subtext }} </small> {% endif %} </a></h1>
+    <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtext %} <small> {{ article.subtext }} </small> {% endif %} </a></h1>
     </header>
 </div>
 
@@ -44,10 +44,10 @@
             <nav>
             <ul class="articles_timeline">
                 {% if previous_article %}
-                <li class="previous_article">« <a href="/{{ previous_article.url }}" title="Previous: {{ previous_article.title }}">{{ previous_article.title }}</a></li>
+                <li class="previous_article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ previous_article.title }}">{{ previous_article.title }}</a></li>
                 {% endif %}
                 {% if next_article %}
-                <li class="next_article"><a href="/{{ next_article.url }}" title="Next: {{ next_article.title }}">{{ next_article.title }}</a> »</li>
+                <li class="next_article"><a href="{{ SITEURL }}/{{ next_article.url }}" title="Next: {{ next_article.title }}">{{ next_article.title }}</a> »</li>
                 {% endif %}
             </ul>
             </nav>
