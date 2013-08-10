@@ -9,17 +9,23 @@ Home page of the {{ SITENAME|striptags }} blog.
 {% endblock head_description %}
 {% block content %}
 <div class="row-fluid">
+    {% if LANDING_PAGE_ABOUT.title %}
     <header class="page_header span12">
-    <h1>{{ SITENAME }}  <small>{{ SITESUBTITLE }}</small></h1>
+    <h1>{{ LANDING_PAGE_ABOUT.title }}</h1>
     </header>
+    {% endif %}
 
     <div class="row-fluid">
-        <div class="span4">
+        {% if LANDING_PAGE_ABOUT.details %}
+        <div class="span8">
             <header>
             <h1>About me</h1>
             </header>
-            <p>My name is anothony queen</p>
+            <div class="article-content">
+            {{ LANDING_PAGE_ABOUT.details }}
         </div>
+        </div>
+        {% endif %}
 
         {% if PROJECTS %}
         <div class="span4">
