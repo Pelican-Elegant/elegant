@@ -353,3 +353,8 @@ ul.top-menu li a {
     font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
     font-size: 0.9em;
 }
+
+.amp {
+    font-family:"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua",serif; 
+    font-style:italic;
+}    
