@@ -21,10 +21,19 @@ Search results for {{ SITENAME|striptags }} blog.
 <script>
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch({
-          'mode': 'live',
-          'show': 10,
-          'newWindow': true,
-          'liveDescription': '.article-content'
+         {% if 'content_in_json' in PLUGINS %}
+             'mode' : 'json',
+         {% else %}
+             'mode': 'live',
+         {% endif %}
+         'show': 10,
+         'newWindow': true,
+         {# I cannot place following statements in the conditionals above because then Tipue Search fails to work. Possibly a bug in Tipue Search. #}
+         {% if 'content_in_json' in PLUGINS %}
+             'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
+         {% else %}
+             'liveDescription': '.article-content'
+         {% endif %}
      });
 });
 </script>
