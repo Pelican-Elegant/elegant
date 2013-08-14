@@ -340,6 +340,10 @@ ul.top-menu li a {
     width:100%;
 }
 
+#mc_embed_signup .button {
+    font-size: 1em;
+}
+
 /* front page */
 #allposts {
     color:rgb(153, 153, 153);
