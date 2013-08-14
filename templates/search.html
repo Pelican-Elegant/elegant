@@ -22,7 +22,9 @@ Search results for {{ SITENAME|striptags }} blog.
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch({
           'mode': 'live',
-          'show': 6
+          'show': 10,
+          'newWindow': true,
+          'liveDescription': '.article-content'
      });
 });
 </script>
@@ -30,7 +32,7 @@ $(document).ready(function() {
 
 {% block content %}
 <article>
-    <div class="span8 offset2 article-content">
+    <div class="span8 offset2">
         <div id="tipue_search_content"><div id="tipue_search_loading"></div></div>
     </div>
 </article>
