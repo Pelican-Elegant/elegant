@@ -19,12 +19,6 @@ http://www.tipue.com/search
      padding-top: 60px;     
      background: #fff url('img/loader.gif') no-repeat left;
 }
-
-#tipue_search_warning_head
-{
-     font: 300 16px/1.6 'open sans', sans-serif;
-	color: #333;
-}
 #tipue_search_warning
 {
      font: 12px/1.6 'open sans', sans-serif;
@@ -41,7 +35,7 @@ http://www.tipue.com/search
 	padding-bottom: 1px;
 	border-bottom: 1px solid #ccc;   
 }
-#tipue_search_results_count
+#tipue_search_results_count, #tipue_search_warning_head
 {
     color:darkred;
     padding: 5px 5px 15px 5px;
