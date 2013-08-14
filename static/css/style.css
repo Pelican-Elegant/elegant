@@ -2,6 +2,10 @@ body,html{
     height:100%;
 }
 
+h1, h2, h3, h4, h5, h5 {
+    font-family: Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, serif;
+}
+    
 #content-sans-footer{
     min-height:100%;
 }
@@ -206,7 +210,6 @@ article p a:hover {
     margin: 20px 0px 20px 0px;
     border-bottom: 1px solid rgb(143, 134, 134);
     font-size: 3em;
-    font-family: Georgia, "DejaVu Serif", "Times New Roman", Times, serif;
     font-weight:normal;
 }
 
