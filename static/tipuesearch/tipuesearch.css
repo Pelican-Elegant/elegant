@@ -48,7 +48,7 @@ http://www.tipue.com/search
 .tipue_search_content_title
 {
      font: 300 23px/1.6 'open sans', sans-serif;
-	margin-top: 31px;
+    margin-top: 20px;
 }
 .tipue_search_content_title a
 {
@@ -62,9 +62,19 @@ http://www.tipue.com/search
 }
 .tipue_search_content_text
 {
-     font: 12px/1.7 'open sans', sans-serif;
-	color: #333;
-	padding: 13px 0;
+   font-size: 1em;
+   line-height: 1.6em;
+   color: #333;
+   font-variant: normal;
+   text-transform: none;
+   padding: 13px 0;
+   font-family: Scala, Georgia,"DejaVu Serif","Times New Roman",Times,serif;
+}
+
+.tipue_search_content_text b {
+    color:#EF1D1D;
+    font-family:Garamond;
+    font-size: 1.3em;
 }
 .tipue_search_content_loc
 {
