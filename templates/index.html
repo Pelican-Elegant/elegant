@@ -34,7 +34,7 @@ Home page of the {{ SITENAME|striptags }} blog.
             {% for project in PROJECTS %}
             <ul class="list-all-articles">
                 <li>
-                <a href="project.url">{{ project.name }}</a> <span class="proj_desc">{{ project.description }}</span>
+                <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj_desc">{{ project.description }}</span>
                 </li>
             </ul>
             {%endfor %}
