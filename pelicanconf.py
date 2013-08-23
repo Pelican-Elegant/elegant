@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Talha Mansoor'
 SITENAME = u"<span style=\'color:black;\'>onCrash</span> <span style=\'color:darkblue;\'>=</span> <span style=\'color:#AA1032;\'>'reboot();'</span>"
+SITEURL = 'http://localhost:8000'
 
 # Regional Settings
 TIMEZONE = 'Asia/Karachi'
