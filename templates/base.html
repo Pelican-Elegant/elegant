@@ -30,6 +30,7 @@
         <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png" />
         <link rel="icon" href="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png" />
+        {% include 'analytics.html' %}
     </head>
     <body>
         <div id="content-sans-footer">
@@ -72,7 +73,6 @@
     </div>
         {% include 'footer.html' %}
         {% block script %}
-        {% include 'analytics.html' %}
         <script src="http://code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
         {% endblock script %}
