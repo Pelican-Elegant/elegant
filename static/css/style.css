@@ -24,7 +24,8 @@ body,html{
 }
 
 h1, h2, h3, h4, h5, h5 {
-    font-family: Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, serif;
+    font-family: Baskerville, Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, serif;
+    font-weight: normal;
 }
     
 #content-sans-footer{
