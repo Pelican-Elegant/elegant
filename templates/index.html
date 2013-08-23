@@ -9,14 +9,14 @@ Home page of the {{ SITENAME|striptags }} blog.
 {% endblock head_description %}
 {% block content %}
 <div class="row-fluid">
-    {% if LANDING_PAGE_ABOUT.title %}
+    {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
     <header class="page_header span12">
     <h1>{{ LANDING_PAGE_ABOUT.title }}</h1>
     </header>
     {% endif %}
 
     <div class="row-fluid">
-        {% if LANDING_PAGE_ABOUT.details %}
+        {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
         <div class="span8">
             <header>
             <h1>About me</h1>
