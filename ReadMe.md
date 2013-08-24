@@ -1,4 +1,14 @@
+https://news.ycombinator.com/item?id=6246777
+
+comments are hidden because of it
+
+Put fav icon in images folder. I recommend http://iconifier.net/
+comments_intro
+article.disques_ide
+
 ## <title>
+
+Search is part of main navigation so that you search from anywhere
 
 The title tag shows the article title followed by a '-' and site title, for example, 'How to revert Git history - Random Thoughts'. 
 
