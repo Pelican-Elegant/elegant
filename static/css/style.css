@@ -7,14 +7,13 @@
 
 @font-face {
     font-family: 'Scala';
-    src: url('../fonts/ufonts.com_scala-webfont.eot');
-    src: url('../fonts/ufonts.com_scala-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ufonts.com_scala-webfont.svg#scalamedium') format('svg'),
-         url('../fonts/ufonts.com_scala-webfont.woff') format('woff'),
-         url('../fonts/ufonts.com_scala-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+	src: url('../fonts/ufonts.com_scala.eot');
+	src: local('☺'), 
+        url('../fonts/ufonts.com_scala.svg') format('svg'),
+        url('../fonts/ufonts.com_scala.woff') format('woff'), 
+        url('../fonts/ufonts.com_scala.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 /* end of font attribution */
 
