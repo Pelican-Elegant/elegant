@@ -45,7 +45,7 @@ TRANSLATION_FEED_ATOM = None
 
 # Elegant theme
 RECENT_ARTICLES_COUNT = 10
-COMMENTS_INTRO = u"So what do you think? Got something to say about the post? Did I miss something? Leave your comments below."
+COMMENTS_INTRO = u"So what do you think? Did I miss something? Is any section unclear? Leave your comments below."
 SITE_LICENSE = u"<span xmlns:dct=\"http://purl.org/dc/terms/\" property=\"dct:title\"> onCrash=\"Reboot();\"</span> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"http://oncrashreboot.com\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">Talha Mansoor</a> is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>." 
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
 SITE_DESCRIPTION = u"Personal blog of Talha Mansoor"
