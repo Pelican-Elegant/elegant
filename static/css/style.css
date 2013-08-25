@@ -360,3 +360,7 @@ ul.top-menu li a {
     font-family:"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua",serif; 
     font-style:italic;
 }    
+
+img {
+    border: 1px solid #EEEEEE;
+}
