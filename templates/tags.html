@@ -32,7 +32,7 @@ All tags used in the {{ SITENAME|striptags }} blog.
 
 <div class="row-fluid">
     <div class="span8 offset2">
-        {% for tag, articles in tags %}
+        {% for tag, articles in tags|sort %}
         <h2 id="{{ tag|replace(' ', '-')|e }}-ref" class="tag-title">{{ tag }}</h2>
         <ul class="articles-in-tag">
             {% for article in articles %} 
