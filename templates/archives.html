@@ -18,7 +18,7 @@ Full archives of {{ SITENAME|striptags }} blog.
     <div class="span8 offset2">
         <ul class="list-all-articles">
             {% for article in dates %}
-            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
             <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
             </li>
             {% endfor %}

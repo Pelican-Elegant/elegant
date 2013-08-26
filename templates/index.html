@@ -52,7 +52,7 @@ Home page of the {{ SITENAME|striptags }} blog.
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <ul class="list-all-articles">
                 <li>
-                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a> 
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a> 
                 <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </li>
             </ul>
