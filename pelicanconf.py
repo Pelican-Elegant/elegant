@@ -53,7 +53,6 @@ EMAIL_SUBSCRIPTION_LABEL = u'Get Monthly Updates'
 EMAIL_FIELD_PLACEHOLDER = u'Enter your email...'
 SUBSCRIBE_BUTTON_TITLE = u'Send me Free updates'
 MAILCHIMP_FORM_ACTION = u'http://oncrashreboot.us4.list-manage2.com/subscribe/post?u=e66b4cca51e40b859c64e8411&amp;id=d135692a12'
-DISQUS_SITENAME = u'oncrashreboot'
 PROJECTS = [{
     'name': 'Pelican Plugins',
     'url':
