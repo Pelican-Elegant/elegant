@@ -12,7 +12,7 @@ DATE_FORMATS = {'en': '%b %d,  %Y'}
 DEFAULT_LANG = u'en'
 
 # Plugins and extensions
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
 PLUGIN_PATH = "../pelican-plugins/"
 PLUGINS = ['sitemap', 'extract_toc', 'content_in_json']
 
