@@ -72,7 +72,7 @@ PROJECTS = [{
     {
         'name': 'Elegant Theme for Pelican',
         'url':
-        'https://github.com/talha131/pelican-elegant',
+        'http://oncrashreboot.com/pelican-elegant',
         'description': 'A clean and distraction free theme, with search and a'
         ' lot more unique features, using Jinja2 and Bootstrap'},
     {
