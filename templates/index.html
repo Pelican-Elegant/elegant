@@ -11,7 +11,7 @@ Home page of the {{ SITENAME|striptags }} blog.
 <div class="row-fluid">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
     <header class="page_header span12">
-    <h1>{{ LANDING_PAGE_ABOUT.title }}</h1>
+    <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_ABOUT.title }}</a></h1>
     </header>
     {% endif %}
 
