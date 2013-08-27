@@ -44,10 +44,22 @@
             <nav>
             <ul class="articles_timeline">
                 {% if previous_article %}
-                <li class="previous_article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ previous_article.title }}">{{ previous_article.title }}</a></li>
+                {% set ptitle = previous_article.title %}
+                {% set pv_title = ptitle %}
+                    {%if previous_article.subtitle %} 
+                        {% set pv_title = ptitle + " " +  "<small>" + previous_article.subtitle + "</small>" %}
+                        {% set ptitle = ptitle + " - " + previous_article.subtitle %}
+                    {% endif %} 
+                <li class="previous_article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
                 {% if next_article %}
-                <li class="next_article"><a href="{{ SITEURL }}/{{ next_article.url }}" title="Next: {{ next_article.title }}">{{ next_article.title }}</a> »</li>
+                {% set ntitle = next_article.title %}
+                {% set nv_title = ntitle %}
+                    {%if next_article.subtitle %} 
+                        {% set nv_title = ntitle + " " +  "<small>" + next_article.subtitle + "</small>" %}
+                        {% set ntitle = ntitle + " - " + next_article.subtitle %}
+                    {% endif %} 
+                <li class="next_article"><a href="{{ SITEURL }}/{{ next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
                 {% endif %}
             </ul>
             </nav>
