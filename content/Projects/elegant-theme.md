@@ -27,7 +27,7 @@ Static sites usually do not offer search. Elegant uses [Tipue Search](http://www
 
 There are two search modes.
 
-1. **JSON Mode** Your site pages will be stored in JSON at your server. Tipue Search will use AJAX to access it and render search result. You need [JSON Serializer plugin](https://github.com/getpelican/pelican-plugins) to use this mode.
+1. **JSON Mode** Your site pages will be stored in JSON at your server. Tipue Search will use AJAX to access it and render search result. You need [Tipue Search plugin](https://github.com/getpelican/pelican-plugins) to use this mode.
 1. **Live Mode Search** Tipue Search will fetch your site using Sitemap, index it and store it in the visitor's cache. This mode requires [Sitemap plugin](https://github.com/getpelican/pelican-plugins).
 
 Use JSON mode if you value speed, or have a large site, or don't want to overwhelm your host server for every search query.
@@ -283,7 +283,7 @@ Elegant uses commonly available typefaces in every style rule. It has a list of 
 Here are the variables that you should set in your configuration to get the most out of Elegant
 
     :::python
-    PLUGINS = ['sitemap', 'extract_toc', 'json_serializer']
+    PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
     MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
     DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
     STATIC_PATHS = ['theme/images', 'images']
