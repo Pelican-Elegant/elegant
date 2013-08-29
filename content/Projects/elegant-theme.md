@@ -6,6 +6,7 @@ Tags: jinja2, bootstrap, front-end
 Summary: Detailed documentation of Elegant, which is a theme for Pelican, developed using Jinja2 and Bootstrap
 Slug: elegant-a-clean-theme-for-pelican-with-search-feature
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican
+modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History">Aug 29, 2013</a>
 
 
 [TOC]
@@ -258,11 +259,18 @@ I recommend using [Iconifier.net](http://iconifier.net/) to generate the set of 
 
 ## Modified Date
 
-You will need to update your articles time and again. You can show the date article was last updated by defining `modified` in your article meta data. Please note that value of `modified` is treated as string. 
+You will need to update your articles time and again. You can show the date article was last updated by defining `modified` in your article meta data. 
 
 This is how it is displayed in the side bar,
 
 ![Modified Date](|filename|/images/elegant-theme_last-modified.png)
+
+Value of `modified` is treated as string, thus you can insert raw HTML in it. For example, `modified` meta data for this article is
+
+    :::html
+    modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History">Aug 29, 2013</a>
+
+Clicking on "Aug 29, 2013" will take reader to the Git repository which will show him revision history of the article.
 
 ## Efficient use of Meta Tags 
 
