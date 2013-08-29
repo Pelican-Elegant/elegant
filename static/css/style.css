@@ -366,5 +366,15 @@ img {
 }
 
 .table-of-content .toc {
-font-size: 0.7em;
+    font-size: 0.7em;
+}
+.last_updated a {
+     color: black;
+     border-bottom: 0.5px dashed darkblue;
+}
+.last_updated a:hover {
+     text-shadow: none;
+     text-decoration: none;
+     border-bottom: medium none;
+     color: rgb(0, 85, 128);
 }
