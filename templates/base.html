@@ -54,7 +54,7 @@
                             <li {% if page_name == "categories" %} class="active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
                             <li {% if page_name == "tags" %} class="active"{% endif %}><a href="{{ SITEURL }}/tags.html">Tags</a></li>
                             <li {% if page_name == "archives" %} class="active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
-                            <li><form class="navbar-search" action="search.html"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            <li><form class="navbar-search" action="search.html" onsubmit="return validateForm()"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                         </ul>
                     </div>
                 </div>
@@ -75,6 +75,13 @@
         {% block script %}
         <script src="http://code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm()
+            {
+                var query = document.getElementById('tipue_search_input').value;
+                return (query.length > 0);
+            }
+        </script>
         {% endblock script %}
     </body>
 </html>
