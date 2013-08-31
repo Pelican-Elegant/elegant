@@ -15,7 +15,7 @@
         {% endif %}
 
         {% if SITE_DESCRIPTION %}
-        <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}">
+        <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}" />
         {% endif %}
         <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
         {% block head_links %}
