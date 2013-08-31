@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if article and article.author %}
         <meta name="author" content="{{ article.author }}" />
+        <meta name="copyright" content="{{ article.author }}" />
+        {% elif page and page.author %}
+        <meta name="author" content="{{ page.author }}" />
+        <meta name="copyright" content="{{ page.author }}" />
         {% else %}
         <meta name="author" content="{{ AUTHOR }}" />
-        {% endif %}
-
-        {% if SITE_LICENSE %}
-        <meta name="copyright" content="{{ SITE_LICENSE|striptags }}">
+        <meta name="copyright" content="{{ AUTHOR }}" />
         {% endif %}
 
         {% if SITE_DESCRIPTION %}
