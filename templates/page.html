@@ -38,7 +38,6 @@
             {% endif %}
 
             {{ page.content }}
-            {% include 'comments.html' %}
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
@@ -81,5 +80,4 @@
 
     {% block script %}
     {{ super() }}
-    {% include 'disqus_script_count.html' %}
     {% endblock script %}
