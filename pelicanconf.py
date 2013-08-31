@@ -37,6 +37,10 @@ DEFAULT_PAGINATION = False
 
 # Defaults
 DEFAULT_CATEGORY = "Miscellaneous"
+USE_FOLDER_AS_CATEGORY = False
+ARTICLE_URL = u'{slug}'
+PAGE_URL = u'{slug}'
+PAGE_SAVE_AS = u'{slug}.html'
 
 # Feeds
 FEED_ALL_ATOM = None
