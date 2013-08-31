@@ -9,6 +9,13 @@
 {{ page.summary|striptags }}
 {% endif %}
 {% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}" />
+{% endif %}
+{% endblock meta_tags_in_head %}
+
 {% block content %}
 <article>
 <div class="row-fluid">

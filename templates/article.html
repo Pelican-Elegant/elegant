@@ -9,6 +9,13 @@
 {{ article.summary|striptags }}
 {% endif %}
 {% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if article.tags or article.category or article.keywords %}
+<meta name="keywords" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+{% endif %}
+{% endblock meta_tags_in_head %}
+
 {% block content %}
 <article>
 <div class="row-fluid">
