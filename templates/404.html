@@ -20,7 +20,7 @@ Page does not exist at {{ SITENAME|striptags }} blog.
         <p>Sorry, but the page you are looking for cannot be found. It seems that the page you were trying to reach doesn't exist, or may be it has just moved, or it no longer exists.</p>
         <p>The best thing to do is to use the search form or start again from the <a href="{{ SITEURL }}">home page</a>.</p>
         <div class="input-append">
-            <form action="{{ SITEURL }}/search.html" onsubmit="return validateForm404()">
+            <form action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value)">
                 <input type="text" class="span12" placeholder="Search" name="q" id="tipue_search_input_404">
                 <button class="btn" type="button">Search</button>
             </form>
@@ -28,15 +28,3 @@ Page does not exist at {{ SITENAME|striptags }} blog.
     </div>
 </div>
 {% endblock content %}
-
-{% block script %}
-{{ super() }}
-        <script>
-            function validateForm404()
-            {
-                var query_404 = document.getElementById('tipue_search_input_404');
-                return (typeof(query_404) != 'undefined' && query_404 != null && query_404.value.length > 0);
-            }
-        </script>
-
-{% endblock script %}
