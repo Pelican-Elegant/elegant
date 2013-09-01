@@ -14,7 +14,7 @@ DEFAULT_LANG = u'en'
 # Plugins and extensions
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
 PLUGIN_PATH = "../pelican-plugins/"
-PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
+PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img']
 
 SITEMAP = {
     'format': 'xml',
