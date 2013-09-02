@@ -49,6 +49,9 @@ Home page of the {{ SITENAME|striptags }} blog.
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
             </header>
             {% for article in articles %}
+            {% if not RECENT_ARTICLES_COUNT %}
+            {% set RECENT_ARTICLES_COUNT = 10 %}
+            {% endif %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <ul class="list-all-articles">
                 <li>
