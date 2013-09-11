@@ -18,6 +18,7 @@ Elegant gives meaning to the expression "sand the under side of the drawer." Eve
 
 <div style="text-align:center;">
 <button class="btn btn-large btn-primary" type="button" onclick="window.open('https://github.com/talha131/pelican-elegant', '_blank');">Get Elegant</button>
+<div><a href="#license" title="License Agreement for using Elegant Theme"><small>License Agreement</small></a></div>
 </div>
 
 What makes Elegant so special? 
