@@ -10,6 +10,7 @@ Version 1.1 (under testing, stable)
 * Bug fix: Close meta tags
 * Bug fix: ID of search form in 404 page should be different from the ID of search form in main navigation
 * Bug fix: If `RECENT_ARTICLES_COUNT` is undefined, set it to 10. So that Pelican does not throw critical error
+* Bug fix: Links in ordered list in an article do not conform to the link style in rest of the article
 
 Version 1.0
 ===========
