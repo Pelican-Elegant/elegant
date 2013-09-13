@@ -110,7 +110,7 @@ Projects list is read from `PROJECTS`. It is an array of dictionaries. Each dict
 
 ### Recent Articles
 
-Recent articles show last `RECENT_ARTICLES_COUNT`. It also has a link to "all posts".
+Recent articles show last `RECENT_ARTICLES_COUNT` whose default value is 10. It also has a link to "all posts".
 
 ## Mailchimp
 
