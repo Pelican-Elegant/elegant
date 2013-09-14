@@ -275,9 +275,11 @@ Clicking on "Aug 29, 2013" will take reader to the Git repository which will sho
 
 ## Efficient use of Meta Tags 
 
-Your `SITE_DESCRIPTION` and article summary is used to define description meta tag `<meta name="description"`.
+Elegant puts tags and category of your article in keywords tag `<meta name="keywords"`. You can set `keywords` property in an article to define your own keywords that should be included there.
 
-Your site license is also placed in copyright meta tag `<meta name="copyright"`. 
+Your `SITE_DESCRIPTION` and article summary is used to define description tag `<meta name="description"`.
+
+Your `AUTHOR` name is used in copyright tag `<meta name="copyright"`. 
 
 ## Web Safe Fonts
 
@@ -322,6 +324,7 @@ These are the optional article meta data variables that you can use
     summary
     disqus_identifier
     modified
+    keywords
 
 Blog [`onCrash=Reboot();`](http://oncrashreboot.com) uses Elegant theme. You can see its configuration files at [Github](https://github.com/talha131/onCrashReboot) for inspiration.
 
