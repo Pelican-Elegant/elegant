@@ -28,3 +28,10 @@ Thanks to
 
 1. His [pull request](https://github.com/getpelican/pelican-plugins/pull/68) reminded me that I have forgotten to add template for Pages
 1. His [commit](https://github.com/if1live/pelican-elegant/commit/3da52903e94051fa771212149a10a271adc78264#commitcomment-3988674) in the fork brought bug in the path of search.html to my notice
+
+[Jérémie Astori](https://github.com/astorije)
+---------------------------------------------
+
+### Aug 30, 2013
+
+1. He reported a [bug](https://botbot.me/freenode/pelican/msg/5577967/) in search form.
