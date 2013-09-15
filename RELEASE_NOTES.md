@@ -1,5 +1,5 @@
-Version 1.1 (under testing, stable)
-===================================
+Version 1.1
+===========
 
 * Add template for pages. Pages do not have tags, category and Disqus comments
 * Keep style of a hyperlink in `modified` meta data consisted with the theme
