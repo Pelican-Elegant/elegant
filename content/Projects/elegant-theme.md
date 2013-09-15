@@ -6,7 +6,7 @@ Tags: jinja2, bootstrap, front-end
 Summary: Detailed documentation of Elegant, which is a theme for Pelican, developed using Jinja2 and Bootstrap
 Slug: elegant-a-clean-theme-for-pelican-with-search-feature
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican
-modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History">Aug 29, 2013</a>
+modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History">Sep 15, 2013</a>
 
 
 [TOC]
