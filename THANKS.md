@@ -1,6 +1,26 @@
 Thanks to
 =========
 
+[yuex](https://github.com/yuex)
+-------------------------------
+
+### Sep 15, 2013
+
+1. He submitted a [patch](https://github.com/talha131/pelican-elegant/pull/2) to the project.
+
+[Melissa](https://github.com/meli-lewis)
+----------------------------------------
+### Sep 3, 2013
+
+1. She reported a [critical bug](https://github.com/talha131/pelican-elegant/issues/1).
+
+[John](http://twitter.com/BostonEnginerd)
+-----------------------------------------
+
+### Sep 2, 2013
+
+1. He suggested [an improvement](https://twitter.com/BostonEnginerd/status/374555593589002241) to the [Elegant project description](http://oncrashreboot.com/elegant-a-clean-theme-for-pelican-with-search-feature).
+
 [if1live](https://github.com/if1live)
 -------------------------------------
 
