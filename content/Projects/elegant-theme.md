@@ -17,7 +17,7 @@ Elegant is a responsive theme for [Pelican](http://getpelican.com/) powered by [
 Elegant gives meaning to the expression "sand the under side of the drawer." Every feature and style of Elegant is the result of a long thought process. 
 
 <div style="text-align:center;">
-<button class="btn btn-large btn-primary" type="button" onclick="window.open('https://github.com/talha131/pelican-elegant', '_blank');">Get Elegant</button>
+<button class="btn btn-large btn-primary" type="button" onclick="window.open('https://github.com/talha131/pelican-elegant/archive/V1.1.zip', '_blank');">Get Elegant</button>
 <div><a href="#license" title="License Agreement for using Elegant Theme"><small>License Agreement</small></a></div>
 </div>
 
