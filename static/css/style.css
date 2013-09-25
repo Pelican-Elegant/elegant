@@ -131,12 +131,12 @@ ul.articles-in-tag li {
 
 /* Article */
 
-article p a {
+article p a, article ol a {
     color:black;
     border-bottom:0.5px dashed darkblue;
 }
 
-article p a:hover {
+article p a:hover, article ol a:hover {
     text-shadow:none;
     text-decoration:none;
     border-bottom:none;
