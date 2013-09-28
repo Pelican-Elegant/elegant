@@ -1,3 +1,8 @@
+Version 1.2 (under development)
+===============================
+
+* Add CSS style for permanent links. It is visible only user hovers over the heading.
+
 Version 1.1
 ===========
 
