@@ -1,7 +1,10 @@
 Version 1.2 (under development)
 ===============================
 
-* Add CSS style for permanent links. It is visible only user hovers over the heading.
+* CSS style for permanent links added. It is visible only user hovers over the heading
+* Block quote is indented towards left
+* Bug fix: Hyperlink dashed underline is not visible on Chrome
+* Bug fix: Text in list goes beyond list marker when text is long and overflows to next line
 
 Version 1.1
 ===========
