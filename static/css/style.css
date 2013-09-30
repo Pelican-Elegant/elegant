@@ -160,6 +160,7 @@ article p a:hover, article ol a:hover {
     padding: 0px 0px 0px 20px;
     margin: 20px 0px 20px 0px;
     border-left: 5px solid rgb(100,100,100);
+    margin-left: 2em;
 }
 
 .article-content blockquote p {
