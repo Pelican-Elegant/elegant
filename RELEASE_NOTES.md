@@ -5,6 +5,7 @@ Version 1.2 (under development)
 * Block quote is indented towards left
 * Bug fix: Hyperlink dashed underline is not visible on Chrome
 * Bug fix: Text in list goes beyond list marker when text is long and overflows to next line
+* Bug fix: Disqus comment count is always 0
 
 Version 1.1
 ===========
