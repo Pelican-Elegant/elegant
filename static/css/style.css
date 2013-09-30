@@ -133,7 +133,7 @@ ul.articles-in-tag li {
 
 article p a, article ol a {
     color:black;
-    border-bottom:0.5px dashed darkblue;
+    border-bottom:thin dashed darkgray;
 }
 
 article p a:hover, article ol a:hover {
@@ -370,7 +370,7 @@ img {
 }
 .last_updated a {
      color: black;
-     border-bottom: 0.5px dashed darkblue;
+     border-bottom: thin dashed darkgray;
 }
 .last_updated a:hover {
      text-shadow: none;
