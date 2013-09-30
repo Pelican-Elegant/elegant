@@ -8,6 +8,7 @@ Thanks to
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/5) hyperlink style compatibility issue on Chrome.
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/3) an issue with link style.
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/4) the bug that Disqus comment count is always zero.
 
 [yuex](https://github.com/yuex)
 -------------------------------
