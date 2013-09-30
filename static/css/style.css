@@ -173,23 +173,22 @@ article p a:hover, article ol a:hover {
 .article-content ul {
     list-style-type: circle;
     font-size:1em;
-    list-style-position: inside;
 }
 
 .article-content ol {
     list-style-type: decimal;
     font-size: 1em;
-    list-style-position: inside;
 }
 
 .article-content li {
     margin:1px 0px 1px 20px;
+    list-style-position: outside;
 }
 
 .article-content dl {
     list-style-type: decimal;
     font-size: 1em;
-    list-style-position: inside;
+    list-style-position: outside;
     margin:20px 0px 20px 20px;
 }
 
