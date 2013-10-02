@@ -1,6 +1,7 @@
-Version 1.2 (under development)
-===============================
+Version 1.2
+===========
 
+* RSS and Atom feed links
 * CSS style for permanent links added. It is visible only user hovers over the heading
 * Block quote is indented towards left
 * Bug fix: Hyperlink dashed underline is not visible on Chrome
