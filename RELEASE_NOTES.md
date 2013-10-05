@@ -1,3 +1,8 @@
+Version 1.3 (under development)
+===============================
+
+* Home page meta description tag should use `SITE_DESCRIPTION`.
+
 Version 1.2
 ===========
 
