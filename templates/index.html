@@ -4,9 +4,6 @@
 {{ super() }}
 {% endblock title %}
 
-{% block head_description %}
-Home page of the {{ SITENAME|striptags }} blog. 
-{% endblock head_description %}
 {% block content %}
 <div class="row-fluid">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
