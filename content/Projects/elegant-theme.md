@@ -7,6 +7,7 @@ Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique 
 Slug: elegant-a-clean-theme-for-pelican-with-search-feature
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican
 modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History">Sep 15, 2013</a>
+keywords: pelican theme, responsive theme, tipue search
 
 
 [TOC]
