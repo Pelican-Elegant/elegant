@@ -3,7 +3,7 @@ Subtitle: A theme for Pelican
 Date: 2013-08-27 23:20
 Category: Projects
 Tags: jinja2, bootstrap, front-end
-Summary: Detailed documentation of Elegant, which is a theme for Pelican, developed using Jinja2 and Bootstrap
+Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique features include search, MailChimp, notification bar, live filter, collapsible comments, and custom 404 page.
 Slug: elegant-a-clean-theme-for-pelican-with-search-feature
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican
 modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History">Sep 15, 2013</a>
