@@ -59,11 +59,12 @@ SUBSCRIBE_BUTTON_TITLE = u'Send me Free updates'
 MAILCHIMP_FORM_ACTION = u'http://oncrashreboot.us4.list-manage2.com/subscribe/post?u=e66b4cca51e40b859c64e8411&amp;id=d135692a12'
 PROJECTS = [
         {
-            'name': 'Elegant Theme for Pelican',
+            'name': 'Elegant',
             'url':
             'http://oncrashreboot.com/pelican-elegant',
-            'description': 'A clean and distraction free theme, with search and a'
-            ' lot more unique features, using Jinja2 and Bootstrap'},
+            'description': 'A clean and distraction free Pelican theme, with'
+            ' search and a'
+            ' lot more unique features. Built with Jinja2 and Bootstrap'},
         {
             'name': 'Logpad + Duration',
             'url':
