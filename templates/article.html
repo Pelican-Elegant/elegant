@@ -132,4 +132,22 @@
     {% block script %}
     {{ super() }}
     {% include 'disqus_script_count.html' %}
+    {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+    <script  language="javascript" type="text/javascript">
+        function uncollapse() {
+            var hash_str = window.location.hash;
+            if (window.location.hash.match(/^#comment-\d+$/))
+            {
+                var hash_str = '#disqus_thread';
+            }
+            $(hash_str).collapse({
+                toggle: true
+                })
+        }
+    </script>
+
+    <script type="text/javascript" language="JavaScript">
+        uncollapse(); 
+    </script>
+    {% endif %}
     {% endblock script %}
