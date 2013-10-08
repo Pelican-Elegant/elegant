@@ -4,6 +4,10 @@ Thanks to
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
 
+### Oct 4, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/10) an issue with CSS style of links in an unordered lists.
+
 ### Oct 1, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/6) that it is not possible to link to a Disqus comment.

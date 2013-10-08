@@ -3,6 +3,7 @@ Version 1.3 (under development)
 
 * Expand comments section if URL points to a comment
 * Description meta tag on Home Page uses `SITE_DESCRIPTION`
+* Fix: CSS style of links in an unordered list inside article content is different from article links
 
 Version 1.2
 ===========
