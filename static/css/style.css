@@ -131,12 +131,12 @@ ul.articles-in-tag li {
 
 /* Article */
 
-article p a, article ol a {
+article p a, article ol a, article div.article-content ul:not(.articles_timeline) a {
     color:black;
     border-bottom:thin dashed darkgray;
 }
 
-article p a:hover, article ol a:hover {
+article p a:hover, article ol a:hover, article div.article-content ul:not(.articles_timeline) a:hover {
     text-shadow:none;
     text-decoration:none;
     border-bottom:none;
