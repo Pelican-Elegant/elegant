@@ -15,3 +15,7 @@ This is how a generated article looks like
 ![Article screenshot](https://raw.github.com/talha131/pelican-elegant/master/article-screenshot.png)
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c71132a529c1c5d7eb8dc5ea4825a851 "githalytics.com")](http://githalytics.com/talha131/pelican-elegant)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/talha131/pelican-elegant/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
