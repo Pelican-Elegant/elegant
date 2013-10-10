@@ -38,7 +38,9 @@
             {% endif %}
 
             {{ article.content }}
+            {% include 'comments.html' %}
             <aside>
+            <hr/>
             {% for an_article in dates %}
             {% if an_article.url == article.url %}
             {% set index = loop.index0 %}
@@ -73,7 +75,6 @@
             {% endif %}
             {% endfor %}
             </aside>
-            {% include 'comments.html' %}
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
