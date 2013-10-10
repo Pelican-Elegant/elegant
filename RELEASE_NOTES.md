@@ -1,12 +1,12 @@
 Version 1.3 (under development)
 ===============================
 
-* Expand comments section if URL points to a comment
-* Description meta tag on Home Page uses `SITE_DESCRIPTION`
 * Next and previous article navigation is placed below comments section so that article's content and comments appear together
 * Article title and site name in `<title>` tag is separated by ` · ` which is cleaner and more subtle than ` -  ` 
 * Subtitle of articles and pages is added in `<title>` tag along with main title
-* Fix: CSS style of links in an unordered list inside article content is different from article links
+* Description meta tag on Home Page uses `SITE_DESCRIPTION`
+* Bug fix: Expand comments section if URL points to a comment
+* Bug fix: CSS style of links in an unordered list inside article content is different from article links
 
 Version 1.2
 ===========
