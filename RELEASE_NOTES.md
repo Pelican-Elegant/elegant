@@ -1,5 +1,5 @@
-Version 1.3 (under development)
-===============================
+Version 1.3
+===========
 
 * Next and previous article navigation is placed below comments section so that article's content and comments appear together
 * Article title and site name in `<title>` tag is separated by ` · ` which is cleaner and more subtle than ` -  ` 
