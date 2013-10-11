@@ -1,25 +1,25 @@
 Title: Elegant
-Subtitle: A theme for Pelican
+Subtitle: Why it is the best Pelican theme 
 Date: 2013-08-27 23:20
 Category: Projects
 Tags: jinja2, bootstrap, front-end
-Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique features include search, MailChimp, notification bar, live filter, collapsible comments, and custom 404 page.
-Slug: elegant-a-clean-theme-for-pelican-with-search-feature
+Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique features are search, MailChimp, notification bar, twitter card, and custom 404 page.
+Slug: elegant-best-pelican-theme-features
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican
-modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History" target="_blank">Oct 5, 2013</a>
+modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History" target="_blank">Oct 11, 2013</a>
 keywords: pelican theme, responsive theme, tipue search
 
 
 [TOC]
 
 
-Elegant is a responsive theme for [Pelican](http://getpelican.com/) powered by [Bootstrap](http://twitter.github.com/bootstrap/index.html), and developed in [Jinja2](http://jinja.pocoo.org/). It is a minimal, and stylish theme that looks amazing across all screen resolutions and devices. 
+Elegant is a stylish, responsive, and minimal [Pelican](http://getpelican.com/) theme that looks amazing across all screen resolutions and devices. 
 
 Elegant gives meaning to the expression "sand the under side of the drawer." Every feature and style of Elegant is the result of a long thought process. 
 
 <div style="text-align:center;">
-<button class="btn btn-large btn-primary" type="button" onclick="window.open('https://github.com/talha131/pelican-elegant/archive/V1.2.zip', '_blank');">Get Elegant <small>1.2</small></button>
-<div><a href="#license" title="License Agreement for using Elegant Theme"><small>License Agreement</small></a>|<a href="https://github.com/talha131/pelican-elegant/blob/master/RELEASE_NOTES.md#version-12" title="Release notes for Version 1.2" target="_blank"><small>Release Notes</small></a></div>
+<a class="btn btn-large btn-primary" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download on Github']);" href="https://github.com/talha131/pelican-elegant/archive/V1.3.zip" target="_blank">Get Elegant <small>1.3</small></a>
+<div><a href="#license" title="License Agreement for using Elegant Theme"><small>License Agreement</small></a>|<a href="https://github.com/talha131/pelican-elegant/blob/master/RELEASE_NOTES.md#version-13" title="Release notes for Version 1.3" target="_blank"><small>Release Notes</small></a></div>
 </div>
 
 What makes Elegant so special? 
@@ -170,7 +170,7 @@ Elegant has a custom Error 404 page for your readers.
 Elegant follows following format for the `<title>` tag
 
 ```
-Article title - Site Name
+Article title · Site Name
 ```
 
 ![Article title is always visible in the tab](|filename|/images/elegant-theme_page-title.png)
@@ -204,7 +204,7 @@ Elegant uses [Solarized](http://ethanschoonover.com/solarized) theme for syntax 
 
 ## Disqus Thread ID
 
-Most pelican themes pass article URL to Disqus as the [Disqus identifier](http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier). This puts you at a disadvantage. If you are forced to change URL of an article you will lose Disqus discussion for that article because Disqus identifier for the article will change too.
+Most Pelican themes pass article URL to Disqus as the [Disqus identifier](http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier). This puts you at a disadvantage. If you are forced to change URL of an article you will lose Disqus discussion for that article because Disqus identifier for the article will change too.
 
 Elegant offers you `disqus_identifier` property that you can set in your article meta data. Set it to any unique string you want. It won't be effected by the article URL.
 
@@ -220,7 +220,7 @@ You can put your license string in `SITE_LICENSE`. It will appear in the footer 
 
 The idea behind Elegant's design is to make reading a clean and distraction free experience. Table of contents is important but it is not part of the article content. Therefore, Elegant pushes out table of content to the left of the article's main content. Its font size is relatively smaller. This way, table of content stays visible for navigation but reader's attention to the article stays unaffected.
 
-To utilise this feature, you need to use [extract_toc](https://github.com/getpelican/pelican-plugins) pelican. Elegant encloses the table of content in `<nav>` tag for semantics.
+To utilise this feature, you need to use [extract_toc](https://github.com/getpelican/pelican-plugins) plugin. Elegant encloses the table of content in `<nav>` tag for semantics.
 
 ## Article Subtitle
 
@@ -288,9 +288,9 @@ Elegant uses commonly available typefaces in every style rule. It has a list of 
 
 ***************************
 
-# Elegant - Technical Nitty-Gritty
+## Elegant - Technical Nitty-Gritty
 
-## Configuration Variables
+### Configuration Variables
 
 Here are the variables that you should set in your configuration to get the most out of Elegant
 
@@ -329,7 +329,7 @@ These are the optional article meta data variables that you can use
 
 Blog [`onCrash=Reboot();`](http://oncrashreboot.com) uses Elegant theme. You can see its configuration files at [Github](https://github.com/talha131/onCrashReboot) for inspiration.
 
-## License
+### License
 
 The license requires that you give credit to me, Talha Mansoor, as the author of the Elegant theme on every site that uses this theme. I have placed the attribution in the footer of every page. Do not remove it. If you need to remove or change the style of the attribution, please get in [touch with me](http://oncrashreboot.com/#about-me) first. 
 
@@ -337,7 +337,7 @@ Along with this attribution clause, Elegant theme is licensed under The MIT Lice
 
 If you use my theme, I would love to hear from you. [Get in touch](http://oncrashreboot.com/#about-me) and let me know about it. I may link to your site too.
 
-## Contribute
+### Contribute
 
 Front end design is not my strong suite. I must have made some blunders in this design unknowingly. Please don't let me go away with buggy code.   
 
