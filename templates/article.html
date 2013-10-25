@@ -103,6 +103,10 @@
             </ul>
             {% endif %}
 
+            <p>
+            {% include "twitter.html" %}
+            </p>
+
             {% if MAILCHIMP_FORM_ACTION %}
             {% if not EMAIL_SUBSCRIPTION_LABEL %}
             {% set EMAIL_SUBSCRIPTION_LABEL='Email Newsletter' %}
