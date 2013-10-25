@@ -25,6 +25,9 @@
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" media="screen">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/solarizedlight.css" media="screen">
+        {% if CUSTOM_CSS %}
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/{{ CUSTOM_CSS }}.css" media="screen">
+        {% endif %}
         {% endblock head_links %}
         <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon.png" />
