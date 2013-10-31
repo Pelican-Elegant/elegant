@@ -1,3 +1,13 @@
+Version 1.4 (under development)
+===============================
+
+* New: Support for `custom.css` 
+* New: Link to social profiles
+* New: Support for [Font Awesome](http://fortawesome.github.io/)
+* Article images have a visible border
+* Block quotes have a quote icon instead of a thick line on left
+* Article's content font size is bigger, for better readability
+
 Version 1.3
 ===========
 
