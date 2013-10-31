@@ -159,9 +159,20 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 .article-content blockquote {
     padding: 0px 0px 0px 20px;
     margin: 20px 0px 20px 0px;
-    border-left: 5px solid rgb(100,100,100);
     margin-left: 2em;
+    border-left:0px;
 }
+
+.article-content blockquote:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 18px;
+    color: rgb(100,100,100);
+    margin-left: -2em;
+ }
 
 .article-content blockquote p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -169,6 +180,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     text-transform: none;
     font-size: 1.2em;
     line-height: 1.7em;
+    margin-top:-20px;
 }
 
 .article-content ul {
