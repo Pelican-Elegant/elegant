@@ -1,0 +1,14 @@
+{% if SOCIAL %}
+<h4>Stay in Touch</h4>
+{% for name, url in SOCIAL %}
+    {% set link_title = 'My ' + name + ' Profile' %}
+    {% set link_icon = name.lower() %}
+    {% if name.lower() == 'email' %}
+        {% set link_title = 'My ' + name + ' Address' %}
+        {% set link_icon = 'envelope' %}
+    {% endif %}
+<a href="{{url|e}}" title="{{link_title}}" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-{{link_icon}} sidebar-social-links"></i></a>
+{% endfor %}
+{% endif %}
+

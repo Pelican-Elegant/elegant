@@ -410,3 +410,12 @@ dt:hover > a.headerlink {
     visibility: visible;
     text-decoration:none;
 }
+.sidebar-social-links {
+    font-size: 1.2em;
+    color: rgb(100,100,100);
+    text-decoration: none;
+    padding-right: 3px;
+}
+.sidebar-social-links i:hover {
+    color: black;
+}
