@@ -375,8 +375,9 @@ ul.top-menu li a {
     font-style:italic;
 }    
 
-img {
-    border: 1px solid #EEEEEE;
+.article-content img {
+    padding:5px;
+    border: 2px solid #EEEEEE;
 }
 
 .table-of-content .toc {
