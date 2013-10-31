@@ -1,6 +1,13 @@
 Thanks to
 =========
 
+[brechtm](https://github.com/brechtm)
+-------------------------------------
+
+### Oct 25, 2013
+
+1. He [suggested](https://github.com/talha131/pelican-elegant/pull/40) the idea of `custom.css`.
+
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
 
