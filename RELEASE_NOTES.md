@@ -8,6 +8,7 @@ Version 1.4 (under development)
 * Article images have a visible border
 * Block quotes have a quote icon instead of a thick line on left
 * Article's content font size is bigger, for better readability
+* Remove unnecessary padding in sidebar's tag list
 
 Version 1.3
 ===========
