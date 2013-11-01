@@ -9,8 +9,8 @@ Summary: Why challenging yourself is important and what a software developer can
 Keywords: career advice, beginner programmer, self improvement
 
 
-Elliott Hulse, a fitness coach,
-[says](http://www.hulsestrength.com/1-exercise-increase-testosterone/),
+Elliott Hulse, a fitness coach, on the topic of
+[building muscles](http://www.hulsestrength.com/1-exercise-increase-testosterone/),
 
 > Your muscles need to be stressed to a point where they are FORCED to grow
 > bigger and stronger. Otherwise they will stay the same, seeing no need to
