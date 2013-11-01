@@ -47,6 +47,14 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
+# Social
+SOCIAL = (
+        ('Twitter', 'http://twitter.com/talham_'),
+        ('Github', 'http://github.com/talha131'),
+        ('GitTip', 'http://gittip.com/talha131'),
+        ('Email', 'mailto:talha131@gmail.com'),
+          )
+
 # Elegant theme
 RECENT_ARTICLES_COUNT = 10
 COMMENTS_INTRO = u"So what do you think? Did I miss something? Is any part unclear? Leave your comments below."
