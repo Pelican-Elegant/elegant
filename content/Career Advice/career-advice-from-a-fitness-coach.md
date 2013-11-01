@@ -63,9 +63,9 @@ These will offer us better job prospects."
 
 Guess what? They never came around to learn any of their favorite language.
 First they gave up on pointers, and then C. 
-Same guys gave up on Object Oriented Programming introductory classes.
+Same guys gave up on object-oriented programming introductory classes.
 When C# classes started they weren't ready for it at all.
-Finally the stopped programming altogether.
+Finally they stopped programming altogether.
 
 Some took up graphic designing course, and rest took up
 quality assurance. The attitude of shying away from difficult stripped
