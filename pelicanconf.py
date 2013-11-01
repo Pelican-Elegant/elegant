@@ -108,14 +108,15 @@ PROJECTS = [
             ' Vi editor'
             }]
 LANDING_PAGE_ABOUT = {'title': 'I design and build software products for iOS and OSX',
-        'details': """<p>My name is Talha Mansoor.
+        'details': """<div itemscope itemtype="http://schema.org/Person"><p>My name
+        is <span itemprop="name">Talha Mansoor</span>.
        I am <a href="https://github.com/talha131/" title="My Github
-       profile">talha131</a> at Github and <a
+       profile" itemprop="url"><span itemprop="nickname">talha131</span></a> at Github and <a
        href="https://twitter.com/talham_/" title="My Twitter
-       profile">@talham_</a> at twitter. You can also reach me via <a
+       profile" itemprop="url">@talham_</a> at twitter. You can also reach me via <a
        href="mailto:talha131@gmail.com" title="My email
-       address">email</a>.</p><p>I work on <a href="http://jumpdesktop.com/"
-       title="Jump Desktop">Jump Desktop</a> which is a remote desktop
+       address" itemprop="email">email</a>.</p><p>I work on <a href="http://jumpdesktop.com/"
+       title="Jump Desktop" itemprop="affiliation">Jump Desktop</a> which is a remote desktop
        application for iOS, OSX and Android. I play a broad role there - which
        includes research, product design, engineering and deployment. I also
        lend a hand in user support.</p><p>I try to contribute to society by
@@ -128,12 +129,12 @@ LANDING_PAGE_ABOUT = {'title': 'I design and build software products for iOS and
        contribute to open source projects and beta test startup
        products.</p><p>Besides programming, I <a
        href="https://www.fitocracy.com/profile/Andrew-Dufresne/" title="My
-       Fitocracy profile">exercise</a> and <a
+       Fitocracy profile" itemprop="url">exercise</a> and <a
        href="http://www.goodreads.com/talha131" title="My GoodReads
-       profile">read books</a> regularly. To be a stronger and better version of
+       profile" itemprop="url">read books</a> regularly. To be a stronger and better version of
        myself!</p><p>English is my second language. I am also learning <a
        href="http://www.duolingo.com/talha131" title="My Duolingo
-       profile">German from Duolingo</a>.</p>""" }
+       profile" itemprop="url">German from Duolingo</a>.</p></div>""" }
 STATIC_PATHS = ['theme/images', 'images']
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
