@@ -101,6 +101,11 @@ PROJECTS = [
             'https://github.com/pandemicsyn/asana/commits?author=talha131',
             'description': 'Python Asana API bindings'},
         {
+            'name': 'Ctags',
+            'url':
+            'https://github.com/fishman/ctags/commits?author=talha131',
+            'description': 'Exuberant Ctags clone with ObjectiveC and CSS support'},
+        {
             'name': 'Wasavi',
             'url':
             'https://github.com/akahuku/wasavi/commits?author=talha131',
