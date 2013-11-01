@@ -1,4 +1,4 @@
-Title: A Fitness Coach and Software Developers
+Title: A Fitness Coach and the Software Developers
 Tags: self-improvement, beginners, be-better, fitness
 Category: Career Advice
 Date: 2013-11-01 17:29
