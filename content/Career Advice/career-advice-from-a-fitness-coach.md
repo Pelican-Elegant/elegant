@@ -4,8 +4,8 @@ Category: Career Advice
 Date: 2013-11-01 17:29
 Slug: career-advice-software-developers-fitness-coach
 Disqus_identifier: jqda04o-career-advice-software-developers-fitness-coach
-Summary:
 Subtitle:
+Summary: Why challenging yourself is important and what a software developer can learn from fitness guru
 Keywords: career advice, beginner programmer, self improvement
 
 
