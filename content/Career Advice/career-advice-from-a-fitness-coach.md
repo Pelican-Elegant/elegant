@@ -9,8 +9,8 @@ Summary:
 Keywords: career advice, beginner programmer, self improvement
 
 
-This is what Elliott Hulse, a fitness coach, has to say on the topic of
-[fitness](http://www.hulsestrength.com/1-exercise-increase-testosterone/)
+Elliott Hulse, a fitness coach,
+[says](http://www.hulsestrength.com/1-exercise-increase-testosterone/),
 
 > Your muscles need to be stressed to a point where they are FORCED to grow
 > bigger and stronger. Otherwise they will stay the same, seeing no need to
@@ -23,14 +23,14 @@ To have big muscles you have to lift heavy weights. Heavier than what you can
 lift easily. If you won't push your body, it won't develop. Forcing your body to
 do the *impossible* is the only way to make it develop.
 
-This is true for software development too. We all create a comfort zone around
-us. We build it, cherish it, come to rely on it and then we lock ourselves in.
+We all create a comfort zone around us. We build it, cherish it, come to rely on
+it, and then we lock ourselves in. This is true for software development too.
 
 You can never improve as a developer if you cage yourself in your comfort zone.
 You may call your specific skills as your niche. You may proclaim that the your
 programming language is the best and most powerful language ever created.
 
-For what it's worth, fall in love with your platform and become it's ardent
+For what it's worth, fall in love with your platform and become its ardent
 worshipper. Your call! But you cannot improve this way.
 
 C was the first programming language I learned. After few months, I landed on my
@@ -55,7 +55,7 @@ Don't do what I did.
 
 This approach may work for some time and in few cases. Unfortunately, this
 attitude becomes persistent and turns into a habit. It begins to reflect, not
-only in your programming skills, but in every aspect of your life.
+only in your programming, but in every aspect of your life.
 
 In the same class where I learned C, several students gave up on C. Their
 excuse, "C is not widely used. We are more interested in learning Java or C#.
@@ -71,12 +71,10 @@ Some took up graphic designing course, and rest took up
 quality assurance. The attitude of shying away from difficult stripped
 away their dreams.
 
-If you want to improve, get out of your comfort zone. Pick something that you
-find difficult. A new language perhaps, or version control system or unit testing.
-If you have been developing web applications try desktop application development.
+If you want to improve, get out of your comfort zone. Pick something that
+challenges you.
 
-Learn what you think is difficult. Do what you think you can
-never do in ten years, heck, in your life time.
+Do what you think you can never do in ten years, heck, in your life time.
 
 Do whatever that makes you uncomfortable.
 
