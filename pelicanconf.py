@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Talha Mansoor'
-SITENAME = u"<span style=\'color:black;\'>onCrash</span> <span style=\'color:darkblue;\'>=</span> <span style=\'color:#AA1032;\'>'reboot();'</span>"
+SITENAME = u"""<span style="color:black;">onCrash</span> <span style="color:darkblue;">=</span> <span style="color:#AA1032;">'reboot();'</span>"""
 SITEURL = 'http://localhost:8000'
 
 # Regional Settings
@@ -13,7 +13,7 @@ DEFAULT_LANG = u'en'
 
 # Plugins and extensions
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc(permalink=true)']
-PLUGIN_PATH = "../pelican-plugins/"
+PLUGIN_PATH = '../pelican-plugins/'
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img']
 
 SITEMAP = {
@@ -32,11 +32,11 @@ SITEMAP = {
 
 # Appearance
 TYPOGRIFY = True
-THEME = "elegant"
+THEME = 'elegant'
 DEFAULT_PAGINATION = False
 
 # Defaults
-DEFAULT_CATEGORY = "Miscellaneous"
+DEFAULT_CATEGORY = 'Miscellaneous'
 USE_FOLDER_AS_CATEGORY = False
 ARTICLE_URL = u'{slug}'
 PAGE_URL = u'{slug}'
@@ -57,10 +57,10 @@ SOCIAL = (
 
 # Elegant theme
 RECENT_ARTICLES_COUNT = 10
-COMMENTS_INTRO = u"So what do you think? Did I miss something? Is any part unclear? Leave your comments below."
-SITE_LICENSE = u"<span xmlns:dct=\"http://purl.org/dc/terms/\" property=\"dct:title\"> onCrash=\"Reboot();\"</span> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"http://oncrashreboot.com\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">Talha Mansoor</a> is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>." 
+COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part unclear? Leave your comments below.'
+SITE_LICENSE = u'<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> onCrash="Reboot();"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://oncrashreboot.com" property="cc:attributionName" rel="cc:attributionURL">Talha Mansoor</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.'
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
-SITE_DESCRIPTION = u"My name is Talha Mansoor \u2015 a software engineer who gets things done. I am talha131 at Github and @talham_ at twitter. I design and build software products for iOS and OSX. I work on Jump Desktop which is a remote desktop application for iOS, OSX and Android. This is my personal blog."
+SITE_DESCRIPTION = u'My name is Talha Mansoor \u2015 a software engineer who gets things done. I am talha131 at Github and @talham_ at twitter. I design and build software products for iOS and OSX. I work on Jump Desktop which is a remote desktop application for iOS, OSX and Android. This is my personal blog.'
 EMAIL_SUBSCRIPTION_LABEL = u'Get Monthly Updates'
 EMAIL_FIELD_PLACEHOLDER = u'Enter your email...'
 SUBSCRIBE_BUTTON_TITLE = u'Send me Free updates'
@@ -108,7 +108,7 @@ PROJECTS = [
             ' Vi editor'
             }]
 LANDING_PAGE_ABOUT = {'title': 'I design and build software products for iOS and OSX',
-        'details': '<p>My name is Talha Mansoor. I am <a href=\"https://github.com/talha131/\" title=\"My Github profile\">talha131</a> at Github and <a href=\"https://twitter.com/talham_/\" title=\"My Twitter profile\">@talham_</a> at twitter. You can also reach me via <a href=\"mailto:talha131@gmail.com\" title=\"My email address\">email</a>.</p><p>I work on <a href=\"http://jumpdesktop.com/\" title=\"Jump Desktop\">Jump Desktop</a> which is a remote desktop application for iOS, OSX and Android. I play a broad role there - which includes research, product design, engineering and deployment. I also lend a hand in user support.</p><p>I try to contribute to society by striving to create great software products that make people\'s lives easier. I believe software is the most effective way to touch others\' lives in our day and time.</p><p>I mostly work in C, C++ and Objective-C on OSX and Linux, I also dabble in Python, Vim-L and JavaScript. I do not pigeonhole myself to specific languages or frameworks. A good developer is receptive and has the ability to learn new technologies. I also often contribute to open source projects and beta test startup products.</p><p>Besides programming, I <a href=\"https://www.fitocracy.com/profile/Andrew-Dufresne/\" title=\"My Fitocracy profile\">exercise</a> and <a href=\"http://www.goodreads.com/talha131\" title=\"My GoodReads profile\">read books</a> regularly. To be a stronger and better version of myself!</p><p>English is my second language. I am also learning <a href=\"http://www.duolingo.com/talha131\" title=\"My Duolingo profile\">German from Duolingo</a>.</p>'
+        'details': """<p>My name is Talha Mansoor. I am <a href="https://github.com/talha131/" title="My Github profile">talha131</a> at Github and <a href="https://twitter.com/talham_/" title="My Twitter profile">@talham_</a> at twitter. You can also reach me via <a href="mailto:talha131@gmail.com" title="My email address">email</a>.</p><p>I work on <a href="http://jumpdesktop.com/" title="Jump Desktop">Jump Desktop</a> which is a remote desktop application for iOS, OSX and Android. I play a broad role there - which includes research, product design, engineering and deployment. I also lend a hand in user support.</p><p>I try to contribute to society by striving to create great software products that make people's lives easier. I believe software is the most effective way to touch others' lives in our day and time.</p><p>I mostly work in C, C++ and Objective-C on OSX and Linux, I also dabble in Python, Vim-L and JavaScript. I do not pigeonhole myself to specific languages or frameworks. A good developer is receptive and has the ability to learn new technologies. I also often contribute to open source projects and beta test startup products.</p><p>Besides programming, I <a href="https://www.fitocracy.com/profile/Andrew-Dufresne/" title="My Fitocracy profile">exercise</a> and <a href="http://www.goodreads.com/talha131" title="My GoodReads profile">read books</a> regularly. To be a stronger and better version of myself!</p><p>English is my second language. I am also learning <a href="http://www.duolingo.com/talha131" title="My Duolingo profile">German from Duolingo</a>.</p>"""
                     }
 STATIC_PATHS = ['theme/images', 'images']
 TAG_SAVE_AS = ''
