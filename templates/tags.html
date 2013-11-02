@@ -7,6 +7,12 @@ All Tags · {{ super() }}
 {% block head_description %}
 All tags used in the {{ SITENAME|striptags }} blog.
 {% endblock head_description %}
+
+{% block feed_links %}
+{{ super() }}
+{% include 'feeds_tags.html' %}
+{% endblock feed_links %}
+
 {% block content %}
 
 <div class="row-fluid">
