@@ -11,6 +11,11 @@ Thanks to
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
 
+### Oct 31, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/50) an issue
+   with CSS style of nested lists.
+
 ### Oct 4, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/10) an issue with CSS style of links in an unordered lists.

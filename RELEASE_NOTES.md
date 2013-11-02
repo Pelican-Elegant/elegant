@@ -1,14 +1,19 @@
 Version 1.4 (under development)
 ===============================
 
-* New: Support for `custom.css` 
+* New: Support for `custom.css`
 * New: Link to social profiles
+* New: Stat Counter Analytics support
 * New: Support for [Font Awesome](http://fortawesome.github.io/)
 * Email newsletter subscriber form style matches rest of the theme
 * Article images have a visible border
 * Block quotes have a quote icon instead of a thick line on left
 * Article's content font size is bigger, for better readability
 * Remove unnecessary padding in sidebar's tag list
+* Change default place holder text of Email form text field
+* Search results link open in the same window, which is consistent with search
+  results from internet search engines
+* Fix bug: Nested lists have different font sizes
 
 Version 1.3
 ===========
