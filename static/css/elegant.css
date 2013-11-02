@@ -145,12 +145,13 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     text-align:justify;
     max-width:50em;
     font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+    font-size: 1.2em;
 }
 
 .article-content p{
     font-variant: normal;
     text-transform: none;
-    font-size: 1.2em;
+    font-size: inherit;
     line-height: 1.6em;
     margin:20px 0px 20px 0px;
 }
@@ -177,19 +178,19 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-variant: normal;
     text-transform: none;
-    font-size: 1.2em;
+    font-size: inherit;
     line-height: 1.7em;
     margin-top:-20px;
 }
 
 .article-content ul {
     list-style-type: circle;
-    font-size:1.2em;
+    font-size: inherit;
 }
 
 .article-content ol {
     list-style-type: decimal;
-    font-size: 1.2em;
+    font-size: inherit;
 }
 
 .article-content li {
@@ -200,7 +201,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 
 .article-content dl {
     list-style-type: decimal;
-    font-size: 1.2em;
+    font-size: inherit;
     list-style-position: outside;
     margin:20px 0px 20px 20px;
 }
@@ -212,7 +213,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 }
 
 .article-content dt {
-    font-size:1.2em;
+    font-size: inherit;
 }
 
 .page_header h1 {
