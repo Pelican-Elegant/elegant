@@ -27,7 +27,7 @@ $(document).ready(function() {
              'mode': 'live',
          {% endif %}
          'show': 10,
-         'newWindow': true,
+         'newWindow': false,
          {# I cannot place following statements in the conditionals above because then Tipue Search fails to work. Possibly a bug in Tipue Search. #}
          {% if 'tipue_search' in PLUGINS %}
              'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
