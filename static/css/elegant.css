@@ -396,15 +396,11 @@ ul.top-menu li a {
 .table-of-content .toc {
     font-size: 0.7em;
 }
-.last_updated a {
-     color: black;
-     border-bottom: thin dashed darkgray;
+.last-updated a {
+    color:rgb(51,51,51);
 }
-.last_updated a:hover {
-     text-shadow: none;
-     text-decoration: none;
-     border-bottom: medium none;
-     color: rgb(0, 85, 128);
+.last-updated a:hover {
+    text-decoration:none;
 }
 
 a.headerlink {
