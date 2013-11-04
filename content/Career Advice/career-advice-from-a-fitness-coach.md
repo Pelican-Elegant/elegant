@@ -33,6 +33,19 @@ programming language is the best and most powerful language ever created.
 For what it's worth, fall in love with your platform and become its ardent
 worshipper. Your call! But you cannot improve this way.
 
+<div class="float-right float-image"><img
+src="|filename|/images/career-advice-from-a-fitness-coach-butterfly-on-flower.jpg"
+title="A butterfly out of its cocoon"
+alt="A butterfly out of its cocoon"/>
+<p>CC
+<a
+href="https://secure.flickr.com/photos/bigtallguy/9508035181/"
+target="_blank">image</a>
+courtesy of
+<a
+href="https://secure.flickr.com/photos/bigtallguy/" target="_blank">Paul
+Reynolds</a></p></div>
+
 C was the first programming language I learned. After few months, I landed on my
 first job where I kept developing softwares in C. For a long time I didn't
 bother to learn how to use a debugger at all. My excuse was something along
