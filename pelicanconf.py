@@ -144,5 +144,7 @@ STATIC_PATHS = ['theme/images', 'images']
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
+SOCIAL_PROFILE_LABEL = u'Stay in Touch'
 CUSTOM_CSS = True
+USE_FAVICON = True
 
