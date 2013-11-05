@@ -1,5 +1,8 @@
 {% if SOCIAL %}
-<h4>Stay in Touch</h4>
+    {% if not SOCIAL_PROFILE_LABEL %}
+        {% set SOCIAL_PROFILE_LABEL ='Contact' %}
+    {% endif %}
+<h4>{{ SOCIAL_PROFILE_LABEL }}</h4>
 {% for name, url in SOCIAL %}
     {% set link_title = 'My ' + name + ' Profile' %}
     {% set link_icon = name.lower() %}
