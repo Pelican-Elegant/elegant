@@ -1,6 +1,8 @@
 {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
 <section>
-{% if COMMENTS_INTRO %}
+{% if article.comments_intro %}
+<p id="comment-message">{{ article.comments_intro }} </p>
+{% elif COMMENTS_INTRO %}
 <p id="comment-message">{{ COMMENTS_INTRO }} </p>
 {% endif %}
 <div class="accordion" id="accordion2">
