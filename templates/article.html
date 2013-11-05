@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block title %}
 {{ article.title }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %} · {{ super() }}
@@ -56,8 +56,8 @@
                 {% set ptitle = previous_article.title %}
                 {% set pv_title = ptitle %}
                     {%if previous_article.subtitle %} 
-                        {% set pv_title = ptitle + " " +  "<small>" + previous_article.subtitle + "</small>" %}
-                        {% set ptitle = ptitle + " - " + previous_article.subtitle %}
+                        {% set pv_title = ptitle + ' ' +  '<small>' + previous_article.subtitle + '</small>' %}
+                        {% set ptitle = ptitle + ' - ' + previous_article.subtitle %}
                     {% endif %} 
                 <li class="previous_article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
@@ -65,8 +65,8 @@
                 {% set ntitle = next_article.title %}
                 {% set nv_title = ntitle %}
                     {%if next_article.subtitle %} 
-                        {% set nv_title = ntitle + " " +  "<small>" + next_article.subtitle + "</small>" %}
-                        {% set ntitle = ntitle + " - " + next_article.subtitle %}
+                        {% set nv_title = ntitle + ' ' +  '<small>' + next_article.subtitle + '</small>' %}
+                        {% set ntitle = ntitle + ' - ' + next_article.subtitle %}
                     {% endif %} 
                 <li class="next_article"><a href="{{ SITEURL }}/{{ next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
                 {% endif %}
@@ -113,7 +113,7 @@
 {% block script %}
     {{ super() }}
     {% include 'disqus_script_count.html' %}
-    {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+    {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
         <script  language="javascript" type="text/javascript">
             function uncollapse() {
                 var hash_str = window.location.hash;
