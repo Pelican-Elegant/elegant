@@ -3,7 +3,7 @@ body,html{
 }
 
 h1, h2, h3, h4, h5, h5 {
-    font-family: Baskerville, Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, serif;
+    font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, serif;
     font-weight: normal;
 }
     
@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h5 {
 /* site title */
 
 .site-name {
-    font-family: "Monaco","Inconsolata","Andale Mono","Lucida Console","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    font-family: 'Monaco','Inconsolata','Andale Mono','Lucida Console','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
 }
 
 /* footer */
@@ -51,7 +51,7 @@ ul.footer-content li.elegant-subtitle{
 /* comment */
 
 #comment-message {
-    font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
     color:gray;
 }
@@ -91,7 +91,7 @@ td.code {
     list-style:none;
     margin:0;
     overflow:hidden;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .list-of-tags li {
@@ -144,7 +144,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 .article-content {
     text-align:justify;
     max-width:50em;
-    font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
 }
 
@@ -164,7 +164,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 }
 
 .article-content blockquote:before {
-    content: "\f10d";
+    content: '\f10d';
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -175,7 +175,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
  }
 
 .article-content blockquote p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-variant: normal;
     text-transform: none;
     font-size: inherit;
@@ -271,7 +271,7 @@ ul.list-articles-category {
 ul.list-articles-category li span{
     margin-right:10px;
     color:#AAAAAA;
-    font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
+    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 0.9em;
 }
 
@@ -324,7 +324,7 @@ ul.list-all-articles li {
 ul.list-all-articles li time {
     float:right;
     color:#AAAAAA;
-    font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
+    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 0.9em;
 }
 
@@ -365,7 +365,7 @@ ul.top-menu li a {
     background-color: #DFDFDF;
 }
 
-#mc_embed_signup input[type="email"] {
+#mc_embed_signup input[type='email'] {
     height: 100%;
 }
 
@@ -379,12 +379,12 @@ ul.top-menu li a {
 
 .proj_desc {
     color:#999999;
-    font-family:"PT Sans","Helvetica Neue",Arial,sans-serif;
+    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 0.9em;
 }
 
 .amp {
-    font-family:"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua",serif; 
+    font-family:'Warnock Pro', 'Goudy Old Style','Palatino','Book Antiqua',serif; 
     font-style:italic;
 }    
 
