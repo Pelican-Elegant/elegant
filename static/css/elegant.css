@@ -53,7 +53,7 @@ ul.footer-content li.elegant-subtitle{
 #comment-message {
     font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
-    color:gray;
+    color: #808080;
 }
 
 a.disqus-comment-count {
@@ -68,7 +68,7 @@ padding-right:10px;
 
 /* Syntax Highlight */
 .highlight pre {
-    background-color:rgb(253,246,227);
+    background-color: #fdf6e3;
     border-radius:3px 3px 3px 3px;
 }
 
@@ -82,8 +82,8 @@ td.code {
 
 .linenodiv pre {
     border-radius:3px 0px 0px 3px;
-    color:rgb(101,123,131);
-    background-color:rgb(238,232,213);
+    color: #657b83;
+    background-color: #eee8d5;
 }
 
 /* Tags */
@@ -104,7 +104,7 @@ td.code {
     padding: 3px 6px;
     margin: 2px;
     color: #222;
-    background:#EEE;
+    background: #EEE;
     border-radius: 3px;
     text-decoration:none;
 }
@@ -131,8 +131,8 @@ ul.articles-in-tag li {
 /* Article */
 
 article p a, article ol a, article div.article-content ul:not(.articles_timeline) a {
-    color:black;
-    border-bottom:thin dashed darkgray;
+    color:#000;
+    border-bottom:thin dashed #A9A9A9;
 }
 
 article p a:hover, article ol a:hover, article div.article-content ul:not(.articles_timeline) a:hover {
@@ -170,7 +170,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     font-weight: normal;
     text-decoration: inherit;
     font-size: 18px;
-    color: rgb(100,100,100);
+    color: #646464;
     margin-left: -2em;
  }
 
@@ -217,20 +217,20 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 }
 
 .page_header h1 {
-    color:darkred;
+    color:#8B0000;
     padding: 5px 5px 15px 5px;
     margin: 20px 0px 20px 0px;
-    border-bottom: 1px solid rgb(143, 134, 134);
+    border-bottom: 1px solid #8f8686;
     font-size: 3em;
     font-weight:normal;
 }
 
 .page_header h1 small {
-    color:rgb(143, 116, 116);
+    color: #8f7474;
 }
 
 .page_header h1 a {
-    color:darkred;
+    color:#8B0000;
 }
 
 .page_header h1 a:hover {
@@ -270,13 +270,13 @@ ul.list-articles-category {
 
 ul.list-articles-category li span{
     margin-right:10px;
-    color:#AAAAAA;
+    color:#AAA;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 0.9em;
 }
 
 a.category-link {
-    color:rgb(51,51,51);
+    color: #333;
 }
 
 a.category-link:hover {
@@ -289,23 +289,23 @@ a.list-of-categories {
 }
 
 a.list-of-categories:hover {
-    color:white;
-    background-color:rgb(0, 136, 204);
+    color: #FFF;
+    background-color: #08c;
     border-radius:4px;
 }
 
 /* Base CSS */
 h2 a {
-    color:rgb(51,51,51);
+    color: #333;
 }
 
 h2 a:hover {
     text-decoration:none;
-    color:rgb(51,51,51);
+    color: #333;
 }
 
 a {
-    color:rgb(56, 117, 215);
+    color: #3875d7;
 }
 
 /* archives */
@@ -315,7 +315,7 @@ ul.list-all-articles {
 }
 
 ul.list-all-articles li {
-    border-bottom:1px dotted black;
+    border-bottom:1px dotted #000;
     padding:0.3em 0em;
     font-size:1.1em;
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
@@ -323,7 +323,7 @@ ul.list-all-articles li {
 
 ul.list-all-articles li time {
     float:right;
-    color:#AAAAAA;
+    color:#AAA;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 0.9em;
 }
@@ -356,9 +356,9 @@ ul.top-menu li a {
 #mc_embed_signup .button {
     font-size: 1em;
     font-weight: normal;
-    color: black;
-    background-color: #EEEEEE;
-    border: 1px solid lightgray;
+    color: #000;
+    background-color: #EEE;
+    border: 1px solid #D3D3D3;
 }
 
 #mc_embed_signup .button:hover {
@@ -371,14 +371,14 @@ ul.top-menu li a {
 
 /* front page */
 #allposts {
-    color:rgb(153, 153, 153);
+    color: #999;
     font-size:75%;
     float:right;
     font-weight:normal;
 }
 
 .proj_desc {
-    color:#999999;
+    color: #999;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 0.9em;
 }
@@ -390,14 +390,14 @@ ul.top-menu li a {
 
 .article-content img {
     padding:5px;
-    border: 2px solid #EEEEEE;
+    border: 2px solid #EEE;
 }
 
 .table-of-content .toc {
     font-size: 0.7em;
 }
 .last-updated a {
-    color:rgb(51,51,51);
+    color: #333;
 }
 .last-updated a:hover {
     text-decoration:none;
@@ -421,10 +421,10 @@ dt:hover > a.headerlink {
 }
 .sidebar-social-links {
     font-size: 1.2em;
-    color: rgb(100,100,100);
+    color: #646464;
     text-decoration: none;
     padding-right: 3px;
 }
 .sidebar-social-links i:hover {
-    color: black;
+    color: #000;
 }
