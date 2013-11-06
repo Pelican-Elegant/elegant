@@ -20,17 +20,17 @@ h1, h2, h3, h4, h5, h5 {
 /* footer */
 
 div#footer {
-    margin:15px 0px;
+    margin:15px 0;
     border-top:1px solid rgba(0,0,0,0.2);
-    padding:2px 5px 0px 5px;
+    padding:2px 5px 0 5px;
     font-size:0.7em;
     font-family:calibri,tahoma,arial,sans-serif;
 }
 
 ul.footer-content{
     list-style:none;
-    padding:0px;
-    margin:0px;
+    padding:0;
+    margin:0;
 }
 
 ul.footer-content li {
@@ -73,7 +73,7 @@ padding-right:10px;
 }
 
 td.code .highlight pre {
-    border-radius:0px 3px 3px 0px;
+    border-radius:0 3px 3px 0;
 }
 
 td.code {
@@ -81,7 +81,7 @@ td.code {
 }
 
 .linenodiv pre {
-    border-radius:3px 0px 0px 3px;
+    border-radius:3px 0 0 3px;
     color: #657b83;
     background-color: #eee8d5;
 }
@@ -97,7 +97,7 @@ td.code {
 .list-of-tags li {
     line-height:28px;
     float:left;
-    margin:0px;
+    margin:0;
 }
 
 .list-of-tags a {
@@ -153,14 +153,14 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     text-transform: none;
     font-size: inherit;
     line-height: 1.6em;
-    margin:20px 0px 20px 0px;
+    margin:20px 0 20px 0;
 }
 
 .article-content blockquote {
-    padding: 0px 0px 0px 20px;
-    margin: 20px 0px 20px 0px;
+    padding: 0 0 0 20px;
+    margin: 20px 0 20px 0;
     margin-left: 2em;
-    border-left:0px;
+    border-left:0;
 }
 
 .article-content blockquote:before {
@@ -194,7 +194,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 }
 
 .article-content li {
-    margin:1px 0px 1px 20px;
+    margin:1px 0 1px 20px;
     list-style-position: outside;
     line-height: 1.7em;
 }
@@ -203,12 +203,12 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     list-style-type: decimal;
     font-size: inherit;
     list-style-position: outside;
-    margin:20px 0px 20px 20px;
+    margin:20px 0 20px 20px;
 }
 
 .article-content dd {
-    margin:1px 0px 1px 20px;
-    padding:3px 0px 3px 0px;
+    margin:1px 0 1px 20px;
+    padding:3px 0 3px 0;
     line-height: 1.7em;
 }
 
@@ -219,7 +219,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 .page_header h1 {
     color:#8B0000;
     padding: 5px 5px 15px 5px;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0 20px 0;
     border-bottom: 1px solid #8f8686;
     font-size: 3em;
     font-weight:normal;
@@ -239,18 +239,18 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 
 ul.articles_timeline {
     list-style:none;
-    margin:0px;
+    margin:0;
     padding-bottom:30px;
 }
 
 ul.articles_timeline li.next_article {
     float:right;
-    margin:0px;
+    margin:0;
 }
 
 ul.articles_timeline li.previous_article  {
 float:left;
-margin:0px;
+margin:0;
 }
 
 /* Categories */
@@ -265,7 +265,7 @@ a.list-of-categories  {
 
 ul.list-articles-category {
     list-style:none outside none;
-    margin:0px 0px 0px 5px;
+    margin:0 0 0 5px;
 }
 
 ul.list-articles-category li span{
@@ -311,12 +311,12 @@ a {
 /* archives */
 ul.list-all-articles {
     list-style:none;
-    margin:0px;
+    margin:0;
 }
 
 ul.list-all-articles li {
     border-bottom:1px dotted #000;
-    padding:0.3em 0em;
+    padding:0.3em 0;
     font-size:1.1em;
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
 }
@@ -337,11 +337,11 @@ ul.top-menu li a {
 #mc_embed_signup {
     font-size:inherit;
     font-family:inherit;
-    margin:10px 0px;
+    margin:10px 0;
 }
 
 #mc_embed_signup form {
-    padding:0px;
+    padding:0;
 }
 
 #mc_embed_signup input.button {
