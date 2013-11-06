@@ -1,5 +1,5 @@
 body,html{
-    height:100%;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h5 {
@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h5 {
 }
     
 #content-sans-footer{
-    min-height:100%;
+    min-height: 100%;
 }
 
 /* site title */
@@ -20,32 +20,32 @@ h1, h2, h3, h4, h5, h5 {
 /* footer */
 
 div#footer {
-    margin:15px 0;
-    border-top:1px solid rgba(0,0,0,.2);
-    padding:2px 5px 0;
+    margin: 15px 0;
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding: 2px 5px 0;
     font-size:.7em;
-    font-family:calibri,tahoma,arial,sans-serif;
+    font-family: calibri,tahoma,arial,sans-serif;
 }
 
 ul.footer-content{
-    list-style:none;
-    padding:0;
-    margin:0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 ul.footer-content li {
-    padding-left:5px;
+    padding-left: 5px;
 }
 ul.footer-content li.elegant-power {
-    float:right;
+    float: right;
 }
 
 ul.footer-content li.elegant-license {
-    float:left;
+    float: left;
 }
 
 ul.footer-content li.elegant-subtitle{
-    float:left;
+    float: left;
 }
 
 /* comment */
@@ -62,42 +62,42 @@ a.disqus-comment-count {
 }
 
 div#disqus_thread {
-padding-left:10px;
-padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Syntax Highlight */
 .highlight pre {
     background-color: #fdf6e3;
-    border-radius:3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 td.code .highlight pre {
-    border-radius:0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
 }
 
 td.code {
-    width:100%;
+    width: 100%;
 }
 
 .linenodiv pre {
-    border-radius:3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
     color: #657b83;
     background-color: #eee8d5;
 }
 
 /* Tags */
 .list-of-tags {
-    list-style:none;
-    margin:0;
-    overflow:hidden;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .list-of-tags li {
-    line-height:28px;
-    float:left;
-    margin:0;
+    line-height: 28px;
+    float: left;
+    margin: 0;
 }
 
 .list-of-tags a {
@@ -106,7 +106,7 @@ td.code {
     color: #222;
     background: #EEE;
     border-radius: 3px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .list-of-tags a span {
@@ -115,8 +115,8 @@ td.code {
 }
 
 .tags-in-article li {
-    line-height:28px;
-    float:none;
+    line-height: 28px;
+    float: none;
 }
 
 h2.tag-title {
@@ -125,25 +125,25 @@ h2.tag-title {
 
 ul.articles-in-tag li {
     font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-    font-size:1.1em;
+    font-size: 1.1em;
 }
 
 /* Article */
 
 article p a, article ol a, article div.article-content ul:not(.articles_timeline) a {
     color:#000;
-    border-bottom:thin dashed #A9A9A9;
+    border-bottom: thin dashed #A9A9A9;
 }
 
 article p a:hover, article ol a:hover, article div.article-content ul:not(.articles_timeline) a:hover {
-    text-shadow:none;
-    text-decoration:none;
-    border-bottom:none;
+    text-shadow: none;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 .article-content {
-    text-align:justify;
-    max-width:50em;
+    text-align: justify;
+    max-width: 50em;
     font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
 }
@@ -153,14 +153,14 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     text-transform: none;
     font-size: inherit;
     line-height: 1.6em;
-    margin:20px 0;
+    margin: 20px 0;
 }
 
 .article-content blockquote {
     padding: 0 0 0 20px;
     margin: 20px 0;
     margin-left: 2em;
-    border-left:0;
+    border-left: 0;
 }
 
 .article-content blockquote:before {
@@ -194,7 +194,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 }
 
 .article-content li {
-    margin:1px 0 1px 20px;
+    margin: 1px 0 1px 20px;
     list-style-position: outside;
     line-height: 1.7em;
 }
@@ -203,12 +203,12 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     list-style-type: decimal;
     font-size: inherit;
     list-style-position: outside;
-    margin:20px 0 20px 20px;
+    margin: 20px 0 20px 20px;
 }
 
 .article-content dd {
-    margin:1px 0 1px 20px;
-    padding:3px 0;
+    margin: 1px 0 1px 20px;
+    padding: 3px 0;
     line-height: 1.7em;
 }
 
@@ -222,7 +222,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     margin: 20px 0;
     border-bottom: 1px solid #8f8686;
     font-size: 3em;
-    font-weight:normal;
+    font-weight: normal;
 }
 
 .page_header h1 small {
@@ -234,23 +234,23 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 }
 
 .page_header h1 a:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 ul.articles_timeline {
-    list-style:none;
-    margin:0;
-    padding-bottom:30px;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 ul.articles_timeline li.next_article {
-    float:right;
-    margin:0;
+    float: right;
+    margin: 0;
 }
 
 ul.articles_timeline li.previous_article  {
-float:left;
-margin:0;
+    float: left;
+    margin: 0;
 }
 
 /* Categories */
@@ -260,16 +260,16 @@ margin:0;
 }
 
 a.list-of-categories  {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 ul.list-articles-category {
-    list-style:none outside none;
-    margin:0 0 0 5px;
+    list-style: none outside none;
+    margin: 0 0 0 5px;
 }
 
 ul.list-articles-category li span{
-    margin-right:10px;
+    margin-right: 10px;
     color:#AAA;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: .9em;
@@ -280,18 +280,18 @@ a.category-link {
 }
 
 a.category-link:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 a.list-of-categories {
-    font-size:1.1em;
+    font-size: 1.1em;
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
 }
 
 a.list-of-categories:hover {
     color: #FFF;
     background-color: #08c;
-    border-radius:4px;
+    border-radius: 4px;
 }
 
 /* Base CSS */
@@ -300,7 +300,7 @@ h2 a {
 }
 
 h2 a:hover {
-    text-decoration:none;
+    text-decoration: none;
     color: #333;
 }
 
@@ -310,19 +310,19 @@ a {
 
 /* archives */
 ul.list-all-articles {
-    list-style:none;
-    margin:0;
+    list-style: none;
+    margin: 0;
 }
 
 ul.list-all-articles li {
-    border-bottom:1px dotted #000;
+    border-bottom: 1px dotted #000;
     padding:.3em 0;
-    font-size:1.1em;
+    font-size: 1.1em;
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
 }
 
 ul.list-all-articles li time {
-    float:right;
+    float: right;
     color:#AAA;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: .9em;
@@ -335,13 +335,13 @@ ul.top-menu li a {
 
 /* MailChimp */
 #mc_embed_signup {
-    font-size:inherit;
-    font-family:inherit;
-    margin:10px 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 10px 0;
 }
 
 #mc_embed_signup form {
-    padding:0;
+    padding: 0;
 }
 
 #mc_embed_signup input.button {
@@ -349,7 +349,7 @@ ul.top-menu li a {
 }
 
 #mc_embed_signup input.email {
-    width:100%;
+    width: 100%;
     font-size: .9em;
 }
 
@@ -372,9 +372,9 @@ ul.top-menu li a {
 /* front page */
 #allposts {
     color: #999;
-    font-size:75%;
-    float:right;
-    font-weight:normal;
+    font-size: 75%;
+    float: right;
+    font-weight: normal;
 }
 
 .proj_desc {
@@ -385,11 +385,11 @@ ul.top-menu li a {
 
 .amp {
     font-family:'Warnock Pro', 'Goudy Old Style','Palatino','Book Antiqua',serif; 
-    font-style:italic;
+    font-style: italic;
 }    
 
 .article-content img {
-    padding:5px;
+    padding: 5px;
     border: 2px solid #EEE;
 }
 
@@ -400,13 +400,13 @@ ul.top-menu li a {
     color: #333;
 }
 .last-updated a:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 a.headerlink {
-    visibility:hidden;
+    visibility: hidden;
     padding-left:.5em;
-    color:grey;
+    color: grey;
 }
 
 h1:hover > a.headerlink,
@@ -417,7 +417,7 @@ h5:hover > a.headerlink,
 h6:hover > a.headerlink,
 dt:hover > a.headerlink {
     visibility: visible;
-    text-decoration:none;
+    text-decoration: none;
 }
 .sidebar-social-links {
     font-size: 1.2em;
