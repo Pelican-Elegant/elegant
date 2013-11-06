@@ -1,11 +1,17 @@
-body,html {
+body,
+html {
     height: 100%;
 }
 #content-sans-footer {
     min-height: 100%;
 }
-h1, h2, h3, h4, h5, h5 {
-    font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    font-family: Baskerville,Garamond,Georgia,'DejaVu Serif','Times New Roman',Times,serif;
     font-weight: normal;
 }
 a {
@@ -46,7 +52,7 @@ ul.footer-content li.elegant-subtitle {
 }
 /* comment */
 #comment-message {
-    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+    font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
     font-size: 1em;
     color: #808080;
 }
@@ -79,7 +85,7 @@ td.code {
     list-style: none;
     margin: 0;
     overflow: hidden;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .list-of-tags li {
     line-height: 28px;
@@ -110,11 +116,15 @@ ul.articles-in-tag li {
     font-size: 1.1em;
 }
 /* Article */
-article p a, article ol a, article div.article-content ul:not(.articles_timeline) a {
+article p a,
+article ol a,
+article div.article-content ul:not(.articles_timeline) a {
     color:#000;
     border-bottom: thin dashed #A9A9A9;
 }
-article p a:hover, article ol a:hover, article div.article-content ul:not(.articles_timeline) a:hover {
+article p a:hover,
+article ol a:hover,
+article div.article-content ul:not(.articles_timeline) a:hover {
     text-shadow: none;
     text-decoration: none;
     border-bottom: none;
@@ -122,7 +132,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 .article-content {
     text-align: justify;
     max-width: 50em;
-    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+    font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
     font-size: 1.2em;
 }
 .article-content p {
@@ -149,7 +159,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     margin-left: -2em;
  }
 .article-content blockquote p {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-variant: normal;
     text-transform: none;
     font-size: inherit;
@@ -343,7 +353,7 @@ ul.list-all-articles li time {
     font-size: .9em;
 }
 .amp {
-    font-family: 'Warnock Pro', 'Goudy Old Style','Palatino','Book Antiqua',serif; 
+    font-family: 'Warnock Pro','Goudy Old Style','Palatino','Book Antiqua',serif;
     font-style: italic;
-}    
+}
 
