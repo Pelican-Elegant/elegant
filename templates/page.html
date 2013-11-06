@@ -50,28 +50,8 @@
             <h4>Last Updated</h4>
             <div class="last_updated">{{ page.modified }}</div>
             {% endif %}
-      
-            {% if MAILCHIMP_FORM_ACTION %}
-            {% if not EMAIL_SUBSCRIPTION_LABEL %}
-            {% set EMAIL_SUBSCRIPTION_LABEL='Email Newsletter' %}
-            {% endif %}
-            {% if not SUBSCRIBE_BUTTON_TITLE %}
-            {% set SUBSCRIBE_BUTTON_TITLE='Subscribe' %}
-            {% endif %}
-            {% if not EMAIL_PLACEHOLDER %}
-            {% set EMAIL_PLACEHOLDER ='email address' %}
-            {% endif %}
-            <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup">
-                <form action="{{ MAILCHIMP_FORM_ACTION }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <h4>{{ EMAIL_SUBSCRIPTION_LABEL }}</h4>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{ EMAIL_FIELD_PLACEHOLDER }}" required>
-                    <div class="clear"><input type="submit" value="{{ SUBSCRIBE_BUTTON_TITLE }}" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </form>
-            </div>
-
-            <!--End mc_embed_signup-->
-            {% endif %}
+            {% include 'social_links.html' %}
+            {% include 'mailchimp.html' %}
         </div>
         </section>
     </div>
