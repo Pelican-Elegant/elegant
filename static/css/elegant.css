@@ -8,13 +8,6 @@ h1, h2, h3, h4, h5, h5 {
     font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, serif;
     font-weight: normal;
 }
-h2 a {
-    color: #333;
-}
-h2 a:hover {
-    text-decoration: none;
-    color: #333;
-}
 a {
     color: #3875d7;
 }
