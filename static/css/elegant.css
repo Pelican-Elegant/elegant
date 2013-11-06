@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h5 {
 div#footer {
     margin:15px 0;
     border-top:1px solid rgba(0,0,0,.2);
-    padding:2px 5px 0 5px;
+    padding:2px 5px 0;
     font-size:.7em;
     font-family:calibri,tahoma,arial,sans-serif;
 }
@@ -153,12 +153,12 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     text-transform: none;
     font-size: inherit;
     line-height: 1.6em;
-    margin:20px 0 20px 0;
+    margin:20px 0;
 }
 
 .article-content blockquote {
     padding: 0 0 0 20px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     margin-left: 2em;
     border-left:0;
 }
@@ -208,7 +208,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 
 .article-content dd {
     margin:1px 0 1px 20px;
-    padding:3px 0 3px 0;
+    padding:3px 0;
     line-height: 1.7em;
 }
 
@@ -218,8 +218,8 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
 
 .page_header h1 {
     color:#8B0000;
-    padding: 5px 5px 15px 5px;
-    margin: 20px 0 20px 0;
+    padding: 5px 5px 15px;
+    margin: 20px 0;
     border-bottom: 1px solid #8f8686;
     font-size: 3em;
     font-weight:normal;
