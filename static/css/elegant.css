@@ -1,4 +1,4 @@
-body,html{
+body,html {
     height: 100%;
 }
 
@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h5 {
     font-weight: normal;
 }
     
-#content-sans-footer{
+#content-sans-footer {
     min-height: 100%;
 }
 
@@ -27,7 +27,7 @@ div#footer {
     font-family: calibri,tahoma,arial,sans-serif;
 }
 
-ul.footer-content{
+ul.footer-content {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -44,7 +44,7 @@ ul.footer-content li.elegant-license {
     float: left;
 }
 
-ul.footer-content li.elegant-subtitle{
+ul.footer-content li.elegant-subtitle {
     float: left;
 }
 
@@ -148,7 +148,7 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     font-size: 1.2em;
 }
 
-.article-content p{
+.article-content p {
     font-variant: normal;
     text-transform: none;
     font-size: inherit;
@@ -268,7 +268,7 @@ ul.list-articles-category {
     margin: 0 0 0 5px;
 }
 
-ul.list-articles-category li span{
+ul.list-articles-category li span {
     margin-right: 10px;
     color:#AAA;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
