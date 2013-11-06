@@ -23,7 +23,9 @@
         {% block head_links %}
         <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        {% if SOCIAL %}
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        {% endif %}
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.css" media="screen">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/solarizedlight.css" media="screen">
         {%if CUSTOM_CSS %}
