@@ -1,24 +1,32 @@
 body,html {
     height: 100%;
 }
-
+#content-sans-footer {
+    min-height: 100%;
+}
 h1, h2, h3, h4, h5, h5 {
     font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, serif;
     font-weight: normal;
 }
-    
-#content-sans-footer {
-    min-height: 100%;
+h2 a {
+    color: #333;
 }
-
+h2 a:hover {
+    text-decoration: none;
+    color: #333;
+}
+a {
+    color: #3875d7;
+}
 /* site title */
-
 .site-name {
     font-family: 'Monaco','Inconsolata','Andale Mono','Lucida Console','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
 }
-
-/* footer */
-
+/* Top navigation menu */
+ul.top-menu li a {
+    font-weight: bold;
+}
+/* Footer */
 div#footer {
     margin: 15px 0;
     border-top: 1px solid rgba(0,0,0,.2);
@@ -26,66 +34,53 @@ div#footer {
     font-size:.7em;
     font-family: calibri,tahoma,arial,sans-serif;
 }
-
 ul.footer-content {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 ul.footer-content li {
     padding-left: 5px;
 }
 ul.footer-content li.elegant-power {
     float: right;
 }
-
 ul.footer-content li.elegant-license {
     float: left;
 }
-
 ul.footer-content li.elegant-subtitle {
     float: left;
 }
-
 /* comment */
-
 #comment-message {
     font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
     color: #808080;
 }
-
 a.disqus-comment-count {
     font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
     font-size: .9em;
 }
-
 div#disqus_thread {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 /* Syntax Highlight */
 .highlight pre {
     background-color: #fdf6e3;
     border-radius: 3px 3px 3px 3px;
 }
-
 td.code .highlight pre {
     border-radius: 0 3px 3px 0;
 }
-
 td.code {
     width: 100%;
 }
-
 .linenodiv pre {
     border-radius: 3px 0 0 3px;
     color: #657b83;
     background-color: #eee8d5;
 }
-
 /* Tags */
 .list-of-tags {
     list-style: none;
@@ -93,13 +88,11 @@ td.code {
     overflow: hidden;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 .list-of-tags li {
     line-height: 28px;
     float: left;
     margin: 0;
 }
-
 .list-of-tags a {
     padding: 3px 6px;
     margin: 2px;
@@ -108,46 +101,37 @@ td.code {
     border-radius: 3px;
     text-decoration: none;
 }
-
 .list-of-tags a span {
     vertical-align: super;
     font-size: .8em;
 }
-
 .tags-in-article li {
     line-height: 28px;
     float: none;
 }
-
 h2.tag-title {
     font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
 }
-
 ul.articles-in-tag li {
     font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
     font-size: 1.1em;
 }
-
 /* Article */
-
 article p a, article ol a, article div.article-content ul:not(.articles_timeline) a {
     color:#000;
     border-bottom: thin dashed #A9A9A9;
 }
-
 article p a:hover, article ol a:hover, article div.article-content ul:not(.articles_timeline) a:hover {
     text-shadow: none;
     text-decoration: none;
     border-bottom: none;
 }
-
 .article-content {
     text-align: justify;
     max-width: 50em;
     font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
 }
-
 .article-content p {
     font-variant: normal;
     text-transform: none;
@@ -155,14 +139,12 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     line-height: 1.6em;
     margin: 20px 0;
 }
-
 .article-content blockquote {
     padding: 0 0 0 20px;
     margin: 20px 0;
     margin-left: 2em;
     border-left: 0;
 }
-
 .article-content blockquote:before {
     content: '\f10d';
     font-family: FontAwesome;
@@ -173,7 +155,6 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     color: #646464;
     margin-left: -2em;
  }
-
 .article-content blockquote p {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-variant: normal;
@@ -182,40 +163,33 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     line-height: 1.7em;
     margin-top:-20px;
 }
-
 .article-content ul {
     list-style-type: circle;
     font-size: inherit;
 }
-
 .article-content ol {
     list-style-type: decimal;
     font-size: inherit;
 }
-
 .article-content li {
     margin: 1px 0 1px 20px;
     list-style-position: outside;
     line-height: 1.7em;
 }
-
 .article-content dl {
     list-style-type: decimal;
     font-size: inherit;
     list-style-position: outside;
     margin: 20px 0 20px 20px;
 }
-
 .article-content dd {
     margin: 1px 0 1px 20px;
     padding: 3px 0;
     line-height: 1.7em;
 }
-
 .article-content dt {
     font-size: inherit;
 }
-
 .page_header h1 {
     color:#8B0000;
     padding: 5px 5px 15px;
@@ -224,200 +198,27 @@ article p a:hover, article ol a:hover, article div.article-content ul:not(.artic
     font-size: 3em;
     font-weight: normal;
 }
-
 .page_header h1 small {
     color: #8f7474;
 }
-
 .page_header h1 a {
     color:#8B0000;
 }
-
 .page_header h1 a:hover {
     text-decoration: none;
 }
-
 ul.articles_timeline {
     list-style: none;
     margin: 0;
     padding-bottom: 30px;
 }
-
 ul.articles_timeline li.next_article {
     float: right;
     margin: 0;
 }
-
 ul.articles_timeline li.previous_article  {
     float: left;
     margin: 0;
-}
-
-/* Categories */
-.list-of-categories span {
-    vertical-align: super;
-    font-size: .7em;
-}
-
-a.list-of-categories  {
-    text-decoration: none;
-}
-
-ul.list-articles-category {
-    list-style: none outside none;
-    margin: 0 0 0 5px;
-}
-
-ul.list-articles-category li span {
-    margin-right: 10px;
-    color:#AAA;
-    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
-    font-size: .9em;
-}
-
-a.category-link {
-    color: #333;
-}
-
-a.category-link:hover {
-    text-decoration: none;
-}
-
-a.list-of-categories {
-    font-size: 1.1em;
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-}
-
-a.list-of-categories:hover {
-    color: #FFF;
-    background-color: #08c;
-    border-radius: 4px;
-}
-
-/* Base CSS */
-h2 a {
-    color: #333;
-}
-
-h2 a:hover {
-    text-decoration: none;
-    color: #333;
-}
-
-a {
-    color: #3875d7;
-}
-
-/* archives */
-ul.list-all-articles {
-    list-style: none;
-    margin: 0;
-}
-
-ul.list-all-articles li {
-    border-bottom: 1px dotted #000;
-    padding:.3em 0;
-    font-size: 1.1em;
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-}
-
-ul.list-all-articles li time {
-    float: right;
-    color:#AAA;
-    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
-    font-size: .9em;
-}
-
-/* top menu */
-ul.top-menu li a {
-    font-weight: bold;
-}
-
-/* MailChimp */
-#mc_embed_signup {
-    font-size: inherit;
-    font-family: inherit;
-    margin: 10px 0;
-}
-
-#mc_embed_signup form {
-    padding: 0;
-}
-
-#mc_embed_signup input.button {
-    width: 100%
-}
-
-#mc_embed_signup input.email {
-    width: 100%;
-    font-size: .9em;
-}
-
-#mc_embed_signup .button {
-    font-size: 1em;
-    font-weight: normal;
-    color: #000;
-    background-color: #EEE;
-    border: 1px solid #D3D3D3;
-}
-
-#mc_embed_signup .button:hover {
-    background-color: #DFDFDF;
-}
-
-#mc_embed_signup input[type='email'] {
-    height: 100%;
-}
-
-/* front page */
-#allposts {
-    color: #999;
-    font-size: 75%;
-    float: right;
-    font-weight: normal;
-}
-
-.proj_desc {
-    color: #999;
-    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
-    font-size: .9em;
-}
-
-.amp {
-    font-family:'Warnock Pro', 'Goudy Old Style','Palatino','Book Antiqua',serif; 
-    font-style: italic;
-}    
-
-.article-content img {
-    padding: 5px;
-    border: 2px solid #EEE;
-}
-
-.table-of-content .toc {
-    font-size: .7em;
-}
-.last-updated a {
-    color: #333;
-}
-.last-updated a:hover {
-    text-decoration: none;
-}
-
-a.headerlink {
-    visibility: hidden;
-    padding-left:.5em;
-    color: grey;
-}
-
-h1:hover > a.headerlink,
-h2:hover > a.headerlink,
-h3:hover > a.headerlink,
-h4:hover > a.headerlink,
-h5:hover > a.headerlink,
-h6:hover > a.headerlink,
-dt:hover > a.headerlink {
-    visibility: visible;
-    text-decoration: none;
 }
 .sidebar-social-links {
     font-size: 1.2em;
@@ -428,3 +229,128 @@ dt:hover > a.headerlink {
 .sidebar-social-links i:hover {
     color: #000;
 }
+.table-of-content .toc {
+    font-size: .7em;
+}
+.last-updated a {
+    color: #333;
+}
+.last-updated a:hover {
+    text-decoration: none;
+}
+.article-content img {
+    padding: 5px;
+    border: 2px solid #EEE;
+}
+/* Perma link in article */
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink,
+dt:hover > a.headerlink {
+    visibility: visible;
+    text-decoration: none;
+}
+a.headerlink {
+    visibility: hidden;
+    padding-left:.5em;
+    color: grey;
+}
+/* Categories */
+.list-of-categories span {
+    vertical-align: super;
+    font-size: .7em;
+}
+a.list-of-categories  {
+    text-decoration: none;
+}
+ul.list-articles-category {
+    list-style: none outside none;
+    margin: 0 0 0 5px;
+}
+ul.list-articles-category li span {
+    margin-right: 10px;
+    color:#AAA;
+    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
+    font-size: .9em;
+}
+a.category-link {
+    color: #333;
+}
+a.category-link:hover {
+    text-decoration: none;
+}
+a.list-of-categories {
+    font-size: 1.1em;
+    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+}
+a.list-of-categories:hover {
+    color: #FFF;
+    background-color: #08c;
+    border-radius: 4px;
+}
+/* Archives */
+ul.list-all-articles {
+    list-style: none;
+    margin: 0;
+}
+ul.list-all-articles li {
+    border-bottom: 1px dotted #000;
+    padding:.3em 0;
+    font-size: 1.1em;
+    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+}
+ul.list-all-articles li time {
+    float: right;
+    color:#AAA;
+    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
+    font-size: .9em;
+}
+/* MailChimp */
+#mc_embed_signup {
+    font-size: inherit;
+    font-family: inherit;
+    margin: 10px 0;
+}
+#mc_embed_signup form {
+    padding: 0;
+}
+#mc_embed_signup input.button {
+    width: 100%
+}
+#mc_embed_signup input.email {
+    width: 100%;
+    font-size: .9em;
+}
+#mc_embed_signup .button {
+    font-size: 1em;
+    font-weight: normal;
+    color: #000;
+    background-color: #EEE;
+    border: 1px solid #D3D3D3;
+}
+#mc_embed_signup .button:hover {
+    background-color: #DFDFDF;
+}
+#mc_embed_signup input[type='email'] {
+    height: 100%;
+}
+/* Index page */
+#allposts {
+    color: #999;
+    font-size: 75%;
+    float: right;
+    font-weight: normal;
+}
+.proj_desc {
+    color: #999;
+    font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
+    font-size: .9em;
+}
+.amp {
+    font-family:'Warnock Pro', 'Goudy Old Style','Palatino','Book Antiqua',serif; 
+    font-style: italic;
+}    
+
