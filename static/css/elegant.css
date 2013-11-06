@@ -352,6 +352,14 @@ ul.list-all-articles li time {
     font-family: 'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: .9em;
 }
+/* reST specific rules*/
+.literal {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    color: #d14;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
 .amp {
     font-family: 'Warnock Pro','Goudy Old Style','Palatino','Book Antiqua',serif;
     font-style: italic;
