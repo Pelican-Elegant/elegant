@@ -2,9 +2,15 @@ Version 1.4 (under development)
 ===============================
 
 * New: Support for `custom.css`
-* New: Link to social profiles
 * New: Stat Counter Analytics support
-* New: Support for [Font Awesome](http://fortawesome.github.io/)
+* New: Link to social profiles
+* New: Configure heading of social profile with `SOCIAL_PROFILE_LABEL`
+* New: `article.comments_intro` that overrides `COMMENTS_INTRO`. Now you can
+  define article specific comments introduction
+
+Visual Style
+------------
+
 * Email newsletter subscriber form style matches rest of the theme
 * Article images have a visible border
 * Block quotes have a quote icon instead of a thick line on left
@@ -13,7 +19,16 @@ Version 1.4 (under development)
 * Change default place holder text of Email form text field
 * Search results link open in the same window, which is consistent with search
   results from internet search engines
-* Fix bug: Nested lists have different font sizes
+* Fix: Nested lists have different font sizes
+
+Optimizations
+-------------
+
+Following improvements reduce the number of HTTP requests 
+
+* Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
+* [Font Awesome](http://fortawesome.github.io/) is included only if `SOCIAL`
+  tuple is set
 
 Version 1.3
 ===========
