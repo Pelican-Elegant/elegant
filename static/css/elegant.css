@@ -144,8 +144,7 @@ article div.article-content ul:not(.articles_timeline) a:hover {
 }
 .article-content blockquote {
     border-left: 0;
-    margin-left: 2em;
-    margin: 20px 0;
+    margin: 20px 0 0 2em;
     padding: 0 0 0 20px;
 }
 .article-content blockquote:before {
