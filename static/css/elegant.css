@@ -21,9 +21,9 @@ h1, h2, h3, h4, h5, h5 {
 
 div#footer {
     margin:15px 0;
-    border-top:1px solid rgba(0,0,0,0.2);
+    border-top:1px solid rgba(0,0,0,.2);
     padding:2px 5px 0 5px;
-    font-size:0.7em;
+    font-size:.7em;
     font-family:calibri,tahoma,arial,sans-serif;
 }
 
@@ -58,7 +58,7 @@ ul.footer-content li.elegant-subtitle{
 
 a.disqus-comment-count {
     font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
 }
 
 div#disqus_thread {
@@ -111,7 +111,7 @@ td.code {
 
 .list-of-tags a span {
     vertical-align: super;
-    font-size: 0.8em;
+    font-size: .8em;
 }
 
 .tags-in-article li {
@@ -256,7 +256,7 @@ margin:0;
 /* Categories */
 .list-of-categories span {
     vertical-align: super;
-    font-size: 0.7em;
+    font-size: .7em;
 }
 
 a.list-of-categories  {
@@ -272,7 +272,7 @@ ul.list-articles-category li span{
     margin-right:10px;
     color:#AAA;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
 }
 
 a.category-link {
@@ -316,7 +316,7 @@ ul.list-all-articles {
 
 ul.list-all-articles li {
     border-bottom:1px dotted #000;
-    padding:0.3em 0;
+    padding:.3em 0;
     font-size:1.1em;
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
 }
@@ -325,7 +325,7 @@ ul.list-all-articles li time {
     float:right;
     color:#AAA;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
 }
 
 /* top menu */
@@ -350,7 +350,7 @@ ul.top-menu li a {
 
 #mc_embed_signup input.email {
     width:100%;
-    font-size: 0.9em;
+    font-size: .9em;
 }
 
 #mc_embed_signup .button {
@@ -380,7 +380,7 @@ ul.top-menu li a {
 .proj_desc {
     color: #999;
     font-family:'PT Sans','Helvetica Neue',Arial,sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
 }
 
 .amp {
@@ -394,7 +394,7 @@ ul.top-menu li a {
 }
 
 .table-of-content .toc {
-    font-size: 0.7em;
+    font-size: .7em;
 }
 .last-updated a {
     color: #333;
@@ -405,7 +405,7 @@ ul.top-menu li a {
 
 a.headerlink {
     visibility:hidden;
-    padding-left:0.5em;
+    padding-left:.5em;
     color:grey;
 }
 
