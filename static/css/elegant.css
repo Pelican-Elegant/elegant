@@ -27,16 +27,16 @@ ul.top-menu li a {
 }
 /* Footer */
 div#footer {
-    margin: 15px 0;
     border-top: 1px solid rgba(0,0,0,.2);
-    padding: 2px 5px 0;
-    font-size:.7em;
     font-family: calibri,tahoma,arial,sans-serif;
+    font-size:.7em;
+    margin: 15px 0;
+    padding: 2px 5px 0;
 }
 ul.footer-content {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 ul.footer-content li {
     padding-left: 5px;
@@ -52,9 +52,9 @@ ul.footer-content li.elegant-subtitle {
 }
 /* comment */
 #comment-message {
+    color: #808080;
     font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
     font-size: 1em;
-    color: #808080;
 }
 a.disqus-comment-count {
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
@@ -76,37 +76,37 @@ td.code {
     width: 100%;
 }
 .linenodiv pre {
+    background-color: #eee8d5;
     border-radius: 3px 0 0 3px;
     color: #657b83;
-    background-color: #eee8d5;
 }
 /* Tags */
 .list-of-tags {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     list-style: none;
     margin: 0;
     overflow: hidden;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .list-of-tags li {
-    line-height: 28px;
     float: left;
+    line-height: 28px;
     margin: 0;
 }
 .list-of-tags a {
-    padding: 3px 6px;
-    margin: 2px;
-    color: #222;
     background: #EEE;
     border-radius: 3px;
+    color: #222;
+    margin: 2px;
+    padding: 3px 6px;
     text-decoration: none;
 }
 .list-of-tags a span {
-    vertical-align: super;
     font-size: .8em;
+    vertical-align: super;
 }
 .tags-in-article li {
-    line-height: 28px;
     float: none;
+    line-height: 28px;
 }
 h2.tag-title {
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
@@ -119,93 +119,93 @@ ul.articles-in-tag li {
 article p a,
 article ol a,
 article div.article-content ul:not(.articles_timeline) a {
-    color:#000;
     border-bottom: thin dashed #A9A9A9;
+    color: #000;
 }
 article p a:hover,
 article ol a:hover,
 article div.article-content ul:not(.articles_timeline) a:hover {
-    text-shadow: none;
-    text-decoration: none;
     border-bottom: none;
+    text-decoration: none;
+    text-shadow: none;
 }
 .article-content {
-    text-align: justify;
-    max-width: 50em;
     font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
     font-size: 1.2em;
+    max-width: 50em;
+    text-align: justify;
 }
 .article-content p {
-    font-variant: normal;
-    text-transform: none;
     font-size: inherit;
+    font-variant: normal;
     line-height: 1.6em;
     margin: 20px 0;
+    text-transform: none;
 }
 .article-content blockquote {
-    padding: 0 0 0 20px;
-    margin: 20px 0;
-    margin-left: 2em;
     border-left: 0;
+    margin-left: 2em;
+    margin: 20px 0;
+    padding: 0 0 0 20px;
 }
 .article-content blockquote:before {
+    color: #646464;
     content: '\f10d';
     font-family: FontAwesome;
+    font-size: 18px;
     font-style: normal;
     font-weight: normal;
-    text-decoration: inherit;
-    font-size: 18px;
-    color: #646464;
     margin-left: -2em;
+    text-decoration: inherit;
  }
 .article-content blockquote p {
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-variant: normal;
-    text-transform: none;
     font-size: inherit;
+    font-variant: normal;
     line-height: 1.7em;
     margin-top:-20px;
+    text-transform: none;
 }
 .article-content ul {
-    list-style-type: circle;
     font-size: inherit;
+    list-style-type: circle;
 }
 .article-content ol {
-    list-style-type: decimal;
     font-size: inherit;
+    list-style-type: decimal;
 }
 .article-content li {
-    margin: 1px 0 1px 20px;
-    list-style-position: outside;
     line-height: 1.7em;
+    list-style-position: outside;
+    margin: 1px 0 1px 20px;
 }
 .article-content dl {
-    list-style-type: decimal;
     font-size: inherit;
     list-style-position: outside;
+    list-style-type: decimal;
     margin: 20px 0 20px 20px;
 }
 .article-content dd {
+    line-height: 1.7em;
     margin: 1px 0 1px 20px;
     padding: 3px 0;
-    line-height: 1.7em;
 }
 .article-content dt {
     font-size: inherit;
 }
 .page_header h1 {
-    color:#8B0000;
-    padding: 5px 5px 15px;
-    margin: 20px 0;
     border-bottom: 1px solid #8f8686;
+    color: #8B0000;
     font-size: 3em;
     font-weight: normal;
+    margin: 20px 0;
+    padding: 5px 5px 15px;
 }
 .page_header h1 small {
     color: #8f7474;
 }
 .page_header h1 a {
-    color:#8B0000;
+    color: #8B0000;
 }
 .page_header h1 a:hover {
     text-decoration: none;
@@ -224,10 +224,10 @@ ul.articles_timeline li.previous_article  {
     margin: 0;
 }
 .sidebar-social-links {
-    font-size: 1.2em;
     color: #646464;
-    text-decoration: none;
+    font-size: 1.2em;
     padding-right: 3px;
+    text-decoration: none;
 }
 .sidebar-social-links i:hover {
     color: #000;
@@ -242,8 +242,8 @@ ul.articles_timeline li.previous_article  {
     text-decoration: none;
 }
 .article-content img {
-    padding: 5px;
     border: 2px solid #EEE;
+    padding: 5px;
 }
 /* Perma link in article */
 h1:hover > a.headerlink,
@@ -253,18 +253,18 @@ h4:hover > a.headerlink,
 h5:hover > a.headerlink,
 h6:hover > a.headerlink,
 dt:hover > a.headerlink {
-    visibility: visible;
     text-decoration: none;
+    visibility: visible;
 }
 a.headerlink {
-    visibility: hidden;
-    padding-left:.5em;
     color: grey;
+    padding-left:.5em;
+    visibility: hidden;
 }
 /* Categories */
 .list-of-categories span {
-    vertical-align: super;
     font-size: .7em;
+    vertical-align: super;
 }
 a.list-of-categories  {
     text-decoration: none;
@@ -274,10 +274,10 @@ ul.list-articles-category {
     margin: 0 0 0 5px;
 }
 ul.list-articles-category li span {
-    margin-right: 10px;
-    color:#AAA;
+    color: #AAA;
     font-family: 'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: .9em;
+    margin-right: 10px;
 }
 a.category-link {
     color: #333;
@@ -286,13 +286,13 @@ a.category-link:hover {
     text-decoration: none;
 }
 a.list-of-categories {
-    font-size: 1.1em;
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-size: 1.1em;
 }
 a.list-of-categories:hover {
-    color: #FFF;
     background-color: #08c;
     border-radius: 4px;
+    color: #FFF;
 }
 /* Archives */
 ul.list-all-articles {
@@ -301,20 +301,20 @@ ul.list-all-articles {
 }
 ul.list-all-articles li {
     border-bottom: 1px dotted #000;
-    padding:.3em 0;
-    font-size: 1.1em;
     font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-size: 1.1em;
+    padding:.3em 0;
 }
 ul.list-all-articles li time {
+    color: #AAA;
     float: right;
-    color:#AAA;
     font-family: 'PT Sans','Helvetica Neue',Arial,sans-serif;
     font-size: .9em;
 }
 /* MailChimp */
 #mc_embed_signup {
-    font-size: inherit;
     font-family: inherit;
+    font-size: inherit;
     margin: 10px 0;
 }
 #mc_embed_signup form {
@@ -324,15 +324,15 @@ ul.list-all-articles li time {
     width: 100%
 }
 #mc_embed_signup input.email {
-    width: 100%;
     font-size: .9em;
+    width: 100%;
 }
 #mc_embed_signup .button {
-    font-size: 1em;
-    font-weight: normal;
-    color: #000;
     background-color: #EEE;
     border: 1px solid #D3D3D3;
+    color: #000;
+    font-size: 1em;
+    font-weight: normal;
 }
 #mc_embed_signup .button:hover {
     background-color: #DFDFDF;
@@ -343,8 +343,8 @@ ul.list-all-articles li time {
 /* Index page */
 #allposts {
     color: #999;
-    font-size: 75%;
     float: right;
+    font-size: 75%;
     font-weight: normal;
 }
 .proj_desc {
