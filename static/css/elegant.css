@@ -82,7 +82,7 @@ h3,
 h4,
 h5,
 h5 {
-    font-family: Baskerville,Garamond,Georgia,'DejaVu Serif','Times New Roman',Times,serif;
+    font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, serif;
     font-weight: normal;
 }
 a {
@@ -90,7 +90,7 @@ a {
 }
 /* site title */
 .site-name {
-    font-family: 'Monaco','Inconsolata','Andale Mono','Lucida Console','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
+    font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
 }
 /* Top navigation menu */
 ul.top-menu li a {
@@ -98,8 +98,8 @@ ul.top-menu li a {
 }
 /* Footer */
 div#footer {
-    border-top: 1px solid rgba(0,0,0,.2);
-    font-family: calibri,tahoma,arial,sans-serif;
+    border-top: 1px solid  rgba(0, 0, 0, .2);
+    font-family: calibri, tahoma, arial, sans-serif;
     font-size:.7em;
     margin: 15px 0;
     padding: 2px 5px 0;
@@ -124,11 +124,11 @@ ul.footer-content li.elegant-subtitle {
 /* comment */
 #comment-message {
     color: #808080;
-    font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
+    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
 }
 a.disqus-comment-count {
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: .9em;
 }
 div#disqus_thread {
@@ -153,7 +153,7 @@ td.code {
 }
 /* Tags */
 .list-of-tags {
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -180,10 +180,10 @@ td.code {
     line-height: 28px;
 }
 h2.tag-title {
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 ul.articles-in-tag li {
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1em;
 }
 /* Article */
@@ -201,7 +201,7 @@ article div.article-content ul:not(.articles_timeline) a:hover {
     text-shadow: none;
 }
 .article-content {
-    font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
+    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2em;
     max-width: 50em;
     text-align: justify;
@@ -229,7 +229,7 @@ article div.article-content ul:not(.articles_timeline) a:hover {
     text-decoration: inherit;
 }
 .article-content blockquote p {
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: inherit;
     font-variant: normal;
     line-height: 1.7em;
@@ -345,7 +345,7 @@ ul.list-articles-category {
 }
 ul.list-articles-category li span {
     color: #AAA;
-    font-family: 'PT Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: .9em;
     margin-right: 10px;
 }
@@ -356,7 +356,7 @@ a.category-link:hover {
     text-decoration: none;
 }
 a.list-of-categories {
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1em;
 }
 a.list-of-categories:hover {
@@ -371,14 +371,14 @@ ul.list-all-articles {
 }
 ul.list-all-articles li {
     border-bottom: 1px dotted #000;
-    font-family: 'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1em;
     padding:.3em 0;
 }
 ul.list-all-articles li time {
     color: #AAA;
     float: right;
-    font-family: 'PT Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: .9em;
 }
 /* MailChimp */
@@ -429,7 +429,7 @@ ul.list-all-articles li time {
 }
 .proj_desc {
     color: #999;
-    font-family: 'PT Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: .9em;
 }
 /* reST specific rules*/
@@ -441,7 +441,7 @@ ul.list-all-articles li time {
     white-space: nowrap;
 }
 .amp {
-    font-family: 'Warnock Pro','Goudy Old Style','Palatino','Book Antiqua',serif;
+    font-family: 'Warnock Pro', 'Goudy Old Style', 'Palatino', 'Book Antiqua', serif;
     font-style: italic;
 }
 
