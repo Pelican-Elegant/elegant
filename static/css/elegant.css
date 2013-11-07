@@ -89,7 +89,7 @@ http://www.tipue.com/search
 #tipue_search_warning
 {
     color: #333;
-    font: 12px/1.6 'open sans', Sans-Serif;
+    font: 12px/1.6 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
     margin: 7px 0;
 }
 #tipue_search_warning a
@@ -114,7 +114,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_title
 {
-    font: 300 23px/1.6 'open sans', sans-serif;
+    font: 300 23px/1.6 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
     margin-top: 20px;
 }
 .tipue_search_content_title a
@@ -145,7 +145,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_loc
 {
-    font: 300 13px/1.7 'open sans', sans-serif;
+    font: 300 13px/1.7 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
     overflow: auto;
 }
 .tipue_search_content_loc a
@@ -164,7 +164,7 @@ http://www.tipue.com/search
 }
 #tipue_search_foot_boxes
 {
-    font: 12px/1 'open sans', sans-serif;
+    font: 12px/1 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
     margin: 0;
     padding: 0;
 }
