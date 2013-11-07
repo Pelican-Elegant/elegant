@@ -232,8 +232,7 @@ a {
 /* Footer */
 #footer {
     border-top: 1px solid  rgba(0, 0, 0, .2);
-    font-family: Calibri, Tahoma, Arial, Sans-Serif;
-    font-size: .7em;
+    font: .7em Calibri, Tahoma, Arial, Sans-Serif;
     margin: 15px 0;
     padding: 2px 5px 0;
 }
@@ -257,8 +256,6 @@ ul.footer-content li {
 /* comment */
 #comment-message {
     color: #808080;
-    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', Serif;
-    font-size: 1em;
 }
 .disqus-comment-count {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
@@ -316,8 +313,7 @@ td.code {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 .articles-in-tag li {
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
-    font-size: 1.1em;
+    font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
 article p a,
@@ -334,8 +330,7 @@ article div.article-content ul:not(.articles_timeline) a:hover {
     text-shadow: none;
 }
 .article-content {
-    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', Serif;
-    font-size: 1.2em;
+    font: 1.2em/1.6em 'PT Serif', Georgia, Times, 'Times New Roman', Serif;
     max-width: 50em;
     text-align: justify;
 }
@@ -354,8 +349,7 @@ article div.article-content ul:not(.articles_timeline) a:hover {
 .article-content blockquote:before {
     color: #646464;
     content: '\f10d';
-    font-family: FontAwesome;
-    font-size: 18px;
+    font: 18px FontAwesome;
     font-style: normal;
     font-weight: normal;
     margin-left: -2em;
@@ -478,8 +472,7 @@ ul.list-articles-category {
 }
 ul.list-articles-category li span {
     color: #AAA;
-    font-family: 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
-    font-size: .9em;
+    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
     margin-right: 10px;
 }
 a.category-link {
@@ -588,8 +581,7 @@ ul.list-all-articles li time {
 }
 .proj_desc {
     color: #999;
-    font-family: 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
-    font-size: .9em;
+    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
 /* reST specific rules*/
 .literal {
