@@ -598,8 +598,32 @@ ul.list-all-articles li time {
     padding: 2px 4px;
     white-space: nowrap;
 }
+/* Helper CSS classes */
 .amp {
     font-family: 'Warnock Pro', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Serif;
     font-style: italic;
+}
+/* Use following classes to add floating images to your post */
+div .float-image {
+    margin: 1.5em;
+    text-align: center;
+}
+div .float-image img {
+    width: 100%;
+}
+div .float-image p {
+    color: gray;
+    font-size: .6em;
+    margin: 0;
+}
+div .float-image p a {
+    border: none;
+    color: gray;
+}
+div .float-right {
+    float: right;
+}
+div .float-left {
+    float: left;
 }
 
