@@ -226,11 +226,11 @@ a {
     font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
 }
 /* Top navigation menu */
-ul.top-menu li a {
+.top-menu li a {
     font-weight: bold;
 }
 /* Footer */
-div#footer {
+#footer {
     border-top: 1px solid  rgba(0, 0, 0, .2);
     font-family: Calibri, Tahoma, Arial, Sans-Serif;
     font-size: .7em;
@@ -245,13 +245,13 @@ ul.footer-content {
 ul.footer-content li {
     padding-left: 5px;
 }
-ul.footer-content li.elegant-power {
+.elegant-power {
     float: right;
 }
-ul.footer-content li.elegant-license {
+.elegant-license {
     float: left;
 }
-ul.footer-content li.elegant-subtitle {
+.elegant-subtitle {
     float: left;
 }
 /* comment */
@@ -260,11 +260,11 @@ ul.footer-content li.elegant-subtitle {
     font-family: 'PT Serif', Georgia, Times, 'Times New Roman', Serif;
     font-size: 1em;
 }
-a.disqus-comment-count {
+.disqus-comment-count {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: .9em;
 }
-div#disqus_thread {
+#disqus_thread {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -312,10 +312,10 @@ td.code {
     float: none;
     line-height: 28px;
 }
-h2.tag-title {
+.tag-title {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
-ul.articles-in-tag li {
+.articles-in-tag li {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
 }
@@ -418,11 +418,11 @@ ul.articles_timeline {
     margin: 0;
     padding-bottom: 30px;
 }
-ul.articles_timeline li.next_article {
+ul.articles_timeline .next_article {
     float: right;
     margin: 0;
 }
-ul.articles_timeline li.previous_article  {
+ul.articles_timeline .previous_article  {
     float: left;
     margin: 0;
 }
@@ -527,6 +527,7 @@ ul.list-all-articles li time {
     text-align: left;
 }
 #mc_embed_signup input {
+    -moz-appearance: none;
     -webkit-appearance: none;
     border: 1px solid #999;
 }
