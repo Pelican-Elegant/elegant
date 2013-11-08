@@ -606,9 +606,14 @@ ul.list-all-articles li time {
 }
 /* reST specific rules*/
 .literal {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     background-color: #f7f7f9;
+    border-radius: 3px;
     border: 1px solid #e1e1e8;
     color: #d14;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 12px;
     padding: 2px 4px;
     white-space: nowrap;
 }
