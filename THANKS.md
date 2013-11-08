@@ -1,6 +1,14 @@
 Thanks to
 =========
 
+[calfzhou](https://github.com/calfzhou)
+---------------------------------------
+
+### Nov 8, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/58) that line numbers in code block to do not always get displayed correctly.
+
+
 [brechtm](https://github.com/brechtm)
 -------------------------------------
 
@@ -23,6 +31,7 @@ Thanks to
 ### Oct 1, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/6) that it is not possible to link to a Disqus comment.
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/8) that code block auto wraps to next line
 
 ### Sep 29, 2013
 

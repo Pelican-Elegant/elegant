@@ -19,16 +19,19 @@ Visual Style
 * Change default place holder text of Email form text field
 * Search results link open in the same window, which is consistent with search
   results from internet search engines
+* Line number in code block is hidden on tablets and phones to save space for content
 * Fix: Nested lists have different font sizes
-* Fix: Add CSS style rules for literal block in reST
+* Fix: CSS style rules for literal block in reST is missing
+* Fix: Long lines in code block will wrap
+* Fix: Code block will not play nice with line numbers
 
 Optimizations
 -------------
 
-Following improvements reduce the number of HTTP requests 
+Following improvements reduce the number of HTTP requests
 
 * Four CSS style sheets have been merged into to one
-* CSS style sheet is minified to reduce size
+* Elegant uses minified CSS style sheet
 * Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
 * [Font Awesome](http://fortawesome.github.io/) is included only if `SOCIAL`
   tuple is set
@@ -37,7 +40,7 @@ Version 1.3
 ===========
 
 * Next and previous article navigation is placed below comments section so that article's content and comments appear together
-* Article title and site name in `<title>` tag is separated by ` · ` which is cleaner and more subtle than ` -  ` 
+* Article title and site name in `<title>` tag is separated by ` · ` which is cleaner and more subtle than ` -  `
 * Subtitle of articles and pages is added in `<title>` tag along with main title
 * Description meta tag on Home Page uses `SITE_DESCRIPTION`
 * Bug fix: Expand comments section if URL points to a comment
