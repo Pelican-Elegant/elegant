@@ -270,6 +270,11 @@ table {
     table-layout: fixed;
     width: 100%;
 }
+@media (max-width:979px) {
+    .linenos {
+        display:none !important;
+    }
+}
 .linenos {
     width:5%;
 }
