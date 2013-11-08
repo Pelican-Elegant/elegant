@@ -266,6 +266,22 @@ ul.footer-content li {
     padding-right: 10px;
 }
 /* Syntax Highlight */
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+.linenos {
+    width:5%;
+}
+.linenos div pre {
+    text-align:right;
+}
+pre {
+    overflow: auto;
+    white-space: pre;
+    word-break: normal;
+    word-wrap: normal;
+}
 .highlight pre {
     background-color: #fdf6e3;
     border-radius: 3px 3px 3px 3px;
