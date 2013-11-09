@@ -276,10 +276,11 @@ table {
     }
 }
 .linenos {
-    width:5%;
+    width: 30px;
 }
 .linenos div pre {
-    text-align:right;
+    text-align: right;
+    overflow: hidden;
 }
 pre {
     overflow: auto;
