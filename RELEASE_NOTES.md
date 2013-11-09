@@ -8,6 +8,7 @@ Version 1.4 (under development)
 * New: `article.comments_intro` that overrides `COMMENTS_INTRO`. Now you can
   define article specific comments introduction
 * New: Support for Latex with the help of `latex` plugin
+* New: Support for new article metadata `article.modified_date`
 
 Visual Style
 ------------

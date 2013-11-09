@@ -46,7 +46,11 @@
             {% set day = page.date.strftime('%d')|int %}
             <time pubdate="pubdate" datetime="{{ page.date.isoformat() }}">{{ page.date.strftime('%b') }} {{ day }} {{- page.date.strftime(', %Y') }}</time>
             {% endif %}
-            {% if page.modified %} 
+            {% if page.modified_date %}
+            <h4>Last Updated</h4>
+            {% set day = page.modified_date.strftime('%d')|int %}
+            <time datetime="{{ page.modified_date.isoformat() }}">{{ page.modified_date.strftime('%b') }} {{ day }} {{- page.modified_date.strftime(', %Y') }}</time>
+            {% elif page.modified %}
             <h4>Last Updated</h4>
             <div class="last_updated">{{ page.modified }}</div>
             {% endif %}
