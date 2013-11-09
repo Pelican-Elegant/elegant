@@ -561,8 +561,8 @@ ul.list-all-articles li time {
 #mc_embed_signup input.button {
     display: block;
     margin: 0 0 10px 0;
-    min-width: 90px;
-    width: 100%
+    min-width: 130px;
+    width: 100%;
 }
 #mc_embed_signup input[type='email'] {
     height: 100%;
