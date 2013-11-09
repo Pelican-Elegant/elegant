@@ -13,6 +13,7 @@
         <meta name="author" content="{{ AUTHOR }}" />
         <meta name="copyright" content="{{ AUTHOR }}" />
         {% endif %}
+        {% include 'latex.html' %}
 
         {% if SITE_DESCRIPTION %}
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}" />

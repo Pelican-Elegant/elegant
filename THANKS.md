@@ -1,6 +1,13 @@
 Thanks to
 =========
 
+[Jed Brown](https://github.com/jedbrown)
+----------------------------------------
+
+### Oct 12, 2013
+
+1. He suggested integration with Latex.
+
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
