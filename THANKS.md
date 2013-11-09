@@ -7,6 +7,8 @@ Thanks to
 ### Nov 8, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/58) that line numbers in code block to do not always get displayed correctly.
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/58) that line numbers do not align vertically with code blocks.
+1. He [suggested](https://github.com/talha131/pelican-elegant/issues/58) fixed width for line number column.
 
 
 [brechtm](https://github.com/brechtm)

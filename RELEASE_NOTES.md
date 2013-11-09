@@ -24,6 +24,7 @@ Visual Style
 * Fix: CSS style rules for literal block in reST is missing
 * Fix: Long lines in code block will wrap
 * Fix: Code block will not play nice with line numbers
+* Fix: Subscribe button changes its size on smaller screens
 
 Optimizations
 -------------
