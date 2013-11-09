@@ -270,6 +270,9 @@ table {
     table-layout: fixed;
     width: 100%;
 }
+td {
+    vertical-align: top;
+}
 @media (max-width:979px) {
     .linenos {
         display:none !important;
