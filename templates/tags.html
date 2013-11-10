@@ -38,10 +38,10 @@ All tags used in the {{ SITENAME|striptags }} blog.
 
 <div class="row-fluid">
     <div class="span8 offset2">
-        {% for tag, articles in tags|sort %}
+        {% for tag, articles in tags %}
         <h2 id="{{ tag|replace(' ', '-')|e }}-ref" class="tag-title">{{ tag }}</h2>
         <ul class="articles-in-tag">
-            {% for article in articles %} 
+            {% for article in articles|sort(reverse = true, attribute = 'date') %}
             <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
             {% endfor %}
         </ul>
