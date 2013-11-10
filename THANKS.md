@@ -36,6 +36,7 @@ Thanks to
 ### Oct 4, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/10) an issue with CSS style of links in an unordered lists.
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/34) that articles list in tags page is not sorted at all. He helped a lot to reproduce the issue and stayed persistent to get it fixed.
 
 ### Oct 1, 2013
 
