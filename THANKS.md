@@ -11,6 +11,10 @@ Thanks to
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
+### Nov 11, 2013
+
+1. He submitted a [pull request](https://github.com/talha131/pelican-elegant/pull/62) to fix a typo in CSS.
+
 ### Nov 8, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/58) that line numbers in code block to do not always get displayed correctly.
@@ -27,6 +31,10 @@ Thanks to
 
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
+
+### Nov 10, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/34#issuecomment-28151235) a regression bug introduced in tags list
 
 ### Oct 31, 2013
 
