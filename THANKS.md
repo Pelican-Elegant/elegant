@@ -11,6 +11,10 @@ Thanks to
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
+### Nov 12, 2013
+
+1. He submitted a [pull request](https://github.com/talha131/pelican-elegant/pull/65) to fix URL scheme.
+
 ### Nov 11, 2013
 
 1. He submitted a [pull request](https://github.com/talha131/pelican-elegant/pull/62) to fix a typo in CSS.

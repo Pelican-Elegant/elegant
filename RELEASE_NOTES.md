@@ -28,6 +28,7 @@ Visual Style
 * Fix: Code block will not play nice with line numbers
 * Fix: Subscribe button changes its size on smaller screens
 * Fix: Articles under tag heading on tags page are not sorted 
+* Fix: URL scheme for blogs which are not published to the root folder
 
 Optimizations
 -------------
