@@ -29,7 +29,7 @@ All tags used in the {{ SITENAME|striptags }} blog.
             {% for tag, articles in tags|sort %}
             <li>
             {% set num = articles|count %}
-            <a href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}<span>{{ num }}</span></a>
+            <a href="#{{ tag.slug }}-ref">{{ tag }}<span>{{ num }}</span></a>
             </li>
             {% endfor %}
         </ul>
