@@ -27,12 +27,12 @@ All categories of the {{ SITENAME|striptags }} blog.
             {% for category, articles in categories %}
             <div class="accordion-group">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category|replace(' ', '-')|e }}-ref">
+                    <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
                         {% set num = articles|count %}
                         {{ category }}<span>{{ num }}</span>
                     </a>
                 </div>
-                <div id="{{ category|replace(' ', '-')|e }}-ref" class="accordion-body collapse">
+                <div id="{{ category.slug }}-ref" class="accordion-body collapse">
                     <div class="accordion-inner">
                         <ul class="list-articles-category">
                             {% for article in articles %} 
