@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{{ article.title }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %} · {{ super() }}
+{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
@@ -53,7 +53,7 @@
             <nav>
             <ul class="articles_timeline">
                 {% if previous_article %}
-                {% set ptitle = previous_article.title %}
+                {% set ptitle = previous_article.title|striptags %}
                 {% set pv_title = ptitle %}
                     {%if previous_article.subtitle %} 
                         {% set pv_title = ptitle + ' ' +  '<small>' + previous_article.subtitle + '</small>' %}
@@ -62,7 +62,7 @@
                 <li class="previous_article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
                 {% if next_article %}
-                {% set ntitle = next_article.title %}
+                {% set ntitle = next_article.title|striptags %}
                 {% set nv_title = ntitle %}
                     {%if next_article.subtitle %} 
                         {% set nv_title = ntitle + ' ' +  '<small>' + next_article.subtitle + '</small>' %}
