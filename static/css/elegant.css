@@ -379,14 +379,16 @@ article div.article-content ul:not(.articles_timeline) a:hover {
     font-weight: normal;
     margin-left: -2em;
     text-decoration: inherit;
+    position:absolute;
 }
-.article-content blockquote p {
+.article-content blockquote {
     font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     font-size: inherit;
     font-variant: normal;
     line-height: 1.7em;
-    margin-top: -20px;
     text-transform: none;
+    font-weight: 300;
+    position:relative;
 }
 .article-content ul {
     font-size: inherit;
