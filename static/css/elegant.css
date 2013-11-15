@@ -629,26 +629,26 @@ ul.list-all-articles li time {
     font-style: italic;
 }
 /* Use following classes to add floating images to your post */
-div .float-image {
+div.figure {
     margin: 1.5em;
     text-align: center;
 }
-div .float-image img {
+div.figure img {
     width: 100%;
 }
-div .float-image p {
+div.figure p.caption {
     color: gray;
     font-size: .6em;
     margin: 0;
 }
-div .float-image p a {
+div.figure p.caption a {
     border: none;
     color: gray;
 }
-div .float-right {
+div.figure.align-right {
     float: right;
 }
-div .float-left {
+div.figure.align-left {
     float: left;
 }
 
