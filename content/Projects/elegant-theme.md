@@ -6,7 +6,7 @@ Tags: jinja2, bootstrap, front-end
 Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique features are search, MailChimp, notification bar, twitter card, and custom 404 page.
 Slug: elegant-best-pelican-theme-features
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican
-modified: <a href="https://github.com/talha131/onCrashReboot/commits/master/content/Projects/elegant-theme.md" title="Revision History" target="_blank">Oct 11, 2013</a>
+modified: 2013-10-11 23:00
 keywords: pelican theme, responsive theme, tipue search
 
 
