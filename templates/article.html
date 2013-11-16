@@ -83,11 +83,7 @@
             {% set day = article.date.strftime('%d')|int %}
             <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
-            {% if article.modified and article.modified != article.date %}
-            <h4>Last Updated</h4>
-            {% set day = article.modified.strftime('%d')|int %}
-            <time datetime="{{ article.modified.isoformat() }}">{{ article.modified.strftime('%b') }} {{ day }} {{- article.modified.strftime(', %Y') }}</time>
-            {% endif %}
+            {% include 'last_updated.html' %}
             {% if article.category %}
             <h4>Category</h4>
             <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a> 

@@ -1,0 +1,49 @@
+{# code for Page and Article is exactly the same #}
+{% if article %}
+
+    {#  Check which version of Pelican user is using.
+        If it is <=3.3  than modified is a string
+        If it is >3.3 than modified is a datetime object
+    #}
+    {% if article.locale_modified and article.modified %}
+
+            {#  This check is necessary because modified is set to date by default.
+                It should be displayed only if user has explicitly set it.
+            #}
+            {% if article.modified != article.date %}
+
+            <h4>Last Updated</h4>
+            {% set day = article.modified.strftime('%d')|int %}
+            <time datetime="{{ article.modified.isoformat() }}">{{ article.modified.strftime('%b') }} {{ day }} {{- article.modified.strftime(', %Y') }}</time>
+
+            {% endif %}
+
+    {% elif article.modified %}
+
+            <h4>Last Updated</h4>
+            <div class="last-updated">{{ article.modified }}</div>
+
+    {% endif %}
+
+{# code for Page #}
+{% elif page %}
+
+    {% if page.locale_modified and page.modified %}
+
+            {% if page.modified != page.date %}
+
+            <h4>Last Updated</h4>
+            {% set day = page.modified.strftime('%d')|int %}
+            <time datetime="{{ page.modified.isoformat() }}">{{ page.modified.strftime('%b') }} {{ day }} {{- page.modified.strftime(', %Y') }}</time>
+
+            {% endif %}
+
+    {% elif page.modified %}
+
+            <h4>Last Updated</h4>
+            <div class="last-updated">{{ page.modified }}</div>
+
+    {% endif %}
+
+
+{% endif %}
