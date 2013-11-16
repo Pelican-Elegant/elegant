@@ -59,7 +59,7 @@
                         {% set pv_title = ptitle + ' ' +  '<small>' + previous_article.subtitle + '</small>' %}
                         {% set ptitle = ptitle + ' - ' + previous_article.subtitle %}
                     {% endif %}
-                <li class="previous_article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
+                <li class="previous-article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
                 {% if next_article %}
                 {% set ntitle = next_article.title|striptags %}
@@ -68,7 +68,7 @@
                         {% set nv_title = ntitle + ' ' +  '<small>' + next_article.subtitle + '</small>' %}
                         {% set ntitle = ntitle + ' - ' + next_article.subtitle %}
                     {% endif %}
-                <li class="next_article"><a href="{{ SITEURL }}/{{ next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
+                <li class="next-article"><a href="{{ SITEURL }}/{{ next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
                 {% endif %}
             </ul>
             </nav>

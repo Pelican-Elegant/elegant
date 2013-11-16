@@ -439,11 +439,11 @@ ul.articles-timeline {
     margin: 0;
     padding-bottom: 30px;
 }
-ul.articles-timeline .next_article {
+ul.articles-timeline .next-article {
     float: right;
     margin: 0;
 }
-ul.articles-timeline .previous_article  {
+ul.articles-timeline .previous-article  {
     float: left;
     margin: 0;
 }
