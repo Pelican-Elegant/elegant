@@ -343,13 +343,13 @@ td.code {
 /* Article */
 article p a,
 article ol a,
-article div.article-content ul:not(.articles_timeline) a {
+article div.article-content ul:not(.articles-timeline) a {
     border-bottom: thin dashed #A9A9A9;
     color: #000;
 }
 article p a:hover,
 article ol a:hover,
-article div.article-content ul:not(.articles_timeline) a:hover {
+article div.article-content ul:not(.articles-timeline) a:hover {
     border-bottom: none;
     text-decoration: none;
     text-shadow: none;
@@ -434,16 +434,16 @@ article div.article-content ul:not(.articles_timeline) a:hover {
 .page-header h1 a:hover {
     text-decoration: none;
 }
-ul.articles_timeline {
+ul.articles-timeline {
     list-style: none;
     margin: 0;
     padding-bottom: 30px;
 }
-ul.articles_timeline .next_article {
+ul.articles-timeline .next_article {
     float: right;
     margin: 0;
 }
-ul.articles_timeline .previous_article  {
+ul.articles-timeline .previous_article  {
     float: left;
     margin: 0;
 }
