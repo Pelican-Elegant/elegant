@@ -606,7 +606,7 @@ ul.list-all-articles li time {
     font-size: 75%;
     font-weight: normal;
 }
-.proj_desc {
+.proj-desc {
     color: #999;
     font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
