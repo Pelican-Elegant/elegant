@@ -535,26 +535,26 @@ ul.list-all-articles li time {
     font-size: .9em;
 }
 /* MailChimp */
-#mc_embed_signup {
+#mc-embed-signup {
     font-family: inherit;
     font-size: inherit;
     margin: 10px 0;
 }
-#mc_embed_signup form {
+#mc-embed-signup form {
     display: block;
     padding: 0;
     position: relative;
     text-align: left;
 }
-#mc_embed_signup input {
+#mc-embed-signup input {
     -moz-appearance: none;
     -webkit-appearance: none;
     border: 1px solid #999;
 }
-#mc_embed_signup input:focus {
+#mc-embed-signup input:focus {
     border-color: #333;
 }
-#mc_embed_signup input.email {
+#mc-embed-signup input.email {
     display: block;
     font-size: .9em;
     margin: 0 4% 10px 0;
@@ -563,16 +563,16 @@ ul.list-all-articles li time {
     text-indent: 5px;
     width: 100%;
 }
-#mc_embed_signup input.button {
+#mc-embed-signup input.button {
     display: block;
     margin: 0 0 10px 0;
     min-width: 130px;
     width: 100%;
 }
-#mc_embed_signup input[type='email'] {
+#mc-embed-signup input[type='email'] {
     height: 100%;
 }
-#mc_embed_signup .button {
+#mc-embed-signup .button {
     background-color: #EEE;
     border-radius: 4px;
     border: 1px solid #D3D3D3;
@@ -592,10 +592,10 @@ ul.list-all-articles li time {
     white-space: nowrap;
     width: auto;
 }
-#mc_embed_signup .button: hover {
+#mc-embed-signup .button: hover {
     background-color: #DFDFDF;
 }
-#mc_embed_signup .clear {
+#mc-embed-signup .clear {
     clear: none;
     display: inline;
 }
