@@ -1,3 +1,18 @@
+Where do I start?
+=================
+
+See issues tagged with [Pull Request Welcomed](https://github.com/talha131/pelican-elegant/issues?labels=Pull+Request+Welcomed).
+I, @talha131, do not plan to work on these issues. You are more than welcome to pick them up.
+
+New Features and Styles
+=======================
+
+If you plan to add new features to the theme, please make sure
+
+1. You set sensible defaults so that theme works out of the box, without forcing user to set any variable
+2. Your feature should not effect readability and reading experience
+3. It should not be distracting for the reader
+
 Follow the code style of the existing codebase
 ==============================================
 
@@ -21,12 +36,3 @@ CSS Formatting Rules
 
 Refer to [Google's HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) for all
 other formatting rules.
-
-New Features and Styles
-=======================
-
-If you plan to add new features to the theme, please make sure
-
-1. You set sensible defaults so that theme works out of the box, without forcing user to set any variable
-2. Your feature should not effect readability and reading experience
-3. It should not be distracting for the reader
