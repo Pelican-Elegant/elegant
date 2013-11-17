@@ -11,6 +11,10 @@ Thanks to
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
+### Nov 17, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/72) an issue with image margins.
+
 ### Nov 13, 2013
 
 1. He submitted a [pull request](https://github.com/talha131/pelican-elegant/pull/66) to fix URL scheme of categories and tags.
