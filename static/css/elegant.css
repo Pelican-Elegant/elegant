@@ -630,7 +630,6 @@ ul.list-all-articles li time {
 }
 /* Use following classes to add floating images to your post */
 div.figure, .article-content img {
-    margin: 1.5em;
     text-align: center;
 }
 div.figure img {
@@ -647,10 +646,10 @@ div.figure p.caption a {
 }
 div.figure.align-right, .article-content img.align-right {
     float: right;
-    margin-right:0;
+    margin: 1.5em 0 1.5em 1.5em;
 }
 div.figure.align-left, .article-content img.align-left {
     float: left;
-    margin-left:0;
+    margin: 1.5em 1.5em 1.5em 0;
 }
 
