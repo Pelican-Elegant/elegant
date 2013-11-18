@@ -417,7 +417,7 @@ article div.article-content ul:not(.articles-timeline) a:hover {
 .article-content dt {
     font-size: inherit;
 }
-.page-header h1 {
+.page-header {
     border-bottom: 1px solid #8f8686;
     color: #8B0000;
     font-size: 3em;
@@ -425,13 +425,13 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     margin: 20px 0;
     padding: 5px 5px 15px;
 }
-.page-header h1 small {
+.page-header small {
     color: #8f7474;
 }
-.page-header h1 a {
+.page-header a {
     color: #8B0000;
 }
-.page-header h1 a:hover {
+.page-header a:hover, .page-header a:focus {
     text-decoration: none;
 }
 ul.articles-timeline {
