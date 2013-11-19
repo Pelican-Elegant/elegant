@@ -36,7 +36,7 @@ language is the best language ever created. Fall in love
 with your platform and become its ardent worshipper. Your
 call!
 
-You cannot improve this way.
+You cannot improve with this attitude.
 
 .. figure:: |filename|/images/career-advice-from-a-fitness-coach-butterfly-on-flower.jpg
     :alt: A butterfly out of its cocoon
