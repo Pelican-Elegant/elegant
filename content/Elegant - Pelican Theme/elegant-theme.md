@@ -239,27 +239,6 @@ You can also define `SITESUBTITLE`, it appears in the footer, before site licens
 
 ![Site subtitle](|filename|/images/elegant-theme_site-subtitle.png)
 
-
-## Favicon and Speed Dial icon
-
-Every decent site has favicon, Apple launcher icons and Opera speed dial icon. Elegant supports all of them.
-
-Place your images in `content/theme/images` directory, and define `STATIC_PATHS` variable in your configuration
-
-    :::python
-    STATIC_PATHS = ['theme/images', 'images']   
-
-Your images should have follow these naming schemes
-
-1. `apple-touch-icon-114x114.png` 
-1. `apple-touch-icon-144x144.png`
-1. `apple-touch-icon-57x57.png`
-1. `apple-touch-icon-72x72.png`
-1. `apple-touch-icon.png`
-1. `favicon.ico`
-
-I recommend using [Iconifier.net](http://iconifier.net/) to generate the set of images. 
-
 ## Modified Date
 
 You will need to update your articles time and again. You can show the date article was last updated by defining `modified` in your article meta data. 
