@@ -4,6 +4,7 @@ A Fitness Coach and the Software Developers
 :tags: self-improvement, beginners, be-better, fitness
 :category: Career Advice
 :date: 2013-11-01 17:29
+:modified: 2013-11-19 01:15
 :slug: career-advice-software-developers-fitness-coach
 :disqus_identifier: jqda04o-career-advice-software-developers-fitness-coach
 :summary: Why challenging yourself is important and what a software
