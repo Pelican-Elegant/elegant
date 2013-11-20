@@ -1,6 +1,13 @@
 Thanks to
 =========
 
+[kafran](https://github.com/kafran)
+-----------------------------------
+
+### Nov 18, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/76) a missing `</header>` tag
+
 [Jed Brown](https://github.com/jedbrown)
 ----------------------------------------
 
@@ -43,6 +50,10 @@ Thanks to
 
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
+
+### Nov 18, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/75) an issue with page headers
 
 ### Nov 10, 2013
 
