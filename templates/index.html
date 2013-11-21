@@ -46,19 +46,19 @@
             <header>
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
             </header>
+            <ul class="list-all-articles">
             {% for article in articles %}
             {% if not RECENT_ARTICLES_COUNT %}
             {% set RECENT_ARTICLES_COUNT = 10 %}
             {% endif %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
-            <ul class="list-all-articles">
                 <li>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a> 
                 <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </li>
-            </ul>
             {% endif %}
             {% endfor %}
+            </ul>
         </div>
     </div>
     {% endif %}
