@@ -527,6 +527,7 @@ ul.list-all-articles li {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
     padding: .3em 0;
+    overflow: auto;
 }
 ul.list-all-articles li time {
     color: #AAA;
