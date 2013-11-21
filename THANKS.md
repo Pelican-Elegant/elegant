@@ -33,6 +33,7 @@ Thanks to
 ### Nov 11, 2013
 
 1. He submitted a [pull request](https://github.com/talha131/pelican-elegant/pull/62) to fix a typo in CSS.
+1. He reported an [issue](https://github.com/talha131/pelican-elegant/issues/64) in alignment of All Posts
 
 ### Nov 8, 2013
 
