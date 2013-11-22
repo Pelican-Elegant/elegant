@@ -306,6 +306,9 @@ td.code {
     border-radius: 3px 0 0 3px;
     color: #657b83;
 }
+div.highlight {
+    margin-bottom: 20px;
+}
 /* Tags */
 .list-of-tags {
     font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
