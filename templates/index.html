@@ -46,19 +46,28 @@
             <header>
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
             </header>
-            <ul class="list-all-articles">
+        <div class="recent-posts">
             {% for article in articles %}
             {% if not RECENT_ARTICLES_COUNT %}
             {% set RECENT_ARTICLES_COUNT = 10 %}
             {% endif %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
-                <li>
-                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a> 
-                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-                </li>
+            <article>
+                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
+                {% set day = article.date.strftime('%d')|int %}
+                <section>
+                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }}{{- article.date.strftime(', %Y') }}</time>
+                    posted in
+                <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                </section>
+                <p>{{article.summary|striptags}}</p>
+                <footer>
+                    <a href="{{ SITEURL }}/{{ article.url }}">Continue reading →</a>
+                </footer>
+            </article>
             {% endif %}
             {% endfor %}
-            </ul>
+        </div>
         </div>
     </div>
     {% endif %}
