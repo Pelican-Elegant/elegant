@@ -14,27 +14,26 @@ All categories of the {{ SITENAME|striptags }} blog.
 {% endblock feed_links %}
 
 {% block content %}
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
+<div class="row">
+    <div class="col-md-2"></div>
+    <header class="page-header col-md-10">
     <h1><a href="{{ SITEURL }}/categories.html">All Categories</a></h1>
     </header>
 </div>
 
 
-<div class="row-fluid">
-    <div class="span8 offset2">
-        <div class="accordion" id="accordion2">
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="panel-group" id="accordion2">
             {% for category, articles in categories %}
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
-                        {% set num = articles|count %}
-                        {{ category }}<span>{{ num }}</span>
-                    </a>
+            <div class="panel panel-default">
+                <div class="panel-heading list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+                    {% set num = articles|count %}
+                    {{ category }}<span>{{ num }}</span>
                 </div>
-                <div id="{{ category.slug }}-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-category">
+                <div id="{{ category.slug }}-ref" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="list-unstyled list-articles-category">
                             {% for article in articles %} 
                             <li><span><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
                             {% endfor %}

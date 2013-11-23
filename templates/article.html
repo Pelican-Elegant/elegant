@@ -18,24 +18,25 @@
 
 {% block content %}
 <article>
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
+<div class="row">
+    <div class="col-md-2"></div>
+    <header class="page-header col-md-10">
     <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
     </header>
 </div>
 
-<div class="row-fluid">
+<div class="row">
     {% if article.toc %}
-    <div class="span2 table-of-content">
+    <div class="col-md-2 table-of-content">
         <nav>
         <h4>Contents</h4>
         {{ article.toc }}
         </nav>
     </div>
-    <div class="span8 article-content">
-        {% else %}
-        <div class="span8 offset2 article-content">
-            {% endif %}
+    <div class="col-md-8 article-content">
+    {% else %}
+    <div class="col-md-8 col-md-offset-2 article-content">
+    {% endif %}
 
             {{ article.content }}
             {% include 'comments.html' %}
@@ -51,7 +52,7 @@
             {% set previous_article = dates[index+1] %}
             {% endif %}
             <nav>
-            <ul class="articles-timeline">
+            <ul class="list-unstyled articles-timeline">
                 {% if previous_article %}
                 {% set ptitle = previous_article.title|striptags %}
                 {% set pv_title = ptitle %}
@@ -77,7 +78,7 @@
             </aside>
         </div>
         <section>
-        <div class="span2" style="float:right;font-size:0.9em;">
+        <div class="col-md-2" style="font-size: 0.9em;">
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
@@ -90,7 +91,7 @@
             {% endif %}
             {% if article.tags and article.tags[0]|trim|count > 0 %}
             <h4>Tags</h4>
-            <ul class="list-of-tags tags-in-article">
+            <ul class="list-unstyled list-of-tags tags-in-article">
                 {% for tag in article.tags|sort %}
                 <li><a href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}
                     {% for aTag, tagged_articles in tags if aTag == tag %}

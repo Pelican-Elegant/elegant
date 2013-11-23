@@ -217,6 +217,7 @@ h5,
 h6 {
     font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
     font-weight: normal;
+    margin-top: 10px;
 }
 a {
     color: #3875d7;
@@ -226,6 +227,9 @@ a {
     font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
 }
 /* Top navigation menu */
+.navbar {
+    margin-bottom: 0;
+}
 .top-menu li a {
     font-weight: bold;
 }
@@ -515,7 +519,10 @@ a.list-of-categories {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
 }
-a.list-of-categories:hover {
+div.list-of-categories {
+    cursor: pointer;
+}
+div.list-of-categories:hover {
     background-color: #08c;
     border-radius: 4px;
     color: #FFF;
