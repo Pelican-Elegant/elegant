@@ -18,10 +18,21 @@ Full archives of {{ SITENAME|striptags }} blog.
 <div class="row-fluid">
     <div class="span8 offset2">
         <ul class="list-all-articles">
+            {% set last_year = 0 %}
             {% for article in dates %}
-            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
-            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-            </li>
+            {% set year = article.date.strftime('%Y') %}
+            {%if last_year != year %}
+            <h2>{{ year }}</h2>
+            {% set last_year = year %}
+            {% endif %}
+            <article>
+                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
+                {% set day = article.date.strftime('%d')|int %}
+                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }}</time>
+                <footer>posted in 
+                <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                </footer>
+            </article>    
             {% endfor %}
         </ul>
     </div>
