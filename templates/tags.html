@@ -40,9 +40,9 @@ All tags used in the {{ SITENAME|striptags }} blog.
     <div class="span8 offset2">
         {% for tag, articles in tags|sort %}
         <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
-        <ul class="articles-in-tag">
+        <ul class="articles-in-tag list-articles-category">
             {% for article in articles|sort(reverse = true, attribute = 'date') %}
-            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
+            <li><span><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
             {% endfor %}
         </ul>
 
