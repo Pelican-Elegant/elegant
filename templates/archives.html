@@ -16,8 +16,8 @@ Full archives of {{ SITENAME|striptags }} blog.
     </header>
 </div>
 <div class="row-fluid">
-    <div class="span8 offset2">
-        <ul class="list-all-articles">
+    <div class="span10 offset2">
+        <div class="blog-archives">
             {% set last_year = 0 %}
             {% for article in dates %}
             {% set year = article.date.strftime('%Y') %}
@@ -34,7 +34,7 @@ Full archives of {{ SITENAME|striptags }} blog.
                 </footer>
             </article>    
             {% endfor %}
-        </ul>
+        </div>
     </div>
 </div>
 
