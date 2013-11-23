@@ -538,6 +538,52 @@ ul.list-all-articles li time {
     font-family: 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
     font-size: .9em;
 }
+div.blog-archives h2 {
+    float: left;
+    line-height: 0.6em;
+    position: relative;
+}
+div.blog-archives article {
+    border-bottom: 1px dotted #AAA;
+    margin-left: 6em;
+    padding-bottom: 0.7em;
+    padding-left: 4.5em;
+    position: relative;
+}
+div.blog-archives h1 {
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+div.blog-archives h1 a {
+    color: black;
+}
+div.blog-archives h1 a:focus, div.blog-archives h1 a:hover {
+    text-decoration:none;
+}
+div.blog-archives time {
+    color: #8F8F8F;
+    float: right;
+    font-family: 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+    font-size: .9em;
+    left: 0em;
+    line-height: 1.2em;
+    position: absolute;
+    text-align: right;
+    top: 1.8em;
+}
+div.blog-archives footer {
+    color: #8F8F8F;
+    font-size: .9em;
+}
+div.blog-archives footer a {
+    color: #8F8F8F;
+    font-size: .9em;
+    padding-left: .3em;
+}
+div.blog-archives footer a:hover {
+    border-bottom: 1px dashed;
+    text-decoration:none;
+}
 /* MailChimp */
 #mc-embed-signup {
     font-family: inherit;
