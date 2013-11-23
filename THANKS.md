@@ -35,6 +35,10 @@ Thanks to
 1. He submitted a [pull request](https://github.com/talha131/pelican-elegant/pull/62) to fix a typo in CSS.
 1. He reported an [issue](https://github.com/talha131/pelican-elegant/issues/64) in alignment of All Posts
 
+### Nov 10, 2013
+
+1. He gave [suggestions](https://github.com/talha131/pelican-elegant/issues/59) on improving Archive, Tags, Categories and Home Page
+
 ### Nov 8, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/58) that line numbers in code block to do not always get displayed correctly.
@@ -59,6 +63,7 @@ Thanks to
 ### Nov 10, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/34#issuecomment-28151235) a regression bug introduced in tags list
+1. He gave [suggestions](https://github.com/talha131/pelican-elegant/issues/59) on improving Archive, Tags, Categories and Home Page
 
 ### Oct 31, 2013
 

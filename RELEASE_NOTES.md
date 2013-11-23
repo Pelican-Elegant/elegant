@@ -19,12 +19,11 @@ Visual Style
 * Article's paragraph font size is bigger, for better readability
 * Remove unnecessary padding in sidebar's tag list
 * Change default place holder text of Email form text field
-* Search results link open in the same window, which is consistent with search
-  results from internet search engines
+* Archives page and recent posts on home page have better presentation
 * Line number in code block is hidden on tablets and phones to save space for content
 * Fix: Nested lists have different font sizes
 * Fix: CSS style rules for literal block in reST is missing
-* Fix: Long lines in code block will wrap
+* Fix: Long lines in code block will wrap to next line
 * Fix: Code block will not play nice with line numbers
 * Fix: Subscribe button changes its size on smaller screens
 * Fix: Articles under tag heading on tags page are not sorted 
@@ -40,6 +39,12 @@ Following improvements reduce the number of HTTP requests
 * Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
 * [Font Awesome](http://fortawesome.github.io/) is included only if `SOCIAL`
   tuple is set
+
+Behaviour
+---------
+
+* Search results link open in the same window, which is consistent with search
+  results from internet search engines
 
 Version 1.3
 ===========
