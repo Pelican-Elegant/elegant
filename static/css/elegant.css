@@ -505,7 +505,7 @@ ul.list-articles-category {
     margin: 0 0 0 5px;
 }
 ul.list-articles-category li span {
-    color: #AAA;
+    color: #8F8F8F;
     font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
     margin-right: 10px;
 }
@@ -564,10 +564,8 @@ div.blog-archives h1 small, div.recent-posts h1 small {
     font-size: .7em;
 }
 div.blog-archives time {
-    color: #8F8F8F;
     float: right;
-    font-family: 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
-    font-size: 1em;
+    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
     left: 0;
     line-height: .3em;
     position: absolute;
@@ -576,11 +574,10 @@ div.blog-archives time {
 }
 div.blog-archives footer, div.recent-posts section {
     color: #8F8F8F;
-    font-size: .9em;
+    font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
 div.blog-archives footer a, div.recent-posts section a {
-    color: #8F8F8F;
-    font-size: .9em;
+    color: inherit;
     padding-left: .3em;
 }
 div.blog-archives footer a:hover, div.recent-posts section a:hover {
