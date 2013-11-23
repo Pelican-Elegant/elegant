@@ -218,6 +218,14 @@ h6 {
     font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
     font-weight: normal;
 }
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    color: inherit;
+}
 a {
     color: #3875d7;
 }
@@ -427,9 +435,6 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     font-weight: normal;
     margin: 20px 0;
     padding: 5px 5px 15px;
-}
-.page-header small {
-    color: #8f7474;
 }
 .page-header a {
     color: #8B0000;
