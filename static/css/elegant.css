@@ -584,6 +584,16 @@ div.blog-archives footer a:hover {
     border-bottom: 1px dashed;
     text-decoration:none;
 }
+@media (max-width: 767px) {
+    div.blog-archives article {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    div.blog-archives time {
+        float: none;
+        position: static;
+    }
+}
 /* MailChimp */
 #mc-embed-signup {
     font-family: inherit;
