@@ -559,6 +559,9 @@ div.blog-archives h1 {
     font-size: 2em;
     margin-bottom: 0;
 }
+div.blog-archives h1 small {
+    font-size: .8em;
+}
 div.blog-archives h1 a {
     color: black;
 }
