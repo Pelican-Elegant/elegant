@@ -53,17 +53,12 @@
             {% endif %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <article>
-                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
-                {% set day = article.date.strftime('%d')|int %}
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
                 <section>
-                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }}{{- article.date.strftime(', %Y') }}</time>
                     posted in
                 <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </section>
-                <p>{{article.summary|striptags}}</p>
-                <footer>
-                    <a href="{{ SITEURL }}/{{ article.url }}">Continue reading →</a>
-                </footer>
             </article>
             {% endif %}
             {% endfor %}

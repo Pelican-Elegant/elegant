@@ -550,33 +550,25 @@ div.blog-archives h2 {
 div.blog-archives article, div.recent-posts article {
     border-bottom: 1px dotted #AAA;
 }
-div.blog-archives article {
+div.blog-archives article, div.recent-posts article {
     font-size: 1.1em;
-    margin-left: 6em;
     padding: .3em .2em;
     position: relative;
     overflow: auto;
 }
+div.blog-archives article {
+    margin-left: 6em;
+}
 div.blog-archives article.last-entry-of-year {
     margin-bottom: 1em;
 }
-div.blog-archives time {
+div.blog-archives time, div.recent-posts time {
     float: right;
     text-align: right;
 }
-div.blog-archives time, div.recent-posts section {
+div.blog-archives time, div.recent-posts time, div.recent-posts section {
     color: #8F8F8F;
     font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
-}
-div.recent-posts {
-    margin-left: 1em;
-}
-div.recent-posts h1 {
-    font-size: 2em;
-    margin-bottom: 0;
-}
-div.recent-posts h1 small {
-    font-size: .7em;
 }
 div.recent-posts section a {
     color: inherit;
@@ -586,12 +578,9 @@ div.recent-posts section a:hover {
     border-bottom: 1px dashed;
     text-decoration: none;
 }
-div.recent-posts section time {
-    padding-right: .4em;
-}
-div.recent-posts footer {
-    font-size: 1.1em;
-    padding-bottom: 10px;
+div.recent-posts time {
+     display: inline;
+     font-size: inherit;
 }
 @media (max-width: 767px) {
     div.blog-archives h2 {
@@ -600,6 +589,11 @@ div.recent-posts footer {
     div.blog-archives article {
         margin-left: 0;
         padding-left: 0;
+    }
+    div.recent-posts time {
+        display: block;
+        float: none;
+        text-align: left;
     }
 }
 /* MailChimp */
