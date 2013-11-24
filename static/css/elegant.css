@@ -560,13 +560,6 @@ div.blog-archives article {
 div.blog-archives article.last-entry-of-year {
     margin-bottom: 1em;
 }
-div.recent-posts h1 {
-    font-size: 2em;
-    margin-bottom: 0;
-}
-div.recent-posts h1 small {
-    font-size: .7em;
-}
 div.blog-archives time {
     float: right;
     text-align: right;
@@ -574,6 +567,16 @@ div.blog-archives time {
 div.blog-archives time, div.recent-posts section {
     color: #8F8F8F;
     font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
+}
+div.recent-posts {
+    margin-left: 1em;
+}
+div.recent-posts h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+div.recent-posts h1 small {
+    font-size: .7em;
 }
 div.recent-posts section a {
     color: inherit;
@@ -583,15 +586,12 @@ div.recent-posts section a:hover {
     border-bottom: 1px dashed;
     text-decoration: none;
 }
-div.recent-posts footer {
-    font-size: 1.1em;
-    padding-bottom: 10px;
-}
 div.recent-posts section time {
     padding-right: .4em;
 }
-div.recent-posts {
-    margin-left: 1em;
+div.recent-posts footer {
+    font-size: 1.1em;
+    padding-bottom: 10px;
 }
 @media (max-width: 767px) {
     div.blog-archives h2 {
