@@ -22,17 +22,23 @@ Full archives of {{ SITENAME|striptags }} blog.
             {% for article in dates %}
             {% set year = article.date.strftime('%Y') %}
             {%if last_year != year %}
-            <h2 class="hidden-phone">{{ year }}</h2>
+            <h2 id="{{year }}"><a href="#{{year}}">{{ year }}</a></h2>
             {% set last_year = year %}
             {% endif %}
+            {% set next_year = 0 %}
+            {% if not loop.last %}
+            {% set next = loop.index0 + 1 %}
+            {% set next_article = dates[next] %}
+            {% set next_year = next_article.date.strftime('%Y') %}
+            {% endif %}
+            {% if next_year != year %}
+            <article class="last-entry-of-year">
+            {% else %}
             <article>
-                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
-                {% set day = article.date.strftime('%d')|int %}
-                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }}<span class="visible-phone">{{- article.date.strftime(', %Y') }}</span></time>
-                <footer>posted in 
-                <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
-                </footer>
-            </article>    
+            {% endif %}
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+            </article>
             {% endfor %}
         </div>
     </div>
