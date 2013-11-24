@@ -555,7 +555,7 @@ div.blog-archives article {
     margin-left: 6em;
     padding: .3em .2em;
     position: relative;
-    overflow: scroll;
+    overflow: auto;
 }
 div.blog-archives article.last-entry-of-year {
     margin-bottom: 1em;
