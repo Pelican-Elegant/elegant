@@ -590,11 +590,6 @@ div.recent-posts time {
         margin-left: 0;
         padding-left: 0;
     }
-    div.recent-posts time {
-        display: block;
-        float: none;
-        text-align: left;
-    }
 }
 /* MailChimp */
 #mc-embed-signup {
