@@ -27,7 +27,7 @@ All categories of the {{ SITENAME|striptags }} blog.
         <div class="panel-group" id="accordion2">
             {% for category, articles in categories %}
             <div class="panel panel-default">
-                <div class="panel-heading list-of-categories-heading">
+                <div class="panel-heading">
                     <a class="panel-title list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
                         {% set num = articles|count %}
                         {{ category }}<span>{{ num }}</span>
