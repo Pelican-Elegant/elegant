@@ -57,7 +57,9 @@
                 <section>
                     posted in
                 <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                <div class="recent-posts-time">
                 <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                </div>
                 </section>
             </article>
             {% endif %}
