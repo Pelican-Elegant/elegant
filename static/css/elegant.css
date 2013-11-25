@@ -264,6 +264,7 @@ ul.footer-content li {
 .disqus-comment-count {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: .9em;
+    display: block;
 }
 #disqus_thread {
     padding-left: 10px;
@@ -515,14 +516,16 @@ a.category-link {
 a.category-link:hover {
     text-decoration: none;
 }
+div.list-of-categories-heading {
+    padding: 0;
+}
 a.list-of-categories {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
     font-size: 1.1em;
+    display: block;
+    padding: 10px 15px;
 }
-div.list-of-categories {
-    cursor: pointer;
-}
-div.list-of-categories:hover {
+a.list-of-categories:hover {
     background-color: #08c;
     border-radius: 4px;
     color: #FFF;
