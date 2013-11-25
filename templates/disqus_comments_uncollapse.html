@@ -7,6 +7,10 @@ function uncollapse() {
 }
 </script>
 <script type="text/javascript" language="JavaScript">
-    uncollapse(); 
+    uncollapse();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
 </script>
 {% endif %}
