@@ -37,8 +37,6 @@ Following improvements reduce the number of HTTP requests
 * Four CSS style sheets have been merged into to one
 * Elegant uses minified CSS style sheet
 * Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
-* [Font Awesome](http://fortawesome.github.io/) is included only if `SOCIAL`
-  tuple is set
 
 Behaviour
 ---------
