@@ -41,12 +41,6 @@
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
-            {% if page.date %}
-            <h4>Published</h4>
-            {% set day = page.date.strftime('%d')|int %}
-            <time pubdate="pubdate" datetime="{{ page.date.isoformat() }}">{{ page.date.strftime('%b') }} {{ day }} {{- page.date.strftime(', %Y') }}</time>
-            {% endif %}
-            {% include 'last_updated.html' %}
             {% include 'social_links.html' %}
             {% include 'mailchimp.html' %}
         </div>
