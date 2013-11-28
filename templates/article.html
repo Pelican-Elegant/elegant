@@ -33,12 +33,13 @@
         </nav>
     </div>
     <div class="span8 article-content">
-        {% else %}
+       {% else %}
         <div class="span8 offset2 article-content">
             {% endif %}
 
             {{ article.content }}
-            {% include 'comments.html' %}
+            {% from 'comments.html' import comments with context %}
+            {{ comments(article) }}
             <aside>
             <hr/>
             {% for an_article in dates %}
