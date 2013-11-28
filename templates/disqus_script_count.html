@@ -1,4 +1,3 @@
-{% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
 <script type="text/javascript">
     var disqus_shortname = '{{ DISQUS_SITENAME }}';
 
@@ -9,4 +8,3 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
     </script>
-{% endif %}

@@ -110,6 +110,6 @@
 
 {% block script %}
     {{ super() }}
-    {% include 'disqus_script_count.html' %}
-    {% include 'disqus_comments_uncollapse.html' %}
+    {% from 'comments.html' import comments_script with context %}
+    {{ comments_script(article) }}
 {% endblock script %}

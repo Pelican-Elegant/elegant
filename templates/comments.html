@@ -29,3 +29,10 @@
 </section>
     {% endif %}
 {% endmacro %}
+
+{% macro comments_script(article) %}
+    {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
+        {% include 'disqus_script_count.html' %}
+        {% include 'disqus_comments_uncollapse.html' %}
+    {% endif %}
+{% endmacro %}
