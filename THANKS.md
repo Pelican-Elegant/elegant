@@ -1,6 +1,13 @@
 Thanks to
 =========
 
+[Alexis Métaireau](https://github.com/ametaireau)
+-------------------------------------------------
+
+### Nov 27, 2013
+
+1. He [helped](https://github.com/talha131/pelican-elegant/issues/81) in resolving a performance issue
+
 [kafran](https://github.com/kafran)
 -----------------------------------
 
@@ -17,6 +24,10 @@ Thanks to
 
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
+
+### Nov 20, 2013
+
+1. He [suggested](https://github.com/talha131/pelican-elegant/issues/63) comments for Page template
 
 ### Nov 17, 2013
 
@@ -56,6 +67,10 @@ Thanks to
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
 
+### Nov 26, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/81) an issue with Elegant's performance
+
 ### Nov 18, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/75) an issue with page headers
@@ -85,6 +100,7 @@ Thanks to
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/5) hyperlink style compatibility issue on Chrome.
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/3) an issue with link style.
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/4) the bug that Disqus comment count is always zero.
+1. He [suggested](https://github.com/talha131/pelican-elegant/issues/7) that comments accordion should have different text depending on its state
 
 [yuex](https://github.com/yuex)
 -------------------------------
@@ -120,3 +136,4 @@ Thanks to
 ### Aug 30, 2013
 
 1. He reported a [bug](https://botbot.me/freenode/pelican/msg/5577967/) in search form.
+

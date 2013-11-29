@@ -9,6 +9,10 @@ Version 1.4 (under development)
   define article specific comments introduction
 * New: Support for Latex with the help of `latex` plugin
 * New: Support for new metadata `modified`
+* New: Add Disqus comments to Page
+* New: Performance improvement- 4x faster output. 
+* New: Use `neighbor` plugin to show next and previous articles
+* New: Comments section message changes when user toggles it
 
 Visual Style
 ------------
