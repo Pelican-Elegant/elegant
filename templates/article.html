@@ -40,42 +40,33 @@
             {{ article.content }}
             {% from 'comments.html' import comments with context %}
             {{ comments(article) }}
-            <aside>
             <hr/>
-            {% for an_article in dates %}
-            {% if an_article.url == article.url %}
-            {% set index = loop.index0 %}
-            {% if not loop.first %}
-            {% set next_article = dates[index-1] %}
-            {% endif %}
-            {% if not loop.last %}
-            {% set previous_article = dates[index+1] %}
-            {% endif %}
+            {% if article.prev_article or article.next_article %}
+            <aside>
             <nav>
             <ul class="articles-timeline">
-                {% if previous_article %}
-                {% set ptitle = previous_article.title|striptags %}
-                {% set pv_title = ptitle %}
-                    {%if previous_article.subtitle %}
-                        {% set pv_title = ptitle + ' ' +  '<small>' + previous_article.subtitle + '</small>' %}
-                        {% set ptitle = ptitle + ' - ' + previous_article.subtitle %}
+                {% if article.prev_article %}
+                    {% set ptitle = article.prev_article.title|striptags %}
+                    {% set pv_title = ptitle %}
+                    {%if article.prev_article.subtitle %}
+                        {% set pv_title = ptitle + ' ' +  '<small>' + article.prev_article.subtitle + '</small>' %}
+                        {% set ptitle = ptitle + ' - ' + article.prev_article.subtitle %}
                     {% endif %}
-                <li class="previous-article">« <a href="{{ SITEURL }}/{{ previous_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
+                <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
-                {% if next_article %}
-                {% set ntitle = next_article.title|striptags %}
-                {% set nv_title = ntitle %}
-                    {%if next_article.subtitle %}
-                        {% set nv_title = ntitle + ' ' +  '<small>' + next_article.subtitle + '</small>' %}
-                        {% set ntitle = ntitle + ' - ' + next_article.subtitle %}
+                {% if article.next_article %}
+                    {% set ntitle = article.next_article.title|striptags %}
+                    {% set nv_title = ntitle %}
+                    {%if article.next_article.subtitle %}
+                        {% set nv_title = ntitle + ' ' +  '<small>' + article.next_article.subtitle + '</small>' %}
+                        {% set ntitle = ntitle + ' - ' + article.next_article.subtitle %}
                     {% endif %}
-                <li class="next-article"><a href="{{ SITEURL }}/{{ next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
+                <li class="next-article"><a href="{{ SITEURL }}/{{ article.next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
                 {% endif %}
             </ul>
             </nav>
-            {% endif %}
-            {% endfor %}
             </aside>
+            {% endif %}
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
