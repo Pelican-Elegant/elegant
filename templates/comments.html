@@ -32,6 +32,7 @@
 
 {% macro comments_script(article) %}
     {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
-        {% include 'disqus_scripts.html' %}
+        {% from 'disqus_scripts.html' import disqus_misc_scripts with context %}
+        {{ disqus_misc_scripts() }}
     {% endif %}
 {% endmacro %}

@@ -1,3 +1,4 @@
+{% macro disqus_misc_scripts() %}
 <script type="text/javascript">
 var disqus_shortname = '{{ DISQUS_SITENAME }}';
 (function () {
@@ -21,3 +22,5 @@ window.onhashchange=function(){
         window.location.reload(true);
 }
 </script>
+{% endmacro %}
+
