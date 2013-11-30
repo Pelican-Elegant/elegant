@@ -367,7 +367,7 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     text-shadow: none;
 }
 .article-content, div.recent-posts p {
-    font: 1.2em/1.6em 'PT Serif', Georgia, Times, 'Times New Roman', Serif;
+    font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
     text-align: justify;
 }
 .article-content {
