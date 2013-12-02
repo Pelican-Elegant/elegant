@@ -32,6 +32,7 @@ Thanks to
 ### Nov 17, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/72) an issue with image margins.
+1. He [suggested](https://github.com/talha131/pelican-elegant/issues/73) to close an issue regarding changing 3rd parties' code
 
 ### Nov 13, 2013
 
@@ -70,6 +71,7 @@ Thanks to
 ### Nov 26, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/81) an issue with Elegant's performance
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/80) an issue with fall back fonts
 
 ### Nov 18, 2013
 
