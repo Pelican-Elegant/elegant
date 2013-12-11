@@ -208,6 +208,10 @@ html {
 }
 #content-sans-footer {
     min-height: 100%;
+    margin-bottom: -53px;
+}
+#push {
+    height: 53px;
 }
 h1,
 h2,
