@@ -454,14 +454,56 @@ ul.articles-timeline .previous-article  {
     float: left;
     margin: 0;
 }
-.sidebar-social-links {
-    color: #646464;
-    font-size: 1.2em;
-    padding-right: 3px;
+i.sidebar-social-links {
+    border-radius: 20%;
+    border: solid transparent 1px;
+    color: #A2A2A2;
+    font-size: 2em;
+    padding: 1px;
     text-decoration: none;
 }
-.sidebar-social-links i:hover {
-    color: #000;
+i.sidebar-social-links:hover {
+    background-color: #A2A2A2;
+    color: #fff;
+}
+i.fa-twitter:hover {
+    background-color: #00ACED;
+}
+i.fa-facebook:hover {
+    background-color: #3B5998;
+}
+i.fa-google-plus:hover {
+    background-color: #D34836;
+}
+i.fa-adn:hover {
+    background-color: #49484D;
+}
+i.fa-envelope:hover {
+    background-color: #5E9EDA;
+}
+i.fa-github:hover {
+    background-color: #000;
+}
+i.fa-flickr:hover {
+    background-color: #FF0084;
+}
+i.fa-youtube:hover {
+    background-color: #BC272F;
+}
+i.fa-linkedin:hover {
+    background-color: #107FB9;
+}
+i.fa-gittip:hover {
+    background-color: #663300;
+}
+i.fa-rss:hover {
+    background-color: #FF6600;
+}
+i.fa-bitbucket:hover {
+    background-color: #205081;
+}
+i.fa-stack-exchange:hover {
+    background-color: #3A7BC8;
 }
 .table-of-content .toc {
     font-size: .7em;
