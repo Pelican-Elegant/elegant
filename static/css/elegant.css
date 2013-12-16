@@ -459,8 +459,12 @@ i.sidebar-social-links {
     border: solid transparent 1px;
     color: #A2A2A2;
     font-size: 2em;
+    margin: 2px 0 0 -2px;
     padding: 1px;
+    padding: 2px 3px 2px 4px;
+    text-align: center;
     text-decoration: none;
+    width: 25px;
 }
 i.sidebar-social-links:hover {
     background-color: #A2A2A2;
