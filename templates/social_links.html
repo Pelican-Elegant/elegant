@@ -4,11 +4,14 @@
     {% endif %}
 <h4>{{ SOCIAL_PROFILE_LABEL }}</h4>
 {% for name, url in SOCIAL %}
-    {% set link_title = 'My ' + name + ' Profile' %}
-    {% set link_icon = name.lower() %}
+    {% set link_title = name + ' profile' %}
+    {% set link_icon = name.lower()+'-square' %}
     {% if name.lower() == 'email' %}
-        {% set link_title = 'My ' + name + ' Address' %}
+        {% set link_title = name + ' Address' %}
         {% set link_icon = 'envelope' %}
+    {% endif %}
+    {% if name.lower() == 'rss' %}
+        {% set link_title = 'RSS feed' %}
     {% endif %}
 <a href="{{url|e}}" title="{{link_title}}" class="sidebar-social-links" target="_blank">
     <i class="fa fa-{{link_icon}} sidebar-social-links"></i></a>

@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block title %}
-All Categories · {{ super() }}
+Categories · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-All categories of the {{ SITENAME|striptags }} blog. 
+Categories of the {{ SITENAME|striptags }} blog. 
 {% endblock head_description %}
 
 {% block feed_links %}
@@ -16,7 +16,7 @@ All categories of the {{ SITENAME|striptags }} blog.
 {% block content %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/categories.html">All Categories</a></h1>
+    <h1><a href="{{ SITEURL }}/categories.html">Categories</a></h1>
     </header>
 </div>
 
