@@ -1,0 +1,18 @@
+{% if article.related_posts %}
+<section>
+<h2>Read this next</h2>
+<ul>
+{% for related_post in article.related_posts %}
+    {% set title = related_post.title|striptags %}
+    {% set htitle = title %}
+    {%if related_post.subtitle %}
+        {% set htitle = title + ' - ' + related_post.subtitle %}
+        {% set title = title + ' ' +  '<small>' + related_post.subtitle + '</small>' %}
+    {% endif %}
+<li><a href="{{ SITEURL }}/{{ related_post.url }}" title="{{ htitle }}">{{ title }}</a></li>
+{% endfor %}
+</ul>
+<hr />
+</section>
+{% endif %}
+

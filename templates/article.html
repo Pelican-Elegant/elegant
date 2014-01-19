@@ -43,6 +43,7 @@
             {% from '_includes/comments.html' import comments with context %}
             {{ comments(article) }}
             <hr/>
+            {% include '_includes/related_posts.html' with context %}
             {% if article.prev_article or article.next_article %}
             <aside>
             <nav>
