@@ -20,7 +20,7 @@
         <div id="disqus_thread" class="accordion-body collapse">
             <div class="accordion-inner">
                 <div class="comments">
-                    {% from 'disqus_scripts.html' import disqus_comments_script with context %}
+                    {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
                     {{ disqus_comments_script(article) }}
                 </div>
             </div>
@@ -33,7 +33,7 @@
 
 {% macro comments_script(article) %}
     {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
-        {% from 'disqus_scripts.html' import disqus_misc_scripts with context %}
+        {% from '_includes/disqus_scripts.html' import disqus_misc_scripts with context %}
         {{ disqus_misc_scripts() }}
     {% endif %}
 {% endmacro %}
