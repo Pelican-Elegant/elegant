@@ -38,13 +38,13 @@
             {% endif %}
 
             {{ page.content }}
-            {% from 'comments.html' import comments with context %}
+            {% from '_includes/comments.html' import comments with context %}
             {{ comments(page) }}
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
-            {% include 'social_links.html' %}
-            {% include 'mailchimp.html' %}
+            {% include '_includes/social_links.html' %}
+            {% include '_includes/mailchimp.html' %}
         </div>
         </section>
     </div>
@@ -53,6 +53,6 @@
 
     {% block script %}
     {{ super() }}
-    {% from 'comments.html' import comments_script with context %}
+    {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script(page) }}
     {% endblock script %}

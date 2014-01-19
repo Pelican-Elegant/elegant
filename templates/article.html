@@ -38,7 +38,7 @@
             {% endif %}
 
             {{ article.content }}
-            {% from 'comments.html' import comments with context %}
+            {% from '_includes/comments.html' import comments with context %}
             {{ comments(article) }}
             <hr/>
             {% if article.prev_article or article.next_article %}
@@ -75,7 +75,7 @@
             {% set day = article.date.strftime('%d')|int %}
             <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
-            {% include 'last_updated.html' %}
+            {% include '_includes/last_updated.html' %}
             {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
             <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a>
@@ -91,8 +91,8 @@
                 {% endfor %}
             </ul>
             {% endif %}
-            {% include 'social_links.html' %}
-            {% include 'mailchimp.html' %}
+            {% include '_includes/social_links.html' %}
+            {% include '_includes/mailchimp.html' %}
         </div>
         </section>
 </div>
@@ -101,6 +101,6 @@
 
 {% block script %}
     {{ super() }}
-    {% from 'comments.html' import comments_script with context %}
+    {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script(article) }}
 {% endblock script %}
