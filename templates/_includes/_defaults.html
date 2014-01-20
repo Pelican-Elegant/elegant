@@ -1,0 +1,42 @@
+{# Heading for the list of related posts #}
+{% if not RELATED_POSTS_LABEL %}
+{% set RELATED_POSTS_LABEL = 'Related Posts' %}
+{% else %}
+{% set RELATED_POSTS_LABEL = RELATED_POSTS_LABEL %}
+{% endif %}
+
+{# Heading for the list of social profiles #}
+{% if not SOCIAL_PROFILE_LABEL %}
+{% set SOCIAL_PROFILE_LABEL = 'Contact' %}
+{% else %}
+{% set SOCIAL_PROFILE_LABEL = SOCIAL_PROFILE_LABEL %}
+{% endif %}
+
+{# Heading for the Email subscription form #}
+{% if not EMAIL_SUBSCRIPTION_LABEL %}
+{% set EMAIL_SUBSCRIPTION_LABEL = 'Email Newsletter' %}
+{% else %}
+{% set EMAIL_SUBSCRIPTION_LABEL = EMAIL_SUBSCRIPTION_LABEL %}
+{% endif %}
+
+{# Placeholder text for Email field #}
+{% if not EMAIL_FIELD_PLACEHOLDER  %}
+{% set EMAIL_FIELD_PLACEHOLDER  = 'Enter your email...' %}
+{% else %}
+{% set EMAIL_FIELD_PLACEHOLDER  = EMAIL_FIELD_PLACEHOLDER  %}
+{% endif %}
+
+{# Subscribe button title #}
+{% if not SUBSCRIBE_BUTTON_TITLE  %}
+{% set SUBSCRIBE_BUTTON_TITLE  = 'Subscribe' %}
+{% else %}
+{% set SUBSCRIBE_BUTTON_TITLE  = SUBSCRIBE_BUTTON_TITLE  %}
+{% endif %}
+
+{# Count of recent articles to be shown on the home page #}
+{% if not RECENT_ARTICLES_COUNT  %}
+{% set RECENT_ARTICLES_COUNT  = 10 %}
+{% else %}
+{% set RECENT_ARTICLES_COUNT  = RECENT_ARTICLES_COUNT  %}
+{% endif %}
+

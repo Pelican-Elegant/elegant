@@ -48,9 +48,7 @@
             </header>
         <div class="recent-posts">
             {% for article in articles %}
-            {% if not RECENT_ARTICLES_COUNT %}
-            {% set RECENT_ARTICLES_COUNT = 10 %}
-            {% endif %}
+            {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT with context %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <article>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>

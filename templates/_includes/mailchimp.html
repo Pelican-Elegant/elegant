@@ -1,13 +1,7 @@
 {% if MAILCHIMP_FORM_ACTION %}
-    {% if not EMAIL_SUBSCRIPTION_LABEL %}
-        {% set EMAIL_SUBSCRIPTION_LABEL='Email Newsletter' %}
-    {% endif %}
-    {% if not SUBSCRIBE_BUTTON_TITLE %}
-        {% set SUBSCRIBE_BUTTON_TITLE='Subscribe' %}
-    {% endif %}
-    {% if not EMAIL_PLACEHOLDER %}
-        {% set EMAIL_PLACEHOLDER ='Enter your email...' %}
-    {% endif %}
+{% from '_includes/_defaults.html' import EMAIL_SUBSCRIPTION_LABEL with context %}
+{% from '_includes/_defaults.html' import EMAIL_FIELD_PLACEHOLDER with context %}
+{% from '_includes/_defaults.html' import SUBSCRIBE_BUTTON_TITLE with context %}
 <!-- Begin MailChimp Signup Form -->
 <div id="mc-embed-signup">
 <form action="{{ MAILCHIMP_FORM_ACTION }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

@@ -1,7 +1,5 @@
 {% if SOCIAL %}
-    {% if not SOCIAL_PROFILE_LABEL %}
-        {% set SOCIAL_PROFILE_LABEL ='Contact' %}
-    {% endif %}
+{% from '_includes/_defaults.html' import SOCIAL_PROFILE_LABEL with context %}
 <h4>{{ SOCIAL_PROFILE_LABEL }}</h4>
 {% for entry in SOCIAL %}
 {% set f_entry = [] %}
