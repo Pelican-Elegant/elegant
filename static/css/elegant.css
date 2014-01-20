@@ -150,9 +150,9 @@ div.highlight {
     font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
-article p a,
+article p:not(#list-of-translations) a,
 article ol a,
-article div.article-content ul:not(.articles-timeline) a {
+article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a {
     border-bottom: thin dashed #A9A9A9;
     color: #000;
 }
@@ -203,9 +203,12 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     font-weight: 300;
     position:relative;
 }
-.article-content ul {
+.article-content ul:not(.related-posts-list):not(.articles-timeline) {
     font-size: inherit;
-    list-style-type: circle;
+    list-style-type: disc;
+}
+.article-content ul.related-posts-list {
+    list-style-type: square;
 }
 .article-content ol {
     font-size: inherit;
