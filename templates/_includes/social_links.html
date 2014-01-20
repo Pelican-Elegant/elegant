@@ -3,15 +3,30 @@
         {% set SOCIAL_PROFILE_LABEL ='Contact' %}
     {% endif %}
 <h4>{{ SOCIAL_PROFILE_LABEL }}</h4>
-{% for name, url in SOCIAL %}
-    {% set link_title = 'My ' + name + ' Profile' %}
-    {% set link_icon = name.lower() %}
-    {% if name.lower() == 'email' %}
-        {% set link_title = 'My ' + name + ' Address' %}
-        {% set link_icon = 'envelope' %}
-    {% endif %}
-<a href="{{url|e}}" title="{{link_title}}" class="sidebar-social-links" target="_blank">
-    <i class="fa fa-{{link_icon}} sidebar-social-links"></i></a>
+{% for entry in SOCIAL %}
+{% set f_entry = [] %}
+    {%for item in entry %}
+        {# first is for name #}
+            {% if f_entry.append(item) %}{% endif %}
+        {% if loop.first %}
+            {% set link_title = 'My ' + item + ' Profile' %}
+            {% set link_icon = item.lower() %}
+            {% if item.lower() == 'email' %}
+                {% set link_title = 'My ' + item + ' Address' %}
+                {% set link_icon = 'envelope' %}
+            {% endif %}
+            {% if f_entry.insert(0, link_title) %}{% endif %}
+            {% if f_entry.insert(1, link_icon) %}{% endif %}
+        {% elif loop.index0 == 1 %}
+            {% set url = item|e %}
+            {% if f_entry.insert(2, url) %}{% endif %}
+        {% elif loop.index0 == 2 %}
+            {% set link_icon = item.lower() %}
+            {% if f_entry.insert(1, link_icon) %}{% endif %}
+        {% endif %}
+    {% endfor %}
+    <a href="{{f_entry[2]}}" title="{{f_entry[0]}}" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-{{f_entry[1]}} sidebar-social-links"></i></a>
 {% endfor %}
 {% endif %}
 
