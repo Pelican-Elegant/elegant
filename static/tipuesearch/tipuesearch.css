@@ -1,0 +1,134 @@
+/*
+Tipue Search 3.0.1
+Copyright (c) 2013 Tipue
+Tipue Search is released under the MIT License
+http://www.tipue.com/search
+*/
+#tipue_search_content
+{
+    clear: left;
+    margin: 0;
+    max-width: 650px;
+    padding: 25px 0 13px 0;
+}
+#tipue_search_loading
+{
+    background: #fff url('img/loader.gif') no-repeat left;
+    padding-top: 60px;
+}
+#tipue_search_warning
+{
+    color: #333;
+    font: 12px/1.6 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
+    margin: 7px 0;
+}
+#tipue_search_warning a
+{
+    color: #3f72d8;
+    text-decoration: none;
+}
+#tipue_search_warning a:hover
+{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1px;
+}
+#tipue_search_results_count, #tipue_search_warning_head
+{
+    border-bottom: 1px solid rgb(143, 134, 134);
+    color: darkred;
+    font-family: Baskerville, Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, Serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 20px 0 20px 0;
+    padding: 5px 5px 15px 5px;
+}
+.tipue_search_content_title
+{
+    font: 300 23px/1.6 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
+    margin-top: 20px;
+}
+.tipue_search_content_title a
+{
+    color: #3f72d8;
+    text-decoration: none;
+}
+.tipue_search_content_title a:hover
+{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1px;
+}
+.tipue_search_content_text
+{
+    color: #333;
+    font-family: Scala, Georgia, "DejaVu Serif", "Times New Roman", Times, Serif;
+    font-size: 1em;
+    font-variant: normal;
+    line-height: 1.6em;
+    padding: 13px 0;
+    text-transform: none;
+}
+
+.tipue_search_content_text b {
+    color: #EF1D1D;
+    font-family: Garamond;
+    font-size: 1.3em;
+}
+.tipue_search_content_loc
+{
+    font: 300 13px/1.7 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
+    overflow: auto;
+}
+.tipue_search_content_loc a
+{
+    color: #555;
+    text-decoration: none;
+}
+.tipue_search_content_loc a:hover
+{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1px;
+}
+#tipue_search_foot
+{
+    margin: 51px 0 21px 0;
+}
+#tipue_search_foot_boxes
+{
+    font: 12px/1 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+#tipue_search_foot_boxes li
+{
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#tipue_search_foot_boxes li a
+{
+    background-color: #f1f1f1;
+    border-radius: 1px;
+    border: 1px solid #dcdcdc;
+    color: #333;
+    margin-right: 7px;
+    padding: 7px 13px 8px 13px;
+    text-align: center;
+    text-decoration: none;
+}
+#tipue_search_foot_boxes li.current
+{
+    background: #fff;
+    border-radius: 1px;
+    border: 1px solid #dcdcdc;
+    color: #333;
+    margin-right: 7px;
+    padding: 7px 13px 8px 13px;
+    text-align: center;
+}
+#tipue_search_foot_boxes li a:hover
+{
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+}
+
