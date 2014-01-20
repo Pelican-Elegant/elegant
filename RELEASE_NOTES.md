@@ -1,18 +1,25 @@
-Version 1.4 (under development)
+Version 2.0 (under development)
 ===============================
 
-* New: Support for `custom.css`
-* New: Stat Counter Analytics support
-* New: Link to social profiles
-* New: Configure heading of social profile with `SOCIAL_PROFILE_LABEL`
-* New: `article.comments_intro` that overrides `COMMENTS_INTRO`. Now you can
-  define article specific comments introduction
-* New: Support for Latex with the help of `latex` plugin
-* New: Support for new metadata `modified`
-* New: Add Disqus comments to Page
-* New: Performance improvement- 4x faster output. 
-* New: Use `neighbor` plugin to show next and previous articles
-* New: Comments section message changes when user toggles it
+* Link to your social profiles
+* Upgraded to Twitter Bootstrap 2.3.2
+* Support for `custom.css`
+* [Stat Counter Analytics ](http://statcounter.com/) support
+* Support for custom icons for social profiles
+* Support for new metadata `modified`
+* Translations support
+* `article.comments_intro` that overrides `COMMENTS_INTRO`. Now you can define
+  article specific comments introduction
+* Add Disqus comments to Pages
+* All customizable variables consolidated in a single `_defaults.html`, making
+  it easier for you to customize or even *localize* the theme
+
+Performance
+-----------
+
+* Performance improvement- 4x faster output
+* Reduce number of HTTP requests using `assets` plugin
+* Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
 
 Visual Style
 ------------
@@ -22,31 +29,32 @@ Visual Style
 * Block quotes have a quote icon instead of a thick line on left
 * Article's paragraph font size is bigger, for better readability
 * Remove unnecessary padding in sidebar's tag list
-* Change default place holder text of Email form text field
 * Archives page and recent posts on home page have better presentation
-* Line number in code block is hidden on tablets and phones to save space for content
-* Fix: Nested lists have different font sizes
-* Fix: CSS style rules for literal block in reST is missing
-* Fix: Long lines in code block will wrap to next line
-* Fix: Code block will not play nice with line numbers
-* Fix: Subscribe button changes its size on smaller screens
-* Fix: Articles under tag heading on tags page are not sorted 
-* Fix: URL scheme for blogs which are not published to the root folder
+* Time stamps in categories and tags pages are justified
+* Line number in code block is hidden on tablets and phones to save space for
+  content
+* Fixed: Nested lists have different font sizes
+* Fixed: CSS style rules for literal block in reST is missing
+* Fixed: Long lines in code block will wrap to next line
+* Fixed: Code block will not play nice with line numbers
+* Fixed: Subscribe button changes its size on smaller screens
+* Fixed: Articles under tag heading on tags page are not sorted
+* Fixed: URL scheme for blogs which are not published to the root folder
 
-Optimizations
--------------
+Plugins
+-------
 
-Following improvements reduce the number of HTTP requests
-
-* Four CSS style sheets have been merged into to one
-* Elegant uses minified CSS style sheet
-* Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
+* Support for Latex with the help of `latex` plugin
+* Related Posts support
+* Use `neighbor` plugin to show next and previous articles
+* Use `assets` plugin to minify CSS and JS files
 
 Behaviour
 ---------
 
-* Search results link open in the same window, which is consistent with search
-  results from internet search engines
+* Search results link open in the same window, which is consistent with
+  internet search engines
+* Comments section message changes when user toggles it
 
 Version 1.3
 ===========
