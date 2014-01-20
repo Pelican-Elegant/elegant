@@ -16,6 +16,8 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc(pe
 PLUGIN_PATH = '../pelican-plugins/'
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img', 'neighbors', 'latex', 'related_posts', 'assets']
 
+RELATED_POSTS_MAX = 10
+
 SITEMAP = {
     'format': 'xml',
     'priorities': {
