@@ -8,7 +8,7 @@ SITEURL = 'http://localhost:8000'
 
 # Regional Settings
 TIMEZONE = 'Asia/Karachi'
-DATE_FORMATS = {'en': '%b %d,  %Y'}
+DATE_FORMATS = {'en': '%b %d, %Y'}
 DEFAULT_LANG = u'en'
 
 # Plugins and extensions
