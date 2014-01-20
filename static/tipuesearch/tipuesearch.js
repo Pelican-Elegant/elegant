@@ -1,6 +1,6 @@
 
 /*
-Tipue Search 3.0.1
+Tipue Search 3.1
 Copyright (c) 2013 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
@@ -266,13 +266,8 @@ http://www.tipue.com/search
                                         out += '<div class="tipue_search_content_text">' + t_d + '</div>';
                                         
                                         if (set.showURL)
-                                        {
-                                             t_url = fo[3];
-                                             if (t_url.length > 45)
-                                             {
-                                                  t_url = fo[3].substr(0, 45) + ' ...';
-                                             }    
-                                             out += '<div class="tipue_search_content_loc"><a href="' + fo[3] + '"' + tipue_search_w + '>' + t_url + '</a></div>';
+                                        {  
+                                             out += '<div class="tipue_search_content_loc"><a href="' + fo[3] + '"' + tipue_search_w + '>' + fo[3] + '</a></div>';
                                         }
                                    }
                                    l_o++;     
@@ -286,7 +281,7 @@ http://www.tipue.com/search
                                    
                                    if (start > 0)
                                    {
-                                       out += '<li><a href="javascript:void(0)" class="tipue_search_foot_box" id="' + (start - set.show) + '_' + replace + '">Prev</a></li>'; 
+                                       out += '<li><a href="javascript:void(0)" class="tipue_search_foot_box" id="' + (start - set.show) + '_' + replace + '">&#171; Prev</a></li>'; 
                                    }
                                                        
                                    if (page <= 2)
@@ -310,7 +305,7 @@ http://www.tipue.com/search
                                    }
                                    else
                                    {
-                                        var p_b = page + 3;
+                                        var p_b = pages + 2;
                                         if (p_b > pages)
                                         {
                                              p_b = pages; 
@@ -330,7 +325,7 @@ http://www.tipue.com/search
                                                       
                                    if (page + 1 != pages)
                                    {
-                                       out += '<li><a href="javascript:void(0)" class="tipue_search_foot_box" id="' + (start + set.show) + '_' + replace + '">Next</a></li>'; 
+                                       out += '<li><a href="javascript:void(0)" class="tipue_search_foot_box" id="' + (start + set.show) + '_' + replace + '">Next &#187;</a></li>'; 
                                    }                    
                                    
                                    out += '</ul></div>';

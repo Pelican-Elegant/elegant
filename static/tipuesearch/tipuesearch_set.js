@@ -1,6 +1,6 @@
 
 /*
-Tipue Search 3.0.1
+Tipue Search 3.1
 Copyright (c) 2013 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
