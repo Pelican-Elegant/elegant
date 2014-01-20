@@ -7,14 +7,22 @@
 {% block content %}
 <div class="row-fluid">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
-    <header class="page-header span12">
+    {% set css_class = 'span10 offset2' %}
+    {% if PROJECTS and LANDING_PAGE_ABOUT %}
+    {% set css_class = 'span12' %}
+    {% endif %}
+    <header class="page-header {{css_class}}">
     <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_ABOUT.title }}</a></h1>
     </header>
     {% endif %}
 
     <div class="row-fluid">
         {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
-        <div class="span8">
+        {% set css_class = 'span8 offset2' %}
+        {% if PROJECTS and LANDING_PAGE_ABOUT %}
+        {% set css_class = 'span8' %}
+        {% endif %}
+        <div class="{{css_class}}">
             <header>
             <h1 id="about-me">About me</h1>
             </header>
@@ -25,7 +33,11 @@
         {% endif %}
 
         {% if PROJECTS %}
-        <div class="span4">
+        {% set css_class = 'span8 offset2' %}
+        {% if PROJECTS and LANDING_PAGE_ABOUT %}
+        {% set css_class = 'span4' %}
+        {% endif %}
+        <div class="{{css_class}}">
             <header>
             <h1 id="my-projects">My Projects</h1>
             </header>
@@ -41,8 +53,12 @@
     </div>
 
     {% if articles %}
+    {% set css_class = 'span8 offset2' %}
+    {% if articles and PROJECTS and LANDING_PAGE_ABOUT %}
+    {% set css_class = 'span12' %}
+    {% endif %}
     <div class="row-fluid">
-        <div class="span12">
+        <div class="{{css_class}}">
             <header>
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
             </header>
