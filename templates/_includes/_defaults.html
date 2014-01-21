@@ -40,3 +40,10 @@
 {% set RECENT_ARTICLES_COUNT  = RECENT_ARTICLES_COUNT  %}
 {% endif %}
 
+{# Label to show before Share Post links #}
+{% if not SHARE_POST_INTRO %}
+{% set SHARE_POST_INTRO = "Share on:" %}
+{% else %}
+{% set SHARE_POST_INTRO = SHARE_POST_INTRO %}
+{% endif %}
+

@@ -150,7 +150,7 @@ div.highlight {
     font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
-article p:not(#list-of-translations) a,
+article p:not(#list-of-translations):not(#post-share-links) a,
 article ol a,
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a {
     border-bottom: thin dashed #A9A9A9;
@@ -322,6 +322,9 @@ i.fa-stack-exchange:hover {
 .article-content img {
     border: 2px solid #EEE;
     padding: 5px;
+}
+p#post-share-links {
+    text-align: right;
 }
 /* Perma link in article */
 h1:hover > a.headerlink,

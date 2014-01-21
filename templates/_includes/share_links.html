@@ -1,0 +1,22 @@
+{% macro share_links(article) %}
+    {% if article.share_post and article.status != 'draft' %}
+<section>
+    <p id="post-share-links">
+    {% if article.share_post_intro %}
+    {{ article.share_post_intro }}
+    {% else %}
+    {% from '_includes/_defaults.html' import SHARE_POST_INTRO with context %}
+    {{ SHARE_POST_INTRO }}
+    {% endif %}
+    <a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter">Twitter</a>
+    ❄
+    <a href="{{article.share_post['facebook']}}" target="_blank" title="Share on Facebook">Facebook</a>
+    ❄
+    <a href="{{article.share_post['google-plus']}}" target="_blank" title="Share on Google Plus">Google+</a>
+    ❄
+    <a href="{{article.share_post['email']}}" target="_blank" title="Share via Email">Email</a>
+    </p>
+</section>
+    {% endif %}
+{% endmacro %}
+
