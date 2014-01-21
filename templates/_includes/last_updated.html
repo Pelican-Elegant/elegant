@@ -4,19 +4,11 @@ If it is >3.3 than modified is a datetime object
 #}
 {% if article.locale_modified and article.modified %}
 
-    {#  This check is necessary because modified is set to date by default.
-    It should be displayed only if user has explicitly set it.
-    #}
-    {% if article.modified != article.date %}
-
 <h4>Last Updated</h4>
 {% set day = article.modified.strftime('%d')|int %}
 <time datetime="{{ article.modified.isoformat() }}">{{ article.modified.strftime('%b') }} {{ day }} {{- article.modified.strftime(', %Y') }}</time>
 
-    {% endif %}
-
 {% elif article.modified %}
-
 <h4>Last Updated</h4>
 <div class="last-updated">{{ article.modified }}</div>
 
