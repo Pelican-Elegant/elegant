@@ -4,6 +4,30 @@
 {{ super() }}
 {% endblock title %}
 
+{% block meta_tags_in_head %}
+{{ super() }}
+{% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
+<meta property="og:title" content="{{ LANDING_PAGE_ABOUT.title }}"/>
+<meta name="twitter:title" content="{{ LANDING_PAGE_ABOUT.title }}">
+{% else %}
+<meta property="og:title" content="{{ SITENAME|striptags }}"/>
+<meta name="twitter:title" content="{{ SITENAME|striptags }}">
+{% endif %}
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ SITEURL }}" />
+{% if SITE_DESCRIPTION %}
+<meta property="og:description" content="{{SITE_DESCRIPTION}}" />
+<meta name="twitter:description" content="{{SITE_DESCRIPTION}}">
+{% endif %}
+<meta property="og:site_name" content="{{ SITENAME|striptags }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+<meta name="twitter:card" content="summary">
+{% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
+{%if TWITTER_USERNAME %}
+<meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
+{% endif %}
+{% endblock meta_tags_in_head %}
+
 {% block content %}
 <div class="row-fluid">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
