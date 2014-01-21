@@ -20,6 +20,10 @@
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}" />
         {% endif %}
         {% block meta_tags_in_head %}
+        {% from '_includes/_defaults.html' import GOOGLE_PLUS_PROFILE_URL with context %}
+        {% if GOOGLE_PLUS_PROFILE_URL %}
+        <link rel="author" href={{GOOGLE_PLUS_PROFILE_URL}} />
+        {% endif %}
         {% endblock meta_tags_in_head %}
         <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
         {% block head_links %}

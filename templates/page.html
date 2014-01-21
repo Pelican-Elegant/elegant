@@ -11,6 +11,7 @@
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
+{{ super() }}
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
