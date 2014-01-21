@@ -47,3 +47,10 @@
 {% set SHARE_POST_INTRO = SHARE_POST_INTRO %}
 {% endif %}
 
+{# Label to show before comments #}
+{% if not COMMENTS_INTRO %}
+{% set COMMENTS_INTRO = '' %}
+{% else %}
+{% set COMMENTS_INTRO = COMMENTS_INTRO %}
+{% endif %}
+

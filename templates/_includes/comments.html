@@ -3,8 +3,11 @@
 <section>
 {% if article.comments_intro %}
 <p id="comment-message">{{ article.comments_intro }} </p>
-{% elif COMMENTS_INTRO %}
+{% else %}
+    {% from '_includes/_defaults.html' import COMMENTS_INTRO with context %}
+    {%if COMMENTS_INTRO %}
 <p id="comment-message">{{ COMMENTS_INTRO }} </p>
+    {% endif %}
 {% endif %}
 <div class="accordion" id="accordion2">
     <div class="accordion-group">
