@@ -54,3 +54,17 @@
 {% set COMMENTS_INTRO = COMMENTS_INTRO %}
 {% endif %}
 
+{# Author's twitter handle. Used in Twitter card meta data #}
+{% if not TWITTER_USERNAME %}
+{% set TWITTER_USERNAME = '' %}
+{% else %}
+{% set TWITTER_USERNAME = TWITTER_USERNAME %}
+{% endif %}
+
+{# Author's Google Plus Profile URL. Used for Google Authorship #}
+{% if not GOOGLE_PLUS_PROFILE_URL %}
+{% set GOOGLE_PLUS_PROFILE_URL = '' %}
+{% else %}
+{% set GOOGLE_PLUS_PROFILE_URL = GOOGLE_PLUS_PROFILE_URL %}
+{% endif %}
+
