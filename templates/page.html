@@ -15,6 +15,9 @@
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
+
+{% from '_includes/seo_metadata.html' import seo_metadata with context %}
+{{ seo_metadata(article) }}
 {% endblock meta_tags_in_head %}
 
 {% block content %}
