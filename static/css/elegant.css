@@ -27,6 +27,10 @@ h6 small, h6 a, h6 a:hover {
 a {
     color: #3875d7;
 }
+hr {
+    border-width: 3px;
+}
+
 /* site title */
 .site-name {
     font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
