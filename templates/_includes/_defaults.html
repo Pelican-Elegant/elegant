@@ -105,6 +105,15 @@ search results and social media #}
 {% set SITESUBTITLE = SITESUBTITLE %}
 {% endif %}
 
+{# Set it to True to display favicon and speed dial icon. Also make sure that
+you have placed images in the appropriate directory and defined STATIC_PATHS
+accordingly #}
+{% if not USE_FAVICON %}
+{% set USE_FAVICON = False %}
+{% else %}
+{% set USE_FAVICON = USE_FAVICON %}
+{% endif %}
+
 {# It is a dictionary with two keys: title, details. Value of each key is a
 string. It is used to display About me section on the home page.
 LANDING_PAGE_ABOUT = {'title': 'Talha Mansoor',

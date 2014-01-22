@@ -1,4 +1,5 @@
-{%if USE_FAVICON %}
+{% from '_includes/_defaults.html' import USE_FAVICON with context %}
+{%if USE_FAVICON == True %}
         <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon.png" />
         <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png" />
