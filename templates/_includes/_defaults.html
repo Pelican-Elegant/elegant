@@ -118,3 +118,21 @@ LANDING_PAGE_ABOUT = {'title': 'Talha Mansoor',
 {% set LANDING_PAGE_ABOUT = LANDING_PAGE_ABOUT %}
 {% endif %}
 
+{# It is an array of dictionaries. Each distionary has three keys: name, url,
+description.
+PROJECTS = [{
+    'name': 'Logpad + Duration',
+    'url': 'https://github.com/talha131/logpad-plus-duration#logpad--duration',
+    'description': 'Vim plugin to emulate Windows Notepad logging feature,'
+    ' and log duration of each entry'},
+    {'name': 'Elegant Theme for Pelican',
+    'url': 'http://oncrashreboot.com/pelican-elegant',
+    'description': 'A clean and distraction free theme, with search and a'
+    ' lot more unique features, using Jinja2 and Bootstrap'}]
+#}
+{% if not PROJECTS %}
+{% set PROJECTS = '' %}
+{% else %}
+{% set PROJECTS = PROJECTS %}
+{% endif %}
+
