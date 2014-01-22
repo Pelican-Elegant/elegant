@@ -105,3 +105,16 @@ search results and social media #}
 {% set SITESUBTITLE = SITESUBTITLE %}
 {% endif %}
 
+{# It is a dictionary with two keys: title, details. Value of each key is a
+string. It is used to display About me section on the home page.
+LANDING_PAGE_ABOUT = {'title': 'Talha Mansoor',
+                      'details': '<p>I am a software developer. This blog is'
+                                 'my personal space in the cyber world!</p>'
+                     }
+#}
+{% if not LANDING_PAGE_ABOUT %}
+{% set LANDING_PAGE_ABOUT = '' %}
+{% else %}
+{% set LANDING_PAGE_ABOUT = LANDING_PAGE_ABOUT %}
+{% endif %}
+

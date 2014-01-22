@@ -6,6 +6,7 @@
 
 {% block meta_tags_in_head %}
 {{ super() }}
+{% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
 {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
 <meta property="og:title" content="{{ LANDING_PAGE_ABOUT.title }}"/>
 <meta name="twitter:title" content="{{ LANDING_PAGE_ABOUT.title }}">
@@ -35,6 +36,7 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
+{% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
 <div class="row-fluid">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
     {% set css_class = 'span10 offset2' %}
