@@ -18,5 +18,9 @@
 {% endif %}
 <meta name="twitter:title" content="{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %}">
 <meta name="twitter:description" content="{{article.summary|striptags}}">
+{% if article.social_media_image %}
+<meta property="og:image" content="{{article.social_media_image}}" />
+<meta name="twitter:image" content="{{article.social_media_image}}" >
+{% endif %}
 {% endmacro %}
 
