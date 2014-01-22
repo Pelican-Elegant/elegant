@@ -280,13 +280,13 @@ i.sidebar-social-links:hover {
     background-color: #A2A2A2;
     color: #fff;
 }
-i.fa-twitter:hover {
+i.fa-twitter:hover, i.fa-twitter-square:hover {
     background-color: #00ACED;
 }
-i.fa-facebook:hover {
+i.fa-facebook:hover, i.fa-facebook-square:hover {
     background-color: #3B5998;
 }
-i.fa-google-plus:hover {
+i.fa-google-plus:hover, i.fa-google-plus-square:hover {
     background-color: #D34836;
 }
 i.fa-adn:hover {
@@ -295,25 +295,25 @@ i.fa-adn:hover {
 i.fa-envelope:hover {
     background-color: #5E9EDA;
 }
-i.fa-github:hover {
+i.fa-github:hover, i.fa-github-square:hover, i.fa-github-alt:hover {
     background-color: #000;
 }
 i.fa-flickr:hover {
     background-color: #FF0084;
 }
-i.fa-youtube:hover {
+i.fa-youtube:hover, i.fa-youtube-square:hover, i.fa-youtube-play:hover {
     background-color: #BC272F;
 }
-i.fa-linkedin:hover {
+i.fa-linkedin:hover, i.fa-linkedin-square:hover {
     background-color: #107FB9;
 }
 i.fa-gittip:hover {
     background-color: #663300;
 }
-i.fa-rss:hover {
+i.fa-rss:hover, i.fa-rss-square:hover {
     background-color: #FF6600;
 }
-i.fa-bitbucket:hover {
+i.fa-bitbucket:hover, i.fa-bitbucket-square:hover {
     background-color: #205081;
 }
 i.fa-stack-exchange:hover {
