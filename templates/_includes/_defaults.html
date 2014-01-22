@@ -69,11 +69,11 @@
 {% endif %}
 
 {# Thumbnail image to show when homepage is shared on social media. It also
-serves as the default image for posts whose social_media_image is not set. #}
-{% if not SOCIAL_MEDIA_IMAGE %}
-{% set SOCIAL_MEDIA_IMAGE = '' %}
+serves as the default image for posts whose featured_image is not set. #}
+{% if not FEATURED_IMAGE %}
+{% set FEATURED_IMAGE = '' %}
 {% else %}
-{% set SOCIAL_MEDIA_IMAGE = SOCIAL_MEDIA_IMAGE %}
+{% set FEATURED_IMAGE = FEATURED_IMAGE %}
 {% endif %}
 
 {# License of your site that appears in the footer of every page #}

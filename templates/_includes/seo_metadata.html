@@ -18,14 +18,14 @@
 {% endif %}
 <meta name="twitter:title" content="{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %}">
 <meta name="twitter:description" content="{{article.summary|striptags}}">
-{% if article.social_media_image %}
-<meta property="og:image" content="{{article.social_media_image}}" />
-<meta name="twitter:image" content="{{article.social_media_image}}" >
+{% if article.featured_image %}
+<meta property="og:image" content="{{article.featured_image}}" />
+<meta name="twitter:image" content="{{article.featured_image}}" >
 {% else %}
-{% from '_includes/_defaults.html' import SOCIAL_MEDIA_IMAGE with context %}
-    {% if SOCIAL_MEDIA_IMAGE %}
-<meta property="og:image" content="{{SOCIAL_MEDIA_IMAGE}}" />
-<meta name="twitter:image" content="{{SOCIAL_MEDIA_IMAGE}}" >
+{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+    {% if FEATURED_IMAGE %}
+<meta property="og:image" content="{{FEATURED_IMAGE}}" />
+<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
     {% endif %}
 {% endif %}
 {% endmacro %}
