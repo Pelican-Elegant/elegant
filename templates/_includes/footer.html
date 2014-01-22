@@ -1,6 +1,7 @@
 <footer>
 <div id="footer">
     <ul class="footer-content">
+        {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
         {% if SITESUBTITLE %}
         <li class="elegant-subtitle"><span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}</li>
         {% endif %}
