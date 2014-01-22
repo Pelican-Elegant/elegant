@@ -1,0 +1,14 @@
+{% if article.metadata.parts_articles %}
+<h4>Series</h4>
+    <ul class="multi-parts-list">
+        {% for part_article in article.metadata.parts_articles %}
+            <li {% if part_article == article %}class="active-part"{% endif %}>
+            {% if part_article != article %}
+            <a href='{{ SITEURL }}/{{ part_article.url }}'>Part {{loop.index}}</a>
+            {% else %}
+            Part {{loop.index}}
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

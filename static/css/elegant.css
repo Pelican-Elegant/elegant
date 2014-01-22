@@ -319,6 +319,15 @@ i.fa-bitbucket:hover {
 i.fa-stack-exchange:hover {
     background-color: #3A7BC8;
 }
+ul.multi-parts-list a {
+    color: black;
+}
+ul.multi-parts-list a:hover {
+    text-decoration: none;
+}
+ul.multi-parts-list li.active-part {
+    font-style: italic;
+}
 .table-of-content .toc {
     font-size: .7em;
 }
