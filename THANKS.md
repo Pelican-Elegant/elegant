@@ -22,6 +22,8 @@ Thanks to
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
+1. He [suggested](https://github.com/talha131/pelican-elegant/issues/95) integration with `multi_part` plugin
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/15) a bug in social media optimizer code
 1. He [suggested](https://github.com/talha131/pelican-elegant/issues/60) using
    `_includes` folder
 1. He [suggested](https://github.com/talha131/pelican-elegant/issues/63)
