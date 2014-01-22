@@ -15,6 +15,7 @@
 {% endif %}
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ SITEURL }}" />
+{% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
 {% if SITE_DESCRIPTION %}
 <meta property="og:description" content="{{SITE_DESCRIPTION}}" />
 <meta name="twitter:description" content="{{SITE_DESCRIPTION}}">

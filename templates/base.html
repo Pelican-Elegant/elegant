@@ -16,6 +16,7 @@
         {% endif %}
         {% include '_includes/latex.html' %}
 
+        {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
         {% if SITE_DESCRIPTION %}
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}" />
         {% endif %}

@@ -83,3 +83,11 @@ serves as the default image for posts whose social_media_image is not set. #}
 {% set SITE_LICENSE = SITE_LICENSE %}
 {% endif %}
 
+{# Description of your site. It is used in meta tags so it will appear in
+search results and social media #}
+{% if not SITE_DESCRIPTION %}
+{% set SITE_DESCRIPTION = '' %}
+{% else %}
+{% set SITE_DESCRIPTION = SITE_DESCRIPTION %}
+{% endif %}
+
