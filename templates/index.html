@@ -6,7 +6,7 @@
 
 {% block meta_tags_in_head %}
 {{ super() }}
-{% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
+{% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
 <meta property="og:title" content="{{ LANDING_PAGE_ABOUT.title }}"/>
 <meta name="twitter:title" content="{{ LANDING_PAGE_ABOUT.title }}">
 {% else %}
