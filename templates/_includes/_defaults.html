@@ -76,3 +76,10 @@ serves as the default image for posts whose social_media_image is not set. #}
 {% set SOCIAL_MEDIA_IMAGE = SOCIAL_MEDIA_IMAGE %}
 {% endif %}
 
+{# License of your site that appears in the footer of every page #}
+{% if not SITE_LICENSE %}
+{% set SITE_LICENSE = '' %}
+{% else %}
+{% set SITE_LICENSE = SITE_LICENSE %}
+{% endif %}
+

@@ -4,6 +4,7 @@
         {% if SITESUBTITLE %}
         <li class="elegant-subtitle"><span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}</li>
         {% endif %}
+        {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
         {% if SITE_LICENSE %}
         <li class="elegant-license">{{ SITE_LICENSE }}</li>
         {% endif %}
