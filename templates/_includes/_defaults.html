@@ -68,3 +68,11 @@
 {% set GOOGLE_PLUS_PROFILE_URL = GOOGLE_PLUS_PROFILE_URL %}
 {% endif %}
 
+{# Thumbnail image to show when homepage is shared on social media. It also
+serves as the default image for posts whose social_media_image is not set. #}
+{% if not SOCIAL_MEDIA_IMAGE %}
+{% set SOCIAL_MEDIA_IMAGE = '' %}
+{% else %}
+{% set SOCIAL_MEDIA_IMAGE = SOCIAL_MEDIA_IMAGE %}
+{% endif %}
+

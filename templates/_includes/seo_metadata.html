@@ -21,6 +21,12 @@
 {% if article.social_media_image %}
 <meta property="og:image" content="{{article.social_media_image}}" />
 <meta name="twitter:image" content="{{article.social_media_image}}" >
+{% else %}
+{% from '_includes/_defaults.html' import SOCIAL_MEDIA_IMAGE with context %}
+    {% if SOCIAL_MEDIA_IMAGE %}
+<meta property="og:image" content="{{SOCIAL_MEDIA_IMAGE}}" />
+<meta name="twitter:image" content="{{SOCIAL_MEDIA_IMAGE}}" >
+    {% endif %}
 {% endif %}
 {% endmacro %}
 
