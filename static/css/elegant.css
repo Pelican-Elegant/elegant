@@ -208,10 +208,10 @@ html {
 }
 #content-sans-footer {
     min-height: 100%;
-    margin-bottom: -53px;
+    margin-bottom: -50px;
 }
 #push {
-    height: 53px;
+    height: 50px;
 }
 h1,
 h2,
@@ -243,11 +243,18 @@ a {
     font-weight: bold;
 }
 /* Footer */
+footer {
+    height: 50px;
+    width: 100%;
+    display: table;
+}
 #footer {
     border-top: 1px solid  rgba(0, 0, 0, .2);
     font: .7em Calibri, Tahoma, Arial, Sans-Serif;
     margin: 15px 0;
     padding: 2px 5px 0;
+    display: table-cell;
+    vertical-align: middle;
 }
 ul.footer-content {
     list-style: none;
