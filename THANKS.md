@@ -7,6 +7,13 @@ Thanks to
 1. He [helped](https://github.com/talha131/pelican-elegant/issues/81) in
    resolving a performance issue
 
+[Andre](https://github.com/andreburgaud)
+----------------------------------------
+
+1. He [reported and submitted a
+   patch](https://github.com/talha131/pelican-elegant/issues/108) to fix a bug
+   in 404.html
+
 [brechtm](https://github.com/brechtm)
 -------------------------------------
 

@@ -60,6 +60,7 @@ Behaviour
 * Search results link open in the same window, which is consistent with
   internet search engines
 * Comments section message changes when user toggles it
+* Fixed: Clicking Search button in 404.html does not trigger search
 
 Version 1.3
 ===========
