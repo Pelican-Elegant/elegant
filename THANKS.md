@@ -22,8 +22,19 @@ Thanks to
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
-1. He [suggested](https://github.com/talha131/pelican-elegant/issues/95) integration with `multi_part` plugin
-1. He [reported](https://github.com/talha131/pelican-elegant/issues/15) a bug in social media optimizer code
+1. He
+   [reported](https://github.com/talha131/pelican-elegant/commit/7b484dd611c2d05bc3b3249a756d1e076bfd0a1b#commitcomment-5149343)
+   an issue with code style
+1. He
+   [reported](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-33189738)
+   an issue with code style
+1. He [suggested](https://github.com/talha131/pelican-elegant/issues/95)
+   integration with `multi_part` plugin
+1. He
+   [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-33091647)
+   setting title attribute in HTML anchor elements of `multi_part` code
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/15) a bug
+   in social media optimizer code
 1. He [suggested](https://github.com/talha131/pelican-elegant/issues/60) using
    `_includes` folder
 1. He [suggested](https://github.com/talha131/pelican-elegant/issues/63)
