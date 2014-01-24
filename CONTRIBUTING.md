@@ -17,6 +17,7 @@ Follow the code style of the existing codebase
 ==============================================
 
 1. Use single ('') rather than double ("") quotation marks for Jinja strings
+1. In Jinja print statements, surround the variable with spaces inside curly braces, for example `{{ foo.bar }}`
 1. Use double ("") quotation marks around HTML attributes
 2. End files with a newline
 
