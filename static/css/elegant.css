@@ -1,10 +1,15 @@
 /* Base */
+/* #push.height = -#content-sans-footer.margin-bottom = #footer.margin-top + ul.footer-content */
 body,
 html {
     height: 100%;
 }
 #content-sans-footer {
     min-height: 100%;
+    margin-bottom: -60px;
+}
+#push {
+    height: 60px;
 }
 h1,
 h2,
@@ -43,25 +48,34 @@ hr {
 #footer {
     border-top: 1px solid  rgba(0, 0, 0, .2);
     font: .7em Calibri, Tahoma, Arial, Sans-Serif;
-    margin: 15px 0;
-    padding: 2px 5px 0;
+    margin: 15px 0 0 0;
+    padding: 0;
 }
 ul.footer-content {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: -1px 0 0 0;
+    padding: 2px 5px 0;
+    display: table;
+    height: 45px;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 ul.footer-content li {
     padding-left: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
 }
 .elegant-power {
-    float: right;
+    text-align: right;
 }
 .elegant-license {
-    float: left;
+    text-align: left;
 }
 .elegant-subtitle {
-    float: left;
+    text-align: left;
 }
 /* comment */
 #comment-message,
