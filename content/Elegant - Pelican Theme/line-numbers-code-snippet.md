@@ -1,9 +1,9 @@
-Title: How do display Line Numbers in Code Snippets
+Title: How to display Line Numbers in Code Snippets
 Tags: markdown, reST, pelican-theme
 Category: Elegant - Pelican Theme
 Date: 2013-11-05 17:36
-Slug: how-do-display-line-numbers-in-code-snippets
-Disqus_identifier: wmo972t-how-do-display-line-numbers-in-code-snippets
+Slug: how-to-display-line-numbers-in-code-snippets
+Disqus_identifier: wmo972t-how-to-display-line-numbers-in-code-snippets
 Subtitle: 
 Summary: reStructuredText and Markdown have directives that generate line
     numbers for code blocks. Use them to display line numbers in code snippets.
