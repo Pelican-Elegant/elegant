@@ -182,16 +182,6 @@ If visitor has opened several tabs from your website, all tabs will have "Site N
 
 Putting site title before the article title increases your site name visibility. Elegant achieves this by putting site name in the top navigation bar of every page, where it always stays above the fold. 
 
-## Next and Previous Articles
-
-One way to keep the visitor engaged is to show links to articles published before and after the article visitor is currently reading. Elegant shows newer article on the right hand side and older article on the left hand side at the bottom of every article. 
-
-Most of the content on web is written in left to right languages. In these languages pages are placed from left to right. It seemed natural to use the same order in Elegant. 
-
-![Show next and previous articles](|filename|/images/elegant-theme_previous-next-article.png)
-
-Elegant does not require any plugin to show this list.
-
 ## Code Style
 
 Elegant uses [Solarized](http://ethanschoonover.com/solarized) theme for syntax highlighting. Line numbers have a different background color so that they appear distinct from the code. Here is an example
