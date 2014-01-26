@@ -1,6 +1,11 @@
 Thanks to
 =========
 
+**Special Thanks** to [calfzhou](https://github.com/calfzhou) and
+[tshepang](https://github.com/tshepang). They are always the first to report
+issues, suggest improvements and submit patches. They have played a huge role
+in making Elegant more elegant.
+
 [Alexis Métaireau](https://github.com/ametaireau)
 -------------------------------------------------
 
@@ -23,12 +28,16 @@ Thanks to
 [Brian Blais](http://web.bryant.edu/~bblais/)
 ---------------------------------------------
 
-1. He [suggested](https://github.com/talha131/pelican-elegant/issues/98) a
-   solution to the problem of social profiles whose icons are missing via email
+1. He suggested a solution to the
+   [problem](https://github.com/talha131/pelican-elegant/issues/98) of social
+   profiles whose icons are missing via email
 
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/86) and
+   [fixed](https://github.com/talha131/pelican-elegant/pull/109) an issue with
+   the footer
 1. He
    [reported](https://github.com/talha131/pelican-elegant/commit/7b484dd611c2d05bc3b3249a756d1e076bfd0a1b#commitcomment-5149343)
    an issue with code style
@@ -94,7 +103,7 @@ Thanks to
 [Jed Brown](https://github.com/jedbrown)
 ----------------------------------------
 
-1. He suggested integration with Latex
+1. He suggested integration with Latex via email
 
 [Jérémie Astori](https://github.com/astorije)
 ---------------------------------------------
@@ -120,7 +129,8 @@ Thanks to
 ----------------------------------------
 
 1. She reported a [critical
-   bug](https://github.com/talha131/pelican-elegant/issues/1)
+   bug](https://github.com/talha131/pelican-elegant/issues/1) about
+   `RECENT_ARTICLES_COUNT`
 
 [silverhook](https://github.com/silverhook)
 -------------------------------------------
