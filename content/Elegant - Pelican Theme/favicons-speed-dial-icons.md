@@ -1,5 +1,5 @@
 Title: How do I set Favicon and Speed Dial icon of my blog
-Tags: favicon
+Tags: favicon, pelican-theme
 Category: Elegant - Pelican Theme
 Date: 2013-11-08 22:42
 Slug: how-do-i-set-favicons-and-speed-dial-icons
