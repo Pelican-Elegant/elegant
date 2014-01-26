@@ -43,6 +43,7 @@ Visual Style
 * Fixed: Subscribe button changes its size on smaller screens
 * Fixed: Articles under tag heading on tags page are not sorted
 * Fixed: URL scheme for blogs which are not published to the root folder
+* Fixed: Footer is always under the fold even on smaller length web pages
 
 Plugins
 -------
