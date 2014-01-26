@@ -37,6 +37,7 @@ SITEMAP = {
 TYPOGRIFY = True
 THEME = 'elegant'
 DEFAULT_PAGINATION = False
+RELATED_POSTS_LABEL = 'Keep Reading'
 
 # Defaults
 DEFAULT_CATEGORY = 'Miscellaneous'
@@ -148,4 +149,6 @@ CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 SOCIAL_PROFILE_LABEL = u'Stay in Touch'
 USE_FAVICON = True
-
+SHARE_POST_INTRO = 'Like this post? Share on:'
+TWITTER_USERNAME = u'talham_'
+SOCIAL_MEDIA_IMAGE = u''
