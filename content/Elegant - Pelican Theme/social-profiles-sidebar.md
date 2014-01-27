@@ -29,11 +29,11 @@ Elegant displays the widget in the sidebar. Each icon is a link to a social
 media profile with an appropriate title attribute. Icons use muted color which
 changes when user hovers over them.
 
-<img class="align-right" style="width: 134.0px; height: 72.0px;"
+<img class="align-right" style="width: 134.0px; height: 62.5px;"
 src="|filename|/images/social-profiles-sidebar-facebook.png" alt="Hover over
 Facebook icon in the sidebar" />
 
-<img class="align-right" style="width: 139.0px; height: 69.0px;"
+<img class="align-right" style="width: 134.0px; height: 62.5px;"
 src="|filename|/images/social-profiles-sidebar-twitter.png" alt="Hover over
 Twitter icon in the sidebar" />
 
