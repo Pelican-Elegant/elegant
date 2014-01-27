@@ -600,10 +600,10 @@ div.figure p.caption a {
 }
 div.figure.align-right, .article-content img.align-right {
     float: right;
-    margin: 1.5em 0 1.5em 1.5em;
+    margin-left: 1.5em;
 }
 div.figure.align-left, .article-content img.align-left {
     float: left;
-    margin: 1.5em 1.5em 1.5em 0;
+    margin-right: 1.5em;
 }
 
