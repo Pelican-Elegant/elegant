@@ -12,6 +12,13 @@ in making Elegant more elegant.
 1. He [helped](https://github.com/talha131/pelican-elegant/issues/81) in
    resolving a performance issue
 
+[andreburgaud](https://github.com/andreburgaud)
+-----------------------------------------------
+
+1. He reported, investigated and submitted a
+   [patch](https://github.com/talha131/pelican-elegant/issues/110) for an issue
+   in the navbar
+
 [Andre](https://github.com/andreburgaud)
 ----------------------------------------
 

@@ -44,6 +44,8 @@ Visual Style
 * Fixed: Articles under tag heading on tags page are not sorted
 * Fixed: URL scheme for blogs which are not published to the root folder
 * Fixed: Footer is always under the fold even on smaller length web pages
+* Fixed: Page link is not active in the navbar if `SAVE_PAGE_AS` is not set to
+  default
 
 Plugins
 -------
