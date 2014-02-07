@@ -60,8 +60,8 @@
                         <ul class="nav pull-right top-menu">
                             <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
                             {% if DISPLAY_PAGES_ON_MENU %}
-                            {% for page in pages %}
-                            <li {% if output_file == page.url %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                            {% for p in pages %}
+                            <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                             {% endfor %}
                             {% endif %}
                             <li {% if page_name == 'categories' %} class="active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
