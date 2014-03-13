@@ -21,9 +21,8 @@ takes away readers' attention from the actual content.
 src="|filename|/images/social-profiles-sidebar-default.png" alt="Social
 Profiles in the Sidebar" />
 
-Elegant understands the needs of the bloggers and importance of readers
-engagement but it makes sure author's *"online social karma"* is not pushed
-down readers' throats.
+Elegant understands the importance of readers engagement but it makes sure
+not to push author's *"online social karma"* down readers' throats.
 
 Elegant displays the widget in the sidebar. Each icon is a link to a social
 media profile with an appropriate title attribute. Icons use muted color which
@@ -72,7 +71,7 @@ How to customize the icon
 What if the icon of your social media site is not available in Font Awesome?
 What if the CSS class name does not follow `fa-<title>` convention, for example
 `Stack Exchange` is different from `fa-stack-exchange`? What if you want to use
-`fa-youtube-play` for `Youtube` profile?
+`fa-youtube-play` in place of `fa-youtube` for your Youtube profile?
 
 The solution is to add a third element to the tuple. CSS class name.
 
