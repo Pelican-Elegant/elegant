@@ -12,6 +12,9 @@
             {% if item.lower() == 'email' %}
                 {% set link_title = 'My ' + item + ' Address' %}
                 {% set link_icon = 'envelope' %}
+            {% elif item.lower() == 'rss' %}
+                {% set link_title = 'Subscribe in a reader' %}
+                {% set link_icon = 'rss' %}
             {% endif %}
             {% if f_entry.insert(0, link_title) %}{% endif %}
             {% if f_entry.insert(1, link_icon) %}{% endif %}
