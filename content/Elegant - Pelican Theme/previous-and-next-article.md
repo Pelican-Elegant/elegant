@@ -8,9 +8,8 @@ Subtitle:
 Summary: Elegant theme shows Previous and Next article link to make navigation of the site easier
 Keywords: 
 
-One way to keep the visitors engaged is to show links to articles published
-before and after the current article. The Previous and Next post links are a
-powerful way to guide the visitor through your site.
+The Previous and Next post links are a powerful way to keep visitors engaged
+and to guide them through your site.
 
 Elegant requires [Neighbor Articles
 plugin](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) to
