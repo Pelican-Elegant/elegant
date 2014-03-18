@@ -41,11 +41,13 @@ Next, add `[TOC]` in your article's markup. Here is a `sample.md` file.
 
     [TOC]
 
-    # This is my first heading
+    This is my first heading
+    ========================
 
     This is the content of my sample blog post.
 
-    # This my second heading
+    This my second heading
+    ======================
 
     I will end my example here.
 
