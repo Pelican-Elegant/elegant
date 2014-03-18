@@ -207,12 +207,6 @@ You can put your license string in `SITE_LICENSE`. It will appear in the footer 
 
 ![onCrashReboot site license](|filename|/images/elegant-theme-license.png)
 
-## Table of Content
-
-The idea behind Elegant's design is to make reading a clean and distraction free experience. Table of contents is important but it is not part of the article content. Therefore, Elegant pushes out table of content to the left of the article's main content. Its font size is relatively smaller. This way, table of content stays visible for navigation but reader's attention to the article stays unaffected.
-
-To utilise this feature, you need to use [extract_toc](https://github.com/getpelican/pelican-plugins) plugin. Elegant encloses the table of content in `<nav>` tag for semantics.
-
 ## Article Subtitle
 
 Pelican lets you define title of your article in the meta data. Elegant adds subtitle support. Just define `subtitle` in your article's meta data and it will appear along with your title. Here is an example,
