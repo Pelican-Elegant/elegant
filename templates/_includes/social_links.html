@@ -5,7 +5,6 @@
 {% set f_entry = [] %}
     {%for item in entry %}
         {# first is for name #}
-            {% if f_entry.append(item) %}{% endif %}
         {% if loop.first %}
             {% set link_title = 'My ' + item + ' Profile' %}
             {% set link_icon = item.lower() %}
@@ -23,6 +22,7 @@
             {% if f_entry.insert(2, url) %}{% endif %}
         {% elif loop.index0 == 2 %}
             {% set link_icon = item.lower() %}
+            {% if f_entry.pop(1) %}{% endif %}
             {% if f_entry.insert(1, link_icon) %}{% endif %}
         {% endif %}
     {% endfor %}
