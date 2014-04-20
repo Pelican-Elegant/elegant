@@ -1,4 +1,4 @@
-{% macro seo_metadata(article) %}
+{% macro smo_metadata(article) %}
 <meta property="og:title" content="{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %}"/>
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />

@@ -16,8 +16,8 @@
 <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
 
-{% from '_includes/seo_metadata.html' import seo_metadata with context %}
-{{ seo_metadata(page) }}
+{% from '_includes/smo_metadata.html' import smo_metadata with context %}
+{{ smo_metadata(page) }}
 {% endblock meta_tags_in_head %}
 
 {% block content %}
