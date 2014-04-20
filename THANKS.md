@@ -39,6 +39,13 @@ in making Elegant more elegant.
    [problem](https://github.com/talha131/pelican-elegant/issues/98) of social
    profiles whose icons are missing via email
 
+[Brian Levin](https://github.com/bnice5000)
+-------------------------------------------
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/115) and
+   [fixed](https://github.com/talha131/pelican-elegant/pull/117) an issue in
+   search code
+
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
@@ -148,6 +155,11 @@ in making Elegant more elegant.
    adding support for related articles plugin
 1. He [helped](https://github.com/talha131/pelican-elegant/issues/102) in
    fixing justification of timestamps issue
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/116) a bug
+   in social profiles widget
+1. He
+   [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-38347811)
+   to make label of multi-part plugin customisable
 
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
@@ -191,3 +203,11 @@ in making Elegant more elegant.
 1. He submitted a [patch](https://github.com/talha131/pelican-elegant/pull/2)
    to the project
 
+3rd Party Credits
+=================
+
+Elegant is standing on the shoulders of these giants.
+
+1. [Tipue Search](http://www.tipue.com/search/)
+1. [Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/)
+1. [Solarized Light theme](http://ethanschoonover.com/solarized) converted to [Pelican Pygments](https://github.com/yuex/pelican-pygments-solarized-css) by [悟道洞穴人](https://github.com/yuex)
