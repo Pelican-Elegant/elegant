@@ -50,10 +50,10 @@ Visual Style
 Plugins
 -------
 
-* Related Posts support
 * Use `neighbor` plugin to show next and previous articles
 * Use `assets` plugin to minify CSS and JS files
 * Support for `share_post` plugin
+* Support for `related_posts` plugin
 * Support for `multi_part` plugin
 
 Behaviour
