@@ -50,7 +50,6 @@ Visual Style
 Plugins
 -------
 
-* Support for Latex with the help of `latex` plugin
 * Related Posts support
 * Use `neighbor` plugin to show next and previous articles
 * Use `assets` plugin to minify CSS and JS files
