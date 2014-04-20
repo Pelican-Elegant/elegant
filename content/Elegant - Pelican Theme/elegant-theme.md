@@ -223,14 +223,6 @@ You can also define `SITESUBTITLE`, it appears in the footer, before site licens
 
 ![Site subtitle](|filename|/images/elegant-theme_site-subtitle.png)
 
-## Efficient use of Meta Tags 
-
-Elegant puts tags and category of your article in keywords tag `<meta name="keywords"`. You can set `keywords` property in an article to define your own keywords that should be included there.
-
-Your `SITE_DESCRIPTION` and article summary is used to define description tag `<meta name="description"`.
-
-Your `AUTHOR` name is used in copyright tag `<meta name="copyright"`. 
-
 ## Web Safe Fonts
 
 Elegant uses commonly available typefaces in every style rule. It has a list of closely matching fonts in the fallback list. For examples Baskerville is the first choice for headings. But if reader does not have Baskerville installed, Garamond will be used. If that too fails then Georgia will be used.
