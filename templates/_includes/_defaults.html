@@ -106,10 +106,10 @@ search results and social media #}
 {% endif %}
 
 {# It is displayed along with the SITENAME in the footer of every page #}
-{% if not SITESUBTITLE %}
-{% set SITESUBTITLE = '' %}
+{% if not SITE_SUBTITLE %}
+{% set SITE_SUBTITLE = '' %}
 {% else %}
-{% set SITESUBTITLE = SITESUBTITLE %}
+{% set SITE_SUBTITLE = SITE_SUBTITLE %}
 {% endif %}
 
 {# Set it to True to display favicon and speed dial icon. Also make sure that
