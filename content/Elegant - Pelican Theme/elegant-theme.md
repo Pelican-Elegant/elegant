@@ -139,14 +139,6 @@ It expands when reader clicks on it
 
 ![Uncollapsed comments section](|filename|/images/elegant-theme_comments-section-uncollapsed.png)
 
-## Invite Visitors to Comment
-
-Instead of just throwing in comments' form at the end of every article, Elegant offers you a way to write introductory text that would appear before comments. Assign your message to `COMMENTS_INTRO` in your configuration file.
-
-Write whatever you think is appropriate to invite the visitor to comment. Be creative! You can even put a link to your twitter account or newsletter there. Here is what I have chosen to say to my visitors.
-
-![Introductory text to the comments](|filename|/images/elegant-theme_comments-introduction.png)
-
 ## Articles Count with every Tag and Category
 
 Readers of an article on your site usually look for other articles on the same topic. Categories and tags are a way of showing them related articles. Elegant displays the count of articles that you have written in a category or tag in a non-intrusive manner. 
@@ -191,15 +183,6 @@ Elegant uses [Solarized](http://ethanschoonover.com/solarized) theme for syntax 
         printf ("This is a sample function");
         return 0
     }
-
-
-## Disqus Thread ID
-
-Most Pelican themes pass article URL to Disqus as the [Disqus identifier](http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier). This puts you at a disadvantage. If you are forced to change URL of an article you will lose Disqus discussion for that article because Disqus identifier for the article will change too.
-
-Elegant offers you `disqus_identifier` property that you can set in your article meta data. Set it to any unique string you want. It won't be effected by the article URL.
-
-If you choose not to use `disqus_identifier`, Elegant defaults to article URL and passes it on to Disqus.
 
 ## Add License to your Site
 
