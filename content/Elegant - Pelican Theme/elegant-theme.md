@@ -184,12 +184,6 @@ Elegant uses [Solarized](http://ethanschoonover.com/solarized) theme for syntax 
         return 0
     }
 
-## Add License to your Site
-
-You can put your license string in `SITE_LICENSE`. It will appear in the footer of every page of your site. Here is how license of my site looks like,
-
-![onCrashReboot site license](|filename|/images/elegant-theme-license.png)
-
 ## Article Subtitle
 
 Pelican lets you define title of your article in the meta data. Elegant adds subtitle support. Just define `subtitle` in your article's meta data and it will appear along with your title. Here is an example,
@@ -199,16 +193,6 @@ Pelican lets you define title of your article in the meta data. Elegant adds sub
 Article subtitle is displayed with the title in every list. To keep it visibly separate from title, subtitle is enclosed in `<small>` tag. When visible cue cannot be used, like in the title attribute of html anchor tag `<a>`, a hyphen is inserted between them.
 
 ![Article title and subtitle separated with a hyphen](|filename|/images/elegant-theme_article-subtitle-hyphen.png)
-
-## Site Subtitle
-
-You can also define `SITESUBTITLE`, it appears in the footer, before site license.
-
-![Site subtitle](|filename|/images/elegant-theme_site-subtitle.png)
-
-## Web Safe Fonts
-
-Elegant uses commonly available typefaces in every style rule. It has a list of closely matching fonts in the fallback list. For examples Baskerville is the first choice for headings. But if reader does not have Baskerville installed, Garamond will be used. If that too fails then Georgia will be used.
 
 ***************************
 
