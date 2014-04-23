@@ -63,6 +63,9 @@ in making Elegant more elegant.
 1. He
    [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-33091647)
    setting title attribute in HTML anchor elements of `multi_part` code
+1. He
+   [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-41050831)
+   a solution to set title of `multi_part` widget in the sidebar
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/15) a bug
    in social media optimizer code
 1. He [suggested](https://github.com/talha131/pelican-elegant/issues/60) using
@@ -165,6 +168,9 @@ in making Elegant more elegant.
 1. He
    [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-38347811)
    to make label of multi-part plugin customisable
+1. He
+   [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-41032225)
+   a solution to set title of `multi_part` widget in the sidebar
 
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
