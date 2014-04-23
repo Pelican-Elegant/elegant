@@ -1,11 +1,10 @@
 {% if article.metadata.parts_articles %}
-    {% if article.series_title %}
+    {%if SERIES_TITLE %}
+        <h4>{{ SERIES_TITLE }}</h4>
+    {% elif article.series_title %}
         <h4>{{ article.series_title }}</h4>
     {% else %}
-        {% from '_includes/_defaults.html' import SERIES_TITLE with context %}
-        {%if SERIES_TITLE %}
-            <h4>{{ SERIES_TITLE }}</h4>
-        {% endif %}
+        <h4>{{ article.parts }}</h4>
     {% endif %}
     <ul class="multi-parts-list">
         {% for part_article in article.metadata.parts_articles %}

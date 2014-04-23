@@ -54,13 +54,6 @@
 {% set COMMENTS_INTRO = COMMENTS_INTRO %}
 {% endif %}
 
-{# Label to show with multi-part plugin widget #}
-{% if not SERIES_TITLE %}
-{% set SERIES_TITLE = 'Series' %}
-{% else %}
-{% set SERIES_TITLE = SERIES_TITLE %}
-{% endif %}
-
 {# Author's twitter handle. Used in Twitter card meta data #}
 {% if not TWITTER_USERNAME %}
 {% set TWITTER_USERNAME = '' %}
