@@ -198,45 +198,6 @@ Article subtitle is displayed with the title in every list. To keep it visibly s
 
 ## Elegant - Technical Nitty-Gritty
 
-### Configuration Variables
-
-Here are the variables that you should set in your configuration to get the most out of Elegant
-
-    :::python
-    PLUGINS = ['sitemap', 'extract_toc', 'tipue_search']
-    MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc']
-    DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
-    STATIC_PATHS = ['theme/images', 'images']
-    TAG_SAVE_AS = ''
-    CATEGORY_SAVE_AS = ''
-    AUTHOR_SAVE_AS = ''
-
-These are the optional configuration variables that you can define
-
-    :::python
-    RECENT_ARTICLES_COUNT (integer)  
-    COMMENTS_INTRO ('string')
-    SITE_LICENSE ('string')
-    SITE_DESCRIPTION ('string')
-    EMAIL_SUBSCRIPTION_LABEL ('string')
-    EMAIL_FIELD_PLACEHOLDER ('string')
-    SUBSCRIBE_BUTTON_TITLE ('string')
-    MAILCHIMP_FORM_ACTION ('string')
-    SITESUBTITLE ('string')
-    LANDING_PAGE_ABOUT ({})
-    PROJECTS ([{},...])
-
-These are the optional article meta data variables that you can use
-
-    :::python
-    subtitle
-    summary
-    disqus_identifier
-    modified
-    keywords
-
-Blog [`onCrash=Reboot();`](http://oncrashreboot.com) uses Elegant theme. You can see its configuration files at [Github](https://github.com/talha131/onCrashReboot) for inspiration.
-
 ### License
 
 The license requires that you give credit to me, Talha Mansoor, as the author of the Elegant theme on every site that uses this theme. I have placed the attribution in the footer of every page. Do not remove it. If you need to remove or change the style of the attribution, please get in [touch with me](http://oncrashreboot.com/#about-me) first. 
