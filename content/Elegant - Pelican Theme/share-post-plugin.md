@@ -1,5 +1,5 @@
 Title: How to use Social Sharing Plugin
-Tags: pelican-theme 
+Tags: pelican-theme, pelican-plugin, social-media, tracking
 Category: Elegant - Pelican Theme
 Date: 2014-03-24 20:14
 Slug: how-to-use-social-sharing-plugin

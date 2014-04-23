@@ -1,5 +1,5 @@
 Title: How to Customize Elegant
-Tags: pelican-theme
+Tags: pelican-theme, config
 Category: Elegant - Pelican Theme
 Date: 2014-03-24 14:05
 Slug: how-to-customize-elegant

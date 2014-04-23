@@ -1,5 +1,5 @@
 Title: Avoid Unnecessary HTTP Requests
-Tags: pelican-theme
+Tags: pelican-theme, pelican-plugin, page-speed
 Category: Elegant - Pelican Theme
 Date: 2014-03-24 14:09
 Slug: avoid-unnecessary-http-requests

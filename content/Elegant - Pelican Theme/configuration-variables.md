@@ -1,5 +1,5 @@
 Title: Configuration Variables and Metadata List
-Tags: pelican-theme
+Tags: pelican-theme, config
 Category: Elegant - Pelican Theme
 Date: 2014-04-23 18:25
 Slug: configuration-variables-and-metadata-list

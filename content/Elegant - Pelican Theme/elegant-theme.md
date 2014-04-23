@@ -2,7 +2,7 @@ Title: Elegant
 Subtitle: Why it is the best Pelican theme 
 Date: 2013-08-27 23:20
 Category: Elegant - Pelican Theme
-Tags: jinja2, bootstrap, front-end, pelican-theme
+Tags: jinja2, bootstrap, pelican-theme, font-awesome
 Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique features are search, MailChimp, twitter card, and custom 404 page.
 Slug: elegant-best-pelican-theme-features
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican

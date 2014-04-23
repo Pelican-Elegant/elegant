@@ -1,5 +1,5 @@
 Title: Search Engine and Social Media Optimization
-Tags: pelican-theme
+Tags: pelican-theme, social-media
 Category: Elegant - Pelican Theme
 Date: 2014-04-20 16:31
 Slug: search-engine-and-social-media-optimization
