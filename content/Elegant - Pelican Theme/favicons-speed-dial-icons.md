@@ -1,22 +1,22 @@
-Title: How to set Favicon and Speed Dial icon of your blog
-Tags: favicon, pelican-theme
+Title: How to set Shortcut Icons
+Tags: pelican-theme
 Category: Elegant - Pelican Theme
-Date: 2013-11-08 22:42
-Slug: how-to-set-favicons-and-speed-dial-icon-of-your-blog
-Disqus_identifier: p34md6k-how-to-set-favicons-and-speed-dial-icons-of-your-blog
+Date: 2014-04-24 16:42
+Slug: how-to-set-shortcut-icons
+Disqus_identifier: x0giyfl-how-to-set-shortcut-icons
 Subtitle: 
-Summary: Elegant Pelican theme supports favicon and speed dial icon for Pelican
-    blogs. This article describes how to set up this feature.
+Summary: Elegant lets you set Favicon, Opera Speed Dial icon, and shortcut
+    icons for Apple iOS and Android devices.
 Keywords: 
 
-Elegant supports favicon, Apple launcher icon and Opera speed dial icon. These
-are disabled by default to avoid unnecessary HTTP requests on sites that do not
-use them.
+Elegant supports Favicon, Opera Speed Dial, and shortcut or launcher icons on
+Apple iOS and Android devices. These are disabled by default to avoid
+unnecessary HTTP requests on sites that do not use them.
 
-To enable set `USE_FAVICON` in your configuration
+To enable, set `USE_SHORTCUT_ICONS` in your configuration
 
     :::python
-    USE_FAVICON = True
+    USE_SHORTCUT_ICONS = True
 
 Place your images in `content/theme/images` directory, and define `STATIC_PATHS`
 variable in your configuration
@@ -26,13 +26,16 @@ variable in your configuration
 
 Your images should have these names,
 
-1. `apple-touch-icon-114x114.png`
+1. `apple-touch-icon-152x152.png`
 1. `apple-touch-icon-144x144.png`
-1. `apple-touch-icon-57x57.png`
+1. `apple-touch-icon-120x120.png`
+1. `apple-touch-icon-114x114.png`
+1. `apple-touch-icon-76x76.png`
 1. `apple-touch-icon-72x72.png`
+1. `apple-touch-icon-57x57.png`
 1. `apple-touch-icon.png`
 1. `favicon.ico`
 
-I recommend using [Iconifier.net](http://iconifier.net/) to generate the set of
-images.
+I highly recommend you to use [Iconifier.net](http://iconifier.net/) to
+generate the set of images.
 
