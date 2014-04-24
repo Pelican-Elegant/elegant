@@ -37,6 +37,7 @@ Visual Style
 * Time stamps in categories and tags pages are justified
 * Line number in code block is hidden on tablets and phones to save space for
   content
+* More sizes of image for Apple Touch icons
 * Fixed: Nested lists have different font sizes
 * Fixed: CSS style rules for literal block in reST is missing
 * Fixed: Long lines in code block will wrap to next line
