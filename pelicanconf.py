@@ -17,7 +17,6 @@ PLUGIN_PATH = '../pelican-plugins/'
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img',
            'neighbors', 'latex', 'related_posts', 'assets', 'share_post', 'multi_part']
 
-RELATED_POSTS_MAX = 10
 
 SITEMAP = {
     'format': 'xml',
@@ -148,7 +147,8 @@ TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 SOCIAL_PROFILE_LABEL = u'Stay in Touch'
-USE_FAVICON = True
+USE_SHORTCUT_ICONS = True
 SHARE_POST_INTRO = 'Like this post? Share on:'
 TWITTER_USERNAME = u'talham_'
-SOCIAL_MEDIA_IMAGE = u''
+FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
+
