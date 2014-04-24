@@ -23,7 +23,8 @@ Performance
 
 * Performance improvement- 4x faster output
 * Reduce number of HTTP requests using `assets` plugin
-* Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
+* Shortcut icons, like favicon, are disabled by default. Set
+  `USE_SHORTCUT_ICONS` to true to enable it
 
 Visual Style
 ------------

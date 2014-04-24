@@ -108,10 +108,10 @@ search results and social media #}
 {# Set it to True to display favicon and speed dial icon. Also make sure that
 you have placed images in the appropriate directory and defined STATIC_PATHS
 accordingly #}
-{% if not USE_FAVICON %}
-{% set USE_FAVICON = False %}
+{% if not USE_SHORTCUT_ICONS %}
+{% set USE_SHORTCUT_ICONS = False %}
 {% else %}
-{% set USE_FAVICON = USE_FAVICON %}
+{% set USE_SHORTCUT_ICONS = USE_SHORTCUT_ICONS %}
 {% endif %}
 
 {# It is a dictionary with two keys: title, details. Value of each key is a
