@@ -12,12 +12,12 @@ DATE_FORMATS = {'en': '%b %d, %Y'}
 DEFAULT_LANG = u'en'
 
 # Plugins and extensions
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc(permalink=true)']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid',
+                'toc(permalink=true)']
 PLUGIN_PATH = '../pelican-plugins/'
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img',
-           'neighbors', 'latex', 'related_posts', 'assets', 'share_post', 'multi_part']
-
-
+           'neighbors', 'latex', 'related_posts', 'assets', 'share_post',
+           'multi_part']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
@@ -36,7 +36,6 @@ SITEMAP = {
 TYPOGRIFY = True
 THEME = 'elegant'
 DEFAULT_PAGINATION = False
-RELATED_POSTS_LABEL = 'Keep Reading'
 
 # Defaults
 DEFAULT_CATEGORY = 'Miscellaneous'
@@ -59,14 +58,36 @@ SOCIAL = (
           )
 
 # Elegant theme
+STATIC_PATHS = ['theme/images', 'images']
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
+TAG_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+USE_SHORTCUT_ICONS = True
+
+# Elegant Labels
+SOCIAL_PROFILE_LABEL = u'Stay in Touch'
+RELATED_POSTS_LABEL = 'Keep Reading'
+SHARE_POST_INTRO = 'Like this post? Share on:'
 COMMENTS_INTRO = u'So what do you think? Did I miss something? Is any part unclear? Leave your comments below.'
-SITE_LICENSE = u'<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> onCrash="Reboot();"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://oncrashreboot.com" property="cc:attributionName" rel="cc:attributionURL">Talha Mansoor</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.'
-DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
-SITE_DESCRIPTION = u'My name is Talha Mansoor \u2015 a software engineer who gets things done. I am talha131 at Github and @talham_ at twitter. I design and build software products for iOS and OSX. I work on Jump Desktop which is a remote desktop application for iOS, OSX and Android. This is my personal blog.'
+
+# Mailchimp
 EMAIL_SUBSCRIPTION_LABEL = u'Get Monthly Updates'
 EMAIL_FIELD_PLACEHOLDER = u'Enter your email...'
 SUBSCRIBE_BUTTON_TITLE = u'Send me Free updates'
-MAILCHIMP_FORM_ACTION = u'http://oncrashreboot.us4.list-manage2.com/subscribe/post?u=e66b4cca51e40b859c64e8411&amp;id=d135692a12'
+MAILCHIMP_FORM_ACTION = u'empty'
+
+# SMO
+TWITTER_USERNAME = u'talham_'
+FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
+
+# Legal
+SITE_LICENSE = u'<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> onCrash="Reboot();"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://oncrashreboot.com" property="cc:attributionName" rel="cc:attributionURL">Talha Mansoor</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.'
+
+# SEO
+SITE_DESCRIPTION = u'My name is Talha Mansoor \u2015 a software engineer who gets things done. I am talha131 at Github and @talham_ at twitter. I design and build software products for iOS and OSX. I work on Jump Desktop which is a remote desktop application for iOS, OSX and Android. This is my personal blog.'
+
+# Landing Page
 PROJECTS = [
         {
             'name': 'Elegant',
@@ -141,14 +162,5 @@ LANDING_PAGE_ABOUT = {'title': 'I design and build software products for iOS and
        profile" itemprop="url">read books</a> regularly. To be a stronger and better version of
        myself!</p><p>English is my second language. I am also learning <a
        href="http://www.duolingo.com/talha131" title="My Duolingo
-       profile" itemprop="url">German from Duolingo</a>.</p></div>""" }
-STATIC_PATHS = ['theme/images', 'images']
-TAG_SAVE_AS = ''
-CATEGORY_SAVE_AS = ''
-AUTHOR_SAVE_AS = ''
-SOCIAL_PROFILE_LABEL = u'Stay in Touch'
-USE_SHORTCUT_ICONS = True
-SHARE_POST_INTRO = 'Like this post? Share on:'
-TWITTER_USERNAME = u'talham_'
-FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
+       profile" itemprop="url">German from Duolingo</a>.</p></div>"""}
 
