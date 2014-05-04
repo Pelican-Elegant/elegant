@@ -55,20 +55,20 @@
             <nav>
             <ul class="articles-timeline">
                 {% if article.prev_article %}
-                    {% set ptitle = article.prev_article.title|striptags %}
-                    {% set pv_title = ptitle %}
+                    {% set ptitle = article.prev_article.title|striptags|e %}
+                    {% set pv_title = article.prev_article.title|striptags %}
                     {%if article.prev_article.subtitle %}
-                        {% set pv_title = ptitle + ' ' +  '<small>' + article.prev_article.subtitle + '</small>' %}
-                        {% set ptitle = ptitle + ' - ' + article.prev_article.subtitle %}
+                        {% set pv_title = pv_title + ' ' +  '<small>' + article.prev_article.subtitle|striptags + '</small>' %}
+                        {% set ptitle = ptitle + ' - ' + article.prev_article.subtitle|e %}
                     {% endif %}
                 <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
                 {% if article.next_article %}
-                    {% set ntitle = article.next_article.title|striptags %}
-                    {% set nv_title = ntitle %}
+                    {% set ntitle = article.next_article.title|striptags|e %}
+                    {% set nv_title = article.next_article.title|striptags %}
                     {%if article.next_article.subtitle %}
-                        {% set nv_title = ntitle + ' ' +  '<small>' + article.next_article.subtitle + '</small>' %}
-                        {% set ntitle = ntitle + ' - ' + article.next_article.subtitle %}
+                        {% set nv_title = nv_title + ' ' +  '<small>' + article.next_article.subtitle|striptags + '</small>' %}
+                        {% set ntitle = ntitle + ' - ' + article.next_article.subtitle|e %}
                     {% endif %}
                 <li class="next-article"><a href="{{ SITEURL }}/{{ article.next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
                 {% endif %}
