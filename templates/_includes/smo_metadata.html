@@ -12,10 +12,6 @@
 <meta property="" content="{{ article.modified.isoformat() }}" />
 {% endif %}
 <meta name="twitter:card" content="summary">
-{% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
-{%if TWITTER_USERNAME %}
-<meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
-{% endif %}
 <meta name="twitter:title" content="{{ article.title|striptags|e }} {%if article.subtitle %} - {{ article.subtitle|striptags|e }} {% endif %}">
 <meta name="twitter:description" content="{{article.summary|striptags|e}}">
 {% if article.featured_image %}

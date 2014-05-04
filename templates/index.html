@@ -24,10 +24,6 @@
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 <meta name="twitter:card" content="summary">
-{% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
-{%if TWITTER_USERNAME %}
-<meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
-{% endif %}
 {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
 <meta property="og:image" content="{{FEATURED_IMAGE}}" />
