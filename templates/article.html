@@ -6,7 +6,7 @@
 
 {% block head_description %}
 {% if article.summary %}
-{{ article.summary|striptags }}
+{{ article.summary|striptags|e }}
 {% endif %}
 {% endblock head_description %}
 
