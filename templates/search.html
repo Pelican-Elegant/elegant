@@ -5,7 +5,7 @@ Search · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-Search results for {{ SITENAME|striptags }} blog.
+Search results for {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
 
 {% block script %}

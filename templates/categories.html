@@ -5,7 +5,7 @@ All Categories · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-All categories of the {{ SITENAME|striptags }} blog. 
+All categories of the {{ SITENAME|striptags|e }} blog. 
 {% endblock head_description %}
 
 {% block feed_links %}

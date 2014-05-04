@@ -5,7 +5,7 @@ All Posts · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-Full archives of {{ SITENAME|striptags }} blog.
+Full archives of {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
 
 {% block content %}

@@ -11,8 +11,8 @@
 <meta property="og:title" content="{{ LANDING_PAGE_ABOUT.title }}"/>
 <meta name="twitter:title" content="{{ LANDING_PAGE_ABOUT.title }}">
 {% else %}
-<meta property="og:title" content="{{ SITENAME|striptags }}"/>
-<meta name="twitter:title" content="{{ SITENAME|striptags }}">
+<meta property="og:title" content="{{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="{{ SITENAME|striptags|e }}">
 {% endif %}
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ SITEURL }}" />
@@ -21,7 +21,7 @@
 <meta property="og:description" content="{{SITE_DESCRIPTION}}" />
 <meta name="twitter:description" content="{{SITE_DESCRIPTION}}">
 {% endif %}
-<meta property="og:site_name" content="{{ SITENAME|striptags }}" />
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 <meta name="twitter:card" content="summary">
 {% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}

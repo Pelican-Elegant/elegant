@@ -25,7 +25,7 @@
         <link rel="author" href={{GOOGLE_PLUS_PROFILE_URL}} />
         {% endif %}
         {% endblock meta_tags_in_head %}
-        <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+        <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
         {% block head_links %}
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">

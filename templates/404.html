@@ -5,7 +5,7 @@ Page not found · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-Page does not exist at {{ SITENAME|striptags }} blog. 
+Page does not exist at {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
 {% block content %}
 <div class="row-fluid">

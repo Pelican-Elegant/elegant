@@ -5,7 +5,7 @@ All Tags · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-All tags used in the {{ SITENAME|striptags }} blog.
+All tags used in the {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
 
 {% block feed_links %}
