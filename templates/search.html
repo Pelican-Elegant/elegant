@@ -8,6 +8,22 @@ Search · {{ super() }}
 Search results for {{ SITENAME|striptags|e }} blog.
 {% endblock head_description %}
 
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:title" content="Search · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="Search · {{ SITENAME|striptags|e }}">
+<meta property="og:url" content="{{ SITEURL }}/search.html" />
+<meta property="og:description" content="Search results for {{ SITENAME|striptags|e }} blog" />
+<meta name="twitter:description" content="Search results for {{ SITENAME|striptags|e }} blog">
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+{% if FEATURED_IMAGE %}
+<meta property="og:image" content="{{FEATURED_IMAGE}}" />
+<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+{% endif %}
+{% endblock meta_tags_in_head %}
+
 {% block script %}
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     {% if 'assets' in PLUGINS %}
