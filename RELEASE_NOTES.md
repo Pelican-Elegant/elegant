@@ -6,6 +6,7 @@ Version 2.0 (under development)
 * Upgraded to Tipue Search 3.1
 * Support for `custom.css`
 * [Stat Counter Analytics ](http://statcounter.com/) support
+* Google Universal Analytics support
 * Support for custom icons for social profiles
 * Support for Pelican (>3.3) new metadata `modified`
 * Support for Social Media Tags
