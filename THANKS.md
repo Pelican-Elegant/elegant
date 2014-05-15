@@ -110,6 +110,9 @@ in making Elegant more elegant.
    rendering issue in Internet Explorer
 1. He [fixed](https://github.com/talha131/pelican-elegant/pull/119) and pointed
    out HTML is not properly escaped
+1. He
+   [reported](https://github.com/talha131/pelican-elegant/commit/e479ce72db916e7e21bc6ae63677221c8e290840#commitcomment-6284503)
+   that it is incorrect to rename `SITESUBTITLE` to `SITE_SUBTITLE`
 
 [debiatan](https://github.com/debiatan)
 ---------------------------------------
