@@ -1,5 +1,5 @@
 Title: How to display your Social Media Profiles
-Tags: pelican-theme, font-awesome, social-media
+Tags: pelican-theme, font-awesome, social-media, web-design
 Category: Elegant - Pelican Theme
 Date: 2014-01-27 00:28
 Slug: how-to-display-your-social-media-profiles

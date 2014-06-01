@@ -1,5 +1,5 @@
 Title: How does modified metadata works
-Tags: pelican-theme
+Tags: pelican-theme, web-design
 Category: Elegant - Pelican Theme
 Date: 2014-04-19 14:52
 Slug: how-does-modified-metadata-works

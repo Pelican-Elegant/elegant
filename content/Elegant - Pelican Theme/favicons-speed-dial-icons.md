@@ -1,5 +1,5 @@
 Title: How to set Shortcut Icons
-Tags: pelican-theme
+Tags: pelican-theme, web-design
 Category: Elegant - Pelican Theme
 Date: 2014-04-24 16:42
 Slug: how-to-set-shortcut-icons

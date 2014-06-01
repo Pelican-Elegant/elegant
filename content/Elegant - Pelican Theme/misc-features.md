@@ -1,11 +1,11 @@
 Title: Few more features of Elegant
-Tags: pelican-theme
+Tags: pelican-theme, web-design
 Category: Elegant - Pelican Theme
 Date: 2014-04-22 16:23
 Slug: few-more-features-of-elegant
 Disqus_identifier: c8et6bu-few-more-features-of-elegant
 Subtitle: 
-Summary: 
+Summary: Three more features that are unique to Elegant theme
 Keywords: 
 
 [TOC]

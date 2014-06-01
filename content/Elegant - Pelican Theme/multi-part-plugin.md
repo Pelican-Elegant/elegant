@@ -1,5 +1,5 @@
 Title: How to use Multi Part plugin
-Tags: pelican-theme, pelican-plugin, navigation
+Tags: pelican-theme, pelican-plugin, navigation, web-design
 Category: Elegant - Pelican Theme
 Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin

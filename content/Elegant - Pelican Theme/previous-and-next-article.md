@@ -1,5 +1,5 @@
 Title: How to show Previous and Next Articles
-Tags: pelican-theme, pelican-plugin, navigation
+Tags: pelican-theme, pelican-plugin, navigation, web-design
 Category: Elegant - Pelican Theme
 Date: 2014-01-27 00:02
 Slug: how-to-show-previous-and-next-article

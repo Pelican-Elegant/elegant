@@ -1,5 +1,5 @@
 Title: How to use StatCounter and Google Analytics
-Tags: web-analytics, pelican-theme, tracking
+Tags: web-analytics, pelican-theme
 Category: Elegant - Pelican Theme
 Date: 2013-11-11 23:05
 Slug: how-to-use-statcounter-and-google-analytics

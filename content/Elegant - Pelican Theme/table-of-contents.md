@@ -1,5 +1,5 @@
 Title: How Elegant displays Table of Contents
-Tags: pelican-theme, reST, markdown, navigation
+Tags: pelican-theme, reST, markdown, navigation, web-design
 Category: Elegant - Pelican Theme
 Date: 2014-03-18 11:03
 Slug: how-elegant-displays-table-of-contents
