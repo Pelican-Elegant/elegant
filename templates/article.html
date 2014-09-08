@@ -21,7 +21,7 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<article>
+<article itemscope>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
     <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
@@ -51,6 +51,10 @@
             <hr/>
             {% include '_includes/related_posts.html' with context %}
             {% if article.prev_article or article.next_article %}
+			<h2>Comments</h2>
+			<div id="isso_thread">
+			{% include "isso-comments.html" %}
+			</div>
             <aside>
             <nav>
             <ul class="articles-timeline">
@@ -82,7 +86,7 @@
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
-            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
+            <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
             {% include '_includes/last_updated.html' %}
             {% include '_includes/multi_parts.html' %}
