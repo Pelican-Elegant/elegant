@@ -602,4 +602,9 @@ div.figure.align-left, .article-content img.align-left {
     float: left;
     margin-right: 1.5em;
 }
+.footnote-reference {
+  font-size: xx-small;
+  vertical-align: super;
+  line-height: 0em;
+}
 
