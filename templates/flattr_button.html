@@ -1,0 +1,11 @@
+{% if FLATTR_USER %}
+<a class="FlattrButton" style="display:none;"
+    title="{{ article.title|striptags|escape }}"
+    data-flattr-uid="{{ FLATTR_USER }}"
+    data-flattr-tags="{{ article.tags|join(', ') }}"
+    data-flattr-category="{{ article.flattrcategory|default('text') }}"
+    href="{{ ABSOLUTE_SITEURL }}/{{ article.url }}">
+    {{ article.summary|striptags|truncate(2000)|escape }}
+</a>
+{% endif %}
+
