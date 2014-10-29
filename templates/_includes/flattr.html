@@ -1,0 +1,33 @@
+{% macro flattr_script() %}
+{% if FLATTR_USER %}
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script');
+        var t = document.getElementsByTagName('script')[0];
+
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//api.flattr.com/js/0.6/load.js?'+
+                'mode=auto&uid={{ FLATTR_USER }}&language={{ DEFAULT_LANG }}&category=text&button=compact';
+
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */
+</script>
+{% endif %}
+{% endmacro %}
+
+{% macro flattr_button(article) %}
+{% if FLATTR_USER %}
+<a class="FlattrButton" style="display:none;"
+    title="{{ article.title|striptags|escape }}"
+    data-flattr-uid="{{ FLATTR_USER }}"
+    data-flattr-tags="{{ article.tags|join(', ') }}"
+    data-flattr-category="{{ article.flattrcategory|default('text') }}"
+    href="{{ SITEURL }}/{{ article.url }}">
+    {{ article.summary|striptags|truncate(2000)|escape }}
+</a>
+{% endif %}
+{% endmacro %}
+
