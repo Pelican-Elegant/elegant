@@ -32,7 +32,7 @@
 {% block content %}
 {% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
 {% from '_includes/_defaults.html' import PROJECTS with context %}
-<div class="row-fluid">
+<div class="row">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
     {% set css_class = 'span10 offset2' %}
     {% if PROJECTS and LANDING_PAGE_ABOUT %}
@@ -43,7 +43,7 @@
     </header>
     {% endif %}
 
-    <div class="row-fluid">
+    <div class="row">
         {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
         {% set css_class = 'span8 offset2' %}
         {% if PROJECTS and LANDING_PAGE_ABOUT %}
@@ -84,7 +84,7 @@
     {% if articles and PROJECTS and LANDING_PAGE_ABOUT %}
     {% set css_class = 'span12' %}
     {% endif %}
-    <div class="row-fluid">
+    <div class="row">
         <div class="{{css_class}}">
             <header>
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
