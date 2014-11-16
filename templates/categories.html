@@ -31,14 +31,14 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 
 {% block content %}
 <div class="row">
-    <header class="page-header span10 offset2">
+    <header class="page-header col-md-10 col-md-offset-2">
     <h1><a href="{{ SITEURL }}/categories.html">All Categories</a></h1>
     </header>
 </div>
 
 
 <div class="row">
-    <div class="span8 offset2">
+    <div class="col-md-8 col-md-offset-2">
         <div class="accordion" id="accordion2">
             {% for category, articles in categories %}
             <div class="accordion-group">

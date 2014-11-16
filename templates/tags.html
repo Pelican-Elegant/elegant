@@ -32,12 +32,12 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 {% block content %}
 
 <div class="row">
-    <header class="page-header span10 offset2">
+    <header class="page-header col-md-10 col-md-offset-2">
     <h1><a href="{{ SITEURL }}/tags.html">All Tags</a></h1>
     </header>
 </div>
 <div class="row">
-    <div class="span8 offset2">
+    <div class="col-md-8 col-md-offset-2">
         <form class="form-search">
             <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
         </form>
@@ -53,7 +53,7 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 </div>
 
 <div class="row">
-    <div class="span8 offset2">
+    <div class="col-md-8 col-md-offset-2">
         {% for tag, articles in tags|sort %}
         <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
         <ul class="articles-in-tag list-articles-category">
