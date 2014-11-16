@@ -39,19 +39,22 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
-        <div class="accordion" id="accordion2">
+        <div class="panel-group" id="accordion role="tablist" aria-multiselectable="true"">
             {% for category, articles in categories %}
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+            {% set collapse_id = category.slug + '-ref' %}
+            {% set collapse_ref = '#' + collapse_id %}
+            {% set heading_id = 'heading-' + category.slug %}
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="{{ heading_id }}">
+                    <a class="panel-title list-of-categories collapsed" data-toggle="collapse" data-parent="#accordion" href="{{ collapse_ref }}" aria-expanded="false" aria-controls="{{ collapse_id }}">
                         {% set num = articles|count %}
                         {{ category }}<span>{{ num }}</span>
                     </a>
                 </div>
-                <div id="{{ category.slug }}-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
+                <div id="{{ collapse_id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ heading_id }}">
+                    <div class="panel-body">
                         <ul class="list-articles-category">
-                            {% for article in articles %} 
+                            {% for article in articles %}
                             <li><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
                             {% endfor %}
                         </ul>
@@ -65,7 +68,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% endblock content %}
 {% block script %}
 {{ super() }}
-<script  language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
     function uncollapse() {
             $(window.location.hash).collapse({
                 toggle: true
