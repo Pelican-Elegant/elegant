@@ -1,15 +1,15 @@
 <footer class="footer">
-<div id="footer" class="container">
-    <ul class="footer-content">
-        {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
-        {% if SITESUBTITLE %}
-        <li class="elegant-subtitle"><span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}</li>
-        {% endif %}
-        {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
-        {% if SITE_LICENSE %}
-        <li class="elegant-license">{{ SITE_LICENSE }}</li>
-        {% endif %}
-        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
-    </ul>
-</div>
+    <div id="footer" class="container">
+        <ul class="footer-content">
+            {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
+            {% if SITESUBTITLE %}
+            <li class="elegant-subtitle"><span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}</li>
+            {% endif %}
+            {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
+            {% if SITE_LICENSE %}
+            <li class="elegant-license">{{ SITE_LICENSE }}</li>
+            {% endif %}
+            <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+        </ul>
+    </div>
 </footer>
