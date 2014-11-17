@@ -1,119 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% if article and article.author %}
-        <meta name="author" content="{{ article.author }}" />
-        <meta name="copyright" content="{{ article.author }}" />
-        {% elif page and page.author %}
-        <meta name="author" content="{{ page.author }}" />
-        <meta name="copyright" content="{{ page.author }}" />
-        {% else %}
-        <meta name="author" content="{{ AUTHOR }}" />
-        <meta name="copyright" content="{{ AUTHOR }}" />
-        {% endif %}
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% if article and article.author %}
+<meta name="author" content="{{ article.author }}" />
+<meta name="copyright" content="{{ article.author }}" />
+{% elif page and page.author %}
+<meta name="author" content="{{ page.author }}" />
+<meta name="copyright" content="{{ page.author }}" />
+{% else %}
+<meta name="author" content="{{ AUTHOR }}" />
+<meta name="copyright" content="{{ AUTHOR }}" />
+{% endif %}
 
-        {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
-        {% if SITE_DESCRIPTION %}
-        <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
-        {% endif %}
-        {% block meta_tags_in_head %}
-        {% from '_includes/_defaults.html' import GOOGLE_PLUS_PROFILE_URL with context %}
-        {% if GOOGLE_PLUS_PROFILE_URL %}
-        <link rel="author" href={{GOOGLE_PLUS_PROFILE_URL}} />
-        {% endif %}
-        {% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
-        {%if TWITTER_USERNAME %}
-        <meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
-        {% endif %}
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary">
-        {% endblock meta_tags_in_head %}
-        <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
-        {% block head_links %}
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        {% if 'assets' in PLUGINS %}
-        {% include '_includes/minify_css.html' with context %}
-        {% else %}
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap-theme.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
-        {% endif %}
-        {% endblock head_links %}
-        {% include '_includes/favicon_links.html' %}
-        {% block feed_links %}
-        {% include '_includes/feeds.html' %}
-        {% endblock feed_links %}
-        {% include '_includes/analytics.html' %}
-    </head>
-    <body>
-        <div id="content-sans-footer">
+{% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
+{% if SITE_DESCRIPTION %}
+<meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
+{% endif %}
+{% block meta_tags_in_head %}
+{% from '_includes/_defaults.html' import GOOGLE_PLUS_PROFILE_URL with context %}
+{% if GOOGLE_PLUS_PROFILE_URL %}
+<link rel="author" href={{GOOGLE_PLUS_PROFILE_URL}} />
+{% endif %}
+{% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
+{%if TWITTER_USERNAME %}
+<meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
+{% endif %}
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary">
+{% endblock meta_tags_in_head %}
+<title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
+{% block head_links %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+{% if 'assets' in PLUGINS %}
+{% include '_includes/minify_css.html' with context %}
+{% else %}
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap-theme.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+{% endif %}
+{% endblock head_links %}
+{% include '_includes/favicon_links.html' %}
+{% block feed_links %}
+{% include '_includes/feeds.html' %}
+{% endblock feed_links %}
+{% include '_includes/analytics.html' %}
+</head>
+<body>
+<div id="content-sans-footer">
 
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="{{ SITEURL }}/"><span class=site-name>{{ SITENAME }}</span></a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                        <ul class="nav navbar-nav navbar-right">
-
-                            <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
-                            {% if DISPLAY_PAGES_ON_MENU %}
-                            {% for p in pages %}
-                            <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                            {% endfor %}
-                            {% endif %}
-                            <li {% if page_name == 'categories' %} class="active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
-                            <li {% if page_name == 'tags' %} class="active"{% endif %}><a href="{{ SITEURL }}/tags.html">Tags</a></li>
-                            <li {% if page_name == 'archives' %} class="active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
-                            <li>
-                            <form class="navbar-form navbar-right" role="search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);">
-                                <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input">
-                            </form>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container -->
-            </nav>
-
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    {% block content %}
-                    {% endblock content %}
-                </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ SITEURL }}/"><span class=site-name>{{ SITENAME }}</span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
+                    {% if DISPLAY_PAGES_ON_MENU %}
+                    {% for p in pages %}
+                    <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                    {% endfor %}
+                    {% endif %}
+                    <li {% if page_name == 'categories' %} class="active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
+                    <li {% if page_name == 'tags' %} class="active"{% endif %}><a href="{{ SITEURL }}/tags.html">Tags</a></li>
+                    <li {% if page_name == 'archives' %} class="active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+                    <li>
+                    <form class="navbar-form navbar-right" role="search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input">
+                    </form>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {% block content %}
+                {% endblock content %}
             </div>
         </div>
-        <div id="push"></div>
     </div>
-        {% include '_includes/footer.html' %}
-        {% block script %}
-        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
-        {% endblock script %}
-        {% include '_includes/stat_counter.html' %}
-    </body>
-    <!-- Theme: Elegant built for Pelican
+    <div id="push"></div>
+</div>
+{% include '_includes/footer.html' %}
+{% block script %}
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+function validateForm(query)
+{
+    return (query.length > 0);
+}
+</script>
+{% endblock script %}
+{% include '_includes/stat_counter.html' %}
+</body>
+<!-- Theme: Elegant built for Pelican
     License : http://oncrashreboot.com/pelican-elegant -->
 </html>
