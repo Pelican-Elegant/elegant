@@ -23,7 +23,10 @@ a {
 hr {
     border-width: 3px;
 }
-
+ul
+{
+    padding-left: 0px;
+}
 /* site title */
 .site-name {
     font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
@@ -224,6 +227,7 @@ article div.article-content ul:not(.articles-timeline) a:hover {
 .article-content ul:not(.related-posts-list):not(.articles-timeline) {
     font-size: inherit;
     list-style-type: disc;
+    padding-left: 40px;
 }
 .article-content ul.related-posts-list {
     list-style-type: square;
