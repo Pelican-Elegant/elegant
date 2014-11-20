@@ -27,6 +27,10 @@ ul
 {
     padding-left: 0px;
 }
+img {
+    height: auto;
+    max-width: 100%;
+}
 /* site title */
 .site-name {
     font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
