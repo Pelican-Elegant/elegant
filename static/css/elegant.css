@@ -410,6 +410,14 @@ a.list-of-categories:hover {
     border-radius: 4px;
     color: #FFF;
 }
+div.panel-heading {
+    color: #3875D7;
+    cursor: pointer;
+}
+div.panel-heading:hover, div.panel-heading:hover > a {
+    background-color: #08c;
+    color: #FFF;
+}
 /* Archives */
 ul.list-all-articles {
     list-style: none;

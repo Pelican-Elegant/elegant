@@ -41,12 +41,14 @@ All categories of the {{ SITENAME|striptags|e }} blog.
     <div class="col-md-8 col-md-offset-2">
         <div class="panel-group" id="accordion role="tablist" aria-multiselectable="true"">
             {% for category, articles in categories %}
-            {% set collapse_id = category.slug + '-ref' %}
-            {% set collapse_ref = '#' + collapse_id %}
-            {% set heading_id = 'heading-' + category.slug %}
+            {# ~ is used for concatenation. I have added an empty string "" because without it Jinja
+            does not convert second operand into string #}
+            {% set collapse_id = category.slug ~ '-ref' ~ "" %}
+            {% set collapse_ref = '#' ~ collapse_id  ~ "" %}
+            {% set heading_id = "heading-" ~ category.slug ~ "" %}
             <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="{{ heading_id }}">
-                    <a class="panel-title list-of-categories collapsed" data-toggle="collapse" data-parent="#accordion" href="{{ collapse_ref }}" aria-expanded="false" aria-controls="{{ collapse_id }}">
+                <div class="panel-heading" role="tab" id="{{ heading_id }}" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="{{ collapse_id }}" data-target="{{ collapse_ref }}">
+                    <a class="list-of-categories collapsed" href="{{ collapse_ref }}">
                         {% set num = articles|count %}
                         {{ category }}<span>{{ num }}</span>
                     </a>
