@@ -1,0 +1,27 @@
+<div id="article-byline" class="visible-print">
+{% if article.authors %}
+	<address class="author">
+	By {% for author in article.authors %}
+		{{ author }}
+	{% endfor %}
+	</address>
+{% endif %}
+
+{% if article.date %}
+	{% set day = article.date.strftime('%d')|int %}
+	Published <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{   day }} {{- article.date.strftime(', %Y') }}</time>
+{% endif %}
+
+{#  Check which version of Pelican user is using.
+	If it is <=3.3  than modified is a string
+		If it is >3.3 than modified is a datetime object
+#}
+{% if article.locale_modified and article.modified %}
+
+	Last Updated {% set day = article.modified.strftime('%d')|int %}
+	<time datetime="{{ article.modified.isoformat() }}">{{ article.modified.strftime('%b') }} {{ day }} {{- article.modified.strftime(', %Y') }}</time>
+
+	{% elif article.modified %}
+	Last Updated <div class="last-updated">{{ article.modified }}</div>
+{% endif %}
+</div>

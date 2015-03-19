@@ -604,3 +604,20 @@ div.figure.align-left, .article-content img.align-left {
     margin-right: 1.5em;
 }
 
+/*added to format byline below header for printed
+ *article pages*/
+#article-byline{
+	font-size: 0.8em;
+}
+
+#article-byline address {
+	display: inline;
+	margin-bottom: 0px;
+	margin-right: 1em;
+}
+
+#article-byline time {
+	display: inline;
+	margin-right: 1em;
+}
+

@@ -1,0 +1,47 @@
+@media print {
+	/*Page width set to A4
+	 *Height set to 99% to fix blank page at end of document*/
+	html, body {
+    	width: 210mm;
+		height: 99%;
+  	}
+	
+	/*limit maximum image size so images do not 
+	 *exceed page size*/
+	img {
+		max-width: 400px;
+	}
+
+	/*We don't want to print multimedia objects such as
+	 *flash videos, so we'll hide them*/
+	video, audio, object, embed {
+		display: none;
+	}
+
+	/*Hide link urls*/
+	a:after { 
+		display: none;
+	}
+
+	/*Modify bootstrap classes so page header spans
+	 *the full width of the page*/
+	.row-fluid .span10 {
+		width: 100%;
+	}
+
+	/*Modify bootstrap classes so page content spans
+	 *most of the page8*/
+	.row-fluid .span8 {
+		width: 80%;
+	 }	
+
+	/*reduce large left margin*/
+	.row-fluid .offset2:first-child {
+		margin-left: 0.5cm;
+	}
+
+	/*remove blockquote border*/
+	.article-content blockquote {
+		border: none;
+	}
+}

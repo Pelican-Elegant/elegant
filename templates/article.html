@@ -25,9 +25,9 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
     <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
+	{% include '_includes/article_byline.html' %}
     </header>
 </div>
-
 <div class="row-fluid">
     {% if article.toc %}
     <div class="span2 table-of-content">
@@ -78,7 +78,7 @@
             {% endif %}
         </div>
         <section>
-        <div class="span2" style="float:right;font-size:0.9em;">
+        <div class="span2 hidden-print" style="float:right;font-size:0.9em;">
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
