@@ -87,7 +87,7 @@
     <div class="row-fluid">
         <div class="{{css_class}}">
             <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
+            <h1 id="recent-posts">Recent Posts <a id="allposts" class="hidden-print" href="{{ SITEURL }}/archives.html">all posts</a></h1>
             </header>
         <div class="recent-posts">
             {% for article in articles %}
@@ -95,6 +95,7 @@
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <article>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+				{% if DISPLAY_CATEGORIES_ON_MENU %}
                 <section>
                     posted in
                 <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
@@ -102,6 +103,11 @@
                 <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </div>
                 </section>
+                {% else %}
+                <div class="recent-posts-time">
+                <small><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date                }}</time></small>
+                </div>
+                {% endif %}
             </article>
             {% endif %}
             {% endfor %}
