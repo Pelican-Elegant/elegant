@@ -38,7 +38,6 @@
 {% if 'assets' in PLUGINS %}
 {% include '_includes/minify_css.html' with context %}
 {% else %}
-<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css" media="screen">
 <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css" media="screen">
 <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.css" media="screen">
@@ -54,7 +53,7 @@
 <body>
 
     <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -90,9 +89,9 @@
         </div><!-- /.container -->
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-lg-8 col-lg-offset-2">
                 {% block content %}
                 {% endblock content %}
             </div>

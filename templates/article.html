@@ -23,24 +23,13 @@
 {% block content %}
 <article>
 <div class="row">
-    <header class="page-header col-md-10 col-md-offset-2">
+    <header class="page-header col-md-10 col-md-offset-2 col-lg-offset-1 col-lg-11">
     <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
     </header>
 </div>
 
 <div class="row">
-    {% if article.toc %}
-    <div class="col-md-2 table-of-content">
-        <nav>
-        <h4>Contents</h4>
-        {{ article.toc }}
-        </nav>
-    </div>
-    <div class="col-md-8 article-content">
-       {% else %}
-        <div class="col-md-8 col-md-offset-2 article-content">
-            {% endif %}
-
+    <div class="col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1 article-content">
             {% import '_includes/translations.html' as translations with context %}
             {{ translations.translations_for(article) }}
             {{ article.content }}
@@ -79,6 +68,7 @@
         </div>
         <section>
         <div class="col-md-2" style="float:right;font-size:0.9em;">
+            <hr class="hidden-lg hidden-md" />
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
