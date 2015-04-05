@@ -1,4 +1,9 @@
-{% assets filters="cssmin", output="css/style.min.css", "css/bootstrap-theme.css", "css/pygments.css", "tipuesearch/tipuesearch.css","css/elegant.css", "css/custom.css" %}
+{#
+{% assets filters="cssmin", output="css/style.min.css", "css/elegant.less", "css/pygments.css", "tipuesearch/tipuesearch.css","css/elegant.css", "css/custom.css" %}
 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 {% endassets %}
+#}
 
+{% assets filters="less", output="css/style.min.css", "css/elegant.less" %}
+<link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+{% endassets %}
