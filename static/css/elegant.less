@@ -38,6 +38,53 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
 }
 
+.list-of-tags {
+    font-family: @font-family-sans-serif;
+    ul& {
+        list-style: none outside none;
+        margin: 20px 0 0;
+        overflow: hidden;
+        padding: 0;
+        li {
+            float: left;
+            line-height: 2em;
+            margin: 0;
+        }
+        a {
+            background: @gray-lighter;
+            border-radius: 3px;
+            color: #222;
+            font-size: 1em;
+            margin: 2px;
+            padding: 3px 6px;
+            text-decoration: none;
+            span {
+                font-size: .8em;
+                vertical-align: super;
+            }
+        }
+    }
+}
+
+.articles-in-tag {
+     font-family: @font-family-sans-serif;
+    ul& {
+        list-style: none outside none;
+        margin: 0 0 0 5px;
+        li {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            time {
+                color: @gray-light;
+                display: inline-block;
+                font-family: @font-family-monospace;
+                font-size: .9em;
+                width: 7em;
+            }
+        }
+    }
+}
+
 .page-header {
     &:extend(.page-header);
     color: @page-header-color;
