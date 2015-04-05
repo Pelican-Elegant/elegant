@@ -1,3 +1,29 @@
 @import "../bootstrap/less/bootstrap.less";
 @import "../bootstrap/less/utilities.less";
 
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+@headings-font-family: Lora, Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
+
+
+.mixin-no-color-no-decoration() {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    .mixin-no-color-no-decoration;
+    small {
+        .mixin-no-color-no-decoration;
+    }
+    a {
+        .mixin-no-color-no-decoration;
+        &:hover {
+            .mixin-no-color-no-decoration;
+        }
+        &:focus {
+            .mixin-no-color-no-decoration;
+        }
+    }
+}
+
