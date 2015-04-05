@@ -38,8 +38,10 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 </div>
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
-        <form class="form-search">
-            <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control filterinput" placeholder="Find a tag">
+            </div>
         </form>
         <ul class="list-of-tags">
             {% for tag, articles in tags|sort %}
