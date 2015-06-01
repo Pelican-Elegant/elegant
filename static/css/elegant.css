@@ -39,49 +39,6 @@ img {
 .top-menu li a {
     font-weight: bold;
 }
-/* Sticky footer styles
--------------------------------------------------- */
-/* from http://getbootstrap.com/examples/sticky-footer/ */
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
-.footer {
-  /* background-color: #f5f5f5; */
-    bottom: 0;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    position: absolute;
-    width: 100%;
-}
-#footer {
-    border-top: 1px solid  rgba(0, 0, 0, .2);
-    font: .8em Calibri, Tahoma, Arial, Sans-Serif;
-}
-ul.footer-content {
-    display: table;
-    list-style: none;
-    margin: 20px 0;
-    width: 100%;
-}
-ul.footer-content li {
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
-}
-.elegant-power {
-    text-align: right;
-}
-.elegant-license {
-    text-align: left;
-}
-.elegant-subtitle {
-    text-align: left;
-}
 /* comment */
 #comment-message,
 #post-share-links:not(a) {

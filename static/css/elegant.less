@@ -1,5 +1,6 @@
 @import "../bootstrap/less/bootstrap.less";
 @import "../bootstrap/less/utilities.less";
+@import "custom-variables.less";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -90,4 +91,44 @@ h1, h2, h3, h4, h5, h6 {
     color: @page-header-color;
     margin-top: 10px;
     padding-left: 5px;
+}
+
+// footer code is taken from http://getbootstrap.com/examples/sticky-footer-navbar/
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: @page-footer-height;
+}
+
+footer {
+    align-items: center;
+    background-color: @page-footer-color;
+    border-top: @page-footer-border-top;//1px solid  rgba(0, 0, 0, .2);
+    bottom: 0;
+    display: flex;
+    height: @page-footer-height;
+    position: absolute;
+    width: 100%;
+    div {
+        font-family: @font-family-sans-serif;
+        font-size: 0.8em;
+        ul {
+            display: table;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            li {
+                display: table-cell;
+                height: 100%;
+                text-align: left;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
 }
