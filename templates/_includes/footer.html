@@ -1,15 +1,30 @@
 <footer>
     <div class="container">
-        <ul>
-            {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
-            {% if SITESUBTITLE %}
-            <li><span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}</li>
-            {% endif %}
-            {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
-            {% if SITE_LICENSE %}
-            <li>{{ SITE_LICENSE }}</li>
-            {% endif %}
-            <li>Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
-        </ul>
+    
+    {% set container_class = "col-md-12" %}
+    {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
+    {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
+    {% if SITESUBTITLE and SITE_LICENSE %}
+    {% set container_class = "col-md-4" %}
+    {% elif SITESUBTITLE or SITE_LICENSE %}
+    {% set container_class = "col-md-6" %}
+    {% endif %}
+
+    {% if SITESUBTITLE %}
+        <div class={{ container_class }}>
+            <span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}
+        </div>
+    {% endif %}
+
+    {% if SITE_LICENSE %}
+        <div class={{ container_class }}>
+            {{ SITE_LICENSE }}
+        </div>
+    {% endif %}
+
+        <div class={{ container_class }}>
+            Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a>
+        </div>
+
     </div>
 </footer>
