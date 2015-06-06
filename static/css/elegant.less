@@ -39,6 +39,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
 }
 
+.navbar-form {
+    &:extend(.navbar-form);
+    @media (max-width: @grid-float-breakpoint) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .list-of-tags {
     font-family: @font-family-sans-serif;
     ul& {
