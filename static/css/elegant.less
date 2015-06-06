@@ -47,6 +47,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.navbar-default {
+    &:extend(.navbar-default);
+    background-color: @navbar-top-background-color;
+    background-image: @navbar-top-background-image;
+    background-repeat: repeat-x;
+    border: @navbar-top-border;
+    box-shadow: @navbar-top-box-shadow;
+}
+
 .list-of-tags {
     font-family: @font-family-sans-serif;
     ul& {
