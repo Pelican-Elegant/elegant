@@ -28,7 +28,7 @@
         table-layout: fixed;
         width: 100%;
         td.linenos {
-            padding-right: 2px;
+            padding-right: 1px; // On Chrome any value higher than 1 breaks
             width: @el-syntax-highlight-line-no-width;
             div.linenodiv  {
                 pre {
@@ -48,6 +48,10 @@
                 border-radius: 0 @border-radius-base @border-radius-base 0;
                 pre {
                     border-radius: 0 @border-radius-base @border-radius-base 0;
+                    // from http://stackoverflow.com/a/10374189/177116
+                    overflow: auto;
+                    white-space: pre;
+                    word-wrap: normal;
                 }
             }
         }
