@@ -1,0 +1,21 @@
+.el-article-content {
+    font: 1.2em/1.6em @font-family-serif;
+    max-width: 50em;
+    text-align: justify;
+    blockquote {
+        border-left: 0; // override bootstrap
+        font-family:  @font-family-sans-serif;
+        font-size: inherit;
+        font-weight: 300;
+        margin-left: 2em;
+        quotes: "\201C""\201D""\2018""\2019";
+        &:before {
+            color: @gray;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+    }
+}
