@@ -21,13 +21,13 @@ h1, h2, h3, h4, h5, h6 {
         &:focus {
             .mixin-no-color-no-decoration;
         }
-    }
-    a.headerlink {
-        color: @gray-light;
-        padding-left: .5em;
-        visibility: hidden;
-        &:hover {
-            color: inherit;
+        &.headerlink { // a.headerlink
+            color: @gray-light;
+            padding-left: .5em;
+            visibility: hidden;
+            &:hover {
+                color: inherit;
+            }
         }
     }
     &:hover > a.headerlink {
