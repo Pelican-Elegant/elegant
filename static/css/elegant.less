@@ -47,11 +47,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default {
     &:extend(.navbar-default);
-    background-color: @navbar-top-background-color;
-    background-image: @navbar-top-background-image;
+    background-color: @el-navbar-top-background-color;
+    background-image: @el-navbar-top-background-image;
     background-repeat: repeat-x;
-    border: @navbar-top-border;
-    box-shadow: @navbar-top-box-shadow;
+    border: @el-navbar-top-border;
+    box-shadow: @el-navbar-top-box-shadow;
 }
 
 .list-of-tags {
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-header {
     &:extend(.page-header);
-    color: @page-header-color;
+    color: @el-page-header-color;
     margin-top: 10px;
     padding-left: 5px;
 }
@@ -115,33 +115,33 @@ html {
 }
 
 body {
-    margin-bottom: @page-footer-height;
+    margin-bottom: @el-page-footer-height;
     @media (max-width: @screen-md) {
-        margin-bottom: @page-footer-height + @page-footer-height-subset * 1;
+        margin-bottom: @el-page-footer-height + @el-page-footer-height-subset * 1;
     }
     @media (max-width: @screen-sm) {
-        margin-bottom: @page-footer-height + @page-footer-height-subset * 2;
+        margin-bottom: @el-page-footer-height + @el-page-footer-height-subset * 2;
     }
     @media (max-width: @screen-xs) {
-        margin-bottom: @page-footer-height + @page-footer-height-subset * 3;
+        margin-bottom: @el-page-footer-height + @el-page-footer-height-subset * 3;
     }
 }
 
 footer {
     align-items: center;
-    background-color: @page-footer-color;
-    border-top: @page-footer-border-top;//1px solid  rgba(0, 0, 0, .2);
+    background-color: @el-page-footer-color;
+    border-top: @el-page-footer-border-top;//1px solid  rgba(0, 0, 0, .2);
     bottom: 0;
     display: flex;
-    height: @page-footer-height;
+    height: @el-page-footer-height;
     @media (max-width: @screen-md) {
-        height: @page-footer-height + @page-footer-height-subset * 1;
+        height: @el-page-footer-height + @el-page-footer-height-subset * 1;
     }
     @media (max-width: @screen-sm) {
-        height: @page-footer-height + @page-footer-height-subset * 2;
+        height: @el-page-footer-height + @el-page-footer-height-subset * 2;
     }
     @media (max-width: @screen-xs) {
-        height: @page-footer-height + @page-footer-height-subset * 3;
+        height: @el-page-footer-height + @el-page-footer-height-subset * 3;
     }
     position: absolute;
     width: 100%;
