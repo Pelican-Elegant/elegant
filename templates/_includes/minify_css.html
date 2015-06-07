@@ -4,6 +4,6 @@
 {% endassets %}
 #}
 
-{% assets filters="less", output="css/style.min.css", "css/elegant.less" %}
+{% assets filters="less, cssmin", output="css/style.min.css", "css/elegant.less", "css/pygments.css" %}
 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 {% endassets %}
