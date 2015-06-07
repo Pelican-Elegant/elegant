@@ -23,4 +23,33 @@
         border: 2px solid #EEE;
         padding: 5px;
     }
+    // Syntax Highlight
+    table.highlighttable {
+        table-layout: fixed;
+        width: 100%;
+        td.linenos {
+            padding-right: 2px;
+            width: @el-syntax-highlight-line-no-width;
+            div.linenodiv  {
+                pre {
+                    background-color: @el-syntax-highlight-line-no-background-color;
+                    border-radius: @border-radius-base 0 0 @border-radius-base;
+                    color: @el-syntax-highlight-line-no-color;
+                    overflow: scroll;
+                    text-align: center;
+                }
+            }
+        }
+        td.code {
+            width: 100 - @el-syntax-highlight-line-no-width;
+            div.highlight {
+                // pygments.css has  a rule for div.highlight color. Give it the same border that
+                // descendent pre has.
+                border-radius: 0 @border-radius-base @border-radius-base 0;
+                pre {
+                    border-radius: 0 @border-radius-base @border-radius-base 0;
+                }
+            }
+        }
+    }
 }
