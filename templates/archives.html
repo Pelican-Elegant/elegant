@@ -48,12 +48,12 @@ Full archives of {{ SITENAME|striptags|e }} blog.
             {% set next_year = next_article.date.strftime('%Y') %}
             {% endif %}
             {% if next_year != year %}
-            <article class="last-entry-of-year">
+            <article itemscope class="last-entry-of-year">
             {% else %}
-            <article>
+            <article itemscope>
             {% endif %}
             <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
-            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+            <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
             </article>
             {% endfor %}
         </div>
