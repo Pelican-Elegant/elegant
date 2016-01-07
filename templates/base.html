@@ -17,7 +17,7 @@
 
         {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
         {% if SITE_DESCRIPTION %}
-        <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}" />
+        <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
         {% endif %}
         {% block meta_tags_in_head %}
         {% from '_includes/_defaults.html' import GOOGLE_PLUS_PROFILE_URL with context %}
@@ -57,7 +57,6 @@
         <div class="navbar navbar-static-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
-                    <div class="span1"></div>
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
