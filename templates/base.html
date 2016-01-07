@@ -6,13 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if article and article.author %}
         <meta name="author" content="{{ article.author }}" />
-        <meta name="copyright" content="{{ article.author }}" />
         {% elif page and page.author %}
         <meta name="author" content="{{ page.author }}" />
-        <meta name="copyright" content="{{ page.author }}" />
         {% else %}
         <meta name="author" content="{{ AUTHOR }}" />
-        <meta name="copyright" content="{{ AUTHOR }}" />
         {% endif %}
 
         {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
@@ -94,7 +91,7 @@
     </div>
         {% include '_includes/footer.html' %}
         {% block script %}
-        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script>
             function validateForm(query)
