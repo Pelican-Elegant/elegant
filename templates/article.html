@@ -36,7 +36,7 @@
         {{ article.toc }}
         </nav>
     </div>
-    <div class="span8 article-content">
+    <div class="span8 article-content" id="contentAfterTitle">
        {% else %}
         <div class="span8 offset2 article-content">
             {% endif %}
@@ -85,6 +85,8 @@
             <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
             {% include '_includes/last_updated.html' %}
+            <br/>
+            by <a rel="author" class="vcard author post-author" itemprop="author" href="{{ SITEURL }}/{{ article.author.url }}"><span class="fn" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">{{ article.author }}</span></span></a>
             {% include '_includes/multi_parts.html' %}
             {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
