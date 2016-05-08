@@ -86,7 +86,7 @@
             {% endif %}
             {% include '_includes/last_updated.html' %}
             <br/>
-            by <a rel="author" class="vcard author post-author" itemprop="author" href="{{ SITEURL }}/{{ article.author.url }}"><span class="fn" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">{{ article.author }}</span></span></a>
+            by <a rel="author" class="vcard author post-author" itemprop="author" href="{{ SITEURL }}/{{ article.author.url }}"><span class="fn" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">{{ article.author }}</span></span></a>
             {% include '_includes/multi_parts.html' %}
             {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
