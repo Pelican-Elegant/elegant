@@ -169,13 +169,6 @@ div.highlight {
     font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
-article p:not(#list-of-translations):not(#post-share-links) a,
-article ol a,
-blockquote a,
-article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a {
-    border-bottom: thin dashed #A9A9A9;
-    color: #000;
-}
 article p a:hover,
 article ol a:hover,
 article div.article-content ul:not(.articles-timeline) a:hover {
@@ -185,6 +178,8 @@ article div.article-content ul:not(.articles-timeline) a:hover {
 }
 .article-content, div.recent-posts p {
     font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
+}
+div.recent-posts p {
     text-align: justify;
 }
 .article-content {
