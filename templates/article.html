@@ -79,11 +79,11 @@
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
-            {% if article.date %}
-            <h4>Published</h4>
-            {% set day = article.date.strftime('%d')|int %}
-            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
-            {% endif %}
+            <!-- {% if article.date %} -->
+            <!-- <h4>hey there</h4> -->
+            <!-- {% set day = article.date.strftime('%d')|int %} -->
+            <!-- <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time> -->
+            <!-- {% endif %} -->
             {% include '_includes/last_updated.html' %}
             {% include '_includes/multi_parts.html' %}
             {% if article.category|trim|count > 0 %}
