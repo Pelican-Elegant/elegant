@@ -604,3 +604,15 @@ div.figure.align-left, .article-content img.align-left {
     margin-right: 1.5em;
 }
 
+dl {
+    padding: 0.5em;
+    background-color: #fdf6e3;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* dd { */
+/*     margin: 0 0 0 110px; */
+/* } */
