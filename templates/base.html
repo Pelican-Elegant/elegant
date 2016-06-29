@@ -65,7 +65,7 @@
                         <ul class="nav pull-right top-menu">
                             <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}/index.html">Home</a></li>
                             {% if DISPLAY_PAGES_ON_MENU %}
-                            {% for p in pages %}
+                            {% for p in pages | sort(attribute='position')%}
                             <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                             {% endfor %}
                             {% endif %}
