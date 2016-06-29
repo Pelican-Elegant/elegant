@@ -5,7 +5,7 @@ Problem Sets · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
-All categories of the {{ SITENAME|striptags|e }} blog.
+All categories of problems in {{ SITENAME|striptags|e }}.
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
@@ -13,8 +13,8 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 <meta property="og:title" content="Problem Sets · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="Problem Sets · {{ SITENAME|striptags|e }}">
 <meta property="og:url" content="{{ SITEURL }}/categories.html" />
-<meta property="og:description" content="All categories of the {{ SITENAME|striptags|e }} blog" />
-<meta name="twitter:description" content="All categories of the {{ SITENAME|striptags|e }} blog">
+<meta property="og:description" content="All categories of problems in {{ SITENAME|striptags|e }}" />
+<meta name="twitter:description" content="All categories of problems in {{ SITENAME|striptags|e }}">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
