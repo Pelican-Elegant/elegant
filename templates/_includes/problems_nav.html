@@ -1,0 +1,13 @@
+<div class="span2 table-of-content">
+  <nav>
+		<h4>Problems</h4>
+		{% for category, articles in categories %}
+		<h5>{{ category }}</h5>
+		<ul>
+			{% for article in articles|sort(attribute='position') %}
+			<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} </a></li>
+			{% endfor %}
+		</ul>
+		{% endfor %}
+  </nav>
+</div>
