@@ -1,13 +1,12 @@
 <div class="span2 table-of-content">
   <nav>
-    <h4>All Challenges</h4>
-
+    <h3 class="problems-nav-header">Challenges</h4>
     {% set pos_categories = [] %}
     {% for category, articles in categories %}
       {% if pos_categories.append({'name': category, 'articles': articles, 'slug': category.slug, 'position': CATEGORIES_POS[category.name]}) %}{% endif %}
     {% endfor %}
     {% for category in pos_categories|sort(attribute='position') %}
-    <h5>{{ category.name }}</h5>
+    <h4 class="problems-nav-catheader">{{ category.name }}</h5>
     <ul>
       {% for article in category.articles|sort(attribute='position') %}
       <li><a class="challenge-link{% if article.url == output_file %} active{% endif %}" href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} </a></li>

@@ -40,3 +40,12 @@ a.challenge-link:hover {
 a.challenge-link.active {
     color: #3875d7;
 }
+
+.problems-nav-header {
+    color: #8B0000;
+    /* font-weight: bold; */
+}
+
+.problems-nav-catheader {
+    /* font-weight: bold; */
+}
