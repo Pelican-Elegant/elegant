@@ -94,6 +94,7 @@
 
 {% block script %}
     {{ super() }}
+    {% include '_includes/erdos_fadein.html' %}
     {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script(article) }}
 {% endblock script %}
