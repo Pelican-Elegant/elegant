@@ -23,3 +23,20 @@
     display: block;
     margin: 0 auto;
 }
+
+a.challenge-link {
+    text-decoration: none;
+}
+
+a.challenge-link:link, a.challenge-link:visited {
+    color: #333;
+}
+
+a.challenge-link:hover {
+    color: #3875d7;
+    text-decoration: underline;
+}
+
+a.challenge-link.active {
+    color: #3875d7;
+}

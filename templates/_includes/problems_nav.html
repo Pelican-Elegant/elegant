@@ -10,7 +10,7 @@
     <h5>{{ category.name }}</h5>
     <ul>
       {% for article in category.articles|sort(attribute='position') %}
-      <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} </a></li>
+      <li><a class="challenge-link{% if article.url == output_file %} active{% endif %}" href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} </a></li>
       {% endfor %}
     </ul>
     {% endfor %}
