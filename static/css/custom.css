@@ -1,3 +1,25 @@
-div.img-desc {
+.img-desc {
     text-align: center;
+}
+
+.erdos-context {
+    display: none;
+}
+
+.erdos-challenge {
+    display: none;
+}
+
+.erdos-solutions {
+    display: none;
+}
+
+.erdos-fadein-challenge {
+    display: block;
+    margin: 0 auto;
+}
+
+.erdos-fadein-solutions {
+    display: block;
+    margin: 0 auto;
 }
