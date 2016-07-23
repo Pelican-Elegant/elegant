@@ -40,19 +40,23 @@ All categories of problems in {{ SITENAME|striptags|e }}.
 <div class="row-fluid">
     <div class="span8 offset2">
         <div class="accordion" id="accordion2">
+            {% set pos_categories = [] %}
             {% for category, articles in categories %}
+              {% if pos_categories.append({'name': category, 'articles': articles, 'slug': category.slug, 'position': CATEGORIES_POS[category.name]}) %}{% endif %}
+            {% endfor %}
+            {% for category in pos_categories|sort(attribute='position') %}
             <div class="accordion-group">
                 <div class="accordion-heading">
                     <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
-                        {% set num = articles|count %}
-                        {{ category }}<span>{{ num }}</span>
+                        {% set num = category.articles|count %}
+                        {{ category.name }}<span>{{ num }}</span>
                     </a>
                 </div>
                 <div id="{{ category.slug }}-ref" class="accordion-body collapse">
                     <div class="accordion-inner">
                         <ul class="list-articles-category">
-                            {% for article in articles|sort(attribute='position') %}
-                            <li><!-- <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time> --><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
+                            {% for article in category.articles|sort(attribute='position') %}
+                            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
                             {% endfor %}
                         </ul>
                     </div>
