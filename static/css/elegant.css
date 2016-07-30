@@ -139,6 +139,7 @@ div.highlight {
     font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     list-style: none;
     margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 .list-of-tags li {

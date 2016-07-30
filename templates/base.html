@@ -37,7 +37,8 @@
         {% endblock meta_tags_in_head %}
         <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
         {% block head_links %}
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
         {% if 'assets' in PLUGINS %}
         {% include '_includes/minify_css.html' with context %}
@@ -86,17 +87,16 @@ MathJax.Hub.Queue(function() {
     </head>
     <body>
         <div id="content-sans-footer">
-        <div class="navbar navbar-static-top">
-            <div class="navbar-inner">
+        <div class="navbar navbar-static-top navbar-default">
+            <div class="container">
                 <div class="container-fluid">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="{{ SITEURL }}/"><span class=site-name>{{ SITENAME }}</span></a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right top-menu">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav pull-left top-menu navbar-nav">
+                            <li><a href="{{ SITEURL }}" style="font-family: 'Monaco', 'Inconsolata', 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, Monospace;
+                        font-size: 20px;" class="brand">{{ SITENAME }}</a>
+                            </li>
+                        </ul>
+                        <ul class="nav pull-right top-menu navbar-nav">
                             <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
                             {% if DISPLAY_PAGES_ON_MENU %}
                             {% for p in pages %}
@@ -106,20 +106,20 @@ MathJax.Hub.Queue(function() {
                             <li {% if page_name == 'categories' %} class="active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
                             <li {% if page_name == 'tags' %} class="active"{% endif %}><a href="{{ SITEURL }}/tags.html">Tags</a></li>
                             <li {% if page_name == 'archives' %} class="active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
-                            <li><form class="navbar-search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="search" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            <li><form class="navbar-form" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="search" class="search-query form-control" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span1"></div>
-                <div class="span10">
+            <div class="row">
+                <div class="col-sm-1 col-md-1"></div>
+                <div class="col-sm-10 col-md-10">
                     {% block content %}
                     {% endblock content %}
                 </div>
-                <div class="span1"></div>
+                <div class="col-sm-1 col-md-1"></div>
             </div>
         </div>
         <div id="push"></div>
@@ -127,7 +127,8 @@ MathJax.Hub.Queue(function() {
         {% include '_includes/footer.html' %}
         {% block script %}
         <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script>
             function validateForm(query)
             {
