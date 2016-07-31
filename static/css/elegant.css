@@ -252,7 +252,8 @@ div.recent-posts p {
 .page-header {
     border-bottom: 1px solid #8f8686;
     color: #8B0000;
-    margin: 10px 10px 20px;
+    /*margin: 10px 10px 20px;*/
+    margin-top: 0px;
     padding: 5px;
 }
 .page-header h1 {
