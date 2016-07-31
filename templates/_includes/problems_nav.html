@@ -11,11 +11,11 @@
         {{ category.name }}<span>{{ num }}</span>
       </a>
     </div>
-    <div id="{{ category.slug }}-ref" class="accordion-body collapse">
+    <div id="{{ category.slug }}-ref" class="accordion-body collapse{% if article and category.name == article.category %} in{% endif %}">
       <div class="accordion-inner">
         <ul class="list-articles-category">
-          {% for article in category.articles|sort(attribute='position') %}
-          <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
+          {% for art in category.articles|sort(attribute='position') %}
+          <li{% if article and article.url == art.url %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ art.url }}">{{ art.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
