@@ -1,17 +1,25 @@
-<div class="span2 table-of-content">
-  <nav>
-    <h3 class="problems-nav-header">Challenges</h4>
-    {% set pos_categories = [] %}
-    {% for category, articles in categories %}
-      {% if pos_categories.append({'name': category, 'articles': articles, 'slug': category.slug, 'position': CATEGORIES_POS[category.name]}) %}{% endif %}
-    {% endfor %}
-    {% for category in pos_categories|sort(attribute='position') %}
-    <h4 class="problems-nav-catheader">{{ category.name }}</h5>
-    <ul>
-      {% for article in category.articles|sort(attribute='position') %}
-      <li><a class="challenge-link{% if article.url == output_file %} active{% endif %}" href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} </a></li>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </nav>
+<div class="accordion" id="accordion2">
+  {% set pos_categories = [] %}
+  {% for category, articles in categories %}
+  {% if pos_categories.append({'name': category, 'articles': articles, 'slug': category.slug, 'position': CATEGORIES_POS[category.name]}) %}{% endif %}
+  {% endfor %}
+  {% for category in pos_categories|sort(attribute='position') %}
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+        {% set num = category.articles|count %}
+        {{ category.name }}<span>{{ num }}</span>
+      </a>
+    </div>
+    <div id="{{ category.slug }}-ref" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <ul class="list-articles-category">
+          {% for article in category.articles|sort(attribute='position') %}
+          <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>

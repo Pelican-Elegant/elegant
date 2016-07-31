@@ -29,7 +29,9 @@
 </div>
 
   <div class="row-fluid">
+    <div class="span2">
     {% include '_includes/problems_nav.html' with context %}
+    </div>
     <div class="span8 article-content">
       {% import '_includes/translations.html' as translations with context %}
       {{ translations.translations_for(article) }}
