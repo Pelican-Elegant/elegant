@@ -5,4 +5,4 @@
 
 <div markdown class="erdos-solutions">
 <hr />
-## Solutions
+## Solution
