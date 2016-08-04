@@ -41,15 +41,16 @@ Glossary of terms in {{ SITENAME|striptags|e }}.
       <div class="accordion" id="accordion2">
 	{% for def in definitions | sort(attribute='title') %}
 	<dl>
+          <a name="{{ def.anchor }}"></a>
 	  <dt><h4>{{ def.title }}</h4></dt>
 	  <dd>
             <p>{{ def.definition }}</p>
             <p><i>
-              <span>Defined in: {% if def.link %}<a href="{{ def.link }}">{% endif %}{{ def.source.title }}{% if def.link %}</a>{% endif %}.</span>
+              <span>Defined in: <a href="{{ def.source.url }}#{{ def.anchor }}">{{ def.source.title }}</a>.</span>
               {% if def.see_also %}
               <span> See also: </span>
               {% for also in def.see_also %}
-              <span><a href="{{ also.link }}">{{ also.title }}</a>{% if not loop.last %}, {% else %}.{% endif %}</span>
+              <span><a href="{{ output_file }}#{{ also.anchor }}">{{ also.title }}</a>{% if not loop.last %}, {% else %}.{% endif %}</span>
               {% endfor%}
               {% endif %}
             </i></p>
