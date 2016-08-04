@@ -24,13 +24,14 @@ window.onhashchange=function(){
 </script>
 <script>
 $('#disqus_thread').on('shown', function () {
-    var link = document.getElementsByClassName('accordion-toggle');
-    var old_innerHTML = link[0].innerHTML;
-    $(link[0]).fadeOut(500, function() {
+    console.log('foobar')
+    var link = document.getElementById('disqus-accordion-toggle');
+    var old_innerHTML = link.innerHTML;
+    $(link).fadeOut(500, function() {
         $(this).text('Click here to hide comments').fadeIn(500);
     });
     $('#disqus_thread').on('hidden', function () {
-        $(link[0]).fadeOut(500, function() {
+        $(link).fadeOut(500, function() {
             $(this).text(old_innerHTML).fadeIn(500);
         });
     })
