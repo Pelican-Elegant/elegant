@@ -23,6 +23,6 @@ a.challenge-link.active {
     color: #8B0000;
 }
 
-.nav-tabs > li {
+.article-content ul.nav.nav-tabs {
     list-style-type: none;
 }
