@@ -1,0 +1,28 @@
+.img-desc {
+    text-align: center;
+}
+
+a.challenge-link {
+    text-decoration: none;
+}
+
+a.challenge-link:link, a.challenge-link:visited {
+    color: #333;
+}
+
+a.challenge-link:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+a.challenge-link.active {
+    color: #3875d7;
+}
+
+.problems-nav-header {
+    color: #8B0000;
+}
+
+.nav-tabs > li {
+    list-style-type: none;
+}

@@ -1,0 +1,25 @@
+<div class="accordion" id="accordion2">
+  {% set pos_categories = [] %}
+  {% for category, articles in categories %}
+  {% if pos_categories.append({'name': category, 'articles': articles, 'slug': category.slug, 'position': CATEGORIES_POS[category.name]}) %}{% endif %}
+  {% endfor %}
+  {% for category in pos_categories|sort(attribute='position') %}
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+        {% set num = category.articles|count %}
+        {{ category.name }}<span>{{ num }}</span>
+      </a>
+    </div>
+    <div id="{{ category.slug }}-ref" class="accordion-body collapse{% if article and category.name == article.category %} in{% endif %}">
+      <div class="accordion-inner">
+        <ul class="list-articles-category">
+          {% for art in category.articles|sort(attribute='position') %}
+          <li{% if article and article.url == art.url %} class="active" {% endif %}><a href="{{ SITEURL }}/{{ art.url }}">{{ art.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -169,20 +169,20 @@ div.highlight {
     font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
-article p:not(#list-of-translations):not(#post-share-links) a,
-article ol a,
-blockquote a,
-article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a {
-    border-bottom: thin dashed #A9A9A9;
-    color: #000;
-}
-article p a:hover,
-article ol a:hover,
-article div.article-content ul:not(.articles-timeline) a:hover {
-    border-bottom: none;
-    text-decoration: none;
-    text-shadow: none;
-}
+/* article p:not(#list-of-translations):not(#post-share-links) a, */
+/* article ol a, */
+/* blockquote a, */
+/* article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a { */
+/*     border-bottom: thin dashed #A9A9A9; */
+/*     color: #000; */
+/* } */
+/* article p a:hover, */
+/* article ol a:hover, */
+/* article div.article-content ul:not(.articles-timeline) a:hover { */
+/*     border-bottom: none; */
+/*     text-decoration: none; */
+/*     text-shadow: none; */
+/* } */
 .article-content, div.recent-posts p {
     font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
     text-align: justify;
@@ -244,14 +244,17 @@ article div.article-content ul:not(.articles-timeline) a:hover {
     list-style-position: outside;
     list-style-type: decimal;
     margin: 20px 0 20px 20px;
+    padding: 0.5em;
+    background-color: #fdf6e3;
 }
 .article-content dd {
     line-height: 1.7em;
-    margin: 1px 0 1px 20px;
+    margin: 1px 0 10px 20px;
     padding: 3px 0;
 }
 .article-content dt {
     font-size: inherit;
+    font-weight: bold;
 }
 .page-header {
     border-bottom: 1px solid #8f8686;
@@ -603,4 +606,3 @@ div.figure.align-left, .article-content img.align-left {
     float: left;
     margin-right: 1.5em;
 }
-

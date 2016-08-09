@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Glossary · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+Glossary of terms in {{ SITENAME|striptags|e }}.
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:title" content="Glossary · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="Glossary · {{ SITENAME|striptags|e }}">
+<meta property="og:url" content="{{ SITEURL }}/glossary.html" />
+<meta property="og:description" content="Glossary of terms in {{ SITENAME|striptags|e }}" />
+<meta name="twitter:description" content="Glossary of terms in {{ SITENAME|striptags|e }}">
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+{% if FEATURED_IMAGE %}
+<meta property="og:image" content="{{FEATURED_IMAGE}}" />
+<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+{% endif %}
+{% endblock meta_tags_in_head %}
+
+{% block feed_links %}
+{{ super() }}
+{% include '_includes/feeds_categories.html' %}
+{% endblock feed_links %}
+
+{% block content %}
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="{{ SITEURL }}/glossary.html">Glossary</a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span8 offset2">
+      <div class="accordion" id="accordion2">
+	{% for def in definitions | sort(attribute='title') %}
+	<dl>
+          <a name="{{ def.anchor }}"></a>
+	  <dt><h4>{{ def.title }}</h4></dt>
+	  <dd>
+            <p>{{ def.definition }}</p>
+            <p><i>
+              <span>Defined in: <a href="{{ def.source.url }}#{{ def.anchor }}">{{ def.source.title }}</a>.</span>
+              {% if def.see_also %}
+              <span> See also: </span>
+              {% for also in def.see_also %}
+              <span><a href="{{ output_file }}#{{ also.anchor }}">{{ also.title }}</a>{% if not loop.last %}, {% else %}.{% endif %}</span>
+              {% endfor%}
+              {% endif %}
+            </i></p>
+          </dd>
+	</dl>
+	{% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+{{ super() }}
+
+<script type="text/javascript">
+if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+<script  language="javascript" type="text/javascript">
+    function uncollapse() {
+            $(window.location.hash).collapse({
+                toggle: true
+            })
+    }
+</script>
+
+<script type="text/javascript" language="JavaScript">
+    uncollapse();
+</script>
+{% endblock script %}
