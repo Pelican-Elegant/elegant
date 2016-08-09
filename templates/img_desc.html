@@ -1,0 +1,8 @@
+{% macro img_desc(src, title='', desc='') -%}
+<div class="img-desc">
+  <p><img src="{{ src }}" title="{{ title }}"></p>
+  {% if desc %}
+  <p><em>{{ desc }}</em></p>
+  {% endif %}
+</div>
+{%- endmacro %}
