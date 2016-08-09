@@ -22,3 +22,7 @@ a.challenge-link.active {
 .problems-nav-header {
     color: #8B0000;
 }
+
+.nav-tabs > li {
+    list-style-type: none;
+}
