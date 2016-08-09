@@ -2,31 +2,9 @@
     text-align: center;
 }
 
-.erdos-context {
-    display: none;
-}
-
-.erdos-challenge {
-    display: none;
-}
-
-.erdos-solutions {
-    display: none;
-}
-
-.footnote {
-    display: none;
-}
-
-.erdos-fadein-challenge {
-    display: block;
-    margin: 0 auto;
-}
-
-.erdos-fadein-solutions {
-    display: block;
-    margin: 0 auto;
-}
+/* .footnote { */
+/*     display: none; */
+/* } */
 
 a.challenge-link {
     text-decoration: none;
@@ -47,9 +25,4 @@ a.challenge-link.active {
 
 .problems-nav-header {
     color: #8B0000;
-    /* font-weight: bold; */
-}
-
-.problems-nav-catheader {
-    /* font-weight: bold; */
 }
