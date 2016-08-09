@@ -35,7 +35,18 @@
     <div class="span8 article-content">
       {% import '_includes/translations.html' as translations with context %}
       {{ translations.translations_for(article) }}
-      {{ article.content }}
+
+
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#erdos-context">Context</a></li>
+        <li><a data-toggle="tab" href="#erdos-challenge">Challenge</a></li>
+        <li><a data-toggle="tab" data-target="#erdos-solutions, #erdos-footnote" href="#erdos-solutions">Solutions</a></li>
+      </ul>
+
+      <div class="tab-content">
+        {{ article.content }}
+      </div>
+
       {% from '_includes/share_links.html' import share_links with context %}
       {{ share_links(article) }}
       {% from '_includes/comments.html' import comments with context %}
@@ -96,7 +107,6 @@
 
 {% block script %}
     {{ super() }}
-    {% include '_includes/erdos_fadein.html' %}
     {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script(article) }}
 {% endblock script %}

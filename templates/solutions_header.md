@@ -1,8 +1,4 @@
-<button type="button" class="btn btn-large btn-default erdos-fadein-solutions">
-  Show solutions
-</button>
 </div> <!-- erdos-challenge -->
 
-<div markdown class="erdos-solutions">
-<hr />
-## Solution
+<div markdown class="tab-pane fade" id="erdos-solutions">
+# Solution
