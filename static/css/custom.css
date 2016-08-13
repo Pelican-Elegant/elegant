@@ -38,13 +38,18 @@ svg {
     margin: auto;
 }
 
-line {
+line.link, path.link {
+    fill-opacity: 0.0;
     stroke: #aaa;
     stroke-width: 3;
 }
 
-circle {
+circle.node {
     stroke: #fff;
     stroke-width: 3;
     fill: #8B0000;
+}
+
+text.edge-label {
+    stroke: #aaa;
 }
