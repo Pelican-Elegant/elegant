@@ -23,6 +23,8 @@ a.challenge-link.active {
     color: #8B0000;
 }
 
+
+/* Tab nagivation */
 .article-content ul.nav.nav-tabs {
     list-style-type: none;
 }
@@ -30,6 +32,18 @@ a.challenge-link.active {
 .tab-content {
     margin-bottom: 50px;
 }
+
+
+/* Fade-in classes */
+
+.erdos-fadein-solution {
+    display: block;
+    margin: auto;
+}
+
+/* #erdos-solution { */
+/*     display: none; */
+/* } */
 
 
 /* SVG elements */
