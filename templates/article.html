@@ -33,9 +33,6 @@
     {% include '_includes/problems_nav.html' with context %}
     </div>
     <div class="span8 article-content">
-      {% import '_includes/translations.html' as translations with context %}
-      {{ translations.translations_for(article) }}
-
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#erdos-context">Context</a></li>
         <li><a data-toggle="tab" href="#erdos-challenge">Challenge</a></li>
