@@ -52,7 +52,7 @@ svg {
     margin: auto;
 }
 
-line.link, path.link {
+line.link, path.link, circle.link {
     fill-opacity: 0.0;
     stroke: #aaa;
     stroke-width: 3;
