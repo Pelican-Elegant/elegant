@@ -5,50 +5,38 @@
 {% endblock title %}
 
 {% block meta_tags_in_head %}
+
 {{ super() }}
-{% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
-{% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
-<meta property="og:title" content="{{ LANDING_PAGE_ABOUT.title|e }}"/>
-<meta name="twitter:title" content="{{ LANDING_PAGE_ABOUT.title|e }}">
-{% else %}
-<meta property="og:title" content="{{ SITENAME|striptags|e }}"/>
-<meta name="twitter:title" content="{{ SITENAME|striptags|e }}">
-{% endif %}
 <meta property="og:url" content="{{ SITEURL }}" />
-{% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
-{% if SITE_DESCRIPTION %}
-<meta property="og:description" content="{{SITE_DESCRIPTION|e}}" />
-<meta name="twitter:description" content="{{SITE_DESCRIPTION|e}}">
-{% endif %}
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
+
+{% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
+<meta property="og:title" content="{{ LANDING_PAGE_ABOUT.title|e }}"/>
+<meta name="twitter:title" content="{{ LANDING_PAGE_ABOUT.title|e }}">
+
+{% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
+<meta property="og:description" content="{{SITE_DESCRIPTION|e}}" />
+<meta name="twitter:description" content="{{SITE_DESCRIPTION|e}}">
+
 {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
 <meta property="og:image" content="{{FEATURED_IMAGE}}" />
 <meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
 {% endif %}
+
 {% endblock meta_tags_in_head %}
 
 {% block content %}
 {% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
-{% from '_includes/_defaults.html' import PROJECTS with context %}
 <div class="row-fluid">
-    {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
     {% set css_class = 'span10 offset2' %}
-    {% if PROJECTS and LANDING_PAGE_ABOUT %}
-    {% set css_class = 'span12' %}
-    {% endif %}
     <header class="page-header {{css_class}}">
     <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_ABOUT.title }}</a></h1>
     </header>
-    {% endif %}
 
     <div class="row-fluid">
-        {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
         {% set css_class = 'span8 offset2' %}
-        {% if PROJECTS and LANDING_PAGE_ABOUT %}
-        {% set css_class = 'span8' %}
-        {% endif %}
         <div class="{{css_class}}">
             <header>
             <h1 id="about-me">{{ LANDING_PAGE_ABOUT.subtitle }}</h1>
@@ -57,33 +45,7 @@
                 {{ LANDING_PAGE_ABOUT.details }}
             </div>
         </div>
-        {% endif %}
-
-        {% if PROJECTS %}
-        {% set css_class = 'span8 offset2' %}
-        {% if PROJECTS and LANDING_PAGE_ABOUT %}
-        {% set css_class = 'span4' %}
-        {% endif %}
-        <div class="{{css_class}}">
-            <header>
-            <h1 id="my-projects">My Projects</h1>
-            </header>
-            {% for project in PROJECTS %}
-            <ul class="list-all-articles">
-                <li>
-                <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj-desc">{{ project.description }}</span>
-                </li>
-            </ul>
-            {%endfor %}
-        </div>
-        {% endif %}
     </div>
 
-    {% if articles %}
-    {% set css_class = 'span8 offset2' %}
-    {% if articles and PROJECTS and LANDING_PAGE_ABOUT %}
-    {% set css_class = 'span12' %}
-    {% endif %}
-    {% endif %}
 </div>
 {% endblock content %}
