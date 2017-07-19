@@ -33,8 +33,8 @@
 {% endblock meta_tags_in_head %}
 <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
 {% block head_links %}
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 {% if 'assets' in PLUGINS %}
 {% include '_includes/minify_css.html' with context %}
 {% else %}
@@ -100,7 +100,7 @@
     </div>
 {% include '_includes/footer.html' %}
 {% block script %}
-<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script>
 function validateForm(query)

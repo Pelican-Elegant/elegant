@@ -42,8 +42,10 @@
             {% endif %}
 
             {{ page.content }}
+            {% if not DISABLE_PAGE_COMMENTS %}
             {% from '_includes/comments.html' import comments with context %}
             {{ comments(page) }}
+            {% endif %}
         </div>
         <section>
         <div class="col-md-2" style="float:right;font-size:0.9em;">
@@ -57,6 +59,8 @@
 
     {% block script %}
     {{ super() }}
+    {% if not DISABLE_PAGE_COMMENTS %}
     {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script(page) }}
+    {% endif %}
     {% endblock script %}
