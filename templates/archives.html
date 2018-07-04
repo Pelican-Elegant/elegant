@@ -12,7 +12,7 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 {{ super() }}
 <meta property="og:title" content="All Posts · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="All Posts · {{ SITENAME|striptags|e }}">
-<meta property="og:url" content="{{ SITEURL }}/archives.html" />
+<meta property="og:url" content="{{ SITEURL }}/ARCHIVES_URL" />
 <meta property="og:description" content="Full archives of {{ SITENAME|striptags|e }} blog" />
 <meta name="twitter:description" content="Full archives of {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
@@ -34,27 +34,43 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 <div class="row-fluid">
     <div class="span10 offset2">
         <div class="blog-archives">
-            {% set last_year = 0 %}
+            {% set year = namespace() %}
+            {% set year.prev = 0 %}
+            {% set year.cur = 0 %}
             {% for article in dates %}
-            {% set year = article.date.strftime('%Y') %}
-            {%if last_year != year %}
-            <h2 id="{{year }}"><a href="#{{year}}">{{ year }}</a></h2>
-            {% set last_year = year %}
-            {% endif %}
-            {% set next_year = 0 %}
-            {% if not loop.last %}
-            {% set next = loop.index0 + 1 %}
-            {% set next_article = dates[next] %}
-            {% set next_year = next_article.date.strftime('%Y') %}
-            {% endif %}
-            {% if next_year != year %}
-            <article class="last-entry-of-year">
-            {% else %}
-            <article>
-            {% endif %}
-            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
-            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-            </article>
+              {% set year.cur = article.date.strftime('%Y') %}
+              <!-- <pre>
+                year.prev: {{ year.prev }}
+                year.cur: {{ year.cur }}
+                ver: 15
+              </pre> -->
+              {% if year.prev != year.cur %}
+                <h2 id="{{year.cur}}">
+                  <a href="#{{year.cur}}">
+                    {{ year.cur }}
+                  </a>
+                </h2>
+                {% set year.prev = year.cur %}
+              {% endif %}
+
+              {% if loop.last %}
+                <article class="last-entry-of-year">
+              {% elif year.cur != dates[loop.index].date.strftime('%Y') %}
+                <article class="last-entry-of-year">
+              {% else %}
+                <article>
+              {% endif %}
+
+              <a href="{{ SITEURL }}/{{ article.url }}">
+                {{ article.title }}
+                {%if article.subtitle %}
+                  <small> {{ article.subtitle }} </small>
+                {% endif %}
+              </a>
+              <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">
+                {{ article.locale_date }}
+              </time>
+              </article>
             {% endfor %}
         </div>
     </div>
