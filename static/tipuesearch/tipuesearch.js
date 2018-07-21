@@ -214,7 +214,7 @@ http://www.tipue.com/search
                               }
                               if (score < 1000000000)
                               {
-                                   found[c++] = score + '^' + tipuesearch_in.pages[i].title + '^' + s_t + '^' + tipuesearch_in.pages[i].loc;                                                                   
+                                   found[c++] = score + '^' + tipuesearch_in.pages[i].title + '^' + s_t + '^' + tipuesearch_in.pages[i].url;                                                                   
                               }
                          }                         
                          

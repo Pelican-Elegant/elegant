@@ -22,23 +22,23 @@
 
 {% block content %}
 <article>
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
+<div class="row">
+    <header class="page-header col-sm-10 col-md-10 col-md-offset-2">
     <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
     </header>
 </div>
 
-<div class="row-fluid">
+<div class="row">
     {% if article.toc %}
-    <div class="span2 table-of-content">
+    <div class="col-sm-2 col-md-2 table-of-content">
         <nav>
         <h4>Contents</h4>
         {{ article.toc }}
         </nav>
     </div>
-    <div class="span8 article-content">
+    <div class="col-sm-8 col-md-8 article-content" id="contentAfterTitle">
        {% else %}
-        <div class="span8 offset2 article-content">
+        <div class="col-sm-8 col-md-8 col-md-offset-2 article-content" id="contentAfterTitle">
             {% endif %}
 
             {% import '_includes/translations.html' as translations with context %}
@@ -78,13 +78,15 @@
             {% endif %}
         </div>
         <section>
-        <div class="span2" style="float:right;font-size:0.9em;">
+        <div class="col-sm-2 col-md-2" style="float:right;font-size:0.9em;">
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
             <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
             {% include '_includes/last_updated.html' %}
+            <br/>
+            by <a rel="author" class="vcard author post-author" itemprop="author" href="{{ SITEURL }}/{{ article.author.url }}"><span class="fn" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">{{ article.author }}</span></span></a>
             {% include '_includes/multi_parts.html' %}
             {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
@@ -108,9 +110,3 @@
 </div>
 </article>
 {% endblock content %}
-
-{% block script %}
-    {{ super() }}
-    {% from '_includes/comments.html' import comments_script with context %}
-    {{ comments_script(article) }}
-{% endblock script %}

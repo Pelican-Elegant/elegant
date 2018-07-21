@@ -139,6 +139,7 @@ div.highlight {
     font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     list-style: none;
     margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 .list-of-tags li {
@@ -169,13 +170,6 @@ div.highlight {
     font: 1.1em/1.6em 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Sans-Serif;
 }
 /* Article */
-article p:not(#list-of-translations):not(#post-share-links) a,
-article ol a,
-blockquote a,
-article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a {
-    border-bottom: thin dashed #A9A9A9;
-    color: #000;
-}
 article p a:hover,
 article ol a:hover,
 article div.article-content ul:not(.articles-timeline) a:hover {
@@ -185,6 +179,8 @@ article div.article-content ul:not(.articles-timeline) a:hover {
 }
 .article-content, div.recent-posts p {
     font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
+}
+div.recent-posts p {
     text-align: justify;
 }
 .article-content {
@@ -256,7 +252,8 @@ article div.article-content ul:not(.articles-timeline) a:hover {
 .page-header {
     border-bottom: 1px solid #8f8686;
     color: #8B0000;
-    margin: 10px 10px 20px;
+    /*margin: 10px 10px 20px;*/
+    margin-top: 0px;
     padding: 5px;
 }
 .page-header h1 {
