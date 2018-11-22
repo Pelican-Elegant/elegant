@@ -8,6 +8,8 @@
     {% from '_includes/_defaults.html' import SHARE_POST_INTRO with context %}
     {{ SHARE_POST_INTRO }}
     {% endif %}
+    <a href="{{article.share_post['diaspora']}}" target="_blank" title="Share on Diaspora">Diaspora*</a>
+    ❄
     <a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
     <a href="{{article.share_post['facebook']}}" target="_blank" title="Share on Facebook">Facebook</a>

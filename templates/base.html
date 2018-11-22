@@ -46,6 +46,8 @@
         {% include '_includes/feeds.html' %}
         {% endblock feed_links %}
         {% include '_includes/analytics.html' %}
+        {% import '_includes/flattr.html' as flattr with context %}
+        {{ flattr.flattr_script() }}
     </head>
     <body>
         <div id="content-sans-footer">
