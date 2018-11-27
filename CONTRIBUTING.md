@@ -40,6 +40,4 @@ CSS Formatting Rules
 9. Use three digit Hex notation for colors whereever possible
 10. User hyphen `-` instead of underscore `_` in class and identity names
 
-Refer to [Google's HTML/CSS Style
-Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) for
-all other formatting rules.
+Refer to [Google's HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html) for all other formatting rules.
