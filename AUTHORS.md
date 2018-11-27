@@ -2,7 +2,7 @@ Contributors to the Pelican Elegant project (in alphabetical order of first name
 
 - [André Burgaud – andreburgaud](https://github.com/andreburgaud)
 - [Brian Levin – bnice5000](https://github.com/bnice5000)
-– [Matija Šuklje – silverhook](https://github.com/silverhook)
+- [Matija Šuklje – silverhook](https://github.com/silverhook)
 - [Miguel Lechón – debiatan](https://github.com/debiatan)
 - [Rod Morehead – rmorehead](https://github.com/rmorehead)
 - [Talha Mansoor – talha131](https://github.com/talha131)
