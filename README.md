@@ -25,4 +25,15 @@ Elegant includes a search bar – below you can see an example of a search resul
 
 ![Search result screenshot](https://raw.github.com/talha131/pelican-elegant/master/search-result-screenshot.png)
 
+## Documentation
 
+The documentation is currently still hosted on [Talha Mansoor‘s homepage](http://oncrashreboot.com/elegant-best-pelican-theme-features), with its source code in [this repository][doc_repo].
+
+In the future we plan to have an separate homepage for the Elegant theme, where the documentation would be hosted as well.
+
+## License
+
+Elegant is under the [MIT license](https://spdx.org/licenses/MIT.html).
+
+
+[doc_repo]: https://github.com/Pelican-Elegant/documentation
