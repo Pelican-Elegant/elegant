@@ -49,7 +49,7 @@ See [`CONTRIBUTING.md`][contributing] for more details.
 
 ## License
 
-Elegant is released under the [MIT License][].
+Elegant is released under the [MIT License][]. See [`AUTHORS.md`][authors] file for the list of contributors.
 
 Elegant’s documentation is released under the [Creative Commons Attribution Share Alike 3.0 Unported][CC-BY-SA-3.0] license.
 
@@ -61,5 +61,6 @@ All code contributions are made directly under the [MIT License][] as well. This
 [doc_repo]: https://github.com/Pelican-Elegant/documentation
 [issue]: https://github.com/Pelican-Elegant/pelican-elegant/issues/
 [contributing]: ./CONTRIBUTING.md
+[authors]: ./AUTHORS.md
 [MIT License]: https://spdx.org/licenses/MIT.html
 [CC-BY-SA-3.0]: https://spdx.org/licenses/CC-BY-SA-3.0.html
