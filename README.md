@@ -1,6 +1,10 @@
 # Elegant – an elegant theme for Pelican
 
-Elegant offers several unique features including search, live filter, collapsible comments, Mailchimp, custom 404 page, etc. It is a minimal, and stylish theme that looks amazing across all screen resolutions and devices.
+[Elegant][] is a theme for the static site/blog generator [Pelican][].
+
+It offers several unique features including search, live filter, collapsible comments, Mailchimp, custom 404 page, etc.
+
+It is a minimal, and stylish theme that looks amazing across all screen resolutions and devices.
 
 
 ## Screenshots
@@ -31,9 +35,31 @@ The documentation is currently still hosted on [Talha Mansoor‘s homepage](http
 
 In the future we plan to have an separate homepage for the Elegant theme, where the documentation would be hosted as well.
 
+
+## How to contribute
+
+Developing Elegant is a community effort, so you are very welcome to help develop it further into the most elegant theme out there.
+
+The main repository of Elegant is on [GitHub][elegant], which you may fork and then submit pull requests to, in order for them to be merged.
+
+If you found any issues, or have ideas how to improve the theme, please submit an [issue][].
+
+See [`CONTRIBUTING.md`][contributing] for more details.
+
+
 ## License
 
-Elegant is under the [MIT license](https://spdx.org/licenses/MIT.html).
+Elegant is released under the [MIT License][].
+
+Elegant’s documentation is released under the [Creative Commons Attribution Share Alike 3.0 Unported][CC-BY-SA-3.0] license.
+
+All contributions are made directly under the [MIT License][] as well. This is commonly referred to as the “Inbound=Outbound licensing model”, as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the 
 
 
+[pelican]: https://getpelican.com/
+[elegant]: https://github.com/Pelican-Elegant/pelican-elegant
 [doc_repo]: https://github.com/Pelican-Elegant/documentation
+[issue]: https://github.com/Pelican-Elegant/pelican-elegant/issues/
+[contributing]: ./CONTRIBUTING.md
+[MIT License]: https://spdx.org/licenses/MIT.html
+[CC-BY-SA-3.0]: https://spdx.org/licenses/CC-BY-SA-3.0.html
