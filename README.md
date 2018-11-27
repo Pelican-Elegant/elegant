@@ -53,7 +53,7 @@ Elegant is released under the [MIT License][].
 
 Elegant’s documentation is released under the [Creative Commons Attribution Share Alike 3.0 Unported][CC-BY-SA-3.0] license.
 
-All contributions are made directly under the [MIT License][] as well. This is commonly referred to as the “Inbound=Outbound licensing model”, as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the 
+All code contributions are made directly under the [MIT License][] as well. This is commonly referred to as the “Inbound=Outbound licensing model”, as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the code is then being released under to the general public.
 
 
 [pelican]: https://getpelican.com/

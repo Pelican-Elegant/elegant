@@ -48,7 +48,9 @@ Refer to [Google's HTML/CSS Style Guide][google_style_guide] for all other forma
 
 # Licensing (Inbound=Outbound)
 
-Unless otherwise stated, all contributions will be understood to be made under the same (inbound) license as the main (outbound) license of the repository it is being contributed to – so [MIT License][] for all [code/theme][elegant] contributions, and [CC-BY-SA-3.0][] for all [documentation][] contributions.
+All contributions will be understood to be made under the same (inbound) license as the main (outbound) license of the repository it is being contributed to – so [MIT License][] for all [code/theme][elegant] contributions, and [CC-BY-SA-3.0][] for all [documentation][] contributions.
+
+If you are contributing code that is not yours, make sure to indicate where you got the code from (and who the author/copyright holder is) and what license you got it under.
 
 
 [elegant]: https://github.com/Pelican-Elegant/pelican-elegant
