@@ -33,7 +33,7 @@ Elegant includes a search bar – below you can see an example of a search resul
 
 The documentation is currently still hosted on [Talha Mansoor‘s homepage](http://oncrashreboot.com/elegant-best-pelican-theme-features), with its source code in [this repository][doc_repo].
 
-In the future we plan to have an separate homepage for the Elegant theme, where the documentation would be hosted as well.
+In the future we plan to have a separate homepage for the Elegant theme, where the documentation would be hosted as well.
 
 
 ## How to contribute
