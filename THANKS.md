@@ -1,6 +1,8 @@
 Thanks to
 =========
 
+**Extra Special Thanks** to [talha131](https://github.com/talha131) for creating this theme and for being the sole maintainer and main developer of Elegant for so many years, and later opening up the development to a community-led effort, enabling the theme and its community to grow.
+
 **Special Thanks** to [calfzhou](https://github.com/calfzhou) and
 [tshepang](https://github.com/tshepang). They are always the first to report
 issues, suggest improvements and submit patches. They have played a huge role
@@ -25,13 +27,7 @@ in making Elegant more elegant.
 1. He reported, investigated and submitted a
    [patch](https://github.com/talha131/pelican-elegant/issues/110) for an issue
    in the navbar
-
-[Andre](https://github.com/andreburgaud)
-----------------------------------------
-
-1. He [reported and submitted a
-   patch](https://github.com/talha131/pelican-elegant/issues/108) to fix a bug
-   in 404.html
+1. He [reported and submitted a patch](https://github.com/talha131/pelican-elegant/issues/108) to fix a bug in 404.html
 
 [brechtm](https://github.com/brechtm)
 -------------------------------------
