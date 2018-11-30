@@ -62,9 +62,9 @@ That's it. Elegant will take care of the rest.
 Heap
 ----
 
-From your Heap console, navigate to Settings->Projects. You need to copy the
-Project ID you want to log to. Set `HEAP_ANALYTICS` in your configuration with
-this value.
+From your [Heap console](https://heapanalytics.com/app/account), navigate to
+Settings->Projects. You need to copy the Project ID you want to log to.
+Set `HEAP_ANALYTICS` in your configuration with this value.
 
     :::python
     HEAP_ANALYTICS = 1234567890
