@@ -1,0 +1,3 @@
+[submodule "themes/elegant"]
+	path = themes/elegant
+	url = https://github.com/Pelican-Elegant/elegant.git
