@@ -6,3 +6,4 @@ pelican
 peru
 webassets
 bs4
+markdown
