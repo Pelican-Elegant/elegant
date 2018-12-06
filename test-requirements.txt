@@ -8,3 +8,4 @@ webassets
 bs4
 markdown
 cssmin
+ghp-import
