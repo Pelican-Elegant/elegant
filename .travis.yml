@@ -15,6 +15,7 @@ python:
 - '3.5'
 
 before_install:
+- sudo apt-get -y install ghp-import
 - pip install -U pip
 - pip install -U setuptools
 - pip install -r requirements.txt
@@ -28,13 +29,11 @@ script:
 - make html
 # - python-codacy-coverage -r coverage.xml
 
-# deploy to GitHub pages
-# deploy:
-#   provider: pages
-#   local_dir: ../blog.minchin.ca-master/
-#   target-branch: master
-#   skip_cleanup: true
-#   github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard
-#   # only deploy on "main" branch
-#   on:
-#     branch: pelican
+after_success:
+- rm -rf .git/
+- git init
+- git config user.name "Travis CI"
+- git config user.email "travis@domain.com"
+- git config --global push.default simple
+- git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
+- make github
