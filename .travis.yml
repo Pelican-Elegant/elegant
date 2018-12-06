@@ -16,7 +16,7 @@ python:
 
 before_install:
 - pip install -U pip
-- pip install -U setuptool
+- pip install -U setuptools
 - pip install -r requirements.txt
 - pip install -r test-requirements.txt
 - pip install tox
