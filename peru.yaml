@@ -16,19 +16,19 @@ imports:
     multi_part: plugins/
 
 git module sitemap:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: sitemap
 
 git module yuicompressor:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: yuicompressor
 
 git module better_figures_and_images:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: better_figures_and_images
 
 git module better_codeblock_line_numbering:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: better_codeblock_line_numbering
 
 git module elegant:
@@ -36,38 +36,38 @@ git module elegant:
     # export: themes/
 
 git module extract_toc:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: extract_toc
 
 git module tipue_search:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: tipue_search
 
 git module liquid_tags:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: liquid_tags
 
 git module neighbors:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: neighbors
 
 git module render_math:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: render_math
 
 git module related_posts:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: related_posts
 
 git module share_post:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: share_post
 
 git module multi_part:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: multi_part
 
 git module assets:
-    url: git@github.com:getpelican/pelican-plugins.git
+    url: https://github.com/getpelican/pelican-plugins.git
     pick: assets
 
