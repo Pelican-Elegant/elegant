@@ -3,3 +3,5 @@ flake8
 tox
 misspellings
 pelican
+peru
+webassets
