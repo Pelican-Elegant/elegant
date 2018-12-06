@@ -15,7 +15,7 @@ python:
 - '3.5'
 
 before_install:
-- apt-get -y install cssmin
+- sudo apt-get -y install cssmingit
 - pip install -U pip
 - pip install -U setuptools
 - pip install -r requirements.txt
