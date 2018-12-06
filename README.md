@@ -57,9 +57,9 @@ All code contributions are made directly under the [MIT License][] as well. This
 
 
 [pelican]: https://getpelican.com/
-[elegant]: https://github.com/Pelican-Elegant/pelican-elegant
+[elegant]: https://github.com/Pelican-Elegant/elegant
 [doc_repo]: https://github.com/Pelican-Elegant/documentation
-[issue]: https://github.com/Pelican-Elegant/pelican-elegant/issues/
+[issue]: https://github.com/Pelican-Elegant/elegant/issues/
 [contributing]: ./CONTRIBUTING.md
 [authors]: ./AUTHORS.md
 [MIT License]: https://spdx.org/licenses/MIT.html

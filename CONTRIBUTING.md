@@ -6,7 +6,7 @@ The main repository of Elegant is on [GitHub][elegant], which you may fork and t
 
 If you found any issues, or have ideas how to improve the theme, please submit an [issue][].
 
-Also see issues tagged as [Pull Request Welcome](https://github.com/Pelican-Elegant/pelican-elegant/labels/pull%20request%20welcome) – these are issues that are not directly on our roadmap, but if you have time to contribute, we would be very glad to review and accept your pull request.
+Also see issues tagged as [Pull Request Welcome](https://github.com/Pelican-Elegant/elegant/labels/pull%20request%20welcome) – these are issues that are not directly on our roadmap, but if you have time to contribute, we would be very glad to review and accept your pull request.
 
 
 # New Features and Styles
@@ -53,9 +53,9 @@ All contributions will be understood to be made under the same (inbound) license
 If you are contributing code that is not yours, make sure to indicate where you got the code from (and who the author/copyright holder is) and what license you got it under.
 
 
-[elegant]: https://github.com/Pelican-Elegant/pelican-elegant
+[elegant]: https://github.com/Pelican-Elegant/elegant
 [documentation]: https://github.com/Pelican-Elegant/documentation
-[issue]: https://github.com/Pelican-Elegant/pelican-elegant/issues/
+[issue]: https://github.com/Pelican-Elegant/elegant/issues/
 [contributing]: ./CONTRIBUTING.md
 [google_style_guide]: https://google.github.io/styleguide/htmlcssguide.html
 [MIT License]: https://spdx.org/licenses/MIT.html
