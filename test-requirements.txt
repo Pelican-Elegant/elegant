@@ -1,0 +1,5 @@
+pymarkdownlint
+flake8
+tox
+misspellings
+pelican
