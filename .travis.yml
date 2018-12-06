@@ -1,0 +1,35 @@
+# Copyright (C) 2017, 2018 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
+
+language: python
+dist: trusty
+sudo: required
+
+# notifications:
+#   email: false
+#   irc:
+#     channels:
+#       - "us.freenode.net#citellus"
+#     on_success: change
+
+python:
+- '3.5'
+
+before_install:
+- pip install -r requirements.txt
+- pip install tox
+
+script:
+- tox
+- make html
+# - python-codacy-coverage -r coverage.xml
+
+# deploy to GitHub pages
+# deploy:
+#   provider: pages
+#   local_dir: ../blog.minchin.ca-master/
+#   target-branch: master
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard
+#   # only deploy on "main" branch
+#   on:
+#     branch: pelican
