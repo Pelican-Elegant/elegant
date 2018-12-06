@@ -5,3 +5,4 @@ misspellings
 pelican
 peru
 webassets
+bs4
