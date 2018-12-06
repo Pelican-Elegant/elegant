@@ -7,3 +7,4 @@ peru
 webassets
 bs4
 markdown
+cssmin
