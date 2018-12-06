@@ -1,3 +1,7 @@
 pelican.pid
 srv.pid
 publishconf.py
+.tox
+.vscode
+.idea
+.history
