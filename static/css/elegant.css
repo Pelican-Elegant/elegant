@@ -603,4 +603,11 @@ div.figure.align-left, .article-content img.align-left {
     float: left;
     margin-right: 1.5em;
 }
-
+/* Author blurb */
+.author_blurb {
+    font-variant: small-caps;
+    font-style: italic;
+}
+.author_name {
+    font-weight: bold;
+}

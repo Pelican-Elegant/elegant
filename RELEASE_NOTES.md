@@ -17,6 +17,7 @@ Version 2.0 (under development)
 * Add Disqus comments to Pages
 * All customizable variables consolidated in a single `_defaults.html`, making
   it easier for you to customize or even *localize* the theme
+* Adds author blurbs at the end of the article
 
 Performance
 -----------
