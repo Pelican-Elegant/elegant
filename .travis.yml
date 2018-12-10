@@ -21,4 +21,4 @@ before_install:
 - cd tests && peru sync 
 
 script:
-- cd tests && pelican content/ -o output/
+- pelican content/ -o output/
