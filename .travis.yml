@@ -17,7 +17,6 @@ before_install:
 - mv templates tests/themes/elegant/
 - mv static tests/themes/elegant/
 - cd tests && peru --file=tests/peru.yaml --sync-dir=tests/ sync 
-- make html
 
 script:
-- pelican tests/content/ -o tests/output/
+- cd tests && pelican content/ -o output/
