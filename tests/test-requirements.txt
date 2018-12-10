@@ -1,0 +1,11 @@
+pymarkdownlint
+flake8
+tox
+misspellings
+pelican
+peru
+webassets
+bs4
+markdown
+cssmin
+ghp-import
