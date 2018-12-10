@@ -48,7 +48,7 @@ Refer to [Google's HTML/CSS Style Guide][google_style_guide] for all other forma
 # Contributing Code
 
 1. Create a new git branch specific to your change instead of to making your commits in the master branch.
-1. Create pull reuqest from that branch.
+1. Create pull request from that branch.
 1. Each pull request should only have a single feature or fix. Do not add multiple features or bug fixes to the same pull request.
 1. Squash your commits to reduce noise form commit history. Use your better judegment to decide which commits should stay in the commit history, or consult project maintainers if confused.
 
