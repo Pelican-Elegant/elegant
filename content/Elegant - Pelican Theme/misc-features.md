@@ -4,9 +4,9 @@ Category: Elegant - Pelican Theme
 Date: 2014-04-22 16:23
 Slug: few-more-features-of-elegant
 Disqus_identifier: c8et6bu-few-more-features-of-elegant
-Subtitle: 
+Subtitle:
 Summary: Three more features that are unique to Elegant theme
-Keywords: 
+Keywords:
 
 [TOC]
 
@@ -33,4 +33,3 @@ Elegant uses commonly available typefaces in every style rule. It has a list of
 closely matching fonts in the fallback list. For examples Baskerville is the
 first choice for headings. But if reader does not have Baskerville installed,
 Garamond will be used. If that too fails then Georgia will be used.
-
