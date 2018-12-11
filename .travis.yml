@@ -20,5 +20,13 @@ before_install:
 - mv static tests/themes/elegant/
 - cd tests && peru sync 
 
+before_script:
+- gem install travis
+
 script:
 - pelican content/ -o output/
+
+after_success:
+- curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh
+- chmod +x trigger.sh
+- ./trigger.sh iranzo Pelican-Elegant/documentation master $TRATOKEN
