@@ -28,5 +28,4 @@ script:
 
 after_success:
 - curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh
-- chmod +x trigger.sh
-- ./trigger.sh iranzo Pelican-Elegant/documentation master $TRATOKEN
+- sh trigger.sh iranzo Pelican-Elegant/documentation master $TRATOKEN
