@@ -1,0 +1,24 @@
+# Copyright (C) 2017, 2018 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
+
+language: python
+dist: trusty
+sudo: required
+
+python:
+- '3.5'
+
+# prepare and move data for execution
+
+before_install:
+- pip install -U pip
+- pip install -U setuptools
+- pip install -r tests/requirements.txt
+- pip install -r tests/test-requirements.txt
+- pip install peru
+- mkdir -p tests/themes/elegant
+- mv templates tests/themes/elegant/
+- mv static tests/themes/elegant/
+- cd tests && peru sync 
+
+script:
+- pelican content/ -o output/
