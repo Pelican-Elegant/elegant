@@ -15,14 +15,13 @@ before_install:
 - pip install -r tests/requirements.txt
 - pip install -r tests/test-requirements.txt
 - pip install peru
-- npm install travis-ci
 - mkdir -p tests/themes/elegant
 - mv templates tests/themes/elegant/
 - mv static tests/themes/elegant/
 - cd tests && peru sync 
 
 before_script:
-- gem install travis
+- npm install travis-ci
 
 script:
 - pelican content/ -o output/
