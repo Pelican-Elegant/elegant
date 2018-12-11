@@ -15,6 +15,7 @@ before_install:
 - pip install -r tests/requirements.txt
 - pip install -r tests/test-requirements.txt
 - pip install peru
+- npm install travis-ci
 - mkdir -p tests/themes/elegant
 - mv templates tests/themes/elegant/
 - mv static tests/themes/elegant/
@@ -27,5 +28,4 @@ script:
 - pelican content/ -o output/
 
 after_success:
-- curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh
-- sh trigger.sh iranzo Pelican-Elegant/documentation master $TRATOKEN
+- node trigger-build.js
