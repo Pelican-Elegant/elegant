@@ -20,5 +20,11 @@ before_install:
 - mv static tests/themes/elegant/
 - cd tests && peru sync 
 
+before_script:
+- npm install travis-ci
+
 script:
 - pelican content/ -o output/
+
+after_success:
+- node trigger-build.js
