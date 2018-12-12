@@ -12,12 +12,24 @@ DATE_FORMATS = {'en': '%b %d, %Y'}
 DEFAULT_LANG = u'en'
 
 # Plugins and extensions
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid',
-                 'toc(permalink=true)']
-PLUGIN_PATH = 'plugins/'
+MARKDOWN = {
+'extension_configs': {
+'markdown.extensions.codehilite': {
+            'css_class': 'highlight'
+        },
+        'markdown.extensions.extra': {},
+'markdown.extensions.toc': {
+            'permalink': 'true'
+        },
+        'markdown.extensions.meta': {}
+    }
+}
+
+PLUGIN_PATHS = ['plugins/']
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img',
            'neighbors', 'render_math', 'related_posts', 'assets', 'share_post',
            'multi_part']
+
 SITEMAP = {
     'format': 'xml',
     'priorities': {
