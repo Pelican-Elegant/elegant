@@ -7,29 +7,18 @@ date: 2018-12-07 16:00:47 +0100
 comments: true
 category: Development
 description:
+slug: 'travis-ci-and-doc-website'
+disqus_identifier: 'travis-ci-and-doc-website'
 ---
 
-**Table of contents**
-<!-- TOC depthFrom:1 insertAnchor:true orderedList:true -->
+[TOC]
 
-- [Background](#background)
-- [Under the hood](#under-the-hood)
-  - [Image setup](#image-setup)
-  - [Preparation of environment](#preparation-of-environment)
-  - [Actual tests](#actual-tests)
-  - [After tests passed](#after-tests-passed)
-- [Wrap up](#wrap-up)
-
-<!-- /TOC -->
-
-<a id="markdown-background" name="background"></a>
 # Background
 
 [Elegant](https://github.com/Pelican-Elegant/elegant) theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the tasks to accomplish, has been the decoupling from author blog to project site for documentation.
 
 As we wanted this process to be both automated and allowed us to demonstrate via dogfooding that the theme works and how it looks, the idea was to automate the rendering of pelican website with new documents.
 
-<a id="markdown-under-the-hood" name="under-the-hood"></a>
 # Under the hood
 
 Setting an automated build required several steps to be done:
@@ -72,7 +61,6 @@ after_success:
 - make github
 ~~~
 
-<a id="markdown-image-setup" name="image-setup"></a>
 ## Image setup
 
 So, from above file we do:
@@ -94,7 +82,6 @@ python:
 
 All of this depends on Travis Image being used and their documentation
 
-<a id="markdown-preparation-of-environment" name="preparation-of-environment"></a>
 ## Preparation of environment
 
 Now, we'll prepare the environment for our tests:
@@ -114,7 +101,6 @@ We do install pip, setuptools, repository and test requirements, peru and tox.
 
 Peru is used to grab additional dependencies for elegant (plugins, latest theme, etc)
 
-<a id="markdown-actual-tests" name="actual-tests"></a>
 ## Actual tests
 
 This is really easy in our case:
@@ -128,7 +114,6 @@ We run 'tox' that allows to automate Python virtualenv and tests and then, use t
 
 If everything succeeds, we're ready for the next step (publishing)
 
-<a id="markdown-after-tests-passed" name="after-tests-passed"></a>
 ## After tests passed
 
 All the environment setup and tests have succeed now, we do need to push the site 'live'
@@ -148,7 +133,6 @@ This piece does the final step, first removes info about the repo containing the
 
 In the final step, 'make github' uses the makefile provided with pelican to push the changes to the 'master' branch of the target repository, that then, is ready to be served via github pages as a regular web server would do.
 
-<a id="markdown-wrap-up" name="wrap-up"></a>
 # Wrap up
 
 So, right now we've accomplished several things:
