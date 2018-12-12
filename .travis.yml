@@ -26,5 +26,7 @@ before_script:
 script:
 - pelican content/ -o output/
 
+# Notify documentation repo for build new site after master change
+
 after_success:
 - node trigger-build.js
