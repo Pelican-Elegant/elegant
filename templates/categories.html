@@ -12,7 +12,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {{ super() }}
 <meta property="og:title" content="All Categories · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="All Categories · {{ SITENAME|striptags|e }}">
-<meta property="og:url" content="{{ SITEURL }}/{{ CATEGORIES_URL or 'categories' }}" />
+<meta property="og:url" content="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}" />
 <meta property="og:description" content="All categories of the {{ SITENAME|striptags|e }} blog" />
 <meta name="twitter:description" content="All categories of the {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
@@ -32,7 +32,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% block content %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/{{ CATEGORIES_URL or 'categories' }}">All Categories</a></h1>
+    <h1><a href="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}">All Categories</a></h1>
     </header>
 </div>
 
