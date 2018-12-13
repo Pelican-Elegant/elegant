@@ -35,9 +35,9 @@ function showGetResult()
         async: false,
         success: function(xml) {
             $(xml).find('url').each(function(){
-                var loc = $(this).find('loc').text();
-                if ($.inArray(loc, exclude_pages) < 0) {
-                    result.push(loc);
+                var url = $(this).find('url').text();
+                if ($.inArray(url, exclude_pages) < 0) {
+                    result.push(url);
                 }
             });
         },
