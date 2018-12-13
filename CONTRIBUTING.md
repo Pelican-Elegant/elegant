@@ -45,6 +45,13 @@ Specifically:
 
 Refer to [Google's HTML/CSS Style Guide][google_style_guide] for all other formatting rules.
 
+# Contributing Code
+
+1. Create a new git branch specific to your changes, instead of making your commits in the master branch. For example, create a branch `fix-issue-119` and add commits to it that fix "issue 119".
+1. Create pull request from that branch.
+1. Create pull request against the `dev` branch. For example, a feature or fix that is destined for release `2.1` must go into branch `dev-2.1`. Consult project maintainers if destination branch is not clear.
+1. Each pull request should only have a single feature or fix. Do not add multiple features or bug fixes to the same pull request.
+1. Squash your commits to reduce noise from commit history. Use your better judgement to decide which commits should stay in the commit history, or consult project maintainers if confused.
 
 # Licensing (Inbound=Outbound)
 
