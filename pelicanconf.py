@@ -28,7 +28,7 @@ MARKDOWN = {
 PLUGIN_PATHS = ['plugins/']
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img',
            'neighbors', 'render_math', 'related_posts', 'assets', 'share_post',
-           'multi_part']
+           'series']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
