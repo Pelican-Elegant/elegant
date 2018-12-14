@@ -7,8 +7,8 @@ date: 2018-12-07 16:00:47 +0100
 comments: true
 category: Development
 description:
-slug: 'travis-ci-and-doc-website'
-disqus_identifier: 'travis-ci-and-doc-website'
+slug: travis-ci-and-doc-website
+disqus_identifier: travis-ci-and-doc-website
 ---
 
 [TOC]

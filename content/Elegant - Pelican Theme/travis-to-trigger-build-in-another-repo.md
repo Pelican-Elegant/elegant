@@ -7,8 +7,8 @@ date: 2018-12-11 21:49:47 +0100
 comments: true
 category: Development
 description:
-slug: 'travis-to-trigger-build-in-another-repo'
-disqus_identifier: 'travis-to-trigger-build-in-another-repo'
+slug: travis-to-trigger-build-in-another-repo
+disqus_identifier: travis-to-trigger-build-in-another-repo
 ---
 
 [TOC]
