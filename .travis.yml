@@ -36,10 +36,8 @@ after_success:
 - git config --global push.default simple
 - git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
 - make github
-# Build now on 'next' repository
-# Change elegant theme branch for checkout of theme to 'next'
+- echo "Now building 'next'"
 - sed -i 's/rev: master/rev: next/g' peru.yaml
-# Resync theme for pelican elegant
 - peru sync
 - git remote remove origin
 - git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/next
