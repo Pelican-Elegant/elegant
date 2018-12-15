@@ -1,8 +1,8 @@
 # Pelican-Elegant documentation
 
-This repo stores in `content/` the sources for documentation for Pelican-Elegant theme.
+This repository is the source code of the documentation of [Pelican-Elegant theme](https://github.com/Pelican-Elegant/elegant).
 
-It is build and published with [Pelican](http://docs.getpelican.com/), and hosted by [GitHub Pages](http://pages.github.com/). Generated output goes into a git repository- [Pelican-Elegant.github.io](https://github.com/Pelican-Elegant/pelican-elegant.github.io) and rendered page (that serves as live demo), goes to <https://pelican-elegant.github.io>
+It is build and published with [Pelican](http://docs.getpelican.com/), and hosted by [GitHub Pages](http://pages.github.com/). Generated output goes into [Pelican-Elegant.github.io](https://github.com/Pelican-Elegant/pelican-elegant.github.io) repository, which is then hosted on <https://pelican-elegant.github.io>
 
 # License
 
