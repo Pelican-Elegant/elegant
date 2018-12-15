@@ -33,6 +33,7 @@ git module better_codeblock_line_numbering:
 
 git module elegant:
     url: https://github.com/Pelican-Elegant/elegant.git
+    rev: master
     # export: themes/
 
 git module extract_toc:
