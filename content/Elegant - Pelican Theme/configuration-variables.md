@@ -74,9 +74,9 @@ Optimization](search-engine-and-social-media-optimization#social-media-optimizat
 1. `TWITTER_USERNAME`
 1. `GOOGLE_PLUS_PROFILE_URL` 
 
-Blog [`onCrash=Reboot();`](http://oncrashreboot.com) uses Elegant theme. You
-can see its configuration files at
-[Github](https://github.com/talha131/onCrashReboot) for inspiration.
+This site uses Elegant theme. You
+can view its configuration files at
+[Github](https://github.com/Pelican-Elegant/documentation) for inspiration.
 
 ## Metadata
 
