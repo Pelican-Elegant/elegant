@@ -67,9 +67,10 @@ SOCIAL = (('Twitter', 'http://twitter.com/talham_'),
           ('Email', 'mailto:talha131@gmail.com'),)
 
 # Elegant theme
-STATIC_PATHS = ['theme/images', 'images', 'extra/google3bc953001343abe6']
+STATIC_PATHS = ['theme/images', 'images', 'extra/google3bc953001343abe6', 'extra/robots.txt']
 EXTRA_PATH_METADATA = {
-     'extra/google3bc953001343abe6' : {'path': 'google3bc953001343abe6.html'}
+    'extra/google3bc953001343abe6' : {'path': 'google3bc953001343abe6.html'},
+    'extra/robots.txt': {'path': 'robots.txt'}
 }
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
 TAG_SAVE_AS = ''
