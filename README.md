@@ -6,7 +6,6 @@ It offers several unique features including search, live filter, collapsible com
 
 It is a minimal, and stylish theme that looks amazing across all screen resolutions and devices.
 
-
 ## Screenshots
 
 Pictures are worth a thousand words. So feast your eyes on these.
@@ -15,26 +14,23 @@ Pictures are worth a thousand words. So feast your eyes on these.
 
 Here is how the home page looks like – this is how your website would look like on visit:
 
-![Home page screenshot](https://raw.github.com/talha131/pelican-elegant/master/home-page-screenshot.png)
+![Home page screenshot](https://raw.github.com/Pelican-Elegant/elegant/master/home-page-screenshot.png)
 
 ### Article
 
 An example how a generated article looks like:
 
-![Article screenshot](https://raw.github.com/talha131/pelican-elegant/master/article-screenshot.png)
+![Article screenshot](https://raw.github.com/Pelican-Elegant/elegant/master/article-screenshot.png)
 
 ### Search
 
 Elegant includes a search bar – below you can see an example of a search result:
 
-![Search result screenshot](https://raw.github.com/talha131/pelican-elegant/master/search-result-screenshot.png)
+![Search result screenshot](https://raw.github.com/Pelican-Elegant/elegant/master/search-result-screenshot.png)
 
 ## Documentation
 
-The documentation is currently still hosted on [Talha Mansoor‘s homepage](http://oncrashreboot.com/elegant-best-pelican-theme-features), with its source code in [this repository][doc_repo].
-
-In the future we plan to have a separate homepage for the Elegant theme, where the documentation would be hosted as well.
-
+The documentation is currently hosted on [GitHub pages](https://pelican-elegant.github.ui), with its source code in [this repository][doc_repo].
 
 ## How to contribute
 
@@ -46,7 +42,6 @@ If you found any issues, or have ideas how to improve the theme, please submit a
 
 See [`CONTRIBUTING.md`][contributing] for more details.
 
-
 ## License
 
 Elegant is released under the [MIT License][]. See [`AUTHORS.md`][authors] file for the list of contributors.
@@ -54,7 +49,6 @@ Elegant is released under the [MIT License][]. See [`AUTHORS.md`][authors] file 
 Elegant’s documentation is released under the [Creative Commons Attribution Share Alike 3.0 Unported][CC-BY-SA-3.0] license.
 
 All code contributions are made directly under the [MIT License][] as well. This is commonly referred to as the “Inbound=Outbound licensing model”, as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the code is then being released under to the general public.
-
 
 [pelican]: https://getpelican.com/
 [elegant]: https://github.com/Pelican-Elegant/elegant
