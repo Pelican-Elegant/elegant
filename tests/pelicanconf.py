@@ -94,9 +94,9 @@ TWITTER_USERNAME = u'talham_'
 FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
 
 # Legal
-SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license" 
+SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license"
     href="http://creativecommons.org/licenses/by/4.0/">
-    Creative Commons Attribution 4.0 International License</a>.""" 
+    Creative Commons Attribution 4.0 International License</a>."""
 
 
 # SEO
