@@ -13,7 +13,7 @@ imports:
     render_math: plugins/
     related_posts: plugins/
     share_post: plugins/
-    multi_part: plugins/
+    series: plugins/
 
 git module sitemap:
     url: https://github.com/getpelican/pelican-plugins.git
@@ -64,9 +64,9 @@ git module share_post:
     url: https://github.com/getpelican/pelican-plugins.git
     pick: share_post
 
-git module multi_part:
+git module series:
     url: https://github.com/getpelican/pelican-plugins.git
-    pick: multi_part
+    pick: series
 
 git module assets:
     url: https://github.com/getpelican/pelican-plugins.git
