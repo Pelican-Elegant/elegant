@@ -36,7 +36,6 @@ after_success:
 - git config --global push.default simple
 - git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
 - make github
-- echo "Now building 'next' branch"
 - sed -i 's/rev: master/rev: next/g' peru.yaml
 - peru sync
 - git remote remove origin
