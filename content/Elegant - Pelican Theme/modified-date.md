@@ -14,7 +14,7 @@ date of the article by defining `modified` in your article metadata.
 
 This is how it is displayed in the side bar,
 
-![Modified Date](|filename|/images/elegant-theme_last-modified.png)
+![Modified Date]({static}/images/elegant-theme_last-modified.png)
 
 Pelican post [version
 3.3](https://github.com/getpelican/pelican/releases/tag/3.3.0) has a new

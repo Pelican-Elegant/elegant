@@ -18,7 +18,7 @@ web too. Most social widgets are loud and obtrusive. Their colors and placement
 takes away readers' attention from the actual content.
 
 <img class="align-right" style="width: 262.0px; height: 140.0px;"
-src="|filename|/images/social-profiles-sidebar-default.png" alt="Social
+src="{static}/images/social-profiles-sidebar-default.png" alt="Social
 Profiles in the Sidebar" />
 
 Elegant understands the importance of readers engagement but it makes sure
@@ -29,11 +29,11 @@ media profile with an appropriate title attribute. Icons use muted color which
 changes when user hovers over them.
 
 <img class="align-right" style="width: 134.0px; height: 62.5px;"
-src="|filename|/images/social-profiles-sidebar-facebook.png" alt="Hover over
+src="{static}/images/social-profiles-sidebar-facebook.png" alt="Hover over
 Facebook icon in the sidebar" />
 
 <img class="align-right" style="width: 134.0px; height: 62.5px;"
-src="|filename|/images/social-profiles-sidebar-twitter.png" alt="Hover over
+src="{static}/images/social-profiles-sidebar-twitter.png" alt="Hover over
 Twitter icon in the sidebar" />
 
 Elegant uses scalable vector icons from [Font

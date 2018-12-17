@@ -18,14 +18,14 @@ Pelican powered blogs.
 You can put your license string in `SITE_LICENSE`. It will appear in the footer
 of every page of your site. Here is how license of my site looks like,
 
-![onCrashReboot site license](|filename|/images/elegant-theme_license.png)
+![onCrashReboot site license]({static}/images/elegant-theme_license.png)
 
 ## Site Subtitle
 
 You can also define `SITE_SUBTITLE`, it appears in the footer, before site
 license.
 
-![Site subtitle](|filename|/images/elegant-theme_site-subtitle.png)
+![Site subtitle]({static}/images/elegant-theme_site-subtitle.png)
 
 ## Web Safe Fonts
 

@@ -37,7 +37,7 @@ Extension](https://chrome.google.com/webstore/detail/rss-subscription-extensio/n
 
 Here is an example of my category feeds in Chrome.
 
-![Display RSS Feeds in Chrome](|filename|/images/rss-feeds-chrome-category-feeds.png)
+![Display RSS Feeds in Chrome]({static}/images/rss-feeds-chrome-category-feeds.png)
 
 These options make it redundant to have a separate RSS icon on the page.
 Elegant is all about a clean and minimal UI.
@@ -51,4 +51,4 @@ widget](how-to-display-your-social-media-profiles). Then add a tuple for RSS,
 
 Viola! You got yourself the RSS icon.
 
-![RSS Feeds icon in Social widget](|filename|/images/rss-feeds-icon-social-widget.png)
+![RSS Feeds icon in Social widget]({static}/images/rss-feeds-icon-social-widget.png)

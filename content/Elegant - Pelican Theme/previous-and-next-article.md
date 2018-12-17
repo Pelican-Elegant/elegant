@@ -16,7 +16,7 @@ plugin](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) to
 show these navigational links.
 
 ![Show next and previous
-articles](|filename|/images/elegant-theme_previous-next-article.png)
+articles]({static}/images/elegant-theme_previous-next-article.png)
 
 Elegant shows newer article on the right hand side and older article on the
 left hand side at the bottom of every article.

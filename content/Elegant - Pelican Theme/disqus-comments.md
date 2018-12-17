@@ -4,9 +4,9 @@ Category: Elegant - Pelican Theme
 Date: 2014-04-21 16:39
 Slug: how-to-use-disqus-comments-elegantly
 Disqus_identifier: 9jgwmy8-how-to-use-disqus-comments-elegantly
-Subtitle: 
+Subtitle:
 Summary: Elegant offers Disqus comments out of the box with few unique features
-Keywords: 
+Keywords:
 
 Pelican uses Disqus for comments. You have to set `DISQUS_SITENAME` to Disqus
 site name identifier in configuration to enable comments.
@@ -18,7 +18,7 @@ But that's not all. Elegant raises the notch up with following unique features.
 Instead of just throwing in comments form at the end of every article, Elegant
 offers you a way to write introductory text that would appear right before comments.
 
-![Introductory text to the comments](|filename|/images/elegant-theme_comments-introduction.png)
+![Introductory text to the comments]({static}/images/elegant-theme_comments-introduction.png)
 
 Set your message to `comments_intro` in the article metadata. You may also
 define `COMMENTS_INTRO` in Pelican configuration.  
@@ -45,4 +45,3 @@ the article URL.
 
 If you choose not to use `disqus_identifier`, Elegant passes article URL to
 Disqus.
-

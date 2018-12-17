@@ -44,7 +44,7 @@ configuration,
 
 And viola!
 
-![Share Post plugin in Elegant](|filename|/images/elegant-theme-share-post-plugin.png)
+![Share Post plugin in Elegant]({static}/images/elegant-theme-share-post-plugin.png)
 
 Like [rest of the Elegant](how-to-customize-elegant) you can customize this
 widget too.

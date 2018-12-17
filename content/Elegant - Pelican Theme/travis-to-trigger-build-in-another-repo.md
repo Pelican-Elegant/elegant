@@ -15,7 +15,7 @@ disqus_identifier: travis-to-trigger-build-in-another-repo
 
 # Introduction
 
-After setting up [build automation]({filename}2018-12-07-elegant-website-ci.md) we also wanted it not to happen only when updating the `documentation` repository.
+After setting up [build automation]({filename}travis-ci-and-doc-website.md) we also wanted it not to happen only when updating the `documentation` repository.
 
 Besides hosting documentation, Elegant website also serves as a live demo of the current release. This meant, the website should be regenerated and updated every time when a documented is added or edited, and also when Elegant theme is updated.
 
@@ -48,7 +48,7 @@ before_install:
 - mkdir -p tests/themes/elegant
 - mv templates tests/themes/elegant/
 - mv static tests/themes/elegant/
-- cd tests && peru sync 
+- cd tests && peru sync
 
 script:
 - pelican content/ -o output/
@@ -76,34 +76,34 @@ var Travis = require('travis-ci');
 var repo = "Pelican-Elegant/documentation";
 
 var travis = new Travis({
-	version: '2.0.0'
+    version: '2.0.0'
 });
 
 travis.authenticate({
 
-	// available through Travis CI
-	// see: http://kamranicus.com/blog/2015/02/26/continuous-deployment-with-travis-ci/
-	github_token: process.env.TRATOKEN
+    // available through Travis CI
+    // see: http://kamranicus.com/blog/2015/02/26/continuous-deployment-with-travis-ci/
+    github_token: process.env.TRATOKEN
 
 }, function (err, res) {
-	if (err) {
-		return console.error(err);
-	}
+    if (err) {
+        return console.error(err);
+    }
 
-	travis.repos(repo.split('/')[0], repo.split('/')[1]).builds.get(function (err, res) {
-		if (err) {
-			return console.error(err);
-		}
+    travis.repos(repo.split('/')[0], repo.split('/')[1]).builds.get(function (err, res) {
+        if (err) {
+            return console.error(err);
+        }
 
-		travis.requests.post({
-			build_id: res.builds[0].id
-		}, function (err, res) {
-			if (err) {
-				return console.error(err);
-			}
-			console.log(res.flash[0].notice);
-		});
-	});
+        travis.requests.post({
+            build_id: res.builds[0].id
+        }, function (err, res) {
+            if (err) {
+                return console.error(err);
+            }
+            console.log(res.flash[0].notice);
+        });
+    });
 });
 ```
 

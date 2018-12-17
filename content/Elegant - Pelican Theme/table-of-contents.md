@@ -65,7 +65,7 @@ This will generate
 [permalinks](https://github.com/waylan/Python-Markdown/pull/252) for every
 heading. Elegant keeps them hidden until user hovers over the heading.
 
-![Permalinks example using Markdown](|filename|/images/elegant-theme-toc-permalinks.png)
+![Permalinks example using Markdown]({static}/images/elegant-theme-toc-permalinks.png)
 
 # reStructuredText Format
 

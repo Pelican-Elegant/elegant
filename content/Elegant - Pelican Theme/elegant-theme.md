@@ -46,12 +46,12 @@ overwhelm your host server for every search query.
 
 Here is how the search result looks like
 
-![Search result for App Store](|filename|/images/elegant-theme_search-result.png)
+![Search result for App Store]({static}/images/elegant-theme_search-result.png)
 
 Search box is part of main navigation menu so that visitor can search from any
 page.
 
-![Search box](|filename|/images/elegant-theme_search-box.png)
+![Search box]({static}/images/elegant-theme_search-box.png)
 
 ## Live Filter for Tags
 
@@ -65,12 +65,12 @@ will automatically filter the list.
 For example, this is how my tags page looks like
 
 ![Tags view
-unfiltered](|filename|/images/elegant-theme_tags-live-filter-default.png)
+unfiltered]({static}/images/elegant-theme_tags-live-filter-default.png)
 
 As soon as I type "os", all other tags are filtered out
 
 ![Tags view filtered for
-"os"](|filename|/images/elegant-theme_tags-live-filter-filtered.png)
+"os"]({static}/images/elegant-theme_tags-live-filter-filtered.png)
 
 With live filter, your reader will have no difficulty in picking up his desired
 tag from the list, even if your site has hundreds of tags.
@@ -89,12 +89,12 @@ accordions](http://getbootstrap.com/2.3.2/javascript.html#collapse).
 Here is how categories appear collapsed
 
 ![Categories accordions
-collapsed](|filename|/images/elegant-theme_category-accordions-collapsed.png)
+collapsed]({static}/images/elegant-theme_category-accordions-collapsed.png)
 
 And this is how they appear uncollapsed
 
 ![Categories accordions
-uncollapsed](|filename|/images/elegant-theme_category-accordions-uncollapsed.png)
+uncollapsed]({static}/images/elegant-theme_category-accordions-uncollapsed.png)
 
 Did you notice that categories are listed in ascending alphabetical order and
 articles are sorted by their date in descending order?
@@ -105,7 +105,7 @@ This is the page that visitors see when they open your website. Your chance to
 make a good and lasting first impression. Most sites just display a list of
 recent posts. Elegant goes the extra mile. Check this out
 
-![Home Page Sample](|filename|/images/elegant-theme_home-page-features.png)
+![Home Page Sample]({static}/images/elegant-theme_home-page-features.png)
 
 You can see two sections here,
 
@@ -114,7 +114,7 @@ You can see two sections here,
 
 There is a third section below these two sections, "Recent articles"
 
-![Recent Articles Section](|filename|/images/elegant-theme_recent-posts.png)
+![Recent Articles Section]({static}/images/elegant-theme_recent-posts.png)
 
 ### About me
 
@@ -155,7 +155,7 @@ subscribe to your newsletter, above the fold, in the right section of every
 article. Increased visibility is said to increase number of subscribers.
 
 ![Mailchimp subscriber
-form](|filename|/images/elegant-theme_subscribe-form.png)
+form]({static}/images/elegant-theme_subscribe-form.png)
 
 You need to put your Mailchimp form action URL in `MAILCHIMP_FORM_ACTION` in
 your configuration file. You can also define `EMAIL_SUBSCRIPTION_LABEL`,
@@ -181,12 +181,12 @@ unhide the section by clicking on the comments section.
 This is how comments section appear
 
 ![Collapsed comments
-section](|filename|/images/elegant-theme_comments-section-collapsed.png)
+section]({static}/images/elegant-theme_comments-section-collapsed.png)
 
 It expands when reader clicks on it
 
 ![Uncollapsed comments
-section](|filename|/images/elegant-theme_comments-section-uncollapsed.png)
+section]({static}/images/elegant-theme_comments-section-uncollapsed.png)
 
 ## Articles Count with every Tag and Category
 
@@ -203,17 +203,17 @@ the same topic.
 Check out the screenshots,
 
 ![Count of articles in a category is displayed in
-superscript](|filename|/images/elegant-theme_category-superscript-count.png)
+superscript]({static}/images/elegant-theme_category-superscript-count.png)
 
 
 ![Count of articles that have been tagged is displayed in
-superscript](|filename|/images/elegant-theme_tag-superscript-count.png)
+superscript]({static}/images/elegant-theme_tag-superscript-count.png)
 
 ## Custom 404 Page
 
 Elegant has a custom Error 404 page for your readers.
 
-![Error 404 page](|filename|/images/elegant-theme_error-404-page.png)
+![Error 404 page]({static}/images/elegant-theme_error-404-page.png)
 
 ## Page Title
 
@@ -224,7 +224,7 @@ Article title · Site Name
 ```
 
 ![Article title is always visible in the
-tab](|filename|/images/elegant-theme_page-title.png)
+tab]({static}/images/elegant-theme_page-title.png)
 
 Some sites put site title first and article title later in the `<title>` tag.
 There is a problem with this approach.  When you open too many tabs, browser
@@ -260,7 +260,7 @@ subtitle support. Just define `subtitle` in your article's meta data and it
 will appear along with your title. Here is an example,
 
 ![Article subtitle
-example](|filename|/images/elegant-theme_article-subtitle.png)
+example]({static}/images/elegant-theme_article-subtitle.png)
 
 Article subtitle is displayed with the title in every list. To keep it visibly
 separate from title, subtitle is enclosed in `<small>` tag. When visible cue
@@ -268,7 +268,7 @@ cannot be used, like in the title attribute of html anchor tag `<a>`, a hyphen
 is inserted between them.
 
 ![Article title and subtitle separated with a
-hyphen](|filename|/images/elegant-theme_article-subtitle-hyphen.png)
+hyphen]({static}/images/elegant-theme_article-subtitle-hyphen.png)
 
 ***************************
 
@@ -308,4 +308,3 @@ There are two problem areas that I can think of,
 
 Besides these, there must be other bugs that I haven't noticed yet. I need your
 help to hunt them down and make them behave.
-

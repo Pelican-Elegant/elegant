@@ -20,7 +20,7 @@ To mark articles that belong to the same series, define `parts` metadata.
 Elegant shows the multi-part series in the sidebar.
 
 ![multi-part example in the
-sidebar](|filename|/images/elegant-theme_multi-part-sidebar.png)
+sidebar]({static}/images/elegant-theme_multi-part-sidebar.png)
 
 Articles are sorted by their date in ascending order. The oldest article is
 considered "Part 1" and so on.
@@ -32,7 +32,7 @@ Title attribute of html anchor tag `<a>` is set for each "Part" to its article
 title; it is displayed when user hovers over the link.
 
 ![multi-part example with title of the
-links](|filename|/images/elegant-theme_multi-part-title-attribute.png)
+links]({static}/images/elegant-theme_multi-part-title-attribute.png)
 
 As all other features, Elegant has some tricks up its sleeve.
 
@@ -48,7 +48,7 @@ in your articles metadata, like,
 
 And this will give you,
 
-![multi-part example with custom series title](|filename|/images/elegant-theme_multi-part-custom-label.png)
+![multi-part example with custom series title]({static}/images/elegant-theme_multi-part-custom-label.png)
 
 You have to make sure `series_title` metadata is set for every article in the
 series.
