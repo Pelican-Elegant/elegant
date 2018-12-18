@@ -22,7 +22,7 @@ MARKDOWN = {
             'permalink': 'true'
         },
         'markdown.extensions.meta': {},
-        'markdown.extensions.admonition': {}
+        'markdown.extensions.admonition': {},
     }
 }
 
