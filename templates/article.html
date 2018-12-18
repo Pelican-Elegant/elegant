@@ -21,7 +21,7 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<article>
+<article itemscope>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
     <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
@@ -84,7 +84,7 @@
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
-            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
+            <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
             {% include '_includes/last_updated.html' %}
             {% include '_includes/series.html' %}
