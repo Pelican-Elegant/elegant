@@ -21,7 +21,8 @@ MARKDOWN = {
         'markdown.extensions.toc': {
             'permalink': 'true'
         },
-        'markdown.extensions.meta': {}
+        'markdown.extensions.meta': {},
+        'markdown.extensions.admonition': {}
     }
 }
 
