@@ -5,7 +5,7 @@ misspellings
 pelican
 peru
 webassets
-bs4
+beautifulsoup4
 markdown
 cssmin
 ghp-import
