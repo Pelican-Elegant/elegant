@@ -93,13 +93,13 @@
             {% for article in articles %}
             {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT with context %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
-            <article>
+            <article itemscope>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
                 <section>
                     posted in
                 <a href="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}#{{ article.category.slug }}-ref">{{ article.category }}</a>
                 <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </div>
                 </section>
                 {% if RECENT_ARTICLE_SUMMARY %}
