@@ -96,7 +96,9 @@ TWITTER_USERNAME = u''
 FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
 
 # Legal
-SITE_LICENSE = u'Elegant theme documentation is licensed under a CC-BY-SA-4.0 license.'
+SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license" 
+    href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.""" 
 
 # SEO
 SITE_DESCRIPTION = u'Documentation website for Pelican-Elegant theme originally created by Talha Mansoor'
