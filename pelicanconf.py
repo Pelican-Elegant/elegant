@@ -70,7 +70,7 @@ SOCIAL = (('Twitter', 'http://twitter.com/talham_'),
 # Elegant theme
 STATIC_PATHS = ['theme/images', 'images', 'extra/google3bc953001343abe6', 'extra/robots.txt']
 EXTRA_PATH_METADATA = {
-    'extra/google3bc953001343abe6' : {'path': 'google3bc953001343abe6.html'},
+    'extra/google3bc953001343abe6': {'path': 'google3bc953001343abe6.html'},
     'extra/robots.txt': {'path': 'robots.txt'}
 }
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
@@ -102,10 +102,22 @@ SITE_LICENSE = u'Elegant theme documentation is licensed under a CC-BY-SA-4.0 li
 SITE_DESCRIPTION = u'Documentation website for Pelican-Elegant theme originally created by Talha Mansoor'
 
 # Landing Page
-PROJECTS = [{'name': 'Elegant', 'url': 'https://github.com/Pelican-Elegant/elegant',
-             'description': 'A clean and distraction free Pelican theme, with search and a lot more unique features. Built with Jinja2 and Bootstrap'},
-            {'name': 'Elegant Documentation', 'url': 'https://github.com/Pelican-Elegant/documentation',
-             'description': 'Documentation repository for Pelican-Elegant theme'}]
+PROJECTS = [
+    {
+        'name': 'Elegant', 
+        'url': 'https://github.com/Pelican-Elegant/elegant',
+        'description': 'A clean and distraction free Pelican theme, with search and a lot more unique features. Built '
+            'with Jinja2 and Bootstrap'
+    },
+    {
+        'name': 'Elegant Documentation', 'url': 'https://github.com/Pelican-Elegant/documentation',
+        'description': 'Documentation repository for Pelican-Elegant theme'
+    }
+]
 
-LANDING_PAGE_ABOUT = {'title': 'Live demonstration and documentation of Pelican-Elegant Theme',
-                      'details': """<p>This page serves both as documentation site and demonstration of Pelican-Elegant theme capabilities and look&amp;feel.</p><p>Please do check our Project pages and browse this site for more information.</p>"""}
+LANDING_PAGE_ABOUT = {
+    'title': 'Live demonstration and documentation of Pelican-Elegant Theme',
+    'details': """<p>This page serves both as documentation site and demonstration of Pelican-Elegant theme 
+        capabilities and look&amp;feel.</p><p>Please do check our Project pages and browse this site for more information.
+        </p>"""
+}
