@@ -21,7 +21,7 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<article>
+<article itemscope>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
     <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
@@ -44,6 +44,8 @@
             {% import '_includes/translations.html' as translations with context %}
             {{ translations.translations_for(article) }}
             {{ article.content }}
+            {% from '_includes/article_author.html' import article_author with context %}
+            {{ article_author(article) }}
             {% from '_includes/share_links.html' import share_links with context %}
             {{ share_links(article) }}
             {% from '_includes/comments.html' import comments with context %}
@@ -82,10 +84,10 @@
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
-            <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
+            <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
             {% include '_includes/last_updated.html' %}
-            {% include '_includes/multi_parts.html' %}
+            {% include '_includes/series.html' %}
             {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
             <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a>
@@ -94,7 +96,7 @@
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
                 {% for tag in article.tags|sort %}
-                <li><a href="{{ SITEURL }}/tags.html#{{ tag.slug }}-ref">{{ tag }}
+                <li><a href="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}#{{ tag.slug }}-ref">{{ tag }}
                     {% for aTag, tagged_articles in tags if aTag == tag %}
                     <span>{{ tagged_articles|count }}</span>
                     {% endfor %}</a></li>

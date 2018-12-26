@@ -24,13 +24,13 @@ window.onhashchange=function(){
 </script>
 <script>
 $('#disqus_thread').on('shown', function () {
-    var link = document.getElementsByClassName('accordion-toggle');
-    var old_innerHTML = link[0].innerHTML;
-    $(link[0]).fadeOut(500, function() {
+    var link = document.getElementById('disqus-accordion-toggle');
+    var old_innerHTML = link.innerHTML;
+    $(link).fadeOut(500, function() {
         $(this).text('Click here to hide comments').fadeIn(500);
     });
     $('#disqus_thread').on('hidden', function () {
-        $(link[0]).fadeOut(500, function() {
+        $(link).fadeOut(500, function() {
             $(this).text(old_innerHTML).fadeIn(500);
         });
     })
@@ -55,6 +55,6 @@ $('#disqus_thread').on('shown', function () {
          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
      })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 {% endmacro %}

@@ -8,7 +8,7 @@
 <meta property="og:article:published_time" content="{{ article.date.isoformat() }}" />
 {% endif %}
 {% if article.locale_modified and article.modified %}
-<meta property="" content="{{ article.modified.isoformat() }}" />
+<meta property="og:article:modified_time" content="{{ article.modified.isoformat() }}" />
 {% endif %}
 <meta name="twitter:title" content="{{ article.title|striptags|e }} {%if article.subtitle %} - {{ article.subtitle|striptags|e }} {% endif %}">
 <meta name="twitter:description" content="{{article.summary|striptags|e}}">

@@ -1,134 +1,202 @@
+
 /*
-Tipue Search 3.1
-Copyright (c) 2013 Tipue
+Tipue Search 5.0
+Copyright (c) 2015 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
+
+
+/*
+#tipue_search_input
+{
+     font: 13px/1.6 'open sans', sans-serif;
+	color: #333;
+	padding: 12px 12px 12px 40px;
+	width: 170px;
+	border: 1px solid #e2e2e2;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+     box-shadow: none; 
+	outline: 0;
+	margin: 0;
+	background: #fff url('img/search.png') no-repeat 15px 15px;
+}
+*/
+
 #tipue_search_content
 {
-    clear: left;
-    margin: 0;
-    max-width: 650px;
-    padding: 25px 0 13px 0;
-}
-#tipue_search_loading
-{
-    background: #fff url('img/loader.gif') no-repeat left;
-    padding-top: 60px;
+     max-width: 650px;
+	padding-top: 15px;
+	margin: 0;
 }
 #tipue_search_warning
 {
-    color: #333;
-    font: 12px/1.6 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
-    margin: 7px 0;
+     font: 300 15px/1.6 'Open Sans', sans-serif;
+	color: #555;
+	margin: 7px 0;
 }
 #tipue_search_warning a
 {
-    color: #3f72d8;
-    text-decoration: none;
+     text-decoration: none;
 }
 #tipue_search_warning a:hover
 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 1px;
+     color: #555;  
 }
-#tipue_search_results_count, #tipue_search_warning_head
+#tipue_search_results_count
 {
-    border-bottom: 1px solid rgb(143, 134, 134);
-    color: darkred;
-    font-family: Baskerville, Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, Serif;
-    font-size: 3em;
-    font-weight: normal;
-    margin: 20px 0 20px 0;
-    padding: 5px 5px 15px 5px;
+     font: 300 15px/1.7 'Open Sans', sans-serif;
+	color: #555;
 }
 .tipue_search_content_title
 {
-    font: 300 23px/1.6 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
-    margin-top: 20px;
+     font: 300 21px/1.7 'Open Sans', sans-serif;
+	margin-top: 23px;
 }
 .tipue_search_content_title a
 {
-    color: #3f72d8;
-    text-decoration: none;
+     color: #333;
+     text-decoration: none;
 }
 .tipue_search_content_title a:hover
 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 1px;
+     color: #555;
+}
+.tipue_search_content_url
+{
+     font: 300 14px/1.9 'Open Sans', sans-serif;
+     word-wrap: break-word;
+     hyphens: auto;
+}
+.tipue_search_content_url a
+{
+     text-decoration: none;
+}
+.tipue_search_content_url a:hover
+{
 }
 .tipue_search_content_text
 {
-    color: #333;
-    font-family: Scala, Georgia, "DejaVu Serif", "Times New Roman", Times, Serif;
-    font-size: 1em;
-    font-variant: normal;
-    line-height: 1.6em;
-    padding: 13px 0;
-    text-transform: none;
+     font: 300 15px/1.6 'Open Sans', sans-serif;
+	color: #555;
+     word-wrap: break-word;
+     hyphens: auto;
+     margin-top: 3px;
+}
+.tipue_search_content_debug
+{
+     font: 300 13px/1.6 'Open Sans', sans-serif;
+	color: #555;
+     margin: 5px 0;
+}
+.h01
+{
+     color: #333;
+     font-weight: 400;
 }
 
-.tipue_search_content_text b {
-    color: #EF1D1D;
-    font-family: Garamond;
-    font-size: 1.3em;
-}
-.tipue_search_content_loc
-{
-    font: 300 13px/1.7 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
-    overflow: auto;
-}
-.tipue_search_content_loc a
-{
-    color: #555;
-    text-decoration: none;
-}
-.tipue_search_content_loc a:hover
-{
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 1px;
-}
 #tipue_search_foot
 {
-    margin: 51px 0 21px 0;
+     margin: 51px 0 21px 0;
 }
 #tipue_search_foot_boxes
 {
-    font: 12px/1 'Helvetica Neue', Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, Sans-Serif;
-    margin: 0;
-    padding: 0;
+	padding: 0;
+	margin: 0;
+     font: 12px 'Open Sans', sans-serif;
 }
 #tipue_search_foot_boxes li
 {
-    display: inline;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
 }
 #tipue_search_foot_boxes li a
 {
-    background-color: #f1f1f1;
-    border-radius: 1px;
-    border: 1px solid #dcdcdc;
-    color: #333;
-    margin-right: 7px;
-    padding: 7px 13px 8px 13px;
-    text-align: center;
-    text-decoration: none;
+	padding: 10px 17px 11px 17px;
+     background-color: #fff;
+     border: 1px solid #e2e2e2;
+     border-radius: 1px;
+	color: #333;
+	margin-right: 7px;
+	text-decoration: none;
+	text-align: center;
 }
 #tipue_search_foot_boxes li.current
 {
-    background: #fff;
-    border-radius: 1px;
-    border: 1px solid #dcdcdc;
-    color: #333;
-    margin-right: 7px;
-    padding: 7px 13px 8px 13px;
-    text-align: center;
+	padding: 10px 17px 11px 17px;
+     background: #f6f6f6;
+     border: 1px solid #e2e2e2;
+     border-radius: 1px;
+	color: #333;
+	margin-right: 7px;
+	text-align: center;
 }
 #tipue_search_foot_boxes li a:hover
 {
-    background-color: #f3f3f3;
-    border: 1px solid #ccc;
+     background: #f6f6f6;
 }
+
+
+/* spinner */
+
+
+.tipue_search_spinner
+{
+     padding: 31px 0;
+     width: 50px;
+     height: 28px;
+}
+.tipue_search_spinner > div
+{
+     background-color: #777;
+     height: 100%;
+     width: 3px;
+     display: inline-block;
+     margin-right: 2px;
+     -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+     animation: stretchdelay 1.2s infinite ease-in-out;
+}
+.tipue_search_spinner .tipue_search_rect2
+{
+     -webkit-animation-delay: -1.1s;
+     animation-delay: -1.1s;
+}
+.tipue_search_spinner .tipue_search_rect3
+{
+     -webkit-animation-delay: -1.0s;
+     animation-delay: -1.0s;
+}
+@-webkit-keyframes stretchdelay
+{
+     0%, 40%, 100%
+     {
+          -webkit-transform: scaleY(0.4)
+     }  
+     20%
+     {
+          -webkit-transform: scaleY(1.0)
+     }
+}
+@keyframes stretchdelay
+{
+     0%, 40%, 100%
+     { 
+          transform: scaleY(0.4);
+          -webkit-transform: scaleY(0.4);
+     }
+     20%
+     { 
+          transform: scaleY(1.0);
+          -webkit-transform: scaleY(1.0);
+     }
+}
+
+
+
+
+
 

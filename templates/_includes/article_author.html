@@ -1,0 +1,10 @@
+{% macro article_author(article) %}
+<div>
+    {% for author in article.authors %}
+        {% if author|string in AUTHORS %}
+            <span class="author_blurb"><a href="{{ AUTHORS.get(author|string).url }}"><span class="author_name">{{ author }}</span></a> -
+                {{ AUTHORS.get(author|string).blurb }}</span><br />
+        {% endif %}
+    {% endfor %}
+</div>
+{% endmacro %}

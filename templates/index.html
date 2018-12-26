@@ -87,21 +87,24 @@
     <div class="row-fluid">
         <div class="{{css_class}}">
             <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
+            <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives') }}">all posts</a></h1>
             </header>
         <div class="recent-posts">
             {% for article in articles %}
             {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT with context %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
-            <article>
+            <article itemscope>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
                 <section>
                     posted in
-                <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                <a href="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}#{{ article.category.slug }}-ref">{{ article.category }}</a>
                 <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </div>
                 </section>
+                {% if RECENT_ARTICLE_SUMMARY %}
+                    <p>{{article.summary}}</p>
+                {% endif %}
             </article>
             {% endif %}
             {% endfor %}

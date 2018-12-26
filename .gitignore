@@ -20,3 +20,6 @@ Icon
 Session.vim
 .netrwhist
 *~
+
+### Kate ###
+*.kate-swp
