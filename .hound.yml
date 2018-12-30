@@ -1,1 +1,11 @@
 fail_on_violations: true
+javascript:
+  enabled: true
+eslint:
+  enabled: true
+tslint:
+  enabled: true
+ruby:
+  enabled: true
+scss:
+  enabled: true
