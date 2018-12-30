@@ -25,6 +25,7 @@ before_script:
 
 script:
 - pelican content/ -o output/
+- find output/ -name '*.html' -type f -exec w3c_validator '{}' \;
 
 # Notify documentation repo for build new site after master change
 
