@@ -3,9 +3,13 @@ javascript:
   enabled: true
 eslint:
   enabled: true
+  config_file: .hound/eslintrc.json
 tslint:
   enabled: true
+  config_file: .hound/tslint.json
 ruby:
   enabled: true
+  config_file: .hound/rubocop.yml
 scss:
   enabled: true
+  config_file: .hound/scss-lint.yml
