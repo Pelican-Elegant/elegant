@@ -11,8 +11,8 @@ Also see issues tagged as [Pull Request Welcome](https://github.com/Pelican-Eleg
 # Contributing Code
 
 1. Create a new git branch specific to your changes, instead of making your commits in the master branch. For example, create a branch `fix-issue-119` and add commits to it that fix "issue 119".
-2. Create pull request from that branch.
-3. Create pull request against the `next` branch. We use `master` branch to make new releases. `next` is used for development.
+2. Update the [CHANGELOG]
+3. Create pull request from your fix branch, say `fix-issue-119`, against `next` branch of Elegant. (We use `master` branch to make new releases. `next` is used for development.)
 4. Each pull request should only have a single feature or fix. Do not add multiple features or bug fixes to the same pull request.
 5. Squash your commits to reduce noise from commit history. Use your better judgement to decide which commits should stay in the commit history, or consult project maintainers if confused.
 
@@ -59,6 +59,7 @@ All contributions will be understood to be made under the same (inbound) license
 If you are contributing code that is not yours, make sure to indicate where you got the code from (and who the author/copyright holder is) and what license you got it under.
 
 [cc-by-sa-3.0]: https://spdx.org/licenses/CC-BY-SA-3.0.html
+[changelog]: https://github.com/Pelican-Elegant/elegant/blob/master/CHANGELOG.md
 [contributing]: ./CONTRIBUTING.md
 [documentation]: https://github.com/Pelican-Elegant/documentation
 [elegant]: https://github.com/Pelican-Elegant/elegant
