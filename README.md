@@ -30,7 +30,7 @@ Elegant includes a search bar – below you can see an example of a search resul
 
 ## Documentation
 
-The documentation is currently hosted on [GitHub pages](https://pelican-elegant.github.ui), with its source code in [this repository][doc_repo].
+The documentation is currently hosted on [GitHub pages](https://pelican-elegant.github.io), with its source code in [this repository][doc_repo].
 
 ## How to contribute
 
