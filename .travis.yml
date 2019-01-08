@@ -30,6 +30,7 @@ before_script:
 script:
 - $TEST_CMD
 - find output/ -name '*.html' -type f -exec w3c_validator '{}' \;
+- w3c_validator $(find output/ -name '*.html' -type f)
 
 # Notify documentation repo for build new site after master change
 

@@ -30,7 +30,7 @@ Elegant includes a search bar – below you can see an example of a search resul
 
 ## Documentation
 
-The documentation is currently hosted on [GitHub pages](https://pelican-elegant.github.ui), with its source code in [this repository][doc_repo].
+The documentation is currently hosted on [GitHub pages](https://pelican-elegant.github.io), with its source code in [this repository][doc_repo].
 
 ## How to contribute
 
@@ -46,7 +46,7 @@ See [`CONTRIBUTING.md`][contributing] for more details.
 
 Elegant is released under the [MIT License][]. See [`AUTHORS.md`][authors] file for the list of contributors.
 
-Elegant’s documentation is released under the [Creative Commons Attribution Share Alike 3.0 Unported][CC-BY-SA-3.0] license.
+Elegant’s documentation is released under the [Creative Commons Attribution 4.0 International][CC-BY-4.0] license.
 
 All code contributions are made directly under the [MIT License][] as well. This is commonly referred to as the “Inbound=Outbound licensing model”, as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the code is then being released under to the general public.
 
@@ -57,4 +57,4 @@ All code contributions are made directly under the [MIT License][] as well. This
 [contributing]: ./CONTRIBUTING.md
 [authors]: ./AUTHORS.md
 [MIT License]: https://spdx.org/licenses/MIT.html
-[CC-BY-SA-3.0]: https://spdx.org/licenses/CC-BY-SA-3.0.html
+[CC-BY-4.0]: https://spdx.org/licenses/CC-BY-4.0.html
