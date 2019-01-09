@@ -68,10 +68,11 @@ SOCIAL = (('Twitter', 'http://twitter.com/talham_'),
           ('Email', 'mailto:talha131@gmail.com'),)
 
 # Elegant theme
-STATIC_PATHS = ['theme/images', 'images', 'extra/google3bc953001343abe6', 'extra/robots.txt']
+STATIC_PATHS = ['theme/images', 'images', 'extra/google3bc953001343abe6', 'extra/robots.txt', 'extra/BingSiteAuth.xml']
 EXTRA_PATH_METADATA = {
     'extra/google3bc953001343abe6': {'path': 'google3bc953001343abe6.html'},
-    'extra/robots.txt': {'path': 'robots.txt'}
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/BingSiteAuth.xml': {'path': 'BingSiteAuth.xml'}
 }
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
 TAG_SAVE_AS = ''
