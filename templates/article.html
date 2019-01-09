@@ -11,8 +11,8 @@
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
-{% if article.jump %}
-<meta http-equiv="refresh" content="0;URL={{ article.jump}}" />
+{% if article.redirect %}
+<meta http-equiv="refresh" content="0;URL={{ article.redirect}}" />
 {% endif %}
 {{ super() }}
 {% if article.tags or article.category or article.keywords %}
