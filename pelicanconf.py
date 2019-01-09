@@ -67,12 +67,13 @@ SOCIAL = (('Twitter', 'http://twitter.com/talham_'),
           ('GitTip', 'http://gittip.com/talha131'),
           ('Email', 'mailto:talha131@gmail.com'),)
 
+CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
+CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
+
 # Elegant theme
-STATIC_PATHS = ['theme/images', 'images', 'extra/google3bc953001343abe6', 'extra/robots.txt', 'extra/BingSiteAuth.xml']
+STATIC_PATHS = ['theme/images', 'images', 'extra/robots.txt']
 EXTRA_PATH_METADATA = {
-    'extra/google3bc953001343abe6': {'path': 'google3bc953001343abe6.html'},
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/BingSiteAuth.xml': {'path': 'BingSiteAuth.xml'}
+    'extra/robots.txt': {'path': 'robots.txt'}
 }
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
 TAG_SAVE_AS = ''
