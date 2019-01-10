@@ -1,11 +1,11 @@
 ---
 author: Andy Wegner
 title: Warnings and admonition boxes
-tags: pelican, admonitions
+tags: admonitions, warning, attention
 layout: post
 date: 2018-12-18 09:00
 comments: false
-category:
+Category: Appearance & Style
 description: Highlight important notes and warnings with admonition boxes.
 slug: warnings-admonition
 ---

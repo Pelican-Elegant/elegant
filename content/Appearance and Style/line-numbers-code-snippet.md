@@ -1,6 +1,6 @@
 Title: How to display Line Numbers in Code Snippets
-Tags: markdown, reST, pelican-theme, web-design
-Category: Elegant - Pelican Theme
+Tags: markdown, reST, code-snippets, gist
+Category: Appearance & Style
 Date: 2013-11-05 17:36
 Slug: how-to-display-line-numbers-in-code-snippets
 Disqus_identifier: wmo972t-how-to-display-line-numbers-in-code-snippets
