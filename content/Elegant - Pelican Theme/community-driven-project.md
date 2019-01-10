@@ -82,7 +82,7 @@ Right now, the discussion seems to go in the line of:
 1. [2.1][] – Make theme compatible with Pelican 4.* Open PR against branch "dev-2.1".
 1. [3.0][] – Next generation Elegant – the biggest goal is to remove dependency on Bootstrap, to make it easier to maintain. 3.0.0 should have feature parity with 2.0.0.
 
-[release_2.0]: {filename}/v2.md
+[release_2.0]: {filename}../Release%20Notes/release-notes-2.0.md
 [2.0]: https://github.com/Pelican-Elegant/elegant/milestone/3
 [2.1]: https://github.com/Pelican-Elegant/elegant/milestone/5
 [3.0]: https://github.com/Pelican-Elegant/elegant/milestone/4
