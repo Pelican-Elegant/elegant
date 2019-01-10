@@ -1,13 +1,12 @@
 ---
-Title: Elegant 2.0 release notes
-Tags: elegant, v2, release, pelican-theme, web-design, project-management
+Title: Elegant Release 2.0
+Tags: change-log, project-management
 layout: post
 date: 2019-01-03 09:00
 comments: false
 Slug: elegant-2-0-release-notes
 Summary: Big improvements on all fronts – loads of bug fixes, improved W3C conformance, a community development model, and a new website.
-Category: Release notes
-Subtitle: First community-ran release
+Category: Release Notes
 status: draft
 ---
 
