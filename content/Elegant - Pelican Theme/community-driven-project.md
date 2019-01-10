@@ -1,5 +1,4 @@
 ---
-draft: true
 Title: Elegant grows into a community-led project
 Tags: pelican-theme, web-design, project-management
 Category: Announcements
