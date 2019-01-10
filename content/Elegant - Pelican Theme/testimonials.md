@@ -10,19 +10,19 @@ Keywords:
 
 > Thanks for this amazing project.
 
-[Sebastian Lauwers](https://github.com/talha131/pelican-elegant/issues/111#issuecomment-40943827)
+[Sebastian Lauwers](https://github.com/Pelican-Elegant/elegant/issues/111#issuecomment-40943827)
 
 > Let me start by saying your theme is awesome. I would like to use it for my blog.
 
-[bnice5000](https://github.com/talha131/pelican-elegant/issues/115#issue-30103539)
+[bnice5000](https://github.com/Pelican-Elegant/elegant/issues/115#issue-30103539)
 
 > i love the elegant theme
 
-[7rack](https://github.com/talha131/pelican-elegant/issues/118#issue-32226954)
+[7rack](https://github.com/Pelican-Elegant/elegant/issues/118#issue-32226954)
 
 > I tried your pelican theme elegant, it's awesome, clean and elegant.
 
-[悟道洞穴人](https://github.com/talha131/pelican-elegant/pull/2#issue-19502670)
+[悟道洞穴人](https://github.com/Pelican-Elegant/elegant/pull/2#issue-19502670)
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/talham_">@talham_</a> yours is the most innovative Pelican theme I&#39;ve seen yet: <a href="http://t.co/worboJFRuX">http://t.co/worboJFRuX</a>. I love the search feature.</p>&mdash; Tshepang Lekhonkhobe (@tshepang_dev) <a href="https://twitter.com/tshepang_dev/statuses/384347807387095040">September 29, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

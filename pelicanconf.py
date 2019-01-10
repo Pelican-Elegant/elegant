@@ -62,10 +62,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Social
-SOCIAL = (('Twitter', 'http://twitter.com/talham_'),
-          ('Github', 'http://github.com/talha131'),
-          ('GitTip', 'http://gittip.com/talha131'),
-          ('Email', 'mailto:talha131@gmail.com'),)
+SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/'))
 
 CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"

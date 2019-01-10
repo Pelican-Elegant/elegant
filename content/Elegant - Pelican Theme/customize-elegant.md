@@ -22,7 +22,7 @@ Instead use following recommended ways.
 # Customize Style
 
 To customize Elegant's visual style, use
-[`custom.css`](https://github.com/talha131/pelican-elegant/blob/master/static/css/custom.css).
+[`custom.css`](https://github.com/Pelican-Elegant/elegant/blob/master/static/css/custom.css).
 You can override Elegant's visual style like font, color, spacing etc using
 this sheet. This empty style sheet is present at following path in your Elegant
 folder,
@@ -31,7 +31,7 @@ folder,
     static/css/custom.css
 
 Find the code of the element you want to customize in
-[`elegant.css`](https://github.com/talha131/pelican-elegant/blob/master/static/css/elegant.css).
+[`elegant.css`](https://github.com/Pelican-Elegant/elegant/blob/master/static/css/elegant.css).
 Copy the element's selector and styles, and paste it in `custom.css`. Edit this
 CSS code and customize it to your liking.
 
@@ -91,7 +91,7 @@ Touch".
 Don't worry! We got you covered!
 
 Elegant has all the customizable variables in one place. [`_defaults.html`
-file](https://github.com/talha131/pelican-elegant/blob/master/templates/_includes/_defaults.html).
+file](https://github.com/Pelican-Elegant/elegant/blob/master/templates/_includes/_defaults.html).
 
     :::bash
     templates/_includes/_defaults.html
