@@ -57,9 +57,8 @@ PAGE_URL = u'{slug}'
 PAGE_SAVE_AS = u'{slug}.html'
 
 # Feeds
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Social
 SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/'))
