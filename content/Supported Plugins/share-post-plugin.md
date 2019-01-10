@@ -1,6 +1,6 @@
 Title: How to use Social Sharing Plugin
 Tags: pelican-theme, pelican-plugin, social-media
-Category: Elegant - Pelican Theme
+Category: Supported Plugins
 Date: 2014-03-24 20:14
 Slug: how-to-use-social-sharing-plugin
 Disqus_identifier: x4jitcv-how-to-use-social-sharing-plugin
