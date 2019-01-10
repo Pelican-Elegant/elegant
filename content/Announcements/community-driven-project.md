@@ -19,12 +19,12 @@ In November 2018, Elegant’s wider community was called into a [discussion abou
 
 [Talha Mansoor][talha131] moved Elegant from a simple personal repository to a separate organisation (more on that below), which currently consist of (in alphabetical order):
 
-- [Pablo Iranzo Gómez – “iranzo”][iranzo] – owner
-- [Talha Mansoor – “talha131”][talha131] – owner
-- [Ashwin Vishnu Mohanan – “ashwinvis”][ashwinvis] – member
-- [Matija Šuklje – “silverhook”][silverhook] – owner
-- [Andrew Wegner – “AWegnerGitHub”][AWegnerGitHub] – member
-- [Calf Zhou – “calfzhou”][calfzhou] – owner
+- [Pablo Iranzo Gómez – "iranzo"][iranzo] – owner
+- [Talha Mansoor – "talha131"][talha131] – owner
+- [Ashwin Vishnu Mohanan – "ashwinvis"][ashwinvis] – member
+- [Matija Šuklje – "silverhook"][silverhook] – owner
+- [Andrew Wegner – "AWegnerGitHub"][AWegnerGitHub] – member
+- [Calf Zhou – "calfzhou"][calfzhou] – owner
 
 This way, the bus factor of the project has greatly improved and we can look into a bright future of this wonderful theme!
 
@@ -44,7 +44,7 @@ Since the code base is suddenly tended by several people, some basic rules of go
 
 As a start, the above-listed project members are not set in stone and discussion just started on [guidelines for adding new members and admins to the organization][new_members].
 
-We clarified the outbound and inbound licensing situation. Elegant is released (= outbound license) under the [MIT][] license and its documentation under the [CC-BY-4.0][] license. All code contributions are made directly under the “Inbound=Outbound licensing model”, as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the code is then being released under to the general public.
+We clarified the outbound and inbound licensing situation. Elegant is released (= outbound license) under the [MIT][] license and its documentation under the [CC-BY-4.0][] license. All code contributions are made directly under the "Inbound=Outbound licensing model", as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the code is then being released under to the general public.
 
 The [contribution guidelines][contributing] have been updated as well and should be easier to follow now.
 

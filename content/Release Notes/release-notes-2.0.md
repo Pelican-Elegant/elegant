@@ -14,7 +14,7 @@ status: draft
 
 # Introduction
 
-With more than 4 years in the making, this release started “better late then never”, but it turned out to _so much **much**_ more than that.
+With more than 4 years in the making, this release started "better late then never", but it turned out to _so much **much**_ more than that.
 
 With the [community spark re-ignited][announcement_community], this has become the biggest release since probably 1.0. And as such a very worthy release to carry the 2.0 crown.
 
@@ -51,17 +51,17 @@ Up until [1.3 release][contrib_to-1.3], the only committer was [Talha Mansoor][t
 
 From 1.3 release until the [2.0 release][contrib_to-2.0] there were **316 new commits in total** and divided as follows (excluding merge commits):
 
-- [Talha Mansoor – “talha131”][talha131]: 264 commits
-- [Pablo Iranzo Gómez – “iranzo”][iranzo]: 8 commits
-- [Calf Zhou – “calfzhou”][calfzhou]: 7 commits
-- [Andrew Wegner – “AWegnerGitHub”][AWegnerGitHub]: 6 commits
-- [Matija Šuklje – “silverhook”][silverhook]: 5 commits
-- [Jeremy Thurgood – “jerith”][jerith]: 1 commit
-- [Mobile Developer – “0x8BADFOOD”][0x8BADFOOD]: 1 commit
-- [Leo Torres – “leotrs”][leotrs]: 1 commit
-- [Gan Shen – “gshen42”][gshen42]: 1 commit
-- [Gert van Dijk – “gertvdijk”][gertvdijk]: 1 commit
-- [Miguel Lechón – “debiatan”][debiatan]: 1 commit
+- [Talha Mansoor – "talha131"][talha131]: 264 commits
+- [Pablo Iranzo Gómez – "iranzo"][iranzo]: 8 commits
+- [Calf Zhou – "calfzhou"][calfzhou]: 7 commits
+- [Andrew Wegner – "AWegnerGitHub"][AWegnerGitHub]: 6 commits
+- [Matija Šuklje – "silverhook"][silverhook]: 5 commits
+- [Jeremy Thurgood – "jerith"][jerith]: 1 commit
+- [Mobile Developer – "0x8BADFOOD"][0x8BADFOOD]: 1 commit
+- [Leo Torres – "leotrs"][leotrs]: 1 commit
+- [Gan Shen – "gshen42"][gshen42]: 1 commit
+- [Gert van Dijk – "gertvdijk"][gertvdijk]: 1 commit
+- [Miguel Lechón – "debiatan"][debiatan]: 1 commit
 
 [contrib_to-1.3]: https://github.com/Pelican-Elegant/elegant/graphs/contributors?to=2013-10-11&type=c
 [contrib_to-2.0]: https://github.com/Pelican-Elegant/elegant/graphs/contributors?from=2013-10-12&to=2018-12-27&type=c

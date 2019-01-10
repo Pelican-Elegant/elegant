@@ -97,7 +97,7 @@ Also,
 
 > To take advantage of this today you’ve got a few options. As an author you
 > create a Google+ profile and link to this profile from every site you publish
-> on using the tag rel=”author”. Then, through your “about” page on Google+,
+> on using the tag rel="author". Then, through your "about" page on Google+,
 > you can reference the domains you publish to, completing the Google+
 > authorship link.
 
