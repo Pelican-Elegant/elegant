@@ -63,7 +63,7 @@ CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None
 
 # Social
-SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/'))
+SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/'), ('RSS', SITEURL + '/feeds/all.atom.xml'))
 
 CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
