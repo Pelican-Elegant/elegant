@@ -611,3 +611,13 @@ div.figure.align-left, .article-content img.align-left {
 .author_name {
     font-weight: bold;
 }
+
+/* Patch for TIPUE round box */
+
+#tipue_search_input {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    line-height: 1;
+    height: 32px;
+}
