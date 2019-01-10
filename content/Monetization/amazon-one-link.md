@@ -1,11 +1,11 @@
 ---
 author: Pablo Iranzo Gómez (pablo.iranzo@gmail.com)
 title: Amazon onelink support
-tags: pelican, elegant, amazon
+tags: amazon, affiliates, income
 layout: post
 date: 2019-01-02 22:47:47 +0100
 comments: true
-category: Development
+category: Monetization
 description:
 slug: amazon-onelink
 disqus_identifier: amazon-onelink

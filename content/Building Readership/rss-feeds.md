@@ -1,6 +1,6 @@
 Title: How to show RSS feeds icon
 Tags: pelican-theme, font-awesome, web-design
-Category: Elegant - Pelican Theme
+Category: Building Readership
 Date: 2014-03-17 15:28
 Slug: how-to-show-rss-feeds-icon
 Disqus_identifier: ijvxwtg-how-to-show-rss-feeds-icon

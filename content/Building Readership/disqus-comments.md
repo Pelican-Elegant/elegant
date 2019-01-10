@@ -1,6 +1,6 @@
 Title: How to use Disqus Comments "Elegantly"
 Tags: pelican-theme, pelican-plugin
-Category: Elegant - Pelican Theme
+Category: Building Readership
 Date: 2014-04-21 16:39
 Slug: how-to-use-disqus-comments-elegantly
 Disqus_identifier: 9jgwmy8-how-to-use-disqus-comments-elegantly
