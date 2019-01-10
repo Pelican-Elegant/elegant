@@ -7,5 +7,6 @@ peru
 webassets
 beautifulsoup4
 markdown
+typogrify
 cssmin
 ghp-import

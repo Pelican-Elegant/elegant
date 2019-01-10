@@ -45,8 +45,8 @@ SITEMAP = {
 }
 
 # Appearance
-TYPOGRIFY = False
 THEME = 'themes/elegant'
+TYPOGRIFY = True
 DEFAULT_PAGINATION = False
 
 # Defaults
