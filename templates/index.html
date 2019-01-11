@@ -92,6 +92,7 @@
         <div class="recent-posts">
             {% for article in articles %}
             {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT with context %}
+            {% if article.visible != 'False' %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <article itemscope>
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
@@ -106,6 +107,7 @@
                     <p>{{article.summary}}</p>
                 {% endif %}
             </article>
+            {% endif %}
             {% endif %}
             {% endfor %}
         </div>
