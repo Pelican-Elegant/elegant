@@ -84,6 +84,10 @@
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
+            {% if article.stats['read_mins'] %}
+            <h4>Reading Time</h4>
+            <p>~{{ article.stats['read_mins'] }} min read</p>
+            {% endif %}
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
