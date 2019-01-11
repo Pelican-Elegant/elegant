@@ -45,6 +45,7 @@ Full archives of {{ SITENAME|striptags|e }} blog.
                     {% endif %}
                 {% endif %}
 
+                {% if article.category != 'False' %}
                 {% if loop.last %}
                     <article class="last-entry-of-year">
                 {% else %}
@@ -56,9 +57,13 @@ Full archives of {{ SITENAME|striptags|e }} blog.
                         <article>
                     {% endif %}
                 {% endif %}
+                {% endif %}
 
+                {% if article.category != 'False' %}
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
                 <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                {% endif %}
                 </article>
             {% endfor %}
         </div>
