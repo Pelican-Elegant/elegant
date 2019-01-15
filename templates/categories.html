@@ -43,10 +43,8 @@ All categories of the {{ SITENAME|striptags|e }} blog.
             {% for category, articles in categories %}
                 {% set ns = namespace(nonfalse='False') %}
 
-                {% for article in articles %}
-                    {% if article.visible != 'False' %}
-                        {% set ns.nonfalse = 'True' %}
-                    {% endif %}
+                {% for article in articles if article.visible != 'False' %}
+                    {% set ns.nonfalse = 'True' %}
                 {% endfor %}
 
                 {% if ns.nonfalse == 'True' %}
