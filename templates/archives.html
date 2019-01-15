@@ -46,17 +46,15 @@ Full archives of {{ SITENAME|striptags|e }} blog.
                     {% if ns.nonfalse == 'True' %}
                         <h2 id="{{ year }}"><a href="#{{ year }}">{{ year }}</a></h2>
 
-                        {% for article in articles %}
-                            {% if article.visible != 'False' %}
-                                {% if loop.last %}
-                                    <article itemscope class="last-entry-of-year">
-                                {% else %}
-                                    <article itemscope>
-                                {% endif %}
-                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
-                                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-                                </article>
+                        {% for article in articles if article.visible != 'False' %}
+                            {% if loop.last %}
+                                <article itemscope class="last-entry-of-year">
+                            {% else %}
+                                <article itemscope>
                             {% endif %}
+                            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+                            <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                            </article>
                         {% endfor %}
                     {% endif %}
                 {% endfor %}
