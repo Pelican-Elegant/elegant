@@ -100,7 +100,7 @@
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
                 {% for tag in article.tags|sort %}
-                <li><a href="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}#{{ tag.slug }}-ref">{{ tag }}
+                <li><a href="{{ SITEURL }}/{{ TAGS_URL|default('tags.html') }}#{{ tag.slug }}-ref">{{ tag }}
                     {% for aTag, tagged_articles in tags if aTag == tag %}
                     <span>{{ tagged_articles|count }}</span>
                     {% endfor %}</a></li>
