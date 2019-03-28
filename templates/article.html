@@ -11,8 +11,8 @@
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
-{% if article.jump %}
-<meta http-equiv="refresh" content="0;URL={{ article.jump}}" />
+{% if article.redirect %}
+<meta http-equiv="refresh" content="0;URL={{ article.redirect}}" />
 {% endif %}
 {{ super() }}
 {% if article.tags or article.category or article.keywords %}
@@ -55,12 +55,12 @@
             {{ comments(article) }}
             <hr/>
             {% include '_includes/related_posts.html' with context %}
-            {% if (article.prev_article and article.prev_article.category != 'False')
-            or (article.next_article and article.next_article.category != 'False') %}
+            {% if (article.prev_article and article.prev_article.visible != 'False')
+            or (article.next_article and article.next_article.visible != 'False') %}
             <aside>
             <nav>
             <ul class="articles-timeline">
-                {% if article.prev_article.category != 'False' %}
+                {% if article.prev_article.visible != 'False' %}
                     {% set ptitle = article.prev_article.title|striptags|e %}
                     {% set pv_title = article.prev_article.title|striptags %}
                     {%if article.prev_article.subtitle %}
@@ -69,7 +69,7 @@
                     {% endif %}
                 <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
-                {% if article.next_article.category != 'False' %}
+                {% if article.next_article.visible != 'False' %}
                     {% set ntitle = article.next_article.title|striptags|e %}
                     {% set nv_title = article.next_article.title|striptags %}
                     {%if article.next_article.subtitle %}
@@ -85,6 +85,7 @@
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
+            {% include '_includes/post_stats.html' %}
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
@@ -92,7 +93,7 @@
             {% endif %}
             {% include '_includes/last_updated.html' %}
             {% include '_includes/series.html' %}
-            {% if article.category|trim|count > 0 and article.category != 'False' %}
+            {% if article.category|trim|count > 0 and article.visible != 'False' %}
             <h4>Category</h4>
             <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a>
             {% endif %}
@@ -109,6 +110,7 @@
             {% endif %}
             {% include '_includes/social_links.html' %}
             {% include '_includes/mailchimp.html' %}
+            {% include '_includes/freelists.html' %}
         </div>
         </section>
 </div>

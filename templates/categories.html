@@ -41,27 +41,35 @@ All categories of the {{ SITENAME|striptags|e }} blog.
     <div class="span8 offset2">
         <div class="accordion" id="accordion2">
             {% for category, articles in categories %}
-            {% if category != 'False' %}
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
-                        {% set num = articles|count %}
-                        {{ category }}<span>{{ num }}</span>
-                    </a>
-                </div>
-                <div id="{{ category.slug }}-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-category">
-                            {% for article in articles %}
-                            {% if article.visible != 'False' %}
-                            <li itemscope><time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
+                {% set ns = namespace(nonfalse='False') %}
+
+                {% for article in articles if article.visible != 'False' %}
+                    {% set ns.nonfalse = 'True' %}
+                {% endfor %}
+
+                {% if ns.nonfalse == 'True' %}
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+                                {% set num = articles|count %}
+                                {{ category }}<span>{{ num }}</span>
+                            </a>
+                        </div>
+                        <div id="{{ category.slug }}-ref" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul class="list-articles-category">
+                                    {% for article in articles %}
+                                        {% if article.visible != 'False' %}
+                                            <li itemscope>
+                                                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            {% endif %}
+                {% endif %}
             {% endfor %}
         </div>
     </div>

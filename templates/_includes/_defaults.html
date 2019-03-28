@@ -98,6 +98,11 @@ search results and social media #}
 {% set MAILCHIMP_FORM_ACTION = MAILCHIMP_FORM_ACTION %}
 {% endif %}
 
+{% if not FREELISTS_NAME %} {% set FREELISTS_NAME = '' %}
+{% else %}
+{% set FREELISTS_NAME = FREELISTS_NAME %}
+{% endif %}
+
 {# It is displayed along with the SITENAME in the footer of every page #}
 {% if not SITESUBTITLE %}
 {% set SITESUBTITLE = '' %}

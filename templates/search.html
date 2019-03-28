@@ -32,6 +32,11 @@ Search results for {{ SITENAME|striptags|e }} blog.
 <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
 <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
     {% endif %}
+
+{% if 'tipue_search' in PLUGINS %}
+<script src="{{ SITEURL }}/tipuesearch_content.js"></script>
+{% endif %}
+
 <script>
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch({
@@ -43,9 +48,7 @@ $(document).ready(function() {
          'show': 10,
          'newWindow': false,
          {# I cannot place following statements in the conditionals above because then Tipue Search fails to work. Possibly a bug in Tipue Search. #}
-         {% if 'tipue_search' in PLUGINS %}
-             'contentLocation': 'tipuesearch_content.json'
-         {% else %}
+         {% if not 'tipue_search' in PLUGINS %}
              'liveDescription': '.article-content'
          {% endif %}
      });

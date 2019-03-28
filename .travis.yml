@@ -7,6 +7,10 @@ sudo: required
 python:
 - '3.5'
 
+env:
+- TEST_CMD="pelican content/ -o output/"
+- TEST_CMD="pelican content/ -o output/ -s ./publishconf.py"
+
 # prepare and move data for execution
 
 before_install:
@@ -18,14 +22,14 @@ before_install:
 - mkdir -p tests/themes/elegant
 - mv templates tests/themes/elegant/
 - mv static tests/themes/elegant/
-- cd tests && peru sync 
+- cd tests && peru sync
 
 before_script:
 - npm install travis-ci
 
 script:
-- pelican content/ -o output/
-- find output/ -name '*.html' -type f -exec w3c_validator '{}' \;
+- $TEST_CMD
+- w3c_validator $(find output/ -name '*.html' -type f)
 
 # Notify documentation repo for build new site after master change
 

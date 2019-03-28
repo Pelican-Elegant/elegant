@@ -60,6 +60,7 @@ Plugins
 * Support for `share_post` plugin
 * Support for `related_posts` plugin
 * Support for `multi_part` plugin
+* Support for `post_stats` plugin
 
 Behaviour
 ---------
