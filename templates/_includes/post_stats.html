@@ -1,4 +1,4 @@
-{% if article.stats and article.stats['read_mins'] %}
+{% if article.stats and article.stats['read_mins'] and article.stats['read_mins'] > 2 %}
     <h4>Reading Time</h4>
     <p>~{{ article.stats['read_mins'] }} min read</p>
 {% endif %}
