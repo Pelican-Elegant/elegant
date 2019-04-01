@@ -17,7 +17,7 @@
         {% else %}
         <meta name="author" content="{{ AUTHOR }}" />
         {% endif %}
-
+        {% from '_includes/_defaults.html' import READING_TIME_LOWER_LIMIT with context %}
         {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
         {% if SITE_DESCRIPTION %}
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
