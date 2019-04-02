@@ -19,6 +19,11 @@ Version 2.0 (under development)
   it easier for you to customize or even *localize* the theme
 * Adds author blurbs at the end of the article
 
+To Be Released
+===============
+
+* Changed: Reading Time is displayed only if it is greater than `READING_TIME_LOWER_LIMIT` variable (default 4 min)
+
 Performance
 -----------
 
