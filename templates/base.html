@@ -23,10 +23,6 @@
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
         {% endif %}
         {% block meta_tags_in_head %}
-        {% from '_includes/_defaults.html' import GOOGLE_PLUS_PROFILE_URL with context %}
-        {% if GOOGLE_PLUS_PROFILE_URL %}
-        <link rel="author" href={{GOOGLE_PLUS_PROFILE_URL}} />
-        {% endif %}
         {% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
         {%if TWITTER_USERNAME %}
         <meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
