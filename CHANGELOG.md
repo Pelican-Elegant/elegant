@@ -1,3 +1,8 @@
+To Be Released
+===============
+
+* Changed: Reading Time is displayed only if it is greater than `READING_TIME_LOWER_LIMIT` variable (default 4 min)
+
 Version 2.0 (under development)
 ===============================
 
@@ -18,11 +23,6 @@ Version 2.0 (under development)
 * All customizable variables consolidated in a single `_defaults.html`, making
   it easier for you to customize or even *localize* the theme
 * Adds author blurbs at the end of the article
-
-To Be Released
-===============
-
-* Changed: Reading Time is displayed only if it is greater than `READING_TIME_LOWER_LIMIT` variable (default 4 min)
 
 Performance
 -----------
