@@ -1,5 +1,6 @@
 To Be Released
 ===============
+* Fixed: Amazon One Link div is in the header
 
 Version 2.2
 ===========
