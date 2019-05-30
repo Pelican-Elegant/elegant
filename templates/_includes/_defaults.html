@@ -12,6 +12,13 @@
 {% set SOCIAL_PROFILE_LABEL = SOCIAL_PROFILE_LABEL %}
 {% endif %}
 
+{# Label for My Projects #}
+{% if not PROJECTS_TITLE %}
+{% set PROJECTS_TITLE = 'My Projects' %}
+{% else %}
+{% set PROJECTS_TITLE = PROJECTS_TITLE %}
+{% endif %}
+
 {# Label for the Email subscription form #}
 {% if not EMAIL_SUBSCRIPTION_LABEL %}
 {% set EMAIL_SUBSCRIPTION_LABEL = 'Email Newsletter' %}
