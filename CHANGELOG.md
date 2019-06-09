@@ -1,6 +1,7 @@
 To Be Released
 ===============
 
+* New: Use `PROJECTS_TITLE` to customize project list title. (default My Projects)
 * Changed: Reading Time is displayed only if it is greater than `READING_TIME_LOWER_LIMIT` variable (default 4 min)
 * Removed: Google Plus author
 
