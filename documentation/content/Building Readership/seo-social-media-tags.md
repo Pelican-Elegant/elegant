@@ -84,32 +84,3 @@ name="description"`.
 
 Your `AUTHOR` name is used in copyright tag `<meta name="copyright"`. 
 
-## Google+
-
-On the topic of Google+, article ["What is the New SEO? Pubcon 2013
-Takeaways"](https://medium.com/on-startups/f15264e5d790#6f78) has this to say,
-
-> Regardless of your opinion of Google the company or Google+ the service,
-> using Google+ as a channel for social signaling, content distribution, and
-> traffic is a requirement going forward. 
-
-Also, 
-
-> To take advantage of this today you’ve got a few options. As an author you
-> create a Google+ profile and link to this profile from every site you publish
-> on using the tag rel="author". Then, through your "about" page on Google+,
-> you can reference the domains you publish to, completing the Google+
-> authorship link.
-
-In view of these recommendations, Elegant lets you link to your Google+ profile
-using `rel="author"`.
-
-Assign your Google+ profile link to `GOOGLE_PLUS_PROFILE_URL` in Pelican
-configuration and you are done.
-
-Google help article ["Author information in search
-results"](https://support.google.com/webmasters/answer/1408986?hl=en) mentions
-one more way of linking - use a verified email address.
-
-Use whichever way suits you.
-
