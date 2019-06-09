@@ -1,9 +1,13 @@
 To Be Released
 ===============
 
+Version 2.2
+===========
+
 * New: TipueSearch updated to 7.1
 * New: Use `PROJECTS_TITLE` to customize project list title. (default My Projects)
 * Changed: Reading Time is displayed only if it is greater than `READING_TIME_LOWER_LIMIT` variable (default 4 min)
+* Changed: Project documentation has been moved inside the Elegant repository
 * Removed: Google Plus author
 
 Version 2.0 (under development)
