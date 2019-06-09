@@ -72,7 +72,6 @@ Optimization](search-engine-and-social-media-optimization#social-media-optimizat
 
 1. `FEATURED_IMAGE`
 1. `TWITTER_USERNAME`
-1. `GOOGLE_PLUS_PROFILE_URL` 
 
 This site uses Elegant theme. You
 can view its configuration files at

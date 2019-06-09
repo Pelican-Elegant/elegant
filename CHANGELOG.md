@@ -2,6 +2,7 @@ To Be Released
 ===============
 
 * Changed: Reading Time is displayed only if it is greater than `READING_TIME_LOWER_LIMIT` variable (default 4 min)
+* Removed: Google Plus author
 
 Version 2.0 (under development)
 ===============================
