@@ -1,0 +1,74 @@
+imports:
+    # The dircolors file just goes at the root of our project.
+    sitemap: plugins/
+    assets: plugins/
+    better_codeblock_line_numbering: plugins/
+    better_figures_and_images: plugins/
+    yuicompressor: plugins/
+    elegant: themes/elegant/
+    extract_toc: plugins/
+    tipue_search: plugins/
+    liquid_tags: plugins/
+    neighbors: plugins/
+    render_math: plugins/
+    related_posts: plugins/
+    share_post: plugins/
+    series: plugins/
+
+git module sitemap:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: sitemap
+
+git module yuicompressor:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: yuicompressor
+
+git module better_figures_and_images:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: better_figures_and_images
+
+git module better_codeblock_line_numbering:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: better_codeblock_line_numbering
+
+git module elegant:
+    url: https://github.com/Pelican-Elegant/elegant.git
+    rev: master
+    # export: themes/
+
+git module extract_toc:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: extract_toc
+
+git module tipue_search:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: tipue_search
+
+git module liquid_tags:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: liquid_tags
+
+git module neighbors:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: neighbors
+
+git module render_math:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: render_math
+
+git module related_posts:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: related_posts
+
+git module share_post:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: share_post
+
+git module series:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: series
+
+git module assets:
+    url: https://github.com/getpelican/pelican-plugins.git
+    pick: assets
+
