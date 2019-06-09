@@ -1,7 +1,7 @@
 
 /*
-Tipue Search 7.0
-Copyright (c) 2018 Tipue
+Tipue Search 7.1
+Copyright (c) 2019 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
@@ -317,6 +317,7 @@ http://www.tipue.com/search
                                    
                               if (set.showRelated && standard)
                               {
+                                   var ront = '';
                                    f = 0;
                                    for (var i = 0; i < tipuesearch_related.Related.length; i++)
                                    {
@@ -324,7 +325,7 @@ http://www.tipue.com/search
                                         {
                                              if (!f)
                                              {
-                                                  out += '<div class="tipue_search_related">' + tipuesearch_string_10 + '</div><div class="tipue_search_related_block">';
+                                                  out += '<div class="tipue_search_related">' + tipuesearch_string_10 + ': ';
                                              }
                                              if (show_replace)
                                              {
@@ -340,13 +341,15 @@ http://www.tipue.com/search
                                                   var r_d = tipuesearch_related.Related[i].related;
                                              }                                             
                                              
-                                             out += '<a class="tipue_search_related_btn" id="' + r_d + '">' + tipuesearch_related.Related[i].related + '</a>';
+                                             ront += '<a class="tipue_search_related_btn" id="' + r_d + '">' + tipuesearch_related.Related[i].related + '</a>, ';
                                              f++;         
                                         }
                                    }
                                    if (f)
                                    {
-                                        out += '</div>';
+                                        ront = ront.slice(0, -2);
+                                        ront += '.</div>';
+                                        out += ront;
                                    }   
                               }
 
