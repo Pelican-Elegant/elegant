@@ -1,7 +1,7 @@
 
 /*
-Tipue Search 7.0
-Copyright (c) 2018 Tipue
+Tipue Search 7.1
+Copyright (c) 2019 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
@@ -48,9 +48,9 @@ var tipuesearch_stem = {'words': [
 var tipuesearch_related = {'Related': [
      {'search': 'tipue', 'related': 'Search', 'include': 1},
      {'search': 'tipue', 'related': 'jQuery'},
-     {'search': 'tipue', 'related': 'Features'},
+     {'search': 'tipue', 'related': 'Blog'},
      {'search': 'tipue', 'related': 'Support'},
-     {'search': 'tipue search', 'related': 'Help', 'include': 1},
+     {'search': 'tipue search', 'related': 'Demo', 'include': 1},
      {'search': 'tipue search', 'related': 'Support'}
 ]};
 
@@ -67,8 +67,8 @@ var tipuesearch_string_7 = '>';
 var tipuesearch_string_8 = 'Nothing found.';
 var tipuesearch_string_9 = 'Common words are largely ignored.';
 var tipuesearch_string_10 = 'Related';
-var tipuesearch_string_11 = 'Search too short. Should be one character or more.';
-var tipuesearch_string_12 = 'Search too short. Should be';
+var tipuesearch_string_11 = 'Search should be one character or more.';
+var tipuesearch_string_12 = 'Search should be';
 var tipuesearch_string_13 = 'characters or more.';
 var tipuesearch_string_14 = 'seconds';
 var tipuesearch_string_15 = 'Open Image';
