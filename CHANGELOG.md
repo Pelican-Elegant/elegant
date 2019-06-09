@@ -1,5 +1,6 @@
 To Be Released
 ===============
+* New: support for `Photos` plugin for photo gallery creation
 
 Version 2.2
 ===========
