@@ -13,7 +13,6 @@ imports:
     related_posts: plugins/
     share_post: plugins/
     series: plugins/
-    content: content/
 
 git module sitemap:
     url: https://github.com/getpelican/pelican-plugins.git
@@ -66,7 +65,3 @@ git module series:
 git module assets:
     url: https://github.com/getpelican/pelican-plugins.git
     pick: assets
-
-git module content:
-    url: https://github.com/Pelican-Elegant/documentation
-    pick: content
