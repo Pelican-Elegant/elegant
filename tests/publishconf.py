@@ -12,9 +12,6 @@ from pelicanconf import *
 
 SITEURL = 'https://pelican-elegant.github.io'
 RELATIVE_URLS = False
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
-TAG_FEED_ATOM = 'feeds/{slug}.atom.xml'
+SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/'), ('RSS', SITEURL + '/feeds/all.atom.xml'))
 
 DELETE_OUTPUT_DIRECTORY = False

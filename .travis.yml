@@ -1,4 +1,4 @@
-# Copyright (C) 2017, 2018 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
+# Copyright (C) 2017, 2018, 2019 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
 
 language: python
 dist: trusty
@@ -22,16 +22,35 @@ before_install:
 - mkdir -p tests/themes/elegant
 - mv templates tests/themes/elegant/
 - mv static tests/themes/elegant/
-- cd tests && peru sync 
+- mv documentation/content tests/
+- cd tests && peru sync
+# Above has prepared our environment with the checkout of the commit
+# being tested and has populated the required plugins, etc
 
-before_script:
-- npm install travis-ci
+# It moves actual theme in this branch, PR, etc, to the generation folder
 
+
+# Test build commands with devel and production seetings, validate links and spelling on markdown files
 script:
 - $TEST_CMD
 - w3c_validator $(find output/ -name '*.html' -type f)
+- tox
 
-# Notify documentation repo for build new site after master change
 
+# As we host documentation in another repo, we need to trick the make script to store in the new repository
 after_success:
-- node trigger-build.js
+- rm -rf .git/
+- git init
+- git config user.name "Travis CI"
+- git config user.email "travis@domain.com"
+- git config --global push.default simple
+- git remote add origin https://${TRATOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
+- test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && make github
+- sh .change-branch.sh
+- peru sync
+- git remote remove origin
+- git remote add origin https://${TRATOKEN}@github.com/Pelican-Elegant/next
+- test $TRAVIS_BRANCH = "next" && test $TRAVIS_PULL_REQUEST = "false" && make github
+
+# Above changes our repo branch so it points to website or 'next' website
+# uses peru to force a resync of the theme and pushes website live
