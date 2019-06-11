@@ -43,10 +43,22 @@
        {% else %}
         <div class="span8 offset2 article-content">
             {% endif %}
-
             {% import '_includes/translations.html' as translations with context %}
             {{ translations.translations_for(article) }}
             {{ article.content }}
+
+            {% if article.photo_gallery %}
+            <div class="gallery">
+                {% for title, gallery in article.photo_gallery %}
+                <h1>{{ title }}</h1>
+                {% for name, photo, thumb, exif, caption in gallery %}
+                <a href="{{ SITEURL }}/{{ photo }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}"><img
+                        src="{{ SITEURL }}/{{ thumb }}"></a>
+                {% endfor %}
+                {% endfor %}
+            </div>
+            {% endif %}
+
             {% from '_includes/article_author.html' import article_author with context %}
             {{ article_author(article) }}
             {% from '_includes/share_links.html' import share_links with context %}
