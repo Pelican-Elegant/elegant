@@ -1,6 +1,9 @@
 To Be Released
 ===============
-* New: support for `Photos` plugin for photo gallery creation
+
+* New: FontAwesome updated to version 4.7.0
+* New: `Photos` plugin support for photo gallery creation
+* Fixed: Amazon One Link div is in the header
 
 Version 2.2
 ===========
