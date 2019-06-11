@@ -1,6 +1,5 @@
 To Be Released
 ===============
-* Fixed: Amazon One Link div is in the header
 
 * New: FontAwesome updated to version 4.7.0
 * New: `Photos` plugin support for photo gallery creation
