@@ -1,6 +1,8 @@
 To Be Released
 ===============
 
+* New: FontAwesome updated to version 4.7.0
+
 Version 2.2
 ===========
 
