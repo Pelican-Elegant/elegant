@@ -23,6 +23,11 @@
 {{ smo_metadata(article) }}
 {% endblock meta_tags_in_head %}
 
+{% block head_links %}
+{{ super() }}
+{% include '_includes/photos_header.html' %}
+{% endblock head_links %}
+
 {% block content %}
 <article itemscope>
 <div class="row-fluid">
@@ -132,4 +137,5 @@
     {{ super() }}
     {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script(article) }}
+    {% include '_includes/photos_footer.html' %}
 {% endblock script %}

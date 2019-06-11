@@ -157,3 +157,9 @@ PROJECTS = [{
 {% set READING_TIME_LOWER_LIMIT = READING_TIME_LOWER_LIMIT | int %}
 {% endif %}
 
+{# Lightbox enabled by default gallery  #}
+{% if not PHOTOS_LIGHTBOX %}
+{% set PHOTOS_LIGHTBOX = 'True' %}
+{% else %}
+{% set PHOTOS_LIGHTBOX = PHOTOS_LIGHTBOX %}
+{% endif %}
