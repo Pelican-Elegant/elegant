@@ -70,6 +70,13 @@ Refer to the plugin documentation for configuration, but at the time of this wri
 `PHOTO_EXIF_COPYRIGHT_AUTHOR = 'Your Name Here'`
 : Adds an author name to the photo's exif and copyright statement. Defaults to `AUTHOR` value from the `pelicanconf.py`
 
+Lightbox is enabled by default. You can disable it with `PHOTOS_LIGHTBOX` variable. Set it to `FALSE` in your configuration to disable.
+
+```
+PHOTOS_LIGHTBOX = False
+```
+
+
 ## How to use it in your articles
 
 In order to use it, in your `YAML` preamble of articles, add a line like this:
