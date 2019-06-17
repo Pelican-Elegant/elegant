@@ -1,0 +1,43 @@
+# Copyright (C) 2017, 2018 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
+
+language: python
+dist: trusty
+sudo: required
+
+# notifications:
+#   email: false
+#   irc:
+#     channels:
+#       - "us.freenode.net#citellus"
+#     on_success: change
+
+python:
+- '3.5'
+
+before_install:
+- pip install -U pip
+- pip install -U setuptools
+- pip install -r requirements.txt
+- pip install -r test-requirements.txt
+- pip install peru
+- peru sync
+- pip install tox
+
+script:
+- tox
+- make html
+# - python-codacy-coverage -r coverage.xml
+
+after_success:
+- rm -rf .git/
+- git init
+- git config user.name "Travis CI"
+- git config user.email "travis@domain.com"
+- git config --global push.default simple
+- git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
+- make github
+- sh .change-branch.sh
+- peru sync
+- git remote remove origin
+- git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/next
+- make github

@@ -5,8 +5,8 @@ misspellings
 pelican
 peru
 webassets
-bs4
+beautifulsoup4
 markdown
+typogrify
 cssmin
 ghp-import
-Online-W3C-Validator
