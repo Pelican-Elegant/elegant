@@ -12,6 +12,6 @@ from pelicanconf import *
 
 SITEURL = 'https://pelicanelegant.netlify.com'
 RELATIVE_URLS = False
-SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/'), ('RSS', SITEURL + '/feeds/all.atom.xml'))
 
 DELETE_OUTPUT_DIRECTORY = False
+SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/elegant'), ('RSS', SITEURL + '/feeds/all.atom.xml'))
