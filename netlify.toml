@@ -1,5 +1,5 @@
 [build]
-  base = "documentation"
-  publish = "documentation/output"
+  base = "./documentation/"
+  publish = "./documentation/output"
   command = "make publish-netlify"
 
