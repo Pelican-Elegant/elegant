@@ -4,7 +4,9 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Pelican Elegant Team'
 SITENAME = u"Elegant Documentation"
-SITEURL = '/'
+SITEURL = ''
+
+PATH = 'content'
 
 # Regional Settings
 TIMEZONE = 'Asia/Karachi'
@@ -14,19 +16,19 @@ DEFAULT_LANG = u'en'
 # Plugins and extensions
 MARKDOWN = {
     'extension_configs': {
+        'markdown.extensions.admonition': {},
         'markdown.extensions.codehilite': {
             'css_class': 'highlight'
         },
         'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
         'markdown.extensions.toc': {
             'permalink': 'true'
         },
-        'markdown.extensions.meta': {},
-        'markdown.extensions.admonition': {},
     }
 }
 
-PLUGIN_PATHS = ['plugins/']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img',
            'neighbors', 'render_math', 'related_posts', 'assets', 'share_post',
            'series']
@@ -98,7 +100,7 @@ FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
 # Legal
 SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license" 
     href="http://creativecommons.org/licenses/by/4.0/">
-    Creative Commons Attribution 4.0 International License</a>.""" 
+    Creative Commons Attribution 4.0 International License</a>."""
 
 # SEO
 SITE_DESCRIPTION = u'Documentation website for Pelican-Elegant theme originally created by Talha Mansoor'
@@ -106,10 +108,10 @@ SITE_DESCRIPTION = u'Documentation website for Pelican-Elegant theme originally 
 # Landing Page
 PROJECTS = [
     {
-        'name': 'Elegant', 
+        'name': 'Elegant',
         'url': 'https://github.com/Pelican-Elegant/elegant',
         'description': 'A clean and distraction free Pelican theme, with search and a lot more unique features. Built '
-            'with Jinja2 and Bootstrap'
+        'with Jinja2 and Bootstrap'
     },
     {
         'name': 'Elegant Documentation', 'url': 'https://github.com/Pelican-Elegant/documentation',
