@@ -1,6 +1,8 @@
 pelican.pid
-output/*
-srv.pid
+output/
+plugins/
+themes/
+/rv.pid
 .tox
 .vscode
 .idea
