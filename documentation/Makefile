@@ -73,16 +73,16 @@ publish:
 
 plugins-sync:
 	@echo 'Make a fresh shallow copy of pelican-plugins'
-	rm -rf $(BASEDIR)/plugins
+	rm -rf plugins
 # For now I don't need submodules plugins. When I do use
 # --recurse-submodules and --shallow-submodules
 #  Do specify path in --recurse-submodules so that only relevant plugin is downloaded
-	git clone --jobs 8 --depth 1 https://github.com/getpelican/pelican-plugins.git $(BASEDIR)/plugins
+	git clone --jobs 8 --depth 1 https://github.com/getpelican/pelican-plugins.git plugins
 
 themes-sync:
 	@echo 'Make a fresh shallow copy of pelican-elegant theme'
-	rm -rf $(BASEDIR)/themes
-	git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git $(BASEDIR)/themes/elegant
+	rm -rf themes
+	git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git themes/elegant
 
 publish-netlify: plugins-sync themes-sync publish
 
