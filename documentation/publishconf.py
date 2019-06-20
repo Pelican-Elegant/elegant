@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'test-elegant.netlify.com'
+SITEURL = 'https://test-elegant.netlify.com'
 RELATIVE_URLS = False
 
 SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/elegant'), ('RSS', SITEURL + '/feeds/all.atom.xml'))
