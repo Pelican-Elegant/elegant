@@ -4,9 +4,9 @@ Category: Elegant - Pelican Theme
 Date: 2014-04-23 18:25
 Slug: configuration-variables-and-metadata-list
 Disqus_identifier: dexlwa8-configuration-variables-and-metadata-list
-Subtitle: 
+Subtitle:
 Summary: List of all the configuration variables and metadata that you can use with Elegant
-Keywords: 
+Keywords:
 
 [TOC]
 
@@ -66,7 +66,7 @@ These are the variables used with different Pelican plugins,
 1. `SHARE_POST_INTRO` used with [`share_post`
    plugin](how-to-use-social-sharing-plugin)
 1. `RELATED_POSTS_LABEL` used with [`related_posts`
-   plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) 
+   plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 
 These are the variables used for [Social Media
 Optimization](search-engine-and-social-media-optimization#social-media-optimization-smo),
@@ -85,24 +85,23 @@ metadata](http://docs.getpelican.com/en/latest/getting_started.html#file-metadat
 from your articles and pages text files to get information about your posts,
 like tags, authors etc.
 
-On top of *"official"* metadata, Elegant uses some optional metadata that you
+On top of _"official"_ metadata, Elegant uses some optional metadata that you
 can use in your articles and pages.
 
 1. `summary` used for [Search Engine
-    Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
+   Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
 1. `subtitle` used to set [article
-    subtitle](elegant-best-pelican-theme-features#article-subtitle)
+   subtitle](elegant-best-pelican-theme-features#article-subtitle)
 1. `keywords` used for [Search Engine
-    Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
+   Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
 1. `modified` used to set [last updated time](how-does-modified-metadata-works)
-    of the article
+   of the article
 1. `series_title` used with [`multi_part` plugin](how-to-use-multi-part-plugin)
 1. `featured_image` used for [Social Media
-    Optimization](search-engine-and-social-media-optimization#social-media-optimization-smo)
+   Optimization](search-engine-and-social-media-optimization#social-media-optimization-smo)
 1. `comments_intro` used with
-    [comments](how-to-use-disqus-comments-elegantly#invite-visitors-to-comment)
+   [comments](how-to-use-disqus-comments-elegantly#invite-visitors-to-comment)
 1. `share_post_intro` used with [`share_post`
-    plugin](how-to-use-social-sharing-plugin)
+   plugin](how-to-use-social-sharing-plugin)
 1. `disqus_identifier` used with
-    [comments](how-to-use-disqus-comments-elegantly#disqus-thread-id)
-
+   [comments](how-to-use-disqus-comments-elegantly#disqus-thread-id)

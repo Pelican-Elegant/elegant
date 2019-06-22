@@ -46,7 +46,7 @@ See [`CONTRIBUTING.md`][contributing] for more details.
 
 Elegant is released under the [MIT License][]. See [`AUTHORS.md`][authors] file for the list of contributors.
 
-Elegant’s documentation is released under the [Creative Commons Attribution 4.0 International][CC-BY-4.0] license.
+Elegant’s documentation is released under the [Creative Commons Attribution 4.0 International][cc-by-4.0] license.
 
 All code contributions are made directly under the [MIT License][] as well. This is commonly referred to as the “Inbound=Outbound licensing model”, as the license everyone contributes their code under (i.e. inbound license) is exactly the same as the license that the code is then being released under to the general public.
 
@@ -56,5 +56,5 @@ All code contributions are made directly under the [MIT License][] as well. This
 [issue]: https://github.com/Pelican-Elegant/elegant/issues/
 [contributing]: ./CONTRIBUTING.md
 [authors]: ./AUTHORS.md
-[MIT License]: https://spdx.org/licenses/MIT.html
-[CC-BY-4.0]: https://spdx.org/licenses/CC-BY-4.0.html
+[mit license]: https://spdx.org/licenses/MIT.html
+[cc-by-4.0]: https://spdx.org/licenses/CC-BY-4.0.html

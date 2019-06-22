@@ -4,13 +4,13 @@ Category: Building Readership
 Date: 2014-04-20 16:31
 Slug: search-engine-and-social-media-optimization
 Disqus_identifier: 7mh4xjn-search-engine-and-social-media-optimization
-Summary: 
-Keywords: 
+Summary:
+Keywords:
 
 [TOC]
 
 Search Engine Optimization(SEO) is a moving target which is often
-misunderstood.  Rise of social media has changed the traditional SEO
+misunderstood. Rise of social media has changed the traditional SEO
 techniques. Changes in search algorithms has made several SEO tecniques
 obsolete.
 
@@ -63,7 +63,7 @@ Elegant uses following tags,
 1. `twitter:card` is set to "summary"
 1. `twitter:title` is set to article title and optional subtitle
 1. `twitter:creator` is set to `TWITTER_USERNAME` if defined in Pelican
-   configuration 
+   configuration
 1. `twitter:description` is set to article summary
 1. `twitter:image` is set to `featured_image`. The `featured_image` discussion
    above is also applicable in this case
@@ -74,13 +74,10 @@ before you can start using Twitter Cards.
 
 ## Search Engine Optimization (SEO)
 
-Elegant puts tags and category of your article in keywords tag `<meta
-name="keywords"`. 
+Elegant puts tags and category of your article in keywords tag `<meta name="keywords"`.
 
 You can add your own keywords by defining `keywords` in article metadata.
 
-`SITE_DESCRIPTION` and article `summary` is used in description tag `<meta
-name="description"`.
+`SITE_DESCRIPTION` and article `summary` is used in description tag `<meta name="description"`.
 
-Your `AUTHOR` name is used in copyright tag `<meta name="copyright"`. 
-
+Your `AUTHOR` name is used in copyright tag `<meta name="copyright"`.

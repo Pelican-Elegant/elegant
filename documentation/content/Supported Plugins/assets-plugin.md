@@ -35,7 +35,7 @@ If you add a new CSS file to the theme while developing the Elegant theme, you
 will need to add it to the list of files that are automatically minified.
 
 Find the file `templates/_includes/minify_css.html`. You will need to add your
-new CSS file to Line 1, *before* `css/custom.css`.
+new CSS file to Line 1, _before_ `css/custom.css`.
 
 We recommend you add custom CSS to `custom.css` for personal use. If you add to
 `custom.css` you will not need to modify the `minify_css.html` file.

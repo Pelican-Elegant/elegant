@@ -10,7 +10,6 @@ Also see issues tagged as [Pull Request Welcome](https://github.com/Pelican-Eleg
 
 If you want to contribute to documentation instead, do so in the [documentation repository][documentation]. Some easy tasks to tackle there are tagged as [Good First Issue](https://github.com/Pelican-Elegant/documentation/labels/good%20first%20issue)
 
-
 # Contributing Code
 
 1. Create a new git branch specific to your changes, instead of making your commits in the master branch. For example, create a branch `fix-issue-119` and add commits to it that fix “issue 119”.
@@ -50,7 +49,6 @@ For more on the interactive rebase command of Git, see [its official documentati
 
 [git_rebase]: https://git-scm.com/docs/user-manual#interactive-rebase
 
-
 # New Features and Styles
 
 If you plan to add new features to the theme, please make sure that:
@@ -88,7 +86,6 @@ Specifically:
 
 Refer to [Google's HTML/CSS Style Guide][google_style_guide] for all other formatting rules.
 
-
 # Voting Process
 
 Any new features, bigger changes, decisions on what should constitute the next milestone or wider goals etc. should go through a vote, as follows.
@@ -97,7 +94,6 @@ Any new features, bigger changes, decisions on what should constitute the next m
 1. As soon as a suggestion (or several) are set in place, set a deadline, no shorter than 10 days. Also at this stage tag the issue with the “vote” label.
 1. People can vote with the :+1: and :-1: emoji on individual suggestions. Anyone may cast votes for as many suggestions as they want.
 1. At the end of the deadline, the suggestion with most votes (= № of :+1: - № of :-1:) is taken.
-
 
 # Licensing (Inbound=Outbound)
 

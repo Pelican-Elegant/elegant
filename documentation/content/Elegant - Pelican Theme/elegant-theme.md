@@ -171,9 +171,9 @@ cannot judge his progress correctly. Hacker News hosted [a
 discussion](https://news.ycombinator.com/item?id=6246777) on this topic.
 
 > tons of online articles list comments on the same page, so the scroll bar is
-> almost a negative incentive to keep reading.  "I've read this much of the
-> article and I'm only 1/20th of the way down?" [user stops reading, unaware
-> that there's 450 comments and the article is actually pretty short]
+> almost a negative incentive to keep reading. "I've read this much of the
+> article and I'm only 1/20th of the way down?"
+> [user stops reading, unaware that there's 450 comments and the article is actually pretty short]
 
 Elegant keeps the comments section hidden by default. Reader can hide and
 unhide the section by clicking on the comments section.
@@ -205,7 +205,6 @@ Check out the screenshots,
 ![Count of articles in a category is displayed in
 superscript]({static}/images/elegant-theme_category-superscript-count.png)
 
-
 ![Count of articles that have been tagged is displayed in
 superscript]({static}/images/elegant-theme_tag-superscript-count.png)
 
@@ -227,7 +226,7 @@ Article title · Site Name
 tab]({static}/images/elegant-theme_page-title.png)
 
 Some sites put site title first and article title later in the `<title>` tag.
-There is a problem with this approach.  When you open too many tabs, browser
+There is a problem with this approach. When you open too many tabs, browser
 delimits tab's title from the end. In such cases, only the first few words or
 even letters of the `<title>` are left visible.
 
@@ -270,7 +269,7 @@ is inserted between them.
 ![Article title and subtitle separated with a
 hyphen]({static}/images/elegant-theme_article-subtitle-hyphen.png)
 
-***************************
+---
 
 ## Elegant - Technical Nitty-Gritty
 
@@ -294,10 +293,10 @@ to your site too.
 Front end design is not my strong suite. I must have made some blunders in this
 design unknowingly. Please don't let me go away with buggy code.
 
-* File bugs at [Github
+- File bugs at [Github
   issues](https://github.com/Pelican-Elegant/elegant/issues)
-* Share your ideas about the design in the comments below
-* And most of all contribute improvements to [this
+- Share your ideas about the design in the comments below
+- And most of all contribute improvements to [this
   project](https://github.com/Pelican-Elegant/elegant/)
 
 There are two problem areas that I can think of,

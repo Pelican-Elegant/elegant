@@ -31,15 +31,15 @@ That's it! Now your site will support Markdown admonitions.
 
 There are several styles available and Elegant supports the recommended values of:
 
- - `attention`
- - `caution`
- - `danger`
- - `error`
- - `hint`
- - `important`
- - `note`
- - `tip`
- - `warning`
+- `attention`
+- `caution`
+- `danger`
+- `error`
+- `hint`
+- `important`
+- `note`
+- `tip`
+- `warning`
 
 # Examples
 
@@ -49,12 +49,11 @@ Let's see some examples!
 
 You can use either `danger` or `error` to get a red admonition box.
 
-
     !!! danger
         This is a danger or error admonition
 
 !!! danger
-    This is a danger or error admonition
+This is a danger or error admonition
 
 ## Default Attention, Caution, Warning
 
@@ -64,7 +63,7 @@ An `attention`, `caution` or `warning` admonition will be yellow.
         This is an attention, caution or warning admonition
 
 !!! warning
-    This is an attention, caution or warning admonition
+This is an attention, caution or warning admonition
 
 ## Default Important, Note
 
@@ -74,7 +73,7 @@ Use `important` or `note` to get a green admonition box.
         This is an important or note admonition
 
 !!! important
-    This is an important or note admonition
+This is an important or note admonition
 
 ## Default Hint, Tip
 
@@ -84,7 +83,7 @@ Use either `hint` or `tip` to get a blue admonition box.
         This is a hint or tip admonition
 
 !!! hint
-    This is a hint or tip admonition
+This is a hint or tip admonition
 
 ## Custom Titles
 
@@ -98,8 +97,8 @@ type of admonition you are utilizing.
         quotes after the `hint`.
 
 !!! hint "Use double quotes to change the title"
-    This admonition box contains a custom tile because I placed it in double
-    quotes after the `hint`.
+This admonition box contains a custom tile because I placed it in double
+quotes after the `hint`.
 
 ## No title
 
@@ -111,5 +110,5 @@ passing an empty string (`""`) after the admonition type.
         and will be highlighted as such.
 
 !!! important ""
-    This box doesn't require a title, but is still an `important` admonition
-    and will be highlighted as such.
+This box doesn't require a title, but is still an `important` admonition
+and will be highlighted as such.

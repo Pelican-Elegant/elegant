@@ -4,9 +4,9 @@ Category: Appearance & Style
 Date: 2014-03-18 11:03
 Slug: how-elegant-displays-table-of-contents
 Disqus_identifier: lm95rjd-how-elegant-displays-table-of-contents
-Subtitle: 
-Summary: Elegant shows Table of Contents, if available, non intrusively to give a clean reading experience to the visitor 
-Keywords: 
+Subtitle:
+Summary: Elegant shows Table of Contents, if available, non intrusively to give a clean reading experience to the visitor
+Keywords:
 
 [TOC]
 
@@ -117,4 +117,3 @@ title generation in reStructuredText. You need to add following rule in your
 
 See [this article](how-to-use-custom-css "How to use custom.css") to understand how you can use
 `custom.css`.
-

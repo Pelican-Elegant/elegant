@@ -28,6 +28,7 @@ Title: Article redirection
 Slug: article-redirect
 redirect: https://pelican-elegant.github.io/
 ---
+
 ```
 
 When the article loads, it will refresh to the new url defined in redirect, allowing you to still provide search engines and users a way to get to the new article.

@@ -4,12 +4,12 @@ Category: Supported Plugins
 Date: 2014-03-24 20:14
 Slug: how-to-use-social-sharing-plugin
 Disqus_identifier: x4jitcv-how-to-use-social-sharing-plugin
-Subtitle: 
+Subtitle:
 Summary: Elegant integrates with Share Post plugin of Pelican out of the box
 Keywords: social networks, share posts,
 
 No blog is complete without a social sharing plugin, that invites visitors to
-share your post on popular social networks. 
+share your post on popular social networks.
 
 There are plethora of social sharing widgets available online. Unfortunately
 most of these widgets are used to track users. [Technology
@@ -28,7 +28,7 @@ Obviously, you cannot expect that all your visitors to use a privacy plugin.
 Most browsers on mobile platforms do not let user install any sort of plugin.
 
 Reinventing social widget will require educating users about it. The new style
-will be alien to them and may result in a decrease in number of *shares* on
+will be alien to them and may result in a decrease in number of _shares_ on
 social networks.
 
 Elegant has a far simpler solution. It uses Pelican's [Share
@@ -54,4 +54,3 @@ default "Share on:" text.
 
 You can also define it on per article basis by defining `share_post_intro` in
 your article metadata.
-

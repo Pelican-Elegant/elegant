@@ -5,8 +5,7 @@ Date: 2013-11-11 23:05
 Slug: how-to-use-statcounter-and-google-analytics
 Disqus_identifier: 4kv80xq-how-to-use-statcounter-and-google-analytics
 Subtitle:
-Summary: Elegant Pelican theme supports StatCounter and Google Analytics out of
-    the box. This articles describes how to set them up.
+Summary: Elegant Pelican theme supports StatCounter and Google Analytics out of the box. This articles describes how to set them up.
 Keywords:
 
 [TOC]
@@ -18,8 +17,7 @@ Analytics](http://www.google.com/analytics/) and [Heap](https://heapanalytics.co
 You have to put web property ID assigned to you by the these services, in your
 configuration to use the tracking code.
 
-StatCounter
------------
+## StatCounter
 
 You need two codes from StatCounter- project ID and security code.
 
@@ -45,8 +43,7 @@ Assign `sc_project` value to `STAT_COUNTER_PROJECT` and `sc_security` to `STAT_C
     STAT_COUNTER_PROJECT = 5555555
     STAT_COUNTER_SECURITY = u'XXXXXXXX'
 
-Google Analytics
-----------------
+## Google Analytics
 
 [Get your property
 ID](https://support.google.com/analytics/answer/1032385?hl=en) from your Google
@@ -59,8 +56,7 @@ Set `GOOGLE_ANALYTICS` variable to it in your configuration.
 
 That's it. Elegant will take care of the rest.
 
-Heap
-----
+## Heap
 
 From your [Heap console](https://heapanalytics.com/app/account), navigate to
 Settings->Projects. You need to copy the Project ID you want to log to.

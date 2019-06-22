@@ -30,50 +30,49 @@ Setting an automated build required several steps to be done:
 
 One of the key pieces is a properly configured `.travis.yaml` like the one we started using:
 
-~~~yaml
+```yaml
 language: python
 dist: trusty
 sudo: required
 
 python:
-- '3.5'
+  - "3.5"
 
 before_install:
-- pip install -U pip
-- pip install -U setuptools
-- pip install -r requirements.txt
-- pip install -r test-requirements.txt
-- pip install peru
-- peru sync
-- pip install tox
+  - pip install -U pip
+  - pip install -U setuptools
+  - pip install -r requirements.txt
+  - pip install -r test-requirements.txt
+  - pip install peru
+  - peru sync
+  - pip install tox
 
 script:
-- tox
-- make html
+  - tox
+  - make html
 
 after_success:
-- rm -rf .git/
-- git init
-- git config user.name "Travis CI"
-- git config user.email "travis@domain.com"
-- git config --global push.default simple
-- git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
-- make github
-~~~
+  - rm -rf .git/
+  - git init
+  - git config user.name "Travis CI"
+  - git config user.email "travis@domain.com"
+  - git config --global push.default simple
+  - git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
+  - make github
+```
 
 ## Image setup
 
 So, from above file we do:
 
-~~~yaml
+```yaml
 language: python
 dist: trusty
 sudo: required
 
 python:
-- '3.5'
-~~~
-
+  - "3.5"
+```
 
 - Configure language as python
 - Select distribution
@@ -86,16 +85,16 @@ All of this depends on Travis Image being used and their documentation
 
 Now, we'll prepare the environment for our tests:
 
-~~~yaml
+```yaml
 before_install:
-- pip install -U pip
-- pip install -U setuptools
-- pip install -r requirements.txt
-- pip install -r test-requirements.txt
-- pip install peru
-- peru sync
-- pip install tox
-~~~
+  - pip install -U pip
+  - pip install -U setuptools
+  - pip install -r requirements.txt
+  - pip install -r test-requirements.txt
+  - pip install peru
+  - peru sync
+  - pip install tox
+```
 
 We do install pip, setuptools, repository and test requirements, peru and tox.
 
@@ -104,11 +103,12 @@ Peru is used to grab additional dependencies for elegant (plugins, latest theme,
 ## Actual tests
 
 This is really easy in our case:
-~~~yaml
+
+```yaml
 script:
-- tox
-- make html
-~~~
+  - tox
+  - make html
+```
 
 We run 'tox' that allows to automate Python virtualenv and tests and then, use the Makefile from Pelican to build the site and tests plugins, etc
 
@@ -118,16 +118,16 @@ If everything succeeds, we're ready for the next step (publishing)
 
 All the environment setup and tests have succeed now, we do need to push the site 'live'
 
-~~~yaml
+```yaml
 after_success:
-- rm -rf .git/
-- git init
-- git config user.name "Travis CI"
-- git config user.email "travis@domain.com"
-- git config --global push.default simple
-- git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
-- make github
-~~~
+  - rm -rf .git/
+  - git init
+  - git config user.name "Travis CI"
+  - git config user.email "travis@domain.com"
+  - git config --global push.default simple
+  - git remote add origin https://${GITHUB_TOKEN}@github.com/Pelican-Elegant/pelican-elegant.github.io.git
+  - make github
+```
 
 This piece does the final step, first removes info about the repo containing the actual documentation and allows us to initialize a new one, that we make it point towards the repo we're pushing (so that we keep separate actual website content from 'rendered' website).
 
@@ -138,7 +138,7 @@ In the final step, 'make github' uses the makefile provided with pelican to push
 So, right now we've accomplished several things:
 
 - We do use pelican in the same way that we'll do for our own website
-    - We do also have as a consequence, a ['live' demo](https://pelican-elegant.github.io) of latest master branch showcasing features
+  - We do also have as a consequence, a ['live' demo](https://pelican-elegant.github.io) of latest master branch showcasing features
 - We did automate publishing of webpage as soon as contributors send new articles and are approved for merge
 - All requires no extra change to regular workflow as <Travis-ci.org> is the glue here puting together all the pieces.
 

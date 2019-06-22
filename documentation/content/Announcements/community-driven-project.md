@@ -8,8 +8,8 @@ Subtitle: The beggining of a beautiful friendship
 Summary:  Elegant has grown into a community-driven project. It also got a new website and organisational structure, culminating in its biggest release yet.
 Keywords:
 ---
-[TOC]
 
+[TOC]
 
 # Move to community development model
 
@@ -23,20 +23,19 @@ In November 2018, Elegant’s wider community was called into a [discussion abou
 - [Talha Mansoor – "talha131"][talha131] – owner
 - [Ashwin Vishnu Mohanan – "ashwinvis"][ashwinvis] – member
 - [Matija Šuklje – "silverhook"][silverhook] – owner
-- [Andrew Wegner – "AWegnerGitHub"][AWegnerGitHub] – member
+- [Andrew Wegner – "AWegnerGitHub"][awegnergithub] – member
 - [Calf Zhou – "calfzhou"][calfzhou] – owner
 
 This way, the bus factor of the project has greatly improved and we can look into a bright future of this wonderful theme!
 
 [pelican]: https://getpelican.com
-[AWegnerGitHub]: https://andrewwegner.com
+[awegnergithub]: https://andrewwegner.com
 [ashwinvis]: https://ashwinvis.github.io/
 [calfzhou]: http://gocalf.com
 [talha131]: http://oncrashreboot.com
 [iranzo]: https://iranzo.github.io/
 [silverhook]: https://matija.suklje.name
 [future]: https://github.com/talha131/pelican-elegant/issues/173
-
 
 # New governance model
 
@@ -53,11 +52,10 @@ We have also started discussing [how to vote on new features and other important
 If you are interested in helping with the governance processes, feel free to check out the [issues relevant to project management][governance].
 
 [governance]: https://github.com/Pelican-Elegant/elegant/labels/project%20management
-[MIT]: https://spdx.org/licenses/MIT.html
-[CC-BY-4.0]: https://creativecommons.org/licenses/by/4.0/
+[mit]: https://spdx.org/licenses/MIT.html
+[cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
 [new_members]: https://github.com/Pelican-Elegant/elegant/issues/193
 [vote]: https://github.com/Pelican-Elegant/elegant/issues/180
-
 
 # New website & documentation
 
@@ -71,7 +69,6 @@ Together with Talha, [Pablo][iranzo] and [Ashwin][ashwinvis] were the most to be
 
 … and so <https://pelican-elegant.github.io/> was born!
 
-
 # Future releases
 
 As we write this blog post, the discussion on [how to tackle future releases][future_releases] is still on-going, so it is a great time for you, dear (potential) Elegant user, to join in and influence our plans together.
@@ -79,7 +76,7 @@ As we write this blog post, the discussion on [how to tackle future releases][fu
 Right now, the discussion seems to go in the line of:
 
 1. [2.0][] – All those fixes and features that do not require creating Pelican plugins or changes in Pelican code. This release will have updated and additional documentation too. (what we [just released][release_2.0])
-1. [2.1][] – Make theme compatible with Pelican 4.* Open PR against branch "dev-2.1".
+1. [2.1][] – Make theme compatible with Pelican 4.\* Open PR against branch "dev-2.1".
 1. [3.0][] – Next generation Elegant – the biggest goal is to remove dependency on Bootstrap, to make it easier to maintain. 3.0.0 should have feature parity with 2.0.0.
 
 [release_2.0]: {filename}../Release%20Notes/release-notes-2.0.md
@@ -87,7 +84,6 @@ Right now, the discussion seems to go in the line of:
 [2.1]: https://github.com/Pelican-Elegant/elegant/milestone/5
 [3.0]: https://github.com/Pelican-Elegant/elegant/milestone/4
 [future_releases]: https://github.com/Pelican-Elegant/elegant/issues/192
-
 
 # Invitation to participate
 
@@ -101,12 +97,11 @@ Another way to contribute is to help with the [website/documentation][docs]. We 
 
 And, of course, reporting bugs and filing feature requests to further improve Elegant (and its documentation), is also very much welcome.
 
-[Jinja]: http://jinja.pocoo.org/
+[jinja]: http://jinja.pocoo.org/
 [contributing]: https://github.com/Pelican-Elegant/elegant/blob/master/CONTRIBUTING.md
 [pr_welcome]: https://github.com/Pelican-Elegant/elegant/labels/pull%20request%20welcome
 [docs]: https://github.com/Pelican-Elegant/documentation/
 [docs_first]: https://github.com/Pelican-Elegant/documentation/labels/good%20first%20issue
 
-*[CI]: Continuous Integration
-*[CSS]: Cascading Style Sheets
-*[HTML]: HyperText Markup Language
+_[CI]: Continuous Integration
+_[CSS]: Cascading Style Sheets \*[HTML]: HyperText Markup Language

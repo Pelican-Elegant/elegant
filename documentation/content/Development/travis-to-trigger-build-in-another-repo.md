@@ -35,34 +35,34 @@ dist: trusty
 sudo: required
 
 python:
-- '3.5'
+  - "3.5"
 
 # prepare and move data for execution
 
 before_install:
-- pip install -U pip
-- pip install -U setuptools
-- pip install -r tests/requirements.txt
-- pip install -r tests/test-requirements.txt
-- pip install peru
-- mkdir -p tests/themes/elegant
-- mv templates tests/themes/elegant/
-- mv static tests/themes/elegant/
-- cd tests && peru sync
+  - pip install -U pip
+  - pip install -U setuptools
+  - pip install -r tests/requirements.txt
+  - pip install -r tests/test-requirements.txt
+  - pip install peru
+  - mkdir -p tests/themes/elegant
+  - mv templates tests/themes/elegant/
+  - mv static tests/themes/elegant/
+  - cd tests && peru sync
 
 script:
-- pelican content/ -o output/
+  - pelican content/ -o output/
 ```
 
 Is then modified to add:
 
-~~~yaml
+```yaml
 before_script:
-- npm install travis-ci
+  - npm install travis-ci
 
 after_success:
-- node trigger-build.js
-~~~
+  - node trigger-build.js
+```
 
 This installs travis-ci utilities and runs a custom script 'trigger-build.js' with node, which in turn actually triggers Travis build.
 
@@ -70,41 +70,47 @@ The script, downloaded from [Kamran Ayub blog](https://kamranicus.com/posts/2015
 
 ```js
 #!js
-var Travis = require('travis-ci');
+var Travis = require("travis-ci");
 
 // change this
 var repo = "Pelican-Elegant/documentation";
 
 var travis = new Travis({
-    version: '2.0.0'
+  version: "2.0.0"
 });
 
-travis.authenticate({
-
+travis.authenticate(
+  {
     // available through Travis CI
     // see: http://kamranicus.com/blog/2015/02/26/continuous-deployment-with-travis-ci/
     github_token: process.env.TRATOKEN
-
-}, function (err, res) {
+  },
+  function(err, res) {
     if (err) {
-        return console.error(err);
+      return console.error(err);
     }
 
-    travis.repos(repo.split('/')[0], repo.split('/')[1]).builds.get(function (err, res) {
+    travis
+      .repos(repo.split("/")[0], repo.split("/")[1])
+      .builds.get(function(err, res) {
         if (err) {
-            return console.error(err);
+          return console.error(err);
         }
 
-        travis.requests.post({
+        travis.requests.post(
+          {
             build_id: res.builds[0].id
-        }, function (err, res) {
+          },
+          function(err, res) {
             if (err) {
-                return console.error(err);
+              return console.error(err);
             }
             console.log(res.flash[0].notice);
-        });
-    });
-});
+          }
+        );
+      });
+  }
+);
 ```
 
 As you can see, in line 14, it grabs the github token from environment variable 'TRATOKEN' that we've defined in travis-ci environment for the build.

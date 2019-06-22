@@ -21,7 +21,7 @@ offers you a way to write introductory text that would appear right before comme
 ![Introductory text to the comments]({static}/images/elegant-theme_comments-introduction.png)
 
 Set your message to `comments_intro` in the article metadata. You may also
-define `COMMENTS_INTRO` in Pelican configuration.  
+define `COMMENTS_INTRO` in Pelican configuration.
 
 Write whatever you think is appropriate to invite the visitor to comment. Be
 creative! You can even put a link to your twitter account or newsletter there.

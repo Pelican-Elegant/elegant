@@ -22,7 +22,7 @@ src="{static}/images/social-profiles-sidebar-default.png" alt="Social
 Profiles in the Sidebar" />
 
 Elegant understands the importance of readers engagement but it makes sure
-not to push author's *"online social karma"* down readers' throats.
+not to push author's _"online social karma"_ down readers' throats.
 
 Elegant displays the widget in the sidebar. Each icon is a link to a social
 media profile with an appropriate title attribute. Icons use muted color which
@@ -41,8 +41,7 @@ Awesome](http://fortawesome.github.io/Font-Awesome/). You can instantly
 customise the icons by tweaking the CSS. This customisation can range from
 changing size and color to adding drop shadow.
 
-How to configure the *widget*
------------------------------
+## How to configure the _widget_
 
 Define `SOCIAL` in your `pelicanconf.py`. `SOCIAL` is list of tuple. Each tuple
 has two items, title and URL.
@@ -52,8 +51,7 @@ has two items, title and URL.
     SOCIAL = (('Twitter', 'http://twitter.com/talham_'),
         ('Github', 'http://github.com/talha131'))
 
-In this example, `SOCIAL` has two tuples. First tuple is `('Twitter',
-'http://twitter.com/talham_')`. First element of the tuple is the title
+In this example, `SOCIAL` has two tuples. First tuple is `('Twitter', 'http://twitter.com/talham_')`. First element of the tuple is the title
 `Twitter` and second element is the URL.
 
 Elegant picks icons from Font Awesome. Title of the tuple, for example
@@ -65,8 +63,7 @@ Elegant picks icons from Font Awesome. Title of the tuple, for example
 You can see all the icons and their corresponding CSS classes in [Font Awesome
 documentation](http://fortawesome.github.io/Font-Awesome/icons/#brand).
 
-How to customize the icon
--------------------------
+## How to customize the icon
 
 What if the icon of your social media site is not available in Font Awesome?
 What if the CSS class name does not follow `fa-<title>` convention, for example
@@ -84,8 +81,7 @@ This third element is optional. It should be equal to the Font Awesome CSS
 class that you want to use for the social profile, minus the `fa` part from the
 CSS class name.
 
-How to customize Social Profile Label
--------------------------------------
+## How to customize Social Profile Label
 
 By default, Elegant labels social profile section as **Contact**. You can
 change this label by defining a new variable `SOCIAL_PROFILE_LABEL` in your
@@ -94,4 +90,3 @@ change this label by defining a new variable `SOCIAL_PROFILE_LABEL` in your
     :::python
 
     SOCIAL_PROFILE_LABEL = u'Stay in Touch'
-

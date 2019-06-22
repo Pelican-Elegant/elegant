@@ -4,9 +4,9 @@ Category: Building Readership
 Date: 2014-03-17 15:28
 Slug: how-to-show-rss-feeds-icon
 Disqus_identifier: ijvxwtg-how-to-show-rss-feeds-icon
-Subtitle: 
+Subtitle:
 Summary: Elegant supports RSS and Atom feeds for your posts, categories and tags
-Keywords: 
+Keywords:
 
 RSS feeds is the oldest and arguably the most used format to publish blog
 updates. Its use is not limited to RSS aggregators and readers. Tools like

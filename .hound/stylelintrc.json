@@ -8,9 +8,12 @@
     "color-named": "never",
     "stylelint-disable-reason": "always-before",
     "declaration-block-no-duplicate-properties": true,
-    "rule-empty-line-before": ["always-multi-line", {
-      "except": ["after-single-line-comment", "first-nested"]
-    }],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["after-single-line-comment", "first-nested"]
+      }
+    ],
     "block-no-empty": true,
     "no-missing-end-of-source-newline": true,
     "color-hex-length": "short",

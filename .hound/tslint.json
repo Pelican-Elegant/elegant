@@ -1,34 +1,17 @@
 {
   "rules": {
-    "align": [
-      true,
-      "parameters",
-      "arguments",
-      "statements"
-    ],
+    "align": [true, "parameters", "arguments", "statements"],
     "class-name": true,
-    "comment-format": [
-      true,
-      "check-space"
-    ],
+    "comment-format": [true, "check-space"],
     "curly": true,
     "eofline": true,
     "forin": true,
-    "indent": [
-      true,
-      "spaces"
-    ],
-    "interface-name": [
-      true,
-      "never-prefix"
-    ],
+    "indent": [true, "spaces"],
+    "interface-name": [true, "never-prefix"],
     "jsdoc-format": true,
     "label-position": true,
     "label-undefined": true,
-    "max-line-length": [
-      true,
-      120
-    ],
+    "max-line-length": [true, 120],
     "member-access": true,
     "member-ordering": [
       true,
@@ -42,15 +25,7 @@
     "no-bitwise": true,
     "no-conditional-assignment": true,
     "no-consecutive-blank-lines": true,
-    "no-console": [
-      true,
-      "debug",
-      "info",
-      "log",
-      "time",
-      "timeEnd",
-      "trace"
-    ],
+    "no-console": [true, "debug", "info", "log", "time", "timeEnd", "trace"],
     "no-default-export": true,
     "no-construct": true,
     "no-constructor-vars": false,
@@ -69,9 +44,7 @@
     "no-trailing-whitespace": true,
     "no-unreachable": true,
     "no-unused-expression": true,
-    "no-unused-variable": [
-      true
-    ],
+    "no-unused-variable": [true],
     "no-use-before-declare": false,
     "no-var-keyword": true,
     "no-var-requires": true,
@@ -84,20 +57,10 @@
       "check-open-brace",
       "check-whitespace"
     ],
-    "one-variable-per-declaration": [
-      true,
-      "ignore-for-loop"
-    ],
-    "quotemark": [
-      true,
-      "single",
-      "avoid-escape"
-    ],
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "quotemark": [true, "single", "avoid-escape"],
     "radix": true,
-    "semicolon": [
-      true,
-      "always"
-    ],
+    "semicolon": [true, "always"],
     "switch-default": false,
     "trailing-comma": [
       true,
@@ -106,9 +69,7 @@
         "multiline": "always"
       }
     ],
-    "triple-equals": [
-      true
-    ],
+    "triple-equals": [true],
     "typedef": [
       true,
       "member-variable-declaration",

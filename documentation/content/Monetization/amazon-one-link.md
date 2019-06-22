@@ -25,15 +25,19 @@ About how Elegant simplifies the usage...
 
 Amazon will provde you some code like below:
 
-~~~html
-<div id="amzn-assoc-ad-$UUID"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=$UUID"></script>
-~~~
+```html
+<div id="amzn-assoc-ad-$UUID"></div>
+<script
+  async
+  src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=$UUID"
+></script>
+```
 
 In order to use it, set in your `pelicanconf.py` the variable `AMAZON_ONELINK`, for example:
 
-~~~py
+```py
 AMAZON_ONELINK = "b63a2115-85f7-43a9-b169-5f4c8c275655"
-~~~
+```
 
 When the site is generated, the script will substitute UUID for the above variable value and proper script will be loaded to redirect your visitors.
 

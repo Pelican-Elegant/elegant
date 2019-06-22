@@ -4,9 +4,9 @@ Category: Supported Plugins
 Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin
 Disqus_identifier: 3ws2xke-how-to-use-multi-part-plugin
-Subtitle: 
+Subtitle:
 Summary: Elegant integrates with Multi Part plugin out of the box
-Keywords: 
+Keywords:
 
 [Multi
 parts](https://github.com/getpelican/pelican-plugins/tree/master/multi_part) is
@@ -67,4 +67,3 @@ articles in the series have it, which you are already doing for `parts`. So why
 double the hassle?
 
 With `SERIES_TITLE` you won't be able to have custom titles for the series'.
-

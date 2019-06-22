@@ -1,12 +1,12 @@
 Title: What People Say About Elegant
 Tags: pelican-theme, testimonials
-Category: Elegant - Pelican Theme 
+Category: Elegant - Pelican Theme
 Date: 2014-06-01 23:45
 Slug: what-people-say-about-elegant
 Disqus_identifier: qryv67o-what-people-say-about-elegant
-Subtitle: 
-Summary: 
-Keywords: 
+Subtitle:
+Summary:
+Keywords:
 
 > Thanks for this amazing project.
 
@@ -56,9 +56,9 @@ Brian Blais
 
 > It is really awesome!
 
-Jinkun Lin	
+Jinkun Lin
 
->  thanks for writing the "elegant" theme
+> thanks for writing the "elegant" theme
 
 [Jed Brown](https://plus.google.com/u/0/+JedBrown/)
 
@@ -95,4 +95,3 @@ Jinkun Lin
 > Thank you so much for this wonderful pelican theme
 
 [phdbreak](http://oncrashreboot.com/elegant-best-pelican-theme-features#comment-1080851511)
-

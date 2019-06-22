@@ -32,11 +32,11 @@ A brave set of collaborators have helped shape this future via new issue creatio
 
 This has been noticed in the last months activity in the repo, the opened issues, and zapping the old ones not to lose any contribution, either from their original authors or resubmitting them on their behalf.
 
-A lot of things are remain to be done that will allow pelican 4.0 compatibility,  removal of legacy code inherited from bootstrap, etc
+A lot of things are remain to be done that will allow pelican 4.0 compatibility, removal of legacy code inherited from bootstrap, etc
 
 Don't hesitate to give Elegant a new try, testing the new version or experimenting it at our brand new documentation/demo site at <https://pelican-elegant.github.io>.
 
-And of course let us know if something is not as you would expect or wish so that we can have Elegant become your pelican  theme.
+And of course let us know if something is not as you would expect or wish so that we can have Elegant become your pelican theme.
 
 Thanks to all our contributors mentioned either at Authors document <https://github.com/Pelican-Elegant/elegant/blob/master/AUTHORS.md> or at <https://github.com/Pelican-Elegant/elegant/graphs/contributors>
 
@@ -54,10 +54,10 @@ From 1.3 release until the [2.0 release][contrib_to-2.0] there were **316 new co
 - [Talha Mansoor – "talha131"][talha131]: 264 commits
 - [Pablo Iranzo Gómez – "iranzo"][iranzo]: 8 commits
 - [Calf Zhou – "calfzhou"][calfzhou]: 7 commits
-- [Andrew Wegner – "AWegnerGitHub"][AWegnerGitHub]: 6 commits
+- [Andrew Wegner – "AWegnerGitHub"][awegnergithub]: 6 commits
 - [Matija Šuklje – "silverhook"][silverhook]: 5 commits
 - [Jeremy Thurgood – "jerith"][jerith]: 1 commit
-- [Mobile Developer – "0x8BADFOOD"][0x8BADFOOD]: 1 commit
+- [Mobile Developer – "0x8BADFOOD"][0x8badfood]: 1 commit
 - [Leo Torres – "leotrs"][leotrs]: 1 commit
 - [Gan Shen – "gshen42"][gshen42]: 1 commit
 - [Gert van Dijk – "gertvdijk"][gertvdijk]: 1 commit
@@ -69,14 +69,14 @@ From 1.3 release until the [2.0 release][contrib_to-2.0] there were **316 new co
 As we can clearly see, by any metric this is a huge milestone for Elegant.
 
 [pelican]: https://getpelican.com
-[AWegnerGitHub]: https://andrewwegner.com
+[awegnergithub]: https://andrewwegner.com
 [ashwinvis]: https://ashwinvis.github.io/
 [calfzhou]: http://gocalf.com
 [talha131]: http://oncrashreboot.com
 [iranzo]: https://iranzo.github.io/
 [silverhook]: https://matija.suklje.name
 [jerith]: http://rhetoric.jerith.org/
-[0x8BADFOOD]: https://0x8badfood.github.io/blog/
+[0x8badfood]: https://0x8badfood.github.io/blog/
 [leotrs]: http://leotrs.com/
 [gshen42]: https://gshen42.github.io/
 [gertvdijk]: https://blog.g3rt.nl/
@@ -107,73 +107,72 @@ But also new features were added. To list just a few:
 
 For a full changelog, see below.
 
-
 # Full ChangeLog
 
 Below is the full changelog:
 
 ## Version 2.0 (under development)
 
-* Link to your social profiles
-* Upgraded to Twitter Bootstrap 2.3.2
-* Upgraded to Tipue Search 3.1
-* Support for `custom.css`
-* [Stat Counter Analytics ](http://statcounter.com/) support
-* Google Universal Analytics support
-* Support for custom icons for social profiles
-* Support for Pelican (>3.3) new metadata `modified`
-* Support for Social Media Tags
-* Support for Google Authorship
-* Translations support
-* `article.comments_intro` that overrides `COMMENTS_INTRO`. Now you can define
+- Link to your social profiles
+- Upgraded to Twitter Bootstrap 2.3.2
+- Upgraded to Tipue Search 3.1
+- Support for `custom.css`
+- [Stat Counter Analytics ](http://statcounter.com/) support
+- Google Universal Analytics support
+- Support for custom icons for social profiles
+- Support for Pelican (>3.3) new metadata `modified`
+- Support for Social Media Tags
+- Support for Google Authorship
+- Translations support
+- `article.comments_intro` that overrides `COMMENTS_INTRO`. Now you can define
   article specific comments introduction
-* Add Disqus comments to Pages
-* All customizable variables consolidated in a single `_defaults.html`, making
-  it easier for you to customize or even *localize* the theme
-* Adds author blurbs at the end of the article
+- Add Disqus comments to Pages
+- All customizable variables consolidated in a single `_defaults.html`, making
+  it easier for you to customize or even _localize_ the theme
+- Adds author blurbs at the end of the article
 
 ### Performance
 
-* Performance improvement- 4x faster output
-* Reduce number of HTTP requests using `assets` plugin
-* Shortcut icons, like favicon, are disabled by default. Set
+- Performance improvement- 4x faster output
+- Reduce number of HTTP requests using `assets` plugin
+- Shortcut icons, like favicon, are disabled by default. Set
   `USE_SHORTCUT_ICONS` to true to enable it
 
 ### Visual Style
 
-* Email newsletter subscriber form style matches rest of the theme
-* Article images have a visible border
-* Block quotes have a quote icon instead of a thick line on left
-* Article's paragraph font size is bigger, for better readability
-* Remove unnecessary padding in sidebar's tag list
-* Archives page and recent posts on home page have better presentation
-* Time stamps in categories and tags pages are justified
-* Line number in code block is hidden on tablets and phones to save space for
+- Email newsletter subscriber form style matches rest of the theme
+- Article images have a visible border
+- Block quotes have a quote icon instead of a thick line on left
+- Article's paragraph font size is bigger, for better readability
+- Remove unnecessary padding in sidebar's tag list
+- Archives page and recent posts on home page have better presentation
+- Time stamps in categories and tags pages are justified
+- Line number in code block is hidden on tablets and phones to save space for
   content
-* More sizes of image for Apple Touch icons
-* Fixed: Nested lists have different font sizes
-* Fixed: CSS style rules for literal block in reST is missing
-* Fixed: Long lines in code block will wrap to next line
-* Fixed: Code block will not play nice with line numbers
-* Fixed: Subscribe button changes its size on smaller screens
-* Fixed: Articles under tag heading on tags page are not sorted
-* Fixed: URL scheme for blogs which are not published to the root folder
-* Fixed: Footer is always under the fold even on smaller length web pages
-* Fixed: Site Name and top navigation menu move to left on wide displays
-* Fixed: Page link is not active in the navbar if `SAVE_PAGE_AS` is not set to
+- More sizes of image for Apple Touch icons
+- Fixed: Nested lists have different font sizes
+- Fixed: CSS style rules for literal block in reST is missing
+- Fixed: Long lines in code block will wrap to next line
+- Fixed: Code block will not play nice with line numbers
+- Fixed: Subscribe button changes its size on smaller screens
+- Fixed: Articles under tag heading on tags page are not sorted
+- Fixed: URL scheme for blogs which are not published to the root folder
+- Fixed: Footer is always under the fold even on smaller length web pages
+- Fixed: Site Name and top navigation menu move to left on wide displays
+- Fixed: Page link is not active in the navbar if `SAVE_PAGE_AS` is not set to
   default
 
 ### Plugins
 
-* Use `neighbor` plugin to show next and previous articles
-* Use `assets` plugin to minify CSS and JS files
-* Support for `share_post` plugin
-* Support for `related_posts` plugin
-* Support for `multi_part` plugin
+- Use `neighbor` plugin to show next and previous articles
+- Use `assets` plugin to minify CSS and JS files
+- Support for `share_post` plugin
+- Support for `related_posts` plugin
+- Support for `multi_part` plugin
 
 ### Behaviour
 
-* Search results link open in the same window, which is consistent with
+- Search results link open in the same window, which is consistent with
   internet search engines
-* Comments section message changes when user toggles it
-* Fixed: Clicking Search button in 404.html does not trigger search
+- Comments section message changes when user toggles it
+- Fixed: Clicking Search button in 404.html does not trigger search

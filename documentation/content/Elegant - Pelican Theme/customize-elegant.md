@@ -6,7 +6,7 @@ Slug: how-to-customize-elegant
 Disqus_identifier: ale31i7-how-to-customize-elegant
 Subtitle:
 Summary: You can customize every aspect of Elegant without touching the source code
-Keywords: 
+Keywords:
 
 [TOC]
 
@@ -48,7 +48,7 @@ Following is the relevant code,
         border-bottom: thin dashed #A9A9A9;
         color: #000;
     }
-    
+
 Copy and paste it in `custom.css`. Change color to red for example,
 
     :::css
@@ -59,7 +59,7 @@ Copy and paste it in `custom.css`. Change color to red for example,
         border-bottom: thin dashed #A9A9A9;
         color: red;
     }
-    
+
 Test your website using Pelican. All links should be colored red.
 
 Read [this post](avoid-unnecessary-http-requests) to make sure your site's page
@@ -107,7 +107,7 @@ Let's see how can we change social widget label.
     {% endif %}
 
 Line 1, text enclosed in `{# #}` is a comment, which says this section is about
-"Label for the list of social profiles". 
+"Label for the list of social profiles".
 
 The text in all capital case `SOCIAL_PROFILE_LABEL` is the actual variable.
 
@@ -121,4 +121,3 @@ configuration, `pelicanconf.py`.
 
 That's it. The title of social widget will change. There are several others
 labels that you can customize easily without touching Elegant's source code.
-
