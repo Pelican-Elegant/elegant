@@ -6,7 +6,29 @@ repos:
   - id: prettier
     files: \.(css|js|md|markdown|json)
     exclude: ^static/tipuesearch/
-- repo: https://github.com/python/black    
+- repo: https://github.com/python/black
   rev: master
   hooks:
-  - id: black  
+  - id: black
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: master
+  hooks:
+  - id: check-added-large-files
+  - id: check-ast
+  - id: check-case-conflict
+  - id: check-executables-have-shebangs
+  - id: check-json
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: check-vcs-permalinks
+  - id: check-xml
+  - id: check-yaml
+    args: [--unsafe]
+  - id: end-of-file-fixer
+  - id: fix-encoding-pragma
+  - id: forbid-new-submodules
+  - id: no-commit-to-branch
+    args: [--branch, next, --branch, master]
+  - id: requirements-txt-fixer
+  - id: sort-simple-yaml
+  - id: trailing-whitespace
