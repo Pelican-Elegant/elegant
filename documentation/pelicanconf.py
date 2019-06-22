@@ -96,7 +96,7 @@ TWITTER_USERNAME = ""
 FEATURED_IMAGE = SITEURL + "/theme/images/apple-touch-icon-152x152.png"
 
 # Legal
-SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license" 
+SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license"
     href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons Attribution 4.0 International License</a>."""
 
@@ -120,7 +120,7 @@ PROJECTS = [
 
 LANDING_PAGE_ABOUT = {
     "title": "Live demonstration and documentation of Pelican-Elegant Theme",
-    "details": """<p>This page serves both as documentation site and demonstration of Pelican-Elegant theme 
+    "details": """<p>This page serves both as documentation site and demonstration of Pelican-Elegant theme
         capabilities and look&amp;feel.</p><p>Please do check our Project pages and browse this site for more information.
         </p>""",
 }

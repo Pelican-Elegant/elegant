@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: https://pelican-elegant.github.io/sitemap.xml 
+Sitemap: https://pelican-elegant.github.io/sitemap.xml
