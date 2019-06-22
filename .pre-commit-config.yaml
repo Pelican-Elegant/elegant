@@ -4,6 +4,6 @@ repos:
   rev: master
   hooks:
   - id: prettier
-    files: \.(css|js|md|markdown)
+    files: \.(css|js|md|markdown|json)
     exclude: ^static/tipuesearch/
 
