@@ -81,4 +81,3 @@ var tipuesearch_string_16 = 'Goto Page';
 // Timer for showTime
 
 var startTimer = new Date().getTime();
-
