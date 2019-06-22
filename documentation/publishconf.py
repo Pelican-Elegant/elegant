@@ -11,8 +11,14 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-# Important: Do not set SITEURL. It breaks deploy previews on Netlify
-SITEURL = ""
+# Important: Changing SITEURL may break links in deploy-previews
+if os.environ["CONTEXT"] == "production":
+    SITEURL = "https://elegant.oncrashreboot.com"
+elif os.environ["CONTEXT"] == "branch-deploy" and os.environ["HEAD"] == "next":
+    SITEURL = "https://next.elegant.oncrashreboot.com"
+else:
+    SITEURL = ""
+
 RELATIVE_URLS = False
 
 SOCIAL = (
