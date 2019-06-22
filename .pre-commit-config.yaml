@@ -1,0 +1,9 @@
+fail_fast: true
+repos:
+- repo: https://github.com/prettier/prettier
+  rev: master
+  hooks:
+  - id: prettier
+    files: \.(css|js|md|markdown)
+    exclude: ^static/tipuesearch/
+
