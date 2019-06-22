@@ -6,4 +6,7 @@ repos:
   - id: prettier
     files: \.(css|js|md|markdown|json)
     exclude: ^static/tipuesearch/
-
+- repo: https://github.com/python/black    
+  rev: master
+  hooks:
+  - id: black  
