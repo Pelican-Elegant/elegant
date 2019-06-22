@@ -1,0 +1,5 @@
+[build]
+  base = "./"
+  publish = "./documentation/output"
+  command = "cd documentation && make publish-netlify"
+
