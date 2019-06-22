@@ -71,8 +71,11 @@ CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
 # Elegant theme
-STATIC_PATHS = ["theme/images", "images", "extra/robots.txt"]
-EXTRA_PATH_METADATA = {"extra/robots.txt": {"path": "robots.txt"}}
+STATIC_PATHS = ["theme/images", "images", "extra/robots.txt", "extra/_redirects"]
+EXTRA_PATH_METADATA = {
+    "extra/robots.txt": {"path": "robots.txt"},
+    "extra/_redirects": {"path": "_redirects"},
+}
 DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "search", "404")
 TAG_SAVE_AS = ""
 AUTHOR_SAVE_AS = ""
