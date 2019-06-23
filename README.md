@@ -1,6 +1,6 @@
 # Elegant – an elegant theme for Pelican
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b4e4bf12-cd08-49ee-99b1-7fb343ecc2c4/deploy-status)](https://app.netlify.com/sites/pelicanelegant/deploys) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b4e4bf12-cd08-49ee-99b1-7fb343ecc2c4/deploy-status)](https://app.netlify.com/sites/pelicanelegant/deploys) [![Build Status](https://travis-ci.org/Pelican-Elegant/elegant.svg?branch=master)](https://travis-ci.org/Pelican-Elegant/elegant) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 [Elegant][demo] is a theme for the static site generator [Pelican][].
 
