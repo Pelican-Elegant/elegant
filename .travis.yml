@@ -14,7 +14,7 @@ env:
 # prepare and move data for execution
 
 before_install:
-- pip install -r requirements.txt
+- pip install -r ./requirements.txt
 - cd documentation
 - make themes-sync
 - make plugins-sync
