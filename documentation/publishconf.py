@@ -12,9 +12,9 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # Important: Changing SITEURL may break links in deploy-previews
-if os.environ["CONTEXT"] == "production":
+if os.environ.get("CONTEXT") == "production":
     SITEURL = "https://elegant.oncrashreboot.com"
-elif os.environ["CONTEXT"] == "branch-deploy" and os.environ["HEAD"] == "next":
+elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == "next":
     SITEURL = "https://next.elegant.oncrashreboot.com"
 else:
     SITEURL = ""
