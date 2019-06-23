@@ -16,7 +16,9 @@ addons:
     - openjdk-8-jre  # install Java8 as required by vnu.jar
 
 cache:
-  pip
+- pip
+- directories:
+  - /home/.cache/pre-commit/
 
 install:
 - pip install -r requirements.txt
