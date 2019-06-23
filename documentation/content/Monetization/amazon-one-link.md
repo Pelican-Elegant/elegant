@@ -17,13 +17,13 @@ Amazon allows to define, on each 'store' for countries a tag used for referring 
 
 In order to maximize revenue, several shops for each country should be used, but only one link can be done for each one.
 
-They provided a feature called 'OneLink' available from the US site that allows, via javascript code, to convert he links with referral included in a webpage to the ones relevant for the user's store, so user in 'US' will get a link to 'US' referral for the site owner, and one from 'FR' will get a link to amazon.fr with owner's referral.
+They provided a feature called 'OneLink' available from the US site that allows, via JavaScript code, to convert he links with referral included in a webpage to the ones relevant for the user's store, so user in 'US' will get a link to 'US' referral for the site owner, and one from 'FR' will get a link to amazon.fr with owner's referral.
 
 Please, do check Amazon link above for more information.
 
 About how Elegant simplifies the usage...
 
-Amazon will provde you some code like below:
+Amazon will provide you some code like below:
 
 ```html
 <div id="amzn-assoc-ad-$UUID"></div>

@@ -23,7 +23,7 @@ its value is `datetime`.
 
 Depending on your
 [`DATE_FORMATS`](http://docs.getpelican.com/en/latest/settings.html#basic-settings)
-setting you can put modified date in your reST formated file as
+setting you can put modified date in your reST formatted file as
 
     :::Rest
     :modified: 2014-01-22 14:30
@@ -33,7 +33,7 @@ Elegant will process it and display the last updated as "Jan 22, 2014".
 Previous versions do not have `modified` metadata in which case type of its
 value is string. If you are using old version of Pelican, i.e 3.3 or less, make
 sure you assign it a value exactly the way you want it to appear. Taking the
-example from above, metadata in your reST formated file should be,
+example from above, metadata in your reST formatted file should be,
 
     :::Rest
     :modified: Jan 22, 2014

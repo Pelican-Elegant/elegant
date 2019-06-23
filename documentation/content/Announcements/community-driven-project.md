@@ -4,7 +4,7 @@ Tags: pelican-theme, web-design, project-management
 Category: Announcements
 Date: 2019-01-05 19:40
 Slug: community-led-project
-Subtitle: The beggining of a beautiful friendship
+Subtitle: The beginning of a beautiful friendship
 Summary:  Elegant has grown into a community-driven project. It also got a new website and organisational structure, culminating in its biggest release yet.
 Keywords:
 ---
@@ -15,9 +15,9 @@ Keywords:
 
 Elegant was started in 2012 by [Talha Mansoor][talha131] as a theme for the [Pelican][] static site generator. In quite a short time it grew in popularity due to its clean and functional style.
 
-In November 2018, Elegant’s wider community was called into a [discussion about the future of their beloved theme][future]. The call-out and initial organisation was made by [Matija Šuklje][silverhook], with many responding – and with Talha as the first to support the proposal of changing the development model from a single-developer to a community-led project. The same month several pillars for a community-led project were established.
+In November 2018, Elegant’s wider community was called into a [discussion about the future of their beloved theme][future]. The call-out and initial organization was made by [Matija Šuklje][silverhook], with many responding – and with Talha as the first to support the proposal of changing the development model from a single-developer to a community-led project. The same month several pillars for a community-led project were established.
 
-[Talha Mansoor][talha131] moved Elegant from a simple personal repository to a separate organisation (more on that below), which currently consist of (in alphabetical order):
+[Talha Mansoor][talha131] moved Elegant from a simple personal repository to a separate organization (more on that below), which currently consist of (in alphabetical order):
 
 - [Pablo Iranzo Gómez – "iranzo"][iranzo] – owner
 - [Talha Mansoor – "talha131"][talha131] – owner
@@ -61,7 +61,7 @@ If you are interested in helping with the governance processes, feel free to che
 
 Any good project needs good documentation and deserves a good homepage.
 
-We decided to eat our own dogfood by having our documentation run on an Elegant-themed Pelican instance. This would double as a proper demo website as well as a common testing ground for the team.
+We decided to eat our own dog food by having our documentation run on an Elegant-themed Pelican instance. This would double as a proper demo website as well as a common testing ground for the team.
 
 Luckily for us, as Pelican is easy to migrate, [Talha][talha131] very quickly set up a [new repository][docs] with all that is needed to build Elegant’s documentation and homepage.
 
@@ -91,9 +91,9 @@ If you have not tried Elegant yet do give it a try and even if you _have_ tried 
 
 You can use the new release already, but if you just want to browse a bit – our brand new documentation and homepage at <https://pelican-elegant.github.io> is a great demo for the theme.
 
-If you like the theme and would like to contribute to Elegant, you are most welcome to do so. Even though Pelican is written in Python, no coding skills are needed to help out with Elegant, as themes consist mostly of [Jinja][] templates, CSS and HTML. It is honestly very easiy to get into. If you want to help out, but have no idea where to start, we keep a list of [low-priority features that are just waiting for you to pick up][pr_welcome]. Please consult the [`CONTRIBUTING.md`][contributing] file for the technical details.
+If you like the theme and would like to contribute to Elegant, you are most welcome to do so. Even though Pelican is written in Python, no coding skills are needed to help out with Elegant, as themes consist mostly of [Jinja][] templates, CSS and HTML. It is honestly very easily to get into. If you want to help out, but have no idea where to start, we keep a list of [low-priority features that are just waiting for you to pick up][pr_welcome]. Please consult the [`CONTRIBUTING.md`][contributing] file for the technical details.
 
-Another way to contribute is to help with the [website/documentation][docs]. We are keeping a list of [good first issues][docs_first] for newbies to get involved – these are easy to tackle, but in no way less helpful. With the migration from Talha’s personal website, while functional, there is still quite some work to make Elegant’s new home neat and tidy. So there are a lot of small tasks where you can help out here and make an impact!
+Another way to contribute is to help with the [website/documentation][docs]. We are keeping a list of [good first issues][docs_first] for newbies to get involved – these are easy to tackle, but in no way less helpful. With the migration from Talha's personal website, while functional, there is still quite some work to make Elegant’s new home neat and tidy. So there are a lot of small tasks where you can help out here and make an impact!
 
 And, of course, reporting bugs and filing feature requests to further improve Elegant (and its documentation), is also very much welcome.
 

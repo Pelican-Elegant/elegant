@@ -21,7 +21,7 @@ configuration to use the tracking code.
 
 You need two codes from StatCounter- project ID and security code.
 
-Create a project in StatCounter. Click on Config, Reinstall Code and then
+Create a project inside StatCounter. Click on Config, Reinstall Code and then
 Default Guide.
 
 It will show you a [standard

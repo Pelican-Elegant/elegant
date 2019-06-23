@@ -12,7 +12,7 @@ Keywords:
 
 We might want to redirect a visitor to another URL or article.
 
-Ideally this is done via a `.htaccess` so that a proper 301 code is generated, but we might not have access to the webserver configuration.
+Ideally this is done via a `.htaccess` so that a proper 301 code is generated, but we might not have access to the web server configuration.
 
 In Elegant we've included a `redirect` slug in the `yaml preamble` that allows to specify a target URL, that will be load with a http-refresh:
 
@@ -31,4 +31,4 @@ redirect: https://pelican-elegant.github.io/
 
 ```
 
-When the article loads, it will refresh to the new url defined in redirect, allowing you to still provide search engines and users a way to get to the new article.
+When the article loads, it will refresh to the new URL defined in redirect, allowing you to still provide search engines and users a way to get to the new article.

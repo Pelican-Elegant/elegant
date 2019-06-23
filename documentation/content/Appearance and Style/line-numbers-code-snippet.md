@@ -33,7 +33,7 @@ markup. Use `linenos` flag to switch on line numbers for the snippet.
 
 [Python-Markdown](https://github.com/waylan/Python-Markdown) uses
 [CodeHilite](http://pythonhosted.org/Markdown/extensions/code_hilite.html)
-extension for syntax highlighting. Setup CodeHilite, then use SheBang `!#` to
+extension for syntax highlighting. Setup CodeHilite, then use Shebang `!#` to
 generate line numbers.
 
     :::markdown

@@ -28,7 +28,7 @@ considered "Part 1" and so on.
 The currently opened article is displayed in italics. In the above example,
 "Part 2" is opened in the browser tab.
 
-Title attribute of html anchor tag `<a>` is set for each "Part" to its article
+Title attribute of HTML anchor tag `<a>` is set for each "Part" to its article
 title; it is displayed when user hovers over the link.
 
 ![multi-part example with title of the

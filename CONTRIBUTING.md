@@ -41,7 +41,7 @@ Occasionally – often before a pull request is able to be merged – you will n
 
 When creating a pull request in GitHub, you have the option to squash all commits, but sometimes you need to fix either the mess you made or some clashes that prevent a merge of the two branches.
 
-In both cases, the following command is your swiss-army knife:
+In both cases, the following command is your Swiss-army knife:
 
 `git rebase --interactive upstream/master`
 
@@ -60,7 +60,7 @@ If you plan to add new features to the theme, please make sure that:
 
 # Code style
 
-Please make sure to follow the code style of the existing codebase.
+Please make sure to follow the code style of the existing code base.
 
 Specifically:
 
@@ -81,7 +81,7 @@ Specifically:
 - add a space after colon
 - remove leading 0s
 - remove unit specification after 0 values
-- use three-digit Hex notation for colors whereever possible
+- use three-digit Hex notation for colors wherever possible
 - use hyphen `-` instead of underscore `_` in class and identity names
 
 Refer to [Google's HTML/CSS Style Guide][google_style_guide] for all other formatting rules.

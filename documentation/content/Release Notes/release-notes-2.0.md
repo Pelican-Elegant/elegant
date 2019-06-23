@@ -14,7 +14,7 @@ status: draft
 
 # Introduction
 
-With more than 4 years in the making, this release started "better late then never", but it turned out to _so much **much**_ more than that.
+With more than 4 years in the making, this release started "better late then never", but it turned out to _so **much**_ more than that.
 
 With the [community spark re-ignited][announcement_community], this has become the biggest release since probably 1.0. And as such a very worthy release to carry the 2.0 crown.
 
@@ -30,7 +30,7 @@ Talha, who created the elegant theme, helped this movement by setting a new home
 
 A brave set of collaborators have helped shape this future via new issue creation, review of pending pull requests and defining how the community and project should continue.
 
-This has been noticed in the last months activity in the repo, the opened issues, and zapping the old ones not to lose any contribution, either from their original authors or resubmitting them on their behalf.
+This has been noticed in the last months activity in the repository, the opened issues, and zapping the old ones not to lose any contribution, either from their original authors or resubmitting them on their behalf.
 
 A lot of things are remain to be done that will allow pelican 4.0 compatibility, removal of legacy code inherited from bootstrap, etc
 
@@ -42,7 +42,7 @@ Thanks to all our contributors mentioned either at Authors document <https://git
 
 # Stats
 
-**119 issues** were [closed in the 2.0 release][milestone-2.0] – an impressive number, even if we take into account that many of the bugs were of an organisational nature, as Pelican Elegant has changed the development and governance model (more on that in a [separate post][announcement_community]). Compare that to [1.3 release][milestone-1.3], which consisted of 4 issues, or the total amount of closed issues so far, which amount to 133.
+**119 issues** were [closed in the 2.0 release][milestone-2.0] – an impressive number, even if we take into account that many of the bugs were of an organizational nature, as Pelican Elegant has changed the development and governance model (more on that in a [separate post][announcement_community]). Compare that to [1.3 release][milestone-1.3], which consisted of 4 issues, or the total amount of closed issues so far, which amount to 133.
 
 [milestone-2.0]: https://github.com/Pelican-Elegant/elegant/milestone/3?closed=1
 [milestone-1.3]: https://github.com/Pelican-Elegant/elegant/milestone/1?closed=1
@@ -86,7 +86,7 @@ As we can clearly see, by any metric this is a huge milestone for Elegant.
 
 Most issues belonged to bugs and dependency updates, amongst the biggest:
 
-- support for HTTPS out of the box by making the links (incl. CDN) protocol agnostic
+- support for HTTPS out of the box by making the links protocol agnostic
 - fix for search to work again
 - fix of accordion menus not opening up – fixes both issues with categories and comments
 - fix of table of content
@@ -105,11 +105,11 @@ But also new features were added. To list just a few:
 - support for Disqus comments
 - new website and documentation (more on that in a [separate post][announcement_community])
 
-For a full changelog, see below.
+For a full CHANGELOG, see below.
 
-# Full ChangeLog
+# Full CHANGELOG
 
-Below is the full changelog:
+Below is the full CHANGELOG:
 
 ## Version 2.0 (under development)
 
@@ -133,7 +133,7 @@ Below is the full changelog:
 
 ### Performance
 
-- Performance improvement- 4x faster output
+- 4x faster output
 - Reduce number of HTTP requests using `assets` plugin
 - Shortcut icons, like favicon, are disabled by default. Set
   `USE_SHORTCUT_ICONS` to true to enable it
@@ -170,7 +170,7 @@ Below is the full changelog:
 - Support for `related_posts` plugin
 - Support for `multi_part` plugin
 
-### Behaviour
+### Behavior
 
 - Search results link open in the same window, which is consistent with
   internet search engines
