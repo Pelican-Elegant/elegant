@@ -10,12 +10,18 @@ env:
 - TEST_CMD="pelican content/ -o output/"
 - TEST_CMD="pelican content/ -o output/ -s ./publishconf.py"
 
+addons:
+ apt:
+  packages:
+    - openjdk-8-jre  # install Java8 as required by vnu.jar
+
 cache:
   pip
 
 install:
 - pip install -r requirements.txt
 - pip install -U Online-W3C-Validator
+- pip install -U html5validator
 
 before_script:
 - cd documentation
@@ -25,3 +31,4 @@ before_script:
 script:
 - $TEST_CMD
 - w3c_validator $(find output/ -name '*.html' -type f)
+- html5validator --root output/
