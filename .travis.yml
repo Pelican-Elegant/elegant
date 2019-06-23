@@ -18,7 +18,7 @@ addons:
 cache:
 - pip
 - directories:
-  - /home/.cache/pre-commit/
+  - $HOME/.cache/pre-commit
 
 install:
 - pip install -r requirements.txt
