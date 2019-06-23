@@ -1,7 +1,7 @@
 # Copyright (C) 2017, 2018 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
 
 language: python
-dist: trusty
+dist: xenial
 sudo: required
 
 python:
@@ -14,9 +14,7 @@ env:
 # prepare and move data for execution
 
 before_install:
-- pip install -U pip
-- pip install -U setuptools
-- pip install -r ./requirements.txt
+- pip install -r requirements.txt
 - cd documentation
 - make themes-sync
 - make plugins-sync
