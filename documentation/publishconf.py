@@ -14,6 +14,8 @@ from pelicanconf import *
 # Important: Changing SITEURL may break links in deploy-previews
 if os.environ.get("CONTEXT") == "production":
     SITEURL = "https://elegant.oncrashreboot.com"
+    FEED_ALL_ATOM = "feeds/all.atom.xml"
+    CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == "next":
     SITEURL = "https://next.elegant.oncrashreboot.com"
 else:
@@ -25,8 +27,5 @@ SOCIAL = (
     ("Github", "https://github.com/Pelican-Elegant/elegant"),
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
 )
-
-FEED_ALL_ATOM = "feeds/all.atom.xml"
-CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 DELETE_OUTPUT_DIRECTORY = True
