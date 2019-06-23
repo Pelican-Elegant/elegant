@@ -5,7 +5,7 @@ dist: trusty
 sudo: required
 
 python:
-- '3.5'
+- '3.7'
 
 env:
 - TEST_CMD="pelican content/ -o output/"
@@ -16,22 +16,11 @@ env:
 before_install:
 - pip install -U pip
 - pip install -U setuptools
-- pip install -r tests/requirements.txt
-- pip install -r tests/test-requirements.txt
-- pip install peru
-- mkdir -p tests/themes/elegant
-- mv templates tests/themes/elegant/
-- mv static tests/themes/elegant/
-- cd tests && peru sync
-
-before_script:
-- npm install travis-ci
+- pip install -r ./requirements.txt
+- cd documentation
+- make themes-sync
+- make plugins-sync
 
 script:
 - $TEST_CMD
 - w3c_validator $(find output/ -name '*.html' -type f)
-
-# Notify documentation repo for build new site after master change
-
-after_success:
-- node trigger-build.js
