@@ -7,8 +7,8 @@ date: 2018-12-11 21:49:47 +0100
 comments: true
 category: Development
 description:
-slug: travis-to-trigger-build-in-another-repo
-disqus_identifier: travis-to-trigger-build-in-another-repo
+slug: travis-to-trigger-build-in-another-repository
+disqus_identifier: travis-to-trigger-build-in-another-repository
 ---
 
 [TOC]
@@ -68,6 +68,8 @@ This installs Travis-CI utilities and runs a custom script 'trigger-build.js' wi
 
 The script, downloaded from [Kamran Ayub blog](https://kamranicus.com/posts/2015-02-26-continuous-deployment-with-travis-ci) has been edited to specify the 'repository' we will trigger and the name of the environment variable containing the token:
 
+<!-- yaspeller ignore:start -->
+
 ```js
 #!js
 var Travis = require("travis-ci");
@@ -112,6 +114,8 @@ travis.authenticate(
   }
 );
 ```
+
+<!-- yaspeller ignore:end -->
 
 As you can see, in line 14, it grabs the github token from environment variable 'TRATOKEN' that we've defined in Travis-CI environment for the build.
 
