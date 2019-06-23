@@ -22,6 +22,7 @@ install:
 - pip install -r requirements.txt
 - pip install -U Online-W3C-Validator
 - pip install -U html5validator
+- pip install -U pre-commit
 
 before_script:
 - cd documentation
@@ -29,6 +30,7 @@ before_script:
 - make plugins-sync
 
 script:
+- pre-commit run --all-files
 - $TEST_CMD
 - w3c_validator $(find output/ -name '*.html' -type f)
 - html5validator --root output/
