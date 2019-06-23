@@ -15,6 +15,7 @@ cache:
 
 install:
 - pip install -r requirements.txt
+- pip install -U Online-W3C-Validator
 
 before_script:
 - cd documentation
