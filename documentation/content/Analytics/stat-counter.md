@@ -14,7 +14,7 @@ Elegant has support for popular web tracking service,
 
 You need two codes from StatCounter - project ID and security code.
 
-Create a project in StatCounter. Click on _Config_, _Reinstall Code_ and then
+Create a project inside StatCounter. Click on _Config_, _Reinstall Code_ and then
 _Default Guide_.
 
 It will show you a [standard

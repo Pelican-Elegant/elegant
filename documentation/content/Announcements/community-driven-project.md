@@ -15,7 +15,7 @@ Keywords:
 
 [Talha Mansoor][talha131] published the first version of Elegant in 2012. It grew in popularity in a short time, due to its clean and functional style.
 
-In November 2018, [Matija Šuklje][silverhook] called Elegant's communituy into a [discussion about the future of the theme][future]. Response was immense. Talha was the first to support the proposal of changing the development model from a single-developer to a community-led project.
+In November 2018, [Matija Šuklje][silverhook] called Elegant's community into a [discussion about the future of the theme][future]. Response was immense. Talha was the first to support the proposal of changing the development model from a single-developer to a community-led project.
 
 [He][talha131] moved Elegant from a personal repository to a separate organization [Pelican-Elegant][elegant-org], and added active community members to the [team][team].
 
