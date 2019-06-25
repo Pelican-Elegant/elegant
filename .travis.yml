@@ -30,7 +30,6 @@ install:
 
 before_script:
 - cd documentation
-- make themes-sync
 - make plugins-sync
 
 script:

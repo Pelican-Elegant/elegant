@@ -44,7 +44,7 @@ SITEMAP = {
 }
 
 # Appearance
-THEME = "themes/elegant"
+THEME = "../"
 TYPOGRIFY = True
 DEFAULT_PAGINATION = False
 
