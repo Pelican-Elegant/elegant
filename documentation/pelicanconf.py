@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-AUTHOR = "Pelican Elegant Team"
-SITENAME = "Elegant Documentation"
+AUTHOR = "Elegant Team"
+SITENAME = "Elegant"
+SITESUBTITLE = "The Best Pelican Theme"
 SITEURL = ""
 
 PATH = "content"
@@ -99,30 +100,38 @@ TWITTER_USERNAME = ""
 FEATURED_IMAGE = SITEURL + "/theme/images/apple-touch-icon-152x152.png"
 
 # Legal
-SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license"
+SITE_LICENSE = """Elegant documentation is licensed under a <a rel="license"
     href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons Attribution 4.0 International License</a>."""
 
 # SEO
-SITE_DESCRIPTION = "Documentation website for Pelican-Elegant theme originally created by Talha Mansoor"
+SITE_DESCRIPTION = (
+    "Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor"
+)
 
 # Landing Page
+PROJECTS_TITLE = "Related Projects"
 PROJECTS = [
     {
         "name": "Elegant",
         "url": "https://github.com/Pelican-Elegant/elegant",
-        "description": "A clean and distraction free Pelican theme, with search and a lot more unique features. Built "
-        "with Jinja2 and Bootstrap",
+        "description": "Source code of Elegant theme",
     },
     {
-        "name": "Elegant Documentation",
-        "url": "https://github.com/Pelican-Elegant/documentation",
-        "description": "Documentation repository for Pelican-Elegant theme",
+        "name": "Pelican",
+        "url": "https://github.com/getpelican/pelican/",
+        "description": "Static site generator that supports Markdown and"
+        " reST syntax",
+    },
+    {
+        "name": "Pelican Plugins",
+        "url": "https://github.com/getpelican/pelican-plugins",
+        "description": "Collection of plugins for the Pelican static site generator",
     },
 ]
 
 LANDING_PAGE_ABOUT = {
-    "title": "Live demonstration and documentation of Pelican-Elegant Theme",
+    "title": "Elegant – Why it is the Best Pelican Theme",
     "details": """<p>This page serves both as documentation site and demonstration of Pelican-Elegant theme
         capabilities and look&amp;feel.</p><p>Please do check our Project pages and browse this site for more information.
         </p>""",
