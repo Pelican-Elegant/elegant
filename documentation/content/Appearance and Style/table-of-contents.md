@@ -17,7 +17,7 @@ the article's main content. Its font size is relatively smaller. This way,
 table of content stays visible for navigation but reader's attention to the
 article stays unaffected.
 
-To utilise this feature, you need to use
+To utilize this feature, you need to use
 [extract_toc](https://github.com/getpelican/pelican-plugins) plugin. Elegant
 encloses the table of content in `<nav>` tag for semantics.
 

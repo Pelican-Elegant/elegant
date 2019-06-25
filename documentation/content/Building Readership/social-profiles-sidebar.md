@@ -38,7 +38,7 @@ Twitter icon in the sidebar" />
 
 Elegant uses scalable vector icons from [Font
 Awesome](http://fortawesome.github.io/Font-Awesome/). You can instantly
-customise the icons by tweaking the CSS. This customisation can range from
+customize the icons by tweaking the CSS. This customization can range from
 changing size and color to adding drop shadow.
 
 ## How to configure the _widget_
@@ -68,7 +68,7 @@ documentation](http://fortawesome.github.io/Font-Awesome/icons/#brand).
 What if the icon of your social media site is not available in Font Awesome?
 What if the CSS class name does not follow `fa-<title>` convention, for example
 `Stack Exchange` is different from `fa-stack-exchange`? What if you want to use
-`fa-youtube-play` in place of `fa-youtube` for your Youtube profile?
+`fa-youtube-play` in place of `fa-youtube` for your YouTube profile?
 
 The solution is to add a third element to the tuple. CSS class name.
 

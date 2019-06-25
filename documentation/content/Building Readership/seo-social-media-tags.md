@@ -11,7 +11,7 @@ Keywords:
 
 Search Engine Optimization(SEO) is a moving target which is often
 misunderstood. Rise of social media has changed the traditional SEO
-techniques. Changes in search algorithms has made several SEO tecniques
+techniques. Changes in search algorithms has made several SEO techniques
 obsolete.
 
 Elegant does its best to leverage all available search and social media tags to
@@ -43,7 +43,7 @@ Elegant uses following tags,
 displayed with the article link on most social sites.
 
 Elegant looks for it first in the article metadata, here is metadata for an
-example reST formated file.
+example reST formatted file.
 
     :::reST
     :featured_image: http://oncrashreboot.com/images/article-1-image.jpg

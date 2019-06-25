@@ -3,7 +3,7 @@ Subtitle: Why it is the best Pelican theme
 Date: 2013-08-27 23:20
 Category: Elegant - Pelican Theme
 Tags: jinja2, bootstrap, pelican-theme, font-awesome
-Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique features are search, MailChimp, twitter card, and custom 404 page.
+Summary: Elegant is a minimal, stylish and responsive Pelican theme. Its unique features are search, Mailchimp, twitter card, and custom 404 page.
 Slug: elegant-best-pelican-theme-features
 disqus_identifier: 2189d14-elegant-a-theme-for-pelican
 modified: 2013-10-11 23:00
@@ -82,8 +82,8 @@ the articles filed in that category at its page. Elegant takes a different
 approach.
 
 It lists all the categories and their articles on the same page. To reduce
-clutter and utilise space efficiently, each category and its list of articles
-in enclosed in [collapsible
+clutter and utilize space efficiently, each category and its list of articles
+is enclosed in [collapsible
 accordions](http://getbootstrap.com/2.3.2/javascript.html#collapse).
 
 Here is how categories appear collapsed
@@ -263,7 +263,7 @@ example]({static}/images/elegant-theme_article-subtitle.png)
 
 Article subtitle is displayed with the title in every list. To keep it visibly
 separate from title, subtitle is enclosed in `<small>` tag. When visible cue
-cannot be used, like in the title attribute of html anchor tag `<a>`, a hyphen
+cannot be used, like in the title attribute of HTML anchor tag `<a>`, a hyphen
 is inserted between them.
 
 ![Article title and subtitle separated with a

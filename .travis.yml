@@ -6,9 +6,10 @@ dist: xenial
 python:
 - '3.7'
 
-env:
-- TEST_CMD="pelican content/ -o output/"
-- TEST_CMD="pelican content/ -o output/ -s ./publishconf.py"
+branches:
+  only:
+  - master
+  - next
 
 addons:
  apt:
@@ -17,6 +18,7 @@ addons:
 
 cache:
 - pip
+- yarn
 - directories:
   - $HOME/.cache/pre-commit
 
@@ -25,14 +27,15 @@ install:
 - pip install -U Online-W3C-Validator
 - pip install -U html5validator
 - pip install -U pre-commit
+- yarn global add yaspeller
 
 before_script:
 - cd documentation
-- make themes-sync
 - make plugins-sync
 
 script:
 - pre-commit run --all-files
-- $TEST_CMD
+- yaspeller --only-errors content/ *.md
+- make publish
 - w3c_validator $(find output/ -name '*.html' -type f)
 - html5validator --root output/

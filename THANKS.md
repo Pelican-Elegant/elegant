@@ -1,3 +1,5 @@
+<!-- yaspeller ignore:start -->
+
 # Thanks to
 
 **Extra Special Thanks** to [talha131](https://github.com/talha131) for creating this theme and for being the sole maintainer and main developer of Elegant for so many years, and later opening up the development to a community-led effort, enabling the theme and its community to grow.
@@ -212,3 +214,4 @@ Elegant is standing on the shoulders of these giants.
 1. [Solarized Light theme](http://ethanschoonover.com/solarized) converted to
    [Pelican Pygments](https://github.com/yuex/pelican-pygments-solarized-css)
    by [yuex 悟道洞穴人](https://github.com/yuex)
+   <!-- yaspeller ignore:end -->

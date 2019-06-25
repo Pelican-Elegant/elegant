@@ -22,8 +22,8 @@ Based on this feedback, a new 'blog-o-matic' approach has been tested:
 [Blog-o-Matic](https://github.com/iranzo/blog-o-matic/), uses several discussed topics so far:
 
 - [Github](https://github.com) and GH Pages for hosting the source and the website
-- [travis-ci.org](https://travis-ci.org) for automating the update and generation process
-- ['Pelican'](https://blog.getpelican.com/) for static rendering of your blog from the markdown or asciidoc articles
+- [Travis-CI.org](https://travis-ci.org) for automating the update and generation process
+- ['Pelican'](https://blog.getpelican.com/) for static rendering of your blog from the markdown or AsciiDoc articles
 - ['Elegant'](https://github.com/Pelican-Elegant/elegant) for the 'Theme'
 - [peru](https://github.com/buildinspace/peru) for automating repository upgrades for plugins, etc
 
@@ -35,14 +35,14 @@ You can also check the 'generated' website after installation via <https://iranz
 
 The repository, contains already the required setups and configurations for setting up a blog using github pages.
 
-It requires some manual steps like configuren authentication token in order for automation to 'push' to github the 'rendered webpage', plus enabling 'travis-ci' automation for doing that step.
+It requires some manual steps like configuring authentication token in order for automation to 'push' to github the 'rendered webpage', plus enabling 'Travis CI' automation for doing that step.
 
 Check the updated [README on Blog-o-Matic](https://github.com/iranzo/blog-o-matic) if you're interested in the setup, but thing is:
 
 ## Setup
 
-- Repo contains already predefined travis configuration
-- A GH token is needed for travis-ci to push to the 'master' branch that is used by github pages
+- Repository contains already predefined Travis CI configuration
+- A GH token is needed for Travis CI to push to the 'master' branch that is used by github pages
 - The token needs to be configured as environment variable in 'travis-ci.org' which needs to be enabled for your repository
 - Once this is done, all the automation is ready.
 
@@ -69,10 +69,10 @@ The automation, on a new 'commit' (new config, new article, whatever), that can 
 
 # Blog is ready!
 
-At this point, travis will have built the blog with the sample content `content/welcome.md`.
+At this point, Travis CI will have built the blog with the sample content `content/welcome.md`.
 
 Keep adding new files to your new repository in the `content/` folder and check the configuration settings in `pelicanconf.py` to customize your name, twitter, SEO, etc
 
-Bear in mind, that at this point you're using a regular Elegant setup with Pelican and some Pelican Plugins, so refer to `peru.yaml` for the url's containing the files and extra information that might be helpful for you to learn on the features and customization possibilities.
+Bear in mind, that at this point you're using a regular Elegant setup with Pelican and some Pelican Plugins, so refer to `peru.yaml` for the URLs containing the files and extra information that might be helpful for you to learn on the features and customization possibilities.
 
 Enjoy your Elegant blog!

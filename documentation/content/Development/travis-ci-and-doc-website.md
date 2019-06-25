@@ -23,10 +23,10 @@ As we wanted this process to be both automated and allowed us to demonstrate via
 
 Setting an automated build required several steps to be done:
 
-- Get a GitHub token that could be used by Travis for pushing to a repo (and configure it in Travis environment variables for the repo in a variable named `GITHUB_TOKEN`)
+- Get a GitHub token that could be used by Travis for pushing to a repository (and configure it in Travis environment variables for the repository in a variable named `GITHUB_TOKEN`)
 - run unit tests for validating new PR before merging
-- configure Travis so that it downloads required dependencies in order to run pelican and then publish the generated web to the repo
-- a GitHub pages enabled repo so that resulting files can be viewed as a webpage.
+- configure Travis so that it downloads required dependencies in order to run pelican and then publish the generated web to the repository
+- a GitHub pages enabled repository so that resulting files can be viewed as a webpage.
 
 One of the key pieces is a properly configured `.travis.yaml` like the one we started using:
 
@@ -129,9 +129,9 @@ after_success:
   - make github
 ```
 
-This piece does the final step, first removes info about the repo containing the actual documentation and allows us to initialize a new one, that we make it point towards the repo we're pushing (so that we keep separate actual website content from 'rendered' website).
+This piece does the final step, first removes info about the repository containing the actual documentation and allows us to initialize a new one, that we make it point towards the repository we're pushing (so that we keep separate actual website content from 'rendered' website).
 
-In the final step, 'make github' uses the makefile provided with pelican to push the changes to the 'master' branch of the target repository, that then, is ready to be served via github pages as a regular web server would do.
+In the final step, 'make github' uses the Makefile provided with pelican to push the changes to the 'master' branch of the target repository, that then, is ready to be served via github pages as a regular web server would do.
 
 # Wrap up
 
@@ -140,6 +140,6 @@ So, right now we've accomplished several things:
 - We do use pelican in the same way that we'll do for our own website
   - We do also have as a consequence, a ['live' demo](https://pelican-elegant.github.io) of latest master branch showcasing features
 - We did automate publishing of webpage as soon as contributors send new articles and are approved for merge
-- All requires no extra change to regular workflow as <Travis-ci.org> is the glue here puting together all the pieces.
+- All requires no extra change to regular workflow as <Travis-CI.org> is the glue here putting together all the pieces.
 
 Let us know via an [issue](https://github.com/Pelican-Elegant/documentation/issues/new) if any problem is spotted on the generated documentation website.
