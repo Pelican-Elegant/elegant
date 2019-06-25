@@ -16,8 +16,21 @@ if os.environ.get("CONTEXT") == "production":
     SITEURL = "https://elegant.oncrashreboot.com"
     FEED_ALL_ATOM = "feeds/all.atom.xml"
     CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
+
+    if os.environ.get("STAT_COUNTER_PROJECT_PROD") and os.environ.get(
+        "STAT_COUNTER_SECURITY_PROD"
+    ):
+        STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_PROD")
+        STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_PROD")
+
 elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == "next":
     SITEURL = "https://next.elegant.oncrashreboot.com"
+    if os.environ.get("STAT_COUNTER_PROJECT_NEXT") and os.environ.get(
+        "STAT_COUNTER_SECURITY_NEXT"
+    ):
+        STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_NEXT")
+        STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_NEXT")
+
 else:
     SITEURL = ""
 

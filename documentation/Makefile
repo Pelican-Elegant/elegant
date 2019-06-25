@@ -84,6 +84,6 @@ themes-sync:
 	rm -rf themes
 	git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git themes/elegant
 
-publish-netlify: plugins-sync themes-sync publish
+publish-netlify: plugins-sync publish
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish plugins-sync publish-netlify themes-sync

@@ -6,9 +6,10 @@ dist: xenial
 python:
 - '3.7'
 
-env:
-- TEST_CMD="pelican content/ -o output/"
-- TEST_CMD="pelican content/ -o output/ -s ./publishconf.py"
+branches:
+  only:
+  - master
+  - next
 
 addons:
  apt:
@@ -30,12 +31,11 @@ install:
 
 before_script:
 - cd documentation
-- make themes-sync
 - make plugins-sync
 
 script:
 - pre-commit run --all-files
 - yaspeller --only-errors content/ *.md
-- $TEST_CMD
+- make publish
 - w3c_validator $(find output/ -name '*.html' -type f)
 - html5validator --root output/
