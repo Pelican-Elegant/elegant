@@ -1,4 +1,4 @@
 [build]
-  base = "./"
+  base = "./documentation"
   publish = "./documentation/output"
-  command = "cd documentation && make publish-netlify"
+  command = "make publish-netlify"
