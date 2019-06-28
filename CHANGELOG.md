@@ -5,6 +5,7 @@
 - New: Lightbox support for `Photos` plugin
 - Fixed: Amazon One Link div is in the header
 - Fixed: Separated claims for google and bing into individual includes
+- New: Document claim Google and Bing
 
 # Version 2.2
 
