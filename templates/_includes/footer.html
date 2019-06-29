@@ -1,5 +1,4 @@
 <footer>
-<div id="footer">
     <ul class="footer-content">
         {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
         {% if SITESUBTITLE %}
@@ -24,7 +23,6 @@
             {% endif %}
         </li>
     </ul>
-</div>
 {% if AMAZON_ONELINK %}
 <div id="amzn-assoc-ad-{{ AMAZON_ONELINK }}"></div>
 <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId={{ AMAZON_ONELINK }}">

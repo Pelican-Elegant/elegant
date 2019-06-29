@@ -1,15 +1,21 @@
 /* Base */
-/* #push.height = -#content-sans-footer.margin-bottom = #footer.margin-top + ul.footer-content */
-body,
-html {
+html,
+body {
   height: 100%;
 }
-#content-sans-footer {
-  min-height: 100%;
-  margin-bottom: -60px;
+body {
+  display: flex;
+  flex-direction: column;
 }
-#push {
-  height: 60px;
+div#content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  font: 0.8em Calibri, Tahoma, Arial, Sans-Serif;
+  margin: 15px 0 0 0;
+  padding: 0;
 }
 h1,
 h2,
