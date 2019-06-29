@@ -19,7 +19,7 @@ footer {
   flex-shrink: 0;
   flex-wrap: wrap;
   font: 0.8em Calibri, Tahoma, Arial, Sans-Serif;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: 15px 0 0 0;
   min-height: 40px;
   padding: 0 3px;
@@ -27,7 +27,13 @@ footer {
 footer div {
   margin: 3px 0;
 }
-
+footer div:first-child {
+  margin-right: auto;
+}
+footer div#fpowered {
+  margin-left: auto;
+  margin-right: unset;
+}
 h1,
 h2,
 h3,
