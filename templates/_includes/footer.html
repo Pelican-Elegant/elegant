@@ -1,11 +1,4 @@
 <footer>
-    {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
-    {% if SITESUBTITLE %}
-    <div>
-        <span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}
-    </div>
-    {% endif %}
-
     {% from '_includes/_defaults.html' import SITE_LICENSE with context %}
     {% if SITE_LICENSE %}
     <div>
@@ -13,6 +6,12 @@
     </div>
     {% endif %}
 
+    {% from '_includes/_defaults.html' import SITESUBTITLE with context %}
+    {% if SITESUBTITLE %}
+    <div>
+        <span class="site-name">{{ SITENAME }}</span> - {{ SITESUBTITLE }}
+    </div>
+    {% endif %}
 
     {% if AMAZON_ONELINK %}
     <div id="amzn-assoc-ad-{{ AMAZON_ONELINK }}">
