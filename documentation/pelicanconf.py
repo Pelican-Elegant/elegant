@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+import os
 
 AUTHOR = "Elegant Team"
 SITENAME = "Elegant"
@@ -72,11 +73,16 @@ CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
 # Elegant theme
-STATIC_PATHS = ["theme/images", "images", "extra/robots.txt", "extra/_redirects"]
-EXTRA_PATH_METADATA = {
-    "extra/robots.txt": {"path": "robots.txt"},
-    "extra/_redirects": {"path": "_redirects"},
-}
+STATIC_PATHS = ["theme/images", "images", "extra/_redirects"]
+EXTRA_PATH_METADATA = {"extra/_redirects": {"path": "_redirects"}}
+
+if os.environ.get("CONTEXT") == "production":
+    STATIC_PATHS.append("extra/robots.txt")
+    EXTRA_PATH_METADATA["extra/robots.txt"] = {"path": "robots.txt"}
+else:
+    STATIC_PATHS.append("extra/robots_deny.txt")
+    EXTRA_PATH_METADATA["extra/robots_deny.txt"] = {"path": "robots.txt"}
+
 DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "search", "404")
 TAG_SAVE_AS = ""
 AUTHOR_SAVE_AS = ""
