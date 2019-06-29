@@ -12,4 +12,9 @@
         <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page">Elegant</a></li>
     </ul>
 </div>
+{% if AMAZON_ONELINK %}
+<div id="amzn-assoc-ad-{{ AMAZON_ONELINK }}"></div>
+<script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId={{ AMAZON_ONELINK }}">
+</script>
+{% endif %}
 </footer>

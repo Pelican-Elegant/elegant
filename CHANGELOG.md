@@ -1,3 +1,35 @@
+# Version 2.3.0
+
+## Project Management
+
+- Documentation is hosted at https://elegant.oncrashreboot.com/
+- Host and build documentation using Netlify
+- `elegant.oncrashreboot.com` domain is the final home of documentation. It shall never change
+- Delete github pages and related repositories
+
+## Features
+
+- New: FontAwesome updated to version 4.7.0
+- New: `Photos` plugin support for photo gallery creation
+- New: Lightbox support for `Photos` plugin
+- Fixed: Amazon One Link div is in the header
+- Fixed: Separated claims for Google and Bing into individual includes
+
+## Documentation
+
+- New: Help article on claim Google and Bing
+
+## CI
+
+- New: Enable deploy previews for every pull request
+- New: Add spell check for every pull request, and `master` and `next` branches
+- New: Add git hooks to format the code
+- New: Add commit Zen support
+- New: Add html5validator, which along with w3c_validator, makes for two html validation tools in the CI
+- New: Improve CI build times
+- Remove: peru for downloading plugins and themes
+- New: Add pull request template
+
 # Version 2.2
 
 - New: TipueSearch updated to 7.1
