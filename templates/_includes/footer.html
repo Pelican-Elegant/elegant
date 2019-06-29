@@ -9,7 +9,20 @@
         {% if SITE_LICENSE %}
         <li class="elegant-license">{{ SITE_LICENSE }}</li>
         {% endif %}
-        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page">Elegant</a></li>
+        <li class="elegant-power">
+            Powered by: <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>
+            Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page">Elegant</a>
+            {% if HOSTED_ON and HOSTED_ON.name %}
+            Hosted on:
+            {% if HOSTED_ON.url %}
+            <a href={{HOSTED_ON.url}}>
+                {{HOSTED_ON.name}}
+            </a>
+            {% else %}
+            {{HOSTED_ON.name}}
+            {% endif %}
+            {% endif %}
+        </li>
     </ul>
 </div>
 {% if AMAZON_ONELINK %}
