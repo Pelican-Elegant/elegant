@@ -11,18 +11,18 @@ div#content {
   flex: 1 0 auto;
 }
 footer {
-  flex-shrink: 0;
+  align-content: center;
+  align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  font: 0.8em Calibri, Tahoma, Arial, Sans-Serif;
-  margin: 15px 0 0 0;
-  padding: 0 3px;
   display: flex;
   flex-direction: row;
+  flex-shrink: 0;
   flex-wrap: wrap;
+  font: 0.8em Calibri, Tahoma, Arial, Sans-Serif;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  margin: 15px 0 0 0;
   min-height: 40px;
+  padding: 0 3px;
 }
 footer div {
   margin: 3px 0;
