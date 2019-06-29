@@ -109,6 +109,7 @@ FEATURED_IMAGE = SITEURL + "/theme/images/apple-touch-icon-152x152.png"
 SITE_LICENSE = """Elegant documentation is licensed under a <a rel="license"
     href="http://creativecommons.org/licenses/by/4.0/">
     Creative Commons Attribution 4.0 International License</a>."""
+HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
 
 # SEO
 SITE_DESCRIPTION = (
