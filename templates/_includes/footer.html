@@ -10,12 +10,12 @@
         <li class="elegant-license">{{ SITE_LICENSE }}</li>
         {% endif %}
         <li class="elegant-power">
-            Powered by: <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>
-            Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page">Elegant</a>
+            Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank">Pelican</a>
+            Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank">Elegant</a>
             {% if HOSTED_ON and HOSTED_ON.name %}
             Hosted on:
             {% if HOSTED_ON.url %}
-            <a href={{HOSTED_ON.url}}>
+            <a href={{HOSTED_ON.url}} target="_blank">
                 {{HOSTED_ON.name}}
             </a>
             {% else %}
