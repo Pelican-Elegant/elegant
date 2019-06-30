@@ -70,9 +70,13 @@ OSX".
 ## Projects
 
 Projects list is read from `PROJECTS`. It is an array of dictionaries. Each
-dictionary has three keys, `name` which will have name of your project, `url`
-which will have URL of the project, and `description` which will have the
-description of the project. You can define as many projects as you want. Here
+dictionary has three keys,
+
+1. `name` which will have name of your project,
+1. `url` which will have URL of the project, and
+1. `description` which will have the description of the project.
+
+You can define as many projects as you want. Here
 is an example,
 
     #!Python
@@ -85,6 +89,12 @@ is an example,
         'url': 'http://oncrashreboot.com/pelican-elegant',
         'description': 'A clean and distraction free theme, with search and a'
         ' lot more unique features, using Jinja2 and Bootstrap'}]
+
+To configure the projects' list title, set `PROJECTS_TITLE` variable in your Pelican configuration. Its default value is "My Projects". For example,
+
+```python
+PROJECTS_TITLE = "Related Projects"
+```
 
 ### Recent Articles
 

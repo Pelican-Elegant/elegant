@@ -32,7 +32,6 @@ These are the optional configuration variables that you can define
 1. `PROJECTS` used for [Projects
    feature](elegant-best-pelican-theme-features#projects)
    on the landing page
-1. `PROJECTS_TITLE` used for changing title of `PROJECTS` list
 1. `USE_SHORTCUT_ICONS` used for [shortcut icons like favicon, Opera Speed
    Dial](how-to-set-shortcut-icons)
 1. `SITE_LICENSE` used to add [site
