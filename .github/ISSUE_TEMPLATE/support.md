@@ -3,8 +3,7 @@ name: Support
 about: Ask support
 title: "[Help]"
 labels: support
-assignees: ''
-
+assignees: ""
 ---
 
 ## Mandatory Step
@@ -14,7 +13,7 @@ assignees: ''
 ## Recommended Step
 
 - [ ] I have attached link to my blog source code repository
-- [ ] I have reproduced my pelican configuration files 
+- [ ] I have reproduced my pelican configuration files
 
 ## I need help with
 
