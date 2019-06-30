@@ -34,6 +34,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "ashwinvis",
+      "name": "Ashwin Vishnu",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9155111?v=4",
+      "profile": "https://ashwinvis.github.io",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
