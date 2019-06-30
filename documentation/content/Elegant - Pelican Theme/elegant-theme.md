@@ -11,18 +11,6 @@ keywords: pelican theme, responsive theme, tipue search
 
 [TOC]
 
-Elegant is a stylish, responsive, and minimal [Pelican](http://getpelican.com/)
-theme that looks amazing across all screen resolutions and devices.
-
-Elegant gives meaning to the expression "sand the under side of the drawer."
-Every feature and style of Elegant is the result of a long thought process.
-
-<div style="text-align:center;">
-<a class="btn btn-large btn-primary" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download on Github']);" href="https://github.com/Pelican-Elegant/elegant/archive/V1.3.zip" target="_blank">Get Elegant <small>1.3</small></a>
-<div><a href="#license" title="License Agreement for using Elegant Theme"><small>License Agreement</small></a>|<a href="https://github.com/Pelican-Elegant/elegant/blob/master/RELEASE_NOTES.md#version-13" title="Release notes for Version 1.3" target="_blank"><small>Release Notes</small></a></div>
-<div><p><a onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Leave a Tip']);" href="http://gittip.com/talha131" target="_blank" style="color:#8B0000"> <i class="fa fa-gittip"></i> Show your support. Leave a tip! <i class="fa fa-gittip"></i></a></p></div>
-</div>
-
 What makes Elegant so special?
 
 ## Search

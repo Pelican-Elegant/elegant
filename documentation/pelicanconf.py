@@ -137,9 +137,4 @@ PROJECTS = [
     },
 ]
 
-LANDING_PAGE_ABOUT = {
-    "title": "Elegant – Why it is the Best Pelican Theme",
-    "details": """<p>This page serves both as documentation site and demonstration of Pelican-Elegant theme
-        capabilities and look&amp;feel.</p><p>Please do check our Project pages and browse this site for more information.
-        </p>""",
-}
+LANDING_PAGE_TITLE ="Elegant – Why it is the Best Pelican Theme" 
