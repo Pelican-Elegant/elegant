@@ -1,4 +1,6 @@
 # Elegant – an elegant theme for Pelican
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b4e4bf12-cd08-49ee-99b1-7fb343ecc2c4/deploy-status)](https://app.netlify.com/sites/pelicanelegant/deploys) [![Build Status](https://travis-ci.org/Pelican-Elegant/elegant.svg?branch=master)](https://travis-ci.org/Pelican-Elegant/elegant) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -48,3 +50,20 @@ All code contributions are made directly under the [MIT License][] as well. This
 [mit license]: https://spdx.org/licenses/MIT.html
 [cc-by-4.0]: https://spdx.org/licenses/CC-BY-4.0.html
 [demo]: https://elegant.oncrashreboot.com/
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://azzamsa.com/"><img src="https://avatars2.githubusercontent.com/u/17734314?v=4" width="100px;" alt="azzamsa"/><br /><sub><b>azzamsa</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Code">💻</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://azzamsa.com/"><img src="https://avatars2.githubusercontent.com/u/17734314?v=4" width="100px;" alt="azzamsa"/><br /><sub><b>azzamsa</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Code">💻</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
