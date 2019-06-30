@@ -8,7 +8,7 @@ comments: true
 category: Monetization
 description:
 slug: amazon-onelink
-disqus_identifier: amazon-onelink
+comment_id: amazon-onelink
 ---
 
 Elegant supports [Amazon OneLink](https://affiliate-program.amazon.com/onelink/), so that you may monetize your traffic using affiliate links.
