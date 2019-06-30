@@ -1,6 +1,6 @@
 ---
 Title: Show Your Host Information
-Tags: appearance
+Tags: nuances
 layout: post
 date: 2019-06-30 11:54
 comments: false
