@@ -1,13 +1,12 @@
 ---
-Title: Elegant Release 2.0
+Title: Version 2.0.0
 Tags: change-log, project-management
 layout: post
-date: 2019-01-03 09:00
+date: 2019-02-09 00:59
 comments: false
-Slug: elegant-2-0-release-notes
+Slug: elegant-2-0-0-release-notes
 Summary: Big improvements on all fronts – loads of bug fixes, improved W3C conformance, a community development model, and a new website.
 Category: Release Notes
-status: draft
 ---
 
 [TOC]
@@ -111,7 +110,7 @@ For a full CHANGELOG, see below.
 
 Below is the full CHANGELOG:
 
-## Version 2.0 (under development)
+## Version 2.0
 
 - Link to your social profiles
 - Upgraded to Twitter Bootstrap 2.3.2
