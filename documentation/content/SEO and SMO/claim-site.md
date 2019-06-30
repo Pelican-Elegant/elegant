@@ -6,7 +6,7 @@ Date: 2019-06-27
 Slug: website-claim
 Disqus_identifier: hk9m5eq-website-claim
 Subtitle:
-Summary: Use Elegain to insert headers to claim website
+Summary: Easily insert headers to claim website
 Keywords:
 ---
 

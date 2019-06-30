@@ -1,5 +1,5 @@
 ---
-Title: Invite Vistors To Comment
+Title: Invite Visitors To Comment
 Tags: interaction
 layout: post
 Date: 2014-04-21 16:39
