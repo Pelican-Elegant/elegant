@@ -8,7 +8,7 @@ comments: true
 category: Development
 description:
 slug: travis-ci-and-doc-website
-disqus_identifier: travis-ci-and-doc-website
+comment_id: travis-ci-and-doc-website
 ---
 
 [TOC]

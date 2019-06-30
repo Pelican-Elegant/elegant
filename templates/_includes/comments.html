@@ -13,7 +13,9 @@
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                {% if article.disqus_identifier %}
+                {% if article.comment_id %}
+                    data-disqus-identifier="{{ article.comment_id }}"
+                {% elif article.disqus_identifier %}
                     data-disqus-identifier="{{ article.disqus_identifier }}"
                 {% endif %}
                 href="{{ SITEURL }}/{{ article.url }}#disqus_thread",

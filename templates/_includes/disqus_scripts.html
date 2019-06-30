@@ -42,7 +42,9 @@ $('#disqus_thread').on('shown', function () {
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = '{{ DISQUS_SITENAME }}';
-    {% if article.disqus_identifier %}
+    {% if article.comment_id %}
+        var disqus_identifier = '{{ article.comment_id }}';
+    {% elif article.disqus_identifier %}
         var disqus_identifier = '{{ article.disqus_identifier }}';
     {% else %}
         var disqus_identifier = '{{ SITEURL }}/{{ article.url }}';

@@ -8,7 +8,7 @@ comments: true
 category: Development
 description:
 slug: travis-to-trigger-build-in-another-repository
-disqus_identifier: travis-to-trigger-build-in-another-repository
+comment_id: travis-to-trigger-build-in-another-repository
 ---
 
 [TOC]
