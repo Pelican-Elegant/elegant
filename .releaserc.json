@@ -11,6 +11,12 @@
         "changelogFile": "./CHANGELOG.md"
       }
     ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "pre-commit run --files CHANGELOG.md; pre-commit  run --files CHANGELOG.md"
+      }
+    ],
     "@semantic-release/git",
     "@semantic-release/github"
   ]
