@@ -1,10 +1,8 @@
-# Copyright (C) 2017, 2018 Pablo Iranzo Gómez <Pablo.Iranzo@gmail.com>
-
 language: python
-dist: xenial
+dist: trusty
 
 python:
-- '3.7'
+- '3.6'
 
 branches:
   only:
@@ -28,6 +26,7 @@ install:
 - pip install -U html5validator
 - pip install -U pre-commit
 - yarn global add yaspeller
+- yarn install
 
 before_script:
 - cd documentation
@@ -39,3 +38,10 @@ script:
 - make publish
 - w3c_validator $(find output/ -name '*.html' -type f)
 - html5validator --root output/
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: yarn semantic-release
+  on:
+    branch: master
