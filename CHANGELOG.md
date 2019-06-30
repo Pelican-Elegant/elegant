@@ -57,7 +57,7 @@
 - Changed: Project documentation has been moved inside the Elegant repository
 - Removed: Google Plus author
 
-# Version 2.0 (under development)
+# Version 2.0
 
 - Link to your social profiles
 - Upgraded to Twitter Bootstrap 2.3.2
