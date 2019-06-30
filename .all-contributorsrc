@@ -25,6 +25,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "cszhe",
+      "name": "Jason He",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3096714?v=4",
+      "profile": "https://github.com/cszhe",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
