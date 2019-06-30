@@ -162,86 +162,11 @@ your configuration file. You can also define `EMAIL_SUBSCRIPTION_LABEL`,
 `EMAIL_FIELD_PLACEHOLDER` and `SUBSCRIBE_BUTTON_TITLE` to customize user
 experience.
 
-## Articles Count with every Tag and Category
-
-Readers of an article on your site usually look for other articles on the same
-topic. Categories and tags are a way of showing them related articles. Elegant
-displays the count of articles that you have written in a category or tag in a
-non-intrusive manner.
-
-Every category and tag has the count of articles in superscript. So if you have
-written three articles in the C++ category or tag, it will have 3 in the
-superscript. This way visitor will know you have written other articles too on
-the same topic.
-
-Check out the screenshots,
-
-![Count of articles in a category is displayed in
-superscript]({static}/images/elegant-theme_category-superscript-count.png)
-
-![Count of articles that have been tagged is displayed in
-superscript]({static}/images/elegant-theme_tag-superscript-count.png)
-
 ## Custom 404 Page
 
 Elegant has a custom Error 404 page for your readers.
 
 ![Error 404 page]({static}/images/elegant-theme_error-404-page.png)
-
-## Page Title
-
-Elegant follows following format for the `<title>` tag
-
-```
-Article title · Site Name
-```
-
-![Article title is always visible in the
-tab]({static}/images/elegant-theme_page-title.png)
-
-Some sites put site title first and article title later in the `<title>` tag.
-There is a problem with this approach. When you open too many tabs, browser
-delimits tab's title from the end. In such cases, only the first few words or
-even letters of the `<title>` are left visible.
-
-If visitor has opened several tabs from your website, all tabs will have "Site
-Name..." title. User will need to click on each tab to identify his required
-tab from the content. But with Elegant's approach article title will always be
-visible, and reader will have less difficultly in identifying the tab he is
-after.
-
-Putting site title before the article title increases your site name
-visibility. Elegant achieves this by putting site name in the top navigation
-bar of every page, where it always stays above the fold.
-
-## Code Style
-
-Elegant uses [Solarized](http://ethanschoonover.com/solarized) theme for syntax
-highlighting. Line numbers have a different background color so that they
-appear distinct from the code. Here is an example
-
-    #!c
-    int sample_function (void) {
-        printf ("This is a sample function");
-        return 0
-    }
-
-## Article Subtitle
-
-Pelican lets you define title of your article in the meta data. Elegant adds
-subtitle support. Just define `subtitle` in your article's meta data and it
-will appear along with your title. Here is an example,
-
-![Article subtitle
-example]({static}/images/elegant-theme_article-subtitle.png)
-
-Article subtitle is displayed with the title in every list. To keep it visibly
-separate from title, subtitle is enclosed in `<small>` tag. When visible cue
-cannot be used, like in the title attribute of HTML anchor tag `<a>`, a hyphen
-is inserted between them.
-
-![Article title and subtitle separated with a
-hyphen]({static}/images/elegant-theme_article-subtitle-hyphen.png)
 
 ---
 
