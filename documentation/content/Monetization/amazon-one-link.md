@@ -45,4 +45,4 @@ Amazon Associates states that you need to disclose your affiliation with Amazon 
 
 To conform to this rule in the agreement, Elegant automatically adds the disclaimer in the footer of the website if `AMAZON_ONELINK` variable is set. It looks like this,
 
-![]({static}/images/amazon-online-disclaimer.png)
+![Amazon OneLink Disclosure]({static}/images/amazon-online-disclaimer.png)
