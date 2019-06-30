@@ -1,6 +1,20 @@
 <!-- yaspeller ignore:start -->
 
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://azzamsa.com/"><img src="https://avatars2.githubusercontent.com/u/17734314?v=4" width="100px;" alt="azzamsa"/><br /><sub><b>azzamsa</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Code">💻</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
 # Thanks to
+
+Following section is the list of contributors that we used to maintain manually. As it became tedious, we switched to automated contributors list, which you can view above.
 
 **Extra Special Thanks** to [talha131](https://github.com/talha131) for creating this theme and for being the sole maintainer and main developer of Elegant for so many years, and later opening up the development to a community-led effort, enabling the theme and its community to grow.
 
