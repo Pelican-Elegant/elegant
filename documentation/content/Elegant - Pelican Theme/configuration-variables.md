@@ -43,9 +43,6 @@ These are the optional configuration variables that you can define
    [comments](how-to-use-disqus-comments-elegantly#invite-visitors-to-comment)
 1. `SITE_DESCRIPTION` used for [Search Engine
    Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
-1. `LANDING_PAGE_ABOUT` used for [About me
-   feature](elegant-best-pelican-theme-features#about-me)
-   on the landing page
 1. `SOCIAL_PROFILE_LABEL` used with [social media profiles
    widget](how-to-display-your-social-media-profiles)
 1. `RECENT_ARTICLES_COUNT` see the post [Recent

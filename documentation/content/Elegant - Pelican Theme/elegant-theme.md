@@ -87,55 +87,6 @@ uncollapsed]({static}/images/elegant-theme_category-accordions-uncollapsed.png)
 Did you notice that categories are listed in ascending alphabetical order and
 articles are sorted by their date in descending order?
 
-## Home Page Features
-
-This is the page that visitors see when they open your website. Your chance to
-make a good and lasting first impression. Most sites just display a list of
-recent posts. Elegant goes the extra mile. Check this out
-
-![Home Page Sample]({static}/images/elegant-theme_home-page-features.png)
-
-You can see two sections here,
-
-1. About me
-1. My Projects
-
-There is a third section below these two sections, "Recent articles"
-
-![Recent Articles Section]({static}/images/elegant-theme_recent-posts.png)
-
-### About me
-
-You can write up your own About me section using `LANDING_PAGE_ABOUT` variable
-in your configuration. It is a dictionary that has two keys `title` and
-`details`. Value of `title` is displayed in the header of the home page, like
-in the above example it is "I design and build software products for iOS and
-OSX". `details` is the text that appears under "About me" heading.
-
-### Projects
-
-Projects list is read from `PROJECTS`. It is an array of dictionaries. Each
-dictionary has three keys, `name` which will have name of your project, `url`
-which will have URL of the project, and `description` which will have the
-description of the project. You can define as many projects as you want. Here
-is an example,
-
-    #!Python
-    PROJECTS = [{
-        'name': 'Logpad + Duration',
-        'url': 'https://github.com/talha131/logpad-plus-duration#logpad--duration',
-        'description': 'Vim plugin to emulate Windows Notepad logging feature,'
-        ' and log duration of each entry'},
-        {'name': 'Elegant Theme for Pelican',
-        'url': 'http://oncrashreboot.com/pelican-elegant',
-        'description': 'A clean and distraction free theme, with search and a'
-        ' lot more unique features, using Jinja2 and Bootstrap'}]
-
-### Recent Articles
-
-Recent articles show last `RECENT_ARTICLES_COUNT` whose default value is 10. It
-also has a link to "all posts".
-
 ## Mailchimp
 
 Mailchimp has become the preferred newsletter service. Elegant shows a form to
