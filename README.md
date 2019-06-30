@@ -1,6 +1,6 @@
 # Elegant – an elegant theme for Pelican
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b4e4bf12-cd08-49ee-99b1-7fb343ecc2c4/deploy-status)](https://app.netlify.com/sites/pelicanelegant/deploys) [![Build Status](https://travis-ci.org/Pelican-Elegant/elegant.svg?branch=master)](https://travis-ci.org/Pelican-Elegant/elegant) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b4e4bf12-cd08-49ee-99b1-7fb343ecc2c4/deploy-status)](https://app.netlify.com/sites/pelicanelegant/deploys) [![Build Status](https://travis-ci.org/Pelican-Elegant/elegant.svg?branch=master)](https://travis-ci.org/Pelican-Elegant/elegant) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Elegant][demo] is a theme for the static site generator [Pelican][].
 
