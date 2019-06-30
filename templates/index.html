@@ -6,10 +6,10 @@
 
 {% block meta_tags_in_head %}
 {{ super() }}
-{% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
-{% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
-<meta property="og:title" content="{{ LANDING_PAGE_ABOUT.title|e }}"/>
-<meta name="twitter:title" content="{{ LANDING_PAGE_ABOUT.title|e }}">
+{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE with context %}
+{% if LANDING_PAGE_TITLE  %}
+<meta property="og:title" content="{{ LANDING_PAGE_TITLE|e }}"/>
+<meta name="twitter:title" content="{{ LANDING_PAGE_TITLE|e }}">
 {% else %}
 <meta property="og:title" content="{{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="{{ SITENAME|striptags|e }}">
@@ -30,39 +30,47 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-{% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
+{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE with context %}
 {% from '_includes/_defaults.html' import PROJECTS with context %}
 {% from '_includes/_defaults.html' import PROJECTS_TITLE with context %}
+
+{% set landing_page = namespace(page=false) %}
+{% for p in hidden_pages if p.slug == "landing-page-about-hidden" %}
+{% set landing_page.page = p %}
+{% endfor %}
+
+{{landing_page.page.title}}
+
 <div class="row-fluid">
-    {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
+    {% if LANDING_PAGE_TITLE %}
     {% set css_class = 'span10 offset2' %}
-    {% if PROJECTS and LANDING_PAGE_ABOUT %}
+    {% if PROJECTS and LANDING_PAGE_TITLE %}
     {% set css_class = 'span12' %}
     {% endif %}
     <header class="page-header {{css_class}}">
-    <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_ABOUT.title }}</a></h1>
+    <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_TITLE }}</a></h1>
     </header>
     {% endif %}
 
     <div class="row-fluid">
-        {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
+        {% if LANDING_PAGE_TITLE and landing_page.page %}
         {% set css_class = 'span8 offset2' %}
-        {% if PROJECTS and LANDING_PAGE_ABOUT %}
+        {% if PROJECTS and LANDING_PAGE_TITLE %}
         {% set css_class = 'span8' %}
         {% endif %}
         <div class="{{css_class}}">
             <header>
-            <h1 id="about-me">About me</h1>
+                <h1 id="about-me">{{landing_page.page.title}}</h1>
             </header>
             <div class="article-content">
-                {{ LANDING_PAGE_ABOUT.details }}
+                {{ landing_page.page.content }}
             </div>
         </div>
         {% endif %}
 
         {% if PROJECTS %}
         {% set css_class = 'span8 offset2' %}
-        {% if PROJECTS and LANDING_PAGE_ABOUT %}
+        {% if PROJECTS and LANDING_PAGE_TITLE %}
         {% set css_class = 'span4' %}
         {% endif %}
         <div class="{{css_class}}">
@@ -82,7 +90,7 @@
 
     {% if articles %}
     {% set css_class = 'span8 offset2' %}
-    {% if articles and PROJECTS and LANDING_PAGE_ABOUT %}
+    {% if articles and PROJECTS and LANDING_PAGE_TITLE %}
     {% set css_class = 'span12' %}
     {% endif %}
     <div class="row-fluid">
