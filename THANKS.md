@@ -6,7 +6,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="http://azzamsa.com/"><img src="https://avatars2.githubusercontent.com/u/17734314?v=4" width="100px;" alt="azzamsa"/><br /><sub><b>azzamsa</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Code">💻</a></td></tr></table>
+<table><tr><td align="center"><a href="http://azzamsa.com/"><img src="https://avatars2.githubusercontent.com/u/17734314?v=4" width="100px;" alt="azzamsa"/><br /><sub><b>azzamsa</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=azzamsa" title="Code">💻</a></td><td align="center"><a href="http://iranzo.github.io"><img src="https://avatars0.githubusercontent.com/u/312463?v=4" width="100px;" alt="Pablo Iranzo Gómez"/><br /><sub><b>Pablo Iranzo Gómez</b></sub></a><br /><a href="#infra-iranzo" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Tests">⚠️</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=iranzo" title="Documentation">📖</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
