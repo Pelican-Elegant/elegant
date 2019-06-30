@@ -22,6 +22,7 @@ MARKDOWN = {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
+        "markdown.extensions.nl2br": {},
         "markdown.extensions.toc": {"permalink": "true"},
     }
 }
@@ -137,4 +138,4 @@ PROJECTS = [
     },
 ]
 
-LANDING_PAGE_TITLE ="Elegant – Why it is the Best Pelican Theme" 
+LANDING_PAGE_TITLE = "Elegant – Why it is the Best Pelican Theme"
