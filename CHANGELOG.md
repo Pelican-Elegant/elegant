@@ -1,3 +1,9 @@
+# [2.5.0](https://github.com/Pelican-Elegant/elegant/compare/V2.4.0...V2.5.0) (2019-06-30)
+
+### Features
+
+- **comments:** replace disqus_identifier with comment_id ([3aa4e24](https://github.com/Pelican-Elegant/elegant/commit/3aa4e24))
+
 # [2.4.0](https://github.com/Pelican-Elegant/elegant/compare/V2.3.0...V2.4.0) (2019-06-30)
 
 ### Features
