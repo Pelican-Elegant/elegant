@@ -38,4 +38,11 @@ For example, original link (Python book):
 
 This is an optional feature. If you do not set the variable then Amazon OneLink script is not added to the rendered output.
 
-You, as a content creator, should be aware of GDPR or other regulations. We recommend you to seek consent from your readers to use the affiliate links on your site.
+You, as a content creator, should be aware of GDPR or other regulations.
+[Section 5 of the Operating
+Agreement](https://affiliate-program.amazon.com/help/operating/agreement) for
+Amazon Associates states that you need to disclose your affiliation with Amazon and that you earn from qualifying purchases.
+
+To conform to this rule in the agreement, Elegant automatically adds the disclaimer in the footer of the website if `AMAZON_ONELINK` variable is set. It looks like this,
+
+![]({static}/images/amazon-online-disclaimer.png)
