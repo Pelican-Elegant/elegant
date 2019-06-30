@@ -2,7 +2,7 @@
 Title: Version 2.0.0
 Tags: change-log, project-management
 layout: post
-date: 2019-02-09 00:59
+date: 2019-02-10 05:59
 comments: false
 Slug: elegant-2-0-0-release-notes
 Summary: Big improvements on all fronts – loads of bug fixes, improved W3C conformance, a community development model, and a new website.

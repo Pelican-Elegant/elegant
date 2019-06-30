@@ -2,7 +2,7 @@
 Title: Version 2.1.0
 Tags: change-log, project-management
 layout: post
-date: 2018-02-10 11:34
+date: 2019-02-10 11:34
 comments: false
 Slug: version-2-1-0-release-notes
 Summary: Add new features and updates

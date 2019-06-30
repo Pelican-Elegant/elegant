@@ -32,7 +32,6 @@ These are the optional configuration variables that you can define
 1. `PROJECTS` used for [Projects
    feature](elegant-best-pelican-theme-features#projects)
    on the landing page
-1. `PROJECTS_TITLE` used for changing title of `PROJECTS` list
 1. `USE_SHORTCUT_ICONS` used for [shortcut icons like favicon, Opera Speed
    Dial](how-to-set-shortcut-icons)
 1. `SITE_LICENSE` used to add [site
@@ -43,9 +42,6 @@ These are the optional configuration variables that you can define
    [comments](how-to-use-disqus-comments-elegantly#invite-visitors-to-comment)
 1. `SITE_DESCRIPTION` used for [Search Engine
    Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
-1. `LANDING_PAGE_ABOUT` used for [About me
-   feature](elegant-best-pelican-theme-features#about-me)
-   on the landing page
 1. `SOCIAL_PROFILE_LABEL` used with [social media profiles
    widget](how-to-display-your-social-media-profiles)
 1. `RECENT_ARTICLES_COUNT` see the post [Recent
