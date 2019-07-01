@@ -10,7 +10,7 @@ Category: Mailing List
 
 Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every article.
 
-You need to put your FreeList name in `FREELISTS_NAME` in your configuration file.
+You need to put your FreeLists name in `FREELISTS_NAME` in your configuration file.
 
 To customize user experience you can also define,
 
@@ -20,7 +20,7 @@ To customize user experience you can also define,
 
 !!! Warning
 
-    FreeList has deprecated the form Elegant used. Due to which,
+    FreeLists has deprecated the form Elegant used. Due to which,
     user is redireced to FreeLists [deprecation notice page](https://www.freelists.org/cgi-bin/subscription.cgi).
     If your `FREELISTS_NAME` is correct then their notice page has a link to their new form.
 
