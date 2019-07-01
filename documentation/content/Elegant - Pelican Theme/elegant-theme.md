@@ -41,20 +41,6 @@ page.
 
 ![Search box]({static}/images/elegant-theme_search-box.png)
 
-## Mailchimp
-
-Mailchimp has become the preferred newsletter service. Elegant shows a form to
-subscribe to your newsletter, above the fold, in the right section of every
-article. Increased visibility is said to increase number of subscribers.
-
-![Mailchimp subscriber
-form]({static}/images/elegant-theme_subscribe-form.png)
-
-You need to put your Mailchimp form action URL in `MAILCHIMP_FORM_ACTION` in
-your configuration file. You can also define `EMAIL_SUBSCRIPTION_LABEL`,
-`EMAIL_FIELD_PLACEHOLDER` and `SUBSCRIBE_BUTTON_TITLE` to customize user
-experience.
-
 ## Custom 404 Page
 
 Elegant has a custom Error 404 page for your readers.
