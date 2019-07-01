@@ -41,52 +41,6 @@ page.
 
 ![Search box]({static}/images/elegant-theme_search-box.png)
 
-## Live Filter for Tags
-
-Elegant is a minimal theme. Instead of creating separate pages for each tag,
-Elegant shows all the tags on a single page. To help visitor find the tags he
-is interested in, Elegant offers live filter.
-
-Go to tags page and type your required tag in "Find a tag" search box. Elegant
-will automatically filter the list.
-
-For example, this is how my tags page looks like
-
-![Tags view
-unfiltered]({static}/images/elegant-theme_tags-live-filter-default.png)
-
-As soon as I type "os", all other tags are filtered out
-
-![Tags view filtered for
-"os"]({static}/images/elegant-theme_tags-live-filter-filtered.png)
-
-With live filter, your reader will have no difficulty in picking up his desired
-tag from the list, even if your site has hundreds of tags.
-
-## All Categories but with zero clutter
-
-Pelican by default creates a separate page for each category. Themes list all
-the articles filed in that category at its page. Elegant takes a different
-approach.
-
-It lists all the categories and their articles on the same page. To reduce
-clutter and utilize space efficiently, each category and its list of articles
-is enclosed in [collapsible
-accordions](http://getbootstrap.com/2.3.2/javascript.html#collapse).
-
-Here is how categories appear collapsed
-
-![Categories accordions
-collapsed]({static}/images/elegant-theme_category-accordions-collapsed.png)
-
-And this is how they appear uncollapsed
-
-![Categories accordions
-uncollapsed]({static}/images/elegant-theme_category-accordions-uncollapsed.png)
-
-Did you notice that categories are listed in ascending alphabetical order and
-articles are sorted by their date in descending order?
-
 ## Mailchimp
 
 Mailchimp has become the preferred newsletter service. Elegant shows a form to
