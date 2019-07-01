@@ -5,7 +5,7 @@ layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: articles-count-with-every-tag-and-category
-Category: Appearance & Style
+Category: Taxonomy
 ---
 
 Readers of an article on your site usually look for other articles on the same
