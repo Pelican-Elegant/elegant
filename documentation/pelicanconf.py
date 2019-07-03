@@ -124,10 +124,24 @@ PROJECTS = [
         "description": "Source code of Elegant theme",
     },
     {
+        "name": "Issue Tracker",
+        "url": "https://github.com/Pelican-Elegant/elegant/issues",
+        "description": "Give your feedback, ask questions or report issues",
+    },
+    {
+        "name": "Roadmap",
+        "url": "https://github.com/Pelican-Elegant/elegant/milestones",
+        "description": "See planned features and estimated release dates",
+    },
+    {
+        "name": "onCrashReboot",
+        "url": "https://www.oncrashreboot.com/",
+        "description": "Home page of Elegant creator and lead developer",
+    },
+    {
         "name": "Pelican",
         "url": "https://github.com/getpelican/pelican/",
-        "description": "Static site generator that supports Markdown and"
-        " reST syntax",
+        "description": "Static site generator that powers Elegant",
     },
     {
         "name": "Pelican Plugins",
