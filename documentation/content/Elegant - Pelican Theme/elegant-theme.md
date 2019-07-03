@@ -13,12 +13,6 @@ keywords: pelican theme, responsive theme, tipue search
 
 What makes Elegant so special?
 
-## Custom 404 Page
-
-Elegant has a custom Error 404 page for your readers.
-
-![Error 404 page]({static}/images/elegant-theme_error-404-page.png)
-
 ---
 
 ## Elegant - Technical Nitty-Gritty
