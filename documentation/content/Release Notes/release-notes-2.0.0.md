@@ -2,7 +2,7 @@
 Title: Version 2.0.0
 Tags: change-log, project-management
 layout: post
-date: 2019-02-09 00:59
+date: 2019-02-10 05:59
 comments: false
 Slug: elegant-2-0-0-release-notes
 Summary: Big improvements on all fronts – loads of bug fixes, improved W3C conformance, a community development model, and a new website.
@@ -17,7 +17,7 @@ With more than 4 years in the making, this release started "better late then nev
 
 With the [community spark re-ignited][announcement_community], this has become the biggest release since probably 1.0. And as such a very worthy release to carry the 2.0 crown.
 
-[announcement_community]: {filename}../Announcements/community-driven-project.md
+[announcement_community]: {filename}../Contributing/community-driven-project.md
 
 # Elegant v 2.0 is finally here!
 

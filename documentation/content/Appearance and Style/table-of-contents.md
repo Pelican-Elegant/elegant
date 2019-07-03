@@ -1,3 +1,4 @@
+---
 Title: How Elegant displays Table of Contents
 Tags: reST, markdown, navigation, web-design, contents
 Category: Appearance & Style
@@ -7,6 +8,8 @@ Disqus_identifier: lm95rjd-how-elegant-displays-table-of-contents
 Subtitle:
 Summary: Elegant shows Table of Contents, if available, non intrusively to give a clean reading experience to the visitor
 Keywords:
+authors: Talha Mansoor
+---
 
 [TOC]
 

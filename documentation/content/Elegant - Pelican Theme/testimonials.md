@@ -1,3 +1,4 @@
+---
 Title: What People Say About Elegant
 Tags: pelican-theme, testimonials
 Category: Elegant - Pelican Theme
@@ -7,6 +8,8 @@ Disqus_identifier: qryv67o-what-people-say-about-elegant
 Subtitle:
 Summary:
 Keywords:
+authors: Talha Mansoor
+---
 
 > Thanks for this amazing project.
 

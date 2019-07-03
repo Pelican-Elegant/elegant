@@ -80,4 +80,4 @@ The `photos` plugin will process the images, resize, include the watermark, etc 
 
 This is an example of the final result:
 
-![]({static}../images/photogallery.png)
+![Photo Gallery Demonstration]({static}../images/photogallery.png)

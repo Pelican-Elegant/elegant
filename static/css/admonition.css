@@ -16,6 +16,10 @@ div.admonition p {
   padding: 0;
 }
 
+div.admonition p a {
+  color: inherit !important;
+}
+
 div.admonition pre {
   margin: 0.4em 1em 0.4em 1em;
 }
