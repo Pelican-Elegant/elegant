@@ -11,19 +11,6 @@ Static sites usually do not offer search. Elegant uses [Tipue
 Search](http://www.tipue.com/search/)- an open source jQuery plugin, to offer
 search for your static site.
 
-There are two search modes.
-
-1. **JSON Mode** Your site pages will be stored in JSON at your server. Tipue
-   Search will use AJAX to access it and render search result. You need [Tipue
-   Search plugin](https://github.com/getpelican/pelican-plugins) to use this
-   mode.
-1. **Live Mode Search** Tipue Search will fetch your site using Sitemap, index
-   it and store it in the visitor's cache. This mode requires [Sitemap
-   plugin](https://github.com/getpelican/pelican-plugins).
-
-Use JSON mode if you value speed, or have a large site, or don't want to
-overwhelm your host server for every search query.
-
 Here is how the search result looks like
 
 ![Search result for App Store]({static}/images/elegant-theme_search-result.png)
