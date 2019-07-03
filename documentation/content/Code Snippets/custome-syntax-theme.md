@@ -3,7 +3,7 @@ Title: Change Syntax Highlight Theme
 Tags: unique
 Date: 2019-07-03 20:18
 Slug: change-syntax-highlight-theme
-Category: Extra Customization
+Category: Code Snippets
 ---
 
 Elegant uses [Solarized theme](http://ethanschoonover.com/solarized) for syntax
