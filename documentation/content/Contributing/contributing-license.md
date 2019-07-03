@@ -1,5 +1,5 @@
 ---
-Title: Contributions Licesne
+Title: Contributions License
 Date: 2019-07-03 22:07
 Slug: contribution-license
 Category: Contributing
