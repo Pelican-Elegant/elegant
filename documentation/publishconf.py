@@ -17,26 +17,18 @@ if os.environ.get("CONTEXT") == "production":
     FEED_ALL_ATOM = "feeds/all.atom.xml"
     CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
     CLAIM_BING = os.environ.get("CLAIM_BING_PROD")
-
-    if os.environ.get("STAT_COUNTER_PROJECT_PROD") and os.environ.get(
-        "STAT_COUNTER_SECURITY_PROD"
-    ):
-        STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_PROD")
-        STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_PROD")
-        GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS_PROD")
+    STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_PROD")
+    STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_PROD")
+    GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS_PROD")
 
 elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == "next":
     SITENAME = "Elegant (Next)"
     SITESUBTITLE = "Pre Release Documentation of The Best Pelican Theme"
     SITEURL = "https://next.elegant.oncrashreboot.com"
     LANDING_PAGE_TITLE = "Elegant (Next) – Why it is the Best Pelican Theme"
-
-    if os.environ.get("STAT_COUNTER_PROJECT_NEXT") and os.environ.get(
-        "STAT_COUNTER_SECURITY_NEXT"
-    ):
-        STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_NEXT")
-        STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_NEXT")
-        GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS_NEXT")
+    STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_NEXT")
+    STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_NEXT")
+    GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS_NEXT")
 
 else:
     SITEURL = ""
