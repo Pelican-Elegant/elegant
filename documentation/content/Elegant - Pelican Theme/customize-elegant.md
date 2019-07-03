@@ -19,22 +19,6 @@ practice will make upgrading Elegant fuss free process.
 
 Instead use following recommended ways.
 
-# Change Syntax Highlight Theme
-
-Elegant uses [Solarized theme](http://ethanschoonover.com/solarized) for syntax
-highlighting. To replace it, copy contents of your preferred theme's CSS style
-sheet into `custom.css`.
-
-Alternatively, you can replace contents of `pygments.css` with your theme's
-style sheet.
-
-If you feel like experimenting with different themes then [this
-repository](https://github.com/uraimo/pygments-vimstyles) has Pygments CSS of
-Vim themes. [This one](https://github.com/richleland/pygments-css) has Pygments
-CSS of built-in styles. Do not forget to change `.codehilite` CSS class
-identifier to `.highlight`. Code blocks in Pelican generated HTML use
-`.highlight` class.
-
 # Change Labels
 
 It is quite possible you will feel the need to tweak labels of different
