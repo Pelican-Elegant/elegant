@@ -1,7 +1,7 @@
 ---
 Title: Elegant grows into a community-led project
 Tags: project-management
-Category: Announcements
+Category: Contributing
 Date: 2019-01-05 19:40
 Slug: community-led-project
 Subtitle: The beginning of a beautiful friendship
