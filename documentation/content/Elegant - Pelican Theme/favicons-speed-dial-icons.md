@@ -1,3 +1,4 @@
+---
 Title: How to set Shortcut Icons
 Tags: pelican-theme, web-design
 Category: Elegant - Pelican Theme
@@ -7,6 +8,8 @@ Disqus_identifier: x0giyfl-how-to-set-shortcut-icons
 Subtitle:
 Summary: Elegant lets you set Favicon, Opera Speed Dial icon, and shortcut icons for Apple iOS and Android devices.
 Keywords:
+authors: Talha Mansoor
+---
 
 Elegant supports Favicon, Opera Speed Dial, and shortcut or launcher icons on
 Apple iOS and Android devices. These are disabled by default to avoid

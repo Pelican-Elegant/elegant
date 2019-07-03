@@ -4,6 +4,7 @@ Tags: unique
 Date: 2019-07-03 20:18
 Slug: change-syntax-highlight-theme
 Category: Code Snippets
+authors: Talha Mansoor
 ---
 
 Elegant uses [Solarized theme](http://ethanschoonover.com/solarized) for syntax

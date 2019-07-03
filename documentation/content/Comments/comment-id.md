@@ -6,6 +6,7 @@ date: 2019-06-30 22:29
 comments: false
 Slug: comments-thread-id
 Category: Commenting
+authors: Talha Mansoor
 ---
 
 Most Pelican themes pass article URL to Disqus as the [Disqus

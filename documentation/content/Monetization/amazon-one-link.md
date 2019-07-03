@@ -1,5 +1,5 @@
 ---
-author: Pablo Iranzo Gómez (pablo.iranzo@gmail.com)
+authors: Pablo Iranzo Gómez, Talha Mansoor
 title: Amazon OneLink Support
 tags: amazon, affiliates, income
 layout: post

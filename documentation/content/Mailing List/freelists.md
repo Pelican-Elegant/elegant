@@ -6,6 +6,7 @@ Date: 2018-07-05 23:20
 comments: false
 Slug: add-freelists
 Category: Mailing List
+authors: Talha Mansoor
 ---
 
 Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every article.

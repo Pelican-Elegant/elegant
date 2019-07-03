@@ -151,3 +151,14 @@ PROJECTS = [
 ]
 
 LANDING_PAGE_TITLE = "Elegant – Why it is the Best Pelican Theme"
+
+AUTHORS = {
+    "Talha Mansoor": {
+        "url": "https://www.oncrashreboot.com/",
+        "blurb": "is the creator and lead developer of Elegant theme.",
+    },
+    "Pablo Iranzo Gómez": {
+        "url": "http://iranzo.github.io",
+        "blurb": "has been involved with open source projects for more than a decade.",
+    },
+}

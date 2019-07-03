@@ -3,6 +3,7 @@ Title: Code Style for Jinja2
 Date: 2019-07-03 22:17
 Slug: code-style-for-jinja2
 Category: Contributing
+authors: Talha Mansoor
 ---
 
 Please make sure to follow the code style of the existing code base.

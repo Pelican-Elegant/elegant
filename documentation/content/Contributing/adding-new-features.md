@@ -3,6 +3,7 @@ Title: Contributing New Features
 Date: 2019-07-03 22:17
 Slug: contributing-new-features
 Category: Contributing
+authors: Talha Mansoor
 ---
 
 If you plan to add new features to the theme, please make sure that:

@@ -6,6 +6,7 @@ Date: 2014-04-21 16:39
 comments: false
 Slug: invite-visitors-comment
 Category: Commenting
+authors: Talha Mansoor
 ---
 
 Instead of just throwing in comments form at the end of every article, Elegant

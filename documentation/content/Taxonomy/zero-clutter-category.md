@@ -6,6 +6,7 @@ Date: 2013-08-27 23:20
 comments: false
 Slug: zero-clutter-categories
 Category: Taxonomy
+authors: Talha Mansoor
 ---
 
 Pelican by default creates a separate page for each category. Themes list all
