@@ -69,8 +69,7 @@ SOCIAL = (
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
 )
 
-CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
-CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
+CLAIM_BING = "BC16AEBED17872F083B3E1E7A67454BD"
 
 # Elegant theme
 STATIC_PATHS = ["theme/images", "images", "extra/_redirects"]
