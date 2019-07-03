@@ -6,6 +6,7 @@ Date: 2013-08-27 23:20
 comments: false
 Slug: collapsible-comments
 Category: Commenting
+authors: Talha Mansoor
 ---
 
 Readers use scroll bar to track their progress when reading inside their

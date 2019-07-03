@@ -69,8 +69,7 @@ SOCIAL = (
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
 )
 
-CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
-CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
+CLAIM_BING = "BC16AEBED17872F083B3E1E7A67454BD"
 
 # Elegant theme
 STATIC_PATHS = ["theme/images", "images", "extra/_redirects"]
@@ -125,10 +124,24 @@ PROJECTS = [
         "description": "Source code of Elegant theme",
     },
     {
+        "name": "Issue Tracker",
+        "url": "https://github.com/Pelican-Elegant/elegant/issues",
+        "description": "Give your feedback, ask questions or report issues",
+    },
+    {
+        "name": "Roadmap",
+        "url": "https://github.com/Pelican-Elegant/elegant/milestones",
+        "description": "See planned features and estimated release dates",
+    },
+    {
+        "name": "onCrashReboot",
+        "url": "https://www.oncrashreboot.com/",
+        "description": "Home page of Elegant creator and lead developer",
+    },
+    {
         "name": "Pelican",
         "url": "https://github.com/getpelican/pelican/",
-        "description": "Static site generator that supports Markdown and"
-        " reST syntax",
+        "description": "Static site generator that powers Elegant",
     },
     {
         "name": "Pelican Plugins",
@@ -138,3 +151,14 @@ PROJECTS = [
 ]
 
 LANDING_PAGE_TITLE = "Elegant – Why it is the Best Pelican Theme"
+
+AUTHORS = {
+    "Talha Mansoor": {
+        "url": "https://www.oncrashreboot.com/",
+        "blurb": "is the creator and lead developer of Elegant theme.",
+    },
+    "Pablo Iranzo Gómez": {
+        "url": "http://iranzo.github.io",
+        "blurb": "has been involved with open source projects for more than a decade.",
+    },
+}

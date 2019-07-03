@@ -6,6 +6,7 @@ Date: 2013-08-27 23:20
 comments: false
 Slug: code-snippets-theme
 Category: Code Snippets
+authors: Talha Mansoor
 ---
 
 Elegant uses [Solarized](http://ethanschoonover.com/solarized) theme for syntax

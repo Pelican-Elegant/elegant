@@ -1,9 +1,12 @@
+---
 Title: Add License to your Site
 Tags: nuances
 Category: Footer
 Date: 2014-04-22 16:23
 Slug: add-license-to-your-site
 Summary: You can display your preferred license in the footer
+authors: Talha Mansoor
+---
 
 You can optionally define `SITE_LICENSE` variable in Pelican configuration. It will appear in the footer of the site.
 

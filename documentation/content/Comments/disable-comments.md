@@ -6,6 +6,7 @@ date: 2019-01-12 16:29
 comments: false
 Slug: disable-comments-per-article
 Category: Commenting
+authors: Talha Mansoor
 ---
 
 If you remove your comment service configuration, say you set `DISQUS_SITENAME` to empty string, then comments will disappear from all the articles.

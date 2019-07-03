@@ -1,3 +1,4 @@
+---
 Title: Display Line Numbers in Code Snippets
 Tags: markdown, reST, code-snippets, gist
 Category: Code Snippets
@@ -6,6 +7,8 @@ Slug: display-line-numbers-in-code-snippets
 Subtitle:
 Summary: reStructuredText and Markdown have directives that generate line numbers for code blocks. Use them to display line numbers in code snippets.
 Keywords: codehilite, python-markdown
+authors: Talha Mansoor
+---
 
 reStructuredText and Markdown have directives that generate line numbers for
 code snippets. Install [Pygments](http://pygments.org/) to use these directives.

@@ -1,4 +1,5 @@
 ---
+authors: Talha Mansoor
 Title: Live Filter for Tags
 Tags: nuances, search
 layout: post

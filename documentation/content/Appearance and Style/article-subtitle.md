@@ -6,6 +6,7 @@ Date: 2013-08-27 23:20
 comments: false
 Slug: article-subtitle
 Category: Appearance & Style
+authors: Talha Mansoor
 ---
 
 Pelican lets you define title of your article in the meta data. Elegant adds

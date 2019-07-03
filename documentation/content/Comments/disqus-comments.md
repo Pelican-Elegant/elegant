@@ -1,3 +1,4 @@
+---
 Title: Enable Disqus Comments
 Tags: interaction
 Category: Commenting
@@ -6,6 +7,8 @@ Slug: enable-disqus-comments
 comment_id: 9jgwmy8-how-to-use-disqus-comments-elegantly
 Subtitle:
 Summary: Elegant offers Disqus comments out of the box with few unique features
+authors: Talha Mansoor
+---
 
 You can use Disqus for comments. You have to set `DISQUS_SITENAME` to Disqus
 site name identifier in configuration to enable comments.

@@ -6,6 +6,7 @@ Date: 2013-08-27 23:20
 comments: false
 Slug: page-title
 Category: Appearance & Style
+authors: Talha Mansoor
 ---
 
 Elegant follows following format for the `<title>` tag

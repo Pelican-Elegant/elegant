@@ -1,3 +1,4 @@
+---
 Title: Search Engine and Social Media Optimization
 Tags: crawler, social-media, web-analytics
 Category: SEO & SMO
@@ -6,6 +7,8 @@ Slug: search-engine-and-social-media-optimization
 Disqus_identifier: 7mh4xjn-search-engine-and-social-media-optimization
 Summary:
 Keywords:
+authors: Talha Mansoor
+---
 
 [TOC]
 

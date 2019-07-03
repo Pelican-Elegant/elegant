@@ -17,7 +17,7 @@ With more than 4 years in the making, this release started "better late then nev
 
 With the [community spark re-ignited][announcement_community], this has become the biggest release since probably 1.0. And as such a very worthy release to carry the 2.0 crown.
 
-[announcement_community]: {filename}../Announcements/community-driven-project.md
+[announcement_community]: {filename}../Contributing/community-driven-project.md
 
 # Elegant v 2.0 is finally here!
 
