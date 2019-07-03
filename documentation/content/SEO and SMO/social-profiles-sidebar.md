@@ -1,6 +1,6 @@
 Title: How to display your Social Media Profiles
 Tags: pelican-theme, font-awesome, social-media, web-design
-Category: Building Readership
+Category: SEO & SMO
 Date: 2014-01-27 00:28
 Slug: how-to-display-your-social-media-profiles
 Disqus_identifier: k7fpj4y-how-to-display-your-social-media-profiles
