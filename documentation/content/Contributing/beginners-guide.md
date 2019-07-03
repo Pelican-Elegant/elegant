@@ -31,42 +31,4 @@ In both cases, the following command is your Swiss-army knife:
 For more on the interactive rebase command of Git, see [its official documentation][git_rebase].
 
 [git_rebase]: https://git-scm.com/docs/user-manual#interactive-rebase
-
-# New Features and Styles
-
-If you plan to add new features to the theme, please make sure that:
-
-- you set sensible defaults so the theme works out of the box, without forcing the user to set any variable
-- your changes do not negatively effect readability and reading experience
-- your changes do not cause distraction for the reader
-- any bigger features should go through the voting process (see below)
-
-# Code style
-
-Please make sure to follow the code style of the existing code base.
-
-Specifically:
-
-## Code/Template Formatting Rules
-
-- use single (`''`) rather than double (`""`) quotation marks for Jinja strings
-- in Jinja print statements, surround the variable with spaces inside curly braces – for example: `{{ foo.bar }}`
-- use double (`""`) quotation marks around HTML attributes
-- end files with a newline
-
-## CSS Formatting Rules
-
-- font name’s first letter should be capital
-- add a space after comma
-- declarations should be sorted alphabetically
-- use a single space between the last selector and the opening brace that begins the declaration block
-- group together related classes and identities
-- add a space after colon
-- remove leading 0s
-- remove unit specification after 0 values
-- use three-digit Hex notation for colors wherever possible
-- use hyphen `-` instead of underscore `_` in class and identity names
-
-Refer to [Google's HTML/CSS Style Guide][google_style_guide] for all other formatting rules.
-
 [elegant]: https://github.com/Pelican-Elegant/elegant
