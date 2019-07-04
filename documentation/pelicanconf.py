@@ -159,6 +159,6 @@ AUTHORS = {
     },
     "Pablo Iranzo Gómez": {
         "url": "http://iranzo.github.io",
-        "blurb": "has been involved with open source projects for more than a decade.",
+        "blurb": " opensource enthusiast and Lego fan doing some python simple programs like @redken_bot in telegram, etc",
     },
 }
