@@ -10,6 +10,7 @@
 
 - **home:** write about me in markdown, reST or AsciiDoc ([9b5b2ec](https://github.com/Pelican-Elegant/elegant/commit/9b5b2ec)), closes [#85](https://github.com/Pelican-Elegant/elegant/issues/85)
 - **menu:** set home URL to root if SITEURL is not ([23e0b94](https://github.com/Pelican-Elegant/elegant/commit/23e0b94))
+- **404:** if SITE_URL is set to a GitHub Pages site, add the proper header information
 
 ### BREAKING CHANGES
 
