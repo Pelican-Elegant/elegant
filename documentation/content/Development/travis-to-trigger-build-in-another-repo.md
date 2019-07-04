@@ -1,5 +1,5 @@
 ---
-author: Pablo Iranzo Gómez (pablo.iranzo@gmail.com)
+author: Pablo Iranzo Gómez
 title: Triggering a travis-ci build on another repository
 tags: pelican, FOSS, travis, ci/cd, elegant, blog, python
 layout: post

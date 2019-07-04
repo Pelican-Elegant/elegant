@@ -1,5 +1,5 @@
 ---
-author: Pablo Iranzo Gómez (pablo.iranzo@gmail.com)
+author: Pablo Iranzo Gómez
 title: Travis-CI Automation for documentation website
 tags: pelican, foss, travis, ci/cd, elegant, python
 layout: post
