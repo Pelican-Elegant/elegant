@@ -1,3 +1,8 @@
+{% if SITEURL.endswith('.github.io') and page_name == '404'%}
+---
+permalink: /404.html
+---
+{% endif %}
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG | default("en-US") }}">
     <head>
