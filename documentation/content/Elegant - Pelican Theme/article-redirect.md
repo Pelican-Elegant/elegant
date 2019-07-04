@@ -1,5 +1,6 @@
 ---
 Title: Article redirection
+author: Pablo Iranzo Gómez
 Tags: pelican-theme, pelican-plugin, redirection
 Category: Elegant - Pelican Theme
 Date: 2018-11-30 10:32

@@ -1,5 +1,5 @@
 ---
-author: Pablo Iranzo Gómez (pablo.iranzo@gmail.com)
+author: Pablo Iranzo Gómez
 title: Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.
 tags: pelican, foss, travis, ci/cd, elegant, blog, python, github, blog-o-matic
 layout: post
