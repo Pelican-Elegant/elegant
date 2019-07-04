@@ -23,7 +23,16 @@
         "infra",
         "test",
         "code",
-        "doc"
+        "doc",
+        "question",
+        "bug",
+        "blog",
+        "content",
+        "ideas",
+        "maintenance",
+        "projectManagement",
+        "review",
+        "tutorial"
       ]
     },
     {
