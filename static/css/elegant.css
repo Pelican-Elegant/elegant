@@ -603,6 +603,9 @@ a#allposts:hover {
   padding: 2px 4px;
   white-space: nowrap;
 }
+div.line-block div.line-block {
+  margin-left: 1.5em;
+}
 /* Helper CSS classes */
 .amp {
   font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua",
