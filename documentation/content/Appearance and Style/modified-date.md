@@ -33,6 +33,14 @@ setting you can put modified date in your reST formatted file as
 
 Elegant will process it and display the last updated as "Jan 22, 2014".
 
+!!! important "Condition to Display Last Updated"
+
+    Last Updated is only displayed if the difference between `article.modifed`
+    and `article.date`is more than or equal to a day.
+
+    This means if you modify and article the same day you add it, then Last
+    Updated will not be displayed.
+
 ### Deprecated
 
 !!! Danger "Warning: Legacy Variable"
