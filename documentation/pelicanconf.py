@@ -162,5 +162,6 @@ AUTHORS = {
     "Pablo Iranzo Gómez": {
         "url": "http://iranzo.github.io",
         "blurb": " opensource enthusiast and Lego fan doing some python simple programs like @redken_bot in telegram, etc",
+        "avatar": "https://avatars.githubusercontent.com/u/312463",
     },
 }
