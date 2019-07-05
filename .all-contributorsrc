@@ -71,6 +71,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "seisman",
+      "name": "Dongdong Tian",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3974108?v=4",
+      "profile": "https://seisman.info",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
