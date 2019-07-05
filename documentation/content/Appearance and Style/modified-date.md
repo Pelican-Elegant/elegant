@@ -12,17 +12,18 @@ authors: Talha Mansoor
 ---
 
 You need to update your articles time and again. Sometimes it makes sense to
-display the date when you updated the article. You can show the last updated
+display the date when you updated the article.
+
+Pelican release [v3.4.0](http://docs.getpelican.com/en/stable/changelog.html#id9) has a new
+[ metadata field `modified`](https://github.com/getpelican/pelican/pull/1148). Type of
+its value is `datetime`.
+
+You can show the last updated
 date of the article by defining `modified` in your article metadata.
 
 This is how it is displayed in the side bar,
 
 ![Modified Date]({static}/images/elegant-theme_last-modified.png)
-
-Pelican post [version
-3.3](https://github.com/getpelican/pelican/releases/tag/3.3.0) has a new
-[`modified` metadata](https://github.com/getpelican/pelican/pull/1148). Type of
-its value is `datetime`.
 
 Depending on your
 [`DATE_FORMATS`](http://docs.getpelican.com/en/latest/settings.html#basic-settings)
@@ -40,6 +41,12 @@ Elegant will process it and display the last updated as "Jan 22, 2014".
 
     This means if you modify and article the same day you add it, then Last
     Updated will not be displayed.
+
+!!! tip
+
+    You may want to enable
+    [`filetime_from_git`](https://github.com/getpelican/pelican-plugins/tree/master/filetime_from_git)
+    Pelican plugin to auto fill the modified field for your Git commit history.
 
 ### Deprecated
 
