@@ -10,7 +10,7 @@
     {% endif %}
     {% set auth = AUTHORS.get(author|string) %}
     <div class="author_blurb">
-        <a href="{{ auth.url }}">
+        <a href="{{ auth.url }}" target="_blank">
             {% if AUTHORS.get(author|string).avatar %}
             <img src={{auth.avatar}} alt="{{author}} Avatar" title={{author}}>
             {% endif %}
