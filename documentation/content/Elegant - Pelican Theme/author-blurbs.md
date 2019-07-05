@@ -29,6 +29,14 @@ AUTHORS = {
 }
 ```
 
+Key of every entry in `AUTHORS` dictionary is the author name, for example "Pablo Iranzo Gómez".
+
+The value of each key is a dictionary which has three keys.
+
+1. `url` (string) URL that could be link to author's homepage or profile
+1. `blurb` (string) brief introduction of author
+1. `avatar` (string) URL to author's avatar. You could link to an image on your site or to an image on Gravatar, Imgur or any other image host service
+
 Add an entry for each author you'd like a blurb to appear for.
 
 These blurbs will appear for each known author, as defined in the `AUTHORS`
