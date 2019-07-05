@@ -47,13 +47,13 @@ file. Valid values are:
 
 - `author:` - This defines the _single_ author of the article.
 - `authors:` - This is a comma separated list of all article authors. Each known author will get a blurb. Each unknown author will not get a blurb.
-- Default author defined in your configuration file. If either of the two metatags above are not used, the default author you configured will be utilized. This author still requires an entry in the `AUTHORS` dictionary.
+- Default author defined in your configuration file. If either of the two metadata above are not used, the default author you configured will be utilized. This author still requires an entry in the `AUTHORS` dictionary.
 
-**Note:** If you define multiple authors, but use the `author:` metatag, a blurb
-will not be generated. This metatag is for a _single_ author. The correct way to
+**Note:** If you define multiple authors, but use the `author:` metadata, a blurb
+will not be generated. This metadata is for a _single_ author. The correct way to
 declare more than one author is to use `authors:`.
 
-This is an example of multiple authors using the following metatag value:
+This is an example of multiple authors using the following metadata value:
 
     :::yaml
     authors: Talha Mansoor, Milton Bradley
