@@ -156,6 +156,7 @@ AUTHORS = {
     "Talha Mansoor": {
         "url": "https://www.oncrashreboot.com/",
         "blurb": "is the creator and lead developer of Elegant theme.",
+        "avatar": "/images/avatars/talha131.png",
     },
     "Pablo Iranzo Gómez": {
         "url": "http://iranzo.github.io",
