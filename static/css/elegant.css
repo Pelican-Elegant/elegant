@@ -71,7 +71,9 @@ a {
 hr {
   border-width: 3px;
 }
-
+small.subtitle {
+  font-style: italic;
+}
 /* site title */
 .site-name {
   font-family: "Monaco", "Inconsolata", "Andale Mono", "Lucida Console",
