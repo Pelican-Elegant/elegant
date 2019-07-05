@@ -80,6 +80,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "Schnouki",
+      "name": "Thomas Jost",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/64833?v=4",
+      "profile": "https://schnouki.net/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
