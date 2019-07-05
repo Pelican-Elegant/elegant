@@ -15,13 +15,19 @@ Keywords:
 At the end of each article, you can provide a small blurb about the author. This
 can be done by setting up the `AUTHORS` dictionary in your configuration file.
 
-    :::python
-    AUTHORS = {
-        u'Talha Mansoor': {
-            u'blurb': """ created Elegant Pelican theme, dabbles in Python, Vim-L and JavaScript. They can be reached on Github, Twitter and email.""",
-            u'url': 'https://github.com/talha131/'
-        },
-    }
+```python
+AUTHORS = {
+    "Talha Mansoor": {
+        "url": "https://www.oncrashreboot.com/",
+        "blurb": "is the creator and lead developer of Elegant theme.",
+        "avatar": "/images/avatars/talha131.png",
+    },
+    "Pablo Iranzo Gómez": {
+        "url": "http://iranzo.github.io",
+        "blurb": " opensource enthusiast and Lego fan doing some python simple programs like @redken_bot in telegram, etc",
+    },
+}
+```
 
 Add an entry for each author you'd like a blurb to appear for.
 
@@ -41,7 +47,7 @@ declare more than one author is to use `authors:`.
 
 This is an example of multiple authors using the following metatag value:
 
-    :::python
+    :::yaml
     authors: Talha Mansoor, Milton Bradley
 
 ![Author Blurb]({static}/images/author-blurb.png)
