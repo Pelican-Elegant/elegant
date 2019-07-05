@@ -647,11 +647,17 @@ div.figure.align-left,
 }
 /* Author blurb */
 .author_blurb {
-  font-variant: small-caps;
   font-style: italic;
+  padding: 5px 0;
+}
+.author_blurb img {
+  padding: 0;
+  width: 32px;
+  height: 32px;
 }
 .author_name {
   font-weight: bold;
+  font-variant: small-caps;
 }
 /* Github Gist */
 .gist table {
