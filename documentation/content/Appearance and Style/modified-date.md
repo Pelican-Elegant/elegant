@@ -33,9 +33,18 @@ setting you can put modified date in your reST formatted file as
 
 Elegant will process it and display the last updated as "Jan 22, 2014".
 
-Previous versions do not have `modified` metadata in which case type of its
-value is string. If you are using old version of Pelican, i.e 3.3 or less, make
-sure you assign it a value exactly the way you want it to appear. Taking the
+### Deprecated
+
+!!! Danger "Warning: Legacy Variable"
+
+    Pelican versions prior to 3.4 does not have `modified` metadata in which case type of its
+    value is string.
+
+If you are using old version of Pelican, i.e 3.3 or less, make
+sure you assign it a value exactly the way you want it to appear.
+Whatever you type, it will appear as it is.
+
+Taking the
 example from above, metadata in your reST formatted file should be,
 
     :::Rest
