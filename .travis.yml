@@ -22,7 +22,6 @@ cache:
 
 install:
 - pip install -r documentation/requirements.txt
-- pip install -U Online-W3C-Validator
 - pip install -U html5validator
 - pip install -U pre-commit
 - yarn global add yaspeller
