@@ -3,7 +3,9 @@ blinker==1.4
 cssmin==0.2.0
 docutils==0.14
 feedgenerator==1.9
+invoke==1.2.0
 Jinja2==2.10.1
+livereload==2.6.1
 Markdown==3.1.1
 MarkupSafe==1.1.1
 pelican==4.0.1
@@ -12,7 +14,8 @@ python-dateutil==2.8.0
 pytz==2019.1
 six==1.12.0
 smartypants==2.0.1
-soupsieve==1.9.1
+soupsieve==1.9.2
+tornado==6.0.3
 typogrify==2.0.7
-Unidecode==1.1.0
+Unidecode==1.1.1
 webassets==0.12.1
