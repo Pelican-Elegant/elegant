@@ -3,10 +3,12 @@ If it is <=3.3  than modified is a string
 If it is >3.3 than modified is a datetime object
 #}
 {% if article.locale_modified and article.modified %}
-
+{% set delta = (article.modified - article.date).days %}
+{% if delta > 0 %}
 <h4>Last Updated</h4>
 {% set day = article.modified.strftime('%d')|int %}
 <time datetime="{{ article.modified.isoformat() }}">{{ article.modified.strftime('%b') }} {{ day }} {{- article.modified.strftime(', %Y') }}</time>
+{% endif %}
 
 {% elif article.modified %}
 <h4>Last Updated</h4>
