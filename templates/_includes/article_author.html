@@ -1,10 +1,26 @@
 {% macro article_author(article) %}
-<div>
-    {% for author in article.authors %}
-        {% if author|string in AUTHORS %}
-            <span class="author_blurb"><a href="{{ AUTHORS.get(author|string).url }}"><span class="author_name">{{ author }}</span></a> -
-                {{ AUTHORS.get(author|string).blurb }}</span><br />
-        {% endif %}
+{% set tag = namespace({'open' : true, 'close': false}) %}
+{% for author in article.authors %}
+{% if author|string in AUTHORS %}
+{% if tag.open %}
+<section>
+    <hr />
+    {% set tag.open = false %}
+    {% set tag.close = true %}
+    {% endif %}
+    {% set auth = AUTHORS.get(author|string) %}
+    <div class="author_blurb">
+        <a href="{{ auth.url }}" target="_blank" rel="nofollow">
+            {% if AUTHORS.get(author|string).avatar %}
+            <img src={{auth.avatar}} alt="{{author}} Avatar" title="{{author}}">
+            {% endif %}
+            <span class="author_name">{{ author }}</span>
+        </a>
+        {{ auth.blurb }}
+    </div>
+    {% endif %}
     {% endfor %}
-</div>
+    {% if tag.close %}
+</section>
+{% endif %}
 {% endmacro %}
