@@ -89,6 +89,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "fladd",
+      "name": "Florian Krause",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2971539?v=4",
+      "profile": "http://www.fladd.de/code",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
