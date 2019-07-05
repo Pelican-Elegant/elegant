@@ -644,3 +644,7 @@ div.figure.align-left,
 .author_name {
   font-weight: bold;
 }
+/* Github Gist */
+.gist table {
+  table-layout: initial;
+}
