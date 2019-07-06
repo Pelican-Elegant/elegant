@@ -161,4 +161,8 @@ AUTHORS = {
         "url": "http://iranzo.github.io",
         "blurb": "has been involved with open source projects for more than a decade.",
     },
+    "Jack De Winter": {
+        "url": "http://jackdewinter.github.io",
+        "blurb": "ever evolving, ever learning",
+    },
 }
