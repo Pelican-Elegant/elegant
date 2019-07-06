@@ -89,7 +89,7 @@
                     {% set ptitle = article.prev_article.title|striptags|e %}
                     {% set pv_title = article.prev_article.title|striptags %}
                     {%if article.prev_article.subtitle %}
-                    {% set pv_title = pv_title + ' ' +  '<small classs="subtitle">' + article.prev_article.subtitle|striptags + '</small>' %}
+                    {% set pv_title = pv_title + ' ' +  '<small class="subtitle">' + article.prev_article.subtitle|striptags + '</small>' %}
                         {% set ptitle = ptitle + ' - ' + article.prev_article.subtitle|e %}
                     {% endif %}
                 <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
