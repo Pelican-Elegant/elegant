@@ -164,4 +164,8 @@ AUTHORS = {
         "blurb": " opensource enthusiast and Lego fan doing some python simple programs like @redken_bot in telegram, etc",
         "avatar": "https://avatars.githubusercontent.com/u/312463",
     },
+    "Jack De Winter": {
+        "url": "http://jackdewinter.github.io",
+        "blurb": "ever evolving, ever learning",
+    },
 }
