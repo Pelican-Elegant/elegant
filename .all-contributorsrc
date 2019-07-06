@@ -11,7 +11,8 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/17734314?v=4",
       "profile": "http://azzamsa.com/",
       "contributions": [
-        "code"
+        "code",
+        "doc"
       ]
     },
     {
@@ -23,7 +24,16 @@
         "infra",
         "test",
         "code",
-        "doc"
+        "doc",
+        "question",
+        "bug",
+        "blog",
+        "content",
+        "ideas",
+        "maintenance",
+        "projectManagement",
+        "review",
+        "tutorial"
       ]
     },
     {
@@ -52,6 +62,42 @@
       "profile": "https://github.com/codecachet",
       "contributions": [
         "ideas"
+      ]
+    },
+    {
+      "login": "jackdewinter",
+      "name": "jackdewinter",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/25124582?v=4",
+      "profile": "https://github.com/jackdewinter",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "seisman",
+      "name": "Dongdong Tian",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3974108?v=4",
+      "profile": "https://seisman.info",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "Schnouki",
+      "name": "Thomas Jost",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/64833?v=4",
+      "profile": "https://schnouki.net/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "fladd",
+      "name": "Florian Krause",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2971539?v=4",
+      "profile": "http://www.fladd.de/code",
+      "contributions": [
+        "bug"
       ]
     }
   ],

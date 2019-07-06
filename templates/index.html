@@ -101,7 +101,14 @@
             {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT with context %}
             {% if loop.index0 < RECENT_ARTICLES_COUNT %}
             <article itemscope>
-                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    {{ article.title }}
+                    {%if article.subtitle %}
+                    <small class="subtitle">
+                        {{ article.subtitle }}
+                    </small>
+                    {% endif %}
+                </a>
                 <section>
                     posted in
                 <a href="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}#{{ article.category.slug }}-ref">{{ article.category }}</a>

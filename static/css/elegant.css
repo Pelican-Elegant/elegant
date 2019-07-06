@@ -65,13 +65,19 @@ h6 a:hover {
   color: inherit;
   text-decoration: none;
 }
+:lang(zh) {
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    Helvetica, Arial, sans-serif;
+}
 a {
   color: #3875d7;
 }
 hr {
   border-width: 3px;
 }
-
+small.subtitle {
+  font-style: italic;
+}
 /* site title */
 .site-name {
   font-family: "Monaco", "Inconsolata", "Andale Mono", "Lucida Console",
@@ -603,6 +609,9 @@ a#allposts:hover {
   padding: 2px 4px;
   white-space: nowrap;
 }
+div.line-block div.line-block {
+  margin-left: 1.5em;
+}
 /* Helper CSS classes */
 .amp {
   font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua",
@@ -638,9 +647,19 @@ div.figure.align-left,
 }
 /* Author blurb */
 .author_blurb {
-  font-variant: small-caps;
   font-style: italic;
+  padding: 5px 0;
+}
+.author_blurb img {
+  padding: 0;
+  width: 32px;
+  height: 32px;
 }
 .author_name {
   font-weight: bold;
+  font-variant: small-caps;
+}
+/* Github Gist */
+.gist table {
+  table-layout: initial;
 }

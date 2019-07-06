@@ -32,7 +32,16 @@
 <article itemscope>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h1>
+        <h1>
+            <a href="{{ SITEURL }}/{{ article.url }}">
+                {{ article.title }}
+                {%if article.subtitle %}
+                <small class="subtitle">
+                    {{ article.subtitle }}
+                </small>
+                {% endif %}
+            </a>
+        </h1>
     </header>
 </div>
 
@@ -64,10 +73,10 @@
             </div>
             {% endif %}
 
-            {% from '_includes/article_author.html' import article_author with context %}
-            {{ article_author(article) }}
             {% from '_includes/share_links.html' import share_links with context %}
             {{ share_links(article) }}
+            {% from '_includes/article_author.html' import article_author with context %}
+            {{ article_author(article) }}
             {% from '_includes/comments.html' import comments with context %}
             {{ comments(article) }}
             <hr/>
@@ -80,7 +89,7 @@
                     {% set ptitle = article.prev_article.title|striptags|e %}
                     {% set pv_title = article.prev_article.title|striptags %}
                     {%if article.prev_article.subtitle %}
-                        {% set pv_title = pv_title + ' ' +  '<small>' + article.prev_article.subtitle|striptags + '</small>' %}
+                    {% set pv_title = pv_title + ' ' +  '<small class="subtitle">' + article.prev_article.subtitle|striptags + '</small>' %}
                         {% set ptitle = ptitle + ' - ' + article.prev_article.subtitle|e %}
                     {% endif %}
                 <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
@@ -89,7 +98,7 @@
                     {% set ntitle = article.next_article.title|striptags|e %}
                     {% set nv_title = article.next_article.title|striptags %}
                     {%if article.next_article.subtitle %}
-                        {% set nv_title = nv_title + ' ' +  '<small>' + article.next_article.subtitle|striptags + '</small>' %}
+                    {% set nv_title = nv_title + ' ' +  '<small class="subtitle">' + article.next_article.subtitle|striptags + '</small>' %}
                         {% set ntitle = ntitle + ' - ' + article.next_article.subtitle|e %}
                     {% endif %}
                 <li class="next-article"><a href="{{ SITEURL }}/{{ article.next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>

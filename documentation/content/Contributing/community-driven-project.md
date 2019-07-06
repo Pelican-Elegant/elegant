@@ -5,8 +5,9 @@ Category: Contributing
 Date: 2019-01-05 19:40
 Slug: community-led-project
 Subtitle: The beginning of a beautiful friendship
-Summary:  Elegant has grown into a community-driven project. It also got a new website and organisational structure, culminating in its biggest release yet.
+Summary: Elegant has grown into a community-driven project. It also got a new website and organisational structure, culminating in its biggest release yet.
 Keywords:
+authors: Pablo Iranzo Gómez
 ---
 
 [TOC]
