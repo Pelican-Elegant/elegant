@@ -23,7 +23,8 @@ visitors to search from any page.
 
 ## Configuration
 
-To enable search, you need to enable `tipue_search` plugin and add `search` to `DIRECT_TEMPLATES` in your pelican configuration.
+To enable search, you need to enable the `tipue_search` plugin and add `search` to
+`DIRECT_TEMPLATES` in your pelican configuration.
 
 ```python
 PLUGINS = ['tipue_search']
