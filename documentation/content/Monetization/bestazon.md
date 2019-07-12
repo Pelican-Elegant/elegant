@@ -13,7 +13,7 @@ comment_id: amazon-bestazon
 
 Elegant supports [BestAzon](https://bestazon.io/), so that you may monetize your traffic using affiliate links from amazon.
 
-Similar to [Amazon One Link](%filename amazon-one-link.md), bestazon provides technology that redirects amazon links to each country shop by using your associate tags
+Similar to [Amazon One Link]({filename}amazon-one-link.md), bestazon provides technology that redirects amazon links to each country shop by using your associate tags
 
 In order to configure Bestazon, an array should be provided containing variables for configuration, like:
 
