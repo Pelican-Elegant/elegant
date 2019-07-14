@@ -16,32 +16,35 @@ Authors: Talha Mansoor, Jack De Winter
 The key concept driving Elegant's design is to provide a reading experience that
 is clean with minimal distractions. From that point of view, providing a table of
 contents does not provide any additional information, but only exists to help guide the
-reader through the article. Therefore, Elegant places the table of contents on the left side
+reader through the article.
+
+Therefore, Elegant places the table of contents on the left side
 of the page with a relatively smaller font. This enables the table to guide the reader without
 grabbing the focus of the reader and distracting them.
 
-## Configuration
+## Plugin Configuration
 
-Enabling the Elegant' display of the table of contents is a two-part process. The first
-part of the process uses the markup languages to provide table of contents information that
-can be displayed. The second part of the process takes that information and allows it to
-be better displayed on the left side of the article. If both parts are not completed,
+Enabling the Elegant' display of the table of contents is a two-step process.
+
+In the first step,
+use the markup languages to provide table of contents.
+
+Second step is to take the generated table of contents and display it
+on the left side of the article.
+
+If both steps are not completed,
 the table of contents will not be displayed on the left side of the article.
 
-To enable the second part of this process, you need to enable the `extract_toc` plugin in
+For the second step, you need to enable the `extract_toc` plugin in
 your pelican configuration.
 
 ```python
 PLUGINS = ['extract_toc']
 ```
 
-Note that this value must be added to any existing values present for the `PLUGINS`
-configuration variables.
-
 ## Configuring Markdown
 
-To enable the first part of the process for Markdown, you need to enable the `toc` extension
-for Markdown.
+You need to enable the `toc` extension for Markdown in your Pelican configuration.
 
 ```python
 MARKDOWN = {
@@ -51,15 +54,32 @@ MARKDOWN = {
 }
 ```
 
-Note that this value must be added to any existing values present for the `MARKDOWN` configuration variables.
+Now to generate a table of contents for you article, add the `[TOC]` markdown tag to your
+document.
+
+```Markdown
+Title: My sample title
+Date: 2014-12-03
+Category: Examples
+
+[TOC]
+
+## This is my first heading
+
+This is the content of my sample blog post.
+
+## This my second heading
+
+I will end my example here.
+```
 
 ### Enabling Permalinks
 
-It is strongly recommended that you take advantage of `permalink` option available for the
-`toc` extension. Regardless of this option's setting, clicking on the entries in the table
-of contents will take you to the listed sections. Enabling the `permalink` option will
-provide permanent links for each section. These permanent links can then be used to go
-directly to the section they refer to without going through the table of contents.
+Although it is not required, we recommend you to take advantage of `permalink` option available for the
+`toc` extension.
+
+Enabling the `permalink` option will
+provide direct links to each section.
 
 ![Permalinks example using Markdown]({static}/images/elegant-theme-toc-permalinks.png)
 
@@ -82,43 +102,21 @@ For other options available for the Markdown Table of Contents extension, refer 
 [Python - Markdown - Table of Contents](https://python-markdown.github.io/extensions/toc/)
 page.
 
-### Per Article Usage
-
-To generate a table of contents for you article, add the `[TOC]` markdown tag to your
-document.
-
-```Markdown
-Title: My sample title
-Date: 2014-12-03
-Category: Examples
-
-[TOC]
-
-## This is my first heading
-
-This is the content of my sample blog post.
-
-## This my second heading
-
-I will end my example here.
-```
-
 ### Debugging
 
-If the tag `[TOC]` is not replaced with some form of a table of contents, verify that the
-`MARKDOWN` configuration variable is set properly. If the tag is interpreted but does not
-appear on the left side of the article, verify that the `PLUGINS` configuration variable is
-set properly.
+1. Verify that your Markdown file has `[TOC]` tag
+1. Verify that the
+   `MARKDOWN` configuration variable is set properly.
+1. Verify that the `PLUGINS` configuration variable is
+   set properly.
 
 ## Configuring reStructuredText Format
 
 The reStructuredText format has the
-[`contents`](http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents)
-directive that generates a table of contents in the article.
+[`contents` directive](http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents)
+that generates a table of contents in the article.
 
-### Per Article Usage
-
-To generate a table of contents for you article, add the `.. contents::` tag to your document.
+To generate a table of contents for you article, add the `.. contents::` directive to your document.
 
 ```rest
 My sample title
@@ -140,10 +138,10 @@ This my second heading
 I will end my example here.
 ```
 
-## Hide Default Title Text
+### Hide Default Title Text
 
-!!! note
-Our testing of this issue does not repeat the effects detailed below. This should be considered deprecated, but is retained in this document in case someone encounters this.
+!!! note "Possibly Deprecated"
+We couldn't not reproduce this issue in our testing. This should be considered deprecated, but is retained in this document in case someone encounters this.
 
 Using the default configuration, reStructuredText will generate a default title for the table
 of contents. According to the [official
