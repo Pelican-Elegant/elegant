@@ -29,6 +29,7 @@ MARKDOWN = {
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "sitemap",
+    "filetime_from_git",
     "extract_toc",
     "tipue_search",
     "liquid_tags.img",
@@ -82,7 +83,7 @@ else:
     STATIC_PATHS.append("extra/robots_deny.txt")
     EXTRA_PATH_METADATA["extra/robots_deny.txt"] = {"path": "robots.txt"}
 
-DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "search", "404")
+DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "404"]
 TAG_SAVE_AS = ""
 AUTHOR_SAVE_AS = ""
 CATEGORY_SAVE_AS = ""
@@ -156,9 +157,15 @@ AUTHORS = {
     "Talha Mansoor": {
         "url": "https://www.oncrashreboot.com/",
         "blurb": "is the creator and lead developer of Elegant theme.",
+        "avatar": "/images/avatars/talha131.png",
     },
     "Pablo Iranzo Gómez": {
         "url": "http://iranzo.github.io",
         "blurb": " opensource enthusiast and Lego fan doing some python simple programs like @redken_bot in telegram, etc",
+        "avatar": "https://avatars.githubusercontent.com/u/312463",
+    },
+    "Jack De Winter": {
+        "url": "http://jackdewinter.github.io",
+        "blurb": "ever evolving, ever learning",
     },
 }
