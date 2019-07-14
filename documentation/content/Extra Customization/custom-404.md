@@ -1,5 +1,5 @@
 ---
-authors: Talha Mansoor, Jack De Winter
+Authors: Talha Mansoor, Jack De Winter
 Title: Custom 404 Error Page
 Tags: unique
 Date: 2019-07-03 20:07
@@ -9,7 +9,7 @@ Category: Extra Customization
 ---
 
 When you go to a page that does not exist, your browser will display a default error page
-unless the website intervenes and provides it's own error page.  Elegant provides an error
+unless the website intervenes and provides it's own error page. Elegant provides an error
 page that allows the user to search for the page that they were trying to reach.
 
 Here is an example of what the 404 page may look like:

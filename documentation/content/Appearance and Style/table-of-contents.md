@@ -8,7 +8,7 @@ Disqus_identifier: lm95rjd-how-elegant-displays-table-of-contents
 Subtitle:
 Summary: Elegant shows Table of Contents, if available, non intrusively to give a clean reading experience to the visitor
 Keywords:
-authors: Talha Mansoor
+Authors: Talha Mansoor, Jack De Winter
 ---
 
 [TOC]
