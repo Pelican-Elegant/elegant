@@ -112,8 +112,7 @@ set properly.
 
 ## Configuring reStructuredText Format
 
-The
-reStructuredText format has the
+reStructuredText is a format that by default contains a
 [`contents`](http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents)
 directive that generates a table of contents in the article.
 
