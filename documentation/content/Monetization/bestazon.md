@@ -58,6 +58,6 @@ You, as a content creator, should be aware of GDPR or other regulations.
 Agreement](https://affiliate-program.amazon.com/help/operating/agreement) for
 Amazon Associates states that you need to disclose your affiliation with Amazon and that you earn from qualifying purchases.
 
-To conform to this rule in the agreement, Elegant automatically adds the disclaimer in the footer of the website if `AMAZON_ONELINK` variable is set. It looks like this,
+To conform to this rule in the agreement, Elegant automatically adds the disclaimer in the footer of the website if `AMAZON_BESTAZON` variable is set. It looks like this,
 
 ![Amazon OneLink Disclosure]({static}/images/amazon-online-disclaimer.png)
