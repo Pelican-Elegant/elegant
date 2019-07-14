@@ -13,9 +13,12 @@
     </div>
     {% endif %}
 
+
+    {% if AMAZON_ONELINK or AMAZON_BESTAZON %}
+    <span class="site-name">{{ SITENAME }}</span>  is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+    {% endif %}
     {% if AMAZON_ONELINK %}
     <div id="amzn-assoc-ad-{{ AMAZON_ONELINK }}">
-        <span class="site-name">{{ SITENAME }}</span>  is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
     </div>
     <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId={{ AMAZON_ONELINK }}">
     </script>
