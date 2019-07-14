@@ -1,5 +1,5 @@
 ---
-authors: Talha Mansoor, Jack De Winter
+Authors: Talha Mansoor, Jack De Winter
 Title: Custom 404 Error Page
 Tags: unique
 Date: 2019-07-03 20:07
