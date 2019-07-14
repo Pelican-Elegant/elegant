@@ -13,110 +13,154 @@ authors: Talha Mansoor
 
 [TOC]
 
-The idea behind Elegant's design is to make reading a clean and distraction
-free experience. Table of contents is important but it is not part of the
-article content. Therefore, Elegant pushes out table of content to the left of
-the article's main content. Its font size is relatively smaller. This way,
-table of content stays visible for navigation but reader's attention to the
-article stays unaffected.
+The key concept driving Elegant's design is to provide a reading experience that
+is clean with minimal distractions. From that point of view, providing a table of
+contents does not provide any additional information, but only exists to help guide the
+reader through the article. Therefore, Elegant places the table of contents on the left side
+of the page with a relatively smaller font. This enables the table to guide the reader without
+grabbing the focus of the reader and distracting them.
 
-To utilize this feature, you need to use
-[extract_toc](https://github.com/getpelican/pelican-plugins) plugin. Elegant
-encloses the table of content in `<nav>` tag for semantics.
+## Configuration
 
-You also need to make sure your markup format generates a table of contents of
-your article.
+Enabling the Elegant' display of the table of contents is a two-part process. The first
+part of the process uses the markup languages to provide table of contents information that
+can be displayed. The second part of the process takes that information and allows it to
+be better displayed on the left side of the article. If both parts are not completed,
+the table of contents will not be displayed on the left side of the article.
 
-# Markdown Format
+To enable the second part of this process, you need to enable the `extract_toc` plugin in
+your pelican configuration.
 
-For Markdown, make sure you have enabled `toc` extension in Pelican
-configuration.
+```python
+PLUGINS = ['extract_toc']
+```
 
-    :::python
-    MD_EXTENSIONS = ['toc']
+Note that this value must be added to any existing values present for the `PLUGINS`
+configuration variables.
 
-Next, add `[TOC]` in your article's markup. Here is a `sample.md` file.
+## Configuring Markdown
 
-    :::markdown
-    Title: My sample title
-    Date: 2014-12-03
-    Category: Examples
+To enable the first part of the process for Markdown, you need to enable the `toc` extension
+for Markdown.
 
-    [TOC]
+```python
+MARKDOWN = {
+  'extension_configs': {
+    'markdown.extensions.toc': {}
+  }
+}
+```
 
-    This is my first heading
-    ========================
+Note that this value must be added to any existing values present for the `MARKDOWN` configuration variables.
 
-    This is the content of my sample blog post.
+### Enabling Permalinks
 
-    This my second heading
-    ======================
-
-    I will end my example here.
-
-That's it. Your article's table of contents will appear on the left side of the
-actual content.
-
-## Enable Permalinks
-
-You can also take advantage of `permalink` option in `toc` extension.
-
-    :::python
-    MD_EXTENSIONS = ['toc(permalink=true)']
-
-This will generate
-[permalinks](https://github.com/waylan/Python-Markdown/pull/252) for every
-heading. Elegant keeps them hidden until user hovers over the heading.
+It is strongly recommended that you take advantage of `permalink` option available for the
+`toc` extension. Regardless of this option's setting, clicking on the entries in the table
+of contents will take you to the listed sections. Enabling the `permalink` option will
+provide permanent links for each section. These permanent links can then be used to go
+directly to the section they refer to without going through the table of contents.
 
 ![Permalinks example using Markdown]({static}/images/elegant-theme-toc-permalinks.png)
 
-# reStructuredText Format
+To enable this option, you need to add the `'permalink': 'true'` property to the
+`'markdown.extensions.toc'` section that was added in the previous section.
 
-reStructuredText format has
+```python
+MARKDOWN = {
+  'extension_configs': {
+    'markdown.extensions.toc': {
+      'permalink': 'true',
+    }
+  }
+}
+```
+
+### Other Options
+
+For other options available for the Markdown Table of Contents extension, refer to the
+[Python - Markdown - Table of Contents](https://python-markdown.github.io/extensions/toc/)
+page.
+
+### Per Article Usage
+
+To generate a table of contents for you article, add the `[TOC]` markdown tag to your
+document.
+
+```Markdown
+Title: My sample title
+Date: 2014-12-03
+Category: Examples
+
+[TOC]
+
+## This is my first heading
+
+This is the content of my sample blog post.
+
+## This my second heading
+
+I will end my example here.
+```
+
+### Debugging
+
+If the tag `[TOC]` is not replaced with some form of a table of contents, verify that the
+`MARKDOWN` configuration variable is set properly. If the tag is interpreted but does not
+appear on the left side of the article, verify that the `PLUGINS` configuration variable is
+set properly.
+
+## Configuring reStructuredText Format
+
+The reStructuredText format has the
 [`contents`](http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents)
-directive that generates table of contents of the post. Here is a `sample.rst`
-file.
+directive that generates a table of contents in the article.
 
-    :::rest
-    My sample title
-    ###############
+### Per Article Usage
 
-    :date: 2014-12-03
-    :category: Examples
+To generate a table of contents for you article, add the `.. contents::` tag to your document.
 
-    .. contents::
+```rest
+My sample title
+###############
 
-    This is my first heading
-    ========================
+:date: 2014-12-03
+:category: Examples
 
-    This is the content of my sample blog post.
+.. contents::
 
-    This my second heading
-    ======================
+This is my first heading
+========================
 
-    I will end my example here.
+This is the content of my sample blog post.
+
+This my second heading
+======================
+
+I will end my example here.
+```
 
 ## Hide Default Title Text
 
-Unlike Markdown, reStructuredText generates a default title for the table of
-contents. From [official
+!!! note
+Our testing of this issue does not repeat the effects detailed below. This should be considered deprecated, but is retained in this document in case someone encounters this.
+
+Using the default configuration, reStructuredText will generate a default title for the table
+of contents. According to the [official
 documentation](http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents),
 
 > Language-dependent boilerplate text will be used for the title. The English
 > default title text is "Contents".
 
-You end up having two titles for your table of contents, one generated by
-reStructuredText and the other by Elegant.
+This default configuration creates two titles for your table of contents, one generated by
+reStructuredText and the other by Elegant. To disable default title generation
+[^disabletitle], you need to add following rule in your `custom.css` file to hide the
+duplicate title:
 
-Unfortunately, there is [no straightforward
-way](https://github.com/Pelican-Elegant/elegant/issues/54) to disable default
-title generation in reStructuredText. You need to add following rule in your
-`custom.css` file to hide the duplicate title.
+```css
+div#contents p.topic-title.first {
+  display: none;
+}
+```
 
-    :::css
-    div#contents p.topic-title.first {
-        display: none;
-    }
-
-See [this article](how-to-use-custom-css "How to use custom.css") to understand how you can use
-`custom.css`.
+[^disabletitle]: There is [no straightforward way](https://github.com/Pelican-Elegant/elegant/issues/54) to disable default title generation in reStructuredText.
