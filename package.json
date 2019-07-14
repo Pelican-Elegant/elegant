@@ -17,5 +17,11 @@
 		"disabletitle"
       ]
     }
+  },
+  "yaspeller" : {
+    "dictionary": [
+      "reStructuredText",
+      "disabletitle"
+    ]
   }
 }
