@@ -168,4 +168,8 @@ AUTHORS = {
         "url": "http://jackdewinter.github.io",
         "blurb": "ever evolving, ever learning",
     },
+    "Matija Šuklje": {
+        "url": "https://matija.suklje.name",
+        "blurb": "FOSS lawyer by trade, hacker by heart.",
+    },
 }
