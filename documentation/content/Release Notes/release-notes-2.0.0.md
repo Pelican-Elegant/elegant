@@ -1,5 +1,6 @@
 ---
 Title: Version 2.0.0
+authors: Pablo Iranzo Gómez, Talha Mansoor, Matija Šuklje
 Tags: change-log, project-management
 layout: post
 date: 2019-02-10 05:59
