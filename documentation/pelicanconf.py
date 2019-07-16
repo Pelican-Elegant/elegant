@@ -83,7 +83,7 @@ else:
     STATIC_PATHS.append("extra/robots_deny.txt")
     EXTRA_PATH_METADATA["extra/robots_deny.txt"] = {"path": "robots.txt"}
 
-DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "search", "404")
+DIRECT_TEMPLATES = ["index", "tags", "categories", "archives", "search", "404"]
 TAG_SAVE_AS = ""
 AUTHOR_SAVE_AS = ""
 CATEGORY_SAVE_AS = ""

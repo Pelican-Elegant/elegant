@@ -3,7 +3,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/exec": "^3.3.5",
-    "@semantic-release/git": "^7.0.15",
+    "@semantic-release/git": "^7.0.16",
     "cz-conventional-changelog": "2.1.0",
     "semantic-release": "^15.13.18"
   },
