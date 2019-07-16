@@ -33,7 +33,7 @@ If you find any issues, or have a suggestion, then please open an [issue][].
 
 ## License
 
-Elegant is released under the [MIT License][]. See [`AUTHORS.md`][authors] file for an incomplete list of contributors.
+Elegant is released under the [MIT License][]. See [`THANKS.md`][thanks] file for a list of contributors.
 
 Elegant's documentation is released under the [Creative Commons Attribution 4.0 International][cc-by-4.0] license.
 
@@ -44,7 +44,7 @@ All code contributions are made directly under the [MIT License][] as well. This
 [doc_repo]: ./documentation
 [issue]: https://github.com/Pelican-Elegant/elegant/issues/
 [contributing]: ./CONTRIBUTING.md
-[authors]: ./AUTHORS.md
+[thanks]: ./THANKS.md
 [mit license]: https://spdx.org/licenses/MIT.html
 [cc-by-4.0]: https://spdx.org/licenses/CC-BY-4.0.html
 [demo]: https://elegant.oncrashreboot.com/
