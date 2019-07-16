@@ -26,7 +26,6 @@
 - **admonition:** links should inherit the admonition color ([60c9184](https://github.com/Pelican-Elegant/elegant/commit/60c9184))
 - **freelists:** use SUBSCRIBE_BUTTON_TITLE instead of generic GO ([c346d1f](https://github.com/Pelican-Elegant/elegant/commit/c346d1f))
 - **home:** remove redundant title ([808cd1d](https://github.com/Pelican-Elegant/elegant/commit/808cd1d))
-- **docs:** changed docs for search engine to be more clear
 
 ### Features
 
