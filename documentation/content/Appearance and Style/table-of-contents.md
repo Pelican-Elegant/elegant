@@ -1,12 +1,12 @@
 ---
-Title: How Elegant displays Table of Contents
+Title: Add A Table Of Contents to Your Pages
 Tags: reST, markdown, navigation, web-design, contents
 Category: Appearance & Style
 Date: 2014-03-18 11:03
 Slug: how-elegant-displays-table-of-contents
 Disqus_identifier: lm95rjd-how-elegant-displays-table-of-contents
 Subtitle:
-Summary: Elegant shows Table of Contents, if available, non intrusively to give a clean reading experience to the visitor
+Summary: Elegant can be configured to provide a non-intrusive Table of Contents, giving a cleaner reading experience for the user.
 Keywords:
 Authors: Talha Mansoor, Jack De Winter
 ---

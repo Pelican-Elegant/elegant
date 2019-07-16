@@ -1,10 +1,10 @@
 ---
 Authors: Talha Mansoor, Jack De Winter
-Title: Add Search to your Site
+Title: Add Search to Your Site
 Tags: unique
 Date: 2019-07-03 19:56
 Slug: add-tipue-search
-Summary: Elegant lets you add search to your static site
+Summary: Elegant can be configured to provide search for your static site, giving an alternate way to navigate the site.
 Category: Search
 ---
 
