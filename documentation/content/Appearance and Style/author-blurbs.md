@@ -56,6 +56,6 @@ declare more than one author is to use `authors:`.
 This is an example of multiple authors using the following metadata value:
 
     :::yaml
-    authors: Talha Mansoor, Milton Bradley
+    authors: Talha Mansoor, Pablo Iranzo Gómez
 
 ![Author Blurb]({static}/images/author-blurb.png)
