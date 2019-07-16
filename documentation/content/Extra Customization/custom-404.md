@@ -1,10 +1,10 @@
 ---
 Authors: Talha Mansoor, Jack De Winter
-Title: Custom 404 Error Page
+Title: Add A Custom 404 Error Page to Your Site
 Tags: unique
 Date: 2019-07-03 20:07
 Slug: custom-404-page
-Summary: Elegant has a custom 404 page
+Summary: Elegant can be configured to provide a custom 404 page, giving the user the ability to search for information they expected on the missing page.
 Category: Extra Customization
 ---
 
