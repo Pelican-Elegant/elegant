@@ -1,3 +1,3 @@
-See our documentation at following link
+See our documentation at following link:
 
-http://localhost:9000/categories.html#contributing-ref
+<https://elegant.oncrashreboot.com/categories#contributing-ref>
