@@ -29,12 +29,12 @@ install:
 
 before_script:
 - cd documentation
-- make plugins-sync
+- invoke plugins-sync
 
 script:
 - pre-commit run --all-files
 - yaspeller --only-errors content/ *.md
-- make publish
+- invoke publish
 - w3c_validator $(find output/ -name '*.html' -type f)
 - html5validator --root output/
 

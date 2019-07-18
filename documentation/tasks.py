@@ -109,9 +109,24 @@ def livereload(c):
 def publish(c):
     """Publish to production via rsync"""
     c.run("pelican -s {settings_publish}".format(**CONFIG))
+
+
+@task
+def plugins_sync(c):
+    """Make a fresh shallow copy of pelican-plugins"""
+    c.run("rm -rf plugins")
+    # For now we don't need submodules plugins. When we do, use
+    # --recurse-submodules and --shallow-submodules switches
+    # Do specify path in --recurse-submodules so that only relevant plugin is downloaded
     c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        "{} {production}:{dest_path}".format(
-            CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG
-        )
+        "git clone --jobs 8 --depth 1 https://github.com/getpelican/pelican-plugins.git plugins"
+    )
+
+
+@task
+def theme_sync(c):
+    """Make a fresh shallow copy of pelican-elegant theme"""
+    c.run("rm -rf themes")
+    c.run(
+        "git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git themes/elegant"
     )
