@@ -49,23 +49,22 @@ AUTHORS = {
 }
 ```
 
-The value assigned to the configuration variable is a Python dictionary[^PythonDictionary]
+The value assigned to the configuration variable is a Python dictionary[^Python-Dictionary]
 containing one key-value pair for every author.  The key for the key-value pair is the name of
-the author as you want it to appear at the end of the article.  In the our example, the three
-authors are "Tahla Mansoor", "Pablo Iranzo Gómez", and "Jack De Winter".
+the author as you want it to appear at the end of the article.  In the example, the three
+authors are "Talha Mansoor", "Pablo Iranzo Gómez", and "Jack De Winter".
 
-[^PythonDictionary]: For more information on Python dictionaries, refer to this comprehensive article on [Python dictionaries](https://realpython.com/python-dicts/).
+[^Python-Dictionary]: For more information on Python dictionaries, refer to this comprehensive article on [Python dictionaries](https://realpython.com/python-dicts/).
 
-The value for each of the key-value pairs is it's own dictionary.  Elegant specifically looks
-for three keys in the each author's dictionary:
+The value for each of the key-value pairs is another dictionary.  Elegant specifically looks
+for these three keys in the each author's dictionary:
 
 - `url` (string) URL to the author's homepage or profile
 - `blurb` (string) Introduction of author
 - `avatar` (string) URL to author's avatar image
 
 For the `url` and `avatar` values, there is no restriction on where the URL resides.  In the
-Elegant documentation example above, Tahla's URLs are both local, while Pablo's URLs are both
-remote.
+above example, Talha's URLs are both local, while Pablo's URLs are both remote.
 
 ## Article Metadata
 
