@@ -15,7 +15,7 @@ module.exports = {
   ui: {
     port: 3001
   },
-  files: false,
+  files: "output",
   watchEvents: ["change"],
   watch: false,
   ignore: [],
@@ -23,9 +23,14 @@ module.exports = {
   watchOptions: {
     ignoreInitial: true
   },
-  server: false,
+  server: {
+    baseDir: "output",
+    serveStaticOptions: {
+      extensions: ["html"]
+    }
+  },
   proxy: false,
-  port: 3000,
+  port: 9001,
   middleware: false,
   serveStatic: [],
   ghostMode: {
