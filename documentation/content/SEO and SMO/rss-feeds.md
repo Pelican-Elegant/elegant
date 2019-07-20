@@ -4,7 +4,7 @@ Tags: pelican-theme, font-awesome, web-design
 Category: SEO & SMO
 Date: 2014-03-17 15:28
 Slug: how-to-show-rss-feeds-icon
-Disqus_identifier: ijvxwtg-how-to-show-rss-feeds-icon
+Comment_id: ijvxwtg-how-to-show-rss-feeds-icon
 Subtitle:
 Summary: Elegant supports RSS and Atom feeds for your posts, categories and tags
 Keywords:

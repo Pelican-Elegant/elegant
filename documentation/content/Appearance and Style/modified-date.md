@@ -4,7 +4,7 @@ Tags: web-design, meta-data, date
 Category: Appearance & Style
 Date: 2014-04-19 14:52
 Slug: how-does-modified-metadata-works
-Disqus_identifier: q4nz2k0-how-does-modified-metadata-works
+Comment_id: q4nz2k0-how-does-modified-metadata-works
 Subtitle:
 Summary: Use modified metadata to show the date at which you last updated the article
 Keywords:

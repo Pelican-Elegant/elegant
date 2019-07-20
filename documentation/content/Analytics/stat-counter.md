@@ -4,7 +4,7 @@ Tags: web-analytics
 Category: Analytics
 Date: 2013-11-11 23:05
 Slug: how-to-use-statcounter-analytics
-Disqus_identifier: 4kv80xq-how-to-use-statcounter
+Comment_id: 4kv80xq-how-to-use-statcounter
 Subtitle:
 Summary: Elegant Pelican theme supports StatCounter out of the box. This articles describes how to set them up.
 Keywords:

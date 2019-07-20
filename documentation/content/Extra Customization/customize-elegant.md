@@ -4,7 +4,7 @@ Tags: config
 Category: Extra Customization
 Date: 2014-03-24 14:05
 Slug: how-to-customize-elegant
-Disqus_identifier: ale31i7-how-to-customize-elegant
+Comment_id: ale31i7-how-to-customize-elegant
 Subtitle:
 Summary: You can customize every aspect of Elegant without touching the source code
 Keywords:

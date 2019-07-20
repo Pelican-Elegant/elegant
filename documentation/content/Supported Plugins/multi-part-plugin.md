@@ -3,7 +3,7 @@ Tags: pelican-theme, pelican-plugin, navigation, web-design
 Category: Supported Plugins
 Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin
-Disqus_identifier: 3ws2xke-how-to-use-multi-part-plugin
+Comment_id: 3ws2xke-how-to-use-multi-part-plugin
 Subtitle:
 Summary: Elegant integrates with Multi Part plugin out of the box
 Keywords:

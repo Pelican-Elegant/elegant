@@ -4,7 +4,7 @@ Tags: reST, markdown, navigation, web-design, contents
 Category: Appearance & Style
 Date: 2014-03-18 11:03
 Slug: how-elegant-displays-table-of-contents
-Disqus_identifier: lm95rjd-how-elegant-displays-table-of-contents
+Comment_id: lm95rjd-how-elegant-displays-table-of-contents
 Subtitle:
 Summary: Elegant can be configured to provide a non-intrusive Table of Contents, giving a cleaner reading experience for the user.
 Keywords:

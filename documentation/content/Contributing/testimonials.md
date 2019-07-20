@@ -4,7 +4,7 @@ Tags: pelican-theme, testimonials
 Category: Elegant - Pelican Theme
 Date: 2014-06-01 23:45
 Slug: what-people-say-about-elegant
-Disqus_identifier: qryv67o-what-people-say-about-elegant
+Comment_id: qryv67o-what-people-say-about-elegant
 Subtitle:
 Summary:
 Keywords:

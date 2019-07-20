@@ -4,7 +4,7 @@ Tags: web-design, metadata, authors
 Category: Supported Plugins
 Date: 2018-12-07 11:00
 Slug: adding-author-blurbs
-Disqus_identifier: c8et6bu-adding-author-blurbs
+Comment_id: c8et6bu-adding-author-blurbs
 Subtitle:
 Summary: Elegant can be configured to provide author blurbs for articles, relaying extra information on the authors of the articles.
 Keywords:
