@@ -47,4 +47,4 @@ usefulness to the reader while not intruding on the article.  In a similar fashi
 sidebar is used to relate any other extra information about the article to the user.  Elements
 that regularly appear in the right sidebar include: Published time, Last Updated time,
 Category, Tags, "Stay in Touch" icons, "Monthly Updates" opt-in, and
-[Reading Time]({filename}/Extra&#32;Customization/reading-time.md).
+[Reading Time]("{filename}/Extra Customization/reading-time.md").
