@@ -1,7 +1,7 @@
 ---
 Title: Add Author Blurbs to Your Articles
-Tags: pelican-theme, web-design
-Category: Elegant - Pelican Theme
+Tags: web-design, metadata, authors
+Category: Supported Plugins
 Date: 2018-12-07 11:00
 Slug: adding-author-blurbs
 Disqus_identifier: c8et6bu-adding-author-blurbs
@@ -14,8 +14,10 @@ Authors: Talha Mansoor, Jack De Winter
 [TOC]
 
 On websites where the author of an article may vary, many sites include a quick blurb about
-the author with the article.  This blurb will typically be at the start of the article or the
-end of the article, and provides extra information for readers on the author.  Elegant provides
+the author with the article. This blurb will typically be at the start of the article or the
+end of the article, and provides extra information for readers on the author.
+
+Elegant provides
 this feature, adding a section for any recognized articles at the end of the article.
 
 Here are two examples of what the Author Blurbs may look like:
@@ -26,8 +28,8 @@ Here are two examples of what the Author Blurbs may look like:
 
 ## Configuration
 
-To enable author blurbs for your articles, you need to add an `AUTHORS` configuration variable
-to your pelican configuration.  The `AUTHORS` configuration variable for the Elegant
+To enable author blurbs for your articles, you need to define an `AUTHORS` configuration variable
+in your Pelican configuration. The `AUTHORS` configuration variable for the Elegant
 documentation website is specified as follows:
 
 ```python
@@ -49,45 +51,52 @@ AUTHORS = {
 }
 ```
 
-The value assigned to the configuration variable is a Python dictionary[^Python-Dictionary]
-containing one key-value pair for every author.  The key for the key-value pair is the name of
-the author as you want it to appear at the end of the article.  In the example, the three
+The value assigned to the configuration variable is a Python dictionary[^python-dictionary]
+containing one key-value pair for every author. The key for the key-value pair is the name of
+the author as you want it to appear at the end of the article. In the example, the three
 authors are "Talha Mansoor", "Pablo Iranzo Gómez", and "Jack De Winter".
 
-[^Python-Dictionary]: For more information on Python dictionaries, refer to this comprehensive article on [Python dictionaries](https://realpython.com/python-dicts/).
+[^python-dictionary]: For more information on Python dictionaries, refer to this comprehensive article on [Python dictionaries](https://realpython.com/python-dicts/).
 
-The value for each of the key-value pairs is another dictionary.  Elegant specifically looks
+The value for each of the key-value pairs is another dictionary. Elegant specifically looks
 for these three keys in the each author's dictionary:
 
 - `url` (string) URL to the author's homepage or profile
 - `blurb` (string) Introduction of author
 - `avatar` (string) URL to author's avatar image
 
-For the `url` and `avatar` values, there is no restriction on where the URL resides.  In the
-above example, Talha's URLs are both local, while Pablo's URLs are both remote.
+For the `url` and `avatar` values, there is no restriction on where the URL links to. In the
+above example, Talha's `avatar` URL is local, while Pablo's URL is remote.
 
 ## Article Metadata
 
 While the configuration for Author Blurbs is centralized in the configuration file, enabling
 this feature for a given article requires that the article contains either the `author` or
-`authors` [metadata]({static}/Extra&#32;Customization/meta-data.md) field values.  If neither
+`authors` [metadata](<{static}/Extra Customization/meta-data.md>) field values. If neither
 of these values are provided, the `AUTHOR` configuration variable will be used as a default.
 
 ```Python
 AUTHOR = 'Pablo Iranzo Gómez'
 ```
 
-The default `AUTHOR` configuration variable and the `author` metadata field are both denote a
-single author.  The `authors` metadata field denotes multiple authors using a comma separated
+The default `AUTHOR` configuration variable and the `author` metadata field both denote a
+single author. The `authors` metadata field denotes multiple authors using a comma separated
 list.
 
 For each author determined through in this manner, a check is performed against the `AUTHORS`
-configuration in the previous section on [Configuration](#Configuration).  If the author is
+configuration in the previous section on [Configuration](#Configuration). If the author is
 found using a case-sensitive exact match, a blurb will be generated for that author. If the
 author is not found, it will be silently ignored.
 
 A good example of the `authors` metadata field is available by looking at the
 [raw Markdown](https://raw.githubusercontent.com/Pelican-Elegant/elegant/master/documentation/content/Elegant%20-%20Pelican%20Theme/author-blurbs.md) for this page.
 
-!!! warning
-    A frequent mistake is to define multiple authors, but assign the value to the `author` metadata field.  This can happen easily if one author writes the original version of the article and another author updates or changes that article.  This mistake causes Elegant to look for that *single* author using the entire text for that value.  The correct way to do this is to use `authors` metadata field.
+```yaml
+Authors: Talha Mansoor, Jack De Winter
+```
+
+!!! Warning "Common Mistake"
+
+    A frequent mistake is to define multiple authors, but assign the value to the `author` metadata field.  This can happen easily if one author writes the original version of the article and another author updates or changes that article.  This mistake causes Elegant to look for that *single* author using the entire text for that value.
+
+    The correct way to do this is to use `authors` metadata field.
