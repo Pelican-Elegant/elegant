@@ -1,6 +1,7 @@
-const { watch, parallel } = require("gulp");
-const { exec } = require("child_process");
-const browserSync = require("browser-sync").create();
+import { watch, parallel } from "gulp";
+import { exec } from "child_process";
+import { create as browserSyncCreate } from "browser-sync";
+const browserSync = browserSyncCreate();
 
 const buildAll = () => exec("cd documentation && invoke build");
 
