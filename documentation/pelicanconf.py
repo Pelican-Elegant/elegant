@@ -28,7 +28,6 @@ MARKDOWN = {
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
-    "sitemap",
     "extract_toc",
     "tipue_search",
     "liquid_tags.img",
