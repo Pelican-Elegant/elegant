@@ -24,7 +24,13 @@ const reload = cb => {
 
 const watchFiles = () => {
   watch(
-    ["documentation/content/**/*.md", "documentation/content/**/*.rest"],
+    [
+      "documentation/content/**/*.md",
+      "documentation/content/**/*.rest",
+      "templates/**/*.html",
+      "static/**/*.css",
+      "static/**/*.js"
+    ],
     { ignoreInitial: false },
     buildAll
   );
