@@ -3,7 +3,7 @@ Tags: pelican-theme, pelican-plugin, page-speed
 Category: Supported Plugins
 Date: 2014-03-24 14:09
 Slug: avoid-unnecessary-http-requests
-Disqus_identifier: hk9m5eq-avoid-unnecessary-http-requests
+Comment_id: hk9m5eq-avoid-unnecessary-http-requests
 Subtitle:
 Summary: Use Pelican assets plugin to improve your website load speed
 Keywords:

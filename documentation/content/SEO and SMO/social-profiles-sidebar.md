@@ -4,7 +4,7 @@ Tags: pelican-theme, font-awesome, social-media, web-design
 Category: SEO & SMO
 Date: 2014-01-27 00:28
 Slug: how-to-display-your-social-media-profiles
-Disqus_identifier: k7fpj4y-how-to-display-your-social-media-profiles
+Comment_id: k7fpj4y-how-to-display-your-social-media-profiles
 Subtitle:
 Summary: Elegant displays links to your social media profiles in sidebar in a customizable manner
 Keywords:

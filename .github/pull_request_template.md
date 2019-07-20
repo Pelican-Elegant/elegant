@@ -9,7 +9,6 @@
 ## Prerequisites
 
 - [ ] My Pull Request is filled against the `next` branch
-- [ ] I have updated the [CHANGELOG](https://github.com/Pelican-Elegant/elegant/blob/next/CHANGELOG.md)
 
 ## Recommended Steps
 
