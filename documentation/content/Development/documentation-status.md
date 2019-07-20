@@ -9,6 +9,8 @@ Authors: Jack De Winter
 Status: draft
 ---
 
+<!-- yaspeller ignore:start -->
+
 | Category/Directory      | File Name                    | Status                                                                           | Title                                        |
 | ----------------------- | ---------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
 | Analytics               | google-analytics.md          | -                                                                                | -                                            |
@@ -70,3 +72,5 @@ Status: draft
 | Unknown                 |                              | Jack, Pri-1, [363](https://github.com/Pelican-Elegant/elegant/issues/363)        | -                                            |
 | Unknown                 |                              | Ongoing discussion, [314](https://github.com/Pelican-Elegant/elegant/issues/314) |
 | Unknown                 |                              | Not Assigned, [311](https://github.com/Pelican-Elegant/elegant/issues/311)       |
+
+<!-- yaspeller ignore:end -->
