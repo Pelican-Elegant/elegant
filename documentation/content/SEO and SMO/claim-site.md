@@ -4,7 +4,7 @@ Tags: google, bing, crawler
 Category: SEO & SMO
 Date: 2019-06-27
 Slug: website-claim
-Disqus_identifier: hk9m5eq-website-claim
+Comment_id: hk9m5eq-website-claim
 Subtitle:
 Summary: Easily insert headers to claim website
 Keywords:

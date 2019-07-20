@@ -28,8 +28,6 @@ MARKDOWN = {
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
-    "sitemap",
-    "filetime_from_git",
     "extract_toc",
     "tipue_search",
     "liquid_tags.img",
@@ -167,5 +165,9 @@ AUTHORS = {
     "Jack De Winter": {
         "url": "http://jackdewinter.github.io",
         "blurb": "ever evolving, ever learning",
+    },
+    "Matija Šuklje": {
+        "url": "https://matija.suklje.name",
+        "blurb": "FOSS lawyer by trade, hacker by heart.",
     },
 }

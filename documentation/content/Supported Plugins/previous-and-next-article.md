@@ -3,7 +3,7 @@ Tags: pelican-theme, pelican-plugin, navigation, web-design
 Category: Supported Plugins
 Date: 2014-01-27 00:02
 Slug: how-to-show-previous-and-next-article
-Disqus_identifier: p9ot4uz-how-to-show-previous-and-next-article
+Comment_id: p9ot4uz-how-to-show-previous-and-next-article
 Subtitle:
 Summary: Elegant theme shows Previous and Next article link to make navigation of the site easier
 Keywords:

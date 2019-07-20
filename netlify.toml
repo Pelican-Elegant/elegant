@@ -1,4 +1,4 @@
 [build]
   base = "./documentation"
   publish = "./documentation/output"
-  command = "make publish-netlify"
+  command = "invoke plugins-sync publish"

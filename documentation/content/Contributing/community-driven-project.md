@@ -7,7 +7,7 @@ Slug: community-led-project
 Subtitle: The beginning of a beautiful friendship
 Summary: Elegant has grown into a community-driven project. It also got a new website and organisational structure, culminating in its biggest release yet.
 Keywords:
-authors: Pablo Iranzo Gómez
+authors: Pablo Iranzo Gómez, Talha Mansoor, Matija Šuklje
 ---
 
 [TOC]

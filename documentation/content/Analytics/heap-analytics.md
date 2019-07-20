@@ -3,7 +3,7 @@ Tags: web-analytics
 Category: Analytics
 Date: 2019-03-31 16:45
 Slug: how-to-use-heap-analytics
-Disqus_identifier: c8619dd-how-to-use-heap-analytics
+Comment_id: c8619dd-how-to-use-heap-analytics
 Subtitle:
 Summary: Elegant Pelican theme supports Heap Analytics out of
 the box. This articles describes how to set it up.

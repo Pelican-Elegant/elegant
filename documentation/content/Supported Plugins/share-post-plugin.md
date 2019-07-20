@@ -3,7 +3,7 @@ Tags: pelican-theme, pelican-plugin, social-media
 Category: Supported Plugins
 Date: 2014-03-24 20:14
 Slug: how-to-use-social-sharing-plugin
-Disqus_identifier: x4jitcv-how-to-use-social-sharing-plugin
+Comment_id: x4jitcv-how-to-use-social-sharing-plugin
 Subtitle:
 Summary: Elegant integrates with Share Post plugin of Pelican out of the box
 Keywords: social networks, share posts,

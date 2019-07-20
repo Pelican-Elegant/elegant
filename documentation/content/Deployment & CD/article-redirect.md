@@ -5,7 +5,7 @@ Tags: pelican-theme, pelican-plugin, redirection
 Category: Elegant - Pelican Theme
 Date: 2018-11-30 10:32
 Slug: article-redirect
-Disqus_identifier: hk9m5eq-article-redirect
+Comment_id: hk9m5eq-article-redirect
 Subtitle:
 Summary: Use Pelican redirect yaml preamble to point to new articles
 Keywords:

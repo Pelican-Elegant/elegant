@@ -34,6 +34,10 @@ else:
     SITEURL = ""
 
 RELATIVE_URLS = False
+# filetime_from_git is very slow. Use it in production only
+# to avoid slow build times during development
+PLUGINS.append("filetime_from_git")
+PLUGINS.append("sitemap")
 
 SOCIAL = (
     ("Github", "https://github.com/Pelican-Elegant/elegant"),
