@@ -22,7 +22,7 @@ CONFIG = {
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     "deploy_path": SETTINGS["OUTPUT_PATH"],
     # Port for `serve`
-    "port": 9000,
+    "port": 9001,
 }
 
 
