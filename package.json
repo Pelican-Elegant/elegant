@@ -4,7 +4,9 @@
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/exec": "^3.3.5",
     "@semantic-release/git": "^7.0.16",
+    "browser-sync": "^2.26.7",
     "cz-conventional-changelog": "2.1.0",
+    "gulp": "^4.0.2",
     "semantic-release": "^15.13.18"
   },
   "config": {
