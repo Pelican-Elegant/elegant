@@ -13,9 +13,8 @@ to the reader on the amount of time it will take to read the article. This estim
 typically based on the average reading speed of an adult being roughly 265 words per minute
 while retaining comprehension.
 
-Elegant provides this feature, adding a `Reading Time` section
-at the top of the text on the right side of the article with the estimate for the current
-article.
+Elegant provides this feature, adding a `Reading Time` section at the top of the right sidebar
+with the estimate for the current article.
 
 Here is an example of what the Reading Time estimate may look like:
 
