@@ -12,16 +12,16 @@ Status: draft
 <!-- yaspeller ignore:start -->
 | Category/Directory    |File Name | Status | Title | Notes |
 | --- | --- | --- | --- |- |
-|Analytics              |google-analytics.md         | -                                                                            | **Proposed** How To Setup Google Analytics for Website Analytics  | - |
-|Analytics              |heap-analytics.md           | -                                                                            | **Proposed** How To Setup Heap Analytics for Website Analytics    | - |
-|Analytics              |stat-counter.md             | -                                                                            | **Proposed** How To Setup Stat Counter for Website Analytics      | - |
-|Appearance and Style   |article-subtitle.md         | -                                                                            | **Proposed** Add a Subtitle To Your Articles                      | - |
-|Appearance and Style   |modified-date.md            | -                                                                            | **Proposed** Adding Modified Dates to Your Articles               | - |
-|Appearance and Style   |page-title.md               | -                                                                            | **Proposed** How Elegant Titles Your Pages                        | - |
-|Appearance and Style   |table-of-contents.md        | Rewritten, [301](https://github.com/Pelican-Elegant/elegant/issues/301)      | Add A Table Of Contents to Your Pages                             | - |
-|Appearance and Style   |warnings-admonitions.md     | -                                                                            | **Proposed** How To Add Admonitions To Your Pages                 | - |
-|Appearance and Style   |web-safe-fonts.md           | -                                                                            | **Proposed** How Elegant Uses Web-Safe Fonts for Your Pages       | - |
-|Appearance and Style   |why-look-and-feel.md        | New, Pending [312](https://github.com/Pelican-Elegant/elegant/issues/312)    | Why Does Elegant Look The Way It Does?                            | - |
+|Analytics              |google-analytics.md         | -                                                                                | **Proposed** How To Setup Google Analytics for Website Analytics  | - |
+|Analytics              |heap-analytics.md           | -                                                                                | **Proposed** How To Setup Heap Analytics for Website Analytics    | - |
+|Analytics              |stat-counter.md             | -                                                                                | **Proposed** How To Setup Stat Counter for Website Analytics      | - |
+|Appearance and Style   |article-subtitle.md         | -                                                                                | **Proposed** Add a Subtitle To Your Articles                      | - |
+|Appearance and Style   |modified-date.md            | -                                                                                | **Proposed** Adding Modified Dates to Your Articles               | - |
+|Appearance and Style   |page-title.md               | -                                                                                | **Proposed** How Elegant Titles Your Pages                        | - |
+|Appearance and Style   |table-of-contents.md        | Rewritten, [301](https://github.com/Pelican-Elegant/elegant/issues/301)          | Add A Table Of Contents to Your Pages                             | - |
+|Appearance and Style   |warnings-admonitions.md     | -                                                                                | **Proposed** How To Add Admonitions To Your Pages                 | - |
+|Appearance and Style   |web-safe-fonts.md           | -                                                                                | **Proposed** How Elegant Uses Web-Safe Fonts for Your Pages       | - |
+|Appearance and Style   |why-look-and-feel.md        | New, Pending [312](https://github.com/Pelican-Elegant/elegant/issues/312)        | Why Does Elegant Look The Way It Does?                            | - |
 |Code Snippets          |code-style.md               | -            | Change Syntax Highlight Theme | - |
 |Code Snippets          |custome-syntax-theme.md     | -            | Code Snippets Theme | - |
 |Code Snippets          |line-numbers-code-snippet.md| old? remove? | Display Line Numbers in Code Snippets | - |
@@ -61,10 +61,10 @@ Status: draft
 |SEO and SMO            |seo-social-media-tags.md    | -            | Search Engine and Social Media Optimization |- |
 |SEO and SMO            |social-profiles-sidebar.md  | -            | How to display your Social Media Profiles |- |
 |Supported Plugins      |assets-plugin.md            | -            | Avoid Unnecessary HTTP Requests |- |
-|Supported Plugins      |multi-part-plugin.md        | Abandoned?, Pri-1, [308](https://github.com/Pelican-Elegant/elegant/issues/308)  | How to use Multi Part plugin |- |
+|Supported Plugins      |multi-part-plugin.md        | New [308](https://github.com/Pelican-Elegant/elegant/issues/308)                 | Add a Series Indicator to Your Multipart Articles |- |
 |Supported Plugins      |photogallery.md             | -            | Photo gallery plugin |- |
-|Supported Plugins      |previous-and-next-article.md| -            | How to show Previous and Next Articles |- |
-|Supported Plugins      |share-post-plugin.md        | -            | How to use Social Sharing Plugin |- |
+|Supported Plugins      |previous-and-next-article.md| New                                                                              | Add Previous and Next Article Links to Your Articles              |- |
+|Supported Plugins      |share-post-plugin.md        | New            | Add Social Sharing Links to Your Articles |- |
 |Taxonomy               |article-count.md            | -            | Articles Count With Every Tag & Category      | Reassign to Look and Feel |
 |Taxonomy               |filter-tags.md              | -            | Live Filter for Tags                          | Reassign to Look and Feel |
 |Taxonomy               |zero-clutter-category.md    | -            | Zero Clutter Categories                       | Reassign to Look and Feel |

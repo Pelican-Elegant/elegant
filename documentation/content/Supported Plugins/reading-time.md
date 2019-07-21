@@ -32,6 +32,9 @@ PLUGINS = ['post_stats']
 Note that these values must be added to any existing values present for the `PLUGINS`
 configuration variables.
 
+!!! note
+    The [post_stats plugin](https://github.com/getpelican/pelican-plugins/blob/master/post_stats/readme.rst) requires the Python `beautifulsoup4` package to be installed.
+
 In addition, the `READING_TIME_LOWER_LIMIT` configuration variable can be set to specify a
 lower limit for this feature. If not supplied, the default value for this variable is 4 min.
 
