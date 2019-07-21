@@ -7,6 +7,7 @@ Comment_id: p9ot4uz-how-to-show-previous-and-next-article
 Subtitle:
 Summary: Elegant can be configured to provide a Previous and Next article link at the bottom of your articles.  This allows for easier navigation through the site if you are looking at articles in published date order.
 Keywords:
+Authors: Talha Mansoor, Jack De Winter
 
 When reading a series of articles on a website, a reader often desires to view the articles in
 the order in which they were published.

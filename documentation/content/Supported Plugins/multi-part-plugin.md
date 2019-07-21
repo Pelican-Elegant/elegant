@@ -7,6 +7,7 @@ Comment_id: 3ws2xke-how-to-use-multi-part-plugin
 Subtitle:
 Summary: Elegant can be configured to provide a series section on the right sidebar.  Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the series.
 Keywords:
+Authors: Talha Mansoor, Jack De Winter
 
 When writing articles about certain topics, it is advantageous to split a single article into
 multiple articles.  Without splitting the article up, the author would be forced to cram all
@@ -23,7 +24,7 @@ presented as links to their respective articles.
 
 Here is an example of what the Series section may look like:
 
-![series example in the sidebar]({static}/images/elegant-theme_multi-part-sidebar.png)
+![series example in the sidebar]({filename}/images/elegant-theme_multi-part-sidebar.png)
 
 ## Configuration
 
