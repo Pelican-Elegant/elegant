@@ -5,7 +5,7 @@ Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin
 Comment_id: 3ws2xke-how-to-use-multi-part-plugin
 Subtitle:
-Summary: Elegant can be configured to provide a series indicator on the right sidebar.  Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the series.
+Summary: Elegant can be configured to provide a series section on the right sidebar.  Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the series.
 Keywords:
 
 When writing articles about certain topics, it is advantageous to split a single article into
