@@ -133,6 +133,11 @@ PROJECTS = [
         "description": "See planned features and estimated release dates",
     },
     {
+        "name": "Press Kit",
+        "url": "https://github.com/Pelican-Elegant/elegant/tree/master/elegant-logo",
+        "description": "Writing an article on Elegant? Get Elegant logo from here",
+    },
+    {
         "name": "onCrashReboot",
         "url": "https://www.oncrashreboot.com/",
         "description": "Home page of Elegant creator and lead developer",
