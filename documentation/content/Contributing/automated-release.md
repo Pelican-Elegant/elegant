@@ -6,7 +6,7 @@ Category: Contributing
 Authors: Talha Mansoor
 ---
 
-Elegant follows "realease early, realease often" software development philosophy. In this regard, our release process is fully automated.
+Elegant follows "release early, release often" software development philosophy. In this regard, our release process is fully automated.
 
 We use [semantic-release](https://github.com/semantic-release/semantic-release) for version management and publishing.
 
@@ -22,12 +22,16 @@ semantic-release uses the commit messages to determine the type of changes in th
 
 Here is an example of the release type that will be done based on a commit messages:
 
+<!-- yaspeller ignore:start -->
+
 [jtable]
 Commit Message, Release Type
 fix(pencil): stop graphite breaking when too much pressure applied, Patch Release
 feat(pencil): add 'graphiteWidth' option, Minor Feature Release
 perf(pencil): remove graphiteWidth option<br><br>BREAKING CHANGE: The graphiteWidth option has been removed.<br>The default graphite width of 10mm is always used for performance reasons., Major Breaking Release
 [/jtable]
+
+<!-- yaspeller ignore:end -->
 
 ## Test Release Process Locally
 

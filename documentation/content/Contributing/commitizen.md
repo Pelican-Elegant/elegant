@@ -35,7 +35,7 @@ All you have to do is to stage your changes and then run
 git-cz
 ```
 
-It will promot you for questions. Just answer them. Commitizen will automatically format it to conform to [Elegant Git commit guidelines]({filename}./git-commit-guidelines.md).
+It will prompt you for questions. Just answer them. Commitizen will automatically format it to conform to [Elegant Git commit guidelines]({filename}./git-commit-guidelines.md).
 
 If your Git commit fails for some reasons, like due to [Git hooks]({filename}./pre-commit.md), then you can fix the issue and rerun Commitizen using,
 

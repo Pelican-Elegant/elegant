@@ -15,7 +15,7 @@ Why?
 
 > semantic-release uses the commit messages to determine the type of changes in the codebase. Following formalized conventions for commit messages, semantic-release automatically determines the next semantic version number, generates a changelog and publishes the release.
 
-Basically, semantic-release goes through the commit messages, parses them and on its bases makes the deecisions of publishing new release and new version number.
+Basically, semantic-release goes through the commit messages, parses them and on its bases makes the decisions of publishing new release and new version number.
 
 What are those rules?
 
@@ -67,7 +67,7 @@ Must be one of the following:
 - **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing
   semi-colons, etc)
 - **refactor**: A code change that neither fixes a bug nor adds a feature
-- **perf**: A code change that improves performance
+- **perf**: A code change that improves performance <!-- yaspeller ignore -->
 - **test**: Adding missing or correcting existing tests
 - **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
   generation
