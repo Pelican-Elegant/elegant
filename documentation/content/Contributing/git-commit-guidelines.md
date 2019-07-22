@@ -23,6 +23,13 @@ Elegant development team chose to use [Angular Commit Message Conventions](https
 
 Following portion is largely derived from their [guidelines](https://gist.github.com/stephenparish/9941e89d80e2bc58a153).
 
+!!! Tip "Use Commitizen"
+
+    Reading, understanding and then getting used to following guidelines may take sometime.
+
+    Make your life easier and [use Commitizen for Git commits]({filename}./commitizen.md).
+    It automatically formats the commit message to conform to our guidelines.
+
 ## Commit Message Format
 
 Each commit message consists of a **header**, a **body** and a **footer**. The header has a special
