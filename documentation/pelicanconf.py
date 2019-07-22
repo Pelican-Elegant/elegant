@@ -28,15 +28,16 @@ MARKDOWN = {
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
+    "assets",
     "extract_toc",
-    "tipue_search",
+    "just_table",
     "liquid_tags.img",
     "neighbors",
-    "render_math",
     "related_posts",
-    "assets",
-    "share_post",
+    "render_math",
     "series",
+    "share_post",
+    "tipue_search",
 ]
 SITEMAP = {
     "format": "xml",
