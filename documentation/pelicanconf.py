@@ -30,6 +30,7 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "extract_toc",
     "tipue_search",
+    "just_table",
     "liquid_tags.img",
     "neighbors",
     "render_math",
