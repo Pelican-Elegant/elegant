@@ -27,6 +27,8 @@ const watchFiles = () => {
     [
       "documentation/content/**/*.md",
       "documentation/content/**/*.rest",
+      "documentation/pelicanconf.py",
+      "documentation/publishconf.py",
       "templates/**/*.html",
       "static/**/*.css",
       "static/**/*.js"
