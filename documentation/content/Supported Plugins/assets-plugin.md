@@ -13,14 +13,14 @@ When a webpage is created, webpage authors and static page generators will often
 low-level asset files from a trusted location. Between Pelican and Elegant, these files will
 often number between 8 and 15 CSS or JavaScript files[^css-javascript]. While these files are
 essential to the proper look and feel of a properly designed website, the overhead of this
-content being in separate files is that one request is made from the browser to the webserver
+content being in separate files is that one request is made from the browser to the server
 for each file.
 
 [^css-javascript]: If you would like to learn more about these, [W3Schools](https://www.w3schools.com/) have some great introductions to these files and their affects. The important part about these files is that they change how the browser displays and reacts to a given webpage. These files are use on 99.9% of the websites in existence due to their versatility.
 
 Pelican provides a plugin that takes the various CSS and JavaScript files and compiles each
 group of them into a single file. Not only does this process reduce the number of calls to
-retrieve files from the webserver, but it minifies[^minifies] or reduces the overall size of
+retrieve files from the server, but it minifies[^minifies] or reduces the overall size of
 those files as well.
 
 [^]: [Wikipedia](<https://en.wikipedia.org/wiki/Minification_(programming)>) has a good article on minification. The summary is that anything unnecessary over a series of files is removed and concatenated together to produce a single file that is the minimum size possible while not losing any understandability.
