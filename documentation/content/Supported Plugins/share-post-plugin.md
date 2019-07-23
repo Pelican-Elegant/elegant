@@ -5,29 +5,29 @@ Date: 2014-03-24 20:14
 Slug: how-to-use-social-sharing-plugin
 Comment_id: x4jitcv-how-to-use-social-sharing-plugin
 Subtitle:
-Summary: Elegant can be configured to provide Social Media sharing links for each of your articles.  These links are provide with a simple way to share on various Social Media platforms while endeavoring to not track users in the process.
+Summary: Elegant can be configured to provide Social Media sharing links for each of your articles. These links are provide with a simple way to share on various Social Media platforms while endeavoring to not track users in the process.
 Keywords: social networks, share posts,
 Authors: Talha Mansoor, Jack De Winter
 
 No blog is complete without buttons or links that invites a reader to share your articles
-with the friend and colleagues on various social media sites.  The problem with these buttons
+with the friend and colleagues on various social media sites. The problem with these buttons
 on many sites is that the buttons are used by big companies to track your web usage, sharing
-that information with various companies.  (For a more in-depth talk on this subject, please
+that information with various companies. (For a more in-depth talk on this subject, please
 read the [Online Trackers and Links](#Online-Trackers-and-Links) section at the end of this
 page.)
 
 Elegant provides a simple solution to this, using the `Share Post` plugin from pelican to
-provide simple and plain old-school URLs to provide the social media links.   These have the
+provide simple and plain old-school URLs to provide the social media links. These have the
 benefit of not having any ability to be used for online tracking.
 
-Here is an example of what the Series section may look like:
+Here is an example of what the Social Media Sharing section may look like:
 
 ![Share Post plugin in Elegant]({filename}/images/elegant-theme-share-post-plugin.png)
 
 ## Configuration
 
-To enable the Social Media Sharing links for your articles, add `share_post` to `PLUGINS`
-in your Pelican configuration.
+To enable the Social Media Sharing links for your articles, add `share_post` to the `PLUGINS`
+configuration variable in your Pelican configuration.
 
 ```python
 PLUGINS = ['share_post']
@@ -37,9 +37,9 @@ Note that these values must be added to any existing values present for the `PLU
 configuration variables.
 
 !!! note
-    The [share_post plugin](https://github.com/getpelican/pelican-plugins/blob/master/share_post/README.md) requires the Python `beautifulsoup4` package to be installed.
+The [share_post plugin](https://github.com/getpelican/pelican-plugins/blob/master/share_post/README.md) requires the Python `beautifulsoup4` package to be installed.
 
-The default text used to lead into the Social Media Sharing links is "Share On:".  This can
+The default text used to lead into the Social Media Sharing links is "Share On:". This can
 be overridden by defining the `SHARE_POST_INTRO` configuration variable with the text you
 want to replace it.
 
@@ -56,7 +56,7 @@ completed.
 The only effect any [metadata]({filename}../Extra Customization/meta-data.md) field will have
 on Sharing Media links is to change the test to lead into the Social Media Sharing links.
 As documented above, there is a default that can be overridden using the `SHARE_POST_INTRO`
-configuration variable.  This can be further overridden for a specific article by providing
+configuration variable. This can be further overridden for a specific article by providing
 the `share_post_intro` metadata field value for an article.
 
 ```yaml
@@ -74,7 +74,7 @@ since as
 [early as 2009](https://www.eff.org/deeplinks/2009/09/online-trackers-and-social-networks).
 
 Developers have responded to these concerned by coming up with
-[different ways](http://fixtracking.com/) to cope with this issue.   The solutions range from
+[different ways](http://fixtracking.com/) to cope with this issue. The solutions range from
 custom [browser plugins](https://disconnect.me/) to completely totally
 [reinventing share widgets](http://panzi.github.io/SocialSharePrivacy/) for a given browser.
 However, it is unreasonable to expect that each of your visitors uses a privacy plugin.
@@ -82,11 +82,11 @@ Depending on your setup, your computer's browser or mobile phone's browser may n
 users install any kind of plugin.
 
 Reinventing a social widget that respects the user's concerns will certainly requiring the more
-educated readers about it.  For other readers, the "new" or "changed" social widget will seem
-alien to them, and will make them hesitant to use it.  In turn, that will almost definitely
+educated readers about it. For other readers, the "new" or "changed" social widget will seem
+alien to them, and will make them hesitant to use it. In turn, that will almost definitely
 result in a decrease in the number of shares of your articles on social networks.
 
-Pelican (and therefore Elegant) uses a simple approach to work around this issue.  By using
+Pelican (and therefore Elegant) uses a simple approach to work around this issue. By using
 plain URLs to provide it's ability to share with social media sites, the entire widget issue
-is avoided.  The only cost that seems to be present is that some social media sites **require**
+is avoided. The only cost that seems to be present is that some social media sites **require**
 some form of widget.
