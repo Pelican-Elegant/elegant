@@ -27,8 +27,8 @@ those files as well.
 
 ## Configuration
 
-To enable Asset Management for your website, add `assets` to `PLUGINS` in your Pelican
-configuration.
+To enable Asset Management for your website, add `assets` to the `PLUGINS` configuration
+variable in your Pelican configuration.
 
 ```python
 PLUGINS = ['assets']
