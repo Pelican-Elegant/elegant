@@ -6,7 +6,6 @@ repos:
   - id: prettier
     files: \.(css|js|md|markdown|json)
     exclude: ^static/(tipuesearch|magnific)
-    log_file: prettier.out
 - repo: https://github.com/python/black
   rev: master
   hooks:
