@@ -1,5 +1,5 @@
-Title: Add a Series Indicator to Your Multipart Articles
-Tags: pelican-theme, pelican-plugin, navigation, web-design
+Title: Displaying a Series Information for Your Multipart Articles
+Tags: pelican-plugin, navigation, web-design
 Category: Supported Plugins
 Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin
@@ -24,7 +24,7 @@ presented as links to their respective articles.
 
 Here is an example of what the Series section may look like:
 
-![series example in the sidebar]({filename}/images/elegant-theme_multi-part-sidebar.png)
+![series example in the sidebar]({static}/images/elegant-theme_multi-part-sidebar.png)
 
 ## Configuration
 
@@ -35,9 +35,6 @@ configuration variable in your Pelican configuration.
 PLUGINS = ['series']
 ```
 
-Note that these values must be added to any existing values present for the `PLUGINS`
-configuration variables.
-
 In addition, the `SERIES_TITLE` configuration variable can be set to specify the title used for
 the Series section, regardless of the series.
 
@@ -45,14 +42,11 @@ the Series section, regardless of the series.
 SERIES_TITLE = "More In This Series"
 ```
 
-Note that this configuration variable will only change the name of the series for display as
-the title of the Series section, and will not affect any aspect of the grouping of articles.
-
 ## Article Metadata
 
 Once the configuration for Series is enabled in the configuration file, using this feature for
 a given set of articles requires that the article contains the `Series`
-[metadata]({filename}../Extra Customization/meta-data.md) field value.
+[metadata]({static}../Extra Customization/meta-data.md) field value.
 
 The text assigned to the `Series` metadata field is the title of the series. When the page is
 created, Pelican provides Elegant with a list of all pages that have the same value for the
@@ -61,7 +55,7 @@ each article. The titles for those pages is then displayed in sorted order, with
 page presented in _italics_ and the other pages presented as a link to those pages.
 
 ```Markdown
-Series: Maximizing Elegant
+series: Maximizing Elegant
 series_index: 2
 ```
 

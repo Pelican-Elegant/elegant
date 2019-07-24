@@ -41,16 +41,17 @@ a slightly darker font color is used. Instead of using bold colors for the text 
 background of the admonitions and code blocks, lighter colors are used for both.
 
 Elegant also reduces the distractions by relocating the extra information contained in an
-article's [Table of Contents]({filename}./table-of-contents.md)
+article's [Table of Contents]({static}./table-of-contents.md)
 to the left sidebar and displaying it in a smaller font. This allows the table to retain it's
 usefulness to the reader while not intruding on the article. In a similar fashion, the right
 sidebar is used to relate any other extra information about the article to the user. Elements
 that regularly appear in the right sidebar include:
-Category,
-Last Updated time,
-"Monthly Updates" opt-in,
-Published time,
-[Reading Time]({filename}../Supported Plugins/reading-time.md), and
-[Series section]({filename}../Supported Plugins/multi-part-plugin.md)
-"Stay in Touch" icons,
-Tags.
+
+- Category
+- Last Updated time
+- "Monthly Updates" opt-in
+- Published time
+- [Reading Time]({static}../Supported Plugins/reading-time.md)
+- [Series section]({static}../Supported Plugins/multi-part-plugin.md)
+- ["Stay in Touch" icons]({static}../SEO and SMO/social-profiles-sidebar.md)
+- Tags
