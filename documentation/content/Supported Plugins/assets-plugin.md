@@ -5,25 +5,21 @@ Date: 2014-03-24 14:09
 Slug: avoid-unnecessary-http-requests
 Comment_id: hk9m5eq-avoid-unnecessary-http-requests
 Subtitle:
-Summary: Pelican can be configured to compile multiple assets for your website into one single asset. When these assets are combined together, they are reduce to only their necessary components, and can be fetch by the webpage in a single call.
+Summary: Pelican can be configured to compile multiple assets for your website into one single asset. When these assets are combined together, they are reduce to only their necessary components, and can be fetched by the browser in a single call.
 Keywords:
 Authors: Talha Mansoor, Jack De Winter
 
 When a webpage is created, webpage authors and static page generators will often grab
 low-level asset files from a trusted location. Between Pelican and Elegant, these files will
-often number between 8 and 15 CSS or JavaScript files[^css-java-script]. While these files are
+often number between 8 and 15 CSS or JavaScript files. While these files are
 essential to the proper look and feel of a properly designed website, the overhead of this
-content being in separate files is that one request is made from the browser to the server
-for each file.
-
-[^css-java-script]: If you would like to learn more about these, [W3Schools](https://www.w3schools.com/) have some great introductions to these files and their affects. The important part about these files is that they change how the browser displays and reacts to a given webpage. These files are use on 99.9% of the websites in existence due to their versatility.
+content being in separate files is that separate requests are made for each of them to the
+server.
 
 Pelican provides a plugin that takes the various CSS and JavaScript files and compiles each
 group of them into a single file. Not only does this process reduce the number of calls to
-retrieve files from the server, but it minifies[^minifies] or reduces the overall size of
+retrieve files from the server, but it minifies or reduces the overall size of
 those files as well.
-
-[^]: [Wikipedia](<https://en.wikipedia.org/wiki/Minification_(programming)>) has a good article on minification. The summary is that anything unnecessary over a series of files is removed and concatenated together to produce a single file that is the minimum size possible while not losing any understandability.
 
 ## Configuration
 
@@ -33,9 +29,6 @@ variable in your Pelican configuration.
 ```python
 PLUGINS = ['assets']
 ```
-
-Note that these values must be added to any existing values present for the `PLUGINS`
-configuration variables.
 
 !!! note
 The [assets plugin](https://github.com/getpelican/pelican-plugins/blob/master/assets/Readme.rst) requires the Python `webassets` and `cssmin` packages to be installed.

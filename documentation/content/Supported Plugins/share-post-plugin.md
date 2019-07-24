@@ -1,11 +1,11 @@
-Title: Add Social Sharing Links to Your Articles
+Title: Add Social Sharing Links
 Tags: pelican-theme, pelican-plugin, social-media
 Category: Supported Plugins
 Date: 2014-03-24 20:14
 Slug: how-to-use-social-sharing-plugin
 Comment_id: x4jitcv-how-to-use-social-sharing-plugin
 Subtitle:
-Summary: Elegant can be configured to provide Social Media sharing links for each of your articles. These links are provide with a simple way to share on various Social Media platforms while endeavoring to not track users in the process.
+Summary: Elegant can be configured to provide Social Media sharing links for each of your articles. These links provide a simple way to share on various Social Media platforms while endeavoring to not track users in the process.
 Keywords: social networks, share posts,
 Authors: Talha Mansoor, Jack De Winter
 
@@ -33,9 +33,6 @@ configuration variable in your Pelican configuration.
 PLUGINS = ['share_post']
 ```
 
-Note that these values must be added to any existing values present for the `PLUGINS`
-configuration variables.
-
 !!! note
 The [share_post plugin](https://github.com/getpelican/pelican-plugins/blob/master/share_post/README.md) requires the Python `beautifulsoup4` package to be installed.
 
@@ -53,11 +50,12 @@ Once the configuration for Sharing Media Links is enabled in the configuration f
 this feature to provide links for your readers to share your articles on social media is
 completed.
 
-The only effect any [metadata]({filename}../Extra Customization/meta-data.md) field will have
-on Sharing Media links is to change the test to lead into the Social Media Sharing links.
-As documented above, there is a default that can be overridden using the `SHARE_POST_INTRO`
-configuration variable. This can be further overridden for a specific article by providing
-the `share_post_intro` metadata field value for an article.
+The only effect any [metadata]({static}../Extra Customization/meta-data.md) field will have
+on Sharing Media links is to change the text to lead into the Social Media Sharing links.
+As documented above, the `SHARE_POST_INTRO` can be used to provide an alternate lead in text
+for the Social Media Sharing links. This text can be further overridden on an
+article-by-article basis by specifying the `share_post_intro` metadata field value for an
+article as follows:
 
 ```yaml
 share_post_intro: Share this article on Elegant with
@@ -88,5 +86,4 @@ result in a decrease in the number of shares of your articles on social networks
 
 Pelican (and therefore Elegant) uses a simple approach to work around this issue. By using
 plain URLs to provide it's ability to share with social media sites, the entire widget issue
-is avoided. The only cost that seems to be present is that some social media sites **require**
-some form of widget.
+is avoided.

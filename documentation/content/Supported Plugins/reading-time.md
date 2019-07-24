@@ -29,9 +29,6 @@ configuration variable in your Pelican configuration.
 PLUGINS = ['post_stats']
 ```
 
-Note that these values must be added to any existing values present for the `PLUGINS`
-configuration variables.
-
 !!! note
 The [post_stats plugin](https://github.com/getpelican/pelican-plugins/blob/master/post_stats/readme.rst) requires the Python `beautifulsoup4` package to be installed.
 
