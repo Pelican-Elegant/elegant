@@ -46,7 +46,7 @@ SERIES_TITLE = "More In This Series"
 
 Once the configuration for Series is enabled in the configuration file, using this feature for
 a given set of articles requires that the article contains the `Series`
-[metadata]({static}../Extra Customization/meta-data.md) field value.
+[metadata]({filename}../Extra Customization/meta-data.md) field value.
 
 The text assigned to the `Series` metadata field is the title of the series. When the page is
 created, Pelican provides Elegant with a list of all pages that have the same value for the
