@@ -72,7 +72,7 @@ above example, Talha's `avatar` URL is local, while Pablo's URL is remote.
 
 While the configuration for Author Blurbs is centralized in the configuration file, enabling
 this feature for a given article requires that the article contains either the `author` or
-`authors` [metadata]({static}../Extra Customization/meta-data.md) field values. If neither
+`authors` [metadata]({filename}../Extra Customization/meta-data.md) field values. If neither
 of these values are provided, the `AUTHOR` configuration variable will be used as a default.
 
 ```Python
