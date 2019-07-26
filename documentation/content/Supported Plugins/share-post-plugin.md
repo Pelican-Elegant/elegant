@@ -22,7 +22,7 @@ benefit of not having any ability to be used for online tracking.
 
 Here is an example of what the Social Media Sharing section may look like:
 
-![Share Post plugin in Elegant]({filename}/images/elegant-theme-share-post-plugin.png)
+![Share Post plugin in Elegant]({static}/images/elegant-theme-share-post-plugin.png)
 
 ## Configuration
 
