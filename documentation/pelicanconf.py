@@ -179,3 +179,4 @@ AUTHORS = {
         "blurb": "FOSS lawyer by trade, hacker by heart.",
     },
 }
+DISQUS_FILTER = True

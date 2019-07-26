@@ -1,5 +1,10 @@
 {% macro comments(article) %}
-    {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' and article.comments != 'False' %}
+    {% if SITEURL and article.status != 'draft' and article.comments != 'False' %}
+
+    {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+
+    {%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
+
 <section>
 {% if article.comments_intro %}
 <p id="comment-message">{{ article.comments_intro }} </p>
@@ -35,11 +40,17 @@
 </div>
 </section>
     {% endif %}
+    {% endif %}
 {% endmacro %}
 
 {% macro comments_script(article) %}
-    {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
+    {% if SITEURL and article.status != 'draft' %}
+    {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+
+    {%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
+
         {% from '_includes/disqus_scripts.html' import disqus_misc_scripts with context %}
         {{ disqus_misc_scripts() }}
+    {% endif %}
     {% endif %}
 {% endmacro %}

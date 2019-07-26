@@ -61,6 +61,12 @@
 {% set COMMENTS_INTRO = COMMENTS_INTRO %}
 {% endif %}
 
+{% if not DISQUS_FILTER %}
+{% set DISQUS_FILTER = False %}
+{% else %}
+{% set DISQUS_FILTER = DISQUS_FILTER %}
+{% endif %}
+
 {# Author's twitter handle. Used in Twitter card meta data #}
 {% if not TWITTER_USERNAME %}
 {% set TWITTER_USERNAME = '' %}
