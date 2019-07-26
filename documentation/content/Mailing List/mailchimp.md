@@ -8,6 +8,7 @@ Slug: add-mailchimp
 Category: Mailing List
 authors: Talha Mansoor
 mailchimp_filter: off
+freelists_filter: on
 ---
 
 Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every article. Increased visibility is said to increase number of subscribers.
