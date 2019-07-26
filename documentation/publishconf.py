@@ -21,6 +21,7 @@ if os.environ.get("CONTEXT") == "production":
     STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_PROD")
     STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_PROD")
     GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS_PROD")
+    DISQUS_SITENAME = os.environ.get("DISQUS_SITENAME")
 
 elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == "next":
     SITENAME = "Elegant (Next)"
