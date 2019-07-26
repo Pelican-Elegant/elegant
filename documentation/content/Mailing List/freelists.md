@@ -7,6 +7,7 @@ Slug: add-freelists
 Category: Mailing List
 authors: Talha Mansoor
 freelists_filter: off
+mailchimp_filter: on
 ---
 
 Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every article.
@@ -18,6 +19,8 @@ To customize user experience you can also define,
 1. `EMAIL_SUBSCRIPTION_LABEL`,
 1. `EMAIL_FIELD_PLACEHOLDER` and
 1. `SUBSCRIBE_BUTTON_TITLE`
+
+The "Notify me" button you see in the sidebar of this page is an example of FreeLists subscription form. It links to Oracle database discussion list to demonstrate the function.
 
 ## Show FreeLists Form by default
 

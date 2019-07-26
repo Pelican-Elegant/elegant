@@ -101,7 +101,7 @@ SUBSCRIBE_BUTTON_TITLE = "Notify me"
 
 MAILCHIMP_FORM_ACTION = "empty"
 
-FREELISTS_NAME = "elegant-demo-list"
+FREELISTS_NAME = "oracle-l"
 FREELISTS_FILTER = True
 
 # SMO
