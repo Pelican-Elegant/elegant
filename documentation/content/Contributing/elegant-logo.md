@@ -1,7 +1,7 @@
 ---
 Title: Elegant Logo
 Date: 2019-07-22 21:17
-Slug: elegant-log
+Slug: elegant-logo
 Category: Contributing
 Authors: Talha Mansoor
 ---
