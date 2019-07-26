@@ -148,5 +148,7 @@
     {{ super() }}
     {% from '_includes/comments.html' import comments_script_disqus with context %}
     {{ comments_script_disqus(article) }}
+    {% from '_includes/comments.html' import comments_common_scripts with context %}
+    {{ comments_common_scripts() }}
     {% include '_includes/photos_footer.html' %}
 {% endblock script %}
