@@ -1,5 +1,12 @@
+{% macro freelists(article) %}
+
 {% from '_includes/_defaults.html' import FREELISTS_NAME with context %}
+{% from '_includes/_defaults.html' import FREELISTS_FILTER with context %}
+
+{%if (not FREELISTS_FILTER or article.freelists_filter == "off") and article.freelists_filter != "on" %}
+
 {% if FREELISTS_NAME %}
+
 {% from '_includes/_defaults.html' import EMAIL_SUBSCRIPTION_LABEL with context %}
 {% from '_includes/_defaults.html' import SUBSCRIBE_BUTTON_TITLE with context %}
 <div id="mc-embed-signup">
@@ -11,3 +18,7 @@
 <!-- END FreeLists WEB FORM -->
 </div>
 {% endif %}
+
+{% endif %}
+
+{% endmacro %}

@@ -135,7 +135,8 @@
             {% endif %}
             {% include '_includes/social_links.html' %}
             {% include '_includes/mailchimp.html' %}
-            {% include '_includes/freelists.html' %}
+            {% from '_includes/freelists.html' import freelists with context %}
+            {{ freelists(article) }}
         </div>
         </section>
 </div>

@@ -177,3 +177,6 @@ AUTHORS = {
         "blurb": "FOSS lawyer by trade, hacker by heart.",
     },
 }
+
+FREELISTS_NAME = "elegant-demo-list"
+FREELISTS_FILTER = True
