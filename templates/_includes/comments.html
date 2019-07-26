@@ -24,7 +24,7 @@
                     data-disqus-identifier="{{ article.disqus_identifier }}"
                 {% endif %}
                 href="{{ SITEURL }}/{{ article.url }}#disqus_thread",
-                id="disqus-accordion-toggle">
+                id="comment-accordion-toggle">
                 Comments
             </a>
         </div>
@@ -73,7 +73,7 @@ window.onhashchange=function(){
 </script>
 <script>
 $('#disqus_thread').on('shown', function () {
-    var link = document.getElementById('disqus-accordion-toggle');
+    var link = document.getElementById('comment-accordion-toggle');
     var old_innerHTML = link.innerHTML;
     $(link).fadeOut(500, function() {
         $(this).text('Click here to hide comments').fadeIn(500);
