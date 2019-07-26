@@ -99,8 +99,6 @@ EMAIL_SUBSCRIPTION_LABEL = "Get New Release Alert"
 EMAIL_FIELD_PLACEHOLDER = "Enter your email..."
 SUBSCRIBE_BUTTON_TITLE = "Notify me"
 
-MAILCHIMP_FORM_ACTION = "empty"
-
 FREELISTS_NAME = "oracle-l"
 FREELISTS_FILTER = True
 

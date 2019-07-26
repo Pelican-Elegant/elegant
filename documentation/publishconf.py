@@ -33,6 +33,8 @@ elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == 
 else:
     SITEURL = ""
 
+MAILCHIMP_FORM_ACTION = os.environ.get("MAILCHIMP_FORM_ACTION")
+
 RELATIVE_URLS = False
 # filetime_from_git is very slow. Use it in production only
 # to avoid slow build times during development
