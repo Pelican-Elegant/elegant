@@ -94,11 +94,15 @@ RELATED_POSTS_LABEL = "Keep Reading"
 SHARE_POST_INTRO = "Like this post? Share on:"
 COMMENTS_INTRO = "So what do you think? Did I miss something? Is any part unclear? Leave your comments below."
 
-# Mailchimp
-EMAIL_SUBSCRIPTION_LABEL = "Get Monthly Updates"
+# Email Subscriptions
+EMAIL_SUBSCRIPTION_LABEL = "Get New Release Alert"
 EMAIL_FIELD_PLACEHOLDER = "Enter your email..."
-SUBSCRIBE_BUTTON_TITLE = "Send me Free updates"
+SUBSCRIBE_BUTTON_TITLE = "Notify me"
+
 MAILCHIMP_FORM_ACTION = "empty"
+
+FREELISTS_NAME = "elegant-demo-list"
+FREELISTS_FILTER = True
 
 # SMO
 TWITTER_USERNAME = ""
@@ -177,6 +181,3 @@ AUTHORS = {
         "blurb": "FOSS lawyer by trade, hacker by heart.",
     },
 }
-
-FREELISTS_NAME = "elegant-demo-list"
-FREELISTS_FILTER = True
