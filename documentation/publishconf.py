@@ -14,6 +14,7 @@ from pelicanconf import *
 # Important: Changing SITEURL may break links in deploy-previews
 if os.environ.get("CONTEXT") == "production":
     SITEURL = "https://elegant.oncrashreboot.com"
+    FEED_DOMAIN = SITEURL
     FEED_ALL_ATOM = "feeds/all.atom.xml"
     CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
     CLAIM_BING = os.environ.get("CLAIM_BING_PROD")
@@ -25,6 +26,7 @@ elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == 
     SITENAME = "Elegant (Next)"
     SITESUBTITLE = "Pre Release Documentation of The Best Pelican Theme"
     SITEURL = "https://next.elegant.oncrashreboot.com"
+    FEED_DOMAIN = SITEURL
     LANDING_PAGE_TITLE = "Elegant (Next) – Why it is the Best Pelican Theme"
     STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_NEXT")
     STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_NEXT")
