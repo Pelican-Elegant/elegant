@@ -17,12 +17,20 @@ Install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.co
 
 If you are on Windows then try installing them with [scoop.sh](https://scoop.sh/). It saves time and makes update easier.
 
-### Step 2: Install gulp
+### Step 2: Install Commitizen
 
 Run this command from your command line terminal.
 
 ```bash
 yarn global add commitizen
+```
+
+### Step 3: Initialize the Project
+
+In the root of Elegant repository, run
+
+```bash
+yarn install
 ```
 
 ## Use Commitizen
