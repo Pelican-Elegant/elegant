@@ -42,8 +42,8 @@
             {% endif %}
 
             {{ page.content }}
-            {% from '_includes/comments.html' import comments with context %}
-            {{ comments(page) }}
+            {% from '_includes/comments.html' import comments_disqus with context %}
+            {{ comments_disqus(page) }}
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
@@ -58,6 +58,6 @@
 
     {% block script %}
     {{ super() }}
-    {% from '_includes/comments.html' import comments_script with context %}
-    {{ comments_script(page) }}
+    {% from '_includes/comments.html' import comments_script_disqus with context %}
+    {{ comments_script_disqus(page) }}
     {% endblock script %}

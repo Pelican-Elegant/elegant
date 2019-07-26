@@ -77,8 +77,8 @@
             {{ share_links(article) }}
             {% from '_includes/article_author.html' import article_author with context %}
             {{ article_author(article) }}
-            {% from '_includes/comments.html' import comments with context %}
-            {{ comments(article) }}
+            {% from '_includes/comments.html' import comments_disqus with context %}
+            {{ comments_disqus(article) }}
             <hr/>
             {% include '_includes/related_posts.html' with context %}
             {% if article.prev_article or article.next_article %}
@@ -146,7 +146,7 @@
 
 {% block script %}
     {{ super() }}
-    {% from '_includes/comments.html' import comments_script with context %}
-    {{ comments_script(article) }}
+    {% from '_includes/comments.html' import comments_script_disqus with context %}
+    {{ comments_script_disqus(article) }}
     {% include '_includes/photos_footer.html' %}
 {% endblock script %}
