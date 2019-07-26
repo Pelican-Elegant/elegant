@@ -1,5 +1,12 @@
+{% macro mailchimp(article) %}
+
 {% from '_includes/_defaults.html' import MAILCHIMP_FORM_ACTION with context %}
+{% from '_includes/_defaults.html' import MAILCHIMP_FILTER with context %}
+
+{%if (not MAILCHIMP_FILTER or article.mailchimp_filter == "off") and article.mailchimp_filter != "on" %}
+
 {% if MAILCHIMP_FORM_ACTION %}
+
 {% from '_includes/_defaults.html' import EMAIL_SUBSCRIPTION_LABEL with context %}
 {% from '_includes/_defaults.html' import EMAIL_FIELD_PLACEHOLDER with context %}
 {% from '_includes/_defaults.html' import SUBSCRIBE_BUTTON_TITLE with context %}
@@ -12,4 +19,9 @@
 </form>
 </div>
 <!--End mc_embed_signup-->
+
 {% endif %}
+
+{% endif %}
+
+{% endmacro %}

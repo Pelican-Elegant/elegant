@@ -98,6 +98,12 @@ search results and social media #}
 {% set MAILCHIMP_FORM_ACTION = MAILCHIMP_FORM_ACTION %}
 {% endif %}
 
+{% if not MAILCHIMP_FILTER %}
+{% set MAILCHIMP_FILTER = False %}
+{% else %}
+{% set MAILCHIMP_FILTER = MAILCHIMP_FILTER %}
+{% endif %}
+
 {% if not FREELISTS_NAME %} {% set FREELISTS_NAME = '' %}
 {% else %}
 {% set FREELISTS_NAME = FREELISTS_NAME %}
