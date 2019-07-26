@@ -75,12 +75,12 @@ window.onhashchange=function(){
 $('#disqus_thread').on('shown', function () {
     var link = document.getElementById('comment-accordion-toggle');
     var old_innerHTML = link.innerHTML;
-    $(link).fadeOut(500, function() {
-        $(this).text('Click here to hide comments').fadeIn(500);
+    $(link).fadeOut(200, function() {
+        $(this).text('Click here to hide comments').fadeIn(200);
     });
     $('#disqus_thread').on('hidden', function () {
-        $(link).fadeOut(500, function() {
-            $(this).text(old_innerHTML).fadeIn(500);
+        $(link).fadeOut(200, function() {
+            $(this).text(old_innerHTML).fadeIn(200);
         });
     })
 })
