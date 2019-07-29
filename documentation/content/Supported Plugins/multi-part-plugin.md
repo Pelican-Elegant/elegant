@@ -45,12 +45,12 @@ SERIES_TITLE = "More In This Series"
 ## Article Metadata
 
 Once the configuration for Series is enabled in the configuration file, using this feature for
-a given set of articles requires that the article contains the `Series`
+a given set of articles requires that the article contains the `series`
 [metadata]({filename}../Extra Customization/meta-data.md) field value.
 
-The text assigned to the `Series` metadata field is the title of the series. When the page is
+The text assigned to the `series` metadata field is the title of the series. When the page is
 created, Pelican provides Elegant with a list of all pages that have the same value for the
-`Series` metadata field. By default, Elegant sorts that list according to the publish date for
+`series` metadata field. By default, Elegant sorts that list according to the publish date for
 each article. The titles for those pages is then displayed in sorted order, with the current
 page presented in _italics_ and the other pages presented as a link to those pages.
 
