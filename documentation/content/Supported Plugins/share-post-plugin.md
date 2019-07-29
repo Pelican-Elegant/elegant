@@ -34,7 +34,8 @@ PLUGINS = ['share_post']
 ```
 
 !!! note
-The [share_post plugin](https://github.com/getpelican/pelican-plugins/blob/master/share_post/README.md) requires the Python `beautifulsoup4` package to be installed.
+
+    The [share_post plugin](https://github.com/getpelican/pelican-plugins/blob/master/share_post/README.md) requires the Python `beautifulsoup4` package to be installed.
 
 The default text used to lead into the Social Media Sharing links is "Share On:". This can
 be overridden by defining the `SHARE_POST_INTRO` configuration variable with the text you

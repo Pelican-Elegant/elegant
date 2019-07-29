@@ -141,7 +141,8 @@ I will end my example here.
 ### Hide Default Title Text
 
 !!! note "Possibly Deprecated"
-We couldn't not reproduce this issue in our testing. This should be considered deprecated, but is retained in this document in case someone encounters this.
+
+    We couldn't not reproduce this issue in our testing. This should be considered deprecated, but is retained in this document in case someone encounters this.
 
 Using the default configuration, reStructuredText will generate a default title for the table
 of contents. According to the [official
