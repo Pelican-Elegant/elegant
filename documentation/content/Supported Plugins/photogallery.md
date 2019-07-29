@@ -42,8 +42,8 @@ PLUGINS = ['photos']
 ```
 
 !!! note
-The [photos plugin](https://github.com/getpelican/pelican-plugins/blob/master/photos/README.md)
-requires the Python `pillow` package to be installed.
+
+    The [photos plugin](https://github.com/getpelican/pelican-plugins/blob/master/photos/README.md) requires the Python `pillow` package to be installed.
 
 ### Pelican on Windows
 
@@ -111,7 +111,8 @@ photo gallery is not required, but when including multiple galleries, is often d
 # Advanced Configuration
 
 !!! warning
-Processing a quantity of photos in the 10,000s range can take multiple hours to complete. To reduce the effort needed to publish photo galleries, the `Photo` plugin will only process images if the output file is not already present in the destination directory. For more information, please refer to the [Caching Image Processing]({filename}./photo-gallery-advanced.md#caching-processed-images).
+
+    Processing a quantity of photos in the 10,000s range can take multiple hours to complete. To reduce the effort needed to publish photo galleries, the `Photo` plugin will only process images if the output file is not already present in the destination directory. For more information, please refer to the [Caching Image Processing]({filename}./photo-gallery-advanced.md#caching-processed-images).
 
 Using the above configuration, a photo gallery will be added to the end of the article
 containing the `gallery` metadata using default settings. For additional ways to use photo

@@ -29,7 +29,8 @@ pip install invoke
 ### Known Issue
 
 !!! Danger "Pretty URLs Do Not Work"
-Remove or comment out `ARTICLE_URL = "{slug}"` from Pelican configuration to make LiveReload work
+
+    Remove or comment out `ARTICLE_URL = "{slug}"` from Pelican configuration to make LiveReload work
 
 Unfortunately, Pelican LiveReload depends on [Python-LiveReload](https://github.com/lepture/python-livereload), which [does not support extension less files](https://github.com/lepture/python-livereload/pull/131).
 

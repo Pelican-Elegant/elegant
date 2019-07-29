@@ -31,7 +31,8 @@ PLUGINS = ['assets']
 ```
 
 !!! note
-The [assets plugin](https://github.com/getpelican/pelican-plugins/blob/master/assets/Readme.rst) requires the Python `webassets` and `cssmin` packages to be installed.
+
+    The [assets plugin](https://github.com/getpelican/pelican-plugins/blob/master/assets/Readme.rst) requires the Python `webassets` and `cssmin` packages to be installed.
 
 ## Debugging Notes
 
