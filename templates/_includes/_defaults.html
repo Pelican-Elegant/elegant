@@ -61,6 +61,12 @@
 {% set COMMENTS_INTRO = COMMENTS_INTRO %}
 {% endif %}
 
+{% if not DISQUS_FILTER %}
+{% set DISQUS_FILTER = False %}
+{% else %}
+{% set DISQUS_FILTER = DISQUS_FILTER %}
+{% endif %}
+
 {# Author's twitter handle. Used in Twitter card meta data #}
 {% if not TWITTER_USERNAME %}
 {% set TWITTER_USERNAME = '' %}
@@ -98,9 +104,21 @@ search results and social media #}
 {% set MAILCHIMP_FORM_ACTION = MAILCHIMP_FORM_ACTION %}
 {% endif %}
 
+{% if not MAILCHIMP_FILTER %}
+{% set MAILCHIMP_FILTER = False %}
+{% else %}
+{% set MAILCHIMP_FILTER = MAILCHIMP_FILTER %}
+{% endif %}
+
 {% if not FREELISTS_NAME %} {% set FREELISTS_NAME = '' %}
 {% else %}
 {% set FREELISTS_NAME = FREELISTS_NAME %}
+{% endif %}
+
+{% if not FREELISTS_FILTER %}
+{% set FREELISTS_FILTER = False %}
+{% else %}
+{% set FREELISTS_FILTER = FREELISTS_FILTER %}
 {% endif %}
 
 {# It is displayed along with the SITENAME in the footer of every page #}

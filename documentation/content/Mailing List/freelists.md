@@ -1,12 +1,13 @@
 ---
 Title: Add FreeLists
 Tags: marketing, network, subscriber
-layout: post
 Date: 2018-07-05 23:20
 comments: false
 Slug: add-freelists
 Category: Mailing List
 authors: Talha Mansoor
+freelists_filter: off
+mailchimp_filter: on
 ---
 
 Elegant shows a form to subscribe to your newsletter, above the fold, in the right section of every article.
@@ -19,10 +20,40 @@ To customize user experience you can also define,
 1. `EMAIL_FIELD_PLACEHOLDER` and
 1. `SUBSCRIBE_BUTTON_TITLE`
 
-!!! Warning
+The "Notify me" button you see in the sidebar of this page is an example of FreeLists subscription form. It links to Oracle database discussion list to demonstrate the function.
 
-    FreeLists has deprecated the form Elegant used. Due to which,
-    user is redireced to FreeLists [deprecation notice page](https://www.freelists.org/cgi-bin/subscription.cgi).
-    If your `FREELISTS_NAME` is correct then their notice page has a link to their new form.
+## Show FreeLists Form by default
 
-    Fixing this issue is on our roadmap. You can track it [here](https://github.com/Pelican-Elegant/elegant/issues/412).
+Just set `FREELISTS_NAME` variable.
+
+## Hide FreeLists Form by default
+
+Unset `FREELISTS_NAME` variable.
+
+This is the default setting.
+
+## Hide FreeLists Form by default. Show on Selected
+
+1. Set `FREELISTS_NAME`
+1. Set `FREELISTS_FILTER` to `True`
+
+This will hide FreeLists form on all pages.
+
+Now to show FreeLists form on selected posts, in article metadata set
+
+```yaml
+freelists_filter: off
+```
+
+## Show FreeLists Form by default. Hide on Selected
+
+1. Set `FREELISTS_NAME`
+1. Remove `FREELISTS_FILTER` or set it to `False` which is its default value
+
+This will hide FreeLists form on all pages.
+
+Now to hide FreeLists form on selected posts, in article metadata set
+
+```yaml
+freelists_filter: on
+```

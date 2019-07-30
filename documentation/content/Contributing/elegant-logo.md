@@ -1,21 +1,18 @@
 ---
-author: Talha Mansoor
-title: What Is Elegant
-layout: page
-date: 2019-01-14 7:30:47 +0100
-status: hidden
-slug: landing-page-about-hidden
+Title: Elegant Logo
+Date: 2019-07-22 21:17
+Slug: elegant-logo
+Category: Contributing
+Authors: Talha Mansoor
 ---
 
-Elegant is a stylish, responsive, and minimal Pelican
-theme that looks amazing across all screen resolutions and devices.
+Elegant community held a [discussion](https://github.com/Pelican-Elegant/elegant/issues/190) to decide a Logo for the project. We settled on following icon from [Pelican by Smalllike from the Noun Project](https://thenounproject.com/search/?q=pelican&i=2213839).
 
-Elegant gives meaning to the expression **"sand the under side of the drawer"**.
-Every feature and style of Elegant is the result of a long thought process.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" x="0px" y="0px" width="250" height="250"><g><path d="M39,25H24V20H35A11.013,11.013,0,0,0,46,9V3a1,1,0,0,0-1-1H19a5.006,5.006,0,0,0-5,5V38A11.013,11.013,0,0,0,25,49h4v7H27a3,3,0,0,0,0,6H37a3,3,0,0,0,0-6H35V49H50V36A11.013,11.013,0,0,0,39,25Zm0,2a8.953,8.953,0,0,1,5.644,2H35v2H46.478a8.962,8.962,0,0,1,1,2H39v2h8.941A8.935,8.935,0,0,1,48,36v1H44v2h4v2H29a3,3,0,0,1-3-3V27Zm-4-9H24V10H43.941A9.01,9.01,0,0,1,35,18ZM24,4H44V8H24ZM16,7a3,3,0,0,1,3-3h3V25H16ZM37,58a1,1,0,0,1,0,2H27a1,1,0,0,1,0-2Zm-4-2H31V49h2Zm15-9H25a9.01,9.01,0,0,1-9-9V27h2v7h2V27h4V38a5.006,5.006,0,0,0,5,5H48Z"/><rect x="18" y="36" width="2" height="2"/><circle cx="20.5" cy="7.5" r="1.5"/></g><text x="0" y="79" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Smalllike</text><text x="0" y="84" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
 
-## What Makes Elegant So Special?
+Building on top of it, some modifications were made to it using [Inkscape](https://inkscape.org/).
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67" width="150" height="150" style="float:right; margin-left:10px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67" width="250" height="250">
     <rect width="57.681" height="62.899" x="2.802" y="-11.841" ry="0" fill="none"/>
     <rect width="65.83" height="65.83" x=".585" y=".585" ry="2.398" fill="none" stroke="maroon" stroke-width="1.17"/>
     <g transform="translate(2.518 1.626)">
@@ -31,13 +28,24 @@ Every feature and style of Elegant is the result of a long thought process.
     <path d="M26.5 48.525c-1.283-.147-2.925-.767-4.049-1.53-1.516-1.03-2.8-2.727-3.402-4.497-.47-1.38-.478-1.525-.478-7.973V28.63h1.942v7.04H22.536v-7.04H26.5v5.846c.002 6.462-.004 6.38.519 7.404.604 1.186 1.532 2.001 2.87 2.522l.535.209 10.014.022 10.013.022V48.615l-11.672-.01c-6.42-.006-11.946-.042-12.28-.08zm-3.964-9.903v-1.011H20.513V39.634H22.536zM18.57 17.394c0-10.175-.029-9.59.525-10.425.316-.475.804-.863 1.403-1.115.329-.138.616-.163 2.18-.19l1.8-.03v1.342c0 .739-.033 1.342-.072 1.342-.04 0-.128-.087-.198-.193-.214-.326-.805-.56-1.308-.518-1.841.153-1.884 2.863-.048 3.039.513.05.9-.085 1.234-.429.148-.153.298-.279.331-.28.033 0 .06 3.75.06 8.334v8.335h-5.906z" fill="#fff" stroke="#fff" stroke-width=".08093600000000001"/>
 </svg>
 
-Elegant is the only Pelican theme that search, live filter tags, zero clutter categories, lazy load comments, Mailchimp, FreeLists support and a customizable landing page.
-That's not all. Go through our documentation, you will find several unique features and nuances that you will not find in any other theme.
+The we cleaned it using [svgo](https://github.com/svg/svgo) tool. It reduced file size by around 50%.
 
-To top it of, it is the only theme with comprehensive documentation and an automated build, deploy and release process.
+```bash
+$ svgo -i elegant_logo.svg --pretty
 
-## Try It Out
+elegant_logo.svg:
+Done in 80 ms!
+8.029 KiB - 52.5% = 3.815 KiB
+```
 
-This site is a demonstration and documentation of Elegant theme.
+Then, we converted SVG to PNG using [svgexport](https://github.com/shakiba/svgexport).
 
-To try out Elegant, you don't need to install anything. Just visit different pages of this site. Try the search function. Check out our categories. What you see here is what you get.
+```bash
+$ svgexport elegant_logo.svg elegant_logo.png 100%
+```
+
+The resultant file was around 1MB is size. So we optimized it using [ImageOptim](https://imageoptim.com/mac), which reduced the file size by 98%.
+
+Your can download the files from our Git repository.
+
+<https://github.com/Pelican-Elegant/elegant/tree/master/elegant-logo>

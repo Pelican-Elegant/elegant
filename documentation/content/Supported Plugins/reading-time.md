@@ -13,25 +13,25 @@ to the reader on the amount of time it will take to read the article. This estim
 typically based on the average reading speed of an adult being roughly 265 words per minute
 while retaining comprehension.
 
-Elegant provides this feature, adding a `Reading Time` section
-at the top of the text on the right side of the article with the estimate for the current
-article.
+Elegant provides this feature, adding a `Reading Time` section at the top of the right sidebar
+with the estimate for the current article.
 
-Here is an example of what the Reading Time estimate may look like:
+Here is an example of what the Reading Time Estimate section may look like:
 
 ![Reading Time Section]({static}/images/elegant-theme_reading-time.png)
 
 ## Configuration
 
-To enable the reading time for your articles, you need to add `post_stats` to `PLUGINS` in
-your Pelican configuration.
+To enable the reading time for your articles, you need to add `post_stats` to the `PLUGINS`
+configuration variable in your Pelican configuration.
 
 ```python
 PLUGINS = ['post_stats']
 ```
 
-Note that these values must be added to any existing values present for the `PLUGINS`
-configuration variables.
+!!! note
+
+    The [post_stats plugin](https://github.com/getpelican/pelican-plugins/blob/master/post_stats/readme.rst) requires the Python `beautifulsoup4` package to be installed.
 
 In addition, the `READING_TIME_LOWER_LIMIT` configuration variable can be set to specify a
 lower limit for this feature. If not supplied, the default value for this variable is 4 min.

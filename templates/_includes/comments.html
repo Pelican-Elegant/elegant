@@ -1,5 +1,10 @@
-{% macro comments(article) %}
-    {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' and article.comments != 'False' %}
+{% macro comments_disqus(article) %}
+    {% if SITEURL and article.status != 'draft' and article.comments != 'False' %}
+
+    {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+
+    {%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
+
 <section>
 {% if article.comments_intro %}
 <p id="comment-message">{{ article.comments_intro }} </p>
@@ -19,7 +24,7 @@
                     data-disqus-identifier="{{ article.disqus_identifier }}"
                 {% endif %}
                 href="{{ SITEURL }}/{{ article.url }}#disqus_thread",
-                id="disqus-accordion-toggle">
+                id="comment-accordion-toggle">
                 Comments
             </a>
         </div>
@@ -35,11 +40,49 @@
 </div>
 </section>
     {% endif %}
+    {% endif %}
 {% endmacro %}
 
-{% macro comments_script(article) %}
-    {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
+{% macro comments_script_disqus(article) %}
+    {% if SITEURL and article.status != 'draft' %}
+    {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+
+    {%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
+
         {% from '_includes/disqus_scripts.html' import disqus_misc_scripts with context %}
         {{ disqus_misc_scripts() }}
     {% endif %}
+    {% endif %}
+{% endmacro %}
+
+
+{% macro comments_common_scripts() %}
+<script  language="javascript" type="text/javascript">
+function uncollapse() {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        $('#disqus_thread').collapse('show');
+    }
+}
+</script>
+<script type="text/javascript" language="JavaScript">
+uncollapse();
+window.onhashchange=function(){
+    if (window.location.hash.match(/^#comment-\d+$/))
+        window.location.reload(true);
+}
+</script>
+<script>
+$('#disqus_thread').on('shown', function () {
+    var link = document.getElementById('comment-accordion-toggle');
+    var old_innerHTML = link.innerHTML;
+    $(link).fadeOut(200, function() {
+        $(this).text('Click here to hide comments').fadeIn(200);
+    });
+    $('#disqus_thread').on('hidden', function () {
+        $(link).fadeOut(200, function() {
+            $(this).text(old_innerHTML).fadeIn(200);
+        });
+    })
+})
+</script>
 {% endmacro %}
