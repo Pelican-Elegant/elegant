@@ -72,7 +72,7 @@ above example, Talha's `avatar` URL is local, while Pablo's URL is remote.
 
 While the configuration for Author Blurbs is centralized in the configuration file, enabling
 this feature for a given article requires that the article contains either the `author` or
-`authors` [metadata]({filename}../Extra Customization/meta-data.md) field values. If neither
+`authors` [metadata]({filename}../Advanced Features/meta-data.md) field values. If neither
 of these values are provided, the `AUTHOR` configuration variable will be used as a default.
 
 ```Python
@@ -89,7 +89,7 @@ found using a case-sensitive exact match, a blurb will be generated for that aut
 author is not found, it will be silently ignored.
 
 A good example of the `authors` metadata field is available by looking at the
-[raw Markdown](https://raw.githubusercontent.com/Pelican-Elegant/elegant/master/documentation/content/Elegant%20-%20Pelican%20Theme/author-blurbs.md) for this page.
+[raw Markdown](https://raw.githubusercontent.com/Pelican-Elegant/elegant/master/documentation/content/Supported%20Plugins/author-blurbs.md) for this page.
 
 ```yaml
 Authors: Talha Mansoor, Jack De Winter
