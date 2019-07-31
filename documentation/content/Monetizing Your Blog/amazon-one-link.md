@@ -2,10 +2,9 @@
 authors: Pablo Iranzo Gómez, Talha Mansoor
 title: Amazon OneLink Support
 tags: amazon, affiliates, income
-layout: post
 date: 2019-01-02 22:47:47 +0100
 comments: true
-category: Monetization
+category: Monetizing Your Blog
 description:
 slug: amazon-onelink
 comment_id: amazon-onelink

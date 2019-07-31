@@ -2,9 +2,8 @@
 authors: Pablo Iranzo Gómez, Talha Mansoor
 title: BestAzon Support
 tags: amazon, affiliates, income
-layout: post
 date: 2019-07-14 07:30:47 +0100
-category: Monetization
+category: Monetizing Your Blog
 description:
 slug: amazon-bestazon
 comment_id: amazon-bestazon
