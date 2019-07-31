@@ -1,6 +1,6 @@
 Title: How to use Heap Analytics
 Tags: web-analytics
-Category: Analytics
+Category: Analytics, SEO and SMO
 Date: 2019-03-31 16:45
 Slug: how-to-use-heap-analytics
 Comment_id: c8619dd-how-to-use-heap-analytics

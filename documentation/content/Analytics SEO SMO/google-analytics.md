@@ -1,7 +1,7 @@
 ---
 Title: How to use Google Analytics
 Tags: web-analytics
-Category: Analytics
+Category: Analytics, SEO and SMO
 Date: 2013-11-11 23:05
 Slug: how-to-use-google-analytics
 Comment_id: cf14ac5-how-to-use-google-analytics

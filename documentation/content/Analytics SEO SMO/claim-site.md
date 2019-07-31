@@ -1,7 +1,7 @@
 ---
 Title: Claim website on Google and Bing
 Tags: google, bing, crawler
-Category: SEO & SMO
+Category: Analytics, SEO and SMO
 Date: 2019-06-27
 Slug: website-claim
 Comment_id: hk9m5eq-website-claim

@@ -1,7 +1,7 @@
 ---
 Title: How to use StatCounter
 Tags: web-analytics
-Category: Analytics
+Category: Analytics, SEO and SMO
 Date: 2013-11-11 23:05
 Slug: how-to-use-statcounter-analytics
 Comment_id: 4kv80xq-how-to-use-statcounter
