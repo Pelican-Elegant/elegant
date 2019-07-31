@@ -5,7 +5,7 @@ Tags: unique
 Date: 2019-07-03 20:07
 Slug: custom-404-page
 Summary: Elegant can be configured to provide a custom 404 page, giving the user the ability to search for information they expected on the missing page.
-Category: Extra Customization
+Category: Advanced Features
 ---
 
 When you go to a page that does not exist, your browser will display a default error page

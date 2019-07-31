@@ -4,7 +4,7 @@ Title: Customize Style
 Tags: unique
 Date: 2019-07-03 20:14
 Slug: customize-style
-Category: Extra Customization
+Category: Advanced Features
 ---
 
 To customize Elegant's visual style, use

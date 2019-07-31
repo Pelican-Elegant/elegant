@@ -1,13 +1,11 @@
 ---
 Title: How to Customize Elegant
 Tags: config
-Category: Extra Customization
+Category: Advanced Features
 Date: 2014-03-24 14:05
 Slug: how-to-customize-elegant
 Comment_id: ale31i7-how-to-customize-elegant
-Subtitle:
 Summary: You can customize every aspect of Elegant without touching the source code
-Keywords:
 authors: Talha Mansoor
 ---
 

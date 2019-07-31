@@ -4,7 +4,7 @@ Title: Metadata
 Tags: unique
 Date: 2019-07-03 20:44
 Slug: metadata
-Category: Extra Customization
+Category: Advanced Features
 ---
 
 Pelican uses [file

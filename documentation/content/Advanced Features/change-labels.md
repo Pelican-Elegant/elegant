@@ -4,7 +4,7 @@ Title: Change Labels
 Tags: unique
 Date: 2019-07-03 20:20
 Slug: change-labels
-Category: Extra Customization
+Category: Advanced Features
 ---
 
 It is quite possible you will feel the need to tweak labels of different

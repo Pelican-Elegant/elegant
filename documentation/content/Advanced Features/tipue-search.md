@@ -5,7 +5,7 @@ Tags: unique
 Date: 2019-07-03 19:56
 Slug: add-tipue-search
 Summary: Elegant can be configured to provide search for your static site, giving an alternate way to navigate the site.
-Category: Search
+Category: Advanced Features
 ---
 
 Static sites usually do not offer search, as they are normally considered a dynamic task.

@@ -1,14 +1,12 @@
 ---
 Title: Article redirection
 author: Pablo Iranzo Gómez
-Tags: pelican-theme, pelican-plugin, redirection
-Category: Elegant - Pelican Theme
+Tags: redirection
+Category: Advanced Features
 Date: 2018-11-30 10:32
 Slug: article-redirect
 Comment_id: hk9m5eq-article-redirect
-Subtitle:
 Summary: Use Pelican redirect yaml preamble to point to new articles
-Keywords:
 ---
 
 We might want to redirect a visitor to another URL or article.
