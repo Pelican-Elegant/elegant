@@ -18,7 +18,7 @@ comment_id: travis-to-trigger-build-in-another-repository
 
 # Introduction
 
-After setting up [build automation]({filename}travis-ci-and-doc-website.md) we also wanted it not to happen only when updating the `documentation` repository.
+After setting up [build automation]({filename}./travis-ci-and-doc-website.md) we also wanted it not to happen only when updating the `documentation` repository.
 
 Besides hosting documentation, Elegant website also serves as a live demo of the current release. This meant, the website should be regenerated and updated every time when a documented is added or edited, and also when Elegant theme is updated.
 
@@ -122,6 +122,6 @@ travis.authenticate(
 
 As you can see, in line 14, it grabs the github token from environment variable 'TRATOKEN' that we've defined in Travis-CI environment for the build.
 
-This is similar to [what we did]({filename}travis-ci-and-doc-website.md) in the documentation repository to push the built website to another repository.
+This is similar to [what we did]({filename}./travis-ci-and-doc-website.md) in the documentation repository to push the built website to another repository.
 
 With this solution in place, when a new commit is merged on 'master' branch on the 'theme' repository [(`elegant`)](https://github.com/Pelican-Elegant/elegant), Travis CI does get invoked to schedule a build on the [`documentation`](https://github.com/Pelican-Elegant/documentation) repository, thus, rendering the live website with latest templates.

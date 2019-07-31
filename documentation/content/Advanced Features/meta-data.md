@@ -8,7 +8,7 @@ Category: Advanced Features
 ---
 
 Pelican uses [file
-metadata](http://docs.getpelican.com/en/latest/getting_started.html#file-metadata)
+metadata](http://docs.getpelican.com/en/stable/content.html#file-metadata)
 from your articles and pages text files to get information about your posts,
 like tags, authors etc.
 
@@ -18,7 +18,7 @@ can use in your articles and pages.
 1. `summary` used for [Search Engine
    Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
 1. `subtitle` used to set [article
-   subtitle]({filename}../Appearance and Style/article-subtitle.md)
+   subtitle]({filename}../Components/article-subtitle.md)
 1. `keywords` used for [Search Engine
    Optimization](search-engine-and-social-media-optimization#search-engine-optimization-seo)
 1. `modified` used to set [last updated time](how-does-modified-metadata-works)
@@ -29,6 +29,6 @@ can use in your articles and pages.
 1. `share_post_intro` used with [`share_post`
    plugin](how-to-use-social-sharing-plugin)
 1. `comments_intro` used with
-   [comments]({filename}../Comments/invite-comments.md)
+   [comments]({filename}../Connecting With Your Readers/invite-comments.md)
 1. `comment_id` used with
-   [comments]({filename}../Comments/comment-id.md)
+   [comments]({filename}../Connecting With Your Readers/comment-id.md)

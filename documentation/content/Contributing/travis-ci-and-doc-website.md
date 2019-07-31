@@ -140,8 +140,8 @@ In the final step, 'make github' uses the Makefile provided with pelican to push
 So, right now we've accomplished several things:
 
 - We do use pelican in the same way that we'll do for our own website
-  - We do also have as a consequence, a ['live' demo](https://pelican-elegant.github.io) of latest master branch showcasing features
+  - We do also have as a consequence, a ['live' demo](https://elegant.oncrashreboot.com) of latest master branch showcasing features
 - We did automate publishing of webpage as soon as contributors send new articles and are approved for merge
 - All requires no extra change to regular workflow as <Travis-CI.org> is the glue here putting together all the pieces.
 
-Let us know via an [issue](https://github.com/Pelican-Elegant/documentation/issues/new) if any problem is spotted on the generated documentation website.
+Let us know via an [issue](https://github.com/Pelican-Elegant/elegant/issues/new) if any problem is spotted on the generated documentation website.

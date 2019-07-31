@@ -10,7 +10,7 @@ the box. This articles describes how to set it up.
 Keywords:
 
 Elegant supports the popular web tracking service,
-[Heap Analytics](http://www.heap.com/analytics/).
+[Heap Analytics](https://heap.io/).
 
 From your [Heap console](https://heapanalytics.com/app/account), navigate to
 _Settings_ → _Projects_. You need to copy the Project ID you want to log to.
