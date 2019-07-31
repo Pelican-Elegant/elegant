@@ -5,7 +5,7 @@ Tags: design philosophy, distraction, cognitive overload, information overload
 Date: 2019-07-03 20:07
 Slug: look-and-feel
 Summary: Elegant has been purposefully crafted to follow a specific set of design principles.  This article discusses those design principles.
-Category: Design Philosophy
+Category: Contributing
 ---
 
 ## Discussion

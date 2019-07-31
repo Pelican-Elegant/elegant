@@ -2,16 +2,18 @@
 author: Pablo Iranzo Gómez
 title: Travis-CI Automation for documentation website
 tags: pelican, foss, travis, ci/cd, elegant, python
-layout: post
 date: 2018-12-07 16:00:47 +0100
 comments: true
-category: Development
-description:
+category: Contributing
 slug: travis-ci-and-doc-website
 comment_id: travis-ci-and-doc-website
 ---
 
 [TOC]
+
+!!! warning "Outdated"
+
+    Elegant no longer uses the procedure described in this article
 
 # Background
 

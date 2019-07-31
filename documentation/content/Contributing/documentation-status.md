@@ -1,11 +1,8 @@
 ---
 Title: Document Status
 Date: 2019-07-01 10:49
-Tags:
-Category: Development
-Subtitle:
+Category: Contributing
 Summary: Current status of existing documentation
-Keywords:
 Authors: Jack De Winter
 Status: draft
 ---

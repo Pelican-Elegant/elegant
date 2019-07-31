@@ -2,16 +2,19 @@
 author: Pablo Iranzo Gómez
 title: Triggering a travis-ci build on another repository
 tags: pelican, FOSS, travis, ci/cd, elegant, blog, python
-layout: post
 date: 2018-12-11 21:49:47 +0100
 comments: true
-category: Development
+category: Contributing
 description:
 slug: travis-to-trigger-build-in-another-repository
 comment_id: travis-to-trigger-build-in-another-repository
 ---
 
 [TOC]
+
+!!! warning "Outdated"
+
+    Elegant no longer uses the procedure described in this article
 
 # Introduction
 
