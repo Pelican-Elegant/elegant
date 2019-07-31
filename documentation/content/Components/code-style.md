@@ -1,12 +1,11 @@
 ---
-Title: Code Snippets Theme
+Title: Code Snippets -- Theme
 Tags: markdown, reST, code-snippets, gist
-layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: code-snippets-theme
-Category: Code Snippets
 authors: Talha Mansoor
+Category: Components
 ---
 
 Elegant uses [Solarized](http://ethanschoonover.com/solarized) theme for syntax

@@ -1,9 +1,9 @@
 ---
-Title: Change Syntax Highlight Theme
+Title: Code Snippets -- Change Theme
 Tags: unique
 Date: 2019-07-03 20:18
 Slug: change-syntax-highlight-theme
-Category: Code Snippets
+Category: Components
 authors: Talha Mansoor
 ---
 

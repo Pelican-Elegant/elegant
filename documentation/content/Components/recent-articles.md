@@ -1,12 +1,11 @@
 ---
 authors: Talha Mansoor
-Title: Recent Articles List
+Title: Home Page -- Recent Articles List
 Tags: remarkable, unique, home
-layout: post
 Date: 2019-07-01 01:10
 comments: false
 Slug: recent-articles-list
-Category: Landing Page
+Category: Components
 ---
 
 Recent articles show last `RECENT_ARTICLES_COUNT` whose default value is 10.

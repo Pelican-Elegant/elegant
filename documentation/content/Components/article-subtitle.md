@@ -1,11 +1,10 @@
 ---
 Title: Article Subtitle
 Tags: nuances
-layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: article-subtitle
-Category: Appearance & Style
+Category: Components
 authors: Talha Mansoor
 ---
 

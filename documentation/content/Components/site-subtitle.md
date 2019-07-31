@@ -1,7 +1,7 @@
 ---
-Title: Add Site Subtitle
+Title: Footer -- Add Site Subtitle
 Tags: nuances
-Category: Footer
+Category: Components
 Date: 2014-04-22 16:23
 Slug: add-site-subtitle
 Summary: You can add and display a site subtitle

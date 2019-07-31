@@ -1,12 +1,11 @@
 ---
 authors: Talha Mansoor
-Title: Projects List
+Title: Home Page -- Projects List
 Tags: remarkable, unique, home
-layout: post
 Date: 2019-07-01 01:12
 comments: false
 Slug: projects-list
-Category: Landing Page
+Category: Components
 ---
 
 Projects list is read from `PROJECTS`. It is an array of dictionaries. Each

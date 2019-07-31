@@ -1,12 +1,11 @@
 ---
 authors: Talha Mansoor
-Title: Write About Me
+Title: Home Page -- Write About Me
 Tags: remarkable, unique, home
-layout: post
 Date: 2019-07-01 01:12
 comments: false
 Slug: write-about-me
-Category: Landing Page
+Category: Components
 ---
 
 To write about me section, create a page. See [Pelican documentation](http://docs.getpelican.com/en/stable/content.html#pages) on how to create a page.

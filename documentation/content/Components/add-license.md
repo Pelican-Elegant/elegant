@@ -1,7 +1,7 @@
 ---
-Title: Add License to your Site
+Title: Footer -- Add License to your Site
 Tags: nuances
-Category: Footer
+Category: Components
 Date: 2014-04-22 16:23
 Slug: add-license-to-your-site
 Summary: You can display your preferred license in the footer

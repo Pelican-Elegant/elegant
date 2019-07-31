@@ -1,12 +1,11 @@
 ---
 authors: Talha Mansoor
-Title: Write Welcome Message
+Title: Home Page -- Write Welcome Message
 Tags: remarkable, unique, home
-layout: post
 Date: 2019-07-01 01:12
 comments: false
 Slug: write-welcome-message
-Category: Landing Page
+Category: Components
 ---
 
 Define `LANDING_PAGE_TITLE` in your Pelican configuration. It will be displayed as the welcome heading. For example,

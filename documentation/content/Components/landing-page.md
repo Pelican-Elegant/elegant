@@ -1,12 +1,11 @@
 ---
 authors: Talha Mansoor
-Title: Unique Home Page Features
+Title: Home Page -- Unique Features
 Tags: home, remarkable, unique, guide
-layout: post
 Date: 2019-07-01 01:22
 comments: false
 Slug: unique-home-page-features
-Category: Landing Page
+Category: Components
 ---
 
 This is the page that visitors see when they open your website. Your chance to

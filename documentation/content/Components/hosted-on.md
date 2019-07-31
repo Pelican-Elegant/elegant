@@ -1,13 +1,12 @@
 ---
-Title: Show Your Host Information
+Title: Footer -- Show Your Host Information
 authors: Talha Mansoor
 Tags: nuances
-layout: post
 date: 2019-06-30 11:54
 comments: false
 Slug: show-host-information
 Summary: Show the host of your website
-Category: Footer
+Category: Components
 ---
 
 You can optionally display the host of your website in the footer.
