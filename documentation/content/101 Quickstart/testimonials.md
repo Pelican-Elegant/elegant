@@ -1,13 +1,11 @@
 ---
-Title: What People Say About Elegant
+Title: Not Convinced?
+SubTitle: See What People Say About Elegant
 Tags: pelican-theme, testimonials
-Category: Elegant - Pelican Theme
+Category: 101 — Quickstart
 Date: 2014-06-01 23:45
 Slug: what-people-say-about-elegant
 Comment_id: qryv67o-what-people-say-about-elegant
-Subtitle:
-Summary:
-Keywords:
 authors: Talha Mansoor
 ---
 

@@ -2,10 +2,9 @@
 author: Pablo Iranzo Gómez
 title: Quickly get a GitHub hosted blog with Pelican, Elegant with little setup steps.
 tags: pelican, foss, travis, ci/cd, elegant, blog, python, github, blog-o-matic
-layout: post
 date: 2019-01-11 17:30:47 +0100
 comments: true
-category: Elegant - Pelican Theme
+category: 101 — Quickstart
 description:
 ---
 
