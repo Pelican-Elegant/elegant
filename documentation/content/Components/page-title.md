@@ -1,11 +1,10 @@
 ---
 Title: Page Title
 Tags: nuances
-layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: page-title
-Category: Appearance & Style
+Category: Components
 authors: Talha Mansoor
 ---
 

@@ -6,7 +6,7 @@ layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: live-filter-for-tags
-Category: Taxonomy
+Category: Components
 ---
 
 Elegant is a minimal theme. Instead of creating separate pages for each tag,

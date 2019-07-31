@@ -1,12 +1,12 @@
 ---
-Title: Articles Count With Every Tag & Category
+Title: Articles Count With Every Tag and Category
 authors: Talha Mansoor
 Tags: nuances
 layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: articles-count-with-every-tag-and-category
-Category: Taxonomy
+Category: Components
 ---
 
 Readers of an article on your site usually look for other articles on the same

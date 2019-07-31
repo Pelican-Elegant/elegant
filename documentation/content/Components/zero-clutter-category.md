@@ -1,11 +1,10 @@
 ---
 Title: Zero Clutter Categories
 Tags: nuances, clean
-layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: zero-clutter-categories
-Category: Taxonomy
+Category: Components
 authors: Talha Mansoor
 ---
 

@@ -1,7 +1,7 @@
 ---
 Title: Web Safe Fonts
 Tags: web-design
-Category: Appearance & Style
+Category: Components
 Date: 2014-04-22 16:23
 Slug: web-safe-fonts
 authors: Talha Mansoor
