@@ -1,11 +1,10 @@
 ---
-Title: Enable Disqus Comments
+Title: Comments -- Enable Disqus
 Tags: interaction
-Category: Commenting
+Category: Connecting With Your Readers
 Date: 2014-04-21 16:39
 Slug: enable-disqus-comments
 comment_id: 9jgwmy8-how-to-use-disqus-comments-elegantly
-Subtitle:
 Summary: Elegant offers Disqus comments out of the box with few unique features
 authors: Talha Mansoor
 comment_id: aa8pfjdv5f

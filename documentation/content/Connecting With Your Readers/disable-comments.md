@@ -1,11 +1,10 @@
 ---
-Title: Disable Comments
+Title: Comments -- Disable Comments in an Article
 Tags: interaction
-layout: post
 date: 2019-01-12 16:29
 comments: false
 Slug: disable-comments-per-article
-Category: Commenting
+Category: Connecting With Your Readers
 authors: Talha Mansoor
 ---
 

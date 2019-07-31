@@ -1,11 +1,10 @@
 ---
-Title: Comments Thread ID
+Title: Comments -- Thread ID
 Tags: interaction
-layout: post
 date: 2019-06-30 22:29
 comments: false
 Slug: comments-thread-id
-Category: Commenting
+Category: Connecting With Your Readers
 authors: Talha Mansoor
 ---
 

@@ -1,11 +1,10 @@
 ---
-Title: Collapsible Comments
+Title: Comments - Collapse Comments Section
 Tags: interaction
-layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: collapsible-comments
-Category: Commenting
+Category: Connecting With Your Readers
 authors: Talha Mansoor
 ---
 

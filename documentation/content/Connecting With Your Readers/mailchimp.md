@@ -1,11 +1,10 @@
 ---
-Title: Add Mailchimp
+Title: Newsletter -- Add Mailchimp
 Tags: marketing, network, subscriber
-layout: post
 Date: 2013-08-27 23:20
 comments: false
 Slug: add-mailchimp
-Category: Mailing List
+Category: Connecting With Your Readers
 authors: Talha Mansoor
 mailchimp_filter: off
 freelists_filter: on

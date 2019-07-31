@@ -1,11 +1,10 @@
 ---
-Title: Invite Visitors To Comment
+Title: Comments -- Invite Visitors To Comment
 Tags: interaction
-layout: post
 Date: 2014-04-21 16:39
 comments: false
 Slug: invite-visitors-comment
-Category: Commenting
+Category: Connecting With Your Readers
 authors: Talha Mansoor
 ---
 

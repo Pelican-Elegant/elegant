@@ -1,10 +1,10 @@
 ---
-Title: Add FreeLists
+Title: Newsletter -- Add FreeLists
 Tags: marketing, network, subscriber
 Date: 2018-07-05 23:20
 comments: false
 Slug: add-freelists
-Category: Mailing List
+Category: Connecting With Your Readers
 authors: Talha Mansoor
 freelists_filter: off
 mailchimp_filter: on
