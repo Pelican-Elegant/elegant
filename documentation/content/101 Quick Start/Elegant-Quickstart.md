@@ -4,7 +4,7 @@ title: Quickly get a GitHub hosted blog with Pelican, Elegant with little setup 
 tags: pelican, foss, travis, ci/cd, elegant, blog, python, github, blog-o-matic
 date: 2019-01-11 17:30:47 +0100
 comments: true
-category: 101 — Quickstart
+category: 101 — Quick Start
 description:
 ---
 
