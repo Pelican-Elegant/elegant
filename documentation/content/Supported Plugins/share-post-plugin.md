@@ -22,7 +22,7 @@ benefit of not having any ability to be used for online tracking.
 
 Here is an example of what the Social Media Sharing section may look like:
 
-![Share Post plugin in Elegant]({filename}/images/elegant-theme-share-post-plugin.png)
+![Share Post plugin in Elegant]({static}/images/elegant-theme-share-post-plugin.png)
 
 ## Configuration
 
@@ -51,7 +51,7 @@ Once the configuration for Sharing Media Links is enabled in the configuration f
 this feature to provide links for your readers to share your articles on social media is
 completed.
 
-The only effect any [metadata]({filename}../Extra Customization/meta-data.md) field will have
+The only effect any [metadata]({filename}../Advanced Features/meta-data.md) field will have
 on Sharing Media links is to change the text to lead into the Social Media Sharing links.
 As documented above, the `SHARE_POST_INTRO` can be used to provide an alternate lead in text
 for the Social Media Sharing links. This text can be further overridden on an

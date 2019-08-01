@@ -74,7 +74,7 @@ Must be one of the following:
 
 ### Scope
 
-The scope could be anything specifying place of the commit change. For example, `authors` if the change is about Elegant [authors blurb]({filename}../Supported Plugins/author-blurbs.md) feature or `home` if it refers to [landing page]({filename}../Landing Page/landing-page.md).
+The scope could be anything specifying place of the commit change. For example, `authors` if the change is about Elegant [authors blurb]({filename}../Supported Plugins/author-blurbs.md) feature or `home` if it refers to [landing page]({filename}../Components/landing-page.md).
 
 ## Subject Text
 
