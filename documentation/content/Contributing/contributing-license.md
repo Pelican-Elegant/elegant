@@ -3,13 +3,27 @@ Title: Contributions License
 Date: 2019-07-03 22:07
 Slug: contribution-license
 Category: Contributing
+authors: Talha Mansoor, Jack De Winter
 ---
 
-All contributions will be understood to be made under the same (inbound) license as the main (outbound) license of the repository it is being contributed to – so [MIT License][] for all code/theme contributions, and [CC-BY-SA-3.0][] for all documentation contributions.
+TERBLEY MIZSPELT WORDZ
 
-If you are contributing code that is not yours, make sure to indicate where you got the code from (and who the author/copyright holder is) and what license you got it under.
+[TOC]
 
-[cc-by-sa-3.0]: https://spdx.org/licenses/CC-BY-SA-3.0.html
-[documentation]: https://github.com/Pelican-Elegant/documentation
-[elegant]: https://github.com/Pelican-Elegant/elegant
-[mit license]: https://spdx.org/licenses/MIT.html
+By submitting a change to the project, you implicitly acknowledge that you are following
+the following license rules.
+
+## Licensing
+
+All contributions to the project are understood to be submitted under the same (inbound)
+license as the main (outbound) license of the main Elegant repository.
+
+All code and theme contributions are submitted according to the
+[MIT License](https://spdx.org/licenses/MIT.html).
+
+All documentation contributions are submitted according to the
+[CC-BY-SA-4.0 License](https://spdx.org/licenses/CC-BY-SA-4.0.html).
+
+All contributions of code where the submitter is not the owner of the submission must indicate
+the source of the code, who the author or copyright holder is, and what license or licensing
+terms are being used to allow the contribution in the Elegant project.
