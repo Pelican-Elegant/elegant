@@ -1,8 +1,12 @@
 ---
 Title: Invitation to Participate
-Date: 2019-07-03 20:07
+Subtitle:
 Slug: invitation-to-participate
 Category: Contributing
+Tags:
+Date: 2019-07-03 20:07
+Summary: Elegant has a mandatory Git commit message format that is described here.
+Keywords:
 Authors: Talha Mansoor, Jack De Winter
 ---
 

@@ -1,58 +1,64 @@
 ---
-Title: Use Commitizen for Git commits
+Title: How To Use Commitizen for Git Commits
 Subtitle: Recommended
-Date: 2019-07-22 14:15
 Slug: use-commitizen-for-git-commits
 Category: Contributing
-Authors: Talha Mansoor
+Tags:
+Date: 2019-07-22 14:15
+Summary: Elegant uses the Commitizen tool to standardize Git commit messages across the project.
+Keywords:
+Authors: Talha Mansoor, Jack De Winter
 ---
 
-When you commit with [Commitizen](https://github.com/commitizen/cz-cli), you'll be prompted to fill out any required commit fields at commit time.
+[TOC]
+
+The [Elegant Contribution Guidelines]({filename}./contributing-to-the-project.md) require that
+each commit submitted for consideration be formatted according to the
+[Git Commit Guidelines]({filename}./git-commit-guidelines.md).
+
+To make this process easier, the Elegant repository is configured to support the
+[Commitizen](https://github.com/commitizen/cz-cli) tool. This tool saves time by controlling
+the format of the Git commit messages to a set of predefined options and patterns. This
+formatting allows for our release process to be
+[fully automated]({filename}./automated-release.md).
 
 ## Prerequisites
 
-### Step 1: Install NodeJS and Yarn
+Both [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/en/docs/install)
+must be installed on your system.
 
-Install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/en/docs/install) on your system.
+### Step 1: Install Commitizen
 
-If you are on Windows then try installing them with [scoop.sh](https://scoop.sh/). It saves time and makes update easier.
-
-### Step 2: Install Commitizen
-
-Run this command from your command line terminal.
+From your command line terminal, go into the directory containing your fork of the Elegant
+repository, then execute the following commands:
 
 ```bash
 yarn global add commitizen
-```
-
-### Step 3: Initialize the Project
-
-In the root of Elegant repository, run
-
-```bash
 yarn install
 ```
 
 ## Use Commitizen
 
-We have already gone through the trouble of making Elegant repository [Commitizen friendly](https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly).
+As the Elegant team has already made the repository
+[Commitizen friendly](https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly),
+you can start using it for your commits by entering `git-cz` in your command shell instead
+of `git commit`. As such, you are responsible for making sure that the changes that you
+want to commit to your fork are currently staged in the repository.
 
-All you have to do is to stage your changes and then run
+Once invoked, Commitizen will prompt you for answers to a number of questions. As mentioned
+previously, the answers to these questions are formatted according to the
+[Git Commit Guidelines]({filename}./git-commit-guidelines.md)
+before being placed into the message field for the commit. Commitizen then follows through and
+invokes `git commit`, committing the staged changes along with the formatted message that was
+crafted for you from the answers you provided.
 
-```bash
-git-cz
-```
-
-It will prompt you for questions. Just answer them. Commitizen will automatically format it to conform to [Elegant Git commit guidelines]({filename}./git-commit-guidelines.md).
-
-If your Git commit fails for some reasons, like due to [Git hooks]({filename}./pre-commit.md), then you can fix the issue and rerun Commitizen using,
-
-```bash
-git cz --retry
-```
-
-When you use `--retry`, Commitizen does not prompt for answers and reuse the answers that you last submitted.
+In some cases, such as a [Git pre-commit hook failure]({filename}./pre-commit.md), you may
+not want to re-answer the questions again. Once you fix the issues that prevented the
+commit from happening, you can use `git-cz --retry` to submit the commit again using the same
+answers that were used in the failed attempt.
 
 ## Video Demonstration
+
+For a quick video on how this process works in real life, click on the play button below.
 
 <script id="asciicast-258540" src="https://asciinema.org/a/258540.js" async></script>

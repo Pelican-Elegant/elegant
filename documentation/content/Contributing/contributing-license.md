@@ -1,12 +1,14 @@
 ---
 Title: Contributions License
-Date: 2019-07-03 22:07
+Subtitle:
 Slug: contribution-license
 Category: Contributing
-authors: Talha Mansoor, Jack De Winter
+Tags:
+Date: 2019-07-03 22:07
+Summary: The licensing terms under which Elegant is developed.
+Keywords:
+Authors: Talha Mansoor, Jack De Winter
 ---
-
-TERBLEY MIZSPELT WORDZ
 
 [TOC]
 

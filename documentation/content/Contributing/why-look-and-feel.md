@@ -1,12 +1,16 @@
 ---
-Authors: Jack De Winter
 Title: Why Does Elegant Look The Way It Does?
+Subtitle:
+Slug: look-and-feel
+Category: Contributing
 Tags: design philosophy, distraction, cognitive overload, information overload
 Date: 2019-07-03 20:07
-Slug: look-and-feel
 Summary: Elegant has been purposefully crafted to follow a specific set of design principles.  This article discusses those design principles.
-Category: Contributing
+Keywords:
+Authors: Jack De Winter
 ---
+
+[TOC]
 
 ## Discussion
 
