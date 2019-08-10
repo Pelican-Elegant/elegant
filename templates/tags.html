@@ -12,12 +12,12 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 {{ super() }}
 <meta property="og:title" content="All Tags · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="All Tags · {{ SITENAME|striptags|e }}">
-<meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}" />
+{% from '_includes/_defaults.html' import FEATURED_IMAGE, TAGS_URL with context %}
+<meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL }}" />
 <meta property="og:description" content="All tags used in the {{ SITENAME|striptags|e }} blog" />
 <meta name="twitter:description" content="All tags used in the {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
-{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
 <meta property="og:image" content="{{FEATURED_IMAGE}}" />
 <meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
@@ -30,10 +30,10 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 {% endblock feed_links %}
 
 {% block content %}
-
+{% from '_includes/_defaults.html' import TAGS_URL with context %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}">All Tags</a></h1>
+    <h1><a href="{{ SITEURL }}/{{ TAGS_URL }}">All Tags</a></h1>
     </header>
 </div>
 <div class="row-fluid">

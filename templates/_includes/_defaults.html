@@ -176,3 +176,21 @@ PROJECTS = [{
 {% else %}
 {% set PHOTOS_LIGHTBOX = PHOTOS_LIGHTBOX %}
 {% endif %}
+
+{%if not TAGS_URL %}
+{% set TAGS_URL = 'tags.html' %}
+{% else %}
+{% set TAGS_URL = TAGS_URL %}
+{% endif %}
+
+{%if not CATEGORIES_URL %}
+{% set CATEGORIES_URL = 'categories.html' %}
+{% else %}
+{% set CATEGORIES_URL = CATEGORIES_URL %}
+{% endif %}
+
+{%if not ARCHIVES_URL %}
+{% set ARCHIVES_URL = 'archives.html' %}
+{% else %}
+{% set ARCHIVES_URL = ARCHIVES_URL %}
+{% endif %}
