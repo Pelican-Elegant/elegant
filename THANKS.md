@@ -19,6 +19,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://schnouki.net/"><img src="https://avatars3.githubusercontent.com/u/64833?v=4" width="100px;" alt="Thomas Jost"/><br /><sub><b>Thomas Jost</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=Schnouki" title="Code">💻</a></td>
     <td align="center"><a href="http://www.fladd.de/code"><img src="https://avatars3.githubusercontent.com/u/2971539?v=4" width="100px;" alt="Florian Krause"/><br /><sub><b>Florian Krause</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Afladd" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/alxpettit"><img src="https://avatars3.githubusercontent.com/u/28266167?v=4" width="100px;" alt="Alexandria"/><br /><sub><b>Alexandria</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=alxpettit" title="Code">💻</a></td>
   </tr>
 </table>
 
