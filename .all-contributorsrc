@@ -120,6 +120,15 @@
         "code",
         "userTesting"
       ]
+    },
+    {
+      "login": "josephzjw",
+      "name": "josephzjw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12767040?v=4",
+      "profile": "https://github.com/josephzjw",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
