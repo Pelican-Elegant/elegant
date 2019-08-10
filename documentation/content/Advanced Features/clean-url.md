@@ -51,3 +51,11 @@ For pages, set
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
 ```
+
+## Search
+
+For search page, set
+
+```python
+SEARCH_URL = "search"
+```

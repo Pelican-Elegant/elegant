@@ -58,6 +58,7 @@ PAGE_SAVE_AS = "{slug}.html"
 TAGS_URL = "tags"
 CATEGORIES_URL = "categories"
 ARCHIVES_URL = "archives"
+SEARCH_URL = "search"
 
 # Feeds
 AUTHOR_FEED_ATOM = None
