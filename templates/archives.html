@@ -46,14 +46,14 @@ Full archives of {{ SITENAME|striptags|e }} blog.
                 {% endif %}
 
                 {% if loop.last %}
-                    <article itemscope class="last-entry-of-year">
+                    <div itemscope class="last-entry-of-year">
                 {% else %}
                 {% set next_year = loop.nextitem.date.strftime('%Y') %}
 
                     {% if next_year != year %}
-                        <article itemscope class="last-entry-of-year">
+                        <div itemscope class="last-entry-of-year">
                     {% else %}
-                        <article itemscope>
+                        <div itemscope>
                     {% endif %}
                 {% endif %}
 
@@ -68,7 +68,7 @@ Full archives of {{ SITENAME|striptags|e }} blog.
                 <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
                     {{ article.locale_date }}
                 </time>
-                </article>
+                </div>
             {% endfor %}
         </div>
     </div>
