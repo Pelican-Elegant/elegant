@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG | default("en-US") }}">
+<html lang="{{ DEFAULT_LANG }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,10 +78,11 @@
                                 <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                                 {% endfor %}
                                 {% endif %}
-                                <li {% if page_name == 'categories' %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}">Categories</a></li>
-                                <li {% if page_name == 'tags' %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}">Tags</a></li>
-                                <li {% if page_name == 'archives' %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives') }}">Archives</a></li>
-                                <li><form class="navbar-search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                                {% from '_includes/_defaults.html' import TAGS_URL, CATEGORIES_URL, ARCHIVES_URL, SEARCH_URL with context %}
+                                <li {% if page_name == 'categories' %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categories</a></li>
+                                <li {% if page_name == 'tags' %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ TAGS_URL }}">Tags</a></li>
+                                <li {% if page_name == 'archives' %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+                                <li><form class="navbar-search" action="{{ SITEURL }}/{{ SEARCH_URL }}" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                             </ul>
                         </div>
                     </div>

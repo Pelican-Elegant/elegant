@@ -13,7 +13,6 @@ PATH = "content"
 # Regional Settings
 TIMEZONE = "Asia/Karachi"
 DATE_FORMATS = {"en": "%b %d, %Y"}
-DEFAULT_LANG = "en"
 
 # Plugins and extensions
 MARKDOWN = {
@@ -56,6 +55,10 @@ USE_FOLDER_AS_CATEGORY = False
 ARTICLE_URL = "{slug}"
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
+TAGS_URL = "tags"
+CATEGORIES_URL = "categories"
+ARCHIVES_URL = "archives"
+SEARCH_URL = "search"
 
 # Feeds
 AUTHOR_FEED_ATOM = None

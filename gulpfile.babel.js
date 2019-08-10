@@ -1,24 +1,38 @@
+import fs from "fs";
+import path from "path";
 import { watch, parallel } from "gulp";
 import { exec } from "child_process";
 import { create as browserSyncCreate } from "browser-sync";
 const browserSync = browserSyncCreate();
 
+const content_404 = fs.readFileSync(
+  path.join(__dirname, "documentation/output/404.html")
+);
+
 const buildAll = () => exec("cd documentation && invoke build");
 
 const reload = cb => {
-  browserSync.init({
-    ui: {
-      port: 9002
+  browserSync.init(
+    {
+      ui: {
+        port: 9002
+      },
+      server: {
+        baseDir: "documentation/output",
+        serveStaticOptions: {
+          extensions: ["html"]
+        }
+      },
+      files: "documentation/output/*.html",
+      port: 9001
     },
-    server: {
-      baseDir: "documentation/output",
-      serveStaticOptions: {
-        extensions: ["html"]
-      }
-    },
-    files: "documentation/output/*.html",
-    port: 9001
-  });
+    (_, bs) => {
+      bs.addMiddleware("*", (_, res) => {
+        res.write(content_404);
+        res.end();
+      });
+    }
+  );
   cb();
 };
 

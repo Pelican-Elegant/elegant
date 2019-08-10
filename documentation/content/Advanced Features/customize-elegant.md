@@ -18,4 +18,4 @@ Elegant is best maintained when you treat it as a separate resource in your
 project. Do not edit template files, JavaScript code and style sheets. This
 practice will make upgrading Elegant fuss free process.
 
-Instead see the guides in ["Extra Customization" category](categories.html#extra-customization-ref).
+Instead see the guides in ["Extra Customization" category](categories#extra-customization-ref).
