@@ -1,5 +1,5 @@
 {% macro disqus_misc_scripts() %}
-<script type="text/javascript">
+<script>
 var disqus_shortname = '{{ DISQUS_SITENAME }}';
 (function () {
     var s = document.createElement('script'); s.async = true;
@@ -12,7 +12,7 @@ var disqus_shortname = '{{ DISQUS_SITENAME }}';
 
 {% macro disqus_comments_script(article) %}
 <div id="disqus_thread"></div>
-<script type="text/javascript">
+<script>
     var disqus_shortname = '{{ DISQUS_SITENAME }}';
     {% if article.comment_id %}
         var disqus_identifier = '{{ article.comment_id }}';
