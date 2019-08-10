@@ -663,3 +663,56 @@ div.figure.align-left,
 .gist table {
   table-layout: initial;
 }
+/* Table */
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #bfbfbf;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+table th,
+table td {
+  border-left: 1px solid #bfbfbf;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+table thead:first-child tr:first-child th {
+  border-top: 0;
+}
+
+table thead:first-child tr:first-child > th:first-child {
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+}
+
+table thead:first-child tr:first-child > th:last-child {
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+}
+
+table tbody:last-child tr:last-child > td:first-child {
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+}
+
+table tbody:last-child tr:last-child > td:last-child {
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+table tbody > tr:nth-child(odd) > td {
+  background-color: #ebebeb;
+}
