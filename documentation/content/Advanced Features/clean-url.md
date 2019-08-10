@@ -1,13 +1,13 @@
 ---
 authors: Talha Mansoor
-Title: Clean URLs
+Title: Clean URL
 Tags: unique
 Date: 2019-08-10 20:44
-Slug: clean-urls
+Slug: clean-url
 Category: Advanced Features
 ---
 
-Out of the box, Pelican generated URLs are [uncleaned](https://en.wikipedia.org/wiki/Clean_URL), i.e. they have `.html` appended. Elegant lets you use clean URLs with minimal configuration.
+Out of the box, Pelican generated URLs are [unclean](https://en.wikipedia.org/wiki/Clean_URL), i.e. they have `.html` appended. Elegant lets you use clean URLs with minimal configuration.
 
 !!! Important "Mandatory"
 
