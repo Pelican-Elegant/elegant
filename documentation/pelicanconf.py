@@ -56,6 +56,9 @@ USE_FOLDER_AS_CATEGORY = False
 ARTICLE_URL = "{slug}"
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
+TAGS_URL = "tags"
+CATEGORIES_URL = "categories"
+ARCHIVES_URL = "archives"
 
 # Feeds
 AUTHOR_FEED_ATOM = None
