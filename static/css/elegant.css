@@ -457,21 +457,21 @@ div.blog-archives h2 {
   position: relative;
   margin: 0;
 }
-div.blog-archives article,
-div.recent-posts article {
+div.blog-archives div,
+div.recent-posts-article {
   border-bottom: 1px dotted #aaa;
 }
-div.blog-archives article,
-div.recent-posts article {
+div.blog-archives div,
+div.recent-posts-article {
   font-size: 1.1em;
   padding: 0.3em 0.2em;
   position: relative;
   overflow: auto;
 }
-div.blog-archives article {
+div.blog-archives div {
   margin-left: 6em;
 }
-div.blog-archives article.last-entry-of-year {
+div.blog-archives div.last-entry-of-year {
   margin-bottom: 1em;
 }
 div.blog-archives time,
@@ -481,15 +481,15 @@ div.recent-posts time {
 }
 div.blog-archives time,
 div.recent-posts time,
-div.recent-posts section {
+div.recent-posts-posted {
   color: #8f8f8f;
   font: 0.9em "PT Sans", "Helvetica Neue", Arial, Sans-Serif;
 }
-div.recent-posts section a {
+div.recent-posts-posted a {
   color: inherit;
   padding-left: 0.3em;
 }
-div.recent-posts section a:hover {
+div.recent-posts-posted a:hover {
   border-bottom: 1px dashed;
   text-decoration: none;
 }
