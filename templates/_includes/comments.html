@@ -57,14 +57,14 @@
 
 
 {% macro comments_common_scripts() %}
-<script  language="javascript" type="text/javascript">
+<script>
 function uncollapse() {
     if (window.location.hash.match(/^#comment-\d+$/)) {
         $('#disqus_thread').collapse('show');
     }
 }
 </script>
-<script type="text/javascript" language="JavaScript">
+<script>
 uncollapse();
 window.onhashchange=function(){
     if (window.location.hash.match(/^#comment-\d+$/))

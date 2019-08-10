@@ -78,7 +78,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% endblock content %}
 {% block script %}
 {{ super() }}
-<script  language="javascript" type="text/javascript">
+<script>
     function uncollapse() {
             $(window.location.hash).collapse({
                 toggle: true
@@ -86,7 +86,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
     }
 </script>
 
-<script type="text/javascript" language="JavaScript">
+<script>
     uncollapse();
 </script>
 {% endblock script %}

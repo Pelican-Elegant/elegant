@@ -3,7 +3,6 @@
 {% for author in article.authors %}
 {% if author|string in AUTHORS %}
 {% if tag.open %}
-<section>
     <hr />
     {% set tag.open = false %}
     {% set tag.close = true %}
@@ -21,6 +20,5 @@
     {% endif %}
     {% endfor %}
     {% if tag.close %}
-</section>
 {% endif %}
 {% endmacro %}
