@@ -217,29 +217,30 @@ div.recent-posts p {
 .article-content p {
   margin: 20px 0;
 }
-.article-content blockquote {
-  border-left: 0;
-  margin: 20px 0 0 2em;
-  padding: 0 0 0 20px;
+blockquote {
+  margin: 2em 0 0 2em;
+  padding: 0 0 0 7px;
 }
-.article-content blockquote:before {
+blockquote:before {
+  content: open-quote;
+  vertical-align: top;
+  font-size: 4em;
+  margin-left: -0.8em;
   color: #646464;
-  content: "\f10d";
-  font: 18px FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  margin-left: -2em;
-  text-decoration: inherit;
   position: absolute;
 }
-.article-content blockquote {
+blockquote:after {
+  visibility: hidden;
+  content: close-quote;
+}
+blockquote p {
+  display: inline;
   font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   font-size: inherit;
   font-variant: normal;
   line-height: 1.7em;
   text-transform: none;
   font-weight: 300;
-  position: relative;
 }
 .article-content ul:not(.related-posts-list):not(.articles-timeline) {
   font-size: inherit;
