@@ -68,7 +68,7 @@ CATEGORY_FEED_RSS = None
 
 # Social
 SOCIAL = (
-    ("Github", "https://github.com/Pelican-Elegant/"),
+    ("Github", "https://github.com/Pelican-Elegant/", "Elegant Github Repository"),
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
 )
 
