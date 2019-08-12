@@ -96,12 +96,12 @@ small.subtitle {
 #post-share-links a {
   text-shadow: 0 0;
 }
-.disqus-comment-count {
+.comment-count {
   font-family: "Trebuchet MS", Trebuchet, "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, Sans-Serif;
   font-size: 0.9em;
 }
-#disqus_thread {
+#comment_thread {
   padding-left: 10px;
   padding-right: 10px;
 }

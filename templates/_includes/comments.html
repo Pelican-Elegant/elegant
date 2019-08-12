@@ -17,18 +17,18 @@
 <div class="accordion" id="accordion2">
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
+            <a class="accordion-toggle disqus-comment-count comment-count" data-toggle="collapse" data-parent="#accordion2"
                 {% if article.comment_id %}
                     data-disqus-identifier="{{ article.comment_id }}"
                 {% elif article.disqus_identifier %}
                     data-disqus-identifier="{{ article.disqus_identifier }}"
                 {% endif %}
-                href="{{ SITEURL }}/{{ article.url }}#disqus_thread",
+                href="{{ SITEURL }}/{{ article.url }}#comment_thread",
                 id="comment-accordion-toggle">
                 Comments
             </a>
         </div>
-        <div id="disqus_thread" class="accordion-body collapse">
+        <div id="comment_thread" class="accordion-body collapse">
             <div class="accordion-inner">
                 <div class="comments">
                     {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
@@ -60,7 +60,7 @@
 <script>
 function uncollapse() {
     if (window.location.hash.match(/^#comment-\d+$/)) {
-        $('#disqus_thread').collapse('show');
+        $('#comment_thread').collapse('show');
     }
 }
 </script>
@@ -72,13 +72,13 @@ window.onhashchange=function(){
 }
 </script>
 <script>
-$('#disqus_thread').on('shown', function () {
+$('#comment_thread').on('shown', function () {
     var link = document.getElementById('comment-accordion-toggle');
     var old_innerHTML = link.innerHTML;
     $(link).fadeOut(200, function() {
         $(this).text('Click here to hide comments').fadeIn(200);
     });
-    $('#disqus_thread').on('hidden', function () {
+    $('#comment_thread').on('hidden', function () {
         $(link).fadeOut(200, function() {
             $(this).text(old_innerHTML).fadeIn(200);
         });
