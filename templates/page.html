@@ -60,6 +60,6 @@
     {{ super() }}
     {% from '_includes/disqus_scripts.html' import comments_script_disqus with context %}
     {{ comments_script_disqus(page) }}
-    {% from '_includes/comments.html' import comments_common_scripts with context %}
-    {{ comments_common_scripts() }}
+    {% from '_includes/comments.html' import comments_script with context %}
+    {{ comments_script() }}
     {% endblock script %}
