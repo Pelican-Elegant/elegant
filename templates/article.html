@@ -77,8 +77,8 @@
             {{ share_links(article) }}
             {% from '_includes/article_author.html' import article_author with context %}
             {{ article_author(article) }}
-            {% from '_includes/comments.html' import comments_disqus with context %}
-            {{ comments_disqus(article) }}
+            {% from '_includes/comments.html' import comments_section with context %}
+            {{ comments_section(article) }}
             <hr/>
             {% include '_includes/related_posts.html' with context %}
             {% if article.prev_article or article.next_article %}

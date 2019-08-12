@@ -1,4 +1,4 @@
-{% macro comments_disqus(article) %}
+{% macro comments_section(article) %}
 
 {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
 {% set use_disqus = (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
