@@ -94,4 +94,4 @@ What if the icon of your social media site is not available?
 
 Migrating from [font-awesome to SVG icons]({filename}./social-profiles-sidebar-deprecated.md) opened up a whole lot of possibilities. We are not limited to icons provided by the [font-awesome] project. Instead, we can use any SVG icon.
 
-If you icon of your favorite site is missing then feel free to [open an issue](https://github.com/Pelican-Elegant/elegant/issues/new?labels=enhancement&title=[Request]%20Add%20new%20social%20icon%20in%20the%20sidebar). We will add it for you as long as a SVG icon is available for it.
+If you icon of your favorite site is missing then feel free to [open an issue](https://github.com/Pelican-Elegant/elegant/issues/new?labels=enhancement&title=Request:%20Add%20new%20social%20icon%20in%20the%20sidebar). We will add it for you as long as a SVG icon is available for it.
