@@ -16,82 +16,81 @@
 {% set intro = article.comments_intro %}
 {% endif %}
 
-    {% if article.status != 'draft' and article.comments != 'False' and (use_disqus) %}
-
+{% if article.status != 'draft' and article.comments != 'False' and (use_disqus) %}
 
 <section>
-<p id="comment-message">{{ intro }} </p>
+    <p id="comment-message">{{ intro }} </p>
 
-<div class="accordion" id="accordion2">
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle disqus-comment-count comment-count"
-               data-toggle="collapse"
-               data-parent="#accordion2"
-               {%if use_disqus %}
-               data-disqus-identifier="{{ identifier }}"
-               {% endif %}
-               href="{{ SITEURL }}/{{ article.url }}#comment_thread",
-               id="comment-accordion-toggle">
-                Comments
-            </a>
-        </div>
-        <div id="comment_thread" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="comments">
-                    {% if use_disqus %}
-                    {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
-                    {{ disqus_comments_script(article) }}
-                    {% endif %}
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle disqus-comment-count comment-count"
+                   data-toggle="collapse"
+                   data-parent="#accordion2"
+                   {%if use_disqus %}
+                   data-disqus-identifier="{{ identifier }}"
+                   {% endif %}
+                   href="{{ SITEURL }}/{{ article.url }}#comment_thread",
+                   id="comment-accordion-toggle">
+                    Comments
+                </a>
+            </div>
+            <div id="comment_thread" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div class="comments">
+                        {% if use_disqus %}
+                        {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
+                        {{ disqus_comments_script(article) }}
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 {% endif %}
 {% endmacro %}
 
 {% macro comments_script_disqus(article) %}
-    {% if article.status != 'draft' %}
-    {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+{% if article.status != 'draft' %}
+{% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
 
-    {%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
+{%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
 
-        {% from '_includes/disqus_scripts.html' import disqus_misc_scripts with context %}
-        {{ disqus_misc_scripts() }}
-    {% endif %}
-    {% endif %}
+{% from '_includes/disqus_scripts.html' import disqus_misc_scripts with context %}
+{{ disqus_misc_scripts() }}
+{% endif %}
+{% endif %}
 {% endmacro %}
 
 
 {% macro comments_common_scripts() %}
 <script>
-function uncollapse() {
-    if (window.location.hash.match(/^#comment-\d+$/)) {
-        $('#comment_thread').collapse('show');
+    function uncollapse() {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
     }
-}
 </script>
 <script>
-uncollapse();
-window.onhashchange=function(){
-    if (window.location.hash.match(/^#comment-\d+$/))
-        window.location.reload(true);
-}
+    uncollapse();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
 </script>
 <script>
-$('#comment_thread').on('shown', function () {
-    var link = document.getElementById('comment-accordion-toggle');
-    var old_innerHTML = link.innerHTML;
-    $(link).fadeOut(200, function() {
-        $(this).text('Click here to hide comments').fadeIn(200);
-    });
-    $('#comment_thread').on('hidden', function () {
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
         $(link).fadeOut(200, function() {
-            $(this).text(old_innerHTML).fadeIn(200);
+            $(this).text('Click here to hide comments').fadeIn(200);
         });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
     })
-})
 </script>
 {% endmacro %}
