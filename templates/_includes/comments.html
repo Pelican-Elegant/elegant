@@ -39,8 +39,7 @@
                 <div class="accordion-inner">
                     <div class="comments">
                         {% if use_disqus %}
-                        {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
-                        {{ disqus_comments_script(article) }}
+                        <div id="disqus_thread"></div>
                         {% endif %}
                     </div>
                 </div>
@@ -50,19 +49,6 @@
 </section>
 {% endif %}
 {% endmacro %}
-
-{% macro comments_script_disqus(article) %}
-{% if article.status != 'draft' %}
-{% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
-
-{%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
-
-{% from '_includes/disqus_scripts.html' import disqus_misc_scripts with context %}
-{{ disqus_misc_scripts() }}
-{% endif %}
-{% endif %}
-{% endmacro %}
-
 
 {% macro comments_common_scripts() %}
 <script>
