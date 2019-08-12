@@ -53,20 +53,15 @@
 
 {% macro comments_common_scripts() %}
 <script>
-    function uncollapse() {
+    (function () {
         if (window.location.hash.match(/^#comment-\d+$/)) {
             $('#comment_thread').collapse('show');
         }
-    }
-</script>
-<script>
-    uncollapse();
+    })();
     window.onhashchange=function(){
         if (window.location.hash.match(/^#comment-\d+$/))
             window.location.reload(true);
     }
-</script>
-<script>
     $('#comment_thread').on('shown', function () {
         var link = document.getElementById('comment-accordion-toggle');
         var old_innerHTML = link.innerHTML;
