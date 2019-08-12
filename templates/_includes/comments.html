@@ -19,6 +19,7 @@
 {% if article.status != 'draft' and article.comments != 'False' and (use_disqus) %}
 
 <section>
+    <h6 style="display:none;">Comments</h6>
     <p id="comment-message">{{ intro }} </p>
 
     <div class="accordion" id="accordion2">
@@ -30,7 +31,7 @@
                    {%if use_disqus %}
                    data-disqus-identifier="{{ identifier }}"
                    {% endif %}
-                   href="{{ SITEURL }}/{{ article.url }}#comment_thread",
+                   href="{{ SITEURL }}/{{ article.url }}#comment_thread"
                    id="comment-accordion-toggle">
                     Comments
                 </a>
