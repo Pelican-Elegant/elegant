@@ -1,5 +1,5 @@
 {% macro comments_disqus(article) %}
-    {% if SITEURL and article.status != 'draft' and article.comments != 'False' %}
+    {% if article.status != 'draft' and article.comments != 'False' %}
 
     {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
 
@@ -44,7 +44,7 @@
 {% endmacro %}
 
 {% macro comments_script_disqus(article) %}
-    {% if SITEURL and article.status != 'draft' %}
+    {% if article.status != 'draft' %}
     {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
 
     {%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
