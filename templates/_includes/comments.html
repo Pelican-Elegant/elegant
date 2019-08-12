@@ -1,46 +1,55 @@
 {% macro comments_disqus(article) %}
-    {% if article.status != 'draft' and article.comments != 'False' %}
 
-    {% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+{% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+{% set use_disqus = (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
 
-    {%if (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
+{% set identifier = SITEURL+ '/' + article.url %}
+{% if article.comment_id %}
+{% set identifier = article.comment_id %}
+{% elif article.disqus_identifier %}
+{% set identifier = article.disqus_identifier %}
+{% endif %}
+
+{% from '_includes/_defaults.html' import COMMENTS_INTRO with context %}
+{% set intro = COMMENTS_INTRO  %}
+{% if article.comments_intro %}
+{% set intro = article.comments_intro %}
+{% endif %}
+
+    {% if article.status != 'draft' and article.comments != 'False' and (use_disqus) %}
+
 
 <section>
-{% if article.comments_intro %}
-<p id="comment-message">{{ article.comments_intro }} </p>
-{% else %}
-    {% from '_includes/_defaults.html' import COMMENTS_INTRO with context %}
-    {%if COMMENTS_INTRO %}
-<p id="comment-message">{{ COMMENTS_INTRO }} </p>
-    {% endif %}
-{% endif %}
+<p id="comment-message">{{ intro }} </p>
+
 <div class="accordion" id="accordion2">
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle disqus-comment-count comment-count" data-toggle="collapse" data-parent="#accordion2"
-                {% if article.comment_id %}
-                    data-disqus-identifier="{{ article.comment_id }}"
-                {% elif article.disqus_identifier %}
-                    data-disqus-identifier="{{ article.disqus_identifier }}"
-                {% endif %}
-                href="{{ SITEURL }}/{{ article.url }}#comment_thread",
-                id="comment-accordion-toggle">
+            <a class="accordion-toggle disqus-comment-count comment-count"
+               data-toggle="collapse"
+               data-parent="#accordion2"
+               {%if use_disqus %}
+               data-disqus-identifier="{{ identifier }}"
+               {% endif %}
+               href="{{ SITEURL }}/{{ article.url }}#comment_thread",
+               id="comment-accordion-toggle">
                 Comments
             </a>
         </div>
         <div id="comment_thread" class="accordion-body collapse">
             <div class="accordion-inner">
                 <div class="comments">
+                    {% if use_disqus %}
                     {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
                     {{ disqus_comments_script(article) }}
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </div>
 </section>
-    {% endif %}
-    {% endif %}
+{% endif %}
 {% endmacro %}
 
 {% macro comments_script_disqus(article) %}
