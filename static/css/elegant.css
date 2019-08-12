@@ -295,69 +295,17 @@ ul.articles-timeline .previous-article {
   float: left;
   margin: 0;
 }
-i.sidebar-social-links {
-  border-radius: 20%;
-  border: solid transparent 1px;
-  color: #a2a2a2;
-  font-size: 1.3em;
-  margin: 0;
-  padding: 1px;
-  text-align: center;
+div#sidebar-social-link a svg {
+  filter: saturate(0%) brightness(0.7);
+  height: 35px;
+  width: 35px;
+  margin-right: 4px;
+}
+div#sidebar-social-link a {
   text-decoration: none;
-  width: 12%;
 }
-i.sidebar-social-links:hover {
-  background-color: #a2a2a2;
-  color: #fff;
-}
-i.fa-twitter:hover,
-i.fa-twitter-square:hover {
-  background-color: #00aced;
-}
-i.fa-facebook:hover,
-i.fa-facebook-square:hover {
-  background-color: #3b5998;
-}
-i.fa-google-plus:hover,
-i.fa-google-plus-square:hover {
-  background-color: #d34836;
-}
-i.fa-adn:hover {
-  background-color: #49484d;
-}
-i.fa-envelope:hover {
-  background-color: #5e9eda;
-}
-i.fa-github:hover,
-i.fa-github-square:hover,
-i.fa-github-alt:hover {
-  background-color: #000;
-}
-i.fa-flickr:hover {
-  background-color: #ff0084;
-}
-i.fa-youtube:hover,
-i.fa-youtube-square:hover,
-i.fa-youtube-play:hover {
-  background-color: #bc272f;
-}
-i.fa-linkedin:hover,
-i.fa-linkedin-square:hover {
-  background-color: #107fb9;
-}
-i.fa-gittip:hover {
-  background-color: #663300;
-}
-i.fa-rss:hover,
-i.fa-rss-square:hover {
-  background-color: #ff6600;
-}
-i.fa-bitbucket:hover,
-i.fa-bitbucket-square:hover {
-  background-color: #205081;
-}
-i.fa-stack-exchange:hover {
-  background-color: #3a7bc8;
+div#sidebar-social-link a svg:hover {
+  filter: none;
 }
 ul.multi-parts-list a {
   color: black;
