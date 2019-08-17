@@ -297,8 +297,8 @@ ul.articles-timeline .previous-article {
 }
 div#sidebar-social-link a svg {
   filter: saturate(0%) brightness(0.7);
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   margin-right: 4px;
 }
 div#sidebar-social-link a {
