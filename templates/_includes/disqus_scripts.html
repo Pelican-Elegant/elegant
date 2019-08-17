@@ -1,19 +1,6 @@
-{% macro comments_script_disqus(article) %}
-
-{% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
-{% set use_disqus = (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
-
-{% set identifier = SITEURL+ '/' + article.url %}
-{% if article.comment_id %}
-{% set identifier = article.comment_id %}
-{% elif article.disqus_identifier %}
-{% set identifier = article.disqus_identifier %}
-{% endif %}
-
-{% if article.status != 'draft' and article.comments != 'False' and (use_disqus) %}
-
+{% macro comments_script_disqus(shortname, id, url) %}
 <script>
-    var disqus_shortname = '{{ DISQUS_SITENAME }}';
+    var disqus_shortname = '{{ shortname }}';
     (function () {
         var s = document.createElement('script'); s.async = true;
         s.type = 'text/javascript';
@@ -21,8 +8,8 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 
-    var disqus_identifier = '{{ identifier }}';
-    var disqus_url = '{{ SITEURL }}/{{ article.url }}';
+    var disqus_identifier = '{{ id }}';
+    var disqus_url = '{{ url }}';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -33,7 +20,4 @@
 
 <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-{% endif %}
-
 {% endmacro %}

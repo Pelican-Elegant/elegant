@@ -6,6 +6,7 @@
 
 {% set use_utterances = (not UTTERANCES_FILTER or article.utterances_filter == "off") and UTTERANCES_REPO and article.utterances_filter != "on" %}
 
+{% set url = SITEURL+ '/' + article.url %}
 {% set identifier = SITEURL+ '/' + article.url %}
 {% if article.comment_id %}
 {% set identifier = article.comment_id %}
@@ -34,7 +35,7 @@
                    {%if use_disqus %}
                    data-disqus-identifier="{{ identifier }}"
                    {% endif %}
-                   href="{{ SITEURL }}/{{ article.url }}#comment_thread"
+                   href="{{ url }}#comment_thread"
                    id="comment-accordion-toggle">
                     Comments
                 </a>
@@ -44,6 +45,8 @@
                     <div class="comments">
                         {% if use_disqus %}
                         <div id="disqus_thread"></div>
+                        {% from '_includes/disqus_scripts.html' import comments_script_disqus with context %}
+                        {{ comments_script_disqus(DISQUS_SITENAME, identifier , url) }}
                         {% endif %}
 
                         {% if use_utterances %}
