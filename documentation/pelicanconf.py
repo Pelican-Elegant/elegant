@@ -183,3 +183,4 @@ AUTHORS = {
     },
 }
 DISQUS_FILTER = True
+UTTERANCES_FILTER = True

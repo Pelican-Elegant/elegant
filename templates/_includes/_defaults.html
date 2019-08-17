@@ -67,6 +67,24 @@
 {% set DISQUS_FILTER = DISQUS_FILTER %}
 {% endif %}
 
+{% if not UTTERANCES_FILTER %}
+{% set UTTERANCES_FILTER = False %}
+{% else %}
+{% set UTTERANCES_FILTER = UTTERANCES_FILTER %}
+{% endif %}
+
+{% if not UTTERANCES_THEME %}
+{% set UTTERANCES_THEME = 'github-light' %}
+{% else %}
+{% set UTTERANCES_THEME = UTTERANCES_THEME %}
+{% endif %}
+
+{% if not UTTERANCES_LABEL %}
+{% set UTTERANCES_LABEL = '' %}
+{% else %}
+{% set UTTERANCES_LABEL = UTTERANCES_LABEL %}
+{% endif %}
+
 {# Author's twitter handle. Used in Twitter card meta data #}
 {% if not TWITTER_USERNAME %}
 {% set TWITTER_USERNAME = '' %}

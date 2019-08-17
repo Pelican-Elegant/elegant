@@ -1,7 +1,10 @@
 {% macro comments_section(article) %}
 
-{% from '_includes/_defaults.html' import DISQUS_FILTER with context %}
+{% from '_includes/_defaults.html' import DISQUS_FILTER, UTTERANCES_FILTER with context %}
+
 {% set use_disqus = (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
+
+{% set use_utterances = (not UTTERANCES_FILTER or article.utterances_filter == "off") and UTTERANCES_REPO and article.utterances_filter != "on" %}
 
 {% set identifier = SITEURL+ '/' + article.url %}
 {% if article.comment_id %}
@@ -16,7 +19,7 @@
 {% set intro = article.comments_intro %}
 {% endif %}
 
-{% if article.status != 'draft' and article.comments != 'False' and (use_disqus) %}
+{% if article.status != 'draft' and article.comments != 'False' and (use_disqus or use_utterances) %}
 
 <section>
     <h6 style="display:none;">Comments</h6>
@@ -41,6 +44,11 @@
                     <div class="comments">
                         {% if use_disqus %}
                         <div id="disqus_thread"></div>
+                        {% endif %}
+
+                        {% if use_utterances %}
+                        {% from '_includes/utterances_scripts.html' import comments_script_utterances with context %}
+                        {{ comments_script_utterances(UTTERANCES_REPO, identifier, UTTERANCES_LABEL, UTTERANCES_THEME) }}
                         {% endif %}
                     </div>
                 </div>
