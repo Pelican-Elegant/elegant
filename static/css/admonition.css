@@ -2,10 +2,9 @@
 div.admonition {
   padding: 0;
   margin-bottom: 20px;
-  color: #c09853;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
+  border: 1px solid;
   box-shadow: 5px 8px #888888;
   border-radius: 6px;
 }
@@ -41,7 +40,6 @@ div.danger,
 div.error {
   color: #b94a48;
   background-color: #f2dede;
-  border-color: #eed3d7;
 }
 
 div.danger p.admonition-title,
@@ -53,6 +51,7 @@ div.error p.admonition-title {
 div.warning,
 div.caution,
 div.attention {
+  color: #c09853;
 }
 div.warning p.admonition-title,
 div.caution p.admonition-title,
@@ -65,7 +64,6 @@ div.note,
 div.important {
   color: #468847;
   background-color: #dff0d8;
-  border-color: #d6e9c6;
 }
 
 div.note p.admonition-title,
@@ -78,7 +76,6 @@ div.hint,
 div.tip {
   color: #3a87ad;
   background-color: #d9edf7;
-  border-color: #bce8f1;
 }
 
 div.hint p.admonition-title,
