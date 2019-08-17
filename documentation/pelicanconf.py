@@ -70,6 +70,11 @@ CATEGORY_FEED_RSS = None
 SOCIAL = (
     ("Github", "https://github.com/Pelican-Elegant/", "Elegant Github Repository"),
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
+    (
+        "Calendar",
+        "https://github.com/Pelican-Elegant/elegant/milestones",
+        "Elegant Project Roadmap",
+    ),
 )
 
 CLAIM_BING = "BC16AEBED17872F083B3E1E7A67454BD"
