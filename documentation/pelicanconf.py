@@ -77,8 +77,6 @@ SOCIAL = (
     ),
 )
 
-CLAIM_BING = "BC16AEBED17872F083B3E1E7A67454BD"
-
 # Elegant theme
 STATIC_PATHS = ["theme/images", "images", "extra/_redirects"]
 EXTRA_PATH_METADATA = {"extra/_redirects": {"path": "_redirects"}}
