@@ -77,6 +77,13 @@ If `title` is defined then it is used to populate title attribute of the link.
 1. `HackerNews`
 1. `GitLab`
 1. `Calendar`
+1. `Wire`
+1. `Keybase`
+1. `Mastodon`
+1. `Twitch`
+1. `Spotify`
+1. `Goodreads`
+1. `Telegram`
 
 ## How to customize Social Profile Label
 
