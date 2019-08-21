@@ -63,27 +63,27 @@ If `title` is defined then it is used to populate title attribute of the link.
 
 ## Available Keys
 
-1. `Email`
-1. `Github`
-1. `RSS`
-1. `Facebook`
-1. `Twitter`
-1. `LinkedIn`
-1. `Instagram`
-1. `Reddit`
-1. `YouTube`
-1. `Gmail`
-1. `StackOverflow`
-1. `HackerNews`
-1. `GitLab`
 1. `Calendar`
-1. `Wire`
-1. `Keybase`
-1. `Mastodon`
-1. `Twitch`
-1. `Spotify`
+1. `Email`
+1. `Facebook`
+1. `Github`
+1. `GitLab`
+1. `Gmail`
 1. `Goodreads`
+1. `HackerNews`
+1. `Instagram`
+1. `Keybase`
+1. `LinkedIn`
+1. `Mastodon`
+1. `Reddit`
+1. `RSS`
+1. `Spotify`
+1. `StackOverflow`
 1. `Telegram`
+1. `Twitch`
+1. `Twitter`
+1. `Wire`
+1. `YouTube`
 
 ## How to customize Social Profile Label
 
