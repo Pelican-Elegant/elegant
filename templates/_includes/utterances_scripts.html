@@ -1,9 +1,9 @@
 {% macro comments_script_utterances(repo, id, label, theme) %}
 <script src="https://utteranc.es/client.js"
-        repo="{{ repo }}"
-        issue-term="{{ id }}"
-        label="{{ label }}"
-        theme="{{ theme }}"
+        data-repo="{{ repo }}"
+        data-issue-term="{{ id }}"
+        data-label="{{ label }}"
+        data-theme="{{ theme }}"
         crossorigin="anonymous"
         async>
 </script>
