@@ -46,9 +46,4 @@ RELATIVE_URLS = False
 PLUGINS.append("filetime_from_git")
 PLUGINS.append("sitemap")
 
-SOCIAL = (
-    ("Github", "https://github.com/Pelican-Elegant/elegant"),
-    ("RSS", SITEURL + "/feeds/all.atom.xml"),
-)
-
 DELETE_OUTPUT_DIRECTORY = True
