@@ -18,7 +18,7 @@ Category: Release Notes
 - **clean URL:** default URL of categories, tags and archives fails on some servers ([3c7df6a](https://github.com/Pelican-Elegant/elegant/commit/3c7df6a)), closes [#280](https://github.com/Pelican-Elegant/elegant/issues/280) [#276](https://github.com/Pelican-Elegant/elegant/issues/276)
 - **comments:** W3C validation errors ([76a1f26](https://github.com/Pelican-Elegant/elegant/commit/76a1f26))
 - **disqus:** remove SITEURL condition to show Disqus comments section ([753d5a5](https://github.com/Pelican-Elegant/elegant/commit/753d5a5))
-- **lang:** do not override default value of DEFAULT_LANG set by Pelican ([d6c60c2](https://github.com/Pelican-Elegant/elegant/commit/d6c60c2))
+- **Lang:** do not override default value of DEFAULT_LANG set by Pelican ([d6c60c2](https://github.com/Pelican-Elegant/elegant/commit/d6c60c2))
 - **social:** reduce icon sizes in the sidebar ([c769ba3](https://github.com/Pelican-Elegant/elegant/commit/c769ba3))
 - **social:** use nofollow for social links in the sidebar ([50cff87](https://github.com/Pelican-Elegant/elegant/commit/50cff87))
 - **social:** W3C validation error ([ec4521e](https://github.com/Pelican-Elegant/elegant/commit/ec4521e))
@@ -46,7 +46,7 @@ Category: Release Notes
 
 ### Performance Improvements
 
-- **admonition:** add attributes to svg iamges ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60))
+- **admonition:** add attributes to svg images ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60))
 - **requests:** remove font awesome ([7c20145](https://github.com/Pelican-Elegant/elegant/commit/7c20145)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
 
 ### BREAKING CHANGES
