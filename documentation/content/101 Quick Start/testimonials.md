@@ -26,13 +26,13 @@ authors: Talha Mansoor
 [悟道洞穴人](https://github.com/Pelican-Elegant/elegant/pull/2#issue-19502670)
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/talham_">@talham_</a> yours is the most innovative Pelican theme I&#39;ve seen yet: <a href="http://t.co/worboJFRuX">http://t.co/worboJFRuX</a>. I love the search feature.</p>&mdash; Tshepang Lekhonkhobe (@tshepang_dev) <a href="https://twitter.com/tshepang_dev/statuses/384347807387095040">September 29, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//platform.twitter.com/widgets.js"></script>
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/talham_">@talham_</a> Thanks for the Elegant theme. It is really elegant :).</p>&mdash; Simon Cahuk (@cahuk) <a href="https://twitter.com/cahuk/statuses/391533360830775296">October 19, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//platform.twitter.com/widgets.js"></script>
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/talham_">@talham_</a> Hi, Elegant is a cool theme. Checking it out.</p>&mdash; Fayad Fami (@fayadfami) <a href="https://twitter.com/fayadfami/statuses/451420620241137664">April 2, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//platform.twitter.com/widgets.js"></script>
 
 > I'm hugely impressed with your work on the theme; thank you for opening the
 > code for it.

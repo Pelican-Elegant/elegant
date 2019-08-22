@@ -37,16 +37,13 @@ else:
     SITEURL = ""
 
 MAILCHIMP_FORM_ACTION = os.environ.get("MAILCHIMP_FORM_ACTION")
+UTTERANCES_REPO = "Pelican-Elegant/elegant"
+UTTERANCES_LABEL = "💬documentation-comments"
 
 RELATIVE_URLS = False
 # filetime_from_git is very slow. Use it in production only
 # to avoid slow build times during development
 PLUGINS.append("filetime_from_git")
 PLUGINS.append("sitemap")
-
-SOCIAL = (
-    ("Github", "https://github.com/Pelican-Elegant/elegant"),
-    ("RSS", SITEURL + "/feeds/all.atom.xml"),
-)
 
 DELETE_OUTPUT_DIRECTORY = True

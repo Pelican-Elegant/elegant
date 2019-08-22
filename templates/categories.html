@@ -10,14 +10,14 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 
 {% block meta_tags_in_head %}
 {{ super() }}
+{% from '_includes/_defaults.html' import FEATURED_IMAGE, CATEGORIES_URL with context %}
 <meta property="og:title" content="All Categories · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="All Categories · {{ SITENAME|striptags|e }}">
-<meta property="og:url" content="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}" />
+<meta property="og:url" content="{{ SITEURL }}/{{ CATEGORIES_URL }}" />
 <meta property="og:description" content="All categories of the {{ SITENAME|striptags|e }} blog" />
 <meta name="twitter:description" content="All categories of the {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
-{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
 <meta property="og:image" content="{{FEATURED_IMAGE}}" />
 <meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
@@ -30,9 +30,10 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% endblock feed_links %}
 
 {% block content %}
+{% from '_includes/_defaults.html' import CATEGORIES_URL with context %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="{{ SITEURL }}/{{ CATEGORIES_URL|default('categories') }}">All Categories</a></h1>
+    <h1><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">All Categories</a></h1>
     </header>
 </div>
 
@@ -77,7 +78,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% endblock content %}
 {% block script %}
 {{ super() }}
-<script  language="javascript" type="text/javascript">
+<script>
     function uncollapse() {
             $(window.location.hash).collapse({
                 toggle: true
@@ -85,7 +86,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
     }
 </script>
 
-<script type="text/javascript" language="JavaScript">
+<script>
     uncollapse();
 </script>
 {% endblock script %}

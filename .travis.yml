@@ -35,7 +35,6 @@ script:
 - pre-commit run --all-files
 - yaspeller --only-errors content/ *.md
 - invoke publish
-- w3c_validator $(find output/ -name '*.html' -type f)
 - html5validator --root output/
 
 deploy:

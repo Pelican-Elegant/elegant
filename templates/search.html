@@ -10,14 +10,14 @@ Search results for {{ SITENAME|striptags|e }} blog.
 
 {% block meta_tags_in_head %}
 {{ super() }}
+{% from '_includes/_defaults.html' import FEATURED_IMAGE, SEARCH_URL with context %}
 <meta property="og:title" content="Search · {{ SITENAME|striptags|e }}"/>
 <meta name="twitter:title" content="Search · {{ SITENAME|striptags|e }}">
-<meta property="og:url" content="{{ SITEURL }}/search.html" />
+<meta property="og:url" content="{{ SITEURL }}/{{ SEARCH_URL }}" />
 <meta property="og:description" content="Search results for {{ SITENAME|striptags|e }} blog" />
 <meta name="twitter:description" content="Search results for {{ SITENAME|striptags|e }} blog">
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
-{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
 <meta property="og:image" content="{{FEATURED_IMAGE}}" />
 <meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
@@ -29,8 +29,8 @@ Search results for {{ SITENAME|striptags|e }} blog.
     {% if 'assets' in PLUGINS %}
     {% include '_includes/minify_tipuesearch.html' with context %}
     {% else %}
-<script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
-<script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
+<script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+<script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
     {% endif %}
 
 {% if 'tipue_search' in PLUGINS %}
@@ -57,9 +57,7 @@ $(document).ready(function() {
 {% endblock script %}
 
 {% block content %}
-<article>
     <div class="span8 offset2">
         <div id="tipue_search_content"><div id="tipue_search_loading"></div></div>
     </div>
-</article>
 {% endblock content %}
