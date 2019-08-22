@@ -17,22 +17,21 @@
 <div class="accordion" id="accordion2">
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
+            <input type="checkbox" id="disqus-chkbx">
+            <label class="accordion-toggle disqus-comment-count" for="disqus-chkbx" 
                 {% if article.comment_id %}
                     data-disqus-identifier="{{ article.comment_id }}"
                 {% elif article.disqus_identifier %}
                     data-disqus-identifier="{{ article.disqus_identifier }}"
-                {% endif %}
-                href="{{ SITEURL }}/{{ article.url }}#disqus_thread",
-                id="comment-accordion-toggle">
-                Comments
-            </a>
-        </div>
-        <div id="disqus_thread" class="accordion-body collapse">
-            <div class="accordion-inner">
-                <div class="comments">
-                    {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
-                    {{ disqus_comments_script(article) }}
+                {% endif %}>
+                <span>Comments</span>
+            </label>
+            <div id="disqus_thread" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div class="comments">
+                        {% from '_includes/disqus_scripts.html' import disqus_comments_script with context %}
+                        {{ disqus_comments_script(article) }}
+                    </div>
                 </div>
             </div>
         </div>
