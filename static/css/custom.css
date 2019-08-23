@@ -9,21 +9,17 @@ form.navbar-search input.search-query {
   opacity: unset;
   z-index: unset;
 }
-.disqus-comments {
-  font-family: "Trebuchet MS", Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, Sans-Serif;
-  font-size: 0.9em;
-}
 
-.disqus-comment-count span {
+#comment-accordion-toggle span {
   position: relative;
   content: 'Comments';
 }
 
-input:checked + .disqus-comment-count span {
+input:checked + #comment-accordion-toggle span {
   display: none;
 }
 
-input:checked + .disqus-comment-count::after {
+input:checked + #comment-accordion-toggle::after {
   content: 'Click here to hide comments';
 }
 

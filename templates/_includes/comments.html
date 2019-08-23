@@ -29,30 +29,29 @@
     <div class="accordion" id="accordion2">
         <div class="accordion-group">
             <div class="accordion-heading">
-                <a class="accordion-toggle disqus-comment-count comment-count"
-                   data-toggle="collapse"
-                   data-parent="#accordion2"
+                <input type="checkbox" id="disqus-chkbx">
+                <label class="accordion-toggle comment-count"
                    {%if use_disqus %}
                    data-disqus-identifier="{{ identifier }}"
                    {% endif %}
-                   href="{{ url }}#comment_thread"
+                   for="disqus-chkbx"
                    id="comment-accordion-toggle">
-                    Comments
-                </a>
-            </div>
-            <div id="comment_thread" class="accordion-body collapse">
-                <div class="accordion-inner">
-                    <div class="comments">
-                        {% if use_disqus %}
-                        <div id="disqus_thread"></div>
-                        {% from '_includes/disqus_scripts.html' import comments_script_disqus with context %}
-                        {{ comments_script_disqus(DISQUS_SITENAME, identifier , url) }}
-                        {% endif %}
+                   <span>Comments</span>
+                </label>
+                <div id="comment_thread" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        <div class="comments">
+                            {% if use_disqus %}
+                            <div id="disqus_thread"></div>
+                            {% from '_includes/disqus_scripts.html' import comments_script_disqus with context %}
+                            {{ comments_script_disqus(DISQUS_SITENAME, identifier , url) }}
+                            {% endif %}
 
-                        {% if use_utterances %}
-                        {% from '_includes/utterances_scripts.html' import comments_script_utterances with context %}
-                        {{ comments_script_utterances(UTTERANCES_REPO, identifier, UTTERANCES_LABEL, UTTERANCES_THEME) }}
-                        {% endif %}
+                            {% if use_utterances %}
+                            {% from '_includes/utterances_scripts.html' import comments_script_utterances with context %}
+                            {{ comments_script_utterances(UTTERANCES_REPO, identifier, UTTERANCES_LABEL, UTTERANCES_THEME) }}
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,17 +72,5 @@
         if (window.location.hash.match(/^#comment-\d+$/))
             window.location.reload(true);
     }
-    $('#comment_thread').on('shown', function () {
-        var link = document.getElementById('comment-accordion-toggle');
-        var old_innerHTML = link.innerHTML;
-        $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
-        });
-        $('#comment_thread').on('hidden', function () {
-            $(link).fadeOut(200, function() {
-                $(this).text(old_innerHTML).fadeIn(200);
-            });
-        })
-    })
 </script>
 {% endmacro %}
