@@ -26,7 +26,7 @@ Here are some tips we have found useful for using Git to contribute to the proje
 
 3. Create a directory to host your repository in and change to that directory. Run the following command to set your forked repository as `Upstream`:
 
-   ```text
+   ```bash
    git remote add upstream https://github.com/Pelican-Elegant/pelican-elegant.git
    ```
 
@@ -62,7 +62,7 @@ something to get it `just right`.
 
 To squash and rebase your commits, use the following command:
 
-```text
+```bash
 git rebase --interactive upstream/master
 ```
 

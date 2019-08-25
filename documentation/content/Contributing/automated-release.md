@@ -14,20 +14,18 @@ Authors: Talha Mansoor, Jack De Winter
 
 The Elegant project follows a "release early, release often" software development philosophy.
 By employing this philosophy, we are able to have each team member working on a different
-aspect of the project with little friction from each other's changes. At any point, any team
+aspect of the project with next to no friction from each other's changes. At any point, any team
 member can pull changes that have been made in another branch to their fork of the repository
 and exercise their changes with complete confidence.
 
-Another benefit of this philosophy if that in order to attain this goal, our release process
-must be fully automated.
+Release process should be fully automated to materialize this goal.
 
 ## Release Versions
 
 Version management and publishing is accomplished using the
 [semantic-release](https://github.com/semantic-release/semantic-release) tool and it's
 [configuration file](https://github.com/Pelican-Elegant/elegant/blob/master/.releaserc.json).
-This tool entirely removes any human intervention needed for determining how to label
-the next release of the project.
+This tool entirely removes human intervention from deciding the type and label of the next release of the project.
 
 ## CHANGELOG File Updates
 
@@ -36,8 +34,7 @@ An integral part of the release is the generation of information to be added to 
 By mandating that any commits for the project follow a
 [mandated format for the commit messages]({filename}./git-commit-guidelines.md),
 the commits being added to the release can have their commit messages scanned by a tool,
-including relevant portions into the release notes. Similar to the previous paragraph on
-version management, this can be accomplished without any need for human intervention.
+including relevant portions into the release notes. This too is done automatically.
 
 ### Example of an Automated Release
 
@@ -85,9 +82,8 @@ hexadecimal numbers. Each of these links is to a specific commit that was part o
 release. If you follow the link, you can verify that the correct text is being used for the
 release notes.
 
-Additionally, there are links that are associated with text that starts with an octothorpe
-(`#` character, sometimes referred to as the hash, hash-tag, or pound character)
-followed by an integer. Each of these links is to an issue that was either updated or
+Additionally, there are links that are associated with text that starts with the `#`
+character followed by an integer. Each of these links is to an issue that was either updated or
 fixed by the given commit. As with the above paragraph, you can verify that the correct
 issue was associated with the commit in the release notes by following the commit links and
 looking for any issue number at the end of the commit text.

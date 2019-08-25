@@ -101,7 +101,7 @@ change again.
 
 The full set of hooks are available by entering the following command:
 
-```text
+```bash
 pre-commit run -a
 ```
 

@@ -131,13 +131,13 @@ Either [Node.js](https://nodejs.org/en/download/) or
 
 You can install the `yaspeller` package using either NPM (Node.js) or Yarn as follows:
 
-```text
+```bash
 npm install -g yaspeller
 ```
 
 OR
 
-```text
+```bash
 yarn global add yaspeller
 ```
 
@@ -146,7 +146,7 @@ yarn global add yaspeller
 To invoke the `yaspeller` package for the documentation files for the Elegant project, go to
 the root directory of your local repository and enter the following command:
 
-```text
+```bash
 yaspeller --only-errors documentation/content/ *.md
 ```
 

@@ -48,7 +48,7 @@ prompts, following all of the rules in the following sections on the Commit Mess
 
 !!! tip
 
-    Use Commitizen.  It does make life easier.
+    [Use Commitizen for Git commits]({filename}./commitizen.md).  It does make life easier.   It automatically formats the commit message to conform to our guidelines.
 
 ## Commit Message Format
 

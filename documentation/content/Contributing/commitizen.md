@@ -27,7 +27,7 @@ formatting allows for our release process to be
 Both [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/en/docs/install)
 must be installed on your system.
 
-### Step 1: Install Commitizen
+### Install Commitizen
 
 From your command line terminal, go into the directory containing your fork of the Elegant
 repository, then execute the following commands:
@@ -42,8 +42,7 @@ yarn install
 As the Elegant team has already made the repository
 [Commitizen friendly](https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly),
 you can start using it for your commits by entering `git-cz` in your command shell instead
-of `git commit`. As such, you are responsible for making sure that the changes that you
-want to commit to your fork are currently staged in the repository.
+of `git commit`. Make sure the changes that you want to commit to your fork are staged.
 
 Once invoked, Commitizen will prompt you for answers to a number of questions. As mentioned
 previously, the answers to these questions are formatted according to the
