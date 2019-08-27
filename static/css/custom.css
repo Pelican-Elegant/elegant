@@ -1,41 +1,33 @@
-.container-fluid input, .accordion-heading input {
+/* Accordion */
+.navbar-inner {
+  list-style: none;
+}
+.navbar-inner .container-fluid input[type=checkbox],
+.accordion-group .accordion-heading input[type=radio],
+.accordion-group .accordion-heading input[type=checkbox] {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-
-form.navbar-search input.search-query {
-  position: unset;
-  opacity: unset;
-  z-index: unset;
+.navbar-inner .container-fluid input[type=checkbox] ~ .collapse,
+.accordion-group .accordion-heading input[type=checkbox] ~ .collapse {
+  height: auto;
 }
-
-#comment-accordion-toggle span {
-  position: relative;
-  content: 'Comments';
+.navbar-inner .container-fluid input[type=checkbox]:checked ~ .collapse,
+.accordion-group .accordion-heading input[type=checkbox]:checked ~ .collapse {
+  height: 0;
 }
-
-input:checked + #comment-accordion-toggle span {
-  display: none;
+.accordion-group .accordion-heading input[type=radio]: ~ .collapse {
+  height: 0;
 }
-
-input:checked + #comment-accordion-toggle::after {
-  content: 'Click here to hide comments';
-}
-
-input:checked ~ .collapse {
+.accordion-group .accordion-heading input[type=radio]:checked ~ .collapse {
   height: auto;
 }
 
-@media screen and (max-width: 979px) {
-  .nav-collapse .navbar-search {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  input:checked ~ .nav-collapse {
-    height: 100%;
-  }
+/* Disqus Text Contents */
+.accordion-group .accordion-heading input[type=checkbox]:checked ~ #comment-accordion-toggle::before {
+  content: 'Comments';
 }
-
+.accordion-group .accordion-heading input[type=checkbox] ~ #comment-accordion-toggle::before {
+  content: 'Click here to hide comments';
+}
