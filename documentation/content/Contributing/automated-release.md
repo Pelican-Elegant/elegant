@@ -1,7 +1,7 @@
 ---
-Title: Automated Version Management and Publishing
+Title: Automated Version Management and Release
 Subtitle:
-Slug: fully-automated-version-management-and-publishing
+Slug: fully-automated-version-management-and-release
 Category: Contributing
 Tags:
 Date: 2019-07-20 23:17
@@ -27,10 +27,40 @@ Version management and publishing is accomplished using the
 [configuration file](https://github.com/Pelican-Elegant/elegant/blob/master/.releaserc.json).
 This tool entirely removes human intervention from deciding the type and label of the next release of the project.
 
+### How Does Versioning Work?
+
+Semantic release bases it's decisions on the
+[Semantic Versioning 2.0.0 specification](https://semver.org/), which is very specific.
+
+A quick summary is as follows. Each version is detailed in the form: `MAJOR.MINOR.PATCH`.
+The **PATCH** version is incremented when only backwards compatible bug fixes are made in the
+release. The **MINOR** version is incremented (and **PATCH** reset to 0) when functionality
+is added in a backwards compatible manner to the release, along with any backwards compatible
+bug fixes. The **MAJOR** version is incremented (and **MINOR** and **PATCH** reset to 0) when
+incompatible API changes are introduced, along with any backwards compatible features or fixes.
+
+Here are some examples of release types that are generated based on commit messages:
+
+<!-- yaspeller ignore:start -->
+
+| Commit Message                                                                                                                                                                             | Release Type           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| fix(pencil): stop graphite breaking when too much pressure applied                                                                                                                         | Patch Release          |
+| feat(pencil): add 'graphiteWidth' option                                                                                                                                                   | Minor Feature Release  |
+| perf(pencil): remove graphiteWidth option<br><br>BREAKING CHANGE: The graphiteWidth option has been removed.<br>The default graphite width of 10mm is always used for performance reasons. | Major Breaking Release |
+
+<!-- yaspeller ignore:end -->
+
+Note that the release type is specified as if that commit was the only commit in the release.
+If the first two commits were put together in the release, the `Minor Feature Release` of the
+second commit would take precedence over the `Patch Release` of the first commit. In the same
+manner, the `Major Breaking Release` of the third commit would take precedence if all three
+commits were submitted in the same release.
+
 ## CHANGELOG File Updates
 
-An integral part of the release is the generation of information to be added to the
-[CHANGELOG file](https://github.com/Pelican-Elegant/elegant/blob/master/CHANGELOG.md).
+An integral part of the release is updating the
+[CHANGELOG](https://github.com/Pelican-Elegant/elegant/blob/master/CHANGELOG.md).
 By mandating that any commits for the project follow a
 [mandated format for the commit messages]({filename}./git-commit-guidelines.md),
 the commits being added to the release can have their commit messages scanned by a tool,
@@ -87,3 +117,6 @@ character followed by an integer. Each of these links is to an issue that was ei
 fixed by the given commit. As with the above paragraph, you can verify that the correct
 issue was associated with the commit in the release notes by following the commit links and
 looking for any issue number at the end of the commit text.
+
+As the commits added in to this release included features, the `Minor Feature Release` release
+type was used, incrementing the minor part of the version number from 3.1.0 to 3.2.0.

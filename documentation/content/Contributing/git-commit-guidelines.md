@@ -180,7 +180,7 @@ If your commit affects an issue, but does not fix it completely, use the "Update
 Updates #234
 ```
 
-## Good Message Format Examples
+## Correct Message Format Examples
 
 The following are commits from our own repository that shows how Elegant has used these
 guidelines.
@@ -218,7 +218,7 @@ ci(docs): add default tasks.py file
 refactor: move Google and Bing claims to their individual files
 ```
 
-## Bad Message Format Examples
+## Incorrect Message Format Examples
 
 This commit message starts with a capital letter and ends with a period
 
