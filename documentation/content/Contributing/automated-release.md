@@ -14,9 +14,9 @@ Authors: Talha Mansoor, Jack De Winter
 
 The Elegant project follows a "release early, release often" software development philosophy.
 By employing this philosophy, we are able to have each team member working on a different
-aspect of the project with next to no friction from each other's changes. At any point, any team
-member can pull changes that have been made in another branch to their fork of the repository
-and exercise their changes with complete confidence.
+aspect of the project with next to no friction from each other's changes. At any point, any
+team member can pull changes that have been made in another branch to their fork of the
+repository and exercise their changes with complete confidence.
 
 Release process should be fully automated to materialize this goal.
 
