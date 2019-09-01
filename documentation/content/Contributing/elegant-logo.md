@@ -1,8 +1,12 @@
 ---
 Title: Elegant Logo
-Date: 2019-07-22 21:17
+Subtitle:
 Slug: elegant-logo
 Category: Contributing
+Tags:
+Date: 2019-07-22 21:17
+Summary: This article provides details on how the current Elegant logo was created.
+Keywords:
 Authors: Talha Mansoor
 ---
 

@@ -1,22 +1,67 @@
 ---
-Title: Invitation to participate
-Date: 2019-07-03 20:07
+Title: Invitation to Participate
+Subtitle:
 Slug: invitation-to-participate
 Category: Contributing
+Tags:
+Date: 2019-07-03 20:07
+Summary: Elegant has a mandatory Git commit message format that is described here.
+Keywords:
+Authors: Talha Mansoor, Jack De Winter
 ---
 
-Our brand new documentation website [elegant.onCrashReboot.com][elegant-home] is a great demo for the theme.
+[TOC]
 
-If you like the theme and would like to contribute to Elegant, you are most welcome to do so. Even though Pelican is written in Python, no coding skills are needed to help out with Elegant, as themes consist mostly of [Jinja][] templates, CSS and HTML. It is honestly very easily to get into.
+This website, [elegant.onCrashReboot.com](https://elegant.oncrashreboot.com),
+is an excellent demonstration of the theme that all of us contributors love. While looking for
+new features that add to what Elegant has to offer, we also continue to take great care that
+we adhere to [Elegant's Look and Feel]({filename}./why-look-and-feel.md).
 
-If you want to help out, but have no idea where to start, we keep a list of [low-priority features that are just waiting for you to pick up][pr_welcome].
+This practice allows you, a website owner, the opportunity to give you readers a clean flow of
+reading through the body of the article with minimal destructions, with no loss of
+functionality. When new features are added, you can decide whether or not to adopt these
+features with the confidence that those new features will be consistent with what you already
+are using. This will provide the users of your website with something that is well thought out
+and organized, appealing to many readers.
 
-Another way to contribute is to help with the [documentation][docs]. We are keeping a list of [good first issues][docs_first] for newbies to get involved – these are easy to tackle, but in no way less helpful.
+To accomplish this, Elegant is proudly a
+[team driven open source project]({filename}./community-driven-project.md).
+While it was created in 2012 by Talha Mansoor, the change to a community driven project in
+early 2019 has energized the development of the project. By asking "how can I help" or
+"do you need help with...", people have slowly joined the team and enriched the theme to what
+you see today. The contributions of these people has allowed the project to grow beyond the
+scope of what any one of them could accomplish on their own. Their contributions, together as
+a team, are responsible for the project you see here today.
 
-And, of course, reporting bugs and filing feature requests to further improve Elegant (and its documentation), is also welcome.
+## What Can I Do?
 
-[jinja]: http://jinja.pocoo.org/
-[pr_welcome]: https://github.com/Pelican-Elegant/elegant/labels/pull%20request%20welcome
-[docs]: https://github.com/Pelican-Elegant/elegant/tree/master/documentation
-[docs_first]: https://github.com/Pelican-Elegant/elegant/issues?q=is%3Aopen+is%3Aissue+label%3A%22project+documentation%22
-[elegant-home]: https://elegant.oncrashreboot.com
+If using the Elegant theme and reading this invitation inspires you to contribute, we welcome
+the addition of your creativity to our team. No coding skills are required to volunteer to
+help with Elegant. The theme is mostly composed of templates written in
+[Jinja](http://jinja.pocoo.org/) utilizing
+[metadata]({filename}../Advanced Features/meta-data.md) associated with each article. We are
+confident that if you want to help, we can get you up and running in no time!
+
+## Where Do I Start?
+
+As you are volunteering your time and energy, we don't want you to take on a really big task
+to start, scaring you away in the process. For this purpose, we keep a refined list of
+[lower priority issues](https://github.com/pelican-elegant/elegant/labels/pull%20request%20welcome)
+to allow you to gently ease yourself into assisting with the project. If none of those
+issues appeal to you, feel free to look at all of our
+[open issues](https://github.com/Pelican-Elegant/elegant/issues?q=is:open+is:issue), and see
+if any of those are more attractive to you.
+
+If none of that appeals to you and you still want to help, don't worry! We know we are not
+perfect and rely on feedback from our users to help us make the theme better for everyone.
+
+## How Can I Help?
+
+See something that isn't working properly?
+[Report a bug](https://github.com/Pelican-Elegant/elegant/issues).
+
+See something that you think is missing?
+[File a feature request](https://github.com/Pelican-Elegant/elegant/issues).
+
+See an article that you think could be clearer?
+[File a documentation issue](https://github.com/Pelican-Elegant/elegant/issues).

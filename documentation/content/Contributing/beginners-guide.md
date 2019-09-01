@@ -1,34 +1,74 @@
 ---
 Title: Git Tips for Beginners
-Date: 2019-07-03 21:57
+Subtitle:
 Slug: git-tips-for-beginners
 Category: Contributing
+Tags:
+Date: 2019-07-03 21:57
+Summary: This article contains a number of tips useful for working with Elegant and Git.
+Keywords:
+Authors: Talha Mansoor, Jack De Winter
 ---
 
-Here are some tips on how to make your life with Git easier when contributing.
+[TOC]
 
-## How To Set Up Your Git
+Here are some tips we have found useful for using Git to contribute to the project.
 
-1. Create a fork of the [Elegant repository][elegant] by clicking on the “Fork” button.
-2. Clone your fork to your computer by clicking on the “Clone or download” button and following the instructions there.
-3. When in the Git repository of your fork, run the following command to set the main repository as the upstream: `git remote add upstream https://github.com/Pelican-Elegant/pelican-elegant.git`
+## How To Set Up Your Git Repository
+
+1. Create your own fork of Elegant by going to the project repository webpage [on GitHub](https://github.com/Pelican-Elegant/elegant) and pressing the `Fork` button.
+
+   ![Fork Button]({static}/images/github-fork-button.png)
+
+2. You will now be redirected to the page representing your fork of the repository. To clone the your fork of the repository to your computer, press the `Clone or download` button and follow the instructions provided.
+
+   ![Clone or Download button]({static}/images/github-clone-button.png)
+
+3. Create a directory to host your repository in and change to that directory. Run the following command to set your forked repository as `Upstream`:
+
+   ```bash
+   git remote add upstream https://github.com/Pelican-Elegant/pelican-elegant.git
+   ```
+
+## Pull Before Starting Changes
+
+Most of the changes that you will submit will be against the Upstream repository's `next`
+branch. Whether you decide to work in your local repository's `next` branch or create a new
+branch of your own, it is recommended that you do a `git pull` against the Upstream `next`
+branch before starting to work on a new set of changes. This will ensure that you are starting
+from a known good point, and reduce the chance of requiring a merge at a later stage.
 
 ## Updating/Rebasing to Upstream
 
-Occasionally – often before a pull request is able to be merged – you will need to update your own (fork) repository to the upstream (i.e. [Elegant][elegant]) development (i.e. `next`) branch. This can be done as follows:
+It is a good practice to update your repository to it's Upstream repository one or more times
+during the development of your changes. Specifically, the `next` branch of the repository
+is where most of the changes are submitted to, and you should either rebase or pull any
+changes down to your local repository from there. This practice will ensure that any changes
+that have been made to that Upstream branch are brought down where you can test your changes
+with anyone other changes.
+
+To update from the `next` branch, from within your project directory, enter the following
+commands:
 
 1. `git fetch upstream next`
 2. `git rebase upstream/next`
 
 ## Squash Commits & More Complex Rebasing
 
-When creating a pull request in GitHub, you have the option to squash all commits, but sometimes you need to fix either the mess you made or some clashes that prevent a merge of the two branches.
+Before you [create a pull request in GitHub](https://github.com/Pelican-Elegant/elegant/pulls),
+you have the option to squash your commits into a single commit. This is often used to clean
+up a series of commits where you were experimenting with something or just had to fiddle with
+something to get it `just right`.
 
-In both cases, the following command is your Swiss-army knife:
+To squash and rebase your commits, use the following command:
 
-`git rebase --interactive upstream/master`
+```bash
+git rebase --interactive upstream/master
+```
 
-For more on the interactive rebase command of Git, see [its official documentation][git_rebase].
+!!! warning
 
-[git_rebase]: https://git-scm.com/docs/user-manual#interactive-rebase
-[elegant]: https://github.com/Pelican-Elegant/elegant
+    As with all knives, especially Swiss-army knives, please take caution.  Rebasing a repository after pushing one or more commits to another repository can be troublesome.
+
+For more on the interactive rebase command of Git, see [its official documentation](https://git-scm.com/docs/user-manual#interactive-rebase) and helper articles such as
+[this article](https://makandracards.com/makandra/527-squash-several-git-commits-into-a-single-commit).
