@@ -1,3 +1,4 @@
+---
 Title: Add Social Sharing Links
 Tags: pelican-theme, pelican-plugin, social-media
 Category: Supported Plugins
@@ -8,6 +9,7 @@ Subtitle:
 Summary: Elegant can be configured to provide Social Media sharing links for each of your articles. These links provide a simple way to share on various Social Media platforms while endeavoring to not track users in the process.
 Keywords: social networks, share posts,
 Authors: Talha Mansoor, Jack De Winter
+---
 
 No blog is complete without buttons or links that invites a reader to share your articles
 with the friend and colleagues on various social media sites. The problem with these buttons
