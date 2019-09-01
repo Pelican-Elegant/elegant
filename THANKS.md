@@ -19,6 +19,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://schnouki.net/"><img src="https://avatars3.githubusercontent.com/u/64833?v=4" width="100px;" alt="Thomas Jost"/><br /><sub><b>Thomas Jost</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=Schnouki" title="Code">💻</a></td>
     <td align="center"><a href="http://www.fladd.de/code"><img src="https://avatars3.githubusercontent.com/u/2971539?v=4" width="100px;" alt="Florian Krause"/><br /><sub><b>Florian Krause</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Afladd" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/alxpettit"><img src="https://avatars3.githubusercontent.com/u/28266167?v=4" width="100px;" alt="Alexandria"/><br /><sub><b>Alexandria</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=alxpettit" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/andrewdstrain"><img src="https://avatars1.githubusercontent.com/u/29258172?v=4" width="100px;" alt="Andy Strain"/><br /><sub><b>Andy Strain</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=andrewdstrain" title="Code">💻</a> <a href="#userTesting-andrewdstrain" title="User Testing">📓</a></td>
+    <td align="center"><a href="https://github.com/josephzjw"><img src="https://avatars2.githubusercontent.com/u/12767040?v=4" width="100px;" alt="josephzjw"/><br /><sub><b>josephzjw</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ajosephzjw" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 

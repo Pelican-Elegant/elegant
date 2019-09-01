@@ -101,6 +101,34 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "alxpettit",
+      "name": "Alexandria",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/28266167?v=4",
+      "profile": "https://github.com/alxpettit",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "andrewdstrain",
+      "name": "Andy Strain",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/29258172?v=4",
+      "profile": "https://github.com/andrewdstrain",
+      "contributions": [
+        "code",
+        "userTesting"
+      ]
+    },
+    {
+      "login": "josephzjw",
+      "name": "josephzjw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12767040?v=4",
+      "profile": "https://github.com/josephzjw",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

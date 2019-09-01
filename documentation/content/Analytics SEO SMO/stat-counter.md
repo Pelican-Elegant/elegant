@@ -25,7 +25,7 @@ that a website must have in order to use StatCounter.
 
     :::javascript
     <!-- Start of StatCounter Code for Default Guide -->
-    <script type="text/javascript">
+    <script>
     var sc_project=5555555;
     var sc_invisible=1;
     var sc_security="XXXXXXXX";

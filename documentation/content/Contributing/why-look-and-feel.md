@@ -57,5 +57,5 @@ that regularly appear in the right sidebar include:
 - Published time
 - [Reading Time]({filename}../Supported Plugins/reading-time.md)
 - [Series section]({filename}../Supported Plugins/multi-part-plugin.md)
-- ["Stay in Touch" icons]({filename}../Connecting With Your Readers/social-profiles-sidebar.md)
+- ["Stay in Touch" icons]({filename}../Connecting With Your Readers/social-profiles-sidebar-svg.md)
 - Tags

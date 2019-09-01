@@ -13,7 +13,6 @@ PATH = "content"
 # Regional Settings
 TIMEZONE = "Asia/Karachi"
 DATE_FORMATS = {"en": "%b %d, %Y"}
-DEFAULT_LANG = "en"
 
 # Plugins and extensions
 MARKDOWN = {
@@ -56,6 +55,10 @@ USE_FOLDER_AS_CATEGORY = False
 ARTICLE_URL = "{slug}"
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
+TAGS_URL = "tags"
+CATEGORIES_URL = "categories"
+ARCHIVES_URL = "archives"
+SEARCH_URL = "search"
 
 # Feeds
 AUTHOR_FEED_ATOM = None
@@ -65,11 +68,14 @@ CATEGORY_FEED_RSS = None
 
 # Social
 SOCIAL = (
-    ("Github", "https://github.com/Pelican-Elegant/"),
+    ("Github", "https://github.com/Pelican-Elegant/", "Elegant Github Repository"),
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
+    (
+        "Calendar",
+        "https://github.com/Pelican-Elegant/elegant/milestones",
+        "Elegant Project Roadmap",
+    ),
 )
-
-CLAIM_BING = "BC16AEBED17872F083B3E1E7A67454BD"
 
 # Elegant theme
 STATIC_PATHS = ["theme/images", "images", "extra/_redirects"]
@@ -180,3 +186,4 @@ AUTHORS = {
     },
 }
 DISQUS_FILTER = True
+UTTERANCES_FILTER = True

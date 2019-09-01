@@ -1,5 +1,5 @@
 ---
-Title: Comments - Collapse Comments Section
+Title: Comments -- Collapse Comments Section
 Tags: interaction
 Date: 2013-08-27 23:20
 comments: false
