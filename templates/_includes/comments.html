@@ -28,30 +28,29 @@
 
     <div class="accordion" id="accordion2">
         <div class="accordion-group">
+            <input type="checkbox" checked id="comment-accordion-toggle-checkbox">
             <div class="accordion-heading">
-                <input type="checkbox" id="disqus-chkbx" checked>
-                <label class="accordion-toggle comment-count"
+                <label class="accordion-toggle"
                    {%if use_disqus %}
                    data-disqus-identifier="{{ identifier }}"
                    {% endif %}
-                   for="disqus-chkbx"
+                   for="comment-accordion-toggle-checkbox"
                    id="comment-accordion-toggle">
-                   <span>Comments</span>
                 </label>
-                <div id="comment_thread" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <div class="comments">
-                            {% if use_disqus %}
-                            <div id="disqus_thread"></div>
-                            {% from '_includes/disqus_scripts.html' import comments_script_disqus with context %}
-                            {{ comments_script_disqus(DISQUS_SITENAME, identifier , url) }}
-                            {% endif %}
+            </div>
+            <div id="comment_thread" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div class="comments">
+                        {% if use_disqus %}
+                        <div id="disqus_thread"></div>
+                        {% from '_includes/disqus_scripts.html' import comments_script_disqus with context %}
+                        {{ comments_script_disqus(DISQUS_SITENAME, identifier , url) }}
+                        {% endif %}
 
-                            {% if use_utterances %}
-                            {% from '_includes/utterances_scripts.html' import comments_script_utterances with context %}
-                            {{ comments_script_utterances(UTTERANCES_REPO, identifier, UTTERANCES_LABEL, UTTERANCES_THEME) }}
-                            {% endif %}
-                        </div>
+                        {% if use_utterances %}
+                        {% from '_includes/utterances_scripts.html' import comments_script_utterances with context %}
+                        {{ comments_script_utterances(UTTERANCES_REPO, identifier, UTTERANCES_LABEL, UTTERANCES_THEME) }}
+                        {% endif %}
                     </div>
                 </div>
             </div>

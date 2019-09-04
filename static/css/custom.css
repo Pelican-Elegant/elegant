@@ -1,33 +1,53 @@
-/* Accordion */
-.navbar-inner {
-  list-style: none;
-}
-.navbar-inner .container-fluid input[type=checkbox],
-.accordion-group .accordion-heading input[type=radio],
-.accordion-group .accordion-heading input[type=checkbox] {
-  position: absolute;
+/* Top, right navigation button */
+input[type=checkbox]#btn-navbar-checkbox {
   opacity: 0;
-  z-index: -1;
+  float: right;
+  position: relative;
+  left: -43px;
+  top: 2px;
+  height: 30px;
+  width: 38px;
 }
-.navbar-inner .container-fluid input[type=checkbox] ~ .collapse,
-.accordion-group .accordion-heading input[type=checkbox] ~ .collapse {
-  height: auto;
-}
-.navbar-inner .container-fluid input[type=checkbox]:checked ~ .collapse,
-.accordion-group .accordion-heading input[type=checkbox]:checked ~ .collapse {
-  height: 0;
-}
-.accordion-group .accordion-heading input[type=radio]: ~ .collapse {
-  height: 0;
-}
-.accordion-group .accordion-heading input[type=radio]:checked ~ .collapse {
+
+input[type=checkbox]#btn-navbar-checkbox:not(:checked) ~ .collapse {
   height: auto;
 }
 
-/* Disqus Text Contents */
-.accordion-group .accordion-heading input[type=checkbox]:checked ~ #comment-accordion-toggle::before {
-  content: 'Comments';
+/* fix label settings for accordion */
+.accordion-toggle label {
+  font-size: unset;
+  font-weight: unset;
+  line-height: unset;
+  margin-bottom: unset;
 }
-.accordion-group .accordion-heading input[type=checkbox] ~ #comment-accordion-toggle::before {
-  content: 'Click here to hide comments';
+
+/* radio type accordion */
+.accordion .accordion-group input[type=radio] {
+  display: none;
+}
+
+.accordion .accordion-group input[type=radio] ~ .collapse {
+  height: 0;
+}
+
+.accordion .accordion-group input[type=radio]:checked ~ .collapse {
+  height: auto;
+}
+
+/* checkbox type accordion */
+.accordion .accordion-group input[type=checkbox] {
+  display: none;
+}
+
+.accordion .accordion-group input[type=checkbox]:not(:checked) ~ .collapse {
+  height: auto;
+}
+
+/* Disqus comment text */
+input[type=checkbox]#comment-accordion-toggle-checkbox:not(:checked) ~ .accordion-heading #comment-accordion-toggle::before {
+  content: "Click here to hide comments";
+}
+
+input[type=checkbox]#comment-accordion-toggle-checkbox:checked ~ .accordion-heading #comment-accordion-toggle::before {
+  content: "Comments";
 }
