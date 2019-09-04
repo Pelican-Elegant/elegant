@@ -1,3 +1,4 @@
+---
 Title: Advanced Configuration for an Image Gallery Article
 Tags: pelican-theme, pelican-plugin, photo gallery
 Category: Supported Plugins
@@ -6,6 +7,8 @@ Slug: how-to-use-photos-plugin-advanced
 Subtitle:
 Summary: Elegant can be configured to provide a simple display of a series of images, usually photos. Instead of asking the author to manually add a link for each photo, this feature provides basic gallery behavior at low cost to the author.
 Keywords: photos, gallery, photogallery
+Authors: Talha Mansoor, Jack De Winter
+---
 
 [TOC]
 

@@ -1,3 +1,4 @@
+---
 Title: How To Improve the Download Time For Your Pages
 Tags: pelican-theme, pelican-plugin, page-speed
 Category: Supported Plugins
@@ -8,6 +9,7 @@ Subtitle:
 Summary: Pelican can be configured to compile multiple assets for your website into one single asset. When these assets are combined together, they are reduce to only their necessary components, and can be fetched by the browser in a single call.
 Keywords:
 Authors: Talha Mansoor, Jack De Winter
+---
 
 When a webpage is created, webpage authors and static page generators will often grab
 low-level asset files from a trusted location. Between Pelican and Elegant, these files will
