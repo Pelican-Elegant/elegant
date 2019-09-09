@@ -1,12 +1,6 @@
 /* Top, right navigation button */
 input[type=checkbox]#btn-navbar-checkbox {
-  opacity: 0;
-  float: right;
-  position: relative;
-  left: -43px;
-  top: 2px;
-  height: 30px;
-  width: 38px;
+  display: none;
 }
 
 input[type=checkbox]#btn-navbar-checkbox:not(:checked) ~ .collapse {
