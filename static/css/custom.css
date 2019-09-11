@@ -15,6 +15,10 @@ input[type=checkbox]#btn-navbar-checkbox:not(:checked) ~ .collapse {
   margin-bottom: unset;
 }
 
+.accordion .accordion-group .accordion-heading label {
+  margin-bottom: initial;
+}
+
 /* radio type accordion */
 .accordion .accordion-group input[type=radio] {
   display: none;

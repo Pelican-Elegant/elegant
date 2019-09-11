@@ -45,12 +45,12 @@ All categories of the {{ SITENAME|striptags|e }} blog.
             <div class="accordion-group">
                 <input type="radio" name="all-categories-radio" id="{{ category.slug }}" onclick="closeRadio(this);">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle list-of-categories" href="#{{ category.slug }}-ref">
                     <label for="{{ category.slug }}">
+                    <a class="accordion-toggle list-of-categories" href="#{{ category.slug }}-ref">
                         {% set num = articles|count %}
                         {{ category }}<span>{{ num }}</span>
-                    </label>
                     </a>
+                    </label>
                 </div>
                 <div id="{{ category.slug }}-ref" class="accordion-body collapse">
                     <div class="accordion-inner">
