@@ -1,9 +1,9 @@
 /* Top, right navigation button */
-input[type=checkbox]#btn-navbar-checkbox {
+input[type="checkbox"]#btn-navbar-checkbox {
   display: none;
 }
 
-input[type=checkbox]#btn-navbar-checkbox:not(:checked) ~ .collapse {
+input[type="checkbox"]#btn-navbar-checkbox:not(:checked) ~ .collapse {
   height: auto;
 }
 
@@ -20,32 +20,36 @@ input[type=checkbox]#btn-navbar-checkbox:not(:checked) ~ .collapse {
 }
 
 /* radio type accordion */
-.accordion .accordion-group input[type=radio] {
+.accordion .accordion-group input[type="radio"] {
   display: none;
 }
 
-.accordion .accordion-group input[type=radio] ~ .collapse {
+.accordion .accordion-group input[type="radio"] ~ .collapse {
   height: 0;
 }
 
-.accordion .accordion-group input[type=radio]:checked ~ .collapse {
+.accordion .accordion-group input[type="radio"]:checked ~ .collapse {
   height: auto;
 }
 
 /* checkbox type accordion */
-.accordion .accordion-group input[type=checkbox] {
+.accordion .accordion-group input[type="checkbox"] {
   display: none;
 }
 
-.accordion .accordion-group input[type=checkbox]:not(:checked) ~ .collapse {
+.accordion .accordion-group input[type="checkbox"]:not(:checked) ~ .collapse {
   height: auto;
 }
 
 /* Disqus comment text */
-input[type=checkbox]#comment-accordion-toggle-checkbox:not(:checked) ~ .accordion-heading #comment-accordion-toggle::before {
+input[type="checkbox"]#comment-accordion-toggle-checkbox:not(:checked)
+  ~ .accordion-heading
+  #comment-accordion-toggle::before {
   content: "Click here to hide comments";
 }
 
-input[type=checkbox]#comment-accordion-toggle-checkbox:checked ~ .accordion-heading #comment-accordion-toggle::before {
+input[type="checkbox"]#comment-accordion-toggle-checkbox:checked
+  ~ .accordion-heading
+  #comment-accordion-toggle::before {
   content: "Comments";
 }
