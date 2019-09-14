@@ -62,14 +62,10 @@
 
 {% macro comments_script() %}
 <script>
-    (function () {
-        if (window.location.hash.match(/^#comment-\d+$/)) {
-            $('#comment_thread').collapse('show');
-        }
-    })();
-    window.onhashchange=function(){
-        if (window.location.hash.match(/^#comment-\d+$/))
-            window.location.reload(true);
+window.addEventListener('load', (event) => {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        document.getElementById('comment-accordion-toggle-checkbox').checked = false;
     }
+});
 </script>
 {% endmacro %}
