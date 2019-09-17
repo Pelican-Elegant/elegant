@@ -8,8 +8,8 @@ Category: Components
 authors: Talha Mansoor
 ---
 
-Pelican lets you define title of your article in the meta data. Elegant adds
-subtitle support. Just define `subtitle` in your article's meta data and it
+Pelican lets you define title of your article in the metadata. Elegant adds
+subtitle support. Just define `subtitle` in your article's metadata and it
 will appear along with your title. Here is an example,
 
 ![Article subtitle

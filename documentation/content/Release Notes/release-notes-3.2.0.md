@@ -12,9 +12,9 @@ Category: Release Notes
 
 ### Bug Fixes
 
-- **freelists:** open FreeLists subscription form in a new tab ([f81657c](https://github.com/Pelican-Elegant/elegant/commit/f81657c))
-- **freelists:** replace deprecated subscription form with button ([9bfe3c1](https://github.com/Pelican-Elegant/elegant/commit/9bfe3c1)), closes [#412](https://github.com/Pelican-Elegant/elegant/issues/412)
-- **freelists:** remove unused include ([27f0831](https://github.com/Pelican-Elegant/elegant/commit/27f0831))
+- **freelists:** open FreeLists subscription form in a new tab ([f81657c](https://github.com/Pelican-Elegant/elegant/commit/f81657c)) <!-- yaspeller ignore -->
+- **freelists:** replace deprecated subscription form with button ([9bfe3c1](https://github.com/Pelican-Elegant/elegant/commit/9bfe3c1)), closes [#412](https://github.com/Pelican-Elegant/elegant/issues/412) <!-- yaspeller ignore -->
+- **freelists:** remove unused include ([27f0831](https://github.com/Pelican-Elegant/elegant/commit/27f0831)) <!-- yaspeller ignore -->
 
 ### Features
 
