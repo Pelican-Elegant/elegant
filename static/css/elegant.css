@@ -145,6 +145,15 @@ td.code {
 div.highlight {
   margin-bottom: 20px;
 }
+table.highlighttable {
+  border: none;
+}
+table.highlighttable td {
+  border: none;
+}
+table.highlighttable tbody > tr:nth-child(odd) > td {
+  background-color: transparent;
+}
 /* Tags */
 .list-of-tags {
   font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
