@@ -44,5 +44,5 @@ To try out Elegant, you don't need to install anything. Just visit different pag
 
 ## Want to Contribute?
 
-- [Invitation to Participate]({filename}/Contributing/inviation.md)
+- [Invitation to Participate]({filename}/Contributing/invitation.md)
 - [How Do I Contribute?]({filename}/Contributing/contributing-to-the-project.md)
