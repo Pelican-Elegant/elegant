@@ -1,6 +1,6 @@
 ---
 Title: How does modified metadata works
-Tags: web-design, meta-data, date
+Tags: web-design, metadata, date
 Category: Advanced Features
 Date: 2014-04-19 14:52
 Slug: how-does-modified-metadata-works

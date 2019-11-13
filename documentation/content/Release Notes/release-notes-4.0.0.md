@@ -36,23 +36,22 @@ Category: Release Notes
 - **admonition:** add box shadow ([246f826](https://github.com/Pelican-Elegant/elegant/commit/246f826))
 - **admonition:** border color should match the title color ([1adadbe](https://github.com/Pelican-Elegant/elegant/commit/1adadbe))
 - **admonition:** increase contrast of title ([7fb82cc](https://github.com/Pelican-Elegant/elegant/commit/7fb82cc))
-- **admonition:** use svg image instead of font-awesome icon ([e7c4029](https://github.com/Pelican-Elegant/elegant/commit/e7c4029)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
+- **admonition:** use svg image instead of font-awesome icon ([e7c4029](https://github.com/Pelican-Elegant/elegant/commit/e7c4029)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487) <!-- yaspeller ignore -->
 - **clean url:** support clean URL for search page ([088791e](https://github.com/Pelican-Elegant/elegant/commit/088791e))
 - **comments:** add support for utterances comment system ([a2151cc](https://github.com/Pelican-Elegant/elegant/commit/a2151cc)), closes [#288](https://github.com/Pelican-Elegant/elegant/issues/288)
 - **quotes:** improve style and remove font-awesome for quote icon ([9ef3ac8](https://github.com/Pelican-Elegant/elegant/commit/9ef3ac8)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
 - **social:** add icons for 7 more websites ([8dcf8fa](https://github.com/Pelican-Elegant/elegant/commit/8dcf8fa)), closes [#494](https://github.com/Pelican-Elegant/elegant/issues/494)
-- **social:** use svg icons instead of font-awesome ([19f458b](https://github.com/Pelican-Elegant/elegant/commit/19f458b))
+- **social:** use svg icons instead of font-awesome ([19f458b](https://github.com/Pelican-Elegant/elegant/commit/19f458b)) <!-- yaspeller ignore -->
 - **table:** add style rule to make tables pop out ([6a8500b](https://github.com/Pelican-Elegant/elegant/commit/6a8500b)), closes [#440](https://github.com/Pelican-Elegant/elegant/issues/440)
 
 ### Performance Improvements
 
-- **admonition:** add attributes to svg images ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60))
+- **admonition:** add attributes to svg images ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60)) <!-- yaspeller ignore -->
 - **requests:** remove font awesome ([7c20145](https://github.com/Pelican-Elegant/elegant/commit/7c20145)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
 
 ### BREAKING CHANGES
 
-- **requests:** We have removed font awesome. Now we use svg images for all icons. This will result
-  in one less web request, which in turn will improve your websites performance.
+- **requests:** We have removed font awesome. Now we use svg images for all icons. This will result in one less web request, which in turn will improve your websites performance. <!-- yaspeller ignore -->
 - **social:** Style customization and configuration of social icons
   in the sidebar has changed.
   New icons have better colors and bigger sizes.

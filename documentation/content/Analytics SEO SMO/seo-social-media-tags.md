@@ -23,7 +23,7 @@ social media.
 
 ## Social Media Optimization (SMO)
 
-Inspired by the post ["What is the New SEO? Pubcon 2013
+Inspired by the post ["What is the New SEO? Pubcon 2013 <!-- yaspeller ignore -->
 Takeaways"](https://medium.com/on-startups/f15264e5d790), I looked into the
 tags that social media sites use. They can be broadly divided into two
 categories, [Open Graph protocol](http://ogp.me/) and [Twitter

@@ -12,7 +12,7 @@ Elegant has setup [gulp.js](https://gulpjs.com/) and [BrowserSync](https://www.b
 
 You need to run following steps only once, to setup the LiveReload using gulp.
 
-### Step 1: Install NodeJS and Yarn
+### Step 1: Install NodeJS and Yarn <!-- yaspeller ignore -->
 
 Install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/en/docs/install) on your system.
 
@@ -78,7 +78,11 @@ You can test website on a slower network connection. To access open <http://loca
 
 ## Is gulp.js necessary to use?
 
-We have plans to use gulp.js to utilize tools like PostCSS and Autoprefixer, in future. Currently we use gulp.js to watch for file changes.
+We have plans to use gulp.js to utilize tools like
+PostCSS <!-- yaspeller ignore -->
+and
+Autoprefixer <!-- yaspeller ignore -->
+, in future. Currently we use gulp.js to watch for file changes.
 
 Pelican helper scripts does not watch for file changes. BrowserSync only watches the files that it servers, i.e. HTML, CSS and JS files. This means you need an external tool like gulp.js to watch Markdown and Jinja2 files.
 

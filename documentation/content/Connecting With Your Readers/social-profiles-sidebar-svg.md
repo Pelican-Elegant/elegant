@@ -28,7 +28,9 @@ Elegant displays the widget in the sidebar. Each icon is a link to a social
 media profile with an optional title attribute. Icons use muted color which
 changes when user hovers over them.
 
-Here is an example of hovering over LinkedIn icon.
+Here is an example of hovering over
+LinkedIn <!-- yaspeller ignore -->
+icon.
 
 <img style="width: 177px; height: 201px"
 src="{static}/images/social-profiles-sidebar-hover-linkedin-2019-08-12.png" alt="Hover over LinkedIn in the Sidebar" />

@@ -69,7 +69,7 @@ thread without invoking any of the multiprocessing code.
 
 Once the configuration for Photo Gallery is enabled in the configuration file, using this
 feature for a given article requires that the article contains the `gallery`
-[metadata]({filename}../Advanced Features/meta-data.md) field value.
+[metadata]({filename}../Advanced Features/metadata.md) field value.
 
 The text assigned to the `gallery` metadata field is the location of the directory where the
 images to be displayed resides. This location is relative to the article in which the

@@ -18,13 +18,13 @@ will automatically filter the list.
 
 For example, this is how my tags page looks like
 
-![Tags view
-unfiltered]({static}/images/elegant-theme_tags-live-filter-default.png)
+![Tags view unfiltered]({static}/images/elegant-theme_tags-live-filter-default.png)
 
-As soon as I type "os", all other tags are filtered out
+As soon as I type
+"os", <!-- yaspeller ignore -->
+all other tags are filtered out
 
-![Tags view filtered for
-"os"]({static}/images/elegant-theme_tags-live-filter-filtered.png)
+![Tags view filtered for "os"]({static}/images/elegant-theme_tags-live-filter-filtered.png) <!-- yaspeller ignore -->
 
 With live filter, your reader will have no difficulty in picking up his desired
 tag from the list, even if your site has hundreds of tags.

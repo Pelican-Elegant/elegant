@@ -5,7 +5,7 @@ Category: Components
 Date: 2013-11-05 17:36
 Slug: display-line-numbers-in-code-snippets
 Summary: reStructuredText and Markdown have directives that generate line numbers for code blocks. Use them to display line numbers in code snippets.
-Keywords: codehilite, python-markdown
+Keywords: code-snippets, python-markdown
 authors: Talha Mansoor
 ---
 
@@ -33,8 +33,10 @@ markup. Use `linenos` flag to switch on line numbers for the snippet.
 ## Markdown
 
 [Python-Markdown](https://github.com/Python-Markdown/markdown/) uses
-[CodeHilite](https://python-markdown.github.io/extensions/code_hilite/)
-extension for syntax highlighting. Setup CodeHilite, then use Shebang `!#` to
+[CodeHilite](https://python-markdown.github.io/extensions/code_hilite/) <!-- yaspeller ignore -->
+extension for syntax highlighting. Setup
+CodeHilite <!-- yaspeller ignore -->
+, then use Shebang `!#` to
 generate line numbers.
 
     :::markdown

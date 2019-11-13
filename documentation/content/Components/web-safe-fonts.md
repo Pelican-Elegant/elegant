@@ -10,6 +10,11 @@ authors: Talha Mansoor
 Elegant uses commonly available typefaces in every style rule. It has a list of
 closely matching fonts in the fallback list.
 
-For examples Baskerville is the
-first choice for headings. But if reader does not have Baskerville installed,
-Garamond will be used. If that too fails then Georgia will be used.
+For examples
+Baskerville <!-- yaspeller ignore -->
+is the
+first choice for headings. But if reader does not have
+Baskerville <!-- yaspeller ignore -->
+installed,
+Garamond <!-- yaspeller ignore -->
+will be used. If that too fails then Georgia will be used.

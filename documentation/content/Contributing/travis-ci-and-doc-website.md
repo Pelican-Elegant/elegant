@@ -19,7 +19,9 @@ comment_id: travis-ci-and-doc-website
 
 [Elegant](https://github.com/Pelican-Elegant/elegant) theme for pelican has been undergoing a big change from individual-driven effort to community, as part of this, one of the tasks to accomplish, has been the decoupling from author blog to project site for documentation.
 
-As we wanted this process to be both automated and allowed us to demonstrate via dogfooding that the theme works and how it looks, the idea was to automate the rendering of pelican website with new documents.
+As we wanted this process to be both automated and allowed us to demonstrate via
+dogfooding <!-- yaspeller ignore -->
+that the theme works and how it looks, the idea was to automate the rendering of pelican website with new documents.
 
 # Under the hood
 

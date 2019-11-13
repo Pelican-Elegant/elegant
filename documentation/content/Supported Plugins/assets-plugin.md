@@ -82,7 +82,9 @@ replaced with a line like:
 
 If you are developing a new feature (for the theme or for your own website), you may need to
 add a new CSS file to make sure that it renders properly on the webpage. Elegant ships with
-the ability support minification of CSS files through the `minify_css.html` file. This file
+the ability support
+minification <!-- yaspeller ignore -->
+of CSS files through the `minify_css.html` file. This file
 is located in the `templates/_includes` directory of the theme and has the following
 contents:
 

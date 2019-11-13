@@ -12,7 +12,7 @@ Authors: Jack De Winter
 
 [TOC]
 
-Once you have decided to [contribute to the project]({filename}./inviation.md), we need to
+Once you have decided to [contribute to the project]({filename}./invitation.md), we need to
 go over some rules and guidelines before you can start. These rules and guidelines help us
 work together as a team and give us a common set of directions that keep us all on the same
 page. In the case of any disagreements on what needs to be done, we can always refer to the
@@ -192,8 +192,8 @@ sure that the submitted changes are solid.
 - [Pre-commit]({filename}./pre-commit.md) on the project source
 - [yaspeller]({filename}./ya-spell-check.md) on the project source
 - publish for the documentation site
-- [w3c_validator](https://pypi.org/project/Online-W3C-Validator/) on the documentation site
-- [html5validator](https://pypi.org/project/html5validator/) on the documentation site
+- [w3c_validator](https://pypi.org/project/Online-W3C-Validator/) on the documentation site <!-- yaspeller ignore -->
+- [html5validator](https://pypi.org/project/html5validator/) on the documentation site <!-- yaspeller ignore -->
 
 More information on how our team uses Travis CI is detailed
 [in this article]({filename}./travis-ci-and-doc-website.md).
