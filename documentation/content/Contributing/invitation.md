@@ -39,7 +39,7 @@ If using the Elegant theme and reading this invitation inspires you to contribut
 the addition of your creativity to our team. No coding skills are required to volunteer to
 help with Elegant. The theme is mostly composed of templates written in
 [Jinja](http://jinja.pocoo.org/) utilizing
-[metadata]({filename}../Advanced Features/meta-data.md) associated with each article. We are
+[metadata]({filename}../Advanced Features/metadata.md) associated with each article. We are
 confident that if you want to help, we can get you up and running in no time!
 
 ## Where Do I Start?

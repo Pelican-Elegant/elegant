@@ -16,9 +16,9 @@ Authors: Jack De Winter
 
 Elegant is theme that is largely inspired by the following articles/tweets:
 
-- [Nicholas Carr's Experiments in delinkification](http://www.roughtype.com/?p=1378)
-- [Neha Narula response to Carr's Article](https://pdos.csail.mit.edu/~neha/hyperlinks/main-no.html)
-- [Collection of responses to Carr's Article](https://aroundthesphere.wordpress.com/2010/06/08/give-your-blog-posts-some-ritalin/)
+- [Nicholas Carr's Experiments in delinkification](http://www.roughtype.com/?p=1378) <!-- yaspeller ignore -->
+- [Neha Narula response to Carr Article](https://pdos.csail.mit.edu/~neha/hyperlinks/main-no.html) <!-- yaspeller ignore -->
+- [Collection of responses to Carr Article](https://aroundthesphere.wordpress.com/2010/06/08/give-your-blog-posts-some-ritalin/) <!-- yaspeller ignore -->
 
 In the first source, Nicholas makes a solid argument that embedded hyperlink tags,
 <a href="http://www.roughtype.com/?p=1378">such as this one</a>, break the reader's
@@ -30,7 +30,9 @@ From his article:
 > Even if you don’t click on a link, your eyes notice it, and your frontal cortex has to fire up a bunch of neurons to decide whether to click or not. You may not notice the little extra cognitive load placed on your brain, but it’s there and it matters. People who read hypertext comprehend and learn less, studies show, than those who read the same material in printed form. The more links in a piece of writing, the bigger the hit on comprehension.
 
 Inspired by the article, the Elegant theme was created as an extension of the suggestions in
-the Carr article combined with some of the concerns of the responses. Allowing the user a
+the
+Carr <!-- yaspeller ignore -->
+article combined with some of the concerns of the responses. Allowing the user a
 clean flow of reading through the body of the article is considered the highest priority for
 Elegant theme decisions.
 
@@ -57,5 +59,5 @@ that regularly appear in the right sidebar include:
 - Published time
 - [Reading Time]({filename}../Supported Plugins/reading-time.md)
 - [Series section]({filename}../Supported Plugins/multi-part-plugin.md)
-- ["Stay in Touch" icons]({filename}../Connecting With Your Readers/social-profiles-sidebar-svg.md)
+- ["Stay in Touch" icons]({filename}../Connecting With Your Readers/social-profiles-sidebar-svg.md) <!-- yaspeller ignore -->
 - Tags
