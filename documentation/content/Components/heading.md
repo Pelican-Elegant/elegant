@@ -3,7 +3,6 @@ Tags: style, typography
 Category: Components
 Date: 2019-12-01 10:38
 Slug: headings-style
-comment_id: 3tb82h9vziuw-headings-style
 Subtitle:
 Summary:
 Keywords:
