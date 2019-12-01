@@ -5,9 +5,10 @@ import { exec } from "child_process";
 import { create as browserSyncCreate } from "browser-sync";
 const browserSync = browserSyncCreate();
 
-const content_404 = fs.readFileSync(
-  path.join(__dirname, "documentation/output/404.html")
-);
+const path404 = path.join(__dirname, "documentation/output/404.html");
+const content_404 = () =>
+  fs.existsSync(path404) ? fs.readFileSync(path404) : null;
+
 
 const buildAll = () => exec("cd documentation && invoke build");
 
@@ -28,7 +29,7 @@ const reload = cb => {
     },
     (_, bs) => {
       bs.addMiddleware("*", (_, res) => {
-        res.write(content_404);
+        res.write(content_404());
         res.end();
       });
     }
