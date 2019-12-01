@@ -21,42 +21,24 @@ h1 {
   border-bottom: var(--heading-border-bottom-width)
     var(--heading-border-bottom-style) darkgray;
 }
-h1 code {
-  font-size: 2.5rem;
-}
 h2 {
   font-size: 2.5rem;
   border-bottom: var(--heading-border-bottom-width)
     var(--heading-border-bottom-style) silver;
-}
-h2 code {
-  font-size: 2rem;
 }
 h3 {
   border-bottom: var(--heading-border-bottom-width)
     var(--heading-border-bottom-style) lightgray;
   font-size: 2.3rem;
 }
-h3 code {
-  font-size: 1.8rem;
-}
 h4 {
   font-size: 2rem;
-}
-h4 code {
-  font-size: 1.6rem;
 }
 h5 {
   font-size: 1.8rem;
 }
-h5 code {
-  font-size: 1.4rem;
-}
 h6 {
   font-size: 1.6rem;
-}
-h6 code {
-  font-size: 1.2rem;
 }
 h1,
 h2,
@@ -67,6 +49,14 @@ h4,
 h5,
 h6 {
   line-height: 1.1em;
+}
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+  font-size: 80%;
 }
 h1 small,
 h2 small,
