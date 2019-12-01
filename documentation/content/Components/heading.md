@@ -3,6 +3,7 @@ Tags: style, typography
 Category: Components
 Date: 2019-12-01 10:38
 Slug: headings-style
+Authors: Talha Mansoor
 Subtitle:
 Summary:
 Keywords:
