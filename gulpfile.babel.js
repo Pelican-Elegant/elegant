@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { watch, parallel } from "gulp";
+import { watch, parallel, series } from "gulp";
 import { exec } from "child_process";
 import { create as browserSyncCreate } from "browser-sync";
 const browserSync = browserSyncCreate();
@@ -9,6 +9,7 @@ const path404 = path.join(__dirname, "documentation/output/404.html");
 const content_404 = () =>
   fs.existsSync(path404) ? fs.readFileSync(path404) : null;
 
+const cleanOutput = () => exec("cd documentation && rm -rf outout/");
 
 const buildAll = () => exec("cd documentation && invoke build");
 
@@ -53,7 +54,7 @@ const watchFiles = () => {
   );
 };
 
-const elegant = parallel(watchFiles, reload);
+const elegant = series(cleanOutput, buildAll, parallel(watchFiles, reload));
 
 exports.elegant = elegant;
 exports.default = elegant;
