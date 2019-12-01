@@ -282,8 +282,8 @@ blockquote p {
   font-size: inherit;
 }
 .page-header {
-  border-bottom: 1px solid #8f8686;
-  color: #8b0000;
+  border-bottom: 2px solid maroon;
+  color: maroon;
   margin: 10px 10px 20px;
   padding: 5px;
 }
