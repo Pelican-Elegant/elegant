@@ -27,7 +27,6 @@ MARKDOWN = {
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
-    "assets",
     "extract_toc",
     "just_table",
     "liquid_tags.img",
