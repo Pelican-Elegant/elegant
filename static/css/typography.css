@@ -1,3 +1,10 @@
+:root {
+  --heading-border-bottom-width: 1px;
+  --heading-border-bottom-style: solid;
+  /* Headings that are not inside article. Like in sidebar are "others" */
+  --heading-others-line-height: 1.3rem;
+  --heading-others-h4-font-size: 1.1rem;
+}
 h1,
 h2,
 h3,
@@ -7,6 +14,67 @@ h6 {
   font-family: Baskerville, Garamond, Georgia, "DejaVu Serif", "Times New Roman",
     Times, Serif;
   font-weight: normal;
+  margin: 10px 0px;
+}
+h1 {
+  font-size: 3rem;
+  border-bottom: var(--heading-border-bottom-width)
+    var(--heading-border-bottom-style) darkgray;
+}
+h1 code {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+  border-bottom: var(--heading-border-bottom-width)
+    var(--heading-border-bottom-style) silver;
+}
+h2 code {
+  font-size: 2rem;
+}
+h3 {
+  border-bottom: var(--heading-border-bottom-width)
+    var(--heading-border-bottom-style) lightgray;
+  font-size: 2.3rem;
+}
+h3 code {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h4 code {
+  font-size: 1.6rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+h5 code {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+h6 code {
+  font-size: 1.2rem;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.3em;
+}
+h4,
+h5,
+h6 {
+  line-height: 1.1em;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 70%;
 }
 h1 small,
 h1 a,
@@ -31,4 +99,18 @@ h6 a:hover {
 }
 small.subtitle {
   font-style: italic;
+}
+h1#my-projects,
+h1#recent-posts {
+  border: none;
+  font-size: 2.4rem;
+  line-height: var(--heading-others-line-height);
+}
+nav h4 {
+  font-size: var(--heading-others-h4-font-size);
+  line-height: var(--heading-others-line-height);
+}
+section#article-sidebar h4 {
+  font-size: var(--heading-others-h4-font-size);
+  line-height: var(--heading-others-line-height);
 }
