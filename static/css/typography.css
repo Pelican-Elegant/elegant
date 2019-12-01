@@ -96,11 +96,8 @@ h1#recent-posts {
   font-size: 2.4rem;
   line-height: var(--heading-others-line-height);
 }
+section#article-sidebar h4,
 nav h4 {
-  font-size: var(--heading-others-h4-font-size);
-  line-height: var(--heading-others-line-height);
-}
-section#article-sidebar h4 {
   font-size: var(--heading-others-h4-font-size);
   line-height: var(--heading-others-line-height);
 }
