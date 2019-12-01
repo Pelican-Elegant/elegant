@@ -101,14 +101,14 @@ pre {
   word-wrap: normal;
 }
 td.code .highlight pre {
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 td.code {
   width: 100%;
 }
 .linenodiv pre {
   background-color: #eee8d5;
-  border-radius: 3px 0 0 3px;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
   color: #657b83;
 }
 div.highlight {
@@ -137,7 +137,7 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
 }
 .list-of-tags a {
   background: #eee;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   color: #222;
   margin: 2px;
   padding: 3px 6px;
@@ -516,7 +516,7 @@ a#allposts:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   background-color: #f7f7f9;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   border: 1px solid #e1e1e8;
   color: #d14;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -612,7 +612,7 @@ table thead:first-child tr:first-child > th:first-child {
 
 table thead:first-child tr:first-child > th:last-child {
   -webkit-border-top-right-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  border-top-right-adius: var(--border-radius);
   -moz-border-radius-topright: 6px;
 }
 
