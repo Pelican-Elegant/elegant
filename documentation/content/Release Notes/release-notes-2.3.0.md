@@ -24,7 +24,7 @@ We are also planning to automate our release process. We have made several chang
 
 ## Features
 
-- New: FontAwesome updated to version 4.7.0
+- New: FontAwesome updated to version 4.7.0 <!-- yaspeller ignore -->
 - New: `Photos` plugin support for photo gallery creation
 - New: Lightbox support for `Photos` plugin
 - Fixed: Amazon One Link div is in the header
@@ -40,7 +40,7 @@ We are also planning to automate our release process. We have made several chang
 - New: Add spell check for every pull request, and `master` and `next` branches
 - New: Add git hooks to format the code
 - New: Add commit Zen support
-- New: Add html5validator, which along with w3c_validator, makes for two html validation tools in the CI
+- New: Add html5validator, which along with w3c_validator, makes for two html validation tools in the CI <!-- yaspeller ignore -->
 - New: Improve CI build times
 - Remove: peru for downloading plugins and themes
 - New: Add pull request template

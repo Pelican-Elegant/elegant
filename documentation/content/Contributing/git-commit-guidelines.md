@@ -1,111 +1,150 @@
 ---
 Title: Git Commit Guidelines
 Subtitle: Mandatory
-Date: 2019-07-20 23:17
 Slug: git-commit-guidelines
 Category: Contributing
-Authors: Talha Mansoor
+Tags:
+Date: 2019-07-20 23:17
+Summary: Elegant has a mandatory Git commit message format that is described here.
+Keywords:
+Authors: Talha Mansoor, Jack De Winter
 ---
 
 [TOC]
 
-Elegant release process is [fully automated]({filename}./automated-release.md). It only works if all commit messages adhere to the set rules.
+The Elegant release process is [fully automated]({filename}./automated-release.md). To make
+this work, all commit message must adhere to a given set of rules.
 
-Why?
+## Why Have Commit Message Rules?
+
+From the [semantic-release project](https://github.com/semantic-release/semantic-release#commit-message-format):
 
 > semantic-release uses the commit messages to determine the type of changes in the codebase. Following formalized conventions for commit messages, semantic-release automatically determines the next semantic version number, generates a changelog and publishes the release.
 
-Basically, semantic-release goes through the commit messages, parses them and on its bases makes the decisions of publishing new release and new version number.
+What does that mean? It means that semantic-release parses the commit messages to arrive
+at a unbiased version number for a new release, and then creates that new release. This
+allows for a new release to be put together with little human involvement.
 
-What are those rules?
+## What are those rules?
 
-Elegant development team chose to use [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
+The Elegant development team chose to use the
+[Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+as the baseline for the team's commit message conventions.
 
-Following portion is largely derived from their [guidelines](https://gist.github.com/stephenparish/9941e89d80e2bc58a153).
+Our conventions are largely derived from the Angular team's guidelines
+[as documented here](https://gist.github.com/stephenparish/9941e89d80e2bc58a153).
 
-!!! Tip "Use Commitizen"
+### Is There Something to Help Me With The Rules?
 
-    Reading, understanding and then getting used to following guidelines may take sometime.
+Reading, understanding, and then getting used to following guidelines may take time. Even
+then, if you are in a hurry, you can sometimes forget what the rules are. It's only human.
 
-    Make your life easier and [use Commitizen for Git commits]({filename}./commitizen.md).
-    It automatically formats the commit message to conform to our guidelines.
+Our team has found life easier since we started using
+[Commitizen for Git commits]({filename}./commitizen.md).
+Our project includes configuration for Commitizen that automatically formats each commit
+message to conform to our guidelines by walking you through a series of prompts. When you
+finish those prompts, a new commit messages is authored for you with the information from those
+prompts, following all of the rules in the following sections on the Commit Message Format.
+
+!!! tip
+
+    [Use Commitizen for Git commits]({filename}./commitizen.md).  It does make life easier.   It automatically formats the commit message to conform to our guidelines.
 
 ## Commit Message Format
 
-Each commit message consists of a **header**, a **body** and a **footer**. The header has a special
-format that includes a **type**, a **scope** and a **subject**:
+Each line of the commit message must be shorter than 101 characters! This allows the message
+to be easier to read on GitHub as well as in various git tools.
+
+Each commit message consists of a **header**, a **body** and a **footer**, as follows:
 
 ```text
-<type>(<scope>): <subject>
+<header>
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
 
-The **header** is mandatory and the **scope** of the header is optional.
+### Header
 
-Any line of the commit message cannot be longer 100 characters! This allows the message to be easier
-to read on GitHub as well as in various git tools.
+The header is mandatory. It has a special format that includes a required **type**, an
+optional **scope** and a required **subject**:
 
-## Header
+```text
+<type>(<scope>): <subject>
+```
 
-### Revert Commits
+#### Type
 
-If the commit reverts a previous commit, it should begin with `revert:`, followed by the header
-of the reverted commit.
-In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit
-being reverted.
-
-### Type
-
-Must be one of the following:
+The type must be one of the following:
 
 - **feat**: A new feature
 - **fix**: A bug fix
 - **docs**: Documentation only changes
-- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing
-  semi-colons, etc)
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)
 - **refactor**: A code change that neither fixes a bug nor adds a feature
 - **perf**: A code change that improves performance <!-- yaspeller ignore -->
 - **test**: Adding missing or correcting existing tests
-- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
-  generation
+- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
+- **revert**: A revert to a previous commit. See the section [Revert Commits](#revert-commits) below.
 
-### Scope
+#### Scope
 
-The scope could be anything specifying place of the commit change. For example, `authors` if the change is about Elegant [authors blurb]({filename}../Supported Plugins/author-blurbs.md) feature or `home` if it refers to [landing page]({filename}../Components/landing-page.md).
+The scope is intended to provide extra context on the changes included in the commit is for.
+This context should provide useful information to someone reading the commit log, including
+the reading of the commit log in the release notes.
 
-## Subject Text
+For example, if you fix something in the
+[authors blurb]({filename}../Supported Plugins/author-blurbs.md) section, a scope of `authors` would be appropriate. If you are changing something with how the
+[landing page]({filename}../Components/landing-page.md)
+works, a scope of `landing page` or `home` would be appropriate.
 
-1.  use imperative, present tense: "change" not "changed" nor "changes" not "changing"
-1.  don't capitalize first letter
-1.  no dot (.) at the end
+#### Subject
 
-### What is Imperative mode
+The subject part of the header must follow these rules:
 
-[Here](https://chris.beams.io/posts/git-commit/#imperative) is a very good explanation of imperative mode.
+1. always use the imperative, present tense: "change" not "changed", "changes", or "changing"
+1. do not capitalize the first letter
+1. no period (`.`) at the end of the line
+
+##### What is Imperative mode?
+
+Chris Beams, in his article on
+[how to write a good commit message](https://chris.beams.io/posts/git-commit/#imperative),
+gives a very good explanation of imperative mode.
 
 > Imperative mood just means "spoken or written as if giving a command or instruction". A few examples:
 >
-> 1.  Clean your room
-> 1.  Close the door
-> 1.  Take out the trash
+> 1. Clean your room
+> 1. Close the door
+> 1. Take out the trash
 >
 > The imperative can sound a little rude; that's why we don't often use it. But it's perfect for Git commit subject lines.
 
-## Body
+#### Revert Commits
 
-1. just as in use imperative, present tense: “change” not “changed” nor “changes”
-1. includes motivation for the change and contrasts with previous behavior
+If the commit reverts a previous commit, it must be specified with the `revert` type, followed
+by the complete header of the reverted commit as the subject. The body of the commit must
+start with the text: `This reverts commit <hash>.`, where the hash is the SHA of the commit
+being reverted.
 
-## Footer
+### Body
+
+The body of the commit message must follow these rules:
+
+1. always use the imperative, present tense: "change" not "changed", "changes", or "changing"
+1. include your motivation for the change and how it contrasts with the previous behavior
 
 ### Breaking changes
 
-All breaking changes have to be mentioned in footer with the description of the change, justification and migration notes.
+All breaking changes have to be mentioned in the body with the description of the change,
+justification and migration notes. The body must be prefixed with the text `BREAKING CHANGE:`.
 
-Example,
+The following example is from the
+[Elegant project repository](https://github.com/Pelican-Elegant/elegant/commit/9b5b2eca2a34a5d9898173a8118cb5e37621dfd5).
+After the required prefix, it describes the problem it is solving, and why it was needed.
+In retrospect, while it does mention that `LANDING_PAGE_ABOUT` is no longer used, it should
+have gone into more detail on where to look up information on what was replacing it.
 
 ```text
 feat(home): write about me in markdown, reST or asciidoc
@@ -118,29 +157,33 @@ your configuration.
 Closes #85
 ```
 
-### Referencing issues
+### Footer
 
-Closed bugs should be listed on a separate line in the footer prefixed with "Closes" keyword like this:
+#### Referencing issues
+
+Closed bugs should be listed on a separate line in the footer prefixed with the `Closes`
+keyword.
 
 ```text
 Closes #234
 ```
 
-or in case of multiple issues:
+If your commit closes multiple issues, list them on the same line separated by a comma.
 
 ```text
 Closes #123, #245, #992
 ```
 
-In case your commit affects an issue, use "Updates" keyword
+If your commit affects an issue, but does not fix it completely, use the "Updates" keyword
 
 ```text
 Updates #234
 ```
 
-## Examples
+## Correct Message Format Examples
 
-Following are few example commits that shows how Elegant has uses these guidelines.
+The following are commits from our own repository that shows how Elegant has used these
+guidelines.
 
 ### New Features
 
@@ -175,7 +218,7 @@ ci(docs): add default tasks.py file
 refactor: move Google and Bing claims to their individual files
 ```
 
-## Examples of Incorrect Commit Messages
+## Incorrect Message Format Examples
 
 This commit message starts with a capital letter and ends with a period
 

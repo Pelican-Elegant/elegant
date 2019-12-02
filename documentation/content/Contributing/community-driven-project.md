@@ -1,13 +1,13 @@
 ---
 Title: Elegant grows into a community-led project
-Tags: project-management
-Category: Contributing
-Date: 2019-01-05 19:40
-Slug: community-led-project
 Subtitle: The beginning of a beautiful friendship
-Summary: Elegant has grown into a community-driven project. It also got a new website and organisational structure, culminating in its biggest release yet.
+Slug: community-led-project
+Category: Contributing
+Tags:
+Date: 2019-01-05 19:40
+Summary: Elegant has grown into a community-driven project. It also got a new website and organizational structure, culminating in its biggest release yet.
 Keywords:
-authors: Pablo Iranzo Gómez, Talha Mansoor, Matija Šuklje
+Authors: Pablo Iranzo Gómez, Talha Mansoor, Matija Šuklje
 ---
 
 [TOC]
@@ -16,7 +16,9 @@ authors: Pablo Iranzo Gómez, Talha Mansoor, Matija Šuklje
 
 [Talha Mansoor][talha131] published the first version of Elegant in 2012. It grew in popularity in a short time, due to its clean and functional style.
 
-In November 2018, [Matija Šuklje][silverhook] called Elegant's community into a [discussion about the future of the theme][future]. Response was immense. Talha was the first to support the proposal of changing the development model from a single-developer to a community-led project.
+In November 2018,
+[Matija Šuklje][silverhook] <!-- yaspeller ignore -->
+called Elegant's community into a [discussion about the future of the theme][future]. Response was immense. Talha was the first to support the proposal of changing the development model from a single-developer to a community-led project following the [bazaar development model](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar).
 
 [He][talha131] moved Elegant from a personal repository to a separate organization [Pelican-Elegant][elegant-org], and added active community members to the [team][team].
 
@@ -25,11 +27,12 @@ This way, the bus factor of the project has greatly improved.
 [team]: https://github.com/orgs/Pelican-Elegant/people
 [elegant-org]: https://github.com/Pelican-Elegant/
 [pelican]: https://getpelican.com
-[ashwinvis]: https://ashwinvis.github.io/
-[calfzhou]: http://gocalf.com
+
+[ashwinvis]: https://ashwinvis.github.io/ <!-- yaspeller ignore -->
+[calfzhou]: http://gocalf.com <!-- yaspeller ignore -->
 [talha131]: https://www.oncrashreboot.com
 [iranzo]: https://iranzo.github.io/
-[silverhook]: https://matija.suklje.name
+[silverhook]: https://matija.suklje.name <!-- yaspeller ignore -->
 [future]: https://github.com/talha131/pelican-elegant/issues/173
 
 ## New Governance Model

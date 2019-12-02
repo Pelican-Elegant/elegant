@@ -47,21 +47,21 @@ Thanks to all our contributors mentioned either at Authors document <https://git
 [milestone-2.0]: https://github.com/Pelican-Elegant/elegant/milestone/3?closed=1
 [milestone-1.3]: https://github.com/Pelican-Elegant/elegant/milestone/1?closed=1
 
-Up until [1.3 release][contrib_to-1.3], the only committer was [Talha Mansoor][talha131] with 357 commits.
+Up until [1.3 release][contrib_to-1.3], the only person to commit was [Talha Mansoor][talha131] with 357 commits.
 
 From 1.3 release until the [2.0 release][contrib_to-2.0] there were **316 new commits in total** and divided as follows (excluding merge commits):
 
 - [Talha Mansoor – "talha131"][talha131]: 264 commits
 - [Pablo Iranzo Gómez – "iranzo"][iranzo]: 8 commits
-- [Calf Zhou – "calfzhou"][calfzhou]: 7 commits
-- [Andrew Wegner – "AWegnerGitHub"][awegnergithub]: 6 commits
-- [Matija Šuklje – "silverhook"][silverhook]: 5 commits
-- [Jeremy Thurgood – "jerith"][jerith]: 1 commit
+- [Calf Zhou – "calfzhou"][calfzhou]: 7 commits <!-- yaspeller ignore -->
+- [Andrew Wegner – "AWegnerGitHub"][awegnergithub]: 6 commits <!-- yaspeller ignore -->
+- [Matija Šuklje – "silverhook"][silverhook]: 5 commits <!-- yaspeller ignore -->
+- [Jeremy Thurgood – "jerith"][jerith]: 1 commit <!-- yaspeller ignore -->
 - [Mobile Developer – "0x8BADFOOD"][0x8badfood]: 1 commit
-- [Leo Torres – "leotrs"][leotrs]: 1 commit
-- [Gan Shen – "gshen42"][gshen42]: 1 commit
-- [Gert van Dijk – "gertvdijk"][gertvdijk]: 1 commit
-- [Miguel Lechón – "debiatan"][debiatan]: 1 commit
+- [Leo Torres – "leotrs"][leotrs]: 1 commit <!-- yaspeller ignore -->
+- [Gan Shen – "gshen42"][gshen42]: 1 commit <!-- yaspeller ignore -->
+- [Gert van Dijk – "gertvdijk"][gertvdijk]: 1 commit <!-- yaspeller ignore -->
+- [Miguel Lechón – "debiatan"][debiatan]: 1 commit <!-- yaspeller ignore -->
 
 [contrib_to-1.3]: https://github.com/Pelican-Elegant/elegant/graphs/contributors?to=2013-10-11&type=c
 [contrib_to-2.0]: https://github.com/Pelican-Elegant/elegant/graphs/contributors?from=2013-10-12&to=2018-12-27&type=c
@@ -70,21 +70,24 @@ As we can clearly see, by any metric this is a huge milestone for Elegant.
 
 [pelican]: https://getpelican.com
 [awegnergithub]: https://andrewwegner.com
-[ashwinvis]: https://ashwinvis.github.io/
-[calfzhou]: http://gocalf.com
+
+[ashwinvis]: https://ashwinvis.github.io/ <!-- yaspeller ignore -->
+[calfzhou]: http://gocalf.com <!-- yaspeller ignore -->
 [talha131]: http://oncrashreboot.com
-[iranzo]: https://iranzo.github.io/
-[silverhook]: https://matija.suklje.name
-[jerith]: http://rhetoric.jerith.org/
+[iranzo]: https://iranzo.github.io/ <!-- yaspeller ignore -->
+[silverhook]: https://matija.suklje.name <!-- yaspeller ignore -->
+[jerith]: http://rhetoric.jerith.org/ <!-- yaspeller ignore -->
 [0x8badfood]: https://0x8badfood.github.io/blog/
 [leotrs]: http://leotrs.com/
-[gshen42]: https://gshen42.github.io/
-[gertvdijk]: https://blog.g3rt.nl/
+[gshen42]: https://gshen42.github.io/ <!-- yaspeller ignore -->
+[gertvdijk]: https://blog.g3rt.nl/ <!-- yaspeller ignore -->
 [debiatan]: https://blog.debiatan.net/
 
 # Highlights
 
-Most issues belonged to bugs and dependency updates, amongst the biggest:
+Most issues belonged to bugs and dependency updates,
+amongst <!-- yaspeller ignore -->
+the biggest:
 
 - support for HTTPS out of the box by making the links protocol agnostic
 - fix for search to work again

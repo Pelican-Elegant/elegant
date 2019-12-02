@@ -41,3 +41,8 @@ To top it of, it is the only theme with comprehensive documentation and an autom
 This site is a demonstration and documentation of Elegant theme.
 
 To try out Elegant, you don't need to install anything. Just visit different pages of this site. Try the search function. Check out our categories. What you see here is what you get.
+
+## Want to Contribute?
+
+- [Invitation to Participate]({filename}/Contributing/invitation.md)
+- [How Do I Contribute?]({filename}/Contributing/contributing-to-the-project.md)

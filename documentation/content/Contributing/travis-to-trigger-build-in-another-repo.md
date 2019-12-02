@@ -69,7 +69,9 @@ after_success:
 
 This installs Travis-CI utilities and runs a custom script 'trigger-build.js' with node, which in turn actually triggers Travis build.
 
-The script, downloaded from [Kamran Ayub blog](https://kamranicus.com/posts/2015-02-26-continuous-deployment-with-travis-ci) has been edited to specify the 'repository' we will trigger and the name of the environment variable containing the token:
+The script, downloaded from
+[Kamran Ayub blog](https://kamranicus.com/posts/2015-02-26-continuous-deployment-with-travis-ci) <!-- yaspeller ignore -->
+has been edited to specify the 'repository' we will trigger and the name of the environment variable containing the token:
 
 <!-- yaspeller ignore:start -->
 

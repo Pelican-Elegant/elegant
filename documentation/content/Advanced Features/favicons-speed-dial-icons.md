@@ -36,5 +36,6 @@ Your images should have these names,
 1. `apple-touch-icon.png`
 1. `favicon.ico`
 
-I highly recommend you to use [Iconifier.net](http://iconifier.net/) to
-generate the set of images.
+I highly recommend you to use
+[Iconifier.net](http://iconifier.net/) <!-- yaspeller ignore -->
+to generate the set of images.

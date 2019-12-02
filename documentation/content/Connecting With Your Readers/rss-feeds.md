@@ -4,15 +4,18 @@ Tags: pelican-theme, font-awesome, web-design
 Category: Connecting With Your Readers
 Date: 2014-03-17 15:28
 Slug: how-to-show-rss-feeds-icon
-Comment_id: ijvxwtg-how-to-show-rss-feeds-icon
+Comment_id: how-to-show-rss-feeds-icon
 Summary: Elegant supports RSS and Atom feeds for your posts, categories and tags
 authors: Talha Mansoor
 ---
 
 RSS feeds is the oldest and arguably the most used format to publish blog
-updates. Its use is not limited to RSS aggregators and readers. Tools like
+updates. Its use is not limited to RSS
+aggregators <!-- yaspeller ignore -->
+and readers. Tools like
 [IFTTT](https://ifttt.com/recipes?channel=feed) and
-[Calibre](http://manual.calibre-ebook.com/news.html) increases RSS feeds' power
+[Calibre](http://manual.calibre-ebook.com/news.html) <!-- yaspeller ignore -->
+increases RSS feeds' power
 and versatility by manifolds.
 
 To enable RSS feeds, see [Feed

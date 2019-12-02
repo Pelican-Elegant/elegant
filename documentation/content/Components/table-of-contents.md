@@ -71,29 +71,6 @@ This is the content of my sample blog post.
 I will end my example here.
 ```
 
-### Enabling Permalinks
-
-Although it is not required, we recommend you to take advantage of `permalink` option available for the
-`toc` extension.
-
-Enabling the `permalink` option will
-provide direct links to each section.
-
-![Permalinks example using Markdown]({static}/images/elegant-theme-toc-permalinks.png)
-
-To enable this option, you need to add the `'permalink': 'true'` property to the
-`'markdown.extensions.toc'` section that was added in the previous section.
-
-```python
-MARKDOWN = {
-  'extension_configs': {
-    'markdown.extensions.toc': {
-      'permalink': 'true',
-    }
-  }
-}
-```
-
 ### Other Options
 
 For other options available for the Markdown Table of Contents extension, refer to the

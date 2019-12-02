@@ -9,7 +9,7 @@
 - **clean URL:** default URL of categories, tags and archives fails on some servers ([3c7df6a](https://github.com/Pelican-Elegant/elegant/commit/3c7df6a)), closes [#280](https://github.com/Pelican-Elegant/elegant/issues/280) [#276](https://github.com/Pelican-Elegant/elegant/issues/276)
 - **comments:** W3C validation errors ([76a1f26](https://github.com/Pelican-Elegant/elegant/commit/76a1f26))
 - **disqus:** remove SITEURL condition to show Disqus comments section ([753d5a5](https://github.com/Pelican-Elegant/elegant/commit/753d5a5))
-- **lang:** do not override default value of DEFAULT_LANG set by Pelican ([d6c60c2](https://github.com/Pelican-Elegant/elegant/commit/d6c60c2))
+- **lang:** do not override default value of DEFAULT_LANG set by Pelican ([d6c60c2](https://github.com/Pelican-Elegant/elegant/commit/d6c60c2)) <!-- yaspeller ignore -->
 - **social:** reduce icon sizes in the sidebar ([c769ba3](https://github.com/Pelican-Elegant/elegant/commit/c769ba3))
 - **social:** use nofollow for social links in the sidebar ([50cff87](https://github.com/Pelican-Elegant/elegant/commit/50cff87))
 - **social:** W3C validation error ([ec4521e](https://github.com/Pelican-Elegant/elegant/commit/ec4521e))
@@ -27,23 +27,22 @@
 - **admonition:** add box shadow ([246f826](https://github.com/Pelican-Elegant/elegant/commit/246f826))
 - **admonition:** border color should match the title color ([1adadbe](https://github.com/Pelican-Elegant/elegant/commit/1adadbe))
 - **admonition:** increase contrast of title ([7fb82cc](https://github.com/Pelican-Elegant/elegant/commit/7fb82cc))
-- **admonition:** use svg image instead of font-awesome icon ([e7c4029](https://github.com/Pelican-Elegant/elegant/commit/e7c4029)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
+- **admonition:** use svg image instead of font-awesome icon ([e7c4029](https://github.com/Pelican-Elegant/elegant/commit/e7c4029)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487) <!-- yaspeller ignore -->
 - **clean url:** support clean URL for search page ([088791e](https://github.com/Pelican-Elegant/elegant/commit/088791e))
 - **comments:** add support for utterances comment system ([a2151cc](https://github.com/Pelican-Elegant/elegant/commit/a2151cc)), closes [#288](https://github.com/Pelican-Elegant/elegant/issues/288)
 - **quotes:** improve style and remove font-awesome for quote icon ([9ef3ac8](https://github.com/Pelican-Elegant/elegant/commit/9ef3ac8)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
 - **social:** add icons for 7 more websites ([8dcf8fa](https://github.com/Pelican-Elegant/elegant/commit/8dcf8fa)), closes [#494](https://github.com/Pelican-Elegant/elegant/issues/494)
-- **social:** use svg icons instead of font-awesome ([19f458b](https://github.com/Pelican-Elegant/elegant/commit/19f458b))
+- **social:** use svg icons instead of font-awesome ([19f458b](https://github.com/Pelican-Elegant/elegant/commit/19f458b)) <!-- yaspeller ignore -->
 - **table:** add style rule to make tables pop out ([6a8500b](https://github.com/Pelican-Elegant/elegant/commit/6a8500b)), closes [#440](https://github.com/Pelican-Elegant/elegant/issues/440)
 
 ### Performance Improvements
 
-- **admonition:** add attributes to svg iamges ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60))
+- **admonition:** add attributes to svg images ([a740a60](https://github.com/Pelican-Elegant/elegant/commit/a740a60)) <!-- yaspeller ignore -->
 - **requests:** remove font awesome ([7c20145](https://github.com/Pelican-Elegant/elegant/commit/7c20145)), closes [#487](https://github.com/Pelican-Elegant/elegant/issues/487)
 
 ### BREAKING CHANGES
 
-- **requests:** We have removed font awesome. Now we use svg images for all icons. This will result
-  in one less web request, which in turn will improve your websites performance.
+- **requests:** We have removed font awesome. Now we use svg images for all icons. This will result in one less web request, which in turn will improve your websites performance. <!-- yaspeller ignore -->
 - **social:** Style customization and configuration of social icons
   in the sidebar has changed.
 
@@ -58,7 +57,7 @@ New icons have better colors and bigger sizes.
 
 ### Bug Fixes
 
-- **freelists:** open FreeLists subscription form in a new tab ([f81657c](https://github.com/Pelican-Elegant/elegant/commit/f81657c))
+- **freelists:** open FreeLists subscription form in a new tab ([f81657c](https://github.com/Pelican-Elegant/elegant/commit/f81657c)) <!-- yaspeller ignore -->
 - **freelists:** replace deprecated subscription form with button ([9bfe3c1](https://github.com/Pelican-Elegant/elegant/commit/9bfe3c1)), closes [#412](https://github.com/Pelican-Elegant/elegant/issues/412)
 - **freelists:** remove unused include ([27f0831](https://github.com/Pelican-Elegant/elegant/commit/27f0831))
 
@@ -126,8 +125,8 @@ New icons have better colors and bigger sizes.
 - **footer:** open exit links in new tab ([8fd9f28](https://github.com/Pelican-Elegant/elegant/commit/8fd9f28))
 - **footer:** optionally show the host information ([9de2dab](https://github.com/Pelican-Elegant/elegant/commit/9de2dab))
 - **footer:** powered by message is always aligned to the right ([5e47b7c](https://github.com/Pelican-Elegant/elegant/commit/5e47b7c))
-- **footer:** remove fixed height by using flexbox for sticky footer ([d9d84e1](https://github.com/Pelican-Elegant/elegant/commit/d9d84e1))
-- **footer:** use flexbox instead of list for items in the footer ([bef7db9](https://github.com/Pelican-Elegant/elegant/commit/bef7db9))
+- **footer:** remove fixed height by using flexbox for sticky footer ([d9d84e1](https://github.com/Pelican-Elegant/elegant/commit/d9d84e1)) <!-- yaspeller ignore -->
+- **footer:** use flexbox instead of list for items in the footer ([bef7db9](https://github.com/Pelican-Elegant/elegant/commit/bef7db9)) <!-- yaspeller ignore -->
 - **onelink:** add Amazon Affiliate Disclosure ([cbfa6ac](https://github.com/Pelican-Elegant/elegant/commit/cbfa6ac))
 
 # Version 2.3.0
@@ -141,7 +140,7 @@ New icons have better colors and bigger sizes.
 
 ## Features
 
-- New: FontAwesome updated to version 4.7.0
+- New: FontAwesome updated to version 4.7.0 <!-- yaspeller ignore -->
 - New: `Photos` plugin support for photo gallery creation
 - New: Lightbox support for `Photos` plugin
 - Fixed: Amazon One Link div is in the header
@@ -242,7 +241,7 @@ New icons have better colors and bigger sizes.
 - Next and previous article navigation is placed below comments section so that article's content and comments appear together
 - Article title and site name in `<title>` tag is separated by `·` which is cleaner and more subtle than `-`
 - Subtitle of articles and pages is added in `<title>` tag along with main title
-- Description meta tag on Home Page uses `SITE_DESCRIPTION`
+- Description metadata tag on Home Page uses `SITE_DESCRIPTION`
 - Bug fix: Expand comments section if URL points to a comment
 - Bug fix: CSS style of links in an unordered list inside article content is different from article links
 
@@ -258,13 +257,13 @@ New icons have better colors and bigger sizes.
 # Version 1.1
 
 - Add template for pages. Pages do not have tags, category and Disqus comments
-- Keep style of a hyperlink in `modified` meta data consisted with the theme
-- Add `keywords` meta tag that uses keywords, tags and category attribute of articles and pages
+- Keep style of a hyperlink in `modified` metadata consisted with the theme
+- Add `keywords` metadata tag that uses keywords, tags and category attribute of articles and pages
 - Validate search form for empty strings
 - If `RECENT_ARTICLES_COUNT` is undefined, set it to 10. So that Pelican does not throw critical error
 - Bug fix: Path of search.html in search form action should always be absolute
-- Bug fix: Copyright meta tag should be set to the author, instead of the license
-- Bug fix: Close meta tags
+- Bug fix: Copyright metadata tag should be set to the author, instead of the license
+- Bug fix: Close metadata tags
 - Bug fix: ID of search form in 404 page should be different from the ID of search form in main navigation
 - Bug fix: Links in ordered list in an article do not conform to the link style in rest of the article
 

@@ -13,7 +13,7 @@ You can optionally define `SITE_LICENSE` variable in Pelican configuration. It w
 For example,
 
 ```python
-SITE_LICENSE = """Content licensed under <a rel="license"
+SITE_LICENSE = """Content licensed under <a rel="license nofollow noopener noreferrer"
     href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
     Creative Commons Attribution 4.0 International License</a>."""
 ```

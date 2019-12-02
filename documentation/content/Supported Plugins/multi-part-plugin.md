@@ -1,3 +1,4 @@
+---
 Title: Displaying a Series Information for Your Multipart Articles
 Tags: pelican-plugin, navigation, web-design
 Category: Supported Plugins
@@ -8,6 +9,7 @@ Subtitle:
 Summary: Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the series.
 Keywords:
 Authors: Talha Mansoor, Jack De Winter
+---
 
 When writing articles about certain topics, it is advantageous to split a single article into
 multiple articles. Without splitting the article up, the author would be forced to cram all
@@ -46,7 +48,7 @@ SERIES_TITLE = "More In This Series"
 
 Once the configuration for Series is enabled in the configuration file, using this feature for
 a given set of articles requires that the article contains the `series`
-[metadata]({filename}../Advanced Features/meta-data.md) field value.
+[metadata]({filename}../Advanced Features/metadata.md) field value.
 
 The text assigned to the `series` metadata field is the title of the series. When the page is
 created, Pelican provides Elegant with a list of all pages that have the same value for the

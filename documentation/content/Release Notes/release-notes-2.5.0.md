@@ -17,4 +17,4 @@ In this release we also resolved an issue in our automated release process. From
 
 ### Features
 
-- **comments:** replace disqus_identifier with comment_id ([3aa4e24](https://github.com/Pelican-Elegant/elegant/commit/3aa4e24))
+- **comments:** replace disqus_identifier with comment_id ([3aa4e24](https://github.com/Pelican-Elegant/elegant/commit/3aa4e24)) <!-- yaspeller ignore -->

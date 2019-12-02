@@ -17,8 +17,8 @@ social media profiles; inviting readers to engage with them else where on the
 web too. Most social widgets are loud and obtrusive. Their colors and placement
 takes away readers' attention from the actual content.
 
-<img class="align-right" style="width: 179px; height: 202px"
-src="{static}/images/social-profiles-sidebar-default-2019-08-12.png" alt="Social
+<img class="align-right" style="width: 35%;"
+src="{static}/images/social-profiles-sidebar-svg-default.png" alt="Social
 Profiles in the Sidebar" />
 
 Elegant understands the importance of readers engagement but it makes sure
@@ -26,18 +26,19 @@ not to push author's _"online social karma"_ down readers' throats.
 
 Elegant displays the widget in the sidebar. Each icon is a link to a social
 media profile with an optional title attribute. Icons use muted color which
-changes when user hovers over them.
+changes when user hovers over them. On hover, icon is also scaled up in size.
 
-Here is an example of hovering over LinkedIn icon.
+Here is an example of hovering over
+LinkedIn <!-- yaspeller ignore -->
+icon.
 
-<img style="width: 177px; height: 201px"
-src="{static}/images/social-profiles-sidebar-hover-linkedin-2019-08-12.png" alt="Hover over LinkedIn in the Sidebar" />
+<img style="width:35%;"
+src="{static}/images/social-profiles-sidebar-svg-hover-linkedin.png" alt="Hover over LinkedIn in the Sidebar" />
 
-Following image shows what each of them look like when user hovers over them.
+Following image shows these icons in color.
 
-<img style="width: 177px; height: 205px"
-src="{static}/images/social-profiles-sidebar-hover-2019-08-12.png" alt="Hover over all Social
-Profiles in the Sidebar" />
+<img style="width:35%;"
+src="{static}/images/social-profiles-sidebar-svg-hover.png" alt="Social Profiles in color" />
 
 These SVG icons are [Super Tiny](https://github.com/edent/SuperTinyIcons). Most of them have sizes less than 500 bytes, and none of them exceeds 1 K bytes in size. This gives you increased website speed.
 
