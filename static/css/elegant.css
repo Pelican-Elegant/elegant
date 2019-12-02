@@ -273,22 +273,6 @@ ul.multi-parts-list li.active-part {
 p#post-share-links {
   text-align: right;
 }
-/* Perma link in article */
-h1:hover > a.headerlink,
-h2:hover > a.headerlink,
-h3:hover > a.headerlink,
-h4:hover > a.headerlink,
-h5:hover > a.headerlink,
-h6:hover > a.headerlink,
-dt:hover > a.headerlink {
-  text-decoration: none;
-  visibility: visible;
-}
-a.headerlink {
-  color: grey;
-  padding-left: 0.5em;
-  visibility: hidden;
-}
 /* Categories */
 .list-of-categories span {
   font-size: 0.7em;
