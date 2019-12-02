@@ -1,8 +1,8 @@
-Title: Use PostCSS To Compile CSS Stylesheets
+Title: Use PostCSS To Compile CSS Style Sheets
 Tags: postcss, gulp
 Category: Contributing
 Date: 2019-12-01 23:13
-Slug: use-postcss-to-compile-css-stylesheets
+Slug: use-postcss-to-compile-css-style-sheets
 Subtitle: Mandatory
 Authors: Talha Mansoor
 Summary:
