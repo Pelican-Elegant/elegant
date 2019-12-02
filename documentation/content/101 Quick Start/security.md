@@ -14,5 +14,5 @@ We came to know about a potential security issue that involves, `target="_blank"
 
 You can read more about the issue and its fix at these links,
 
-1. [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
+1. [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/) <!-- yaspeller ignore -->
 1. [react/jsx-no-target-blank](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md)

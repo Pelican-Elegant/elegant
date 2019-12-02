@@ -4,6 +4,8 @@ Category: Release Notes
 Date: 2019-12-02 18:47
 Slug: version-500
 
+<!-- yaspeller ignore:start -->
+
 ## [5.0.0](https://github.com/Pelican-Elegant/elegant/compare/V4.0.0...V5.0.0) (2019-12-02)
 
 ### Bug Fixes
@@ -32,3 +34,4 @@ Slug: version-500
 
 - **links:** Style of muted links have been changed slightly. It is
   still muted but has modern animation.
+  <!-- yaspeller ignore:end -->
