@@ -1,0 +1,32 @@
+blockquote {
+  margin: 3em 0 3em 2em;
+  padding: 0 7px;
+  background: Cornsilk;
+  border-radius: var(--border-radius);
+  border-left: 5px solid goldenrod;
+}
+blockquote:before,
+blockquote:after {
+  font-size: 4em;
+  color: dimgray;
+  vertical-align: top;
+}
+blockquote:before {
+  content: open-quote;
+  margin-left: -0.8em;
+  position: absolute;
+}
+blockquote:after {
+  content: close-quote;
+  position: relative;
+  right: -97%;
+  top: 45px;
+}
+blockquote p {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-size: inherit;
+  font-variant: normal;
+  line-height: 1.7em;
+  text-transform: none;
+  font-weight: 300;
+}

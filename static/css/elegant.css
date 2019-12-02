@@ -195,31 +195,6 @@ div.recent-posts p {
 .article-content p {
   margin: 20px 0;
 }
-blockquote {
-  margin: 2em 0 0 2em;
-  padding: 0 0 0 7px;
-}
-blockquote:before {
-  content: open-quote;
-  vertical-align: top;
-  font-size: 4em;
-  margin-left: -0.8em;
-  color: #646464;
-  position: absolute;
-}
-blockquote:after {
-  visibility: hidden;
-  content: close-quote;
-}
-blockquote p {
-  display: inline;
-  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-  font-size: inherit;
-  font-variant: normal;
-  line-height: 1.7em;
-  text-transform: none;
-  font-weight: 300;
-}
 .article-content ul:not(.related-posts-list):not(.articles-timeline) {
   font-size: inherit;
   list-style-type: disc;
@@ -513,8 +488,6 @@ a#allposts:hover {
 }
 /* reST specific rules*/
 .literal {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   background-color: #f7f7f9;
   border-radius: var(--border-radius);
   border: 1px solid #e1e1e8;
@@ -588,8 +561,6 @@ table {
   border-collapse: separate;
   *border-collapse: collapse;
   border-left: 0;
-  -webkit-border-radius: var(--border-radius);
-  -moz-border-radius: var(--border-radius);
   border-radius: var(--border-radius);
 }
 
@@ -605,27 +576,19 @@ table thead:first-child tr:first-child th {
 }
 
 table thead:first-child tr:first-child > th:first-child {
-  -webkit-border-top-left-radius: var(--border-radius);
   border-top-left-radius: var(--border-radius);
-  -moz-border-radius-topleft: 6px;
 }
 
 table thead:first-child tr:first-child > th:last-child {
-  -webkit-border-top-right-radius: var(--border-radius);
-  border-top-right-adius: var(--border-radius);
-  -moz-border-radius-topright: 6px;
+  border-top-right-radius: var(--border-radius);
 }
 
 table tbody:last-child tr:last-child > td:first-child {
-  -webkit-border-bottom-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
-  -moz-border-radius-bottomleft: 6px;
 }
 
 table tbody:last-child tr:last-child > td:last-child {
-  -webkit-border-bottom-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
-  -moz-border-radius-bottomright: 6px;
 }
 
 table tbody > tr:nth-child(odd) > td {
