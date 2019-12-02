@@ -160,23 +160,6 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
     "Lucida Grande", "Lucida Sans", Arial, Sans-Serif;
 }
 /* Article */
-article p:not(#list-of-translations):not(#post-share-links) a,
-article ol a,
-blockquote a,
-article
-  div.article-content
-  ul:not(.articles-timeline):not(.related-posts-list)
-  a {
-  border-bottom: thin dashed #a9a9a9;
-  color: #000;
-}
-article p a:hover,
-article ol a:hover,
-article div.article-content ul:not(.articles-timeline) a:hover {
-  border-bottom: none;
-  text-decoration: none;
-  text-shadow: none;
-}
 .article-content,
 div.recent-posts p {
   font: 1.2em/1.6em "PT Serif", Georgia, "Times New Roman", Times, Serif;
@@ -358,14 +341,6 @@ div.recent-posts time,
 div.recent-posts-posted {
   color: #8f8f8f;
   font: 0.9em "PT Sans", "Helvetica Neue", Arial, Sans-Serif;
-}
-div.recent-posts-posted a {
-  color: inherit;
-  padding-left: 0.3em;
-}
-div.recent-posts-posted a:hover {
-  border-bottom: 1px dashed;
-  text-decoration: none;
 }
 div.recent-posts time {
   font-size: inherit;
