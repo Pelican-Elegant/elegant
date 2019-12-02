@@ -28,7 +28,6 @@ MARKDOWN = {
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "extract_toc",
-    "just_table",
     "liquid_tags.img",
     "neighbors",
     "related_posts",

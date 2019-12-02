@@ -119,7 +119,7 @@ def plugins_sync(c):
     # --recurse-submodules and --shallow-submodules switches
     # Do specify path in --recurse-submodules so that only relevant plugin is downloaded
     c.run(
-        "git clone --jobs 8 --depth 1 --recurse-submodules=just_table --shallow-submodules  https://github.com/getpelican/pelican-plugins.git plugins"
+        "git clone --jobs 8 --depth 1 --shallow-submodules  https://github.com/getpelican/pelican-plugins.git plugins"
     )
 
 
