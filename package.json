@@ -1,15 +1,19 @@
 {
   "name": "Pelican-Elegant",
   "devDependencies": {
-    "@semantic-release/changelog": "^3.0.4",
-    "@semantic-release/exec": "^3.3.5",
-    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/exec": "^3.3.8",
+    "@semantic-release/git": "^7.0.18",
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.26.7",
-    "cz-conventional-changelog": "2.1.0",
+    "cssnano": "^4.1.10",
+    "cz-conventional-changelog": "3.0.2",
     "gulp": "^4.0.2",
-    "semantic-release": "^15.13.18"
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "semantic-release": "^15.13.31"
   },
   "config": {
     "commitizen": {
@@ -20,5 +24,10 @@
     "presets": [
       "es2015"
     ]
-  }
+  },
+  "dependencies": {},
+  "browserslist": [
+    "defaults",
+    "IE 10"
+  ]
 }
