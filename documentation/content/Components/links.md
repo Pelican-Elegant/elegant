@@ -22,9 +22,9 @@ This style is very suitable for long-form articles. To read the rationale behind
 
 We understand not all links should be muted. Some links require attention.
 
-[Example Link - Use Firefox Browser](https://www.mozilla.org/en-US/firefox/new/){: class="ampl"} to support open web standards.
+[Example Link - Use Firefox Browser](https://www.mozilla.org/en-US/firefox/new/){: class="ampl"} to support open web standards. <!-- yaspeller ignore -->
 
-To use this style, you need to enable [Markdown attribute list extension](https://python-markdown.github.io/extensions/attr_list/){:class="ampl"}.
+To use this style, you need to enable [Markdown attribute list extension](https://python-markdown.github.io/extensions/attr_list/){:class="ampl"}. <!-- yaspeller ignore -->
 
 ```
 # Plugins and extensions
