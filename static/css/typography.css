@@ -15,56 +15,51 @@ h6 {
     Times, Serif;
   font-weight: normal;
   margin: 10px 0px;
+  & small {
+    font-style: italic;
+  }
 }
 h1 {
-  font-size: 3rem;
-  border-bottom: var(--heading-border-bottom-width)
-    var(--heading-border-bottom-style) darkgray;
+  font-size: 2.5rem;
 }
 h2 {
-  font-size: 2.5rem;
-  border-bottom: var(--heading-border-bottom-width)
-    var(--heading-border-bottom-style) silver;
+  font-size: 2.2rem;
 }
 h3 {
-  border-bottom: var(--heading-border-bottom-width)
-    var(--heading-border-bottom-style) lightgray;
-  font-size: 2.3rem;
-}
-h4 {
   font-size: 2rem;
 }
-h5 {
+h4 {
   font-size: 1.8rem;
 }
-h6 {
+h5 {
   font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.4rem;
 }
 h1,
 h2,
 h3 {
   line-height: 1.3em;
+  border-bottom: var(--heading-border-bottom-width)
+    var(--heading-border-bottom-style) lightgray;
+  & code {
+    font-size: 80%;
+  }
+  & small {
+    font-size: 70%;
+  }
 }
 h4,
 h5,
 h6 {
   line-height: 1.1em;
-}
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
-  font-size: 80%;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 70%;
+  & code {
+    font-size: 80%;
+  }
+  & small {
+    font-size: 80%;
+  }
 }
 h1 small,
 h1 a,
