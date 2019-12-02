@@ -1,17 +1,20 @@
+exclude: '^static/css/elegant.prod.css'
 fail_fast: true
 repos:
+- repo: meta
+  hooks:
+  - id: check-useless-excludes
 - repo: https://github.com/prettier/prettier
-  rev: master
+  rev: 1.19.1
   hooks:
   - id: prettier
     files: \.(css|js|md|markdown|json)
-    exclude: ^static/(tipuesearch|magnific|css/elegant.prod.css)
 - repo: https://github.com/python/black
-  rev: master
+  rev: 19.10b0
   hooks:
   - id: black
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: master
+  rev: v2.4.0
   hooks:
   - id: check-added-large-files
   - id: check-ast
