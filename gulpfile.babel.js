@@ -71,7 +71,7 @@ const rmProdCSS = cb => {
 const compileCSS = () => {
   const plugins = [
     // postcssPresetEnv comes with autoprefixer
-    postcssPresetEnv(),
+    postcssPresetEnv({ stage: 1 }),
     cssnano()
   ];
   return src([
