@@ -14,7 +14,7 @@ For example,
 
 ```python
 SITE_LICENSE = """Content licensed under <a rel="license"
-    href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+    href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="nofollow noopener noreferrer">
     Creative Commons Attribution 4.0 International License</a>."""
 ```
 
