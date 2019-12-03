@@ -39,6 +39,7 @@
         {% else %}
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.prod.css" media="screen">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/applause-button.css" media="screen">
         {% endif %}
         {% endblock head_links %}
         {% include '_includes/favicon_links.html' %}
@@ -102,6 +103,7 @@
         {% endif %}
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="{{ SITEURL }}/theme/applause-button/applause-button.js"></script>
         <script>
             function validateForm(query)
             {

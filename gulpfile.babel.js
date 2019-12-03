@@ -75,6 +75,7 @@ const compileCSS = () => {
     cssnano()
   ];
   return src([
+    "static/applause-button/applause-button.css",
     "static/tipuesearch/tipuesearch.css",
     "static/css/*.css",
     "!static/css/elegant.prod.css"
