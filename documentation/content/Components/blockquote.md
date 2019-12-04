@@ -10,7 +10,11 @@ Keywords:
 
 <!-- yaspeller ignore:start -->
 
-This is how blockquotes appear in the Elegant theme.
+A blockquote with a single paragraph.
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi.
+
+A blockquotes with multiple paragraph.
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tortor id aliquet lectus proin nibh nisl condimentum id.
 >
