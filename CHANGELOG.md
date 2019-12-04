@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/Pelican-Elegant/elegant/compare/V5.0.0...V5.0.1) (2019-12-04)
+
+### Bug Fixes
+
+- **blockquote:** close quote is not aligned properly ([80a85c7](https://github.com/Pelican-Elegant/elegant/commit/80a85c714a16cd01c53831347ac1f18b397dda1a))
+- **typography:** remove unit from line height ([10286a1](https://github.com/Pelican-Elegant/elegant/commit/10286a13fade3248cc752a3ac5416257920d07bf))
+
 # [5.0.0](https://github.com/Pelican-Elegant/elegant/compare/V4.0.0...V5.0.0) (2019-12-02)
 
 ### Bug Fixes
