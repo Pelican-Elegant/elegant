@@ -156,13 +156,13 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
     "Lucida Sans", Arial, Sans-Serif;
 }
 .articles-in-tag li {
-  font: 1.1em/1.6em "Trebuchet MS", Trebuchet, "Lucida Sans Unicode",
+  font: 1.1em/1.6 "Trebuchet MS", Trebuchet, "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, Sans-Serif;
 }
 /* Article */
 .article-content,
 div.recent-posts p {
-  font: 1.2em/1.6em "PT Serif", Georgia, "Times New Roman", Times, Serif;
+  font: 1.2em/1.6 "PT Serif", Georgia, "Times New Roman", Times, Serif;
   text-align: justify;
 }
 .article-content {
@@ -172,7 +172,7 @@ div.recent-posts p {
 div.recent-posts p {
   font-size: inherit;
   font-variant: normal;
-  line-height: 1.6em;
+  line-height: 1.6;
   text-transform: none;
 }
 .article-content p {
