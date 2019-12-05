@@ -15,6 +15,7 @@
   "ignoreUppercase": true,
   "maxRequests": 5,
   "dictionary": [
+    "ampl",
     "analytics",
     "AsciiDoc",
     "BestAzon",
