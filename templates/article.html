@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-{% set use_applause = APPLAUSE_BUTTON and not article.applause_button %}
-
 {% block title %}
 {{ article.title|striptags|e }} {%if article.subtitle %} - {{ article.subtitle|striptags|e }} {% endif %} · {{ super() }}
 {% endblock title %}
@@ -75,9 +73,8 @@
             </div>
             {% endif %}
 
-            {% if use_applause %}
-                <applause-button style="width: 50px; height: 50px;"/>
-            {% endif %}
+            {% from '_includes/applause_button.html' import applause_button with context %}
+            {{ applause_button(article) }}
             {% from '_includes/share_links.html' import share_links with context %}
             {{ share_links(article) }}
             {% from '_includes/article_author.html' import article_author with context %}
