@@ -3,9 +3,15 @@ APPLAUSE_BUTTON_FILTER with context %} {%if (not APPLAUSE_BUTTON_FILTER or
 article.applause_button_filter == "off") and article.applause_button_filter !=
 "on" %}
 
+{% set url = SITEURL+ '/' + article.url %}
+{% set identifier = SITEURL+ '/' + article.url %}
+{% if article.applause_button_id %}
+{% set identifier = article.applause_button_id %}
+{% endif %}
+
 <script src="{{ SITEURL }}/theme/applause-button/applause-button.js"></script>
 <div class="applause_button">
-  <applause-button> </applause-button>
+    <applause-button url={{identifier}}> </applause-button>
 </div>
 
 {% endif %} {% endmacro %}
