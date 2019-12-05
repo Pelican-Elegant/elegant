@@ -4,7 +4,8 @@
 {%if (not APPLAUSE_BUTTON_FILTER or article.applause_button_filter == "off") and article.applause_button_filter != "on" %}
 
 <script src="{{ SITEURL }}/theme/applause-button/applause-button.js"></script>
-<applause-button style="width: 50px; height: 50px;" />
+<applause-button>
+</applause-button>
 
 {% endif %}
 {% endmacro %}
