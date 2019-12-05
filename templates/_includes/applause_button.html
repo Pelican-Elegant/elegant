@@ -1,11 +1,11 @@
-{% macro applause_button(article) %}
-
-{% from '_includes/_defaults.html' import APPLAUSE_BUTTON_FILTER with context %}
-{%if (not APPLAUSE_BUTTON_FILTER or article.applause_button_filter == "off") and article.applause_button_filter != "on" %}
+{% macro applause_button(article) %} {% from '_includes/_defaults.html' import
+APPLAUSE_BUTTON_FILTER with context %} {%if (not APPLAUSE_BUTTON_FILTER or
+article.applause_button_filter == "off") and article.applause_button_filter !=
+"on" %}
 
 <script src="{{ SITEURL }}/theme/applause-button/applause-button.js"></script>
-<applause-button>
-</applause-button>
+<div class="applause_button">
+  <applause-button> </applause-button>
+</div>
 
-{% endif %}
-{% endmacro %}
+{% endif %} {% endmacro %}
