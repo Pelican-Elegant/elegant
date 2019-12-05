@@ -218,3 +218,9 @@ PROJECTS = [{
 {% else %}
 {% set SEARCH_URL = SEARCH_URL %}
 {% endif %}
+
+{% if not APPLAUSE_BUTTON %}
+{% set APPLAUSE_BUTTON = False %}
+{% else %}
+{% set APPLAUSE_BUTTON = APPLAUSE_BUTTON %}
+{% endif %}
