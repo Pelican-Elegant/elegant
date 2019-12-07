@@ -73,6 +73,8 @@
             </div>
             {% endif %}
 
+            {% from '_includes/applause_button.html' import applause_button with context %}
+            {{ applause_button(article) }}
             {% from '_includes/share_links.html' import share_links with context %}
             {{ share_links(article) }}
             {% from '_includes/article_author.html' import article_author with context %}
@@ -108,8 +110,7 @@
             </aside>
             {% endif %}
         </div>
-        <section>
-        <div class="span2" style="float:right;font-size:0.9em;">
+        <section id="article-sidebar" class="span2">
             {% include '_includes/post_stats.html' %}
             {% if article.date %}
             <h4>Published</h4>
@@ -140,7 +141,6 @@
             {{ mailchimp(article) }}
             {% from '_includes/freelists.html' import freelists with context %}
             {{ freelists(article) }}
-        </div>
         </section>
 </div>
 </article>

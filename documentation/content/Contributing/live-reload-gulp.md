@@ -1,5 +1,6 @@
 ---
 Title: LiveReload Elegant Documentation Using Gulp.js
+Tags: gulp
 Date: 2019-07-19 23:17
 Slug: live-reload-elegant-documentation-using-gulpjs
 Category: Contributing

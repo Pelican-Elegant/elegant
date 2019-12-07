@@ -129,6 +129,25 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "jean",
+      "name": "Jean Jordaan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/84800?v=4",
+      "profile": "https://github.com/jean",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "calfzhou",
+      "name": "calfzhou",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3761553?v=4",
+      "profile": "https://github.com/calfzhou",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

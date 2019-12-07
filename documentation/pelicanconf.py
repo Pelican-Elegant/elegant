@@ -21,15 +21,13 @@ MARKDOWN = {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {"permalink": "true"},
+        "markdown.extensions.toc": {"permalink": " "},
     }
 }
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
-    "assets",
     "extract_toc",
-    "just_table",
     "liquid_tags.img",
     "neighbors",
     "related_posts",
@@ -113,7 +111,7 @@ TWITTER_USERNAME = ""
 FEATURED_IMAGE = SITEURL + "/theme/images/apple-touch-icon-152x152.png"
 
 # Legal
-SITE_LICENSE = """Content licensed under <a rel="license"
+SITE_LICENSE = """Content licensed under <a rel="license nofollow noopener noreferrer"
     href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
     Creative Commons Attribution 4.0 International License</a>."""
 HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
