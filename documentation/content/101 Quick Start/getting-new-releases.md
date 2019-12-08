@@ -13,9 +13,13 @@ active development. The immediate benefit of this for you is that Elegant suppor
 recent technologies/services such as [Utterances](https://utteranc.es/) for comments and
 the [Applause button](https://applause-button.com/) for quick and simple user feedback.
 The other main benefits are that any requests, be they bug reports or feature requests,
-are logged in the project's Issues database. These are actively going through triage,
-then being worked on by the Elegant community. In addition, there is a roadmap of the
-planned work [available here](https://github.com/Pelican-Elegant/elegant/milestones).
+are logged in the project's Issues database.
+
+These issues are actively going through triage, being worked on by the Elegant community,
+and being addressed in ongoing releases of Elegant. In addition,
+[the roadmap](https://github.com/Pelican-Elegant/elegant/milestones) let's you see what
+the Elegant team is working on, allowing you to decide if you want to contribute and
+help bring some feature of the theme to life!
 
 To give you the control to decide whether to update your website and benefit from the
 latest version of Elegant, we offer two automated ways to find out about new releases.
@@ -33,9 +37,9 @@ and is only used to notify people when there are new version of Elegant availabl
 
 If you have any reservations about actively subscribing to a newsletter through a
 mailing list, you can passively subscribe to receive updates notices for Elegant by
-subscribing to the RSS feed for this website. By selecting the RSS Feed icon under
-`Stay In Touch`, your browser will handle the information according to any plugins
-present.
+subscribing to the RSS feed for this website using your browser. By selecting the RSS
+Feed icon under `Stay In Touch`, your browser will handle the information according to
+any plugins present in your browser.
 
 Most browsers will require you to install a plugin or extension to enable you to read and
 subscribe to the RSS feed. Without it, you will see a jumbled mess of text that is the
@@ -43,4 +47,4 @@ XML document that is presented to the RSS Feed plugins. Here are some of the plu
 that we recommend for the various browsers:
 
 - Chrome
-  - [RSS Subscription Extension (by Google)](https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd)
+  - Google's [RSS Subscription Extension](https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd)

@@ -2,15 +2,15 @@
 Title: Updating Elegant To the Latest Release
 Tags: pelican-theme, new-releases
 Category: 101 — Quick Start
-Date: 2019-12-05
+Date: 2019-12-06
 Slug: updating-elegant-to-the-latest-release
 Comment_id: qryv67o-updating-elegant-to-the-latest-release
 authors: Jack De Winter
 ---
 
 Once you have determined that you want to update to the latest release of Elegant, the
-process is usually quite simple. As there are two main ways to get the Elegant theme,
-there are two sets of directions.
+process is usually quite simple. There are wo main ways to get the Elegant theme: as
+a standalone repository and as part of the Pelican-Themes repository.
 
 ## Via a Standalone Repository
 
@@ -28,7 +28,7 @@ part of the path gets us to the theme part of the directory tree. It is possible
 leave the path at that, but it is recommended to add the `/Elegant` at the end as a
 reminder of the repository name.
 
-If the Elegant theme was "installed" in this manner, you can either update your local
+If the Elegant theme was installed in this manner, you can either update your local
 repository or recreate your repository as noted in the following two sections.
 
 ### Updating a Standalone Theme
@@ -51,8 +51,8 @@ version you pulled down with this command.
 If you are lucky, you will not reach a time where you believe, even a tiny bit, that you
 have messed up the contents of your theme repository. If you have made any changes to the
 base Elegant theme, it is inevitable that at some point you will need to reset the
-repository to a known good state. Assuming the repository is in the directory
-`../blog-theme/Elegant` as per the example above, executing the following command:
+repository to a known good state. Assuming that the repository is in the directory
+`../blog-theme/Elegant`, per the example above, executing the following command:
 
 ```bash
 rmdir -rf ../blog-theme/Elegant
@@ -94,14 +94,31 @@ Assuming the `blog-themes` directory is at the same level as your Pelican direct
 script removes the Elegant directory under the `blog-themes` directory, only to recreate
 it using the `git clone` command on the next line.
 
-## Using The Tasks Framework
+Note that this also has the benefit of updating your Elegant theme to the latest theme
+based on Elegant's repository, instead of relying on the Pelican-Themes repository.
+There is often a lag between when a release is made in Elegant's repository and when
+it is available "automatically" through the Pelican-Themes repository. By using this
+method of updating the repository, you keep the directory structure of the Pelican-Themes
+repository while making sure you have the latest release of Elegant.
 
-If you are using the TODO framework, then this work is already done for you by using the
-`theme_sync` task in `documentation/tasks.py`. This does make a couple of assumptions
-about where you are invoking the task from and where you have your themes stored. If
-you are okay with that, give it a try!
+### Using The Tasks Framework
 
+!!! warning "Windows Users"
+
+    The tasks framework is set up with commands for a Linux system. If you intend to use the tasks framework on your Windows system, a number of changes will be required.
+
+If you are using the Python `invoke` framework, then this work is already done for you by
+using the `theme_sync` task in `documentation/tasks.py` file. The `invoke` package can
+be installed in the usual manner:
+
+```bash
+pip install invoke
 ```
+
+Once installed, typing `invoke theme_sync` will execute that task as defined in the
+file `tasks.py` as follows:
+
+```Python
 @task
 def theme_sync(c):
     """Make a fresh shallow copy of pelican-elegant theme"""
@@ -110,3 +127,7 @@ def theme_sync(c):
         "git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git themes/elegant"
     )
 ```
+
+Note that this script makes a couple of assumptions about where you are invoking the
+task from and where you have your themes stored. If you are okay with that, give it a
+try!

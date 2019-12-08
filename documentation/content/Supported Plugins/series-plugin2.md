@@ -1,8 +1,8 @@
 ---
-Title: Displaying Series Information for Multi-Part Articles
+Title: Displaying Multi-Part Articles - Part 2
 Tags: pelican-plugin, navigation, web-design
 Category: Supported Plugins
-Date: 2019-12-06
+Date: 2019-12-08
 Slug: how-to-use-series-plugin-2
 Comment_id: 3ws2xke-how-to-use-series-plugin-2
 Subtitle:
@@ -12,6 +12,15 @@ Authors: Talha Mansoor, Jack De Winter
 series: Article Series
 series_index: 2
 ---
+
+## And Now Back to Your Regular Programming
+
+To show how this feature works, with a concrete example, this article was purposefully
+split into two parts. The first part of this article can be accessed by looking under
+the section labelled `Article Series` on the right toolbar. This `Part 1` article is
+displayed using normal text, while the following `Part 2` article is shown in an
+italicized text. Click on the `Part 1` article text on the right toolbar to go to the
+previous article.
 
 ## Article Metadata
 

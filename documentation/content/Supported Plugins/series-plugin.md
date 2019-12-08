@@ -1,8 +1,8 @@
 ---
-Title: Displaying Series Information for Multi-Part Articles
+Title: Displaying Multi-Part Articles - Part 1
 Tags: pelican-plugin, navigation, web-design
 Category: Supported Plugins
-Date: 2019-12-06
+Date: 2019-12-07
 Slug: how-to-use-series-plugin
 Comment_id: 3ws2xke-how-to-use-series-plugin
 Subtitle:
@@ -45,3 +45,12 @@ the Series section, regardless of the series.
 ```python
 SERIES_TITLE = "More In This Series"
 ```
+
+## To Be Continued
+
+To show how this feature works, with a concrete example, this article was purposefully
+split into two parts. The second part of this article can be accessed by looking under
+the section labelled `Article Series` on the right toolbar. This `Part 1` article is
+displayed using italicized text, while the following `Part 2` article is shown using
+normal text. Click on the `Part 2` article on the right toolbar to go to the next
+article.
