@@ -1,6 +1,7 @@
 ---
 Title: Displaying a Series Information for Your Multipart Articles
-Tags: pelican-plugin, navigation, web-design
+Subtitle: Deprecated
+Tags: pelican-plugin, navigation, web-design, deprecated
 Category: Supported Plugins
 Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin
@@ -12,7 +13,7 @@ Authors: Talha Mansoor, Jack De Winter
 ---
 
 !!! important "Deprecation"
-The `multi-part` plugin has been deprecated in favor of the `series` plugin. For an up-to-date article on using the `series` plugin, [go here]({filename}../Supported Plugins/series-plugin.md).
+The `multi-part` plugin has been deprecated in favor of the `series` plugin. For an up-to-date article on using the `series` plugin, [go here]({filename}./series-plugin.md).
 
 When writing articles about certain topics, it is advantageous to split a single article into
 multiple articles. Without splitting the article up, the author would be forced to cram all

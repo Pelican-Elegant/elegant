@@ -27,9 +27,9 @@ latest version of Elegant, we offer two automated ways to find out about new rel
 ## Subscribe to the email Newsletter
 
 Each of the article pages on this Elegant documentation website contain a section at
-the bottom of the right sidebar titled `Get New Release Alert`. By adding your email
-address in the box below and pressing the `Notify Me` button, you are signing up for our
-newsletter. This simple newsletter uses Elegant's support for
+the bottom of the right sidebar titled `Get New Release Alert`. By entering your email
+address in the box below and clicking on the `Notify Me` button, you are signing up for
+our newsletter. This simple newsletter uses Elegant's support for
 [MailChimp](https://mailchimp.com/), <!-- yaspeller ignore -->
 and is only used to notify people when there are new version of Elegant available.
 
@@ -39,12 +39,6 @@ If you have any reservations about actively subscribing to a newsletter through 
 mailing list, you can passively subscribe to receive updates notices for Elegant by
 subscribing to the RSS feed for this website using your browser. By selecting the RSS
 Feed icon under `Stay In Touch`, your browser will handle the information according to
-any plugins present in your browser.
-
-Most browsers will require you to install a plugin or extension to enable you to read and
-subscribe to the RSS feed. Without it, you will see a jumbled mess of text that is the
-XML document that is presented to the RSS Feed plugins. Here are some of the plugins
-that we recommend for the various browsers:
-
-- Chrome
-  - Google's [RSS Subscription Extension](https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd)
+any plugins present in your browser. Once this link is visible, simply copy it into
+your favorite RSS reader and you will be notified by that RSS reader when there is a
+new release.

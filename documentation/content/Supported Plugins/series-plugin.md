@@ -8,7 +8,7 @@ Comment_id: 3ws2xke-how-to-use-series-plugin
 Subtitle:
 Summary: Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the series.
 Keywords:
-Authors: Talha Mansoor, Jack De Winter
+Authors: Jack De Winter
 series: Article Series
 series_index: 1
 ---

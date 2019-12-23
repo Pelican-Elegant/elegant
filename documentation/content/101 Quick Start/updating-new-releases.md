@@ -12,6 +12,47 @@ Once you have determined that you want to update to the latest release of Elegan
 process is usually quite simple. There are wo main ways to get the Elegant theme: as
 a standalone repository and as part of the Pelican-Themes repository.
 
+## Via the Pelican-Themes Repository
+
+If you installed the Elegant theme as part of the Pelican-Themes repository, all of
+the themes available in that project will be located at a level one down from the
+directory where you installed the repository into. For example, if you installed
+the repository with the following command:
+
+```bash
+git clone --recursive https://github.com/getpelican/pelican-themes ../blog-themes
+cd ../blog-themes
+git submodule update --init elegant
+git submodule update --remote elegant
+```
+
+it installed every theme known to the project in the current directory where the command
+was executed from. Along with (at last count) 125 other themes, the Elegant theme is
+located under the `elegant` directory.
+
+## Replacing With the Pelican-Themes Repository
+
+The Elegant theme is included into the Pelican-Themes project by using a git concept
+called sub-modules. Because of the ways that sub-modules work, if you want to update
+one sub-module in a project, it is almost always desired to remove the sub-module that
+you want to update and clone it in again. This is accomplished with the following script:
+
+```bash
+rm -rf ../blog-themes/elegant
+git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git ../blog-themes/elegant
+```
+
+Assuming the `blog-themes` directory is at the same level as your Pelican directory, the
+script removes the Elegant directory under the `blog-themes` directory, only to recreate
+it using the `git clone` command on the next line.
+
+Note that this also has the benefit of updating your Elegant theme to the latest theme
+based on Elegant's repository, instead of relying on the Pelican-Themes repository.
+There is often a lag between when a release is made in Elegant's repository and when
+it is available "automatically" through the Pelican-Themes repository. By using this
+method of updating the repository, you keep the directory structure of the Pelican-Themes
+repository while making sure you have the latest release of Elegant.
+
 ## Via a Standalone Repository
 
 If you installed the Elegant theme as a standalone repository, you most likely followed
@@ -63,49 +104,11 @@ the clone directions in the example at the top of this section on standalone
 repositories to restore the Elegant theme directory to the same state as Elegant's
 master branch on GitHub.
 
-## Via the Pelican-Themes Repository
-
-If you installed the Elegant theme as part of the Pelican-Themes repository, all of
-the themes available in that project will be located at a level one down from the
-directory where you installed the repository into. For example, if you installed
-the repository with the following command:
-
-```bash
-git clone --recursive https://github.com/getpelican/pelican-themes ../blog-themes
-```
-
-it installed every theme known to the project in the current directory where the command
-was executed from. Along with (at last count) 125 other themes, the Elegant theme is
-located under the `elegant` directory.
-
-## Replacing With the Pelican-Themes Repository
-
-The Elegant theme is included into the Pelican-Themes project by using a git concept
-called sub-modules. Because of the ways that sub-modules work, if you want to update
-one sub-module in a project, it is almost always desired to remove the sub-module that
-you want to update and clone it in again. This is accomplished with the following script:
-
-```bash
-rm -rf ../blog-themes/elegant
-git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git ../blog-themes/elegant
-```
-
-Assuming the `blog-themes` directory is at the same level as your Pelican directory, the
-script removes the Elegant directory under the `blog-themes` directory, only to recreate
-it using the `git clone` command on the next line.
-
-Note that this also has the benefit of updating your Elegant theme to the latest theme
-based on Elegant's repository, instead of relying on the Pelican-Themes repository.
-There is often a lag between when a release is made in Elegant's repository and when
-it is available "automatically" through the Pelican-Themes repository. By using this
-method of updating the repository, you keep the directory structure of the Pelican-Themes
-repository while making sure you have the latest release of Elegant.
-
 ### Using The Tasks Framework
 
 !!! warning "Windows Users"
 
-    The tasks framework is set up with commands for a Linux system. If you intend to use the tasks framework on your Windows system, a number of changes will be required.
+    The tasks framework is set up with commands for a Linux system. If you intend to use the tasks framework on your Windows system, a number of changes will be required.  If you feel like helping us out with this, we will gladly accept a PR to address this!
 
 If you are using the Python `invoke` framework, then this work is already done for you by
 using the `theme_sync` task in `documentation/tasks.py` file. The `invoke` package can
