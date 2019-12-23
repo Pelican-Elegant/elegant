@@ -19,7 +19,7 @@ You can enable and disable the button site wide or on specific articles.
 
 Set `APPLAUSE_BUTTON` variable to `True` in your Pelican configuration.
 
-### Show Applause Button in all articles
+### Hide Applause Button in all articles
 
 Set `APPLAUSE_BUTTON` variable to `False` in your Pelican configuration. This is the default.
 
