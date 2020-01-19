@@ -9,7 +9,9 @@
         {% endif %}
         {% if CLAIM_BING %}
         {% include '_includes/claim_bing.html' with context %}
-
+        {% endif %}
+        {% if CLAIM_YANDEX %}
+        {% include '_includes/claim_yandex.html' with context %}
         {% endif %}
         {% if article and article.author %}
         <meta name="author" content="{{ article.author }}" />
