@@ -108,7 +108,8 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/28266167?v=4",
       "profile": "https://github.com/alxpettit",
       "contributions": [
-        "code"
+        "code",
+        "bug"
       ]
     },
     {
@@ -154,5 +155,6 @@
   "projectName": "elegant",
   "projectOwner": "Pelican-Elegant",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
