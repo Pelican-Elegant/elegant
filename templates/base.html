@@ -21,6 +21,26 @@
         <meta name="author" content="{{ AUTHOR }}" />
         {% endif %}
 
+        {% if not article %}
+        <!-- Fill in SITE_DESCRIPTION-->
+        {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
+        {% if SITE_DESCRIPTION %}
+        <meta property="og:description" content="{{SITE_DESCRIPTION|striptags|e}}" />
+         <meta name="description" content="{{SITE_DESCRIPTION|striptags|e}}">
+        {% endif %}
+
+        <!-- Fill in Site ICON-->
+        {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+        {% if FEATURED_IMAGE %}
+        <meta property="og:image" content="{{FEATURED_IMAGE}}" />
+        <meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+        {% endif %}
+
+        <!-- Fill in Site Keywords-->
+        <meta name="keywords" content="{% for tag, articles in tags|sort %} {{ tag }}, {% endfor %}" />
+
+        {% endif %}
+
         {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
         {% if SITE_DESCRIPTION %}
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
