@@ -7,7 +7,7 @@
 {% block meta_tags_in_head %}
 {{ super() }}
 {% from '_includes/_defaults.html' import LANDING_PAGE_TITLE with context %}
-{% if LANDING_PAGE_TITLE  %}
+{% if LANDING_PAGE_TITLE %}
 <meta property="og:title" content="{{ LANDING_PAGE_TITLE|e }}"/>
 <meta name="twitter:title" content="{{ LANDING_PAGE_TITLE|e }}">
 {% else %}
@@ -15,11 +15,6 @@
 <meta name="twitter:title" content="{{ SITENAME|striptags|e }}">
 {% endif %}
 <meta property="og:url" content="{{ SITEURL }}" />
-{% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
-{% if SITE_DESCRIPTION %}
-<meta property="og:description" content="{{SITE_DESCRIPTION|e}}" />
-<meta name="twitter:description" content="{{SITE_DESCRIPTION|e}}">
-{% endif %}
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
@@ -27,6 +22,7 @@
 <meta property="og:image" content="{{FEATURED_IMAGE}}" />
 <meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
 {% endif %}
+<meta name="keywords" content="{% for tag, _ in tags|sort %} {{ tag }}, {% endfor %}{% for category, _ in categories|sort %} {{ category }}, {% endfor %}" />
 {% endblock meta_tags_in_head %}
 
 {% block content %}
