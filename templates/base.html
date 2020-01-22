@@ -24,6 +24,7 @@
         {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
         {% if SITE_DESCRIPTION %}
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
+        <meta name="twitter:description" content="{% block head_description2 %}{{ SITE_DESCRIPTION|e }}{% endblock head_description2 %}">
         {% endif %}
         {% block meta_tags_in_head %}
         {% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
