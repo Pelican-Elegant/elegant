@@ -6,7 +6,7 @@
 
 {% block meta_tags_in_head %}
 {{ super() }}
-{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE with context %}
+{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE, FEATURED_IMAGE, SITE_DESCRIPTION with context %}
 {% if LANDING_PAGE_TITLE %}
 <meta property="og:title" content="{{ LANDING_PAGE_TITLE|e }}"/>
 <meta name="twitter:title" content="{{ LANDING_PAGE_TITLE|e }}">
@@ -17,18 +17,19 @@
 <meta property="og:url" content="{{ SITEURL }}" />
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
-{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
 <meta property="og:image" content="{{FEATURED_IMAGE}}" />
 <meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+{% endif %}
+{% if SITE_DESCRIPTION %}
+<meta property="og:description" content="{{SITE_DESCRIPTION|e}}" />
+<meta name="twitter:description" content="{{SITE_DESCRIPTION|e}}">
 {% endif %}
 <meta name="keywords" content="{% for tag, _ in tags|sort %} {{ tag }}, {% endfor %}{% for category, _ in categories|sort %} {{ category }}, {% endfor %}" />
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE with context %}
-{% from '_includes/_defaults.html' import PROJECTS with context %}
-{% from '_includes/_defaults.html' import PROJECTS_TITLE with context %}
+{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE, PROJECTS, PROJECTS_TITLE with context %}
 
 {% set landing_page = namespace(page=false) %}
 {% for p in hidden_pages if p.slug == "landing-page-about-hidden" %}
