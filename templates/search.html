@@ -24,8 +24,14 @@ Search results for {{ SITENAME|striptags|e }} blog.
 {% endif %}
 {% endblock meta_tags_in_head %}
 
+{% block content %}
+    <div class="span8 offset2">
+        <div id="tipue_search_content"><div id="tipue_search_loading"></div></div>
+    </div>
+{% endblock content %}
+
 {% block script %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+{{ super() }}
     {% if 'assets' in PLUGINS %}
     {% include '_includes/minify_tipuesearch.html' with context %}
     {% else %}
@@ -54,10 +60,17 @@ $(document).ready(function() {
      });
 });
 </script>
-{% endblock script %}
 
-{% block content %}
-    <div class="span8 offset2">
-        <div id="tipue_search_content"><div id="tipue_search_loading"></div></div>
-    </div>
-{% endblock content %}
+
+<script>
+    function uncollapse() {
+            $(window.location.hash).collapse({
+                toggle: true
+            })
+    }
+</script>
+
+<script>
+    uncollapse();
+</script>
+{% endblock script %}
