@@ -54,11 +54,12 @@
             <div class="navbar navbar-static-top">
                 <div class="navbar-inner">
                     <div class="container-fluid">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <input type="checkbox" checked id="btn-navbar-checkbox">
+                        <label class="btn btn-navbar" for="btn-navbar-checkbox">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </a>
+                        </label>
                         <a class="brand" href="{{ SITEURL }}/"><span class=site-name>{{ SITENAME }}</span></a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right top-menu">
@@ -103,7 +104,6 @@
             {% include '_includes/bestazon.html' %}
         {% endif %}
         <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script>
             function validateForm(query)
             {

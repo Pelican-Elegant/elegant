@@ -43,11 +43,14 @@ All categories of the {{ SITENAME|striptags|e }} blog.
         <div class="accordion" id="accordion2">
             {% for category, articles in categories %}
             <div class="accordion-group">
+                <input type="radio" name="all-categories-radio" id="{{ category.slug }}" onclick="closeRadio(this);">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+                    <label for="{{ category.slug }}">
+                    <a class="accordion-toggle list-of-categories" href="#{{ category.slug }}-ref">
                         {% set num = articles|count %}
                         {{ category }}<span>{{ num }}</span>
                     </a>
+                    </label>
                 </div>
                 <div id="{{ category.slug }}-ref" class="accordion-body collapse">
                     <div class="accordion-inner">
@@ -79,14 +82,20 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 {% block script %}
 {{ super() }}
 <script>
-    function uncollapse() {
-            $(window.location.hash).collapse({
-                toggle: true
-            })
-    }
-</script>
+var closeRadio_notChecked = true;
+var closeRadio_prevEl = undefined;
+function closeRadio(el) {
+  if (closeRadio_prevEl !== el) {
+    closeRadio_prevEl = el;
+    closeRadio_notChecked = true;
+  }
 
-<script>
-    uncollapse();
+  if (closeRadio_notChecked) {
+    closeRadio_notChecked = false;
+  } else {
+    el.checked = false;
+    closeRadio_notChecked = true;
+  }
+}
 </script>
 {% endblock script %}

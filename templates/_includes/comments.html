@@ -28,17 +28,15 @@
 
     <div class="accordion" id="accordion2">
         <div class="accordion-group">
+            <input type="checkbox" checked id="comment-accordion-toggle-checkbox">
             <div class="accordion-heading">
-                <a class="accordion-toggle disqus-comment-count comment-count"
-                   data-toggle="collapse"
-                   data-parent="#accordion2"
+                <label class="accordion-toggle"
                    {%if use_disqus %}
                    data-disqus-identifier="{{ identifier }}"
                    {% endif %}
-                   href="{{ url }}#comment_thread"
+                   for="comment-accordion-toggle-checkbox"
                    id="comment-accordion-toggle">
-                    Comments
-                </a>
+                </label>
             </div>
             <div id="comment_thread" class="accordion-body collapse">
                 <div class="accordion-inner">
@@ -64,26 +62,10 @@
 
 {% macro comments_script() %}
 <script>
-    (function () {
-        if (window.location.hash.match(/^#comment-\d+$/)) {
-            $('#comment_thread').collapse('show');
-        }
-    })();
-    window.onhashchange=function(){
-        if (window.location.hash.match(/^#comment-\d+$/))
-            window.location.reload(true);
+window.addEventListener('load', (event) => {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        document.getElementById('comment-accordion-toggle-checkbox').checked = false;
     }
-    $('#comment_thread').on('shown', function () {
-        var link = document.getElementById('comment-accordion-toggle');
-        var old_innerHTML = link.innerHTML;
-        $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
-        });
-        $('#comment_thread').on('hidden', function () {
-            $(link).fadeOut(200, function() {
-                $(this).text(old_innerHTML).fadeIn(200);
-            });
-        })
-    })
+});
 </script>
 {% endmacro %}
