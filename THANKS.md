@@ -28,6 +28,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://blairconrad.com"><img src="https://avatars0.githubusercontent.com/u/3275797?v=4" width="100px;" alt=""/><br /><sub><b>Blair Conrad</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ablairconrad" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/neirbowj"><img src="https://avatars0.githubusercontent.com/u/1879063?v=4" width="100px;" alt=""/><br /><sub><b>John W. O'Brien</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=neirbowj" title="Documentation">📖</a></td>
   </tr>
 </table>
 
