@@ -26,6 +26,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/jean"><img src="https://avatars3.githubusercontent.com/u/84800?v=4" width="100px;" alt=""/><br /><sub><b>Jean Jordaan</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=jean" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/calfzhou"><img src="https://avatars3.githubusercontent.com/u/3761553?v=4" width="100px;" alt=""/><br /><sub><b>calfzhou</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=calfzhou" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Acalfzhou" title="Bug reports">🐛</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://blairconrad.com"><img src="https://avatars0.githubusercontent.com/u/3275797?v=4" width="100px;" alt=""/><br /><sub><b>Blair Conrad</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Ablairconrad" title="Bug reports">🐛</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
