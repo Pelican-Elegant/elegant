@@ -12,6 +12,7 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-run-command": "^0.0.10",
     "postcss-preset-env": "^6.7.0",
     "semantic-release": "^15.13.31"
   },

@@ -3,6 +3,7 @@ import path from "path";
 import { src, dest, watch, parallel, series } from "gulp";
 import { exec } from "child_process";
 import { create as browserSyncCreate } from "browser-sync";
+import run from "gulp-run-command";
 import postcss from "gulp-postcss";
 import cssnano from "cssnano";
 import postcssPresetEnv from "postcss-preset-env";
@@ -92,6 +93,8 @@ const elegant = series(
   buildContent,
   parallel(watchFiles, reload)
 );
+
+exports.validate = run("jinja-ninja templates");
 
 exports.css = series(rmProdCSS, compileCSS);
 exports.elegant = elegant;
