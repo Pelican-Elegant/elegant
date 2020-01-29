@@ -15,7 +15,7 @@
 {% endif %}
 
 {% from '_includes/_defaults.html' import COMMENTS_INTRO with context %}
-{% set intro = COMMENTS_INTRO  %}
+{% set intro = COMMENTS_INTRO %}
 {% if article.comments_intro %}
 {% set intro = article.comments_intro %}
 {% endif %}
@@ -32,7 +32,7 @@
                 <a class="accordion-toggle disqus-comment-count comment-count"
                    data-toggle="collapse"
                    data-parent="#accordion2"
-                   {%if use_disqus %}
+                   {% if use_disqus %}
                    data-disqus-identifier="{{ identifier }}"
                    {% endif %}
                    href="{{ url }}#comment_thread"

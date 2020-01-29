@@ -3,7 +3,7 @@
 {% from '_includes/_defaults.html' import MAILCHIMP_FORM_ACTION with context %}
 {% from '_includes/_defaults.html' import MAILCHIMP_FILTER with context %}
 
-{%if (not MAILCHIMP_FILTER or article.mailchimp_filter == "off") and article.mailchimp_filter != "on" %}
+{% if (not MAILCHIMP_FILTER or article.mailchimp_filter == "off") and article.mailchimp_filter != "on" %}
 
 {% if MAILCHIMP_FORM_ACTION %}
 

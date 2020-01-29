@@ -18,12 +18,12 @@
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
-<meta property="og:image" content="{{FEATURED_IMAGE}}" />
-<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
 {% endif %}
 {% if SITE_DESCRIPTION %}
-<meta property="og:description" content="{{SITE_DESCRIPTION|e}}" />
-<meta name="twitter:description" content="{{SITE_DESCRIPTION|e}}">
+<meta property="og:description" content="{{ SITE_DESCRIPTION|e }}" />
+<meta name="twitter:description" content="{{ SITE_DESCRIPTION|e }}">
 {% endif %}
 <meta name="keywords" content="{% for tag, _ in tags|sort %} {{ tag }}, {% endfor %}{% for category, _ in categories|sort %} {{ category }}, {% endfor %}" />
 {% endblock meta_tags_in_head %}
@@ -42,7 +42,7 @@
     {% if PROJECTS and LANDING_PAGE_TITLE %}
     {% set css_class = 'span12' %}
     {% endif %}
-    <header class="page-header {{css_class}}">
+    <header class="page-header {{ css_class }}">
     <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_TITLE }}</a></h1>
     </header>
     {% endif %}
@@ -53,9 +53,9 @@
         {% if PROJECTS and LANDING_PAGE_TITLE %}
         {% set css_class = 'span8' %}
         {% endif %}
-        <div class="{{css_class}}">
+        <div class="{{ css_class }}">
             <header>
-                <h1 id="about-me">{{landing_page.page.title}}</h1>
+                <h1 id="about-me">{{ landing_page.page.title }}</h1>
             </header>
             <div class="article-content">
                 {{ landing_page.page.content }}
@@ -68,7 +68,7 @@
         {% if PROJECTS and LANDING_PAGE_TITLE %}
         {% set css_class = 'span4' %}
         {% endif %}
-        <div class="{{css_class}}">
+        <div class="{{ css_class }}">
             <header>
             <h1 id="my-projects">{{ PROJECTS_TITLE }}</h1>
             </header>
@@ -78,7 +78,7 @@
                 <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj-desc">{{ project.description }}</span>
                 </li>
             </ul>
-            {%endfor %}
+            {% endfor %}
         </div>
         {% endif %}
     </div>
@@ -90,7 +90,7 @@
     {% endif %}
     {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT, ARCHIVES_URL, CATEGORIES_URL with context %}
     <div class="row-fluid">
-        <div class="{{css_class}}">
+        <div class="{{ css_class }}">
             <header>
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/{{ ARCHIVES_URL }}">all posts</a></h1>
             </header>
@@ -100,7 +100,7 @@
             <div itemscope class="recent-posts-article">
                 <a href="{{ SITEURL }}/{{ article.url }}">
                     {{ article.title }}
-                    {%if article.subtitle %}
+                    {% if article.subtitle %}
                     <small class="subtitle">
                         {{ article.subtitle }}
                     </small>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 {% if RECENT_ARTICLE_SUMMARY %}
-                    <p>{{article.summary}}</p>
+                    <p>{{ article.summary }}</p>
                 {% endif %}
             </div>
             {% endif %}

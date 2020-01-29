@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{{ article.title|striptags|e }} {%if article.subtitle %} - {{ article.subtitle|striptags|e }} {% endif %} · {{ super() }}
+{{ article.title|striptags|e }} {% if article.subtitle %} - {{ article.subtitle|striptags|e }} {% endif %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
@@ -12,7 +12,7 @@
 
 {% block meta_tags_in_head %}
 {% if article.redirect %}
-<meta http-equiv="refresh" content="0;URL={{ article.redirect}}" />
+<meta http-equiv="refresh" content="0;URL={{ article.redirect }}" />
 {% endif %}
 {{ super() }}
 {% if article.tags or article.category or article.keywords %}
@@ -35,7 +35,7 @@
         <h1>
             <a href="{{ SITEURL }}/{{ article.url }}">
                 {{ article.title }}
-                {%if article.subtitle %}
+                {% if article.subtitle %}
                 <small class="subtitle">
                     {{ article.subtitle }}
                 </small>
@@ -90,7 +90,7 @@
                 {% if article.prev_article %}
                     {% set ptitle = article.prev_article.title|striptags|e %}
                     {% set pv_title = article.prev_article.title|striptags %}
-                    {%if article.prev_article.subtitle %}
+                    {% if article.prev_article.subtitle %}
                     {% set pv_title = pv_title + ' ' +  '<small class="subtitle">' + article.prev_article.subtitle|striptags + '</small>' %}
                         {% set ptitle = ptitle + ' - ' + article.prev_article.subtitle|e %}
                     {% endif %}
@@ -99,7 +99,7 @@
                 {% if article.next_article %}
                     {% set ntitle = article.next_article.title|striptags|e %}
                     {% set nv_title = article.next_article.title|striptags %}
-                    {%if article.next_article.subtitle %}
+                    {% if article.next_article.subtitle %}
                     {% set nv_title = nv_title + ' ' +  '<small class="subtitle">' + article.next_article.subtitle|striptags + '</small>' %}
                         {% set ntitle = ntitle + ' - ' + article.next_article.subtitle|e %}
                     {% endif %}

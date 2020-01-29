@@ -19,8 +19,8 @@ All categories of the {{ SITENAME|striptags|e }} blog.
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
-<meta property="og:image" content="{{FEATURED_IMAGE}}" />
-<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
 {% endif %}
 {% endblock meta_tags_in_head %}
 
@@ -59,7 +59,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
                                 </time>
                                     <a href="{{ SITEURL }}/{{ article.url }}">
                                         {{ article.title }}
-                                        {%if article.subtitle %}
+                                        {% if article.subtitle %}
                                         <small class="subtitle">
                                             {{ article.subtitle }}
                                         </small>

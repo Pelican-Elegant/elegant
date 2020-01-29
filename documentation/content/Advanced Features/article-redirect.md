@@ -16,7 +16,7 @@ Ideally this is done via a `.htaccess` so that a proper 301 code is generated, b
 In Elegant we've included a `redirect` slug in the `yaml preamble` that allows to specify a target URL, that will be load with a http-refresh:
 
 ```html
-<meta http-equiv="refresh" content="0;URL={{ article.redirect}}" />
+<meta http-equiv="refresh" content="0;URL={{ article.redirect }}" />
 ```
 
 The actual code to define a redirection in an article is to include `redirect` in the yaml preamble:

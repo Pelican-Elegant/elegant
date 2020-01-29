@@ -19,8 +19,8 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
-<meta property="og:image" content="{{FEATURED_IMAGE}}" />
-<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
 {% endif %}
 {% endblock meta_tags_in_head %}
 
@@ -37,11 +37,11 @@ Full archives of {{ SITENAME|striptags|e }} blog.
             {% for article in dates %}
                 {% set year = article.date.strftime('%Y') %}
                 {% if loop.first %}
-                    <h2 id="{{year }}"><a href="#{{year}}">{{ year }}</a></h2>
+                    <h2 id="{{ year }}"><a href="#{{ year }}">{{ year }}</a></h2>
                 {% else %}
                     {% set prevyear = loop.previtem.date.strftime('%Y') %}
-                    {%if prevyear != year %}
-                        <h2 id="{{year }}"><a href="#{{year}}">{{ year }}</a></h2>
+                    {% if prevyear != year %}
+                        <h2 id="{{ year }}"><a href="#{{ year }}">{{ year }}</a></h2>
                     {% endif %}
                 {% endif %}
 
@@ -59,7 +59,7 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 
                 <a href="{{ SITEURL }}/{{ article.url }}">
                     {{ article.title }}
-                    {%if article.subtitle %}
+                    {% if article.subtitle %}
                     <small class="subtitle">
                         {{ article.subtitle }}
                     </small>
