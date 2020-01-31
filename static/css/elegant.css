@@ -303,12 +303,6 @@ ul.list-all-articles li {
   padding: 0.3em 0;
   overflow: auto;
 }
-ul.list-all-articles li time {
-  color: #aaa;
-  float: right;
-  font-family: "PT Sans", "Helvetica Neue", Arial, Sans-Serif;
-  font-size: 0.9em;
-}
 div.blog-archives h2 {
   float: left;
   position: relative;
