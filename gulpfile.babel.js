@@ -19,6 +19,14 @@ const content_404 = () =>
 const cleanOutput = () => exec("cd documentation && rm -rf outout/");
 
 const buildContent = () => exec("cd documentation && invoke build");
+const compileBootstrapLess = () =>
+  exec(
+    "node_modules/recess/bin/recess --compile static/bootstrap/bootstrap.less > static/css/bootstrap.css"
+  );
+const compileResponsiveLess = () =>
+  exec(
+    "node_modules/recess/bin/recess --compile static/bootstrap/responsive.less > static/css/bootstrap_responsive.css"
+  );
 
 const reload = cb => {
   browserSync.init(
@@ -54,7 +62,10 @@ const watchFiles = () => {
       "documentation/publishconf.py",
       "templates/**/*.html",
       "static/**/*.css",
+      "static/**/*.less",
       "!static/**/elegant.prod.css",
+      "!static/**/bootstrap.css",
+      "!static/**/bootstrap_responsive.css",
       "static/**/*.js"
     ],
     { ignoreInitial: false },
@@ -88,8 +99,16 @@ const compileCSS = () => {
     .pipe(dest("static/css/"));
 };
 
-const buildAll = series(rmProdCSS, compileCSS, buildContent);
+const buildAll = series(
+  rmProdCSS,
+  compileBootstrapLess,
+  compileResponsiveLess,
+  compileCSS,
+  buildContent
+);
 const elegant = series(
+  compileBootstrapLess,
+  compileResponsiveLess,
   compileCSS,
   cleanOutput,
   buildContent,
@@ -98,6 +117,11 @@ const elegant = series(
 
 exports.validate = run("jinja-ninja templates");
 
-exports.css = series(rmProdCSS, compileCSS);
+exports.css = series(
+  rmProdCSS,
+  compileBootstrapLess,
+  compileResponsiveLess,
+  compileCSS
+);
 exports.elegant = elegant;
 exports.default = elegant;
