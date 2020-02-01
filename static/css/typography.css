@@ -1,9 +1,9 @@
 :root {
-  --heading-border-bottom-width: 1px;
-  --heading-border-bottom-style: solid;
+  --headingBorderBottomWidth: 1px;
+  --headingBorderBottomStyle: solid;
   /* Headings that are not inside article. Like in sidebar are "others" */
-  --heading-others-line-height: 1.3rem;
-  --heading-others-h4-font-size: 1.1rem;
+  --headingOthersLineHeight: 1.3rem;
+  --headingOthersH4FontSize: 1.1rem;
   --sansFontFamily: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --monoFontFamily: "PT Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
   --serifFontFamily: "PT Serif", Georgia, "Times New Roman", Times, serif;
@@ -61,8 +61,8 @@ h1,
 h2,
 h3 {
   line-height: 1.3em;
-  border-bottom: var(--heading-border-bottom-width)
-    var(--heading-border-bottom-style) lightgray;
+  border-bottom: var(--headingBorderBottomWidth) var(--headingBorderBottomStyle)
+    lightgray;
   & code {
     font-size: 80%;
   }
@@ -113,12 +113,12 @@ div.blog-archives h2 {
 h1#my-projects,
 h1#recent-posts {
   font-size: 2.4rem;
-  line-height: var(--heading-others-line-height);
+  line-height: var(--headingOthersLineHeight);
 }
 section#article-sidebar h4,
 nav h4 {
-  font-size: var(--heading-others-h4-font-size);
-  line-height: var(--heading-others-line-height);
+  font-size: var(--headingOthersH4FontSize);
+  line-height: var(--headingOthersLineHeight);
 }
 /* code */
 code,

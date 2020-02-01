@@ -1,6 +1,6 @@
 /* Base */
 :root {
-  --border-radius: 4px;
+  --borderRadius: 4px;
 }
 html,
 body {
@@ -96,14 +96,14 @@ pre {
   word-wrap: normal;
 }
 td.code .highlight pre {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
 }
 td.code {
   width: 100%;
 }
 .linenodiv pre {
   background-color: #eee8d5;
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  border-radius: var(--borderRadius) 0 0 var(--borderRadius);
   color: #657b83;
 }
 div.highlight {
@@ -131,7 +131,7 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
 }
 .list-of-tags a {
   background: #eee;
-  border-radius: var(--border-radius);
+  border-radius: var(--borderRadius);
   color: #222;
   margin: 2px;
   padding: 3px 6px;
@@ -261,7 +261,7 @@ a.category-link:hover {
 }
 a.list-of-categories:hover {
   background-color: #08c;
-  border-radius: var(--border-radius);
+  border-radius: var(--borderRadius);
   color: #fff;
 }
 /* Archives */
@@ -374,7 +374,7 @@ div.recent-posts-time {
 }
 #mc-embed-signup .button {
   background-color: #eee;
-  border-radius: var(--border-radius);
+  border-radius: var(--borderRadius);
   border: 1px solid #d3d3d3;
   clear: both;
   color: #000;
@@ -416,7 +416,7 @@ a#allposts:hover {
 /* reST specific rules*/
 .literal {
   background-color: #f7f7f9;
-  border-radius: var(--border-radius);
+  border-radius: var(--borderRadius);
   border: 1px solid #e1e1e8;
   color: #d14;
   padding: 2px 4px;
@@ -486,7 +486,7 @@ table {
   border-collapse: separate;
   *border-collapse: collapse;
   border-left: 0;
-  border-radius: var(--border-radius);
+  border-radius: var(--borderRadius);
 }
 
 table th,
@@ -501,19 +501,19 @@ table thead:first-child tr:first-child th {
 }
 
 table thead:first-child tr:first-child > th:first-child {
-  border-top-left-radius: var(--border-radius);
+  border-top-left-radius: var(--borderRadius);
 }
 
 table thead:first-child tr:first-child > th:last-child {
-  border-top-right-radius: var(--border-radius);
+  border-top-right-radius: var(--borderRadius);
 }
 
 table tbody:last-child tr:last-child > td:first-child {
-  border-bottom-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--borderRadius);
 }
 
 table tbody:last-child tr:last-child > td:last-child {
-  border-bottom-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--borderRadius);
 }
 
 table tbody > tr:nth-child(odd) > td {
