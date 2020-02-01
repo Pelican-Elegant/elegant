@@ -490,3 +490,6 @@ table tbody > tr:nth-child(odd) > td {
   float: none;
   padding: 11px 15px 13px;
 }
+.site-name {
+  color: var(--mutedTextColor);
+}
