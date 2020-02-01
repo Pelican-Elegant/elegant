@@ -162,12 +162,14 @@ a.category-title-inside-accordion {
 .author-blurb {
   font-style: italic;
 }
+ul.list-projects li,
 div.blog-archives div,
 div.recent-posts-article,
 ul.list-articles-under-tag-category li {
   font-family: var(--sansFontFamily);
   font-size: 0.963rem;
 }
+.proj-desc,
 div.blog-archives time,
 div.recent-posts time,
 ul.list-articles-under-tag-category li time,

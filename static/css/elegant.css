@@ -120,6 +120,7 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
   background-color: transparent;
 }
 /* Tags */
+ul.list-projects,
 .list-of-tags {
   list-style: none;
   margin: 0;
@@ -259,36 +260,24 @@ a:not(.collapsed).accordion-toggle.category-title-inside-accordion {
   border-radius: var(--borderRadius);
   color: #fff;
 }
-/* Archives */
-ul.list-all-articles {
-  list-style: none;
-  margin: 0;
-}
-ul.list-all-articles li {
-  border-bottom: 1px dotted #000;
-  font-family: "Trebuchet MS", Trebuchet, "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, Sans-Serif;
-  font-size: 1.1em;
-  padding: 0.3em 0;
-  overflow: auto;
-}
 div.blog-archives h2 {
   float: left;
   position: relative;
   margin: 0;
 }
+.proj-desc {
+  color: var(--mutedTextColor);
+}
+ul.list-projects li,
 div.blog-archives div,
 div.recent-posts-article {
   border-bottom: 1px dotted var(--mutedTextColor);
+  overflow: auto;
+  padding: 0.3rem 0.2rem;
+  position: relative;
 }
 ul.list-articles-under-tag-category li {
   padding: 0.1rem 0.2rem;
-}
-div.blog-archives div,
-div.recent-posts-article {
-  padding: 0.3rem 0.2rem;
-  position: relative;
-  overflow: auto;
 }
 div.blog-archives div {
   margin-left: 6em;
@@ -390,17 +379,13 @@ div.recent-posts-posted {
 }
 /* Index page */
 #allposts {
-  color: #999;
+  color: var(--mutedTextColor);
   float: right;
   font-size: 75%;
   font-weight: normal;
 }
 a#allposts:hover {
   color: #333;
-}
-.proj-desc {
-  color: #999;
-  font: 0.9em "PT Sans", "Helvetica Neue", Arial, Sans-Serif;
 }
 /* reST specific rules*/
 .literal {
