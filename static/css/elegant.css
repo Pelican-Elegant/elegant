@@ -279,7 +279,7 @@ div.blog-archives h2 {
 }
 div.blog-archives div,
 div.recent-posts-article {
-  border-bottom: 1px dotted #aaa;
+  border-bottom: 1px dotted var(--mutedTextColor);
 }
 ul.list-articles-under-tag-category li {
   padding: 0.1rem 0.2rem;
