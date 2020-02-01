@@ -1,6 +1,7 @@
 /* Base */
 :root {
   --borderRadius: 4px;
+  --mutedTextColor: dimgray;
 }
 html,
 body {
@@ -145,10 +146,6 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
   float: none;
   line-height: 28px;
 }
-.articles-in-tag li {
-  font: 1.1em/1.6 "Trebuchet MS", Trebuchet, "Lucida Sans Unicode",
-    "Lucida Grande", "Lucida Sans", Arial, Sans-Serif;
-}
 /* Article */
 .article-content,
 div.recent-posts p {
@@ -254,14 +251,9 @@ p#post-share-links {
 a.category-title-inside-accordion {
   text-decoration: none;
 }
-ul.list-articles-category {
+ul.list-articles-under-tag-category {
   list-style: none outside none;
   margin: 0 0 0 5px;
-}
-ul.list-articles-category li time {
-  color: #8f8f8f;
-  display: inline-block;
-  width: 7em;
 }
 a.category-link {
   color: #333;
@@ -296,10 +288,12 @@ div.blog-archives div,
 div.recent-posts-article {
   border-bottom: 1px dotted #aaa;
 }
+ul.list-articles-under-tag-category li {
+  padding: 0.1rem 0.2rem;
+}
 div.blog-archives div,
 div.recent-posts-article {
-  font-size: 1.1em;
-  padding: 0.3em 0.2em;
+  padding: 0.3rem 0.2rem;
   position: relative;
   overflow: auto;
 }
@@ -310,21 +304,16 @@ div.blog-archives div.last-entry-of-year {
   margin-bottom: 1em;
 }
 div.blog-archives time,
-div.recent-posts time {
+div.recent-posts time,
+ul.list-articles-under-tag-category li time {
   float: right;
-  text-align: right;
+  text-align: left;
 }
 div.blog-archives time,
 div.recent-posts time,
+ul.list-articles-under-tag-category li time,
 div.recent-posts-posted {
-  color: #8f8f8f;
-  font: 0.9em "PT Sans", "Helvetica Neue", Arial, Sans-Serif;
-}
-div.recent-posts time {
-  font-size: inherit;
-}
-div.recent-posts-time {
-  display: inline;
+  color: var(--mutedTextColor);
 }
 @media (max-width: 767px) {
   div.blog-archives h2 {
@@ -334,14 +323,11 @@ div.recent-posts-time {
     margin-left: 0;
     padding-left: 0;
   }
-  div.recent-posts time {
+  div.blog-archives time,
+  div.recent-posts time,
+  ul.list-articles-under-tag-category li time {
     float: none;
-  }
-  div.recent-posts-time {
     display: block;
-  }
-  ul.list-articles-category li time {
-    width: 100%;
   }
 }
 /* MailChimp */

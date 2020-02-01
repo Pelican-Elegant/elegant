@@ -35,7 +35,7 @@ h6,
 .tag-title,
 .list-of-tags,
 a.category-title-inside-accordion,
-ul.list-articles-category li time {
+ul.list-articles-under-tag-category li time {
   font-family: var(--sansFontFamily);
 }
 h1 {
@@ -155,13 +155,23 @@ blockquote {
 a.category-title-inside-accordion {
   font-size: 1.1rem;
 }
-ul.list-articles-category li time {
-  font-size: 0.7rem;
-}
 .author-name {
   font-weight: bold;
   font-variant: small-caps;
 }
 .author-blurb {
   font-style: italic;
+}
+div.blog-archives div,
+div.recent-posts-article,
+ul.list-articles-under-tag-category li {
+  font-family: var(--sansFontFamily);
+  font-size: 0.963rem;
+}
+div.blog-archives time,
+div.recent-posts time,
+ul.list-articles-under-tag-category li time,
+div.recent-posts-posted {
+  font-family: var(--sansFontFamily);
+  font-size: 0.8rem;
 }

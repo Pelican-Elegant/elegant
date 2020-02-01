@@ -51,12 +51,9 @@ All categories of the {{ SITENAME|striptags|e }} blog.
                 </div>
                 <div id="{{ category.slug }}-ref" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        <ul class="list-articles-category">
+                        <ul class="list-articles-under-tag-category">
                             {% for article in articles %}
                             <li itemscope>
-                                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
-                                    {{ article.locale_date }}
-                                </time>
                                     <a href="{{ SITEURL }}/{{ article.url }}">
                                         {{ article.title }}
                                         {% if article.subtitle %}
@@ -65,6 +62,9 @@ All categories of the {{ SITENAME|striptags|e }} blog.
                                         </small>
                                         {% endif %}
                                     </a>
+                                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
+                                    {{ article.locale_date }}
+                                </time>
                             </li>
                             {% endfor %}
                         </ul>
