@@ -35,7 +35,7 @@ h5,
 h6,
 .tag-title,
 .list-of-tags,
-a.list-of-categories,
+a.category-title-inside-accordion,
 ul.list-articles-category li time {
   font-family: var(--sansFontFamily);
 }
@@ -153,9 +153,16 @@ blockquote {
     font-weight: 400;
   }
 }
-a.list-of-categories {
+a.category-title-inside-accordion {
   font-size: 1.1rem;
 }
 ul.list-articles-category li time {
   font-size: 0.7rem;
+}
+.author-name {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.author-blurb {
+  font-style: italic;
 }

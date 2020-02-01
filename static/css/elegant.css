@@ -237,11 +237,11 @@ p#post-share-links {
   text-align: right;
 }
 /* Categories */
-.list-of-categories span {
+.category-title-inside-accordion span {
   font-size: 0.7em;
   vertical-align: super;
 }
-a.list-of-categories {
+a.category-title-inside-accordion {
   text-decoration: none;
 }
 ul.list-articles-category {
@@ -259,7 +259,7 @@ a.category-link {
 a.category-link:hover {
   text-decoration: none;
 }
-a.list-of-categories:hover {
+a.category-title-inside-accordion:hover {
   background-color: #08c;
   border-radius: var(--borderRadius);
   color: #fff;
@@ -459,18 +459,13 @@ div.figure.align-left,
   margin-right: 1.5em;
 }
 /* Author blurb */
-.author_blurb {
-  font-style: italic;
+.author-blurb {
   padding: 5px 0;
 }
-.author_blurb img {
+.author-blurb img {
   padding: 0;
   width: 32px;
   height: 32px;
-}
-.author_name {
-  font-weight: bold;
-  font-variant: small-caps;
 }
 /* Github Gist */
 .gist table {
