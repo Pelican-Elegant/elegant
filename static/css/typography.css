@@ -133,7 +133,7 @@ pre,
 .literal /* reST */ {
   font-size: 0.9rem;
 }
-.site-name {
+.brand .site-name {
   font-size: 1.5rem;
 }
 /* article */
@@ -170,6 +170,7 @@ ul.list-articles-under-tag-category li {
   font-size: 0.963rem;
 }
 .proj-desc,
+footer,
 div.blog-archives time,
 div.recent-posts time,
 ul.list-articles-under-tag-category li time,

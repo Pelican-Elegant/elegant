@@ -22,7 +22,6 @@ footer {
   flex-direction: row;
   flex-shrink: 0;
   flex-wrap: wrap;
-  font: 0.8em Calibri, Tahoma, Arial, Sans-Serif;
   justify-content: flex-end;
   margin: 15px 0 0 0;
   min-height: 40px;
