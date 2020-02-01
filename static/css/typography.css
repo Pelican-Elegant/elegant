@@ -175,3 +175,7 @@ div.recent-posts-posted {
   font-family: var(--sansFontFamily);
   font-size: 0.8rem;
 }
+span.superscript {
+  font-size: 0.67rem;
+  vertical-align: super;
+}

@@ -138,10 +138,6 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
   padding: 3px 6px;
   text-decoration: none;
 }
-.list-of-tags a span {
-  font-size: 0.8em;
-  vertical-align: super;
-}
 .tags-in-article li {
   float: none;
   line-height: 28px;
@@ -244,10 +240,6 @@ p#post-share-links {
   text-align: right;
 }
 /* Categories */
-.category-title-inside-accordion span {
-  font-size: 0.7em;
-  vertical-align: super;
-}
 a.category-title-inside-accordion {
   text-decoration: none;
 }
