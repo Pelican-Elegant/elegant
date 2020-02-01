@@ -10,6 +10,10 @@
   --serifHeadingFontFamily: "PT Serif Caption", Baskerville, Garamond, Georgia,
     "DejaVu Serif", "Times New Roman", Times, serif;
 }
+body {
+  margin: 0;
+  font-family: var(--sansFontFamily);
+}
 h1,
 h2,
 h3,
