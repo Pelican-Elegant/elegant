@@ -44,7 +44,7 @@ All categories of the {{ SITENAME|striptags|e }} blog.
             {% for category, articles in categories %}
             <div class="accordion-group">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
                         {% set num = articles|count %}
                         {{ category }}<span>{{ num }}</span>
                     </a>

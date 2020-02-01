@@ -261,7 +261,8 @@ a.category-link {
 a.category-link:hover {
   text-decoration: none;
 }
-a.category-title-inside-accordion:hover {
+a.category-title-inside-accordion:hover,
+a:not(.collapsed).accordion-toggle.category-title-inside-accordion {
   background-color: #08c;
   border-radius: var(--borderRadius);
   color: #fff;
