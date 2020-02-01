@@ -47,11 +47,6 @@ a {
 hr {
   border-width: 3px;
 }
-/* site title */
-.site-name {
-  font-family: "Monaco", "Inconsolata", "Andale Mono", "Lucida Console",
-    "Bitstream Vera Sans Mono", "Courier New", Courier, Monospace;
-}
 /* Top navigation menu */
 .top-menu li a {
   font-weight: bold;
@@ -125,7 +120,6 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
 }
 /* Tags */
 .list-of-tags {
-  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   list-style: none;
   margin: 0;
   overflow: hidden;
@@ -151,10 +145,6 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
   float: none;
   line-height: 28px;
 }
-.tag-title {
-  font-family: "Trebuchet MS", Trebuchet, "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, Sans-Serif;
-}
 .articles-in-tag li {
   font: 1.1em/1.6 "Trebuchet MS", Trebuchet, "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, Sans-Serif;
@@ -162,18 +152,10 @@ table.highlighttable tbody > tr:nth-child(odd) > td {
 /* Article */
 .article-content,
 div.recent-posts p {
-  font: 1.2em/1.6 "PT Serif", Georgia, "Times New Roman", Times, Serif;
   text-align: justify;
 }
 .article-content {
   max-width: 50em;
-}
-.article-content p,
-div.recent-posts p {
-  font-size: inherit;
-  font-variant: normal;
-  line-height: 1.6;
-  text-transform: none;
 }
 .article-content p {
   margin: 20px 0;
@@ -211,8 +193,6 @@ div.recent-posts p {
 .page-header {
   border-bottom: 2px solid maroon;
   color: maroon;
-  margin: 10px 10px 20px;
-  padding: 5px;
 }
 .page-header h1 {
   border: none;
@@ -271,7 +251,6 @@ ul.list-articles-category {
 ul.list-articles-category li time {
   color: #8f8f8f;
   display: inline-block;
-  font: 0.9em "PT Sans", "Helvetica Neue", Arial, Sans-Serif;
   width: 7em;
 }
 a.category-link {
@@ -279,11 +258,6 @@ a.category-link {
 }
 a.category-link:hover {
   text-decoration: none;
-}
-a.list-of-categories {
-  font-family: "Trebuchet MS", Trebuchet, "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, Sans-Serif;
-  font-size: 1.1em;
 }
 a.list-of-categories:hover {
   background-color: #08c;
@@ -445,8 +419,6 @@ a#allposts:hover {
   border-radius: var(--border-radius);
   border: 1px solid #e1e1e8;
   color: #d14;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 12px;
   padding: 2px 4px;
   white-space: nowrap;
 }
