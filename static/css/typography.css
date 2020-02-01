@@ -139,6 +139,7 @@ pre,
 }
 .brand .site-name {
   font-size: 1.5rem;
+  vertical-align: middle;
 }
 /* article */
 .article-content,
@@ -185,4 +186,7 @@ div.recent-posts-posted {
 span.superscript {
   font-size: 0.67rem;
   vertical-align: super;
+}
+.navbar .nav > li > a {
+  font-size: 1rem;
 }
