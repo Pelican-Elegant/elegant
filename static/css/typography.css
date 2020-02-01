@@ -18,7 +18,6 @@ h5,
 h6,
 .page-header {
   font-weight: normal;
-  margin: 10px 0px;
   text-align: left;
   & small {
     font-style: italic;

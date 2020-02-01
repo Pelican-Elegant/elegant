@@ -158,7 +158,7 @@ div.recent-posts p {
   max-width: 50em;
 }
 .article-content p {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 .article-content ul:not(.related-posts-list):not(.articles-timeline) {
   font-size: inherit;
@@ -190,9 +190,19 @@ div.recent-posts p {
 .article-content dt {
   font-size: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 10px 0px;
+}
 .page-header {
   border-bottom: 2px solid maroon;
   color: maroon;
+  margin: 10px 0 30px 0;
 }
 .page-header h1 {
   border: none;
