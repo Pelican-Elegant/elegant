@@ -88,6 +88,9 @@ const minifyJS = () => {
     "static/tipuesearch/tipuesearch_set.js",
     "static/tipuesearch/tipuesearch.min.js",
     "static/applause-button/applause-button.js",
+    "static/photoswipe/photoswipe.js",
+    "static/photoswipe/photoswipe-ui-default.js",
+    "static/photoswipe/photoswipe-array-from-dom.js",
     "!static/js/elegant.prod.js"
   ])
     .pipe(concat("elegant.prod.js"))
@@ -106,6 +109,8 @@ const compileCSS = () => {
   return src([
     "static/applause-button/applause-button.css",
     "static/tipuesearch/tipuesearch.css",
+    "static/photoswipe/photoswipe.css",
+    "static/photoswipe/default-skin/default-skin.css",
     "static/css/*.css",
     "!static/css/elegant.prod.css"
   ])

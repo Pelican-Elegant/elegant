@@ -1,0 +1,20 @@
+div.photoswipe-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  & figure {
+    margin: 0;
+    & figcaption {
+      display: none;
+    }
+    & img {
+      border: none;
+      padding: rfs(0.1rem);
+      margin: 0;
+    }
+  }
+}
