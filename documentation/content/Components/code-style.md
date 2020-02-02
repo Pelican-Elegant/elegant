@@ -68,6 +68,7 @@ of [Gruvbox](https://github.com/morhetz/gruvbox) theme for syntax highlighting.
   </figure>
 </div>
 ```
+
 ## C++ example
 
 ```cpp
@@ -94,5 +95,3 @@ int main() {
                 });
 }
 ```
-
-

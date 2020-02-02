@@ -10,7 +10,7 @@ Category: Components
 
 [Python-Markdown](https://github.com/Python-Markdown/markdown/) uses
 [CodeHilite](https://python-markdown.github.io/extensions/code_hilite/) <!-- yaspeller ignore -->
-extension for syntax highlighting. 
+extension for syntax highlighting.
 
 This extension lets you highlight specific lines in your code snippets. You can read the instructions [here](https://python-markdown.github.io/extensions/code_hilite/#colons).
 
