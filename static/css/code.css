@@ -1,3 +1,9 @@
+/* For highlighting lines in code snippets */
+.highlight span.hll span {
+  background-color: black;
+  display: inline-block;
+  width: 100%;
+}
 div.highlight {
   margin-bottom: 20px;
   border-radius: var(--borderRadius);

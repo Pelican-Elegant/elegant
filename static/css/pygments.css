@@ -1,5 +1,6 @@
 .highlight .hll {
-  background-color: #ffffcc;
+  /* This line results in highlighting whitespaces -- Talha */
+  /* background-color: #ffffcc; */
 }
 .highlight {
   background: #282828;
@@ -301,8 +302,8 @@
   color: #d3869b;
   background-color: #282828;
 } /* Literal.Number.Integer.Long */
-/* My fixes */
+/* My fixes -- Talha*/
 .highlight .cpf {
   color: #b8bb26;
   background-color: #282828;
-} 
+}
