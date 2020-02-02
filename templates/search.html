@@ -32,13 +32,6 @@ Search results for {{ SITENAME|striptags|e }} blog.
 
 {% block script %}
 {{ super() }}
-    {% if 'assets' in PLUGINS %}
-    {% include '_includes/minify_tipuesearch.html' with context %}
-    {% else %}
-<script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
-<script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
-    {% endif %}
-
 {% if 'tipue_search' in PLUGINS %}
 <script src="{{ SITEURL }}/tipuesearch_content.js"></script>
 {% endif %}

@@ -10,6 +10,7 @@ import cssnano from "cssnano";
 import postcssPresetEnv from "postcss-preset-env";
 import rfs from "rfs";
 import concat from "gulp-concat";
+import terser from "gulp-terser";
 
 const browserSync = browserSyncCreate();
 
@@ -65,9 +66,10 @@ const watchFiles = () => {
       "static/**/*.css",
       "static/**/*.less",
       "!static/**/elegant.prod.css",
+      "static/**/*.js",
+      "!static/js/elegant.prod.js",
       "!static/**/bootstrap.css",
-      "!static/**/bootstrap_responsive.css",
-      "static/**/*.js"
+      "!static/**/bootstrap_responsive.css"
     ],
     { ignoreInitial: false },
     buildAll
@@ -80,6 +82,17 @@ const rmProdCSS = cb => {
     fs.unlinkSync(pathProdCSS);
   }
   cb();
+};
+const minifyJS = () => {
+  return src([
+    "static/tipuesearch/tipuesearch_set.js",
+    "static/tipuesearch/tipuesearch.min.js",
+    "static/applause-button/applause-button.js",
+    "!static/js/elegant.prod.js"
+  ])
+    .pipe(concat("elegant.prod.js"))
+    .pipe(terser())
+    .pipe(dest("static/js/"));
 };
 
 const compileCSS = () => {
@@ -106,12 +119,14 @@ const buildAll = series(
   compileBootstrapLess,
   compileResponsiveLess,
   compileCSS,
+  minifyJS,
   buildContent
 );
 const elegant = series(
   compileBootstrapLess,
   compileResponsiveLess,
   compileCSS,
+  minifyJS,
   cleanOutput,
   buildContent,
   parallel(watchFiles, reload)
