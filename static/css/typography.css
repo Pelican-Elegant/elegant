@@ -43,22 +43,22 @@ ul.list-articles-under-tag-category li time {
   font-family: var(--sansFontFamily);
 }
 h1 {
-  font-size: 2.4rem;
+  font-size: rfs(2.4rem);
 }
 h2 {
-  font-size: 2.2rem;
+  font-size: rfs(2.2rem);
 }
 h3 {
-  font-size: 2rem;
+  font-size: rfs(2rem);
 }
 h4 {
-  font-size: 1.8rem;
+  font-size: rfs(1.8rem);
 }
 h5 {
-  font-size: 1.6rem;
+  font-size: rfs(1.6rem);
 }
 h6 {
-  font-size: 1.4rem;
+  font-size: rfs(1.4rem);
 }
 h1,
 h2,
@@ -67,10 +67,10 @@ h3 {
   border-bottom: var(--headingBorderBottomWidth) var(--headingBorderBottomStyle)
     lightgray;
   & code {
-    font-size: 80%;
+    font-size: rfs(80%);
   }
   & small {
-    font-size: 70%;
+    font-size: rfs(70%);
   }
 }
 h4,
@@ -78,10 +78,10 @@ h5,
 h6 {
   line-height: 1.1em;
   & code {
-    font-size: 80%;
+    font-size: rfs(80%);
   }
   & small {
-    font-size: 80%;
+    font-size: rfs(80%);
   }
 }
 h1 small,
@@ -118,7 +118,7 @@ h1#recent-posts {
 }
 section#article-sidebar h4,
 nav h4 {
-  font-size: var(--headingOthersH4FontSize);
+  font-size: rfs(var(--headingOthersH4FontSize));
   line-height: var(--headingOthersLineHeight);
 }
 /* code */
@@ -133,16 +133,16 @@ pre,
 code,
 pre,
 .literal /* reST */ {
-  font-size: 0.9rem;
+  font-size: rfs(0.9rem);
 }
 .brand .site-name {
-  font-size: 1.5rem;
+  font-size: rfs(1.5rem);
   vertical-align: middle;
 }
 /* article */
 .article-content,
 div.recent-posts p {
-  font-size: 1.125rem;
+  font-size: rfs(1.125rem);
   font-family: var(--serifFontFamily);
   font-weight: 400;
   line-height: 1.6;
@@ -156,7 +156,7 @@ blockquote {
   }
 }
 a.category-title-inside-accordion {
-  font-size: 1.1rem;
+  font-size: rfs(1.1rem);
 }
 .author-name {
   font-weight: bold;
@@ -170,7 +170,7 @@ div.blog-archives div,
 div.recent-posts-article,
 ul.list-articles-under-tag-category li {
   font-family: var(--sansFontFamily);
-  font-size: 0.963rem;
+  font-size: rfs(0.963rem);
 }
 .proj-desc,
 footer,
@@ -179,12 +179,12 @@ div.recent-posts time,
 ul.list-articles-under-tag-category li time,
 div.recent-posts-posted {
   font-family: var(--sansFontFamily);
-  font-size: 0.8rem;
+  font-size: rfs(0.8rem);
 }
 span.superscript {
-  font-size: 0.67rem;
+  font-size: rfs(0.67rem);
   vertical-align: super;
 }
 .navbar .nav > li > a {
-  font-size: 1rem;
+  font-size: rfs(1rem);
 }

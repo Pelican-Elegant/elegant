@@ -8,6 +8,7 @@ import postcss from "gulp-postcss";
 import magician from "postcss-font-magician";
 import cssnano from "cssnano";
 import postcssPresetEnv from "postcss-preset-env";
+import rfs from "rfs";
 import concat from "gulp-concat";
 
 const browserSync = browserSyncCreate();
@@ -86,6 +87,7 @@ const compileCSS = () => {
     // postcssPresetEnv comes with autoprefixer
     postcssPresetEnv({ stage: 1 }),
     magician({}),
+    rfs(),
     cssnano()
   ];
   return src([
