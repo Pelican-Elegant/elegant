@@ -29,6 +29,7 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "extract_toc",
     "liquid_tags.img",
+    "liquid_tags.include_code",
     "neighbors",
     "related_posts",
     "render_math",
@@ -76,7 +77,7 @@ SOCIAL = (
 )
 
 # Elegant theme
-STATIC_PATHS = ["theme/images", "images", "extra/_redirects"]
+STATIC_PATHS = ["theme/images", "images", "extra/_redirects", "code"]
 EXTRA_PATH_METADATA = {"extra/_redirects": {"path": "_redirects"}}
 
 if os.environ.get("CONTEXT") == "production":
