@@ -127,17 +127,10 @@ const buildAll = series(
   minifyJS,
   buildContent
 );
-const elegant = series(
-  compileBootstrapLess,
-  compileResponsiveLess,
-  compileCSS,
-  minifyJS,
-  cleanOutput,
-  buildContent,
-  parallel(watchFiles, reload)
-);
 
 exports.validate = run("jinja-ninja templates");
+
+exports.js = minifyJS;
 
 exports.css = series(
   rmProdCSS,
@@ -145,5 +138,17 @@ exports.css = series(
   compileResponsiveLess,
   compileCSS
 );
+
+const build = series(
+  compileBootstrapLess,
+  compileResponsiveLess,
+  compileCSS,
+  minifyJS,
+  cleanOutput,
+  buildContent
+);
+exports.build = build;
+
+const elegant = series(build, parallel(watchFiles, reload));
 exports.elegant = elegant;
 exports.default = elegant;
