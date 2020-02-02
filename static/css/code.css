@@ -2,6 +2,9 @@ div.highlight {
   margin-bottom: 20px;
   border-radius: var(--borderRadius);
 }
+td.code div.highlight {
+  border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+}
 pre {
   overflow: auto;
   white-space: pre;
@@ -28,9 +31,6 @@ td {
   text-align: right;
   overflow: hidden;
 }
-td.code .highlight pre {
-  border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
-}
 td.code {
   width: 100%;
 }
@@ -48,4 +48,3 @@ table.highlighttable td {
 table.highlighttable tbody > tr:nth-child(odd) > td {
   background-color: transparent;
 }
-
