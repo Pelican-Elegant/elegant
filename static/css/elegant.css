@@ -223,8 +223,14 @@ ul.multi-parts-list a:hover {
 ul.multi-parts-list li.active-part {
   font-style: italic;
 }
-.table-of-content .toc {
-  font-size: 0.7em;
+.table-of-content .toc ul {
+  margin: 0;
+  padding: 0 0 0 0.2rem;
+  list-style-type: none;
+  list-style: symbols inside none;
+}
+.table-of-content .toc > ul > li > ul {
+  padding-left: 1rem;
 }
 .last-updated a {
   color: #333;

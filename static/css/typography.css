@@ -172,6 +172,7 @@ ul.list-articles-under-tag-category li {
   font-family: var(--sansFontFamily);
   font-size: rfs(0.963rem);
 }
+.table-of-content .toc,
 .proj-desc,
 footer,
 div.blog-archives time,
