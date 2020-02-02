@@ -278,7 +278,7 @@ ul.list-articles-under-tag-category li {
   padding: 0.1rem 0.2rem;
 }
 div.blog-archives div {
-  margin-left: 6em;
+  margin-left: rfs(6rem);
 }
 div.blog-archives div.last-entry-of-year {
   margin-bottom: 1em;
@@ -298,6 +298,9 @@ div.recent-posts-posted {
 @media (max-width: 767px) {
   div.blog-archives h2 {
     float: none;
+  }
+  div.blog-archives div {
+    margin-left: 0;
   }
   div.blog-archives article {
     margin-left: 0;
