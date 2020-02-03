@@ -130,9 +130,8 @@
             <ul class="list-of-tags tags-in-article">
                 {% for tag in article.tags|sort %}
                 <li><a href="{{ SITEURL }}/{{ TAGS_URL }}#{{ tag.slug }}-ref">{{ tag }}
-                    {% for aTag, tagged_articles in tags if aTag == tag %}
-                    <span class="superscript">{{ tagged_articles|count }}</span>
-                    {% endfor %}</a></li>
+                    <span class="superscript">{{ tags[tag]|count }}</span>
+                    </a></li>
                 {% endfor %}
             </ul>
             {% endif %}
