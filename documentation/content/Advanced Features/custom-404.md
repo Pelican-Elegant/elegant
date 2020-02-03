@@ -1,6 +1,6 @@
 ---
 Authors: Talha Mansoor, Jack De Winter
-Title: Add A Custom 404 Error Page to Your Site
+Title: Custom 404 Error Page
 Tags: unique
 Date: 2019-07-03 20:07
 Slug: custom-404-page
