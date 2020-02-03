@@ -22,20 +22,20 @@ Elegant supports [`liquid_tags.include_code` plugin](https://github.com/getpelic
 
 ## Example 1
 
-{% include_code square-root.py lang:python Calculate square root of 8 %}
+{% include_code square-root.py lang:python Calculate square root of 8 %}<!-- yaspeller ignore -->
 
 ## Example 2 -- Without Filename
 
-{% include_code alias-sed.fish :hidefilename: Fish Shell alias for sed %}
+{% include_code alias-sed.fish :hidefilename: Fish Shell alias for sed %}<!-- yaspeller ignore -->
 
 ## Example 3 -- Without Download Link
 
-{% include_code alias-sed.fish :hidelink: Fish Shell alias for sed %}
+{% include_code alias-sed.fish :hidelink: Fish Shell alias for sed %}<!-- yaspeller ignore -->
 
 ## Example 4 -- Without Filename and Download Link
 
-{% include_code alias-sed.fish :hidefilename: :hidelink: Fish Shell alias for sed %}
+{% include_code alias-sed.fish :hidefilename: :hidelink: Fish Shell alias for sed %}<!-- yaspeller ignore -->
 
 ## Example 5 -- Without Metadata
 
-{% include_code square-root.js lang:js :hideall: Compute square-root %}
+{% include_code square-root.js lang:js :hideall: Compute square-root %}<!-- yaspeller ignore -->
