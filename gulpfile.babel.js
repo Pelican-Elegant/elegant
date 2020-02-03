@@ -68,15 +68,18 @@ const watchFiles = () => {
       "static/**/*.js",
       "!static/**/bootstrap.css",
       "!static/**/bootstrap_responsive.css",
-      "!static/**/elegant.prod.css",
-      "!static/js/elegant.prod.js"
+      "!static/**/elegant.prod.e4bd582858.css",
+      "!static/js/elegant.prod.e4bd582858.js"
     ],
     { ignoreInitial: false },
     buildAll
   );
 };
 
-const pathProdCSS = path.join(__dirname, "static/css/elegant.prod.css");
+const pathProdCSS = path.join(
+  __dirname,
+  "static/css/elegant.prod.e4bd582858.css"
+);
 const rmProdCSS = cb => {
   if (fs.existsSync(pathProdCSS)) {
     fs.unlinkSync(pathProdCSS);
@@ -93,9 +96,9 @@ const minifyJS = () => {
     "static/clipboard/clipboard.js",
     "static/js/copy-to-clipboard.js",
     "static/js/lunr-search-result.js",
-    "!static/js/elegant.prod.js"
+    "!static/js/elegant.prod.e4bd582858.js"
   ])
-    .pipe(concat("elegant.prod.js"))
+    .pipe(concat("elegant.prod.e4bd582858.js"))
     .pipe(terser())
     .pipe(dest("static/js/"));
 };
@@ -113,10 +116,10 @@ const compileCSS = () => {
     "static/photoswipe/photoswipe.css",
     "static/photoswipe/default-skin/default-skin.css",
     "static/css/*.css",
-    "!static/css/elegant.prod.css"
+    "!static/css/elegant.prod.e4bd582858.css"
   ])
     .pipe(postcss(plugins))
-    .pipe(concat("elegant.prod.css"))
+    .pipe(concat("elegant.prod.e4bd582858.css"))
     .pipe(dest("static/css/"));
 };
 
