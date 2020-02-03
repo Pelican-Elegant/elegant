@@ -124,7 +124,7 @@ SITE_DESCRIPTION = (
 
 # Share links at bottom of articles
 # Supported: twitter, facebook, hacker-news, reddit, linkedin, email
-SHARE_LINKS = [ ('twitter', 'Twitter'), ('facebook', 'Facebook'), ('email', 'Email') ]
+SHARE_LINKS = [("twitter", "Twitter"), ("facebook", "Facebook"), ("email", "Email")]
 
 # Landing Page
 PROJECTS_TITLE = "Related Projects"
