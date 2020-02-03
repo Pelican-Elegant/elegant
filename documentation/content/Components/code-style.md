@@ -8,7 +8,7 @@ authors: Talha Mansoor
 Category: Components
 ---
 
-Elegant uses [Pygment's port](https://github.com/daveyarwood/gruvbox-pygments)
+Elegant uses [Pygment port](https://github.com/daveyarwood/gruvbox-pygments)
 of [Gruvbox](https://github.com/morhetz/gruvbox) theme for syntax highlighting.
 
     #!c
