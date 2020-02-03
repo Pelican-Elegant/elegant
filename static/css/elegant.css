@@ -218,6 +218,7 @@ a:not(.collapsed).accordion-toggle.category-title-inside-accordion {
 }
 div.blog-archives h2 {
   float: left;
+  clear: both;
   position: relative;
   margin: 0;
 }
