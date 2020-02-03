@@ -224,3 +224,9 @@ PROJECTS = [{
 {% else %}
 {% set APPLAUSE_BUTTON = APPLAUSE_BUTTON %}
 {% endif %}
+
+{% if not SHARE_LINKS %}
+{% set SHARE_LINKS = [ ('twitter', 'Twitter'), ('facebook', 'Facebook'), ('email', 'Email') ] %}
+{% else %}
+{% set SHARE_LINKS = SHARE_LINKS %}
+{% endif %}

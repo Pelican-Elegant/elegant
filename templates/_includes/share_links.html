@@ -1,5 +1,6 @@
 {% macro share_links(article) %}
-    {% if article.share_post and article.status != 'draft' %}
+    {% from '_includes/_defaults.html' import SHARE_LINKS with context %}
+    {% if article.share_post and article.status != 'draft' and SHARE_LINKS %}
     <p id="post-share-links">
     {% if article.share_post_intro %}
     {{ article.share_post_intro }}
@@ -7,11 +8,9 @@
     {% from '_includes/_defaults.html' import SHARE_POST_INTRO with context %}
     {{ SHARE_POST_INTRO }}
     {% endif %}
-    <a href="{{ article.share_post['twitter'] }}" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
-    ❄
-    <a href="{{ article.share_post['facebook'] }}" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
-    ❄
-    <a href="{{ article.share_post['email'] }}" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-    </p>
+    {% for network, label in SHARE_LINKS %}
+      {% if not loop.first %} ❄ {% endif %}
+      <a href="{{ article.share_post[network] }}" target="_blank" rel="nofollow noopener noreferrer" title="Share {% if network == 'email' %}via{% else %}on{% endif %} {{ label }}">{{ label }}</a>
+    {% endfor %}
     {% endif %}
 {% endmacro %}
