@@ -124,9 +124,7 @@ Here is the require HTML with two images in it.
   class="photoswipe-gallery"
   itemscope
   itemtype="http://schema.org/ImageGallery"
->
-  <div></div>
-</div>
+></div>
 ```
 
 Notice the class, `photoswipe-gallery`. You should not change it.

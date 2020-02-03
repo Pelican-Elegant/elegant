@@ -36,6 +36,6 @@ Elegant supports [`liquid_tags.include_code` plugin](https://github.com/getpelic
 
 {% include_code alias-sed.fish :hidefilename: :hidelink: Fish Shell alias for sed %}
 
-## Example 3 -- Without Metadata
+## Example 5 -- Without Metadata
 
 {% include_code square-root.js lang:js :hideall: Compute square-root %}
