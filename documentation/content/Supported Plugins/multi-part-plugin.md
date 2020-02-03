@@ -13,7 +13,10 @@ Authors: Talha Mansoor, Jack De Winter
 ---
 
 !!! important "Deprecation"
-The `multi-part` plugin has been deprecated in favor of the `series` plugin. For an up-to-date article on using the `series` plugin, [go here]({filename}./series-plugin.md).
+
+    The `multi-part` plugin has been deprecated in favor of the `series`
+    plugin. For an up-to-date article on using the `series` plugin, [go
+    here]({filename}./series-plugin.md).
 
 When writing articles about certain topics, it is advantageous to split a single article into
 multiple articles. Without splitting the article up, the author would be forced to cram all
@@ -60,7 +63,7 @@ created, Pelican provides Elegant with a list of all pages that have the same va
 each article. The titles for those pages is then displayed in sorted order, with the current
 page presented in _italics_ and the other pages presented as a link to those pages.
 
-```Markdown
+```markdown
 series: Maximizing Elegant
 series_index: 2
 ```
