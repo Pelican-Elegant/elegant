@@ -5,10 +5,7 @@ Tags: pelican-plugin, navigation, web-design, deprecated
 Category: Supported Plugins
 Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin
-Comment_id: 3ws2xke-how-to-use-multi-part-plugin
-Subtitle:
 Summary: Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the series.
-Keywords:
 Authors: Talha Mansoor, Jack De Winter
 ---
 
