@@ -1,7 +1,7 @@
 {% macro applause_button(article) %} {% from '_includes/_defaults.html' import
 APPLAUSE_BUTTON with context %}
 
-{%if (APPLAUSE_BUTTON or article.applause_button == "on") and article.applause_button != "off" %}
+{% if (APPLAUSE_BUTTON or article.applause_button == "on") and article.applause_button != "off" %}
 
 {% set url = SITEURL+ '/' + article.url %}
 {% set identifier = SITEURL+ '/' + article.url %}
@@ -9,9 +9,8 @@ APPLAUSE_BUTTON with context %}
 {% set identifier = article.applause_button_id %}
 {% endif %}
 
-<script src="{{ SITEURL }}/theme/applause-button/applause-button.js"></script>
 <div class="applause_button">
-    <applause-button url={{identifier}}> </applause-button>
+    <applause-button url={{ identifier }}> </applause-button>
 </div>
 
 {% endif %} {% endmacro %}

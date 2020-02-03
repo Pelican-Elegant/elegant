@@ -103,7 +103,6 @@ div.note p.admonition-title:before,
 div.hint p.admonition-title:before,
 div.tip p.admonition-title:before {
   display: inline-block;
-  font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
   line-height: 1;

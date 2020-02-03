@@ -8,12 +8,12 @@
     {% set tag.close = true %}
     {% endif %}
     {% set auth = AUTHORS.get(author|string) %}
-    <div class="author_blurb">
+    <div class="author-blurb">
         <a href="{{ auth.url }}" target="_blank" rel="nofollow noopener noreferrer">
             {% if AUTHORS.get(author|string).avatar %}
-            <img src={{auth.avatar}} alt="{{author}} Avatar" title="{{author}}">
+            <img src={{ auth.avatar }} alt="{{ author }} Avatar" title="{{ author }}">
             {% endif %}
-            <span class="author_name">{{ author }}</span>
+            <span class="author-name">{{ author }}</span>
         </a>
         {{ auth.blurb }}
     </div>

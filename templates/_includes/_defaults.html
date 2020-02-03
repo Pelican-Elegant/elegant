@@ -27,24 +27,24 @@
 {% endif %}
 
 {# Placeholder text for Email field #}
-{% if not EMAIL_FIELD_PLACEHOLDER  %}
+{% if not EMAIL_FIELD_PLACEHOLDER %}
 {% set EMAIL_FIELD_PLACEHOLDER  = 'Enter your email...' %}
 {% else %}
-{% set EMAIL_FIELD_PLACEHOLDER  = EMAIL_FIELD_PLACEHOLDER  %}
+{% set EMAIL_FIELD_PLACEHOLDER  = EMAIL_FIELD_PLACEHOLDER %}
 {% endif %}
 
 {# Subscribe button title #}
-{% if not SUBSCRIBE_BUTTON_TITLE  %}
+{% if not SUBSCRIBE_BUTTON_TITLE %}
 {% set SUBSCRIBE_BUTTON_TITLE  = 'Subscribe' %}
 {% else %}
-{% set SUBSCRIBE_BUTTON_TITLE  = SUBSCRIBE_BUTTON_TITLE  %}
+{% set SUBSCRIBE_BUTTON_TITLE  = SUBSCRIBE_BUTTON_TITLE %}
 {% endif %}
 
 {# Count of recent articles to be shown on the home page #}
-{% if not RECENT_ARTICLES_COUNT  %}
+{% if not RECENT_ARTICLES_COUNT %}
 {% set RECENT_ARTICLES_COUNT  = 10 %}
 {% else %}
-{% set RECENT_ARTICLES_COUNT  = RECENT_ARTICLES_COUNT  %}
+{% set RECENT_ARTICLES_COUNT  = RECENT_ARTICLES_COUNT %}
 {% endif %}
 
 {# Label to show before Share Post links #}
@@ -195,25 +195,25 @@ PROJECTS = [{
 {% set PHOTOS_LIGHTBOX = PHOTOS_LIGHTBOX %}
 {% endif %}
 
-{%if not TAGS_URL %}
+{% if not TAGS_URL %}
 {% set TAGS_URL = 'tags.html' %}
 {% else %}
 {% set TAGS_URL = TAGS_URL %}
 {% endif %}
 
-{%if not CATEGORIES_URL %}
+{% if not CATEGORIES_URL %}
 {% set CATEGORIES_URL = 'categories.html' %}
 {% else %}
 {% set CATEGORIES_URL = CATEGORIES_URL %}
 {% endif %}
 
-{%if not ARCHIVES_URL %}
+{% if not ARCHIVES_URL %}
 {% set ARCHIVES_URL = 'archives.html' %}
 {% else %}
 {% set ARCHIVES_URL = ARCHIVES_URL %}
 {% endif %}
 
-{%if not SEARCH_URL %}
+{% if not SEARCH_URL %}
 {% set SEARCH_URL = 'search.html' %}
 {% else %}
 {% set SEARCH_URL = SEARCH_URL %}
@@ -223,4 +223,10 @@ PROJECTS = [{
 {% set APPLAUSE_BUTTON = False %}
 {% else %}
 {% set APPLAUSE_BUTTON = APPLAUSE_BUTTON %}
+{% endif %}
+
+{% if not SHARE_LINKS %}
+{% set SHARE_LINKS = [ ('twitter', 'Twitter'), ('facebook', 'Facebook'), ('email', 'Email') ] %}
+{% else %}
+{% set SHARE_LINKS = SHARE_LINKS %}
 {% endif %}

@@ -245,14 +245,4 @@ in making Elegant more elegant.
 
 1. He submitted a [patch](https://github.com/Pelican-Elegant/elegant/pull/2)
    to the project
-
-# 3rd Party Credits
-
-Elegant is standing on the shoulders of these giants.
-
-1. [Tipue Search](http://www.tipue.com/search/)
-1. [Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/)
-1. [Solarized Light theme](http://ethanschoonover.com/solarized) converted to
-   [Pelican Pygments](https://github.com/yuex/pelican-pygments-solarized-css)
-   by [yuex 悟道洞穴人](https://github.com/yuex)
    <!-- yaspeller ignore:end -->

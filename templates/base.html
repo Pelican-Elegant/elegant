@@ -4,12 +4,25 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block head_links %}
+        {% if 'assets' in PLUGINS %}
+        {% include '_includes/minify_css.html' with context %}
+        {% else %}
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.prod.e4bd582858.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+        {% endif %}
+        {% endblock head_links %}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
         {% if CLAIM_GOOGLE %}
         {% include '_includes/claim_google.html' with context %}
         {% endif %}
         {% if CLAIM_BING %}
         {% include '_includes/claim_bing.html' with context %}
-
+        {% endif %}
+        {% if CLAIM_YANDEX %}
+        {% include '_includes/claim_yandex.html' with context %}
         {% endif %}
         {% if article and article.author %}
         <meta name="author" content="{{ article.author }}" />
@@ -25,22 +38,13 @@
         {% endif %}
         {% block meta_tags_in_head %}
         {% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
-        {%if TWITTER_USERNAME %}
-        <meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
+        {% if TWITTER_USERNAME %}
+        <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
         {% endif %}
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
         {% endblock meta_tags_in_head %}
         <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
-        {% block head_links %}
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-        {% if 'assets' in PLUGINS %}
-        {% include '_includes/minify_css.html' with context %}
-        {% else %}
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.prod.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
-        {% endif %}
-        {% endblock head_links %}
         {% include '_includes/favicon_links.html' %}
         {% block feed_links %}
         {% include '_includes/feeds.html' %}
@@ -102,6 +106,7 @@
         {% endif %}
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="{{ SITEURL }}/theme/js/elegant.prod.e4bd582858.js"></script>
         <script>
             function validateForm(query)
             {

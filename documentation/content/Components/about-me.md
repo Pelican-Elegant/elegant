@@ -8,6 +8,10 @@ Slug: write-about-me
 Category: Components
 ---
 
+!!! Important "Define `LANDING_PAGE_TITLE`"
+
+    "About Me" section works only if you have defined `LANDING_PAGE_TITLE` in your Pelican configuration. [Read here.]({filename}./welcome.md)
+
 To write about me section, create a page. See [Pelican documentation](http://docs.getpelican.com/en/stable/content.html#pages) on how to create a page.
 
 The slug of the page should be `landing-page-about-hidden` and `status` should be `hidden`. Example,

@@ -19,8 +19,8 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
 {% if FEATURED_IMAGE %}
-<meta property="og:image" content="{{FEATURED_IMAGE}}" />
-<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
 {% endif %}
 {% endblock meta_tags_in_head %}
 
@@ -45,7 +45,7 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
             {% for tag, articles in tags|sort %}
             <li>
             {% set num = articles|count %}
-            <a href="#{{ tag.slug }}-ref">{{ tag }}<span>{{ num }}</span></a>
+            <a href="#{{ tag.slug }}-ref">{{ tag }}<span class="superscript">{{ num }}</span></a>
             </li>
             {% endfor %}
         </ul>
@@ -56,20 +56,20 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
     <div class="span8 offset2">
         {% for tag, articles in tags|sort %}
         <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
-        <ul class="articles-in-tag list-articles-category">
+        <ul class="list-articles-under-tag-category">
             {% for article in articles|sort(reverse = true, attribute = 'date') %}
             <li itemscope>
-                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
-                    {{ article.locale_date }}
-                </time>
                 <a href="{{ SITEURL }}/{{ article.url }}">
                     {{ article.title }}
-                    {%if article.subtitle %}
+                    {% if article.subtitle %}
                     <small class="subtitle">
                         {{ article.subtitle }}
                     </small>
                     {% endif %}
                 </a>
+                <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
+                    {{ article.locale_date }}
+                </time>
             </li>
             {% endfor %}
         </ul>

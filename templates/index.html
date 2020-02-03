@@ -6,8 +6,8 @@
 
 {% block meta_tags_in_head %}
 {{ super() }}
-{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE with context %}
-{% if LANDING_PAGE_TITLE  %}
+{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE, FEATURED_IMAGE, SITE_DESCRIPTION with context %}
+{% if LANDING_PAGE_TITLE %}
 <meta property="og:title" content="{{ LANDING_PAGE_TITLE|e }}"/>
 <meta name="twitter:title" content="{{ LANDING_PAGE_TITLE|e }}">
 {% else %}
@@ -15,24 +15,21 @@
 <meta name="twitter:title" content="{{ SITENAME|striptags|e }}">
 {% endif %}
 <meta property="og:url" content="{{ SITEURL }}" />
-{% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
-{% if SITE_DESCRIPTION %}
-<meta property="og:description" content="{{SITE_DESCRIPTION|e}}" />
-<meta name="twitter:description" content="{{SITE_DESCRIPTION|e}}">
-{% endif %}
 <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
 <meta property="og:article:author" content="{{ AUTHOR }}" />
-{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
 {% if FEATURED_IMAGE %}
-<meta property="og:image" content="{{FEATURED_IMAGE}}" />
-<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
 {% endif %}
+{% if SITE_DESCRIPTION %}
+<meta property="og:description" content="{{ SITE_DESCRIPTION|e }}" />
+<meta name="twitter:description" content="{{ SITE_DESCRIPTION|e }}">
+{% endif %}
+<meta name="keywords" content="{% for tag, _ in tags|sort %} {{ tag }}, {% endfor %}{% for category, _ in categories|sort %} {{ category }}, {% endfor %}" />
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE with context %}
-{% from '_includes/_defaults.html' import PROJECTS with context %}
-{% from '_includes/_defaults.html' import PROJECTS_TITLE with context %}
+{% from '_includes/_defaults.html' import LANDING_PAGE_TITLE, PROJECTS, PROJECTS_TITLE with context %}
 
 {% set landing_page = namespace(page=false) %}
 {% for p in hidden_pages if p.slug == "landing-page-about-hidden" %}
@@ -45,7 +42,7 @@
     {% if PROJECTS and LANDING_PAGE_TITLE %}
     {% set css_class = 'span12' %}
     {% endif %}
-    <header class="page-header {{css_class}}">
+    <header class="page-header {{ css_class }}">
     <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_TITLE }}</a></h1>
     </header>
     {% endif %}
@@ -56,9 +53,9 @@
         {% if PROJECTS and LANDING_PAGE_TITLE %}
         {% set css_class = 'span8' %}
         {% endif %}
-        <div class="{{css_class}}">
+        <div class="{{ css_class }}">
             <header>
-                <h1 id="about-me">{{landing_page.page.title}}</h1>
+                <h1 id="about-me">{{ landing_page.page.title }}</h1>
             </header>
             <div class="article-content">
                 {{ landing_page.page.content }}
@@ -71,17 +68,17 @@
         {% if PROJECTS and LANDING_PAGE_TITLE %}
         {% set css_class = 'span4' %}
         {% endif %}
-        <div class="{{css_class}}">
+        <div class="{{ css_class }}">
             <header>
             <h1 id="my-projects">{{ PROJECTS_TITLE }}</h1>
             </header>
             {% for project in PROJECTS %}
-            <ul class="list-all-articles">
+            <ul class="list-projects">
                 <li>
                 <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj-desc">{{ project.description }}</span>
                 </li>
             </ul>
-            {%endfor %}
+            {% endfor %}
         </div>
         {% endif %}
     </div>
@@ -93,7 +90,7 @@
     {% endif %}
     {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT, ARCHIVES_URL, CATEGORIES_URL with context %}
     <div class="row-fluid">
-        <div class="{{css_class}}">
+        <div class="{{ css_class }}">
             <header>
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/{{ ARCHIVES_URL }}">all posts</a></h1>
             </header>
@@ -103,7 +100,7 @@
             <div itemscope class="recent-posts-article">
                 <a href="{{ SITEURL }}/{{ article.url }}">
                     {{ article.title }}
-                    {%if article.subtitle %}
+                    {% if article.subtitle %}
                     <small class="subtitle">
                         {{ article.subtitle }}
                     </small>
@@ -112,12 +109,10 @@
                 <div class="recent-posts-posted">
                     posted in
                     <a href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ article.category.slug }}-ref">{{ article.category }}</a>
-                    <div class="recent-posts-time">
-                        <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-                    </div>
+                    <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </div>
                 {% if RECENT_ARTICLE_SUMMARY %}
-                    <p>{{article.summary}}</p>
+                    <p>{{ article.summary }}</p>
                 {% endif %}
             </div>
             {% endif %}
