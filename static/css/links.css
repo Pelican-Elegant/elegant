@@ -44,6 +44,7 @@ div.recent-posts-posted a {
     text-decoration: none;
   }
 }
+#lunr-search-result > div.lunr-search-result-item > h4 > a,
 a.ampl {
   color: royalblue;
   display: inline-block;

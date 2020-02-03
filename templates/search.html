@@ -22,87 +22,25 @@ Search results for {{ SITENAME|striptags|e }} blog.
 <meta property="og:image" content="{{ FEATURED_IMAGE }}" />
 <meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
 {% endif %}
-<script src="https://unpkg.com/lunr/lunr.js"></script>
 {% endblock meta_tags_in_head %}
 
 {% block content %}
+<div class="row-fluid">
+    <header id="lunr-search-result-heading" class="page-header span10 offset2">
+    </header>
+</div>
+
+<div class="row-fluid">
     <div class="span8 offset2">
-        <div id="lunrsearchresults">
-            <ul></ul>
+        <div id="lunr-search-result" >
         </div>
     </div>
+</div>
 {% endblock content %}
 
 {% block script %}
+    {% if 'tipue_search' in PLUGINS %}
+        <script src="{{ SITEURL }}/tipuesearch_content.js"></script>
+    {% endif %}
 {{ super() }}
-{% if 'tipue_search' in PLUGINS %}
-<script src="{{ SITEURL }}/tipuesearch_content.js"></script>
-{% endif %}
-
-<script>
-var items = tipuesearch['pages'];
-var documents = tipuesearch["pages"]
-var counter = 0
-
-for (item in documents){
-    documents[item]['id'] = counter;
-    counter = counter +1;
-}
-
-var idx = lunr(function () {
-  this.ref('id')
-  this.field('title')
-  this.field('url')
-  this.field('text', { boost: 10 })
-  this.field('tags')
-
-  items.forEach(function (doc) {
-    this.add(doc)
-  }, this)
-})
-
-function lunr_search(term) {
-    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
-    if(term) {
-        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
-        //put results on the screen.
-        var results = idx.search(term);
-        if(results.length>0){
-            //console.log(idx.search(term));
-            //if results
-            for (var i = 0; i < results.length; i++) {
-                // more statements
-                var ref = results[i]['ref'];
-                var url = documents[ref]['url'];
-                var title = documents[ref]['title'];
-                var body = documents[ref]['text'].substring(0,160)+'...';
-                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span></a><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></li>";
-            }
-        } else {
-            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
-        }
-    }
-    return false;
-}
-
-function getQueryVariable(variable) {
-  var query = window.location.search.substring(1);
-  var vars = query.split('&');
-
-  for (var i = 0; i < vars.length; i++) {
-    var pair = vars[i].split('=');
-
-    if (pair[0] === variable) {
-      return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-    }
-  }
-}
-
-
-var searchTerm = getQueryVariable('q');
-if (searchTerm) {
-  lunr_search(searchTerm)
-}
-</script>
-
 {% endblock script %}
