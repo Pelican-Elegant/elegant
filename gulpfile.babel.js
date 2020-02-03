@@ -65,11 +65,11 @@ const watchFiles = () => {
       "templates/**/*.html",
       "static/**/*.css",
       "static/**/*.less",
-      "!static/**/elegant.prod.css",
       "static/**/*.js",
-      "!static/js/elegant.prod.js",
       "!static/**/bootstrap.css",
-      "!static/**/bootstrap_responsive.css"
+      "!static/**/bootstrap_responsive.css",
+      "!static/**/elegant.prod.css",
+      "!static/js/elegant.prod.js"
     ],
     { ignoreInitial: false },
     buildAll
@@ -91,6 +91,8 @@ const minifyJS = () => {
     "static/photoswipe/photoswipe.js",
     "static/photoswipe/photoswipe-ui-default.js",
     "static/photoswipe/photoswipe-array-from-dom.js",
+    "static/clipboard/clipboard.js",
+    "static/js/copy-to-clipboard.js",
     "!static/js/elegant.prod.js"
   ])
     .pipe(concat("elegant.prod.js"))
