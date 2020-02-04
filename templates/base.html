@@ -111,7 +111,6 @@
         <script type='text/javascript'>
         function getgram(pic) {
             // This function grabs from instagram the data about images and returns HTML to show it in photoswipe
-            console.log(pic)
             var mypics = []
             $.getJSON("https://www.instagram.com/p/" + pic + "/?__a=1", function( data ) {
                 $.each(data.graphql.shortcode_media, function(key,val){
@@ -149,9 +148,6 @@
                     }
                 })
 
-
-                console.log(mypics);
-
                 var myhtml = "";
                 $.each(mypics, (function(item){
                     myhtml = myhtml + mypics[item].html;
@@ -159,8 +155,15 @@
                 if (myhtml) {
                     myhtml = '<div>' + myhtml + '</div>';
                 }
-                console.log(myhtml)
-                return myhtml;
+
+                // Set innerHTML after we have got the result
+
+                document.querySelectorAll('#photoswipe-instagram').forEach(function(divisor){
+                    mygalleryid = divisor.getAttribute('data-gallery-id');
+                    if (mygalleryid === pic) {
+                        divisor.innerHTML = myhtml;
+                    }
+                });
             });
         }
 
@@ -169,7 +172,7 @@
         document.querySelectorAll('#photoswipe-instagram').forEach(function(divisor){
             mygalleryid = divisor.getAttribute('data-gallery-id');
             if (mygalleryid){
-                divisor.innerHTML = getgram(mygalleryid);
+                getgram(mygalleryid);
             }
         })})
 
