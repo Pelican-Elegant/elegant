@@ -1,4 +1,4 @@
-exclude: '^static/(css|js)/elegant\.prod\.\w+\.(css|js)'
+exclude: '^static/(css|js)/elegant\.prod\.\w+\.(css|js)|^THANKS.md'
 fail_fast: true
 repos:
 - repo: meta
