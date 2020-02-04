@@ -106,7 +106,76 @@
         {% endif %}
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="{{ SITEURL }}/theme/js/elegant.prod.9e9d5ce754.js"></script>
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script type='text/javascript'>
+        function getgram(pic) {
+            // This function grabs from instagram the data about images and returns HTML to show it in photoswipe
+            console.log(pic)
+            var mypics = []
+            $.getJSON("https://www.instagram.com/p/" + pic + "/?__a=1", function( data ) {
+                $.each(data.graphql.shortcode_media, function(key,val){
+                    if (key == '__typename'){
+                        var items = [];
+                        if (val == 'GraphSidecar'){
+                            $.each(data.graphql.shortcode_media.edge_sidecar_to_children.edges, function( key, val ) {
+                                var mynewitem = {};
+                                mynewitem.image = val.node.display_url;
+                                mynewitem.title = "";
+                                mynewitem.height = val.node.dimensions.height;
+                                mynewitem.width = val.node.dimensions.width;
+                                // mynewitem.description = "A detailed description for picture";
+                                // mynewitem.thumb = mynewitem.image;
+                                mynewitem.big = val.node.display_url;
+                                // mynewitem.layer = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
+                                // mynewitem.link = "https://www.instagram.com/p/" + pic + "/";
+                                mynewitem.html = "<figure itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'><a data-size='" + mynewitem.width + "x"+ mynewitem.height + "' itemprop='contentUrl' href='" + mynewitem.big + "' /'><img itemprop='thumbnail' src='" + mynewitem.image + "' /></a></figure>";
+                                mypics.push(mynewitem);
+                            });
+                        }
+                        if (val == 'GraphImage'){
+                            var mynewitem = {};
+                            mynewitem.image = data.graphql.shortcode_media.display_url;
+                            mynewitem.title = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
+                            mynewitem.height = data.graphql.shortcode_media.dimensions.height;
+                            mynewitem.width = data.graphql.shortcode_media.dimensions.width;
+                            // mynewitem.description = "A detailed description for picture";
+                            // mynewitem.thumb = mynewitem.image;
+                            mynewitem.big = mynewitem.image;
+                            // mynewitem.layer = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
+                            // mynewitem.link = "https://www.instagram.com/p/" + pic + "/";
+                            mypics.push(mynewitem);
+                        }
+                    }
+                })
+
+
+                console.log(mypics);
+
+                var myhtml = "";
+                $.each(mypics, (function(item){
+                    myhtml = myhtml + mypics[item].html;
+                }));
+                if (myhtml) {
+                    myhtml = '<div>' + myhtml + '</div>';
+                }
+                console.log(myhtml)
+                return myhtml;
+            });
+        }
+
+        var pic = 'BwWo35fAcR3';
+        $(function updategalleries(){
+        document.querySelectorAll('#photoswipe-instagram').forEach(function(divisor){
+            mygalleryid = divisor.getAttribute('data-gallery-id');
+            if (mygalleryid){
+                divisor.innerHTML = getgram(mygalleryid);
+            }
+        })})
+
+        </script>
+
+        <script src="{{ SITEURL }}/theme/js/elegant.prod.js"></script>
         <script>
             function validateForm(query)
             {
