@@ -186,6 +186,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "duhoobo",
+      "name": "Hungpo DU",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2430317?v=4",
+      "profile": "http://ialloc.org",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
