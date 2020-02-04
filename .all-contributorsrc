@@ -216,6 +216,15 @@
         "bug",
         "maintenance"
       ]
+    },
+    {
+      "login": "7rack",
+      "name": "vimxiang",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4596875?v=4",
+      "profile": "http://www.7rack.info",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
