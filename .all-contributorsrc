@@ -177,6 +177,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "0x8BADFOOD",
+      "name": "Mobile Developer",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3933496?v=4",
+      "profile": "http://0x8badfood.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
