@@ -195,6 +195,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "ShaunaGordon",
+      "name": "Shauna Gordon",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/579361?v=4",
+      "profile": "http://shaunagordon.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

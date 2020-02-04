@@ -33,6 +33,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/knz"><img src="https://avatars3.githubusercontent.com/u/642886?v=4" width="100px;" alt=""/><br /><sub><b>kena</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=knz" title="Code">💻</a></td>
     <td align="center"><a href="http://0x8badfood.github.io"><img src="https://avatars1.githubusercontent.com/u/3933496?v=4" width="100px;" alt=""/><br /><sub><b>Mobile Developer</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=0x8BADFOOD" title="Code">💻</a></td>
     <td align="center"><a href="http://ialloc.org"><img src="https://avatars1.githubusercontent.com/u/2430317?v=4" width="100px;" alt=""/><br /><sub><b>Hungpo DU</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Aduhoobo" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://shaunagordon.com"><img src="https://avatars1.githubusercontent.com/u/579361?v=4" width="100px;" alt=""/><br /><sub><b>Shauna Gordon</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3AShaunaGordon" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
