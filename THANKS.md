@@ -36,6 +36,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://shaunagordon.com"><img src="https://avatars1.githubusercontent.com/u/579361?v=4" width="100px;" alt=""/><br /><sub><b>Shauna Gordon</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3AShaunaGordon" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/AWegnerGitHub"><img src="https://avatars1.githubusercontent.com/u/6462439?v=4" width="100px;" alt=""/><br /><sub><b>A Wegner</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=AWegnerGitHub" title="Code">💻</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=AWegnerGitHub" title="Documentation">📖</a> <a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3AAWegnerGitHub" title="Bug reports">🐛</a> <a href="#maintenance-AWegnerGitHub" title="Maintenance">🚧</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://www.7rack.info"><img src="https://avatars2.githubusercontent.com/u/4596875?v=4" width="100px;" alt=""/><br /><sub><b>vimxiang</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3A7rack" title="Bug reports">🐛</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
