@@ -1,25 +1,34 @@
-// Get all pre. But ignore line numbers section
-const snippets = document.querySelectorAll("div.highlight pre");
+const copyToClipboardDefaultText = {
+  innerText: "Copy",
+  ariaLabel: "Copy to clipboard"
+};
+const copyToClipboardSuccessText = {
+  innerText: "Copied!",
+  ariaLabel: "Copied to clipboard"
+};
 
-snippets.forEach(snippet => {
-  const parent = snippet.parentNode;
+// Get all pre. But ignore line numbers section
+document.querySelectorAll("div.highlight pre").forEach(snippet => {
+  // create div.codecopy
   const wrapper = document.createElement("div");
+  wrapper.classList.add("codecopy");
 
   // Wrap code inside div.codecopy
-  wrapper.classList.add("codecopy");
+  const parent = snippet.parentNode;
   parent.replaceChild(wrapper, snippet);
   wrapper.appendChild(snippet);
 
   // Create button
-  const button = document.createElement("button");
-  button.title = "Copy to clipboard";
-  button.className = "codecopy-btn";
-  button.type = "button";
-  button.innerText = "Copy";
-  button.setAttribute("aria-label", "Copy to clipboard");
+  const button = `
+            <button
+                class="codecopy-btn"
+                title=${copyToClipboardDefaultText.ariaLabel}
+                aria-label=${copyToClipboardDefaultText.ariaLabel}
+            >${copyToClipboardDefaultText.innerText}
+            </button>`;
 
   // Add button to div.codecopy
-  wrapper.insertBefore(button, snippet);
+  wrapper.insertAdjacentHTML("afterbegin", button);
 });
 
 // Add copy to clipboard functionality
@@ -31,12 +40,13 @@ const clipboard = new ClipboardJS(".codecopy-btn", {
 
 // Show message on success
 clipboard.on("success", e => {
-  e.trigger.setAttribute("aria-label", "Copied!");
-  e.trigger.innerText = "Copied!";
+  e.trigger.innerText = copyToClipboardSuccessText.innerText;
+  e.trigger.setAttribute("aria-label", copyToClipboardSuccessText.ariaLabel);
   e.clearSelection();
+
   // Reset button text
   setTimeout(() => {
-    e.trigger.innerText = "Copy";
-    e.trigger.setAttribute("aria-label", "Copy to clipboard");
+    e.trigger.innerText = copyToClipboardDefaultText.innerText;
+    e.trigger.setAttribute("aria-label", copyToClipboardDefaultText.ariaLabel);
   }, 400);
 });
