@@ -23,22 +23,6 @@
 {{ smo_metadata(article) }}
 {% endblock meta_tags_in_head %}
 
-{% if article.instagram_id %}
-<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/twelve/galleria.twelve.min.css">
-<style>
-    .galleria { width: 700px; height: 400px; background: #FFFFFF }
-    .galleria-stage {
-        height:450px; <-- set this to any height and i should work :)
-        position: absolute;
-        top: 10px;
-        bottom: 60px;
-        left: 10px;
-        right: 10px;
-        overflow:hidden;}
-    .galleria-errors {display: none;}
-</style>
-{% endif %}
-
 {% block head_links %}
 {{ super() }}
 {% include '_includes/photos_header.html' %}
@@ -87,61 +71,6 @@
                 {% endfor %}
                 {% endfor %}
             </div>
-            {% endif %}
-
-            {% if article.instagram_id %}
-                <div class="galleria">
-                </div>
-                <script src="//code.jquery.com/jquery.min.js"></script>
-                <script src="//cdn.jsdelivr.net/npm/galleria@1.6.1/dist/galleria.min.js"></script>
-
-                <script type='text/javascript'>
-                var mypics = []
-                var pic = '{{ article.instagram_id }}';
-                $.getJSON("https://www.instagram.com/p/" + pic + "/?__a=1", function( data ) {
-                    $.each(data.graphql.shortcode_media, function(key,val){
-                if (key == '__typename'){
-                    var items = [];
-                    if (val == 'GraphSidecar'){
-                        $.each( data.graphql.shortcode_media.edge_sidecar_to_children.edges, function( key, val ) {
-                            var mynewitem = {};
-                            mynewitem.image = val.node.display_url;
-                            mynewitem.title = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
-                            // mynewitem.description = "A detailed description for picture";
-                            // mynewitem.thumb = mynewitem.image;
-                            mynewitem.big = mynewitem.image;
-                            // mynewitem.layer = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
-                            // mynewitem.link = "https://www.instagram.com/p/" + pic + "/";
-                            mypics.push(mynewitem);
-                        });
-                    }
-                    if (val == 'GraphImage'){
-                        var mynewitem = {};
-                        mynewitem.image = data.graphql.shortcode_media.display_url;
-                        mynewitem.title = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
-                        // mynewitem.description = "A detailed description for picture";
-                        // mynewitem.thumb = mynewitem.image;
-                        mynewitem.big = mynewitem.image;
-                        // mynewitem.layer = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
-                        // mynewitem.link = "https://www.instagram.com/p/" + pic + "/";
-                        mypics.push(mynewitem);
-                    }
-
-                }
-                    Galleria.loadTheme('https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/twelve/galleria.twelve.min.js');
-                    Galleria.run('.galleria', {
-                            dataSource: mypics,
-                            autoplay: true,
-                            responsive: true,
-                            maxVideoSize: 1300,
-                            imageCrop: false,
-                            width: 700,
-                            height: 400,
-                            imageTimeout: 1E10,
-                            wait: true,
-                    });
-                })});
-                </script>
             {% endif %}
 
             {% from '_includes/applause_button.html' import applause_button with context %}

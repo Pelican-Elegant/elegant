@@ -106,18 +106,35 @@
         {% endif %}
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="{{ SITEURL }}/theme/js/elegant.prod.2aace21d63.js"></script>
 
-        <script src="//code.jquery.com/jquery.min.js"></script>
         <script type='text/javascript'>
         function getgram(pic) {
             // This function grabs from instagram the data about images and returns HTML to show it in photoswipe
             var mypics = []
-            $.getJSON("https://www.instagram.com/p/" + pic + "/?__a=1", function( data ) {
-                $.each(data.graphql.shortcode_media, function(key,val){
+            var request = new XMLHttpRequest();
+            request.open('GET', `https://www.instagram.com/p/${pic}/?__a=1`, true);
+
+            request.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+                // Success!
+                var data = JSON.parse(this.response);
+            } else {
+                // We reached our target server, but it returned an error
+            }
+            };
+
+            request.onerror = function() {
+            // There was a connection error of some sort
+            };
+
+            request.send();
+            if (data){
+                data.graphql.shortcode_media.forEach(function(key,val){
                     if (key == '__typename'){
                         var items = [];
                         if (val == 'GraphSidecar'){
-                            $.each(data.graphql.shortcode_media.edge_sidecar_to_children.edges, function( key, val ) {
+                            data.graphql.shortcode_media.edge_sidecar_to_children.edges.forEach(function( key, val ) {
                                 var mynewitem = {};
                                 mynewitem.image = val.node.display_url;
                                 mynewitem.title = "";
@@ -147,6 +164,7 @@
                         }
                     }
                 })
+                }
 
                 var myhtml = "";
                 $.each(mypics, (function(item){
@@ -167,7 +185,6 @@
             });
         }
 
-        var pic = 'BwWo35fAcR3';
         $(function updategalleries(){
         document.querySelectorAll('#photoswipe-instagram').forEach(function(divisor){
             mygalleryid = divisor.getAttribute('data-gallery-id');
@@ -178,7 +195,6 @@
 
         </script>
 
-        <script src="{{ SITEURL }}/theme/js/elegant.prod.js"></script>
         <script>
             function validateForm(query)
             {
