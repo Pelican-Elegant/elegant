@@ -200,4 +200,4 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM(".photoswipe-gallery");
+initPhotoSwipeFromDOM(".elegant-gallery");

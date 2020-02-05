@@ -10,7 +10,7 @@ Category: Components
 
 Elegant integrates with [PhotoSwipe](https://photoswipe.com/) to create gallery of images. Here is an example.
 
-<div class="photoswipe-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="elegant-gallery" itemscope itemtype="http://schema.org/ImageGallery">
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
         <a href="https://i.picsum.photos/id/1019/5472/3648.jpg" itemprop="contentUrl" data-size="5472x3648">
             <img src="https://i.picsum.photos/id/1019/200/200.jpg" itemprop="thumbnail" alt="Image description" />
@@ -53,7 +53,7 @@ Here is the require HTML with two images in it.
 
 ```html
 <div
-  class="photoswipe-gallery"
+  class="elegant-gallery"
   itemscope
   itemtype="http://schema.org/ImageGallery"
 >
@@ -101,7 +101,7 @@ Here is the require HTML with two images in it.
 </div>
 ```
 
-<div class="photoswipe-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="elegant-gallery" itemscope itemtype="http://schema.org/ImageGallery">
  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
   <a href="https://i.picsum.photos/id/1019/5472/3648.jpg" itemprop="contentUrl" data-size="5472x3648">
    <img src="https://i.picsum.photos/id/1019/100/100.jpg" itemprop="thumbnail" alt="Image description" />
@@ -121,13 +121,13 @@ Here is the require HTML with two images in it.
 
 ```html
 <div
-  class="photoswipe-gallery"
+  class="elegant-gallery"
   itemscope
   itemtype="http://schema.org/ImageGallery"
 ></div>
 ```
 
-Notice the class, `photoswipe-gallery`. You should not change it.
+Notice the class, `elegant-gallery`. You should not change it.
 
 ## Define `figure`
 

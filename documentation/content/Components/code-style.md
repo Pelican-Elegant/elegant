@@ -21,7 +21,7 @@ of [Gruvbox](https://github.com/morhetz/gruvbox) theme for syntax highlighting.
 
 ```html
 <div
-  class="photoswipe-gallery"
+  class="elegant-gallery"
   itemscope
   itemtype="http://schema.org/ImageGallery"
 >

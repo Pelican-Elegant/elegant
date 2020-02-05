@@ -25,7 +25,7 @@ Another example,
 
     :::html hl_lines="2"
     <div
-      class="photoswipe-gallery"
+      class="elegant-gallery"
       itemscope
       itemtype="http://schema.org/ImageGallery"
     >
