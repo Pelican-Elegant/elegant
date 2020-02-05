@@ -29,6 +29,109 @@
 {% endblock head_links %}
 
 {% block content %}
+    <script type='text/javascript'>
+        function getgram(pic) {
+            // This function grabs from instagram the data about images and returns HTML to show it in photoswipe
+            var mypics = []
+            var request = new XMLHttpRequest();
+            var data = "";
+            request.open('GET', `https://www.instagram.com/p/${pic}/?__a=1`, true);
+
+            request.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+                // Success!
+                data = JSON.parse(this.response);
+                checkData(data);
+            } else {
+                // We reached our target server, but it returned an error
+                data = undefined;
+                console.log("Failure when loading instagram JSON")
+                }
+            }
+
+            request.onerror = function() {
+            // There was a connection error of some sort
+            };
+
+            request.send();
+            function checkData(data) {
+                if (data.graphql.shortcode_media.__typename == 'GraphSidecar'){
+                    // We've a gallery with more than one picture
+                    data.graphql.shortcode_media.edge_sidecar_to_children.edges.forEach(function(item) {
+                    var mynewitem = {};
+                    mynewitem.image = item.node.display_url;
+                    mynewitem.title = "";
+                    mynewitem.height = item.node.dimensions.height;
+                    mynewitem.width = item.node.dimensions.width;
+                    // mynewitem.description = "A detailed description for picture";
+                    // mynewitem.thumb = mynewitem.image;
+                    mynewitem.big = item.node.display_url;
+                    // mynewitem.layer = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
+                    // mynewitem.link = "https://www.instagram.com/p/" + pic + "/";
+                    mynewitem.html = "<figure itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'><a data-size='" + mynewitem.width + "x"+ mynewitem.height + "' itemprop='contentUrl' href='" + mynewitem.big + "' /'><img itemprop='thumbnail' src='" + mynewitem.image + "' /></a></figure>";
+                    mypics.push(mynewitem);
+                    });
+                } else if (data.graphql.shortcode_media.__typename == 'GraphImage'){
+                    // Post with single picture
+                    var mynewitem = {};
+                    mynewitem.image = data.graphql.shortcode_media.display_url;
+                    mynewitem.title = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
+                    mynewitem.height = data.graphql.shortcode_media.dimensions.height;
+                    mynewitem.width = data.graphql.shortcode_media.dimensions.width;
+                    // mynewitem.description = "A detailed description for picture";
+                    // mynewitem.thumb = mynewitem.image;
+                    mynewitem.big = mynewitem.image;
+                    // mynewitem.layer = "<a href='https://www.instagram.com/p/" + pic + "/'>" + "https://www.instagram.com/p/" + pic + "/</a>";
+                    // mynewitem.link = "https://www.instagram.com/p/" + pic + "/";
+                    mypics.push(mynewitem);
+                }
+
+                    var myhtml = "";
+                    mypics.forEach(function(item){
+                        myhtml = myhtml + item.html;
+                        });
+                    if (myhtml) {
+                        myhtml = '<div>' + myhtml + '</div>';
+                    }
+
+                    // Set innerHTML after we have got the result
+
+                    document.querySelectorAll('#photoswipe-instagram').forEach(function(divisor){
+                        mygalleryid = divisor.getAttribute('data-gallery-id');
+                        if (mygalleryid === pic) {
+                            divisor.innerHTML = myhtml;
+                            }
+                        });
+                }
+        }
+
+        function updategalleries(){
+            document.querySelectorAll('#photoswipe-instagram').forEach(function(divisor){
+                mygalleryid = divisor.getAttribute('data-gallery-id');
+                if (mygalleryid){
+                    getgram(mygalleryid);
+                   }
+                })
+            }
+
+        function ready(fn) {
+           if (document.readyState != 'loading')
+                fn();
+            else if (document.addEventListener)
+                document.addEventListener('DOMContentLoaded', fn);
+            else
+                document.attachEvent('onreadystatechange', function() {
+            if (document.readyState != 'loading')
+                fn();
+                });
+            }
+
+        ready(function(){
+            updategalleries();
+        });
+
+    </script>
+
 <article itemscope>
 <div class="row-fluid">
     <header class="page-header span10 offset2">

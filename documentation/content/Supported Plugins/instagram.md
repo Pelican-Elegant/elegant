@@ -3,7 +3,7 @@ Title: Creating a Photo Gallery Article from Instagram post
 Tags: pelican-theme, pelican-plugin, photo gallery, instagram
 Category: Supported Plugins
 Date: 2020-01-27 17:40
-Slug: how to use the instrgram plugin
+Slug: how-to-use-the-instragram-plugin
 Subtitle:
 Summary: Elegant can be configured to provide a simple display of pictures.
 Keywords: photos, gallery, photogallery, instagram
