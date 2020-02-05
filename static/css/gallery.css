@@ -1,19 +1,28 @@
 div.elegant-gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 
   & figure {
     margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border: 1px solid lightgray;
+
     & figcaption {
       display: none;
     }
+
     & img {
+      max-width: 100%;
       border: none;
-      padding: rfs(0.1rem);
+      padding: 0;
       margin: 0;
     }
   }
