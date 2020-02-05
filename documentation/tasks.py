@@ -118,11 +118,8 @@ def plugins_sync(c):
     # For now we don't need submodules plugins. When we do, use
     # --recurse-submodules and --shallow-submodules switches
     # Do specify path in --recurse-submodules so that only relevant plugin is downloaded
-    # TODO: switch back to getpelican repository after PR is merged
-    # https://github.com/getpelican/pelican-plugins/pull/1243
-    # "git clone --jobs 8 --depth 1 --shallow-submodules  https://github.com/getpelican/pelican-plugins.git plugins"
     c.run(
-        "git clone --jobs 8 --depth 1 --shallow-submodules --single-branch --branch feat-liquid-tags-include-code https://github.com/talha131/pelican-plugins.git plugins"
+        "git clone --jobs 8 --depth 1 --shallow-submodules  https://github.com/getpelican/pelican-plugins.git plugins"
     )
 
 

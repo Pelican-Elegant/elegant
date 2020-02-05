@@ -10,16 +10,6 @@ Category: Supported Plugins
 
 Elegant supports [`liquid_tags.include_code` plugin](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags#include-code).
 
-<!-- TODO: remove this warning after https://github.com/getpelican/pelican-plugins/pull/1243 is merged -->
-
-!!! Warning "Pending Pull Request"
-
-    The demo you see here is dependent on [this
-    patch](https://github.com/getpelican/pelican-plugins/pull/1243).
-
-    Until Pelican team merges the patch into plugins repository, you will have
-    apply this patch manually to your copy of plugins.
-
 ## Example 1
 
 <!-- yaspeller ignore:start -->
