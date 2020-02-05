@@ -1,10 +1,12 @@
 {% macro comments_section(article) %}
 
-{% from '_includes/_defaults.html' import DISQUS_FILTER, UTTERANCES_FILTER with context %}
+{% from '_includes/_defaults.html' import DISQUS_FILTER, UTTERANCES_FILTER, COMMENTBOX_FILTER with context %}
 
 {% set use_disqus = (not DISQUS_FILTER or article.disqus_filter == "off") and DISQUS_SITENAME and article.disqus_filter != "on" %}
 
 {% set use_utterances = (not UTTERANCES_FILTER or article.utterances_filter == "off") and UTTERANCES_REPO and article.utterances_filter != "on" %}
+
+{% set use_commentbox = (not COMMENTBOX_FILTER or article.commentbox_filter == "off") and COMMENTBOX_PROJECT and article.commentbox_filter != "on" %}
 
 {% set url = SITEURL+ '/' + article.url %}
 {% set identifier = SITEURL+ '/' + article.url %}
@@ -20,7 +22,7 @@
 {% set intro = article.comments_intro %}
 {% endif %}
 
-{% if article.status != 'draft' and article.comments != 'False' and (use_disqus or use_utterances) %}
+{% if article.status != 'draft' and article.comments != 'False' and (use_disqus or use_utterances or use_commentbox) %}
 
 <section>
     <h6 style="display:none;">Comments</h6>
@@ -29,7 +31,7 @@
     <div class="accordion" id="accordion2">
         <div class="accordion-group">
             <div class="accordion-heading">
-                <a class="accordion-toggle disqus-comment-count comment-count"
+                <a class="accordion-toggle disqus-comment-count comment-count collapsed"
                    data-toggle="collapse"
                    data-parent="#accordion2"
                    {% if use_disqus %}
@@ -52,6 +54,12 @@
                         {% if use_utterances %}
                         {% from '_includes/utterances_scripts.html' import comments_script_utterances with context %}
                         {{ comments_script_utterances(UTTERANCES_REPO, identifier, UTTERANCES_LABEL, UTTERANCES_THEME) }}
+                        {% endif %}
+
+
+                        {% if use_commentbox %}
+                        {% from '_includes/commentbox_scripts.html' import comments_script_commentbox with context %}
+                        {{ comments_script_commentbox(COMMENTBOX_PROJECT, identifier) }}
                         {% endif %}
                     </div>
                 </div>

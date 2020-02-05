@@ -85,6 +85,12 @@
 {% set UTTERANCES_LABEL = UTTERANCES_LABEL %}
 {% endif %}
 
+{% if not COMMENTBOX_FILTER %}
+{% set COMMENTBOX_FILTER = False %}
+{% else %}
+{% set COMMENTBOX_FILTER = COMMENTBOX_FILTER %}
+{% endif %}
+
 {# Author's twitter handle. Used in Twitter card meta data #}
 {% if not TWITTER_USERNAME %}
 {% set TWITTER_USERNAME = '' %}
