@@ -1,7 +1,14 @@
 const convertInstagramToPhotoSwipe = () => {
   // inner function to return figure html
-  // TODO: iranzo figure out the caption
-  const getFigureHTML = (image, height, width, thumbnail) => `
+  const getFigureHTML = (
+    image,
+    height,
+    width,
+    thumbnail,
+    username,
+    name,
+    instagramId
+  ) => `
      <figure
     itemprop="associatedMedia"
     itemscope
@@ -19,7 +26,7 @@ const convertInstagramToPhotoSwipe = () => {
       />
     </a>
     <figcaption itemprop="caption description">
-      Placeholder image from Unsplash
+      Picture by <a href="https://www.instagram.com/${username}/">${name}</a> available at <a href="https://www.instagram.com/p/${instagramId}/">https://www.instagram.com/p/${instagramId}/</a>
     </figcaption>
   </figure>
     `;
@@ -45,16 +52,40 @@ const convertInstagramToPhotoSwipe = () => {
             level1.edge_sidecar_to_children &&
             level1.edge_sidecar_to_children.edges.length > 0
           ) {
-            // It is more than one images
+            const username = level1.owner.username;
+            const name = level1.owner.full_name;
+            // It is more than one image
             level1.edge_sidecar_to_children.edges.forEach(edge => {
-              //  TODO: iranzo add figure
+              const origImage = edge.node.display_url;
+              const height = edge.node.dimensions.height;
+              const width = edge.node.dimensions.width;
+              const thumbnail = edge.node.display_resources[0].src;
+              divHTML += getFigureHTML(
+                origImage,
+                height,
+                width,
+                thumbnail,
+                username,
+                name,
+                instagramId
+              );
             });
           } else {
             const origImage = level1.display_url;
             const height = level1.dimensions.height;
             const width = level1.dimensions.width;
             const thumbnail = level1.display_resources[0].src;
-            divHTML += getFigureHTML(origImage, height, width, thumbnail);
+            const username = level1.owner.username;
+            const name = level1.owner.full_name;
+            divHTML += getFigureHTML(
+              origImage,
+              height,
+              width,
+              thumbnail,
+              username,
+              name,
+              instagramId
+            );
           }
 
           // Close div
