@@ -94,6 +94,7 @@ const minifyJS = () => {
     "static/photoswipe/photoswipe-array-from-dom.js",
     "static/lunr/lunr.js",
     "static/clipboard/clipboard.js",
+    "static/js/create-instagram-gallery.js",
     "static/js/copy-to-clipboard.js",
     "static/js/lunr-search-result.js",
     "!static/js/elegant.prod.9e9d5ce754.js"
