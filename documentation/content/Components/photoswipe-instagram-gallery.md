@@ -46,3 +46,16 @@ It's code is
 ```html
 <div class="elegant-instagram" data-instagram-id="B7yh4IdItNd"></div>
 ```
+
+## A combined single + multiple post
+
+<div class="elegant-instagram" data-instagram-id="BwWo35fAcR3,B7yh4IdItNd"></div>
+
+It's code is
+
+```html
+<div
+  class="elegant-instagram"
+  data-instagram-id="BwWo35fAcR3,B7yh4IdItNd"
+></div>
+```

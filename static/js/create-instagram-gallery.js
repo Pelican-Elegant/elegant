@@ -43,33 +43,47 @@ const convertInstagramToPhotoSwipe = () => {
   // Get div.elegant-instagram
   document.querySelectorAll(".elegant-instagram").forEach(ele => {
     // Get instagram-id
-    const instagramId = ele.dataset.instagramId;
-
-    fetch(`https://www.instagram.com/p/${instagramId}/?__a=1`)
-      .then(response => {
-        response.json().then(json => {
-          // Get Original image from the json
-          const level1 = json.graphql.shortcode_media;
-
-          let divHTML = `<div
+    const instagramIds = ele.dataset.instagramId;
+    let divHTML = `<div
                           class="elegant-gallery"
                           itemscope
                           itemtype="http://schema.org/ImageGallery"
                         >`;
+    instagramIds.split(",").forEach(instagramId => {
+      fetch(`https://www.instagram.com/p/${instagramId}/?__a=1`).then(
+        response => {
+          response.json().then(json => {
+            // Get Original image from the json
+            const level1 = json.graphql.shortcode_media;
+            const username = level1.owner.username;
+            const name = level1.owner.full_name;
 
-          const username = level1.owner.username;
-          const name = level1.owner.full_name;
+            if (
+              level1.edge_sidecar_to_children &&
+              level1.edge_sidecar_to_children.edges.length > 0
+            ) {
+              // It is more than one image
+              level1.edge_sidecar_to_children.edges.forEach(edge => {
+                const origImage = edge.node.display_url;
+                const height = edge.node.dimensions.height;
+                const width = edge.node.dimensions.width;
+                const thumbnail = edge.node.display_resources[0].src;
 
-          if (
-            level1.edge_sidecar_to_children &&
-            level1.edge_sidecar_to_children.edges.length > 0
-          ) {
-            // It is more than one image
-            level1.edge_sidecar_to_children.edges.forEach(edge => {
-              const origImage = edge.node.display_url;
-              const height = edge.node.dimensions.height;
-              const width = edge.node.dimensions.width;
-              const thumbnail = edge.node.display_resources[0].src;
+                divHTML += getFigureHTML(
+                  origImage,
+                  height,
+                  width,
+                  thumbnail,
+                  username,
+                  name,
+                  instagramId
+                );
+              });
+            } else {
+              const origImage = level1.display_url;
+              const height = level1.dimensions.height;
+              const width = level1.dimensions.width;
+              const thumbnail = level1.display_resources[0].src;
 
               divHTML += getFigureHTML(
                 origImage,
@@ -80,23 +94,8 @@ const convertInstagramToPhotoSwipe = () => {
                 name,
                 instagramId
               );
-            });
-          } else {
-            const origImage = level1.display_url;
-            const height = level1.dimensions.height;
-            const width = level1.dimensions.width;
-            const thumbnail = level1.display_resources[0].src;
-
-            divHTML += getFigureHTML(
-              origImage,
-              height,
-              width,
-              thumbnail,
-              username,
-              name,
-              instagramId
-            );
-          }
+            }
+          });
 
           // Close div
           divHTML += `</div>`;
@@ -107,9 +106,9 @@ const convertInstagramToPhotoSwipe = () => {
 
           // Trigger PhotoSwipe
           initPhotoSwipeFromDOM(".elegant-gallery");
-        });
-      })
-      .catch(err => console.error("Failed", err));
+        }
+      );
+    });
   });
 };
 
