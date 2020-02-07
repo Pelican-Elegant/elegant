@@ -10,25 +10,34 @@ const convertInstagramToPhotoSwipe = () => {
     instagramId
   ) => `
      <figure
-    itemprop="associatedMedia"
-    itemscope
-    itemtype="http://schema.org/ImageObject"
-  >
-    <a
-      href="${image}"
-      itemprop="contentUrl"
-      data-size="${width}x${height}"
-    >
-      <img
-        src="${thumbnail}"
-        itemprop="thumbnail"
-        alt="Image description"
-      />
-    </a>
-    <figcaption itemprop="caption description">
-      Picture by <a href="https://www.instagram.com/${username}/">${name}</a> available at <a href="https://www.instagram.com/p/${instagramId}/">https://www.instagram.com/p/${instagramId}/</a>
-    </figcaption>
-  </figure>
+        itemprop="associatedMedia"
+        itemscope
+        itemtype="http://schema.org/ImageObject"
+     >
+        <a
+            href="${image}"
+            itemprop="contentUrl"
+            data-size="${width}x${height}"
+        >
+        <img
+            src="${thumbnail}"
+            itemprop="thumbnail"
+            alt="Image description"
+        />
+        </a>
+        <figcaption itemprop="caption description">
+          <a href="https://www.instagram.com/p/${instagramId}/"
+              target="_blank" rel="nofollow noopener noreferrer"
+          >
+              Photo
+          </a> by
+          <a href="https://www.instagram.com/${username}/"
+              target="_blank" rel="nofollow noopener noreferrer"
+          >
+              ${name}
+          </a>
+        </figcaption>
+     </figure>
     `;
 
   // Get div.elegant-instagram
@@ -48,18 +57,20 @@ const convertInstagramToPhotoSwipe = () => {
                           itemtype="http://schema.org/ImageGallery"
                         >`;
 
+          const username = level1.owner.username;
+          const name = level1.owner.full_name;
+
           if (
             level1.edge_sidecar_to_children &&
             level1.edge_sidecar_to_children.edges.length > 0
           ) {
-            const username = level1.owner.username;
-            const name = level1.owner.full_name;
             // It is more than one image
             level1.edge_sidecar_to_children.edges.forEach(edge => {
               const origImage = edge.node.display_url;
               const height = edge.node.dimensions.height;
               const width = edge.node.dimensions.width;
               const thumbnail = edge.node.display_resources[0].src;
+
               divHTML += getFigureHTML(
                 origImage,
                 height,
@@ -75,8 +86,7 @@ const convertInstagramToPhotoSwipe = () => {
             const height = level1.dimensions.height;
             const width = level1.dimensions.width;
             const thumbnail = level1.display_resources[0].src;
-            const username = level1.owner.username;
-            const name = level1.owner.full_name;
+
             divHTML += getFigureHTML(
               origImage,
               height,
