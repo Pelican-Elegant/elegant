@@ -1,45 +1,48 @@
 ---
-Title: Gallery -- Use Instagram
+Title: Gallery -- Embed Instagram Post
 authors: Talha Mansoor, Pablo Iranzo Gómez
 Tags: nuances, images, gallery, instagram
-Date: 2020-02-06
-Slug: photoswipe-gallery-using-instagram
+Date: 2020-02-07 13:17
+Slug: gallery-embed-instagram-post
 Category: Components
 ---
 
-Similar to the use case defined in [Photogallery]({filename}photoswipe-raw-gallery.md), Pelican-Elegant has code in place for showing Instagram galleries.
+Pelican-Elegant has built in support for Instagram post.
 
 ## Article contents
 
-To embed Instagram gallery, just define a div in this manner,
+To embed Instagram post, just define a div in this manner,
 
-```yaml
-## Multiple image
+```html
 <div class="elegant-instagram" data-instagram-id="BwWo35fAcR3"></div>
-
-## Single image
-
-<div class="elegant-instagram" data-instagram-id="B7yh4IdItNd"></div>
 ```
 
-For reference, the `data-instagram-id` is taken from Instagram picture URL, for example:
+`<div>` class should be `elegant-instagram`.
 
-`https://www.instagram.com/p/OzF8OwS43q/` will mean adding to the div the parameter `data-instagram-id=OzF8OwS43q`.
+Value of `data-instagram-id` attribute is taken from Instagram post URL, for example:
 
-!!! hint "`data-instagram-id` defines either picture or set of pictures"
+If URL is <https://www.instagram.com/p/OzF8OwS43q/> then set `data-instagram-id` to `OzF8OwS43q`.
 
-    Note that `data-instagram-id` is the part in the url of a post, that can be a single or multiple pictures 'post' and in both case the library will show them.
+Instagram URL can be a single or multiple pictures post.
 
-!!! danger "`class=elegant-instagram` class"
+Here is how Elegant will render your Instagram posts.
 
-    Note that `<div>`class must be `elegant-instagram` for the code to work properly, do not change it.
-
-The above `article` code will then render as this:
-
-## Multiple images
+## A Post With Multiple Images
 
 <div class="elegant-instagram" data-instagram-id="BwWo35fAcR3"></div>
 
-## Single image
+It's code is
+
+```html
+<div class="elegant-instagram" data-instagram-id="BwWo35fAcR3"></div>
+```
+
+## Single Image Post
 
 <div class="elegant-instagram" data-instagram-id="B7yh4IdItNd"></div>
+
+It's code is
+
+```html
+<div class="elegant-instagram" data-instagram-id="B7yh4IdItNd"></div>
+```
