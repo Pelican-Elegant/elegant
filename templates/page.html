@@ -20,6 +20,14 @@
 {{ smo_metadata(page) }}
 {% endblock meta_tags_in_head %}
 
+{% block head_links %}
+{{ super() }}
+{% import 'translations.html' as translations with context %}
+{% if translations.entry_hreflang(page) %}
+  {{ translations.entry_hreflang(page) }}
+{% endif %}
+{% endblock head_links %}
+
 {% block content %}
 <article>
 <div class="row-fluid">
