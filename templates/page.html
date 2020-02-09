@@ -41,6 +41,8 @@
         <div class="span8 offset2 article-content">
             {% endif %}
 
+            {% import '_includes/translations.html' as translations with context %}
+            {{ translations.translations_for(page) }}
             {{ page.content }}
             {% from '_includes/comments.html' import comments_section with context %}
             {{ comments_section(page) }}
