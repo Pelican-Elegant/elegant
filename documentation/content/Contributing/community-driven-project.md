@@ -24,16 +24,19 @@ called Elegant's community into a [discussion about the future of the theme][fut
 
 This way, the bus factor of the project has greatly improved.
 
+<!-- yaspeller ignore:start -->
+
 [team]: https://github.com/orgs/Pelican-Elegant/people
 [elegant-org]: https://github.com/Pelican-Elegant/
 [pelican]: https://getpelican.com
-
-[ashwinvis]: https://ashwinvis.github.io/ <!-- yaspeller ignore -->
-[calfzhou]: http://gocalf.com <!-- yaspeller ignore -->
+[ashwinvis]: https://ashwinvis.github.io/
+[calfzhou]: http://gocalf.com
 [talha131]: https://www.oncrashreboot.com
 [iranzo]: https://iranzo.github.io/
-[silverhook]: https://matija.suklje.name <!-- yaspeller ignore -->
+[silverhook]: https://matija.suklje.name
 [future]: https://github.com/talha131/pelican-elegant/issues/173
+
+<!-- yaspeller ignore:end -->
 
 ## New Governance Model
 
