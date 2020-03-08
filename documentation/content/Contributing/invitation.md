@@ -65,3 +65,10 @@ See something that you think is missing?
 
 See an article that you think could be clearer?
 [File a documentation issue](https://github.com/Pelican-Elegant/elegant/issues).
+
+We welcome everyone and value every contribution. Our Thanks list exhibits we
+value and give credit to not only code contributors, but also the bug reporters
+and support seekers.
+
+We hope you will act professionally and respectfully and will avoid
+exclusionary behaviour.
