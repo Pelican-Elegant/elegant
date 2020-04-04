@@ -39,8 +39,8 @@ else:
     SITEURL = ""
 
 MAILCHIMP_FORM_ACTION = os.environ.get("MAILCHIMP_FORM_ACTION")
-UTTERANCES_REPO = "Pelican-Elegant/elegant"
-UTTERANCES_LABEL = "💬documentation-comments"
+UTTERANCES_REPO = os.environ.get("UTTERANCES_REPO")
+UTTERANCES_LABEL = os.environ.get("UTTERANCES_LABEL")
 
 RELATIVE_URLS = False
 # filetime_from_git is very slow. Use it in production only
