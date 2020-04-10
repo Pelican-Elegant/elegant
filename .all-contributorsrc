@@ -225,6 +225,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "maneesha",
+      "name": "maneesha sane",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/829690?v=4",
+      "profile": "https://github.com/maneesha",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
