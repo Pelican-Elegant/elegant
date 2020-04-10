@@ -36,7 +36,7 @@ markup. Use `linenos` flag to switch on line numbers for the snippet.
 [CodeHilite](https://python-markdown.github.io/extensions/code_hilite/) <!-- yaspeller ignore -->
 extension for syntax highlighting. Setup
 CodeHilite <!-- yaspeller ignore -->
-, then use Shebang `!#` to
+, then use Shebang `#!` to
 generate line numbers.
 
     :::markdown
