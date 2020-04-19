@@ -8,7 +8,8 @@ Slug: projects-list
 Category: Components
 ---
 
-Projects list is read from `PROJECTS`. It is an array of dictionaries. Each
+Projects list is read from `PROJECTS` in your Pelican configuration
+(`pelicanconf.py`) file. It is an array of dictionaries. Each
 dictionary has three keys,
 
 1. `name` which will have name of your project,
