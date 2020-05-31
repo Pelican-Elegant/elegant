@@ -234,6 +234,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "gertvdijk",
+      "name": "Gert van Dijk",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1550527?v=4",
+      "profile": "https://blog.g3rt.nl/",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
