@@ -6,8 +6,7 @@ If it is >3.3 than modified is a datetime object
 {% set delta = (article.modified - article.date).days %}
 {% if delta > 0 %}
 <h4>Last Updated</h4>
-{% set day = article.modified.strftime('%d')|int %}
-<time datetime="{{ article.modified.isoformat() }}">{{ article.modified.strftime('%b') }} {{ day }} {{- article.modified.strftime(', %Y') }}</time>
+<time datetime="{{ article.modified.isoformat() }}">{{ article.locale_modified }}</time>
 {% endif %}
 
 {% elif article.modified %}
