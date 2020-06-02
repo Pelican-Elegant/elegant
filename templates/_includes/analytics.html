@@ -45,8 +45,6 @@
     </script>
 {% endif %}
 
-{% if GOAT_COUNTER %}
-<script data-goatcounter="https://{{ GOAT_COUNTER }}"
-        async src="//gc.zgo.at/count.js">
-</script>
+{% if GOATCOUNTER %}
+<script data-goatcounter="{{ GOATCOUNTER }}" async src="//gc.zgo.at/count.js"></script>
 {% endif %}
