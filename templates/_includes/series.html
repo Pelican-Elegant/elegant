@@ -10,7 +10,7 @@
          {% for part_article in article.series.all %}
             <li {% if part_article == article %} class="active-part"{% endif %}>
             {% if part_article != article %}
-            <a href="{{ SITEURL }}/{{ part_article.url }}" title="{{ part_article.title }}">Part {{ article.series.all.index(part_article)+1 }}: {{ part_article.title }}</a>
+            <a href="{{ SITEURL }}/{{ part_article.url }}" title="{{ part_article.title|striptags|e }}">Part {{ article.series.all.index(part_article)+1 }}: {{ part_article.title }}</a>
             {% else %}
             Part {{ article.series.index }}: {{ part_article.title }}
             {% endif %}
