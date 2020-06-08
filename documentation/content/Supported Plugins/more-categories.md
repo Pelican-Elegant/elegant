@@ -10,18 +10,18 @@ Keywords: categories
 Authors: David García Garzón
 ---
 
-Both tags and categories fullfill the purpose of relating your 
-by a subject or a kind of writting.
+Both tags and categories fulfil the purpose of relating your
+by a subject or a kind of writing.
 Tags are more open and free and
 you can attach several of them to a single article.
 Categories are a more closed set, they are
-used to organize your writtings in classes
+used to organize your writings in classes
 and you can only attach one category to every single article.
 
 Depending on how you organize you website it might have sense
 for an article to be in more than one category
 and overcome that later restriction on categories.
-The `more-categories` plugin fullfills this purpose
+The `more-categories` plugin fulfils this purpose
 and enables multiple categories.
 
 Besides `more-categories` enables hierarchies of categories.
