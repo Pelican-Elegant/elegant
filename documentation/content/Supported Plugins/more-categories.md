@@ -40,7 +40,6 @@ the categories an article is in.
 
 ![Article Side Info]({static}/images/elegant-theme-more-categories-plugin-side-info.png)
 
-
 ## Configuration
 
 Just include the plugin in the configuration by adding:
@@ -65,4 +64,3 @@ using commas to separate them in the metadata:
 ```markdown
 Category: One Category, Other Category, One Category/A subcategory
 ```
-
