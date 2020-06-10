@@ -16,7 +16,11 @@
 {% endif %}
 {{ super() }}
 {% if article.tags or article.category or article.keywords %}
-<meta name="keywords" content="{{ ((article.tags or [])+(article.categories or [article.category]|map("string")) + (article.keywords or []))|join(', ') }}" />
+<meta name="keywords" content="{{ (
+	(article.tags | default([]))  +
+	(article.categories | default([article.category] if article.category else []) ) +
+	([article.keywords] if article.keywords else [])
+	) | join(', ') }}" />
 {% endif %}
 
 {% from '_includes/smo_metadata.html' import smo_metadata with context %}
