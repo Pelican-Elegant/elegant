@@ -1,6 +1,3 @@
-article p:not(#list-of-translations):not(#post-share-links) a:not(.ampl),
-article ol a:not(.ampl),
-blockquote a:not(.ampl),
 article
   div.article-content
   ul:not(.articles-timeline):not(.related-posts-list)
@@ -44,8 +41,7 @@ div.recent-posts-posted a {
     text-decoration: none;
   }
 }
-#lunr-search-result > div.lunr-search-result-item > h4 > a,
-a.ampl {
+#lunr-search-result > div.lunr-search-result-item > h4 > a {
   color: royalblue;
   display: inline-block;
   position: relative;
