@@ -23,4 +23,11 @@ Set `GOOGLE_ANALYTICS` variable to it in your configuration.
     :::python
     GOOGLE_ANALYTICS = u'UA-00000000-1'
 
+If you have a Google Analytics Measurement ID, which has the format `G-XXXXXXXXXX`, you should
+set `MODERN_GOOGLE_ANALYTICS`. This will enable the `gtag.js` on your site.
+For more information on the difference between the two, see [here](https://developers.google.com/analytics/devguides/collection/gtagjs/migration).
+
+    :::python
+    MODERN_GOOGLE_ANALYTICS = u'G-ABCDE12345'
+
 That's it. Elegant will take care of the rest.
