@@ -43,13 +43,16 @@ All categories of the {{ SITENAME|striptags|e }} blog.
         <div class="accordion" id="accordion2">
             {% for category, articles in categories %}
             <div class="accordion-group">
+            <input type="checkbox" id="{{ category.slug }}" class="category">
+            <label for="{{ category.slug }}">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#{{ category.slug }}-ref">
+                    <a class="accordion-toggle category-title-inside-accordion collapsed">
                         {% set num = articles|count %}
                         {{ category }}<span class="superscript">{{ num }}</span>
                     </a>
                 </div>
-                <div id="{{ category.slug }}-ref" class="accordion-body collapse">
+                </label>
+                <div id="{{ category.slug }}-body" class="accordion-body">
                     <div class="accordion-inner">
                         <ul class="list-articles-under-tag-category">
                             {% for article in articles %}
@@ -76,17 +79,18 @@ All categories of the {{ SITENAME|striptags|e }} blog.
     </div>
 </div>
 {% endblock content %}
+
 {% block script %}
 {{ super() }}
 <script>
-    function uncollapse() {
-            $(window.location.hash).collapse({
-                toggle: true
-            })
+if (document.getElementById(window.location.hash.substr(1))) {
+    document.getElementById(window.location.hash.substr(1)).checked = true;
+}
+var categories = document.getElementsByClassName("category");
+for (var i = 0; i < categories.length; i++) {
+    categories[i].onclick = function () {
+        window.location.hash = this.id
     }
-</script>
-
-<script>
-    uncollapse();
+}
 </script>
 {% endblock script %}

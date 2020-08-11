@@ -30,19 +30,21 @@
 
     <div class="accordion" id="accordion2">
         <div class="accordion-group">
-            <div class="accordion-heading">
-                <a class="accordion-toggle disqus-comment-count comment-count collapsed"
-                   data-toggle="collapse"
-                   data-parent="#accordion2"
-                   {% if use_disqus %}
-                   data-disqus-identifier="{{ identifier }}"
-                   {% endif %}
-                   href="{{ url }}#comment_thread"
-                   id="comment-accordion-toggle">
-                    Comments
-                </a>
-            </div>
-            <div id="comment_thread" class="accordion-body collapse">
+            <input type="checkbox" id="comments">
+            <label for="comments">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle disqus-comment-count comment-count collapsed"
+                    data-toggle="collapse"
+                    data-parent="#accordion2"
+                    {% if use_disqus %}
+                    data-disqus-identifier="{{ identifier }}"
+                    {% endif %}
+                    id="comment-accordion-toggle">
+                        Comments
+                    </a>
+                    </div>
+                </label>
+            <div id="comment_thread" class="accordion-body">
                 <div class="accordion-inner">
                     <div class="comments">
                         {% if use_disqus %}
@@ -72,26 +74,24 @@
 
 {% macro comments_script() %}
 <script>
-    (function () {
-        if (window.location.hash.match(/^#comment-\d+$/)) {
-            $('#comment_thread').collapse('show');
-        }
-    })();
-    window.onhashchange=function(){
-        if (window.location.hash.match(/^#comment-\d+$/))
-            window.location.reload(true);
+(function () {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        document.getElementById("comments").checked = true;
     }
-    $('#comment_thread').on('shown', function () {
-        var link = document.getElementById('comment-accordion-toggle');
-        var old_innerHTML = link.innerHTML;
-        $(link).fadeOut(200, function() {
-            $(this).text('Click here to hide comments').fadeIn(200);
-        });
-        $('#comment_thread').on('hidden', function () {
-            $(link).fadeOut(200, function() {
-                $(this).text(old_innerHTML).fadeIn(200);
-            });
-        })
-    })
+})();
+window.onhashchange = function () {
+    if (window.location.hash.match(/^#comment-\d+$/))
+        window.location.reload(true);
+}
+old_innerHTML = "";
+document.getElementById("comments").onclick = function () {
+    var link = document.getElementById('comment-accordion-toggle');
+    if (document.getElementById("comments").checked == true) {
+        old_innerHTML = link.innerHTML;
+        link.text = 'Click here to hide comments'
+    } else {
+        link.text = old_innerHTML;
+    }
+};
 </script>
 {% endmacro %}
