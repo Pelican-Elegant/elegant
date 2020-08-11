@@ -10,7 +10,7 @@
   "lang": "en",
   "fileExtensions": [".md", ".markdown", ".rst"],
   "ignoreUrls": true,
-  "findRepeatWords": false,
+  "findRepeatWords": true,
   "ignoreDigits": true,
   "ignoreUppercase": true,
   "maxRequests": 5,

@@ -35,3 +35,33 @@ repos:
   - id: requirements-txt-fixer
   - id: sort-simple-yaml
   - id: trailing-whitespace
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.3
+    hooks:
+    -   id: flake8
+-   repo: local
+    hooks:
+    -   id: shfmt
+        name: shfmt
+        minimum_pre_commit_version: 2.4.0
+        language: golang
+        additional_dependencies:
+        - mvdan.cc/sh/v3/cmd/shfmt@v3.1.1
+        entry: shfmt
+        args:
+        - -w
+        - -i
+        - '4'
+        types:
+        - shell
+-   repo: https://github.com/asottile/blacken-docs
+    rev: v1.7.0
+    hooks:
+    -   id: blacken-docs
+-   repo: https://github.com/hcodes/yaspeller.git
+    rev: v7.0.0
+    hooks:
+    -   id: yaspeller
+        files: ^documentation/content/.*
+        types:
+        - markdown
