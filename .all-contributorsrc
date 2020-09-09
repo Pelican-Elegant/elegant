@@ -243,6 +243,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "osvenskan",
+      "name": "Philip Semanchuk",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7290495?v=4",
+      "profile": "http://PySpoken.com",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
