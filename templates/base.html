@@ -61,7 +61,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </a>
-                        <a class="brand" href="{{ SITEURL }}/"><span class=site-name>{{ SITENAME }}</span></a>
+                        <a class="brand" href="{{ SITEURL }}/">
+                            {% if DISPLAY_LOGO_ON_TITLE %}
+                                <img src="{{ DISPLAY_LOGO_ON_TITLE }}" alt="logo" style="padding-right: 10px;">
+                            {% endif %}
+                            <span class=site-name>{{ SITENAME }}</span>
+                        </a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right top-menu">
                                 <li {% if page_name == 'index' %} class="active"{% endif %}>
