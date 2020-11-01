@@ -451,6 +451,11 @@ table tbody > tr:nth-child(odd) > td {
   float: none;
   padding: 11px 15px 13px;
 }
+.brand img {
+  height: 32px;
+  width: auto;
+  padding-right: 10px;
+}
 .site-name {
   color: var(--mutedTextColor);
 }
