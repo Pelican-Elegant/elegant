@@ -1,0 +1,40 @@
+{% macro snippets(article) %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "NewsArticle",
+
+        "author": {
+            "@type": "Person",
+            "name": "{{ article.author }}"
+        },
+
+        "datePublished": "{{ article.date.isoformat() }}",
+        {% if article.modified %}
+        "dateModified": "{{ article.modified.isoformat() }}",
+        {% endif %}
+        "description": "{{ article.summary|striptags|e }}",
+
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ SITEURL }}/{{ article.url }}"
+        },
+
+        "headline": "{{ article.title|striptags|e }}",
+        {% if article.featured_image %}
+            "image": [{{ article.featured_image }}],
+        {% endif %}
+
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ SITENAME|striptags|e }}"
+            {%if FEATURED_IMAGE %}
+            , "logo": {
+                "@type": "ImageObject",
+                "url": "{{ FEATURED_IMAGE }}"
+            }
+            {% endif %}
+        }
+    }
+</script>
+{% endmacro %}
