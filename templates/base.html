@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+{% if article and article.lang %}
+<html lang="{{ article.lang }}">
+{% else %}
 <html lang="{{ DEFAULT_LANG }}">
+{% endif %}
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +28,13 @@
         {% if CLAIM_YANDEX %}
         {% include '_includes/claim_yandex.html' with context %}
         {% endif %}
+
+        {% if article and article.lang %}
+        <meta http-equiv='content-language' content='{{ article.lang }}'>
+        {% else %}
+        <meta http-equiv='content-language' content='{{ DEFAULT_LANG }}'>
+        {% endif %}
+
         {% if article and article.author %}
         <meta name="author" content="{{ article.author }}" />
         {% elif page and page.author %}
