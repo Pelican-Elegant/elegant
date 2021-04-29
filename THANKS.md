@@ -41,6 +41,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/maneesha"><img src="https://avatars0.githubusercontent.com/u/829690?v=4" width="100px;" alt=""/><br /><sub><b>maneesha sane</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=maneesha" title="Documentation">📖</a></td>
     <td align="center"><a href="https://blog.g3rt.nl/"><img src="https://avatars0.githubusercontent.com/u/1550527?v=4" width="100px;" alt=""/><br /><sub><b>Gert van Dijk</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Agertvdijk" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/tomgoren"><img src="https://avatars3.githubusercontent.com/u/806975?v=4" width="100px;" alt=""/><br /><sub><b>tomgoren</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/commits?author=tomgoren" title="Code">💻</a></td>
+    <td align="center"><a href="http://PySpoken.com"><img src="https://avatars1.githubusercontent.com/u/7290495?v=4" width="100px;" alt=""/><br /><sub><b>Philip Semanchuk</b></sub></a><br /><a href="https://github.com/Pelican-Elegant/elegant/issues?q=author%3Aosvenskan" title="Bug reports">🐛</a> <a href="https://github.com/Pelican-Elegant/elegant/commits?author=osvenskan" title="Code">💻</a></td>
   </tr>
 </table>
 
