@@ -110,7 +110,9 @@ const compileCSS = () => {
     postcssPresetEnv({ stage: 1 }),
     magician({}),
     rfs(),
-    cssnano()
+    cssnano({
+      preset: "default"
+    })
   ];
   return src([
     "static/applause-button/applause-button.css",
