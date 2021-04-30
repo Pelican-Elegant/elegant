@@ -454,3 +454,29 @@ table tbody > tr:nth-child(odd) > td {
 .site-name {
   color: var(--mutedTextColor);
 }
+
+.accordion input {
+  display: none;
+}
+
+.accordion .accordion-body {
+  margin: 0 auto;
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion input:checked + label a {
+  background-color: #08c;
+  border-radius: 4px;
+  border-radius: var(--borderRadius);
+  color: white;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+.accordion input:checked ~ .accordion-body {
+  height: auto;
+  color: #333;
+}
