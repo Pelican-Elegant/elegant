@@ -7,7 +7,7 @@ Tags:
 Date: 2019-08-04 23:17
 Summary: Elegant use the 'yaspeller' tool to scan for spelling mistakes.  This article gives more information about the tool and how to run it locally.
 Keywords:
-Authors: Jack De Winter
+Authors: Jack De Winter, Talha Mansoor
 ---
 
 [TOC]
@@ -23,7 +23,7 @@ While `yaspeller` is a useful tool, it is not foolproof. When scanning the docum
 files, it often requires a bit of assistance in determining how to properly handle words which
 do not appear in the standard dictionary.
 
-### Adding A Word to the Project Dictionary
+## Adding A Word to the Project Dictionary
 
 The root directory
 of the project contains
@@ -34,20 +34,20 @@ Words added to the
 dictionary in lower case will match upper case and lower case versions of the word, while words
 added with any capitalization will force `yaspeller` to perform a case-sensitive match.
 
-### Ignore a Line
+## Ignore a Line
 
 End a line with
 the `<!-- yaspeller ignore -->` suffix to tell the `yaspeller` tool to ignore
 the entire line.
 
-### Ignore a block
+## Ignore a block
 
 To ignore a block of text, put
 `<!-- yaspeller ignore:start -->` before the block.
 
 Place `<!-- yaspeller ignore:end -->` where you want spell checking to resume.
 
-## Spell Check Locally
+# Spell Check Locally
 
 Similar to the other checks that are performed on every submission, a spell check failure will
 cause the build to fail.
@@ -70,7 +70,7 @@ OR
 yarn global add yaspeller
 ```
 
-### How Do I Use It Locally?
+## How Do I Use It Locally?
 
 To invoke the `yaspeller` package for the documentation files for the Elegant project, go to
 the root directory of your local repository and enter the following command:
