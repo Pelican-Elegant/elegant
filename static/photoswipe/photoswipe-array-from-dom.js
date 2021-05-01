@@ -1,7 +1,7 @@
-var initPhotoSwipeFromDOM = function(gallerySelector) {
+var initPhotoSwipeFromDOM = function (gallerySelector) {
   // parse slide data (url, title, size ...) from DOM elements
   // (children of gallerySelector)
-  var parseThumbnailElements = function(el) {
+  var parseThumbnailElements = function (el) {
     var thumbElements = el.childNodes,
       numNodes = thumbElements.length,
       items = [],
@@ -26,7 +26,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       item = {
         src: linkEl.getAttribute("href"),
         w: parseInt(size[0], 10),
-        h: parseInt(size[1], 10)
+        h: parseInt(size[1], 10),
       };
 
       if (figureEl.children.length > 1) {
@@ -52,14 +52,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
   };
 
   // triggers when user clicks on thumbnail
-  var onThumbnailsClick = function(e) {
+  var onThumbnailsClick = function (e) {
     e = e || window.event;
     e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 
     var eTarget = e.target || e.srcElement;
 
     // find root element of slide
-    var clickedListItem = closest(eTarget, function(el) {
+    var clickedListItem = closest(eTarget, function (el) {
       return el.tagName && el.tagName.toUpperCase() === "FIGURE";
     });
 
@@ -95,7 +95,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
   };
 
   // parse picture index and gallery index from URL (#&pid=1&gid=2)
-  var photoswipeParseHash = function() {
+  var photoswipeParseHash = function () {
     var hash = window.location.hash.substring(1),
       params = {};
 
@@ -122,7 +122,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
     return params;
   };
 
-  var openPhotoSwipe = function(
+  var openPhotoSwipe = function (
     index,
     galleryElement,
     disableAnimation,
@@ -140,7 +140,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       // define gallery index (for URL)
       galleryUID: galleryElement.getAttribute("data-pswp-uid"),
 
-      getThumbBoundsFn: function(index) {
+      getThumbBoundsFn: function (index) {
         // See Options -> getThumbBoundsFn section of documentation for more info
         var thumbnail = items[index].el.getElementsByTagName("img")[0], // find thumbnail
           pageYScroll =
@@ -148,7 +148,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
           rect = thumbnail.getBoundingClientRect();
 
         return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
-      }
+      },
     };
 
     // PhotoSwipe opened from URL

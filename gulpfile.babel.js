@@ -30,20 +30,20 @@ const compileResponsiveLess = () =>
     "node_modules/recess/bin/recess --compile static/bootstrap/responsive.less > static/css/bootstrap_responsive.css"
   );
 
-const reload = cb => {
+const reload = (cb) => {
   browserSync.init(
     {
       ui: {
-        port: 9002
+        port: 9002,
       },
       server: {
         baseDir: "documentation/output",
         serveStaticOptions: {
-          extensions: ["html"]
-        }
+          extensions: ["html"],
+        },
       },
       files: "documentation/output/*.html",
-      port: 9001
+      port: 9001,
     },
     (_, bs) => {
       bs.addMiddleware("*", (_, res) => {
@@ -69,7 +69,7 @@ const watchFiles = () => {
       "!static/**/bootstrap.css",
       "!static/**/bootstrap_responsive.css",
       "!static/**/elegant.prod.9e9d5ce754.css",
-      "!static/js/elegant.prod.9e9d5ce754.js"
+      "!static/js/elegant.prod.9e9d5ce754.js",
     ],
     { ignoreInitial: false },
     buildAll
@@ -80,7 +80,7 @@ const pathProdCSS = path.join(
   __dirname,
   "static/css/elegant.prod.9e9d5ce754.css"
 );
-const rmProdCSS = cb => {
+const rmProdCSS = (cb) => {
   if (fs.existsSync(pathProdCSS)) {
     fs.unlinkSync(pathProdCSS);
   }
@@ -97,7 +97,7 @@ const minifyJS = () => {
     "static/js/create-instagram-gallery.js",
     "static/js/copy-to-clipboard.js",
     "static/js/lunr-search-result.js",
-    "!static/js/elegant.prod.9e9d5ce754.js"
+    "!static/js/elegant.prod.9e9d5ce754.js",
   ])
     .pipe(concat("elegant.prod.9e9d5ce754.js"))
     .pipe(terser())
@@ -111,15 +111,15 @@ const compileCSS = () => {
     magician({}),
     rfs(),
     cssnano({
-      preset: "default"
-    })
+      preset: "default",
+    }),
   ];
   return src([
     "static/applause-button/applause-button.css",
     "static/photoswipe/photoswipe.css",
     "static/photoswipe/default-skin/default-skin.css",
     "static/css/*.css",
-    "!static/css/elegant.prod.9e9d5ce754.css"
+    "!static/css/elegant.prod.9e9d5ce754.css",
   ])
     .pipe(postcss(plugins))
     .pipe(concat("elegant.prod.9e9d5ce754.css"))
