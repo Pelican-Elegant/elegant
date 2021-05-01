@@ -13,6 +13,17 @@ repos:
   rev: 21.4b2
   hooks:
   - id: black
+- repo: https://github.com/asottile/blacken-docs
+  rev: v1.7.0
+  hooks:
+  - id: blacken-docs
+- repo: https://github.com/hcodes/yaspeller.git
+  rev: v7.0.0
+  hooks:
+  - id: yaspeller
+    files: ^documentation/content/.*
+    types:
+      - markdown
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v3.4.0
   hooks:
