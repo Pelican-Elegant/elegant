@@ -41,13 +41,13 @@ const convertInstagramToPhotoSwipe = () => {
     `;
 
   // Get div.elegant-instagram
-  document.querySelectorAll(".elegant-instagram").forEach(ele => {
+  document.querySelectorAll(".elegant-instagram").forEach((ele) => {
     // Get instagram-id
     const instagramId = ele.dataset.instagramId;
 
     fetch(`https://www.instagram.com/p/${instagramId}/?__a=1`)
-      .then(response => {
-        response.json().then(json => {
+      .then((response) => {
+        response.json().then((json) => {
           // Get Original image from the json
           const level1 = json.graphql.shortcode_media;
 
@@ -65,7 +65,7 @@ const convertInstagramToPhotoSwipe = () => {
             level1.edge_sidecar_to_children.edges.length > 0
           ) {
             // It is more than one image
-            level1.edge_sidecar_to_children.edges.forEach(edge => {
+            level1.edge_sidecar_to_children.edges.forEach((edge) => {
               const origImage = edge.node.display_url;
               const height = edge.node.dimensions.height;
               const width = edge.node.dimensions.width;
@@ -109,7 +109,7 @@ const convertInstagramToPhotoSwipe = () => {
           initPhotoSwipeFromDOM(".elegant-gallery");
         });
       })
-      .catch(err => console.error("Failed", err));
+      .catch((err) => console.error("Failed", err));
   });
 };
 

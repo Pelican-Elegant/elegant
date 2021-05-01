@@ -1,7 +1,7 @@
 /*! PhotoSwipe - v4.1.3 - 2019-01-08
  * http://photoswipe.com
  * Copyright (c) 2019 Dmitry Semenov; */
-(function(root, factory) {
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
     define(factory);
   } else if (typeof exports === "object") {
@@ -9,9 +9,9 @@
   } else {
     root.PhotoSwipe = factory();
   }
-})(this, function() {
+})(this, function () {
   "use strict";
-  var PhotoSwipe = function(template, UiClass, items, options) {
+  var PhotoSwipe = function (template, UiClass, items, options) {
     /*>>framework-bridge*/
     /**
      *
@@ -22,7 +22,7 @@
      */
     var framework = {
       features: null,
-      bind: function(target, type, listener, unbind) {
+      bind: function (target, type, listener, unbind) {
         var methodName = (unbind ? "remove" : "add") + "EventListener";
         type = type.split(" ");
         for (var i = 0; i < type.length; i++) {
@@ -31,44 +31,44 @@
           }
         }
       },
-      isArray: function(obj) {
+      isArray: function (obj) {
         return obj instanceof Array;
       },
-      createEl: function(classes, tag) {
+      createEl: function (classes, tag) {
         var el = document.createElement(tag || "div");
         if (classes) {
           el.className = classes;
         }
         return el;
       },
-      getScrollY: function() {
+      getScrollY: function () {
         var yOffset = window.pageYOffset;
         return yOffset !== undefined
           ? yOffset
           : document.documentElement.scrollTop;
       },
-      unbind: function(target, type, listener) {
+      unbind: function (target, type, listener) {
         framework.bind(target, type, listener, true);
       },
-      removeClass: function(el, className) {
+      removeClass: function (el, className) {
         var reg = new RegExp("(\\s|^)" + className + "(\\s|$)");
         el.className = el.className
           .replace(reg, " ")
           .replace(/^\s\s*/, "")
           .replace(/\s\s*$/, "");
       },
-      addClass: function(el, className) {
+      addClass: function (el, className) {
         if (!framework.hasClass(el, className)) {
           el.className += (el.className ? " " : "") + className;
         }
       },
-      hasClass: function(el, className) {
+      hasClass: function (el, className) {
         return (
           el.className &&
           new RegExp("(^|\\s)" + className + "(\\s|$)").test(el.className)
         );
       },
-      getChildByClass: function(parentEl, childClassName) {
+      getChildByClass: function (parentEl, childClassName) {
         var node = parentEl.firstChild;
         while (node) {
           if (framework.hasClass(node, childClassName)) {
@@ -77,7 +77,7 @@
           node = node.nextSibling;
         }
       },
-      arraySearch: function(array, value, key) {
+      arraySearch: function (array, value, key) {
         var i = array.length;
         while (i--) {
           if (array[i][key] === value) {
@@ -86,7 +86,7 @@
         }
         return -1;
       },
-      extend: function(o1, o2, preventOverwrite) {
+      extend: function (o1, o2, preventOverwrite) {
         for (var prop in o2) {
           if (o2.hasOwnProperty(prop)) {
             if (preventOverwrite && o1.hasOwnProperty(prop)) {
@@ -98,18 +98,18 @@
       },
       easing: {
         sine: {
-          out: function(k) {
+          out: function (k) {
             return Math.sin(k * (Math.PI / 2));
           },
-          inOut: function(k) {
+          inOut: function (k) {
             return -(Math.cos(Math.PI * k) - 1) / 2;
-          }
+          },
         },
         cubic: {
-          out: function(k) {
+          out: function (k) {
             return --k * k * k + 1;
-          }
-        }
+          },
+        },
         /*
 			elastic: {
 				out: function ( k ) {
@@ -144,7 +144,7 @@
        * }
        *
        */
-      detectFeatures: function() {
+      detectFeatures: function () {
         if (framework.features) {
           return framework.features;
         }
@@ -244,16 +244,16 @@
 
         if (!features.raf) {
           var lastTime = 0;
-          features.raf = function(fn) {
+          features.raf = function (fn) {
             var currTime = new Date().getTime();
             var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() {
+            var id = window.setTimeout(function () {
               fn(currTime + timeToCall);
             }, timeToCall);
             lastTime = currTime + timeToCall;
             return id;
           };
-          features.caf = function(id) {
+          features.caf = function (id) {
             clearTimeout(id);
           };
         }
@@ -267,19 +267,19 @@
         framework.features = features;
 
         return features;
-      }
+      },
     };
 
     framework.detectFeatures();
 
     // Override addEventListener for old versions of IE
     if (framework.features.oldIE) {
-      framework.bind = function(target, type, listener, unbind) {
+      framework.bind = function (target, type, listener, unbind) {
         type = type.split(" ");
 
         var methodName = (unbind ? "detach" : "attach") + "Event",
           evName,
-          _handleEv = function() {
+          _handleEv = function () {
             listener.handleEvent.call(listener);
           };
 
@@ -338,10 +338,10 @@
       arrowKeys: true,
       mainScrollEndFriction: 0.35,
       panEndFriction: 0.35,
-      isClickableElement: function(el) {
+      isClickableElement: function (el) {
         return el.tagName === "A";
       },
-      getDoubleTapZoom: function(isMouseClick, item) {
+      getDoubleTapZoom: function (isMouseClick, item) {
         if (isMouseClick) {
           return 1;
         } else {
@@ -352,7 +352,7 @@
       modal: true,
 
       // not fully implemented yet
-      scaleMode: "fit" // TODO
+      scaleMode: "fit", // TODO
     };
     framework.extend(_options, options);
 
@@ -360,7 +360,7 @@
      * Private helper variables & functions
      */
 
-    var _getEmptyPoint = function() {
+    var _getEmptyPoint = function () {
       return { x: 0, y: 0 };
     };
 
@@ -409,11 +409,11 @@
       _renderMaxResolution = false,
       _orientationChangeTimeout,
       // Registers PhotoSWipe module (History, Controller ...)
-      _registerModule = function(name, module) {
+      _registerModule = function (name, module) {
         framework.extend(self, module.publicMethods);
         _modules.push(name);
       },
-      _getLoopedId = function(index) {
+      _getLoopedId = function (index) {
         var numSlides = _getNumItems();
         if (index > numSlides - 1) {
           return index - numSlides;
@@ -424,13 +424,13 @@
       },
       // Micro bind/trigger
       _listeners = {},
-      _listen = function(name, fn) {
+      _listen = function (name, fn) {
         if (!_listeners[name]) {
           _listeners[name] = [];
         }
         return _listeners[name].push(fn);
       },
-      _shout = function(name) {
+      _shout = function (name) {
         var listeners = _listeners[name];
 
         if (listeners) {
@@ -442,14 +442,14 @@
           }
         }
       },
-      _getCurrentTime = function() {
+      _getCurrentTime = function () {
         return new Date().getTime();
       },
-      _applyBgOpacity = function(opacity) {
+      _applyBgOpacity = function (opacity) {
         _bgOpacity = opacity;
         self.bg.style.opacity = opacity * _options.bgOpacity;
       },
-      _applyZoomTransform = function(styleObj, x, y, zoom, item) {
+      _applyZoomTransform = function (styleObj, x, y, zoom, item) {
         if (!_renderMaxResolution || (item && item !== self.currItem)) {
           zoom = zoom / (item ? item.fitRatio : self.currItem.fitRatio);
         }
@@ -465,7 +465,7 @@
           zoom +
           ")";
       },
-      _applyCurrentZoomPan = function(allowRenderResolution) {
+      _applyCurrentZoomPan = function (allowRenderResolution) {
         if (_currZoomElementStyle) {
           if (allowRenderResolution) {
             if (_currZoomLevel > self.currItem.fitRatio) {
@@ -489,7 +489,7 @@
           );
         }
       },
-      _applyZoomPanToItem = function(item) {
+      _applyZoomPanToItem = function (item) {
         if (item.container) {
           _applyZoomTransform(
             item.container.style,
@@ -500,11 +500,11 @@
           );
         }
       },
-      _setTranslateX = function(x, elStyle) {
+      _setTranslateX = function (x, elStyle) {
         elStyle[_transformKey] =
           _translatePrefix + x + "px, 0px" + _translateSufix;
       },
-      _moveMainScroll = function(x, dragging) {
+      _moveMainScroll = function (x, dragging) {
         if (!_options.loop && dragging) {
           var newSlideIndexOffset =
               _currentItemIndex +
@@ -522,7 +522,7 @@
         _mainScrollPos.x = x;
         _setTranslateX(x, _containerStyle);
       },
-      _calculatePanOffset = function(axis, zoomLevel) {
+      _calculatePanOffset = function (axis, zoomLevel) {
         var m = _midZoomPoint[axis] - _offset[axis];
         return (
           _startPanOffset[axis] +
@@ -531,19 +531,19 @@
           m * (zoomLevel / _startZoomLevel)
         );
       },
-      _equalizePoints = function(p1, p2) {
+      _equalizePoints = function (p1, p2) {
         p1.x = p2.x;
         p1.y = p2.y;
         if (p2.id) {
           p1.id = p2.id;
         }
       },
-      _roundPoint = function(p) {
+      _roundPoint = function (p) {
         p.x = Math.round(p.x);
         p.y = Math.round(p.y);
       },
       _mouseMoveTimeout = null,
-      _onFirstMouseMove = function() {
+      _onFirstMouseMove = function () {
         // Wait until mouse move event is fired at least twice during 100ms
         // We do this, because some mobile browsers trigger it on touchstart
         if (_mouseMoveTimeout) {
@@ -552,11 +552,11 @@
           _options.mouseUsed = true;
           _shout("mouseUsed");
         }
-        _mouseMoveTimeout = setTimeout(function() {
+        _mouseMoveTimeout = setTimeout(function () {
           _mouseMoveTimeout = null;
         }, 100);
       },
-      _bindEvents = function() {
+      _bindEvents = function () {
         framework.bind(document, "keydown", self);
 
         if (_features.transform) {
@@ -572,7 +572,7 @@
 
         _shout("bindEvents");
       },
-      _unbindEvents = function() {
+      _unbindEvents = function () {
         framework.unbind(window, "resize scroll orientationchange", self);
         framework.unbind(window, "scroll", _globalEventHandlers.scroll);
         framework.unbind(document, "keydown", self);
@@ -590,7 +590,7 @@
 
         _shout("unbindEvents");
       },
-      _calculatePanBounds = function(zoomLevel, update) {
+      _calculatePanBounds = function (zoomLevel, update) {
         var bounds = _calculateItemSize(
           self.currItem,
           _viewportSize,
@@ -601,20 +601,20 @@
         }
         return bounds;
       },
-      _getMinZoomLevel = function(item) {
+      _getMinZoomLevel = function (item) {
         if (!item) {
           item = self.currItem;
         }
         return item.initialZoomLevel;
       },
-      _getMaxZoomLevel = function(item) {
+      _getMaxZoomLevel = function (item) {
         if (!item) {
           item = self.currItem;
         }
         return item.w > 0 ? _options.maxSpreadZoom : 1;
       },
       // Return true if offset is out of the bounds
-      _modifyDestPanOffset = function(
+      _modifyDestPanOffset = function (
         axis,
         destPanBounds,
         destPanOffset,
@@ -636,7 +636,7 @@
         }
         return false;
       },
-      _setupTransforms = function() {
+      _setupTransforms = function () {
         if (_transformKey) {
           // setup 3d transforms
           var allow3dTransform = _features.perspective && !_likelyTouchDevice;
@@ -651,10 +651,10 @@
         _transformKey = "left";
         framework.addClass(template, "pswp--ie");
 
-        _setTranslateX = function(x, elStyle) {
+        _setTranslateX = function (x, elStyle) {
           elStyle.left = x + "px";
         };
-        _applyZoomPanToItem = function(item) {
+        _applyZoomPanToItem = function (item) {
           var zoomRatio = item.fitRatio > 1 ? 1 : item.fitRatio,
             s = item.container.style,
             w = zoomRatio * item.w,
@@ -665,7 +665,7 @@
           s.left = item.initialPosition.x + "px";
           s.top = item.initialPosition.y + "px";
         };
-        _applyCurrentZoomPan = function() {
+        _applyCurrentZoomPan = function () {
           if (_currZoomElementStyle) {
             var s = _currZoomElementStyle,
               item = self.currItem,
@@ -681,7 +681,7 @@
           }
         };
       },
-      _onKeyDown = function(e) {
+      _onKeyDown = function (e) {
         var keydownAction = "";
         if (_options.escKey && e.keyCode === 27) {
           keydownAction = "close";
@@ -706,7 +706,7 @@
           }
         }
       },
-      _onGlobalClick = function(e) {
+      _onGlobalClick = function (e) {
         if (!e) {
           return;
         }
@@ -722,14 +722,14 @@
           e.stopPropagation();
         }
       },
-      _updatePageScrollOffset = function() {
+      _updatePageScrollOffset = function () {
         self.setScrollOffset(0, framework.getScrollY());
       };
 
     // Micro animation engine
     var _animations = {},
       _numAnimations = 0,
-      _stopAnimation = function(name) {
+      _stopAnimation = function (name) {
         if (_animations[name]) {
           if (_animations[name].raf) {
             _cancelAF(_animations[name].raf);
@@ -738,7 +738,7 @@
           delete _animations[name];
         }
       },
-      _registerStartAnimation = function(name) {
+      _registerStartAnimation = function (name) {
         if (_animations[name]) {
           _stopAnimation(name);
         }
@@ -747,14 +747,14 @@
           _animations[name] = {};
         }
       },
-      _stopAllAnimations = function() {
+      _stopAllAnimations = function () {
         for (var prop in _animations) {
           if (_animations.hasOwnProperty(prop)) {
             _stopAnimation(prop);
           }
         }
       },
-      _animateProp = function(
+      _animateProp = function (
         name,
         b,
         endProp,
@@ -767,7 +767,7 @@
           t;
         _registerStartAnimation(name);
 
-        var animloop = function() {
+        var animloop = function () {
           if (_animations[name]) {
             t = _getCurrentTime() - startAnimTime; // time diff
             //b - beginning (start prop)
@@ -796,34 +796,34 @@
       viewportSize: _viewportSize,
       options: _options,
 
-      isMainScrollAnimating: function() {
+      isMainScrollAnimating: function () {
         return _mainScrollAnimating;
       },
-      getZoomLevel: function() {
+      getZoomLevel: function () {
         return _currZoomLevel;
       },
-      getCurrentIndex: function() {
+      getCurrentIndex: function () {
         return _currentItemIndex;
       },
-      isDragging: function() {
+      isDragging: function () {
         return _isDragging;
       },
-      isZooming: function() {
+      isZooming: function () {
         return _isZooming;
       },
-      setScrollOffset: function(x, y) {
+      setScrollOffset: function (x, y) {
         _offset.x = x;
         _currentWindowScrollY = _offset.y = y;
         _shout("updateScrollOffset", _offset);
       },
-      applyZoomPan: function(zoomLevel, panX, panY, allowRenderResolution) {
+      applyZoomPan: function (zoomLevel, panX, panY, allowRenderResolution) {
         _panOffset.x = panX;
         _panOffset.y = panY;
         _currZoomLevel = zoomLevel;
         _applyCurrentZoomPan(allowRenderResolution);
       },
 
-      init: function() {
+      init: function () {
         if (_isOpen || _isDestroying) {
           return;
         }
@@ -858,7 +858,7 @@
         self.itemHolders = _itemHolders = [
           { el: self.container.children[0], wrap: 0, index: -1 },
           { el: self.container.children[1], wrap: 0, index: -1 },
-          { el: self.container.children[2], wrap: 0, index: -1 }
+          { el: self.container.children[2], wrap: 0, index: -1 },
         ];
 
         // hide nearby item holders until initial zoom animation finishes (to avoid extra Paints)
@@ -874,9 +874,9 @@
           // Fixes: iOS 10.3 resize event
           // does not update scrollWrap.clientWidth instantly after resize
           // https://github.com/dimsemenov/PhotoSwipe/issues/1315
-          orientationchange: function() {
+          orientationchange: function () {
             clearTimeout(_orientationChangeTimeout);
-            _orientationChangeTimeout = setTimeout(function() {
+            _orientationChangeTimeout = setTimeout(function () {
               if (_viewportSize.x !== self.scrollWrap.clientWidth) {
                 self.updateSize();
               }
@@ -884,7 +884,7 @@
           },
           scroll: _updatePageScrollOffset,
           keydown: _onKeyDown,
-          click: _onGlobalClick
+          click: _onGlobalClick,
         };
 
         // disable show/hide effects on old browsers that don't support CSS animations or transforms,
@@ -968,7 +968,7 @@
           framework.bind(self.scrollWrap, _downEvents, self); // no dragging for old IE
         }
 
-        _listen("initialZoomInEnd", function() {
+        _listen("initialZoomInEnd", function () {
           self.setContent(_itemHolders[0], _currentItemIndex - 1);
           self.setContent(_itemHolders[2], _currentItemIndex + 1);
 
@@ -1002,7 +1002,7 @@
           //
           // 10 Nov 2014: iOS 7 usage ~40%. iOS 8 usage 56%.
 
-          _updateSizeInterval = setInterval(function() {
+          _updateSizeInterval = setInterval(function () {
             if (
               !_numAnimations &&
               !_isDragging &&
@@ -1018,7 +1018,7 @@
       },
 
       // Close the gallery, then destroy it
-      close: function() {
+      close: function () {
         if (!_isOpen) {
           return;
         }
@@ -1032,7 +1032,7 @@
       },
 
       // destroys the gallery (unbinds events, cleans up intervals and timeouts to avoid memory leaks)
-      destroy: function() {
+      destroy: function () {
         _shout("destroy");
 
         if (_showOrHideTimeout) {
@@ -1064,7 +1064,7 @@
        * @param {Number} y
        * @param {Boolean} force Will ignore bounds if set to true.
        */
-      panTo: function(x, y, force) {
+      panTo: function (x, y, force) {
         if (!force) {
           if (x > _currPanBounds.min.x) {
             x = _currPanBounds.min.x;
@@ -1084,14 +1084,14 @@
         _applyCurrentZoomPan();
       },
 
-      handleEvent: function(e) {
+      handleEvent: function (e) {
         e = e || window.event;
         if (_globalEventHandlers[e.type]) {
           _globalEventHandlers[e.type](e);
         }
       },
 
-      goTo: function(index) {
+      goTo: function (index) {
         index = _getLoopedId(index);
 
         var diff = index - _currentItemIndex;
@@ -1108,15 +1108,15 @@
 
         self.updateCurrItem();
       },
-      next: function() {
+      next: function () {
         self.goTo(_currentItemIndex + 1);
       },
-      prev: function() {
+      prev: function () {
         self.goTo(_currentItemIndex - 1);
       },
 
       // update current zoom/pan objects
-      updateCurrZoomItem: function(emulateSetContent) {
+      updateCurrZoomItem: function (emulateSetContent) {
         if (emulateSetContent) {
           _shout("beforeChange", 0);
         }
@@ -1144,7 +1144,7 @@
         }
       },
 
-      invalidateCurrItems: function() {
+      invalidateCurrItems: function () {
         _itemsNeedUpdate = true;
         for (var i = 0; i < NUM_HOLDERS; i++) {
           if (_itemHolders[i].item) {
@@ -1153,7 +1153,7 @@
         }
       },
 
-      updateCurrItem: function(beforeAnimation) {
+      updateCurrItem: function (beforeAnimation) {
         if (_indexDiff === 0) {
           return;
         }
@@ -1225,7 +1225,7 @@
         _shout("afterChange");
       },
 
-      updateSize: function(force) {
+      updateSize: function (force) {
         if (!_isFixedPosition && _options.modal) {
           var windowScrollY = framework.getScrollY();
           if (_currentWindowScrollY !== windowScrollY) {
@@ -1322,7 +1322,7 @@
       },
 
       // Zoom current item to
-      zoomTo: function(destZoomLevel, centerPoint, speed, easingFn, updateFn) {
+      zoomTo: function (destZoomLevel, centerPoint, speed, easingFn, updateFn) {
         /*
 			if(destZoomLevel === 'fit') {
 				destZoomLevel = self.currItem.fitRatio;
@@ -1347,12 +1347,12 @@
         var initialZoomLevel = _currZoomLevel;
         var initialPanOffset = {
           x: _panOffset.x,
-          y: _panOffset.y
+          y: _panOffset.y,
         };
 
         _roundPoint(destPanOffset);
 
-        var onUpdate = function(now) {
+        var onUpdate = function (now) {
           if (now === 1) {
             _currZoomLevel = destZoomLevel;
             _panOffset.x = destPanOffset.x;
@@ -1385,7 +1385,7 @@
         } else {
           onUpdate(1);
         }
-      }
+      },
     };
 
     /*>>core*/
@@ -1440,42 +1440,42 @@
       _opacityChanged,
       _bgOpacity,
       _wasOverInitialZoom,
-      _isEqualPoints = function(p1, p2) {
+      _isEqualPoints = function (p1, p2) {
         return p1.x === p2.x && p1.y === p2.y;
       },
-      _isNearbyPoints = function(touch0, touch1) {
+      _isNearbyPoints = function (touch0, touch1) {
         return (
           Math.abs(touch0.x - touch1.x) < DOUBLE_TAP_RADIUS &&
           Math.abs(touch0.y - touch1.y) < DOUBLE_TAP_RADIUS
         );
       },
-      _calculatePointsDistance = function(p1, p2) {
+      _calculatePointsDistance = function (p1, p2) {
         _tempPoint.x = Math.abs(p1.x - p2.x);
         _tempPoint.y = Math.abs(p1.y - p2.y);
         return Math.sqrt(
           _tempPoint.x * _tempPoint.x + _tempPoint.y * _tempPoint.y
         );
       },
-      _stopDragUpdateLoop = function() {
+      _stopDragUpdateLoop = function () {
         if (_dragAnimFrame) {
           _cancelAF(_dragAnimFrame);
           _dragAnimFrame = null;
         }
       },
-      _dragUpdateLoop = function() {
+      _dragUpdateLoop = function () {
         if (_isDragging) {
           _dragAnimFrame = _requestAF(_dragUpdateLoop);
           _renderMovement();
         }
       },
-      _canPan = function() {
+      _canPan = function () {
         return !(
           _options.scaleMode === "fit" &&
           _currZoomLevel === self.currItem.initialZoomLevel
         );
       },
       // find the closest parent DOM element
-      _closestElement = function(el, fn) {
+      _closestElement = function (el, fn) {
         if (!el || el === document) {
           return false;
         }
@@ -1495,7 +1495,7 @@
         return _closestElement(el.parentNode, fn);
       },
       _preventObj = {},
-      _preventDefaultEventBehaviour = function(e, isDown) {
+      _preventDefaultEventBehaviour = function (e, isDown) {
         _preventObj.prevent = !_closestElement(
           e.target,
           _options.isClickableElement
@@ -1504,17 +1504,17 @@
         _shout("preventDragEvent", e, isDown, _preventObj);
         return _preventObj.prevent;
       },
-      _convertTouchToPoint = function(touch, p) {
+      _convertTouchToPoint = function (touch, p) {
         p.x = touch.pageX;
         p.y = touch.pageY;
         p.id = touch.identifier;
         return p;
       },
-      _findCenterOfPoints = function(p1, p2, pCenter) {
+      _findCenterOfPoints = function (p1, p2, pCenter) {
         pCenter.x = (p1.x + p2.x) * 0.5;
         pCenter.y = (p1.y + p2.y) * 0.5;
       },
-      _pushPosPoint = function(time, x, y) {
+      _pushPosPoint = function (time, x, y) {
         if (time - _gestureCheckSpeedTime > 50) {
           var o = _posPoints.length > 2 ? _posPoints.shift() : {};
           o.x = x;
@@ -1523,7 +1523,7 @@
           _gestureCheckSpeedTime = time;
         }
       },
-      _calculateVerticalDragOpacityRatio = function() {
+      _calculateVerticalDragOpacityRatio = function () {
         var yOffset = _panOffset.y - self.currItem.initialPosition.y; // difference between initial and current position
         return 1 - Math.abs(yOffset / (_viewportSize.y / 2));
       },
@@ -1532,7 +1532,7 @@
       _ePoint2 = {},
       _tempPointsArr = [],
       _tempCounter,
-      _getTouchPoints = function(e) {
+      _getTouchPoints = function (e) {
         // clean up previous points, without recreating array
         while (_tempPointsArr.length > 0) {
           _tempPointsArr.pop();
@@ -1558,7 +1558,7 @@
         } else {
           _tempCounter = 0;
           // we can use forEach, as pointer events are supported only in modern browsers
-          _currPointers.forEach(function(p) {
+          _currPointers.forEach(function (p) {
             if (_tempCounter === 0) {
               _tempPointsArr[0] = p;
             } else if (_tempCounter === 1) {
@@ -1569,7 +1569,7 @@
         }
         return _tempPointsArr;
       },
-      _panOrMoveMainScroll = function(axis, delta) {
+      _panOrMoveMainScroll = function (axis, delta) {
         var panFriction,
           overDiff = 0,
           newOffset = _panOffset[axis] + delta[axis],
@@ -1689,7 +1689,7 @@
         }
       },
       // Pointerdown/touchstart/mousedown handler
-      _onDragStart = function(e) {
+      _onDragStart = function (e) {
         // Allow dragging only via left mouse button.
         // As this handler is not added in IE8 - we ignore e.which
         //
@@ -1726,7 +1726,7 @@
           _currPointers[pointerIndex] = {
             x: e.pageX,
             y: e.pageY,
-            id: e.pointerId
+            id: e.pointerId,
           };
         }
 
@@ -1760,8 +1760,8 @@
           _posPoints = [
             {
               x: _currPoint.x,
-              y: _currPoint.y
-            }
+              y: _currPoint.y,
+            },
           ];
 
           _gestureCheckSpeedTime = _gestureStartTime = _getCurrentTime();
@@ -1803,7 +1803,7 @@
         }
       },
       // Pointermove/touchmove/mousemove handler
-      _onDragMove = function(e) {
+      _onDragMove = function (e) {
         e.preventDefault();
 
         if (_pointerEventEnabled) {
@@ -1841,7 +1841,7 @@
         }
       },
       //
-      _renderMovement = function() {
+      _renderMovement = function () {
         if (!_currentPoints) {
           return;
         }
@@ -2003,7 +2003,7 @@
         }
       },
       // Pointerup/pointercancel/touchend/touchcancel/mouseup event handler
-      _onDragRelease = function(e) {
+      _onDragRelease = function (e) {
         if (_features.isOldAndroid) {
           if (_oldAndroidTouchEndTimeout && e.type === "mouseup") {
             return;
@@ -2015,7 +2015,7 @@
           // so we block mousedown/up for 600ms
           if (e.type.indexOf("touch") > -1) {
             clearTimeout(_oldAndroidTouchEndTimeout);
-            _oldAndroidTouchEndTimeout = setTimeout(function() {
+            _oldAndroidTouchEndTimeout = setTimeout(function () {
               _oldAndroidTouchEndTimeout = 0;
             }, 600);
           }
@@ -2043,7 +2043,7 @@
               var MSPOINTER_TYPES = {
                 4: "mouse", // event.MSPOINTER_TYPE_MOUSE
                 2: "touch", // event.MSPOINTER_TYPE_TOUCH
-                3: "pen" // event.MSPOINTER_TYPE_PEN
+                3: "pen", // event.MSPOINTER_TYPE_PEN
               };
               releasePoint.type = MSPOINTER_TYPES[e.pointerType];
 
@@ -2084,7 +2084,7 @@
               releasePoint = {
                 x: e.changedTouches[0].pageX,
                 y: e.changedTouches[0].pageY,
-                type: "touch"
+                type: "touch",
               };
             }
           }
@@ -2161,7 +2161,7 @@
               1,
               300,
               framework.easing.cubic.out,
-              function(now) {
+              function (now) {
                 _panOffset.y =
                   (self.currItem.initialPosition.y - initalPanY) * now +
                   initalPanY;
@@ -2209,7 +2209,7 @@
       },
       // Returns object with data about gesture
       // It's created only once and then reused
-      _initDragReleaseAnimationData = function() {
+      _initDragReleaseAnimationData = function () {
         // temp local vars
         var lastFlickDuration, tempReleasePos;
 
@@ -2225,7 +2225,7 @@
           distanceOffset: {},
           backAnimDestination: {},
           backAnimStarted: {},
-          calculateSwipeSpeed: function(axis) {
+          calculateSwipeSpeed: function (axis) {
             if (_posPoints.length > 1) {
               lastFlickDuration =
                 _getCurrentTime() - _gestureCheckSpeedTime + 50;
@@ -2251,7 +2251,7 @@
             s.speedDecelerationRatio[axis] = 1;
           },
 
-          calculateOverBoundsAnimOffset: function(axis, speed) {
+          calculateOverBoundsAnimOffset: function (axis, speed) {
             if (!s.backAnimStarted[axis]) {
               if (_panOffset[axis] > _currPanBounds.min[axis]) {
                 s.backAnimDestination[axis] = _currPanBounds.min[axis];
@@ -2272,7 +2272,7 @@
                     s.backAnimDestination[axis],
                     speed || 300,
                     framework.easing.sine.out,
-                    function(pos) {
+                    function (pos) {
                       _panOffset[axis] = pos;
                       _applyCurrentZoomPan();
                     }
@@ -2283,7 +2283,7 @@
           },
 
           // Reduces the speed by slowDownRatio (per 10ms)
-          calculateAnimOffset: function(axis) {
+          calculateAnimOffset: function (axis) {
             if (!s.backAnimStarted[axis]) {
               s.speedDecelerationRatio[axis] =
                 s.speedDecelerationRatio[axis] *
@@ -2302,7 +2302,7 @@
             }
           },
 
-          panAnimLoop: function() {
+          panAnimLoop: function () {
             if (_animations.zoomPan) {
               _animations.zoomPan.raf = _requestAF(s.panAnimLoop);
 
@@ -2331,11 +2331,11 @@
                 return;
               }
             }
-          }
+          },
         };
         return s;
       },
-      _completePanGesture = function(animData) {
+      _completePanGesture = function (animData) {
         // calculate swipe speed for Y axis (paanning)
         animData.calculateSwipeSpeed("y");
 
@@ -2362,7 +2362,7 @@
         animData.lastNow = _getCurrentTime();
         animData.panAnimLoop();
       },
-      _finishSwipeMainScrollGesture = function(gestureType, _releaseAnimData) {
+      _finishSwipeMainScrollGesture = function (gestureType, _releaseAnimData) {
         var itemChanged;
         if (!_mainScrollAnimating) {
           _currZoomedItemIndex = _currentItemIndex;
@@ -2447,7 +2447,7 @@
           finishAnimDuration,
           framework.easing.cubic.out,
           _moveMainScroll,
-          function() {
+          function () {
             _stopAllAnimations();
             _mainScrollAnimating = false;
             _currZoomedItemIndex = -1;
@@ -2466,11 +2466,11 @@
 
         return itemChanged;
       },
-      _calculateZoomLevel = function(touchesDistance) {
+      _calculateZoomLevel = function (touchesDistance) {
         return (1 / _startPointsDistance) * touchesDistance * _startZoomLevel;
       },
       // Resets zoom if it's out of bounds
-      _completeZoomGesture = function() {
+      _completeZoomGesture = function () {
         var destZoomLevel = _currZoomLevel,
           minZoomLevel = _getMinZoomLevel(),
           maxZoomLevel = _getMaxZoomLevel();
@@ -2497,7 +2497,7 @@
         }
 
         if (_opacityChanged) {
-          onUpdate = function(now) {
+          onUpdate = function (now) {
             _applyBgOpacity(
               (destOpacity - initialOpacity) * now + initialOpacity
             );
@@ -2516,9 +2516,9 @@
 
     _registerModule("Gestures", {
       publicMethods: {
-        initGestures: function() {
+        initGestures: function () {
           // helper function that builds touch/pointer/mouse events
-          var addEventNames = function(pref, down, move, up, cancel) {
+          var addEventNames = function (pref, down, move, up, cancel) {
             _dragStartEvent = pref + down;
             _dragMoveEvent = pref + move;
             _dragEndEvent = pref + up;
@@ -2584,8 +2584,8 @@
             // don't allow pan to next slide from zoomed state on Desktop
             _options.allowPanToNext = false;
           }
-        }
-      }
+        },
+      },
     });
 
     /*>>gestures*/
@@ -2603,7 +2603,7 @@
      */
 
     var _showOrHideTimeout,
-      _showOrHide = function(item, img, out, completeFn) {
+      _showOrHide = function (item, img, out, completeFn) {
         if (_showOrHideTimeout) {
           clearTimeout(_showOrHideTimeout);
         }
@@ -2627,7 +2627,7 @@
           ? _options.hideAnimationDuration
           : _options.showAnimationDuration;
 
-        var onComplete = function() {
+        var onComplete = function () {
           _stopAnimation("initialZoom");
           if (!out) {
             _applyBgOpacity(1);
@@ -2659,7 +2659,7 @@
           _applyBgOpacity(1);
 
           if (duration) {
-            setTimeout(function() {
+            setTimeout(function () {
               onComplete();
             }, duration);
           } else {
@@ -2669,7 +2669,7 @@
           return;
         }
 
-        var startAnimation = function() {
+        var startAnimation = function () {
           var closeWithRaf = _closedByScroll,
             fadeEverything =
               !self.currItem.src ||
@@ -2703,14 +2703,14 @@
                 "pswp--animate_opacity"
               );
             } else {
-              setTimeout(function() {
+              setTimeout(function () {
                 framework.addClass(template, "pswp--animate_opacity");
               }, 30);
             }
           }
 
           _showOrHideTimeout = setTimeout(
-            function() {
+            function () {
               _shout("initialZoom" + (out ? "Out" : "In"));
 
               if (!out) {
@@ -2736,11 +2736,11 @@
                 var destZoomLevel = thumbBounds.w / item.w,
                   initialPanOffset = {
                     x: _panOffset.x,
-                    y: _panOffset.y
+                    y: _panOffset.y,
                   },
                   initialZoomLevel = _currZoomLevel,
                   initalBgOpacity = _bgOpacity,
-                  onUpdate = function(now) {
+                  onUpdate = function (now) {
                     if (now === 1) {
                       _currZoomLevel = destZoomLevel;
                       _panOffset.x = thumbBounds.x;
@@ -2812,22 +2812,22 @@
           '<div class="pswp__error-msg"><a href="%url%" target="_blank">The image</a> could not be loaded.</div>',
         forceProgressiveLoading: false, // TODO
         preload: [1, 1],
-        getNumItemsFn: function() {
+        getNumItemsFn: function () {
           return _items.length;
-        }
+        },
       };
 
     var _getItemAt,
       _getNumItems,
       _initialIsLoop,
-      _getZeroBounds = function() {
+      _getZeroBounds = function () {
         return {
           center: { x: 0, y: 0 },
           max: { x: 0, y: 0 },
-          min: { x: 0, y: 0 }
+          min: { x: 0, y: 0 },
         };
       },
-      _calculateSingleItemPanBounds = function(
+      _calculateSingleItemPanBounds = function (
         item,
         realPanElementW,
         realPanElementH
@@ -2861,7 +2861,7 @@
             ? item.vGap.top
             : bounds.center.y;
       },
-      _calculateItemSize = function(item, viewportSize, zoomLevel) {
+      _calculateItemSize = function (item, viewportSize, zoomLevel) {
         if (item.src && !item.loadError) {
           var isInitial = !zoomLevel;
 
@@ -2929,7 +2929,7 @@
           return item.bounds;
         }
       },
-      _appendImage = function(
+      _appendImage = function (
         index,
         item,
         baseDiv,
@@ -2952,7 +2952,7 @@
           baseDiv.appendChild(img);
 
           if (keepPlaceholder) {
-            setTimeout(function() {
+            setTimeout(function () {
               if (item && item.loaded && item.placeholder) {
                 item.placeholder.style.display = "none";
                 item.placeholder = null;
@@ -2961,11 +2961,11 @@
           }
         }
       },
-      _preloadImage = function(item) {
+      _preloadImage = function (item) {
         item.loading = true;
         item.loaded = false;
         var img = (item.img = framework.createEl("pswp__img", "img"));
-        var onComplete = function() {
+        var onComplete = function () {
           item.loading = false;
           item.loaded = true;
 
@@ -2978,7 +2978,7 @@
           img = null;
         };
         img.onload = onComplete;
-        img.onerror = function() {
+        img.onerror = function () {
           item.loadError = true;
           onComplete();
         };
@@ -2987,7 +2987,7 @@
 
         return img;
       },
-      _checkForError = function(item, cleanUp) {
+      _checkForError = function (item, cleanUp) {
         if (item.src && item.loadError && item.container) {
           if (cleanUp) {
             item.container.innerHTML = "";
@@ -3000,7 +3000,7 @@
           return true;
         }
       },
-      _setImageSize = function(item, img, maxRes) {
+      _setImageSize = function (item, img, maxRes) {
         if (!item.src) {
           return;
         }
@@ -3020,7 +3020,7 @@
         img.style.width = w + "px";
         img.style.height = h + "px";
       },
-      _appendImagesPool = function() {
+      _appendImagesPool = function () {
         if (_imagesToAppendPool.length) {
           var poolItem;
 
@@ -3043,7 +3043,7 @@
 
     _registerModule("Controller", {
       publicMethods: {
-        lazyLoadItem: function(index) {
+        lazyLoadItem: function (index) {
           index = _getLoopedId(index);
           var item = _getItemAt(index);
 
@@ -3059,7 +3059,7 @@
 
           _preloadImage(item);
         },
-        initController: function() {
+        initController: function () {
           framework.extend(_options, _controllerDefaultOptions, true);
           self.items = _items = items;
           _getItemAt = self.getItemAt;
@@ -3070,7 +3070,7 @@
             _options.loop = false; // disable loop if less then 3 items
           }
 
-          _listen("beforeChange", function(diff) {
+          _listen("beforeChange", function (diff) {
             var p = _options.preload,
               isNext = diff === null ? true : diff >= 0,
               preloadBefore = Math.min(p[0], _getNumItems()),
@@ -3085,7 +3085,7 @@
             }
           });
 
-          _listen("initialLayout", function() {
+          _listen("initialLayout", function () {
             self.currItem.initialLayout =
               _options.getThumbBoundsFn &&
               _options.getThumbBoundsFn(_currentItemIndex);
@@ -3094,7 +3094,7 @@
           _listen("mainScrollAnimComplete", _appendImagesPool);
           _listen("initialZoomInEnd", _appendImagesPool);
 
-          _listen("destroy", function() {
+          _listen("destroy", function () {
             var item;
             for (var i = 0; i < _items.length; i++) {
               item = _items[i];
@@ -3119,14 +3119,14 @@
           });
         },
 
-        getItemAt: function(index) {
+        getItemAt: function (index) {
           if (index >= 0) {
             return _items[index] !== undefined ? _items[index] : false;
           }
           return false;
         },
 
-        allowProgressiveImg: function() {
+        allowProgressiveImg: function () {
           // 1. Progressive image loading isn't working on webkit/blink
           //    when hw-acceleration (e.g. translateZ) is applied to IMG element.
           //    That's why in PhotoSwipe parent element gets zoom transform, not image itself.
@@ -3146,7 +3146,7 @@
           // 1200 - to eliminate touch devices with large screen (like Chromebook Pixel)
         },
 
-        setContent: function(holder, index) {
+        setContent: function (holder, index) {
           if (_options.loop) {
             index = _getLoopedId(index);
           }
@@ -3188,7 +3188,7 @@
           _calculateItemSize(item, _viewportSize);
 
           if (item.src && !item.loadError && !item.loaded) {
-            item.loadComplete = function(item) {
+            item.loadComplete = function (item) {
               // gallery closed before image finished loading
               if (!_isOpen) {
                 return;
@@ -3218,7 +3218,7 @@
                       img: item.img,
                       index: index,
                       holder: holder,
-                      clearPlaceholder: true
+                      clearPlaceholder: true,
                     });
                   } else {
                     _appendImage(
@@ -3277,7 +3277,7 @@
                   baseDiv: baseDiv,
                   img: item.img,
                   index: index,
-                  holder: holder
+                  holder: holder,
                 });
               } else {
                 _appendImage(index, item, baseDiv, item.img, true, true);
@@ -3303,13 +3303,13 @@
           holder.el.appendChild(baseDiv);
         },
 
-        cleanSlide: function(item) {
+        cleanSlide: function (item) {
           if (item.img) {
             item.img.onload = item.img.onerror = null;
           }
           item.loaded = item.loading = item.img = item.imageAppended = false;
-        }
-      }
+        },
+      },
     });
 
     /*>>items-controller*/
@@ -3324,13 +3324,13 @@
 
     var tapTimer,
       tapReleasePoint = {},
-      _dispatchTapEvent = function(origEvent, releasePoint, pointerType) {
+      _dispatchTapEvent = function (origEvent, releasePoint, pointerType) {
         var e = document.createEvent("CustomEvent"),
           eDetail = {
             origEvent: origEvent,
             target: origEvent.target,
             releasePoint: releasePoint,
-            pointerType: pointerType || "touch"
+            pointerType: pointerType || "touch",
           };
 
         e.initCustomEvent("pswpTap", true, true, eDetail);
@@ -3339,21 +3339,21 @@
 
     _registerModule("Tap", {
       publicMethods: {
-        initTap: function() {
+        initTap: function () {
           _listen("firstTouchStart", self.onTapStart);
           _listen("touchRelease", self.onTapRelease);
-          _listen("destroy", function() {
+          _listen("destroy", function () {
             tapReleasePoint = {};
             tapTimer = null;
           });
         },
-        onTapStart: function(touchList) {
+        onTapStart: function (touchList) {
           if (touchList.length > 1) {
             clearTimeout(tapTimer);
             tapTimer = null;
           }
         },
-        onTapRelease: function(e, releasePoint) {
+        onTapRelease: function (e, releasePoint) {
           if (!releasePoint) {
             return;
           }
@@ -3388,13 +3388,13 @@
 
             _equalizePoints(tapReleasePoint, p0);
 
-            tapTimer = setTimeout(function() {
+            tapTimer = setTimeout(function () {
               _dispatchTapEvent(e, releasePoint);
               tapTimer = null;
             }, 300);
           }
-        }
-      }
+        },
+      },
     });
 
     /*>>tap*/
@@ -3415,7 +3415,7 @@
 
     _registerModule("DesktopZoom", {
       publicMethods: {
-        initDesktopZoom: function() {
+        initDesktopZoom: function () {
           if (_oldIE) {
             // no zoom for old IE (<=8)
             return;
@@ -3424,7 +3424,7 @@
           if (_likelyTouchDevice) {
             // if detected hardware touch support, we wait until mouse is used,
             // and only then apply desktop-zoom features
-            _listen("mouseUsed", function() {
+            _listen("mouseUsed", function () {
               self.setupDesktopZoom();
             });
           } else {
@@ -3432,16 +3432,16 @@
           }
         },
 
-        setupDesktopZoom: function(onInit) {
+        setupDesktopZoom: function (onInit) {
           _wheelDelta = {};
 
           var events = "wheel mousewheel DOMMouseScroll";
 
-          _listen("bindEvents", function() {
+          _listen("bindEvents", function () {
             framework.bind(template, events, self.handleMouseWheel);
           });
 
-          _listen("unbindEvents", function() {
+          _listen("unbindEvents", function () {
             if (_wheelDelta) {
               framework.unbind(template, events, self.handleMouseWheel);
             }
@@ -3450,7 +3450,7 @@
           self.mouseZoomedIn = false;
 
           var hasDraggingClass,
-            updateZoomable = function() {
+            updateZoomable = function () {
               if (self.mouseZoomedIn) {
                 framework.removeClass(template, "pswp--zoomed-in");
                 self.mouseZoomedIn = false;
@@ -3462,7 +3462,7 @@
               }
               removeDraggingClass();
             },
-            removeDraggingClass = function() {
+            removeDraggingClass = function () {
               if (hasDraggingClass) {
                 framework.removeClass(template, "pswp--dragging");
                 hasDraggingClass = false;
@@ -3471,7 +3471,7 @@
 
           _listen("resize", updateZoomable);
           _listen("afterChange", updateZoomable);
-          _listen("pointerDown", function() {
+          _listen("pointerDown", function () {
             if (self.mouseZoomedIn) {
               hasDraggingClass = true;
               framework.addClass(template, "pswp--dragging");
@@ -3484,7 +3484,7 @@
           }
         },
 
-        handleMouseWheel: function(e) {
+        handleMouseWheel: function (e) {
           if (_currZoomLevel <= self.currItem.fitRatio) {
             if (_options.modal) {
               if (!_options.closeOnScroll || _numAnimations || _isDragging) {
@@ -3549,10 +3549,10 @@
           self.panTo(newPanX, newPanY);
         },
 
-        toggleDesktopZoom: function(centerPoint) {
+        toggleDesktopZoom: function (centerPoint) {
           centerPoint = centerPoint || {
             x: _viewportSize.x / 2 + _offset.x,
-            y: _viewportSize.y / 2 + _offset.y
+            y: _viewportSize.y / 2 + _offset.y,
           };
 
           var doubleTapZoomLevel = _options.getDoubleTapZoom(
@@ -3572,8 +3572,8 @@
             template,
             "pswp--zoomed-in"
           );
-        }
-      }
+        },
+      },
     });
 
     /*>>desktop-zoom*/
@@ -3594,7 +3594,7 @@
 
     var _historyDefaultOptions = {
       history: true,
-      galleryUID: 1
+      galleryUID: 1,
     };
 
     var _historyUpdateTimeout,
@@ -3609,10 +3609,10 @@
       _urlChangedOnce,
       _windowLoc,
       _supportsPushState,
-      _getHash = function() {
+      _getHash = function () {
         return _windowLoc.hash.substring(1);
       },
-      _cleanHistoryTimeouts = function() {
+      _cleanHistoryTimeouts = function () {
         if (_historyUpdateTimeout) {
           clearTimeout(_historyUpdateTimeout);
         }
@@ -3623,7 +3623,7 @@
       },
       // pid - Picture index
       // gid - Gallery index
-      _parseItemIndexFromURL = function() {
+      _parseItemIndexFromURL = function () {
         var hash = _getHash(),
           params = {};
 
@@ -3662,7 +3662,7 @@
         }
         return params;
       },
-      _updateHash = function() {
+      _updateHash = function () {
         if (_hashAnimCheckTimeout) {
           clearTimeout(_hashAnimCheckTimeout);
         }
@@ -3721,14 +3721,14 @@
         }
 
         _historyChanged = true;
-        _hashChangeTimeout = setTimeout(function() {
+        _hashChangeTimeout = setTimeout(function () {
           _hashChangedByScript = false;
         }, 60);
       };
 
     _registerModule("History", {
       publicMethods: {
-        initHistory: function() {
+        initHistory: function () {
           framework.extend(_options, _historyDefaultOptions, true);
 
           if (!_options.history) {
@@ -3748,11 +3748,11 @@
           }
 
           _listen("afterChange", self.updateURL);
-          _listen("unbindEvents", function() {
+          _listen("unbindEvents", function () {
             framework.unbind(window, "hashchange", self.onHashChange);
           });
 
-          var returnToOriginal = function() {
+          var returnToOriginal = function () {
             _hashReseted = true;
             if (!_closedFromURL) {
               if (_urlChangedOnce) {
@@ -3778,19 +3778,19 @@
             _cleanHistoryTimeouts();
           };
 
-          _listen("unbindEvents", function() {
+          _listen("unbindEvents", function () {
             if (_closedByScroll) {
               // if PhotoSwipe is closed by scroll, we go "back" before the closing animation starts
               // this is done to keep the scroll position
               returnToOriginal();
             }
           });
-          _listen("destroy", function() {
+          _listen("destroy", function () {
             if (!_hashReseted) {
               returnToOriginal();
             }
           });
-          _listen("firstUpdate", function() {
+          _listen("firstUpdate", function () {
             _currentItemIndex = _parseItemIndexFromURL().pid;
           });
 
@@ -3802,14 +3802,14 @@
             }
           }
 
-          setTimeout(function() {
+          setTimeout(function () {
             if (_isOpen) {
               // hasn't destroyed yet
               framework.bind(window, "hashchange", self.onHashChange);
             }
           }, 40);
         },
-        onHashChange: function() {
+        onHashChange: function () {
           if (_getHash() === _initialHash) {
             _closedFromURL = true;
             self.close();
@@ -3821,7 +3821,7 @@
             _hashChangedByHistory = false;
           }
         },
-        updateURL: function() {
+        updateURL: function () {
           // Delay the update of URL, to avoid lag during transition,
           // and to not to trigger actions like "refresh page sound" or "blinking favicon" to often
 
@@ -3836,8 +3836,8 @@
           } else {
             _historyUpdateTimeout = setTimeout(_updateHash, 800);
           }
-        }
-      }
+        },
+      },
     });
 
     /*>>history*/

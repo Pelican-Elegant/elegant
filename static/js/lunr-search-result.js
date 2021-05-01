@@ -13,14 +13,14 @@ function lunr_search(term) {
     counter = counter + 1;
   }
 
-  idx = lunr(function() {
+  idx = lunr(function () {
     this.ref("id");
     this.field("title");
     this.field("url");
     this.field("text", { boost: 10 });
     this.field("tags");
 
-    items.forEach(function(doc) {
+    items.forEach(function (doc) {
       this.add(doc);
     }, this);
   });
