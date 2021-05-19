@@ -8,7 +8,7 @@ gitdb==4.0.7
 gitdb2==4.0.2
 GitPython==3.1.17
 invoke==1.5.0
-Jinja2==2.11.3
+Jinja2==3.0.1
 jinjaninja==0.1.2
 livereload==2.6.3
 Markdown==3.3.4
