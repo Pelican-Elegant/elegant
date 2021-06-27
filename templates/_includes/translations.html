@@ -1,7 +1,8 @@
 {% macro translations_for(article) %}
 {% if article.translations %}
+{% from '_includes/_defaults.html' import ARTICLE_TRANSLATION_MESSAGE with context %}
 <p id="list-of-translations">
-This post is also available in:
+{{ ARTICLE_TRANSLATION_MESSAGE }}:
     {% for translation in article.translations|sort(attribute = 'lang') %}
     <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>{% if loop.index0 + 2 == loop.length %} and{% elif not loop.last %}, {% endif %}
     {% endfor %}
