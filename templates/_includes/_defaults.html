@@ -236,3 +236,21 @@ PROJECTS = [{
 {% else %}
 {% set SHARE_LINKS = SHARE_LINKS %}
 {% endif %}
+
+
+{% if not HOME_MENUITEM %}
+{% set HOME_MENUITEM = 'Home' %}
+{% else %}
+{% set HOME_MENUITEM = HOME_MENUITEM %}
+{% endif %}
+
+
+{% if not MENUITEMS %}
+{% set MENUITEMS = (
+    ('categories', 'Categories', CATEGORIES_URL),
+    ('tags', 'Tags', TAGS_URL),
+    ('archives', 'Archives', ARCHIVES_URL),
+) %}
+{% else %}
+{% set MENUITEMS = MENUITEMS %}
+{% endif %}
