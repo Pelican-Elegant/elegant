@@ -30,7 +30,7 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 {% endblock feed_links %}
 
 {% block content %}
-{% from '_includes/_defaults.html' import TAGS_URL with context %}
+{% from '_includes/_defaults.html' import TAGS_URL, SEARCH_TAG_PLACEHOLDER with context %}
 <div class="row-fluid">
     <header class="page-header span10 offset2">
     <h1><a href="{{ SITEURL }}/{{ TAGS_URL }}">All Tags</a></h1>
@@ -39,7 +39,7 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 <div class="row-fluid">
     <div class="span8 offset2">
         <form class="form-search">
-            <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
+            <input type="text" class="input-medium search-query filterinput" placeholder="{{ SEARCH_TAG_PLACEHOLDER }}">
         </form>
         <ul class="list-of-tags">
             {% for tag, articles in tags|sort %}
