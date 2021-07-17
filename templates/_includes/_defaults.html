@@ -236,3 +236,21 @@ PROJECTS = [{
 {% else %}
 {% set SHARE_LINKS = SHARE_LINKS %}
 {% endif %}
+
+{% if not ALL_CATEGORIES %}
+{% set ALL_CATEGORIES = 'All Categories' %}
+{% else %}
+{% set ALL_CATEGORIES = ALL_CATEGORIES %}
+{% endif %}
+
+{% if not ALL_TAGS %}
+{% set ALL_TAGS = 'All Tags' %}
+{% else %}
+{% set ALL_TAGS = ALL_TAGS %}
+{% endif %}
+
+{% if not ALL_POSTS %}
+{% set ALL_POSTS = 'All Posts' %}
+{% else %}
+{% set ALL_POSTS = ALL_POSTS %}
+{% endif %}
