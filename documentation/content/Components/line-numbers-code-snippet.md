@@ -28,7 +28,7 @@ markup. Use `linenos` flag to switch on line numbers for the snippet.
         :linenos:
 
         def example():
-            print 'Hello World'
+            print "Hello World"
 
 ## Markdown
 

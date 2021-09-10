@@ -10,22 +10,18 @@ Keywords:
 First, you need to enable the `toc` extension for Markdown in your Pelican configuration.
 
 ```python
-MARKDOWN = {
-  'extension_configs': {
-    'markdown.extensions.toc': {}
-  }
-}
+MARKDOWN = {"extension_configs": {"markdown.extensions.toc": {}}}
 ```
 
 Then enable `permalink` option available for the `toc` extension.
 
 ```python
 MARKDOWN = {
-  'extension_configs': {
-    'markdown.extensions.toc': {
-      'permalink': 'true',
+    "extension_configs": {
+        "markdown.extensions.toc": {
+            "permalink": "true",
+        }
     }
-  }
 }
 ```
 
@@ -48,10 +44,10 @@ You would get this,
 
 ```python
 MARKDOWN = {
-  'extension_configs': {
-    'markdown.extensions.toc': {
-      'permalink': ' ',
+    "extension_configs": {
+        "markdown.extensions.toc": {
+            "permalink": " ",
+        }
     }
-  }
 }
 ```

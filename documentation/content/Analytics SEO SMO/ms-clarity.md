@@ -3,8 +3,8 @@ Title: How to use Microsoft Clarity
 Tags: web-analytics
 Category: Analytics, SEO and SMO
 Date: 2021-01-25 20:05
-Slug: how-to-use-microsoft-clarity
-Comment_id: cf14ac5-how-to-use-microsoft-clarity
+Slug: how-to-use-Microsoft-clarity
+Comment_id: cf14ac5-how-to-use-Microsoft-clarity
 Subtitle:
 Summary: Elegant Pelican theme supports Microsoft Clarity out of the box. This articles describes how to set it up.
 Keywords:

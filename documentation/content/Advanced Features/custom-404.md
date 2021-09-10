@@ -22,7 +22,7 @@ To enable the custom 404 page, you need to add `404` to `DIRECT_TEMPLATES` in yo
 configuration.
 
 ```python
-DIRECT_TEMPLATES = ['404']
+DIRECT_TEMPLATES = ["404"]
 ```
 
 Note that these values must be added to any existing values present for the `DIRECT_TEMPLATES`
