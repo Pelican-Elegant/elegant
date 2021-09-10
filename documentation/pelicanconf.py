@@ -191,3 +191,6 @@ AUTHORS = {
 DISQUS_FILTER = True
 UTTERANCES_FILTER = True
 COMMENTBOX_FILTER = True
+
+# Display brand logo on the navigation bar
+DISPLAY_BRAND_LOGO = SITEURL + "/elegant-logo/elegant-logo.svg"
