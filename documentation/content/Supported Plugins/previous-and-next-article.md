@@ -28,7 +28,7 @@ To enable the Previous and Next Article links for your articles, add `neighbors`
 `PLUGINS` configuration variable in your Pelican configuration.
 
 ```python
-PLUGINS = ['neighbors']
+PLUGINS = ["neighbors"]
 ```
 
 When enabled, Elegant will show the links for Previous and Next articles at the very bottom of

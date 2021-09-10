@@ -41,7 +41,7 @@ To enable the Photo Gallery plugin, add `photos` to the `PLUGINS` configuration 
 your Pelican configuration.
 
 ```python
-PLUGINS = ['photos']
+PLUGINS = ["photos"]
 ```
 
 !!! note
@@ -83,13 +83,13 @@ In the above example, the actual directory containing the images to display is t
 `dragondance` directory. While not specified in the example, the directory `articles` and the
 directory `gallery-source` are at the same directory depth, one directory to contain articles
 and one directory to contain galleries. By that convention, the article containing the
-`gallery` metadata is located in the the `articles` directory. Therefore, the path to the
+`gallery` metadata is located in the `articles` directory. Therefore, the path to the
 directory containing the `dragondance` directory is `../gallery-source/`. Together, the entire
 path to the `dragondance` directory from the article becomes `../gallery-source/dragondance`.
 
 ### Photo Gallery Titles
 
-Titles for a photo gallery are displayed in a large font directly above the first row of the
+The titles for a photo gallery are displayed in a large font directly above the first row of the
 photo gallery. To specify the title for a gallery, add the required title to the metadata in
 the `gallery` metadata field within curly braces ('{' and '}') as follows:
 

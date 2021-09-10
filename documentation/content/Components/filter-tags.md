@@ -1,8 +1,8 @@
 ---
 authors: Talha Mansoor
 Title: Live Filter for Tags
-Tags: nuances, search
 layout: post
+Tags: nuances, search
 Date: 2013-08-27 23:20
 comments: false
 Slug: live-filter-for-tags

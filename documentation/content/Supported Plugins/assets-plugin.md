@@ -35,7 +35,7 @@ To enable Asset Management for your website, add `assets` to the `PLUGINS` confi
 variable in your Pelican configuration.
 
 ```python
-PLUGINS = ['assets']
+PLUGINS = ["assets"]
 ```
 
 !!! note

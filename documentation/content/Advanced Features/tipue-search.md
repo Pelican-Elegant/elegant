@@ -27,8 +27,8 @@ To enable search, you need to enable the `tipue_search` plugin and add `search` 
 `DIRECT_TEMPLATES` in your pelican configuration.
 
 ```python
-PLUGINS = ['tipue_search']
-DIRECT_TEMPLATES = ['search']
+PLUGINS = ["tipue_search"]
+DIRECT_TEMPLATES = ["search"]
 ```
 
 Note that these values must be added to any existing values present for the `PLUGINS` and

@@ -26,7 +26,7 @@ To enable the reading time for your articles, you need to add `post_stats` to th
 configuration variable in your Pelican configuration.
 
 ```python
-PLUGINS = ['post_stats']
+PLUGINS = ["post_stats"]
 ```
 
 !!! note

@@ -83,7 +83,7 @@ git pull origin master
 ```
 
 Note that this is the most effective way of updating your standalone repository if you
-have not made any changes to the the theme. If you have made some changes, you may be
+have not made any changes to the theme. If you have made some changes, you may be
 required to merge the changes in your local repository with any changes in the release
 version you pulled down with this command.
 
