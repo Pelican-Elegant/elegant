@@ -21,6 +21,9 @@
 
 {% from '_includes/smo_metadata.html' import smo_metadata with context %}
 {{ smo_metadata(article) }}
+
+{% from '_includes/snippets.html' import snippets with context %}
+{{ snippets(article) }}
 {% endblock meta_tags_in_head %}
 
 {% block head_links %}

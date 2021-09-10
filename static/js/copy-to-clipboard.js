@@ -1,14 +1,14 @@
 const copyToClipboardDefaultText = {
   innerText: "Copy",
-  ariaLabel: "Copy to clipboard"
+  ariaLabel: "Copy to clipboard",
 };
 const copyToClipboardSuccessText = {
   innerText: "Copied!",
-  ariaLabel: "Copied to clipboard"
+  ariaLabel: "Copied to clipboard",
 };
 
 // Get all pre. But ignore line numbers section
-document.querySelectorAll("div.highlight pre").forEach(snippet => {
+document.querySelectorAll("div.highlight pre").forEach((snippet) => {
   // create div.codecopy
   const wrapper = document.createElement("div");
   wrapper.classList.add("codecopy");
@@ -33,13 +33,13 @@ document.querySelectorAll("div.highlight pre").forEach(snippet => {
 
 // Add copy to clipboard functionality
 const clipboard = new ClipboardJS(".codecopy-btn", {
-  target: trigger => {
+  target: (trigger) => {
     return trigger.parentNode;
-  }
+  },
 });
 
 // Show message on success
-clipboard.on("success", e => {
+clipboard.on("success", (e) => {
   e.trigger.innerText = copyToClipboardSuccessText.innerText;
   e.trigger.setAttribute("aria-label", copyToClipboardSuccessText.ariaLabel);
   e.clearSelection();

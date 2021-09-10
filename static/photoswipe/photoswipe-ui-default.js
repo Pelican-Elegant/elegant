@@ -7,7 +7,7 @@
  * Built just using public methods/properties of PhotoSwipe.
  *
  */
-(function(root, factory) {
+(function (root, factory) {
   if (typeof define === "function" && define.amd) {
     define(factory);
   } else if (typeof exports === "object") {
@@ -15,10 +15,10 @@
   } else {
     root.PhotoSwipeUI_Default = factory();
   }
-})(this, function() {
+})(this, function () {
   "use strict";
 
-  var PhotoSwipeUI_Default = function(pswp, framework) {
+  var PhotoSwipeUI_Default = function (pswp, framework) {
     var ui = this;
     var _overlayUIUpdated = false,
       _controlsVisible = true,
@@ -45,7 +45,7 @@
         timeToIdleOutside: 1000,
         loadingIndicatorDelay: 1000, // 2s
 
-        addCaptionHTMLFn: function(item, captionEl /*, isFake */) {
+        addCaptionHTMLFn: function (item, captionEl /*, isFake */) {
           if (!item.title) {
             captionEl.children[0].innerHTML = "";
             return false;
@@ -72,44 +72,44 @@
           {
             id: "facebook",
             label: "Share on Facebook",
-            url: "https://www.facebook.com/sharer/sharer.php?u={{url}}"
+            url: "https://www.facebook.com/sharer/sharer.php?u={{url}}",
           },
           {
             id: "twitter",
             label: "Tweet",
-            url: "https://twitter.com/intent/tweet?text={{text}}&url={{url}}"
+            url: "https://twitter.com/intent/tweet?text={{text}}&url={{url}}",
           },
           {
             id: "pinterest",
             label: "Pin it",
             url:
               "http://www.pinterest.com/pin/create/button/" +
-              "?url={{url}}&media={{image_url}}&description={{text}}"
+              "?url={{url}}&media={{image_url}}&description={{text}}",
           },
           {
             id: "download",
             label: "Download image",
             url: "{{raw_image_url}}",
-            download: true
-          }
+            download: true,
+          },
         ],
-        getImageURLForShare: function(/* shareButtonData */) {
+        getImageURLForShare: function (/* shareButtonData */) {
           return pswp.currItem.src || "";
         },
-        getPageURLForShare: function(/* shareButtonData */) {
+        getPageURLForShare: function (/* shareButtonData */) {
           return window.location.href;
         },
-        getTextForShare: function(/* shareButtonData */) {
+        getTextForShare: function (/* shareButtonData */) {
           return pswp.currItem.title || "";
         },
 
         indexIndicatorSep: " / ",
-        fitControlsWidth: 1200
+        fitControlsWidth: 1200,
       },
       _blockControlsTap,
       _blockControlsTapTimeout;
 
-    var _onControlsTap = function(e) {
+    var _onControlsTap = function (e) {
         if (_blockControlsTap) {
           return true;
         }
@@ -150,24 +150,24 @@
           // older versions strangely work correctly,
           // but just in case we add delay on all of them)
           var tapDelay = framework.features.isOldAndroid ? 600 : 30;
-          _blockControlsTapTimeout = setTimeout(function() {
+          _blockControlsTapTimeout = setTimeout(function () {
             _blockControlsTap = false;
           }, tapDelay);
         }
       },
-      _fitControlsInViewport = function() {
+      _fitControlsInViewport = function () {
         return (
           !pswp.likelyTouchDevice ||
           _options.mouseUsed ||
           screen.width > _options.fitControlsWidth
         );
       },
-      _togglePswpClass = function(el, cName, add) {
+      _togglePswpClass = function (el, cName, add) {
         framework[(add ? "add" : "remove") + "Class"](el, "pswp__" + cName);
       },
       // add class when there is just one item in the gallery
       // (by default it hides left/right arrows and 1ofX counter)
-      _countNumItems = function() {
+      _countNumItems = function () {
         var hasOneSlide = _options.getNumItemsFn() === 1;
 
         if (hasOneSlide !== _galleryHasOneSlide) {
@@ -175,22 +175,22 @@
           _galleryHasOneSlide = hasOneSlide;
         }
       },
-      _toggleShareModalClass = function() {
+      _toggleShareModalClass = function () {
         _togglePswpClass(_shareModal, "share-modal--hidden", _shareModalHidden);
       },
-      _toggleShareModal = function() {
+      _toggleShareModal = function () {
         _shareModalHidden = !_shareModalHidden;
 
         if (!_shareModalHidden) {
           _toggleShareModalClass();
-          setTimeout(function() {
+          setTimeout(function () {
             if (!_shareModalHidden) {
               framework.addClass(_shareModal, "pswp__share-modal--fade-in");
             }
           }, 30);
         } else {
           framework.removeClass(_shareModal, "pswp__share-modal--fade-in");
-          setTimeout(function() {
+          setTimeout(function () {
             if (_shareModalHidden) {
               _toggleShareModalClass();
             }
@@ -202,7 +202,7 @@
         }
         return false;
       },
-      _openWindowPopup = function(e) {
+      _openWindowPopup = function (e) {
         e = e || window.event;
         var target = e.target || e.srcElement;
 
@@ -230,7 +230,7 @@
 
         return false;
       },
-      _updateShareURLs = function() {
+      _updateShareURLs = function () {
         var shareButtonOut = "",
           shareButtonData,
           shareURL,
@@ -273,7 +273,7 @@
         _shareModal.children[0].innerHTML = shareButtonOut;
         _shareModal.children[0].onclick = _openWindowPopup;
       },
-      _hasCloseClass = function(target) {
+      _hasCloseClass = function (target) {
         for (var i = 0; i < _options.closeElClasses.length; i++) {
           if (
             framework.hasClass(target, "pswp__" + _options.closeElClasses[i])
@@ -285,24 +285,24 @@
       _idleInterval,
       _idleTimer,
       _idleIncrement = 0,
-      _onIdleMouseMove = function() {
+      _onIdleMouseMove = function () {
         clearTimeout(_idleTimer);
         _idleIncrement = 0;
         if (_isIdle) {
           ui.setIdle(false);
         }
       },
-      _onMouseLeaveWindow = function(e) {
+      _onMouseLeaveWindow = function (e) {
         e = e ? e : window.event;
         var from = e.relatedTarget || e.toElement;
         if (!from || from.nodeName === "HTML") {
           clearTimeout(_idleTimer);
-          _idleTimer = setTimeout(function() {
+          _idleTimer = setTimeout(function () {
             ui.setIdle(true);
           }, _options.timeToIdleOutside);
         }
       },
-      _setupFullscreenAPI = function() {
+      _setupFullscreenAPI = function () {
         if (_options.fullscreenEl && !framework.features.isOldAndroid) {
           if (!_fullscrenAPI) {
             _fullscrenAPI = ui.getFullscreenAPI();
@@ -316,16 +316,16 @@
           }
         }
       },
-      _setupLoadingIndicator = function() {
+      _setupLoadingIndicator = function () {
         // Setup loading indicator
         if (_options.preloaderEl) {
           _toggleLoadingIndicator(true);
 
-          _listen("beforeChange", function() {
+          _listen("beforeChange", function () {
             clearTimeout(_loadingIndicatorTimeout);
 
             // display loading indicator with delay
-            _loadingIndicatorTimeout = setTimeout(function() {
+            _loadingIndicatorTimeout = setTimeout(function () {
               if (pswp.currItem && pswp.currItem.loading) {
                 if (
                   !pswp.allowProgressiveImg() ||
@@ -341,20 +341,20 @@
               }
             }, _options.loadingIndicatorDelay);
           });
-          _listen("imageLoadComplete", function(index, item) {
+          _listen("imageLoadComplete", function (index, item) {
             if (pswp.currItem === item) {
               _toggleLoadingIndicator(true);
             }
           });
         }
       },
-      _toggleLoadingIndicator = function(hide) {
+      _toggleLoadingIndicator = function (hide) {
         if (_loadingIndicatorHidden !== hide) {
           _togglePswpClass(_loadingIndicator, "preloader--active", !hide);
           _loadingIndicatorHidden = hide;
         }
       },
-      _applyNavBarGaps = function(item) {
+      _applyNavBarGaps = function (item) {
         var gap = item.vGap;
 
         if (_fitControlsInViewport()) {
@@ -386,14 +386,14 @@
           gap.top = gap.bottom = 0;
         }
       },
-      _setupIdle = function() {
+      _setupIdle = function () {
         // Hide controls when mouse is used
         if (_options.timeToIdle) {
-          _listen("mouseUsed", function() {
+          _listen("mouseUsed", function () {
             framework.bind(document, "mousemove", _onIdleMouseMove);
             framework.bind(document, "mouseout", _onMouseLeaveWindow);
 
-            _idleInterval = setInterval(function() {
+            _idleInterval = setInterval(function () {
               _idleIncrement++;
               if (_idleIncrement === 2) {
                 ui.setIdle(true);
@@ -402,9 +402,9 @@
           });
         }
       },
-      _setupHidingControlsDuringGestures = function() {
+      _setupHidingControlsDuringGestures = function () {
         // Hide controls on vertical drag
-        _listen("onVerticalDrag", function(now) {
+        _listen("onVerticalDrag", function (now) {
           if (_controlsVisible && now < 0.95) {
             ui.hideControls();
           } else if (!_controlsVisible && now >= 0.95) {
@@ -414,7 +414,7 @@
 
         // Hide controls when pinching to close
         var pinchControlsHidden;
-        _listen("onPinchClose", function(now) {
+        _listen("onPinchClose", function (now) {
           if (_controlsVisible && now < 0.9) {
             ui.hideControls();
             pinchControlsHidden = true;
@@ -423,7 +423,7 @@
           }
         });
 
-        _listen("zoomGestureEnded", function() {
+        _listen("zoomGestureEnded", function () {
           pinchControlsHidden = false;
           if (pinchControlsHidden && !_controlsVisible) {
             ui.showControls();
@@ -435,81 +435,81 @@
       {
         name: "caption",
         option: "captionEl",
-        onInit: function(el) {
+        onInit: function (el) {
           _captionContainer = el;
-        }
+        },
       },
       {
         name: "share-modal",
         option: "shareEl",
-        onInit: function(el) {
+        onInit: function (el) {
           _shareModal = el;
         },
-        onTap: function() {
+        onTap: function () {
           _toggleShareModal();
-        }
+        },
       },
       {
         name: "button--share",
         option: "shareEl",
-        onInit: function(el) {
+        onInit: function (el) {
           _shareButton = el;
         },
-        onTap: function() {
+        onTap: function () {
           _toggleShareModal();
-        }
+        },
       },
       {
         name: "button--zoom",
         option: "zoomEl",
-        onTap: pswp.toggleDesktopZoom
+        onTap: pswp.toggleDesktopZoom,
       },
       {
         name: "counter",
         option: "counterEl",
-        onInit: function(el) {
+        onInit: function (el) {
           _indexIndicator = el;
-        }
+        },
       },
       {
         name: "button--close",
         option: "closeEl",
-        onTap: pswp.close
+        onTap: pswp.close,
       },
       {
         name: "button--arrow--left",
         option: "arrowEl",
-        onTap: pswp.prev
+        onTap: pswp.prev,
       },
       {
         name: "button--arrow--right",
         option: "arrowEl",
-        onTap: pswp.next
+        onTap: pswp.next,
       },
       {
         name: "button--fs",
         option: "fullscreenEl",
-        onTap: function() {
+        onTap: function () {
           if (_fullscrenAPI.isFullscreen()) {
             _fullscrenAPI.exit();
           } else {
             _fullscrenAPI.enter();
           }
-        }
+        },
       },
       {
         name: "preloader",
         option: "preloaderEl",
-        onInit: function(el) {
+        onInit: function (el) {
           _loadingIndicator = el;
-        }
-      }
+        },
+      },
     ];
 
-    var _setupUIElements = function() {
+    var _setupUIElements = function () {
       var item, classAttr, uiElement;
 
-      var loopThroughChildElements = function(sChildren) {
+      var loopThroughChildElements = function (sChildren) {
         if (!sChildren) {
           return;
         }
@@ -548,7 +548,7 @@
       }
     };
 
-    ui.init = function() {
+    ui.init = function () {
       // extend options
       framework.extend(pswp.options, _defaultUIOptions, true);
 
@@ -567,7 +567,7 @@
       _listen("beforeChange", ui.update);
 
       // toggle zoom on double-tap
-      _listen("doubleTap", function(point) {
+      _listen("doubleTap", function (point) {
         var initialZoomLevel = pswp.currItem.initialZoomLevel;
         if (pswp.getZoomLevel() !== initialZoomLevel) {
           pswp.zoomTo(initialZoomLevel, point, 333);
@@ -581,7 +581,7 @@
       });
 
       // Allow text selection in caption
-      _listen("preventDragEvent", function(e, isDown, preventObj) {
+      _listen("preventDragEvent", function (e, isDown, preventObj) {
         var t = e.target || e.srcElement;
         if (
           t &&
@@ -595,7 +595,7 @@
       });
 
       // bind events for UI
-      _listen("bindEvents", function() {
+      _listen("bindEvents", function () {
         framework.bind(_controls, "pswpTap click", _onControlsTap);
         framework.bind(pswp.scrollWrap, "pswpTap", ui.onGlobalTap);
 
@@ -605,7 +605,7 @@
       });
 
       // unbind events for UI
-      _listen("unbindEvents", function() {
+      _listen("unbindEvents", function () {
         if (!_shareModalHidden) {
           _toggleShareModal();
         }
@@ -630,7 +630,7 @@
       });
 
       // clean up things when gallery is destroyed
-      _listen("destroy", function() {
+      _listen("destroy", function () {
         if (_options.captionEl) {
           if (_fakeCaptionContainer) {
             _controls.removeChild(_fakeCaptionContainer);
@@ -649,12 +649,12 @@
       if (!_options.showAnimationDuration) {
         framework.removeClass(_controls, "pswp__ui--hidden");
       }
-      _listen("initialZoomIn", function() {
+      _listen("initialZoomIn", function () {
         if (_options.showAnimationDuration) {
           framework.removeClass(_controls, "pswp__ui--hidden");
         }
       });
-      _listen("initialZoomOut", function() {
+      _listen("initialZoomOut", function () {
         framework.addClass(_controls, "pswp__ui--hidden");
       });
 
@@ -675,12 +675,12 @@
       _setupLoadingIndicator();
     };
 
-    ui.setIdle = function(isIdle) {
+    ui.setIdle = function (isIdle) {
       _isIdle = isIdle;
       _togglePswpClass(_controls, "ui--idle", isIdle);
     };
 
-    ui.update = function() {
+    ui.update = function () {
       // Don't update UI if it's hidden
       if (_controlsVisible && pswp.currItem) {
         ui.updateIndexIndicator();
@@ -707,11 +707,11 @@
       _countNumItems();
     };
 
-    ui.updateFullscreen = function(e) {
+    ui.updateFullscreen = function (e) {
       if (e) {
         // some browsers change window scroll position during the fullscreen
         // so PhotoSwipe updates it just in case
-        setTimeout(function() {
+        setTimeout(function () {
           pswp.setScrollOffset(0, framework.getScrollY());
         }, 50);
       }
@@ -723,7 +723,7 @@
       );
     };
 
-    ui.updateIndexIndicator = function() {
+    ui.updateIndexIndicator = function () {
       if (_options.counterEl) {
         _indexIndicator.innerHTML =
           pswp.getCurrentIndex() +
@@ -733,7 +733,7 @@
       }
     };
 
-    ui.onGlobalTap = function(e) {
+    ui.onGlobalTap = function (e) {
       e = e || window.event;
       var target = e.target || e.srcElement;
 
@@ -780,7 +780,7 @@
         }
       }
     };
-    ui.onMouseOver = function(e) {
+    ui.onMouseOver = function (e) {
       e = e || window.event;
       var target = e.target || e.srcElement;
 
@@ -788,12 +788,12 @@
       _togglePswpClass(_controls, "ui--over-close", _hasCloseClass(target));
     };
 
-    ui.hideControls = function() {
+    ui.hideControls = function () {
       framework.addClass(_controls, "pswp__ui--hidden");
       _controlsVisible = false;
     };
 
-    ui.showControls = function() {
+    ui.showControls = function () {
       _controlsVisible = true;
       if (!_overlayUIUpdated) {
         ui.update();
@@ -801,7 +801,7 @@
       framework.removeClass(_controls, "pswp__ui--hidden");
     };
 
-    ui.supportsFullscreen = function() {
+    ui.supportsFullscreen = function () {
       var d = document;
       return !!(
         d.exitFullscreen ||
@@ -811,7 +811,7 @@
       );
     };
 
-    ui.getFullscreenAPI = function() {
+    ui.getFullscreenAPI = function () {
       var dE = document.documentElement,
         api,
         tF = "fullscreenchange";
@@ -821,33 +821,33 @@
           enterK: "requestFullscreen",
           exitK: "exitFullscreen",
           elementK: "fullscreenElement",
-          eventK: tF
+          eventK: tF,
         };
       } else if (dE.mozRequestFullScreen) {
         api = {
           enterK: "mozRequestFullScreen",
           exitK: "mozCancelFullScreen",
           elementK: "mozFullScreenElement",
-          eventK: "moz" + tF
+          eventK: "moz" + tF,
         };
       } else if (dE.webkitRequestFullscreen) {
         api = {
           enterK: "webkitRequestFullscreen",
           exitK: "webkitExitFullscreen",
           elementK: "webkitFullscreenElement",
-          eventK: "webkit" + tF
+          eventK: "webkit" + tF,
         };
       } else if (dE.msRequestFullscreen) {
         api = {
           enterK: "msRequestFullscreen",
           exitK: "msExitFullscreen",
           elementK: "msFullscreenElement",
-          eventK: "MSFullscreenChange"
+          eventK: "MSFullscreenChange",
         };
       }
 
       if (api) {
-        api.enter = function() {
+        api.enter = function () {
           // disable close-on-scroll in fullscreen
           _initalCloseOnScrollValue = _options.closeOnScroll;
           _options.closeOnScroll = false;
@@ -858,12 +858,12 @@
             return pswp.template[this.enterK]();
           }
         };
-        api.exit = function() {
+        api.exit = function () {
           _options.closeOnScroll = _initalCloseOnScrollValue;
 
           return document[this.exitK]();
         };
-        api.isFullscreen = function() {
+        api.isFullscreen = function () {
           return document[this.elementK];
         };
       }

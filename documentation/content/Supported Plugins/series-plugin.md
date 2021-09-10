@@ -36,7 +36,7 @@ To enable the reading time for your articles, you need to add `series` to the `P
 configuration variable in your Pelican configuration.
 
 ```python
-PLUGINS = ['series']
+PLUGINS = ["series"]
 ```
 
 In addition, the `SERIES_TITLE` configuration variable can be set to specify the title used for

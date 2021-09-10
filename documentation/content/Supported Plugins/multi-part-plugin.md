@@ -38,7 +38,7 @@ To enable the reading time for your articles, you need to add `multi-part` to th
 configuration variable in your Pelican configuration.
 
 ```python
-PLUGINS = ['multi-part']
+PLUGINS = ["multi-part"]
 ```
 
 In addition, the `SERIES_TITLE` configuration variable can be set to specify the title used for

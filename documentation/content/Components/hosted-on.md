@@ -19,10 +19,7 @@ To do so, define a dictionary `HOSTED_ON` in your Pelican configuration. It has 
 For example,
 
 ```python
-HOSTED_ON = {
-    "name": "Netlify",
-    "url": "https://www.netlify.com/"
-    }
+HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
 ```
 
 It will appear in the footer as

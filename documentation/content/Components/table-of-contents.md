@@ -37,7 +37,7 @@ For the second step, you need to enable the `extract_toc` plugin in
 your pelican configuration.
 
 ```python
-PLUGINS = ['extract_toc']
+PLUGINS = ["extract_toc"]
 ```
 
 ## Configuring Markdown
@@ -45,11 +45,7 @@ PLUGINS = ['extract_toc']
 You need to enable the `toc` extension for Markdown in your Pelican configuration.
 
 ```python
-MARKDOWN = {
-  'extension_configs': {
-    'markdown.extensions.toc': {}
-  }
-}
+MARKDOWN = {"extension_configs": {"markdown.extensions.toc": {}}}
 ```
 
 Now to generate a table of contents for you article, add the `[TOC]` markdown tag to your

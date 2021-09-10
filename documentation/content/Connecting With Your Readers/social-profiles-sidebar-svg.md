@@ -53,7 +53,7 @@ has three items,
 
 ```python
 SOCIAL = (
-    ('Email', 'example@example.com', 'My Email Address'),
+    ("Email", "example@example.com", "My Email Address"),
     ("Github", "https://github.com/Pelican-Elegant/", "Elegant Github Repository"),
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
     ("Facebook", "https://facebook.com/ExamplePage/"),

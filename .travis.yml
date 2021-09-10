@@ -29,8 +29,6 @@ before_install:
 install:
 - pip install -r documentation/requirements.txt
 - pip install -U html5validator
-- pip install -U pre-commit
-- yarn global add yaspeller
 - yarn install
 
 before_script:
@@ -38,8 +36,6 @@ before_script:
 - invoke plugins-sync
 
 script:
-- pre-commit run --all-files
-- yaspeller --only-errors content/ *.md
 - invoke publish
 - html5validator --root output/
 

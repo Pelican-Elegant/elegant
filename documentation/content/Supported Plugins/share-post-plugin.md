@@ -32,13 +32,13 @@ To enable the Social Media Sharing links for your articles, add `share_post` to 
 configuration variable in your Pelican configuration.
 
 ```python
-PLUGINS = ['share_post']
+PLUGINS = ["share_post"]
 ```
 
 Optionally, customize the list of networks where the article can be shared using `SHARE_LINKS`.
 
 ```python
-SHARE_LINKS = [ ('twitter', 'Twitter'), ('facebook', 'Facebook'), ('email', 'Email') ]
+SHARE_LINKS = [("twitter", "Twitter"), ("facebook", "Facebook"), ("email", "Email")]
 ```
 
 The first item in each pair refers to a network recognized by `share_post`. Currently the list of supported networks includes `twitter`, `facebook`, `email`, `hacker-news`, `linkedin` and `reddit`. The second item in each pair is the text displayed for the link on the page.
