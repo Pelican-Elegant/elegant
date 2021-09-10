@@ -17,12 +17,6 @@
     {% if AMAZON_ONELINK or AMAZON_BESTAZON %}
     <span class="site-name">{{ SITENAME }}</span>  is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
     {% endif %}
-    {% if AMAZON_ONELINK %}
-    <div id="amzn-assoc-ad-{{ AMAZON_ONELINK }}">
-    </div>
-    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId={{ AMAZON_ONELINK }}">
-    </script>
-    {% endif %}
 
     <div id="fpowered">
         Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>

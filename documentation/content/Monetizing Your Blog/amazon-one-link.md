@@ -12,30 +12,9 @@ comment_id: amazon-onelink
 
 Elegant supports [Amazon OneLink](https://affiliate-program.amazon.com/onelink/), so that you may monetize your traffic using affiliate links.
 
-Visit Amazon website and create your OneLink account. Amazon will provide you a code snippet similar to following,
+With the recent changes to Amazon, linking your sites on the Amazon US site and putting a link to it, will automatically redirect to the closes Amazon site of visitor, rendering the JavaScript code used in the past obsolete.
 
-```html
-<div id="amzn-assoc-ad-$UUID"></div>
-<script
-  async
-  src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=$UUID"
-></script>
-```
-
-Pay close attention to the `amzn-assoc-ad-` part. The value following it is your Amazon OneLink id.
-
-In your pelican configuration, preferably in the file `publishconf.py`, set `AMAZON_ONELINK` to your Amazon OneLink id, for example,
-
-```py
-AMAZON_ONELINK = "b63a2115-85f7-43a9-b169-5f4c8c275655"
-```
-
-When the site is generated, `$UUID` in the snippet above is substituted with your id. Thus, ensuring that correct referral code is passed to the script.
-
-Now, when international visitors of your site click on a link on your site to buy from Amazon, they are redirected to their local or nearest Amazon market place.
-For example, original link (Python book):
-
-This is an optional feature. If you do not set the variable then Amazon OneLink script is not added to the rendered output.
+As the links for the previous feature required to be one, there's no migration needed except removing the old setting `AMAZON_ONELINK` from your pelicanconf.py from now on. If you leave the setting it might be useful for you as it will show automatically the following footer:
 
 You, as a content creator, should be aware of GDPR or other regulations.
 [Section 5 of the Operating
