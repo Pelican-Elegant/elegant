@@ -236,3 +236,9 @@ PROJECTS = [{
 {% else %}
 {% set SHARE_LINKS = SHARE_LINKS %}
 {% endif %}
+
+{% if not MENUITEMS %}
+{% set MENUITEMS = [ ('Categories', "{{ SITEURL }}/{{ CATEGORIES_URL }}" ), ('Tags', "{{ SITEURL }}/{{ TAGS_URL }}"), ('Archives', "{{ SITEURL }}/{{ ARCHIVES_URL }}") ] %}
+{% else %}
+{% set MENUITEMS = MENUITEMS %}
+{% endif %}
