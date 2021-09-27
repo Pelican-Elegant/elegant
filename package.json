@@ -13,7 +13,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^9.0.1",
     "gulp-run-command": "^0.0.10",
-    "gulp-terser": "^2.0.1",
+    "gulp-terser": "^2.1.0",
     "postcss": "^8.3.7",
     "postcss-font-magician": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
