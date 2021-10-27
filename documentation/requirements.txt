@@ -2,7 +2,7 @@ beautifulsoup4==4.10.0
 blinker==1.4
 cssmin==0.2.0
 ddt==1.4.4
-docutils==0.17.1
+docutils==0.18
 feedgenerator==2.0.0
 gitdb==4.0.9
 gitdb2==4.0.2
