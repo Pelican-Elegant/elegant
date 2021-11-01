@@ -1,7 +1,7 @@
 {
   "name": "Pelican-Elegant",
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.1",
     "@semantic-release/git": "^10.0.0",
     "babel-core": "^6.26.3",
