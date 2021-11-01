@@ -3,7 +3,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.1",
-    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/git": "^10.0.1",
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.27.7",
