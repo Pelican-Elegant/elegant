@@ -7,7 +7,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.27.7",
-    "cssnano": "^5.0.9",
+    "cssnano": "^5.0.10",
     "cz-conventional-changelog": "3.3.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
