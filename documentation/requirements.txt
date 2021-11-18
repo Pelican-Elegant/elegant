@@ -11,7 +11,7 @@ invoke==1.6.0
 Jinja2==3.0.3
 jinjaninja==0.1.2
 livereload==2.6.3
-Markdown==3.3.5
+Markdown==3.3.6
 MarkupSafe==2.0.1
 pelican==4.7.1
 Pygments==2.10.0
