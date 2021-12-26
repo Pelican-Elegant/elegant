@@ -9,7 +9,7 @@ authors: Jack De Winter
 ---
 
 Once you have determined that you want to update to the latest release of Elegant, the
-process is usually quite simple. There are wo main ways to get the Elegant theme: as
+process is usually quite simple. There are two main ways to get the Elegant theme: as
 a standalone repository and as part of the Pelican-Themes repository.
 
 ## Via the Pelican-Themes Repository
