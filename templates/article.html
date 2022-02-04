@@ -16,7 +16,11 @@
 {% endif %}
 {{ super() }}
 {% if article.tags or article.category or article.keywords %}
-<meta name="keywords" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+<meta name="keywords" content="{{ (
+	(article.tags | default([]))  +
+	(article.categories | default([article.category] if article.category else []) ) +
+	([article.keywords] if article.keywords else [])
+	) | join(', ') }}" />
 {% endif %}
 
 {% from '_includes/smo_metadata.html' import smo_metadata with context %}
@@ -125,7 +129,9 @@
             {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
             {% from '_includes/_defaults.html' import CATEGORIES_URL with context %}
-            <a class="category-link" href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ category.slug }}-ref">{{ article.category }}</a>
+            {% for cat in article.categories or [article.category] %}
+            <a class="category-link" href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ cat.slug }}-ref">{{ cat }}</a>{{ ', ' if not loop.last }}
+            {% endfor %}
             {% endif %}
             {% if article.tags and article.tags[0]|trim|count > 0 %}
             {% from '_includes/_defaults.html' import TAGS_URL with context %}
