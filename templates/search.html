@@ -39,7 +39,7 @@ Search results for {{ SITENAME|striptags|e }} blog.
 {% endblock content %}
 
 {% block script %}
-    {% if PLUGINS and 'tipue_search' in PLUGINS %}
+    {% if 'tipue_search' or 'tipue_search' in PLUGINS %}
         <script src="{{ SITEURL }}/tipuesearch_content.js"></script>
     {% endif %}
 {{ super() }}
