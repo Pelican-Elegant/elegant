@@ -19,7 +19,7 @@
     "postcss-preset-env": "^7.7.1",
     "recess": "^1.1.9",
     "rfs": "^9.0.6",
-    "semantic-release": "^19.0.3"
+    "semantic-release": "^20.0.2"
   },
   "config": {
     "commitizen": {
