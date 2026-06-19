@@ -236,3 +236,10 @@ PROJECTS = [{
 {% else %}
 {% set SHARE_LINKS = SHARE_LINKS %}
 {% endif %}
+
+{# Message for article translations #}
+{% if not ARTICLE_TRANSLATION_MESSAGE %}
+    {% set ARTICLE_TRANSLATION_MESSAGE = 'This post is also available in' %}
+{% else %}
+    {% set ARTICLE_TRANSLATION_MESSAGE = ARTICLE_TRANSLATION_MESSAGE %}
+{% endif %}
