@@ -236,3 +236,15 @@ PROJECTS = [{
 {% else %}
 {% set SHARE_LINKS = SHARE_LINKS %}
 {% endif %}
+
+{% if not SEARCH_PLACEHOLDER %}
+{% set SEARCH_PLACEHOLDER = 'Search' %}
+{% else %}
+{% set SEARCH_PLACEHOLDER = SEARCH_PLACEHOLDER %}
+{% endif %}
+
+{% if not SEARCH_TAG_PLACEHOLDER %}
+{% set SEARCH_TAG_PLACEHOLDER = 'Find a tag' %}
+{% else %}
+{% set SEARCH_TAG_PLACEHOLDER = SEARCH_TAG_PLACEHOLDER %}
+{% endif %}
